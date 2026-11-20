@@ -93,6 +93,112 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+20-Nov-26 rabidim2    rabidim2   Moved from GS's mathbox to main set.mm
+20-Nov-26 rabidd      rabidd     Moved from GS's mathbox to main set.mm
+20-Nov-26 ssdf        ssdf       Moved from GS's mathbox to main set.mm
+20-Nov-26 ssd         ssd        Moved from GS's mathbox to main set.mm
+20-Nov-26 ssrab2f     ssrab2f    Moved from GS's mathbox to main set.mm
+20-Nov-26 abssf       abssf      Moved from GS's mathbox to main set.mm
+20-Nov-26 rabssf      rabssf     Moved from GS's mathbox to main set.mm
+20-Nov-26 ss2rabdf    ss2rabdf   Moved from GS's mathbox to main set.mm
+20-Nov-26 r19.3rzf    r19.3rzf   Moved from GS's mathbox to main set.mm
+20-Nov-26 r19.28zf    r19.28zf   Moved from GS's mathbox to main set.mm
+20-Nov-26 iindif2f    iindif2f   Moved from GS's mathbox to main set.mm
+20-Nov-26 iuneq2df    iuneq2df   Moved from GS's mathbox to main set.mm
+20-Nov-26 dmmptssf    dmmptssf   Moved from GS's mathbox to main set.mm
+20-Nov-26 founiiun    founiiun   Moved from GS's mathbox to main set.mm
+20-Nov-26 fmptff      fmptff     Moved from GS's mathbox to main set.mm
+20-Nov-26 rnmptssff   rnmptssff  Moved from GS's mathbox to main set.mm
+20-Nov-26 rnmptssdff  rnmptssdff Moved from GS's mathbox to main set.mm
+20-Nov-26 abfmpunirn  abfmpunirn Moved from TA's mathbox to main set.mm
+20-Nov-26 abfmpel     abfmpel    Moved from TA's mathbox to main set.mm
+20-Nov-26 elpmi2      elpmi2     Moved from GS's mathbox to main set.mm
+20-Nov-26 fnchoice    fnchoice   Moved from GS's mathbox to main set.mm
+20-Nov-26 choicefi    choicefi   Moved from GS's mathbox to main set.mm
+20-Nov-26 snct        snct       Moved from TA's mathbox to main set.mm
+20-Nov-26 rn1st       rn1st      Moved from GS's mathbox to main set.mm
+20-Nov-26 prct        prct       Moved from TA's mathbox to main set.mm
+20-Nov-26 axccdom     axccdom    Moved from GS's mathbox to main set.mm
+20-Nov-26 mptctf      mptctf     Moved from TA's mathbox to main set.mm
+20-Nov-26 abrexctf    abrexctf   Moved from TA's mathbox to main set.mm
+20-Nov-26 frexr       frexr      Moved from GS's mathbox to main set.mm
+20-Nov-26 preimagelt  preimagelt Moved from GS's mathbox to main set.mm
+20-Nov-26 preimalegt  preimalegt Moved from GS's mathbox to main set.mm
+20-Nov-26 nnn0        nnn0       Moved from GS's mathbox to main set.mm
+20-Nov-26 nnrecrp     nnrecrp    Moved from GS's mathbox to main set.mm
+20-Nov-26 xrred       xrred      Moved from GS's mathbox to main set.mm
+20-Nov-26 eliood      eliood     Moved from GS's mathbox to main set.mm
+20-Nov-26 icoltub     icoltub    Moved from GS's mathbox to main set.mm
+20-Nov-26 icoltubd    icoltubd   Moved from GS's mathbox to main set.mm
+20-Nov-26 preimaicomnf preimaicomnfMoved from GS's mathbox to main set.mm
+20-Nov-26 icomnfinre  icomnfinre Moved from GS's mathbox to main set.mm
+20-Nov-26 preimaioomnf preimaioomnfMoved from GS's mathbox to main set.mm
+20-Nov-26 nnfoctb     nnfoctb    Moved from GS's mathbox to main set.mm
+20-Nov-26 elrestd     elrestd    Moved from GS's mathbox to main set.mm
+20-Nov-26 restuni3    restuni3   Moved from GS's mathbox to main set.mm
+20-Nov-26 restuni4    restuni4   Moved from GS's mathbox to main set.mm
+20-Nov-26 rpgtrecnn   rpgtrecnn  Moved from GS's mathbox to main set.mm
+20-Nov-26 xrralrecnnle xrralrecnnleMoved from GS's mathbox to main set.mm
+20-Nov-26 xrralrecnnge xrralrecnngeMoved from GS's mathbox to main set.mm
+20-Nov-26 csiga       csiga      Moved from TA's mathbox to main set.mm
+20-Nov-26 df-siga     df-siga    Moved from TA's mathbox to main set.mm
+20-Nov-26 sigaex      sigaex     Moved from TA's mathbox to main set.mm
+20-Nov-26 issiga      issiga     Moved from TA's mathbox to main set.mm
+20-Nov-26 isrnsiga    isrnsiga   Moved from TA's mathbox to main set.mm
+20-Nov-26 issgon      issgon     Moved from TA's mathbox to main set.mm
+20-Nov-26 sgon        sgon       Moved from TA's mathbox to main set.mm
+20-Nov-26 0elsiga     0elsiga    Moved from TA's mathbox to main set.mm
+20-Nov-26 sigasspw    sigasspw   Moved from TA's mathbox to main set.mm
+20-Nov-26 sigaclcu    sigaclcu   Moved from TA's mathbox to main set.mm
+20-Nov-26 sigaclcuni  sigaclcuni Moved from TA's mathbox to main set.mm
+20-Nov-26 elsigass    elsigass   Moved from TA's mathbox to main set.mm
+20-Nov-26 isrnsigau   isrnsigau  Moved from TA's mathbox to main set.mm
+20-Nov-26 difunielsiga difunielsigaMoved from TA's mathbox to main set.mm
+20-Nov-26 unelsiga    unelsiga   Moved from TA's mathbox to main set.mm
+20-Nov-26 difelsiga   difelsiga  Moved from TA's mathbox to main set.mm
+20-Nov-26 inelsiga    inelsiga   Moved from TA's mathbox to main set.mm
+20-Nov-26 preimageiingt preimageiingtMoved from GS's mathbox to main set.mm
+20-Nov-26 preimaleiinlt preimaleiinltMoved from GS's mathbox to main set.mm
+20-Nov-26 csalg       csalg      Moved from GS's mathbox to main set.mm
+20-Nov-26 df-salg     df-salg    Moved from GS's mathbox to main set.mm
+20-Nov-26 issal       issal      Moved from GS's mathbox to main set.mm
+20-Nov-26 saldifcl    saldifcl   Moved from GS's mathbox to main set.mm
+20-Nov-26 0sal        0sal       Moved from GS's mathbox to main set.mm
+20-Nov-26 saluni      saluni     Moved from GS's mathbox to main set.mm
+20-Nov-26 salunicl    salunicl   Moved from GS's mathbox to main set.mm
+20-Nov-26 saliunclf   saliunclf  Moved from GS's mathbox to main set.mm
+20-Nov-26 saliuncl    saliuncl   Moved from GS's mathbox to main set.mm
+20-Nov-26 saliinclf   saliinclf  Moved from GS's mathbox to main set.mm
+20-Nov-26 saliincl    saliincl   Moved from GS's mathbox to main set.mm
+20-Nov-26 issald      issald     Moved from GS's mathbox to main set.mm
+20-Nov-26 issalnnd    issalnnd   Moved from GS's mathbox to main set.mm
+20-Nov-26 saldifcld   saldifcld  Moved from GS's mathbox to main set.mm
+20-Nov-26 0sald       0sald      Moved from GS's mathbox to main set.mm
+20-Nov-26 subsaliuncllem subsaliuncllemMoved from GS's mathbox to main set.mm
+20-Nov-26 subsaliuncl subsaliunclMoved from GS's mathbox to main set.mm
+20-Nov-26 subsalsal   subsalsal  Moved from GS's mathbox to main set.mm
+20-Nov-26 csmblfn     csmblfn    Moved from GS's mathbox to main set.mm
+20-Nov-26 df-smblfn   df-smblfn  Moved from GS's mathbox to main set.mm
+20-Nov-26 salpreimagelt salpreimageltMoved from GS's mathbox to main set.mm
+20-Nov-26 salpreimalegt salpreimalegtMoved from GS's mathbox to main set.mm
+20-Nov-26 salpreimagtge salpreimagtgeMoved from GS's mathbox to main set.mm
+20-Nov-26 salpreimagtlt salpreimagtltMoved from GS's mathbox to main set.mm
+20-Nov-26 salpreimaltle salpreimaltleMoved from GS's mathbox to main set.mm
+20-Nov-26 issmflem    issmflem   Moved from GS's mathbox to main set.mm
+20-Nov-26 issmf       issmf      Moved from GS's mathbox to main set.mm
+20-Nov-26 issmfgtlem  issmfgtlem Moved from GS's mathbox to main set.mm
+20-Nov-26 issmfgelem  issmfgelem Moved from GS's mathbox to main set.mm
+20-Nov-26 salpreimalelt salpreimaleltMoved from GS's mathbox to main set.mm
+20-Nov-26 smfpreimalt smfpreimaltMoved from GS's mathbox to main set.mm
+20-Nov-26 smff        smff       Moved from GS's mathbox to main set.mm
+20-Nov-26 smfdmss     smfdmss    Moved from GS's mathbox to main set.mm
+20-Nov-26 issmflelem  issmflelem Moved from GS's mathbox to main set.mm
+20-Nov-26 issmfle     issmfle    Moved from GS's mathbox to main set.mm
+20-Nov-26 issmfgt     issmfgt    Moved from GS's mathbox to main set.mm
+20-Nov-26 smfpreimagt smfpreimagtMoved from GS's mathbox to main set.mm
+20-Nov-26 issmfge     issmfge    Moved from GS's mathbox to main set.mm
+20-Nov-26 smfpreimage smfpreimageMoved from GS's mathbox to main set.mm
+20-Nov-26 nnaddcli    nnaddcli   Moved from OO's mathbox to main set.mm
  8-Nov-26 rru         rur
  8-Nov-26 cardprcALT  [same]      Moved from AD's mathbox to main set.mm
  8-Nov-26 cardprcr    [same]      Moved from AD's mathbox to main set.mm

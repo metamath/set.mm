@@ -32069,6 +32069,21 @@ $)
 
   $( Membership in a restricted abstraction, implication.  (Contributed by
      Glauco Siliprandi, 26-Jun-2021.) $)
+  rabidim2 $p |- ( x e. { x e. A | ph } -> ph ) $=
+    ( cv crab wcel rabid simprbi ) BDZABCEFICFAABCGH $.
+
+  ${
+    rabidd.1 $e |- ( ph -> x e. A ) $.
+    rabidd.2 $e |- ( ph -> ch ) $.
+    $( An "identity" law of concretion for restricted abstraction.  Special
+       case of Definition 2.1 of [Quine] p. 16.  (Contributed by Glauco
+       Siliprandi, 24-Jan-2025.) $)
+    rabidd $p |- ( ph -> x e. { x e. A | ch } ) $=
+      ( cv wcel crab rabid sylanbrc ) ACGZDHBLBCDIHEFBCDJK $.
+  $}
+
+  $( Membership in a restricted abstraction, implication.  (Contributed by
+     Glauco Siliprandi, 26-Jun-2021.) $)
   rabidim1 $p |- ( x e. { x e. A | ph } -> x e. A ) $=
     ( cv crab wcel rabid simplbi ) BDZABCEFICFAABCGH $.
 
@@ -37662,6 +37677,26 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.
+    ssdf.1 $e |- F/ x ph $.
+    ssdf.2 $e |- ( ( ph /\ x e. A ) -> x e. B ) $.
+    $( A sufficient condition for a subclass relationship.  (Contributed by
+       Glauco Siliprandi, 3-Jan-2021.) $)
+    ssdf $p |- ( ph -> A C_ B ) $=
+      ( cv wcel wral wss ex ralrimi dfss3 sylibr ) ABGZDHZBCICDJAPBCEAOCHPFKLBC
+      DMN $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d ph x $.
+    ssd.1 $e |- ( ( ph /\ x e. A ) -> x e. B ) $.
+    $( A sufficient condition for a subclass relationship.  (Contributed by
+       Glauco Siliprandi, 3-Jan-2021.) $)
+    ssd $p |- ( ph -> A C_ B ) $=
+      ( nfv ssdf ) ABCDABFEG $.
+  $}
+
+  ${
     $d z A $.  $d z B $.  $d x z $.
     dfssf.1 $e |- F/_ x A $.
     dfssf.2 $e |- F/_ x B $.
@@ -37686,6 +37721,15 @@ $)
        (Contributed by NM, 27-Dec-1996.) $)
     nfss $p |- F/ x A C_ B $=
       ( wss cv wcel wral dfss3f nfra1 nfxfr ) BCFAGCHZABIAABCDEJMABKL $.
+  $}
+
+  ${
+    ssrab2f.1 $e |- F/_ x A $.
+    $( Subclass relation for a restricted class.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    ssrab2f $p |- { x e. A | ph } C_ A $=
+      ( crab wss cv wcel nfrab1 dfss3f rabidim1 mprgbir ) ABCEZCFBGCHBMBMCABCID
+      JABCKL $.
   $}
 
   ${
@@ -38381,6 +38425,25 @@ $)
     ZPGZRQGZHZCIABHZCICPQACJBCJKUAUBCSATBACLBCLMNO $.
 
   ${
+    abssf.1 $e |- F/_ x A $.
+    $( Class abstraction in a subclass relationship.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    abssf $p |- ( { x | ph } C_ A <-> A. x ( ph -> x e. A ) ) $=
+      ( cab wss cv wcel wi wal abid2f sseq2i ss2ab bitr3i ) ABEZCFOBGCHZBEZFAPI
+      BJQCOBCDKLAPBMN $.
+  $}
+
+  ${
+    rabssf.1 $e |- F/_ x B $.
+    $( Restricted class abstraction in a subclass relationship.  (Contributed
+       by Glauco Siliprandi, 26-Jun-2021.) $)
+    rabssf $p |- ( { x e. A | ph } C_ B <-> A. x e. A ( ph -> x e. B ) ) $=
+      ( crab wss cv wcel wa cab wi wral df-rab sseq1i abssf impexp albii df-ral
+      wal bitr4i 3bitri ) ABCFZDGBHZCIZAJZBKZDGUFUDDIZLZBTZAUHLZBCMZUCUGDABCNOU
+      FBDEPUJUEUKLZBTULUIUMBUEAUHQRUKBCSUAUB $.
+  $}
+
+  ${
     $d x A $.
     $( Class abstraction in a subclass relationship.  (Contributed by NM,
        16-Aug-2006.) $)
@@ -38480,6 +38543,15 @@ $)
       sylib ss2abim syl 3sstr4g ) ADGEHZBIZDJZUECIZDJZBDEKCDEKAUFUHLZDMZUGUINAB
       CLZDEOZUKFUMUEULLZDMUKULDEPUNUJDUEBCQRSUAUFUHDUBUCBDETCDETUD $.
     $( $j usage 'ss2rabd' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  ${
+    ss2rabdf.1 $e |- F/ x ph $.
+    ss2rabdf.2 $e |- ( ( ph /\ x e. A ) -> ( ps -> ch ) ) $.
+    $( Deduction of restricted abstraction subclass from implication.
+       (Contributed by Glauco Siliprandi, 21-Dec-2024.) $)
+    ss2rabdf $p |- ( ph -> { x e. A | ps } C_ { x e. A | ch } ) $=
+      ( wi ralrimia ss2rabd ) ABCDEABCHDEFGIJ $.
   $}
 
   ${
@@ -40818,6 +40890,29 @@ $)
        ` A ` .  (Contributed by NM, 17-Oct-2003.) $)
     n0f $p |- ( A =/= (/) <-> E. x x e. A ) $=
       ( c0 wne wceq wn cv wcel wex df-ne neq0f bitri ) BDEBDFGAHBIAJBDKABCLM $.
+  $}
+
+  ${
+    r19.3rzf.1 $e |- F/ x ph $.
+    r19.3rzf.2 $e |- F/_ x A $.
+    $( Restricted quantification of wff not containing quantified variable.
+       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
+    r19.3rzf $p |- ( A =/= (/) -> ( ph <-> A. x e. A ph ) ) $=
+      ( c0 wne cv wcel wex wi wral wb n0f biimt sylbi wal df-ral 19.23 bitri
+      bitr4di ) CFGZABHCIZBJZAKZABCLZUBUDAUEMBCENUDAOPUFUCAKBQUEABCRUCABDSTUA
+      $.
+  $}
+
+  ${
+    r19.28zf.1 $e |- F/ x ph $.
+    r19.28zf.2 $e |- F/_ x A $.
+    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is not empty.
+       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
+    r19.28zf $p |- ( A =/= (/) -> ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e.
+       A ps ) ) ) $=
+      ( c0 wne wa wral r19.26 r19.3rzf anbi1d bitr4id ) DGHZABICDJACDJZBCDJZIAQ
+      IABCDKOAPQACDEFLMN $.
   $}
 
   ${
@@ -46955,6 +47050,22 @@ $)
   $}
 
   ${
+    $d A y $.  $d B y $.  $d C y $.  $d x y $.
+    iindif2f.1 $e |- F/_ x A $.
+    iindif2f.2 $e |- F/_ x B $.
+    $( Indexed intersection of class difference.  Generalization of half of
+       theorem "De Morgan's laws".  (Contributed by Glauco Siliprandi,
+       24-Jan-2025.) $)
+    iindif2f $p |- ( A =/= (/) -> |^|_ x e. A ( B \ C ) = ( B \ U_ x e. A C ) )
+       $=
+      ( vy c0 wne cdif ciin ciun cv wcel wral wn wa nfcri r19.28zf eldif bicomi
+      ralbii wrex ralnex eliun xchbinxr anbi2i 3bitr3g wb cvv eliin elv 3bitr4g
+      eqrdv ) BHIZGABCDJZKZCABDLZJZUOGMZUPNZABOZUTCNZUTURNZPZQZUTUQNZUTUSNUOVCU
+      TDNZPZQZABOVCVIABOZQVBVFVCVIABAGCFRESVJVAABVAVJUTCDTUAUBVKVEVCVKVHABUCVDV
+      HABUDAUTBDUEUFUGUHVGVBUIGAUTBUPUJUKULUTCURTUMUN $.
+  $}
+
+  ${
     $d x A $.  $d x C $.  $d x D $.  $d x E $.
     eliuni.1 $e |- ( x = A -> B = C ) $.
     $( Membership in an indexed union, one way.  (Contributed by JJ,
@@ -47096,6 +47207,16 @@ $)
       ( vy wceq wral cv wcel cab ciin wb eleq2 ralimi syl abbidv df-iin 3eqtr4g
       ralbi ) CDFZABGZEHZCIZABGZEJUBDIZABGZEJABCKABDKUAUDUFEUAUCUELZABGUDUFLTUG
       ABCDUBMNUCUEABSOPAEBCQAEBDQR $.
+  $}
+
+  ${
+    iuneq2df.1 $e |- F/ x ph $.
+    iuneq2df.2 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Equality deduction for indexed union.  (Contributed by Glauco
+       Siliprandi, 17-Aug-2020.) $)
+    iuneq2df $p |- ( ph -> U_ x e. A B = U_ x e. A C ) $=
+      ( wceq wral ciun cv wcel ex ralrimi iuneq2 syl ) ADEHZBCIBCDJBCEJHAQBCFAB
+      KCLQGMNBCDEOP $.
   $}
 
   ${
@@ -60143,6 +60264,15 @@ $)
   $}
 
   ${
+    dmmptssf.1 $e |- F/_ x A $.
+    dmmptssf.2 $e |- F = ( x e. A |-> B ) $.
+    $( The domain of a mapping is a subset of its base class.  (Contributed by
+       Glauco Siliprandi, 23-Oct-2021.) $)
+    dmmptssf $p |- dom F C_ A $=
+      ( cdm cvv wcel crab dmmpt ssrab2f eqsstri ) DGCHIZABJBABCDFKNABELM $.
+  $}
+
+  ${
     $d A x $.
     $( The domain of the mapping operation is the stated domain, if the
        function value is always a set.  (Contributed by Mario Carneiro,
@@ -68231,6 +68361,19 @@ $)
       ( wcel cfv ffvelcdmda mpdan ) ADBHDEICHGABCDEFJK $.
   $}
 
+  ${
+    $d A x y $.  $d B x y $.  $d F x y $.
+    $( Union expressed as an indexed union, when a map onto is given.
+       (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
+    founiiun $p |- ( F : A -onto-> B -> U. B = U_ x e. A ( F ` x ) ) $=
+      ( vy wfo cuni cv ciun cfv uniiun wss wrex wral wcel wa wceq syl ralrimiva
+      iunss2 foelcdmi eqimss2 reximi fof ffvelcdmda ssidd rspcev syl2anc eqtrid
+      sseq2 eqssd ) BCDFZCGECEHZIZABAHZDJZIZECKULUNUQULUMUPLZABMZECNUNUQLULUSEC
+      ULUMCOPUPUMQZABMUSABCDUMUAUTURABUMUPUBUCRSEACBUMUPTRULUPUMLZECMZABNUQUNLU
+      LVBABULUOBOPZUPCOUPUPLZVBULBCUODBCDUDUEVCUPUFVAVDEUPCUMUPUPUJUGUHSAEBCUPU
+      MTRUKUI $.
+  $}
+
   $( A class is an element of the domain iff it's function value is an element
      of the codomain of a function.  (Contributed by AV, 22-Apr-2025.) $)
   feldmfvelcdm $p |- ( ( F : A --> B /\ (/) e/ B )
@@ -68582,6 +68725,43 @@ $)
        19-Mar-2005.)  (Revised by Mario Carneiro, 1-Sep-2015.) $)
     fmpti $p |- F : A --> B $=
       ( wcel wral wf rgen fmpt mpbi ) DCHZABIBCEJNABGKABCDEFLM $.
+  $}
+
+  ${
+    $d A y $.  $d B y $.  $d C y $.  $d x y $.
+    fmptff.1 $e |- F/_ x A $.
+    fmptff.2 $e |- F/_ x B $.
+    fmptff.3 $e |- F = ( x e. A |-> C ) $.
+    $( Functionality of the mapping operation.  (Contributed by Glauco
+       Siliprandi, 5-Jan-2025.) $)
+    fmptff $p |- ( A. x e. A C e. B <-> F : A --> B ) $=
+      ( vy wcel wral cv csb wf nfcv nfv nfcsb1v nfel weq cmpt eleq1d eqtri fmpt
+      csbeq1a cbvralfw cbvmptf bitri ) DCJZABKAILZDMZCJZIBKBCENUHUKAIBFIBOZUHIP
+      AUJCAUIDQZGRAISDUJCAUIDUDZUAUEIBCUJEEABDTIBUJTHAIBDUJFULIDOUMUNUFUBUCUG
+      $.
+  $}
+
+  ${
+    rnmptssff.1 $e |- F/_ x A $.
+    rnmptssff.2 $e |- F/_ x C $.
+    rnmptssff.3 $e |- F = ( x e. A |-> B ) $.
+    $( The range of a function given by the maps-to notation as a subset.
+       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
+    rnmptssff $p |- ( A. x e. A B e. C -> ran F C_ C ) $=
+      ( wcel wral wf crn wss fmptff frn sylbi ) CDIABJBDEKELDMABDCEFGHNBDEOP $.
+  $}
+
+  ${
+    rnmptssdff.1 $e |- F/ x ph $.
+    rnmptssdff.2 $e |- F/_ x A $.
+    rnmptssdff.3 $e |- F/_ x C $.
+    rnmptssdff.4 $e |- F = ( x e. A |-> B ) $.
+    rnmptssdff.5 $e |- ( ( ph /\ x e. A ) -> B e. C ) $.
+    $( The range of a function given by the maps-to notation as a subset.
+       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
+    rnmptssdff $p |- ( ph -> ran F C_ C ) $=
+      ( wcel wral crn wss ralrimia rnmptssff syl ) ADELZBCMFNEOASBCGKPBCDEFHIJQ
+      R $.
   $}
 
   ${
@@ -70385,6 +70565,36 @@ $)
         E. x e. I A e. ( F ` x ) ) ) $=
       ( wfn crn cuni wcel cv cfv cdm wrex wfun fnfun elunirn fndm rexeqdv bitrd
       wb syl ) CDEZBCFGHZBAICJHZACKZLZUCADLUACMUBUESDCNABCOTUAUCAUDDDCPQR $.
+  $}
+
+  ${
+    $d x y B $.  $d x y F $.  $d x y V $.  $d y ps $.
+    abfmpunirn.1 $e |- F = ( x e. V |-> { y | ph } ) $.
+    abfmpunirn.2 $e |- { y | ph } e. _V $.
+    abfmpunirn.3 $e |- ( y = B -> ( ph <-> ps ) ) $.
+    $( Membership in a union of a mapping function-defined family of sets.
+       (Contributed by Thierry Arnoux, 28-Sep-2016.) $)
+    abfmpunirn $p |- ( B e. U. ran F <-> ( B e. _V /\ E. x e. V ps ) ) $=
+      ( crn cuni wcel cvv wrex elex cab cv cfv wfn wb fnmpti fnunirn ax-mp wceq
+      fvmpt2 mpan2 eleq2d rexbiia bitri elabg rexbidv bitrid biadanii ) EFKLZMZ
+      ENMZBCGOZEUOPUPEADQZMZCGOZUQURUPECRZFSZMZCGOZVAFGTUPVEUACGUSFIHUBCEFGUCUD
+      VDUTCGVBGMZVCUSEVFUSNMVCUSUEICGUSNFHUFUGUHUIUJUQUTBCGABDENJUKULUMUN $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y F $.  $d x y V $.  $d y W $.  $d x y ps $.
+    $d y W $.
+    abfmpel.1 $e |- F = ( x e. V |-> { y | ph } ) $.
+    abfmpel.2 $e |- { y | ph } e. _V $.
+    abfmpel.3 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( Membership in an element of a mapping function-defined family of sets.
+       (Contributed by Thierry Arnoux, 19-Oct-2016.) $)
+    abfmpel $p |- ( ( A e. V /\ B e. W ) -> ( B e. ( F ` A ) <-> ps ) ) $=
+      ( wcel wa cab wb cvv wceq cv ancoms cfv wsbc csb csbex fvmpts mpan2 csbab
+      eqtrdi eleq2d adantr wi wal simpl adantll sbcied ex alrimiv elabgt sylan2
+      bitrd ) EHMZFIMZNFEGUAZMZFACEUBZDOZMZBVAVDVGPVBVAVCVFFVAVCCEADOZUCZVFVAVI
+      QMVCVIRCEVHKUDCEVHHGQJUEUFACDEUGUHUIUJVBVAVGBPZVAVBDSFRZVEBPZUKZDULVJVAVM
+      DVAVKVLVAVKNABCEHVAVKUMVKCSERZABPZVAVNVKVOLTUNUOUPUQVEBDFIURUSTUT $.
   $}
 
   ${
@@ -92814,6 +93024,11 @@ $)
     elpm2g syl ibi ) CABDEZFZCGZACHUFBIJZUEAKFBKFJZUEUGLUEUDMNUHUDCOABKDKKPDQRS
     TABCKKUAUBUC $.
 
+  $( The domain of a partial function.  (Contributed by Glauco Siliprandi,
+     26-Jun-2021.) $)
+  elpmi2 $p |- ( F e. ( A ^pm B ) -> dom F C_ B ) $=
+    ( cpm co wcel cdm wf wss elpmi simprd ) CABDEFCGZACHLBIABCJK $.
+
   $( A partial function is a function.  (Contributed by Mario Carneiro,
      30-Jan-2014.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
   pmfun $p |- ( F e. ( A ^pm B ) -> Fun F ) $=
@@ -96663,6 +96878,58 @@ $)
   $}
 
   ${
+    $d f g w x y z $.  $d f u x y $.  $d f w x y z A $.
+    $( For a finite set, a choice function exists, without using the axiom of
+       choice.  (Contributed by Glauco Siliprandi, 20-Apr-2017.) $)
+    fnchoice $p |- ( A e. Fin -> E. f ( f Fn A /\ A. x e. A ( x =/= (/) ->
+                                  ( f ` x ) e. x ) ) ) $=
+      ( vw cv wfn c0 wcel wral wa wex wceq anbi12d cvv a1i simplr adantr jca ex
+      syl vy vz vg vu wne cfv wi csn cun fneq2 raleq exbidv 0ex fneq1 fn0 mpbir
+      eqid ceqsexv2d ral0 exan cfn wn cop wf biimpi ad2antrl vex simpllr fsnunf
+      dffn2 syl121anc sylibr simprr nfra1 nfan simpr nelne2 necomd fvunsn neeq1
+      fveq2 eleq1d bitrd imbi12d cbvralvw rspcv biimtrrid syl3c eqeltrd simp-4l
+      nfv eleq2w elsni 3ad2ant2 simp1 eqtrd simp3 pm2.21ddne syl3anc elun sylib
+      w3a mpjaodan ralrimi syl21anc eximdv snex unex fveq1 imbi2d ralbidv spcev
+      eximi syl6 ax5e imp an32s cbvexvw neq0 exdistrv simprrl simprrr ad3antrrr
+      wo simpl simplrl cdm neleqtrrd fsnunfv 3eltr4d 2eximdv exlimiv findcard2s
+      fndmd pm2.61dan ) CEZDEZFZAEZGUEZYSYPUFZYSHZUGZAYQIZJZCKYPGFZUUCAGIZJZCKY
+      PUAEZFZUUCAUUIIZJZCKZYPUUIUBEZUHZUIZFZUUCAUUPIZJZCKZYPBFZUUCABIZJZCKDUAUB
+      BYQGLZUUEUUHCUVDYRUUFUUDUUGYQGYPUJUUCAYQGUKMULYQUUILZUUEUULCUVEYRUUJUUDUU
+      KYQUUIYPUJUUCAYQUUIUKMULYQUUPLZUUEUUSCUVFYRUUQUUDUURYQUUPYPUJUUCAYQUUPUKM
+      ULYQBLZUUEUVCCUVGYRUVAUUDUVBYQBYPUJUUCAYQBUKMULUUFUUGCUUFGGFZCGUMGYPGUNUV
+      HGGLGUQGUOUPURUUCAUSUTUUIVAHZUUNUUIHVBZJZUUMUUTUVKUUMJZUUNGLZUUTUVLUVMJUC
+      EZUUPFZYTYSUVNUFZYSHZUGZAUUPIZJZUCKZUUTUVKUVMUUMUWAUVKUVMJZUUMUWAUWBUUMUW
+      ACKZUWAUWBUUMYPUUNYQVCZUHZUIZUUPFZYTYSUWFUFZYSHZUGZAUUPIZJZCKUWCUWBUULUWL
+      CUWBUULUWLUWBUULJZUWGUWKUWMUUPNUWFVDZUWGUWMUUINYPVDZUUNNHZUVJYQNHZUWNUUJU
+      WOUWBUUKUUJUWOUUIYPVJZVEVFUWPUWMUBVGZOUVIUVJUVMUULVHZUWQUWMDVGZOUUINYPNUU
+      NYQVIZVKUUPUWFVJZVLUWMUVMUVJUUKUWKUVKUVMUULPUWTUWBUUJUUKVMUVMUVJJZUUKJZUW
+      JAUUPUXDUUKAUXDAWKUUCAUUIVNZVOUXEYSUUPHZUWJUXEUXGJZYTUWIUXHYTJZYSUUIHZUWI
+      YSUUOHZUXIUXJJZUWHUUAYSUXLUUNYSUEZUWHUUALZUXLUXJUVJJZUXMUXLUXJUVJUXIUXJVP
+      ZUXIUVJUXJUXHUVJYTUVMUVJUUKUXGVHQQRUXOYSUUNYSUUNUUIVQVRZTYPUUNYQYSVSZTUXL
+      UXJUUKYTUUBUXPUXIUUKUXJUXDUUKUXGYTVHQUXHYTUXJPUUKUDEZGUEZUXSYPUFZUXSHZUGZ
+      UDUUIIUXJUUCUYCUUCUDAUUIUXSYSLZUXTYTUYBUUBUXSYSGVTUYDUYBUUAUXSHUUBUYDUYAU
+      UAUXSUXSYSYPWAWBUDAUUAWLWCWDZWEUYCUUCUDYSUUIUYEWFWGZWHWIUXIUXKJUVMUXKYTUW
+      IUXIUVMUXKUVMUVJUUKUXGYTWJQUXIUXKVPUXHYTUXKPUVMUXKYTXBZUWIYSGUYGYSUUNGUXK
+      UVMYSUUNLZYTYSUUNWMZWNUVMUXKYTWOWPUVMUXKYTWQWRWSUXIUXGUXJUXKYDZUXEUXGYTPY
+      SUUIUUOWTZXAXCSSXDXERSXFUWLUWACUVTUWLUCUWFYPUWECVGUWDXGXHUVNUWFLZUVOUWGUV
+      SUWKUUPUVNUWFUNUYLUVRUWJAUUPUYLUVQUWIYTUYLUVPUWHYSYSUVNUWFXIWBXJXKMXLZXMX
+      NUWACXOZXNXPXQUUSUVTCUCYPUVNLZUUQUVOUURUVSUUPYPUVNUNUYOUUCUVRAUUPUYOUUBUV
+      QYTUYOUUAUVPYSYSYPUVNXIWBXJXKMXRZVLUVLUVMVBZJZUVJYQUUNHZDKZUUMJZJZUUTUYRU
+      VJVUAUVIUVJUUMUYQVHUYRUYTUUMUYRUYQUYTUVLUYQVPDUUNXSXAUVKUUMUYQPRRVUBUWAUU
+      TVUBUWCDKZUWAUVJVUAVUCVUAUYSUULJZCKDKUVJVUCUYSUULDCXTUVJVUDUWADCUVJVUDUWA
+      UVJVUDJZUWLUWAVUEUWGUWKVUEUWNUWGVUEUWOUWPUVJUWQUWNVUEUUJUWOUVJUYSUUJUUKYA
+      ZUWRXAUWPVUEUWSOUVJVUDYEUWQVUEUXAOUXBVKUXCVLVUEUWJAUUPUVJVUDAUVJAWKUYSUUL
+      AUYSAWKUUJUUKAUUJAWKUXFVOVOVOVUEUXGUWJVUEUXGJZYTUWIVUGYTJZUXJUWIUXKVUHUXJ
+      JZUWHUUAYSVUIUXOUXNVUIUXJUVJVUHUXJVPZUVJVUDUXGYTUXJWJRUXOUXMUXNUXQUXRTTVU
+      IUXJUUKYTUUBVUJVUEUUKUXGYTUXJUVJUYSUUJUUKYBYCVUGYTUXJPUYFWHWIVUHUXKJZYQUU
+      NUWHYSVUHUYSUXKVUGUYSYTUVJUYSUULUXGYFQQVUKUWHUUNUWFUFZYQVUKUYHUWHVULLVUKU
+      XKUYHVUHUXKVPUYITZYSUUNUWFWATVUKUWPUWQUUNYPYGZHVBVULYQLUWPVUKUWSOUWQVUKUX
+      AOVUKVUNUUIUUNUVJVUDUXGYTUXKWJVUKUUIYPVUEUUJUXGYTUXKVUFYCYNYHYPNNUUNYQYIW
+      SWPVUMYJVUHUXGUYJVUEUXGYTPUYKXAXCSSXDRUYMTSYKWGXPUWCUWADUYNYLTUYPVLTYOSYM
+      $.
+  $}
+
+  ${
     $d A x y z $.  $d ph x y z $.  $d ps y z $.  $d ch x $.  $d th x $.
     $d ta x $.  $d et x $.
     findcard2d.ch $e |- ( x = (/) -> ( ps <-> ch ) ) $.
@@ -99001,6 +99268,40 @@ $)
     abrexfi $p |- ( A e. Fin -> { y | E. x e. A y = B } e. Fin ) $=
       ( cfn wcel cv wceq wrex cab cmpt crn eqid rnmpt mptfi rnfi syl eqeltrrid
       ) CEFZBGDHACIBJACDKZLZEABCDTTMNSTEFUAEFACDOTPQR $.
+  $}
+
+  ${
+    $d A f g x $.  $d A g x y $.  $d B f g $.  $d B g y $.  $d g ph x y $.
+    choicefi.a $e |- ( ph -> A e. Fin ) $.
+    choicefi.b $e |- ( ( ph /\ x e. A ) -> B e. W ) $.
+    choicefi.n $e |- ( ( ph /\ x e. A ) -> B =/= (/) ) $.
+    $( For a finite set, a choice function exists, without using the axiom of
+       choice.  (Contributed by Glauco Siliprandi, 24-Dec-2020.) $)
+    choicefi $p |- ( ph -> E. f ( f Fn A /\ A. x e. A ( f ` x ) e. B ) ) $=
+      ( vg vy cv wfn cfv wcel wral wa wceq cvv syl2anc cmpt crn c0 wne wi mptfi
+      wex cfn rnfi fnchoice 4syl simpl simprl nfv nfan rspa adantll wrex wb vex
+      nfra1 eqid elrnmpt ax-mp bilani w3a simp3 3adant3 eqnetrd rexlimdv adantr
+      3exp mpd adantlr id imp ex ralrimi rsp adantrl ccom mptexd coexg 3ad2ant1
+      syl a1i wss simpr ralrimiva fnmpt ssidd fnco nfcv nfmpt1 nfrn nffn nfralw
+      syl3anc nf3an wfun cdm funmpt dmmptd eqcomd eleqtrd fvco fvmpt2 3ad2antl1
+      fveq2d eqtrd elrnmpt1 simpl3 fveq2 eleq12d rspcva eqeltrd fneq1 nfco nfeq
+      jca fveq1 eleq1d ralbid anbi12d spcegv sylc exlimdv ) AJLZBCDUAZUBZMZKLZU
+      CUDZYLYHNZYLOZUEZKYJPZQZJUGZELZCMZBLZYTNZDOZBCPZQZEUGZACUHOYIUHOYJUHOYSGB
+      CDUFYIUIKYJJUJUKAYRUUGJAYRUUGAYRQAYKYOKYJPZUUGAYRULAYKYQUMAYQUUHYKAYQQZYO
+      KYJAYQKAKUNYPKYJVAUOZUUIUUHYLYJOZYOUEUUIYOKYJUUJUUIUUKYOUUIUUKQYPYMYOYQUU
+      KYPAYPKYJUPUQAUUKYMYQAUUKQYLDRZBCURZYMUUKUUMAYLSOUUKUUMUSKUTBCDYLYISYIVBZ
+      VCVDVEAUUMYMUEUUKAUULYMBCAUUBCOZUULYMAUUOUULVFYLDUCAUUOUULVGAUUODUCUDUULI
+      VHVIVLVJVKVMVNYPYMYOYPVOVPTVQVRYOKYJVSWEVRVTAYKUUHVFZYHYIWAZSOZUUQCMZUUBU
+      UQNZDOZBCPZQZUUGAYKUURUUHAYHSOZYISOUURUVDAJUTWFABCDUHGWBYHYISSWCTWDUUPUUS
+      UVBAYKUUSUUHAYKQZYKYICMZYJYJWGUUSAYKWHAUVFYKADFOZBCPUVFAUVGBCHWIBCDYIFUUN
+      WJWEVKUVEYJWKYJCYHYIWLWRVHUUPUVABCAYKUUHBABUNBYJYHBYHWMZBYIBCDWNZWOZWPYOB
+      KYJUVJYOBUNWQWSUUPUUOUVAUUPUUOQZUUTDYHNZDAYKUUOUUTUVLRUUHAUUOQZUUTUUBYINZ
+      YHNZUVLUVMYIWTZUUBYIXAZOUUTUVORUVPUVMBCDXBWFUVMUUBCUVQAUUOWHZACUVQRUUOAUV
+      QCABYICDFUUNHXCXDVKXEUUBYHYIXFTUVMUVNDYHUVMUUOUVGUVNDRUVRHBCDFYIUUNXGTXIX
+      JXHUVKDYJOZUUHUVLDOZAYKUUOUVSUUHUVMUUOUVGUVSUVRHBCDYIFUUNXKTXHAYKUUHUUOXL
+      YOUVTKDYJUULYNUVLYLDYLDYHXMUULVOXNXOTXPVQVRXTUUFUVCEUUQSYTUUQRZUUAUUSUUEU
+      VBCYTUUQXQUWAUUDUVABCBYTUUQBYTWMBYHYIUVHUVIXRXSUWAUUCUUTDUUBYTUUQYAYBYCYD
+      YEYFWRVQYGVM $.
   $}
 
   ${
@@ -103493,6 +103794,13 @@ $)
       wa wi peano5 sylan2 eximii exlimiiv ) CADZEZCFGACUCAHIJUCGZBDZKUCGZBUCLZQ
       UDAABMUHUEBANUGRZBCLUDUGUIBUCCUIUFCGOPBUCSTUAUB $.
   $}
+
+  $( A singleton is countable.  (Contributed by Thierry Arnoux,
+     16-Sep-2016.) $)
+  snct $p |- ( A e. V -> { A } ~<_ _om ) $=
+    ( wcel csn c1o cen wbr com cdom ensn1g c0 csdm wne peano1 ne0ii 0sdom mpbir
+    omex 0sdom1dom mpbi endomtr sylancl ) ABCADZEFGEHIGZUCHIGABJKHLGZUDUEHKMKHN
+    OHRPQHSTUCEHUAUB $.
 
   ${
     $d x y z w $.
@@ -111423,6 +111731,21 @@ $)
     ( wfo ccrd cdm wcel wacn cdom wbr cvv focdmex com12 numacn syli fodomacn )
     ABCDZAEFZGZABHGZBAIJQSTSQBKGZTSQUAABRCLMBKANOMABCPO $.
 
+  ${
+    rn1st.1 $e |- F/_ x B $.
+    $( The range of a function with a first-countable domain is itself
+       first-countable.  This is a variation of ~ 1stcrestlem , with a not-free
+       hypothesis replacing a disjoint variable constraint.  (Contributed by
+       Glauco Siliprandi, 24-Jan-2025.) $)
+    rn1st $p |- ( B ~<_ _om -> ran ( x e. B |-> C ) ~<_ _om ) $=
+      ( com cdom wbr cmpt crn cdm ccrd wcel wfo wss con0 word cvv mpancom domtr
+      mpisyl ordom wb reldom brrelex2i elong mpbiri ondomen eqid dmmptssf ssnum
+      syl sylancl wfun funmpt funforn mpbi fodomnum ctex ssdomg syl2anc ) BEFGZ
+      ABCHZIZVBJZFGZVDEFGZVCEFGVAVDKJZLZVDVCVBMZVEVABVGLZVDBNZVHEOLZVAVJVAVLEPZ
+      UAVAEQLVLVMUBBEFUCUDEQUEUKUFEBUGRABCVBDVBUHUIZBVDUJULVBUMVIABCUNVBUOUPVDV
+      CVBUQTVDBFGZVAVFVABQLVKVOBURVNVDBQUSTVDBESRVCVDESUT $.
+  $}
+
   $( A surjection maps numerable sets to numerable sets.  (Contributed by Mario
      Carneiro, 30-Apr-2015.) $)
   fonum $p |- ( ( A e. dom card /\ F : A -onto-> B ) -> B e. dom card ) $=
@@ -113703,6 +114026,12 @@ $)
     CBHZDEZVLVIDEZVJVAUTVGVMVHACBIUBUCVBVACIJVNUTVAUDQBCCIUEMVDVLVINOVICCPZDEZV
     OCUFEVKVOIJVIVORVPCCQQUGVISCPZVOCUHSCRZVQVORCUISCJVRUJUKCSULTSCCUMUNUOVIVOI
     UPUQURVIVOCUSTVDVICNMVCVDCNO $.
+
+  $( An unordered pair is countable.  (Contributed by Thierry Arnoux,
+     16-Sep-2016.) $)
+  prct $p |- ( ( A e. V /\ B e. W ) -> { A , B } ~<_ _om ) $=
+    ( wcel wa cpr csn cun com cdom df-pr wbr snct unctb syl2an eqbrtrid ) ACEZB
+    DEZFABGAHZBHZIZJKABLRTJKMUAJKMUBJKMSACNBDNTUAOPQ $.
 
   $( Absorption law for addition to an infinite cardinal.  (Contributed by NM,
      30-Sep-2004.)  (Revised by Mario Carneiro, 29-Apr-2015.) $)
@@ -117557,6 +117886,30 @@ $)
   $}
 
   ${
+    $d X f g z $.  $d X g x z $.  $d g ph z $.
+    axccdom.1 $e |- ( ph -> X ~<_ _om ) $.
+    axccdom.2 $e |- ( ( ph /\ z e. X ) -> z =/= (/) ) $.
+    $( Relax the constraint on ax-cc to dominance instead of equinumerosity.
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    axccdom $p |- ( ph -> E. f ( f Fn X /\ A. z e. X ( f ` z ) e. z ) ) $=
+      ( vg vx wcel cv cfv wral wa wex simpr adantlr com cen wbr cvv cfn wfn wne
+      c0 choicefi cdom csdm adantr isfinite2 con3i adantl jca bren2 sylibr ctex
+      wn syl wceq breq1 raleq exbidv imbi12d ax-cc vtoclg sylc cmpt mptexd fvex
+      wi rgenw eqid fnmpt ax-mp a1i nfv nfra1 id fvmpt2 syl2anc adantll eqeltrd
+      nfan rspa ex ralrimi fneq1 nfcv nfmpt1 fveq1 eleq1d ralbid anbi12d spcegv
+      nfeq exlimdv mpd syldan pm2.61dan ) ADUAIZCJZDUBZBJZWTKZXBIZBDLZMZCNZAWSM
+      ZBDXBCDAWSOXHXBDIZOAXIXBUDUCZWSFPUEAWSUPZDQRSZXGAXKMZDQUFSZDQUGSZUPZMXLXM
+      XNXPAXNXKEUHXKXPAXOWSDUIUJUKULDQUMUNAXLMZXJXBGJZKZXBIZVIZBDLZGNZXGXQDTIZX
+      LYCAYDXLAXNYDEDUOUQZUHAXLOHJZQRSZYABYFLZGNZVIXLYCVIHDTYFDURZYGXLYIYCYFDQR
+      USYJYHYBGYABYFDUTVAVBHBGVCVDVEXQYBXGGXQYBXGAYBXGXLAYBMZBDXSVFZTIZYLDUBZXB
+      YLKZXBIZBDLZMZXGAYMYBABDXSTYEVGUHYKYNYQYNYKXSTIZBDLYNYSBDXBXRVHZVJBDXSYLT
+      YLVKZVLVMVNYKYPBDAYBBABVOYABDVPWBYKXIYPYKXIMZYOXSXBXIYOXSURZYKXIXIYSUUCXI
+      VQYSXIYTVNBDXSTYLUUAVRVSUKUUBYAXJXTYBXIYAAYABDWCVTAXIXJYBFPYAVQVEWAWDWEUL
+      XFYRCYLTWTYLURZXAYNXEYQDWTYLWFUUDXDYPBDBWTYLBWTWGBDXSWHWNUUDXCYOXBXBWTYLW
+      IWJWKWLWMVEPWDWOWPWQWR $.
+  $}
+
+  ${
     $d A a f z $.  $d A k n $.  $d A f n $.  $d F f g $.  $d G g n $.
     $d K n $.  $d n z $.
     axcc2lem.1 $e |- K = ( n e. _om |->
@@ -119806,6 +120159,30 @@ $)
     PVMVODDIZEFZWGDUOFVQVMVODVNIZEFZWIWGEFZWHVKVLWDWJWEADVNJUPQVMDJKVNDEFZWKUQV
     KVLVNAEFZWLVMAURRKZVKWMVMDUSKZVLWNWOVMUTVDVKVLVADAVBSVKVLVCABVEPVNADTQVNDDJ
     VFVGVOWIWGTSVHVOWGDVIVJBVODTS $.
+
+  ${
+    mptctf.m1 $e |- F/_ x A $.
+    $( A countable mapping set is countable, using bound-variable hypotheses
+       instead of distinct variable conditions.  (Contributed by Thierry
+       Arnoux, 8-Mar-2017.) $)
+    mptctf $p |- ( A ~<_ _om -> ( x e. A |-> B ) ~<_ _om ) $=
+      ( com cdom wbr cmpt wfun cdm funmpt cvv wcel wss ctex crab eqid dmmpt cab
+      eqsstri cv df-rab simpl ss2abi abid2f sseqtri ssdomg mpisyl domtr mpancom
+      wa wfn funfn fnct sylanb sylancr ) BEFGZABCHZIZURJZEFGZUREFGZABCKUTBFGZUQ
+      VAUQBLMUTBNVCBOUTCLMZABPZBABCURURQRVEAUABMZVDUKZASZBVDABUBVHVFASBVGVFAVFV
+      DUCUDABDUEUFTTUTBLUGUHUTBEUIUJUSURUTULVAVBURUMUTURUNUOUP $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    abrexctf.m1 $e |- F/_ x A $.
+    $( An image set of a countable set is countable, using bound-variable
+       hypotheses instead of distinct variable conditions.  (Contributed by
+       Thierry Arnoux, 8-Mar-2017.) $)
+    abrexctf $p |- ( A ~<_ _om -> { y | E. x e. A y = B } ~<_ _om ) $=
+      ( com cdom wbr cv wceq wrex cab cmpt crn eqid rnmpt mptctf rnct eqbrtrrid
+      syl ) CFGHZBIDJACKBLACDMZNZFGABCDUBUBOPUAUBFGHUCFGHACDEQUBRTS $.
+  $}
   $( $j usage 'fnct' avoids 'ax-ac' 'ax-ac2'; $)
 
   $( Obsolete version of ~ fnct as of 26-Aug-2026.  (Contributed by Thierry
@@ -130002,6 +130379,14 @@ $)
   ressxr $p |- RR C_ RR* $=
     ( cr cpnf cmnf cpr cun cxr ssun1 df-xr sseqtrri ) AABCDZEFAJGHI $.
 
+  ${
+    frexr.1 $e |- ( ph -> F : A --> RR ) $.
+    $( A function taking real values, is a function taking extended real
+       values.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    frexr $p |- ( ph -> F : A --> RR* ) $=
+      ( cr cxr wss ressxr a1i fssd ) ABEFCDEFGAHIJ $.
+  $}
+
   $( The Cartesian product of standard reals are a subset of the Cartesian
      product of extended reals.  (Contributed by David A. Wheeler,
      8-Dec-2018.) $)
@@ -130152,6 +130537,44 @@ $)
        Siliprandi, 3-Mar-2021.) $)
     xrltnled $p |- ( ph -> ( A < B <-> -. B <_ A ) ) $=
       ( cxr wcel clt wbr cle wn wb xrltnle syl2anc ) ABFGCFGBCHICBJIKLDEBCMN $.
+  $}
+
+  ${
+    $d A x $.
+    preimagelt.x $e |- F/ x ph $.
+    preimagelt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    preimagelt.c $e |- ( ph -> C e. RR* ) $.
+    $( The preimage of a right-open, unbounded below interval, is the
+       complement of a left-closed unbounded above interval.  (Contributed by
+       Glauco Siliprandi, 26-Jun-2021.) $)
+    preimagelt $p |- ( ph -> ( A \ { x e. A | C <_ B } ) = { x e. A | B < C } )
+                   $=
+      ( cle wbr crab nfrab1 wcel wa adantl rabid cxr sylan2 adantr xrltnled clt
+      cdif nfcv nfdif cv eldifi wn eldifn anim1i sylibr mtand sylanbrc rabidim1
+      mpbird rabidim2 mpbid intnand sylnibr eldifd impbida eqrd ) ABCEDIJZBCKZU
+      BZDEUAJZBCKZFBCVCBCUCVBBCLUDVEBCLABUEZVDMZVGVFMZAVHNZVGCMZVEVIVHVKAVGCVCU
+      FZOVJVEVBUGZVHVMAVHVBVGVCMZVGCVCUHVHVBNVKVBNZVNVHVKVBVLUIVBBCPZUJUKOVJDEV
+      HAVKDQMZVLGRAEQMZVHHSTUNVEBCPULAVINZVGCVCVIVKAVEBCUMZOVSVOVNVSVBVKVSVEVMV
+      IVEAVEBCUOOVSDEVIAVKVQVTGRAVRVIHSTUPUQVPURUSUTVA $.
+  $}
+
+  ${
+    $d A x $.
+    preimalegt.x $e |- F/ x ph $.
+    preimalegt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    preimalegt.c $e |- ( ph -> C e. RR* ) $.
+    $( The preimage of a left-open, unbounded above interval, is the complement
+       of a right-closed unbounded below interval.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    preimalegt $p |- ( ph -> ( A \ { x e. A | B <_ C } ) = { x e. A | C < B } )
+                   $=
+      ( cle wbr crab nfrab1 wcel wa adantl rabid cxr adantr sylan2 xrltnled clt
+      cdif nfcv nfdif cv eldifi wn eldifn anim1i sylibr mtand sylanbrc rabidim1
+      mpbird rabidim2 mpbid intnand sylnibr eldifd impbida eqrd ) ABCDEIJZBCKZU
+      BZEDUAJZBCKZFBCVCBCUCVBBCLUDVEBCLABUEZVDMZVGVFMZAVHNZVGCMZVEVIVHVKAVGCVCU
+      FZOVJVEVBUGZVHVMAVHVBVGVCMZVGCVCUHVHVBNVKVBNZVNVHVKVBVLUIVBBCPZUJUKOVJEDA
+      EQMZVHHRVHAVKDQMZVLGSTUNVEBCPULAVINZVGCVCVIVKAVEBCUMZOVSVOVNVSVBVKVSVEVMV
+      IVEAVEBCUOOVSEDAVQVIHRVIAVKVRVTGSTUPUQVPURUSUTVA $.
   $}
 
   ${
@@ -138584,6 +139007,11 @@ $)
       ABSUO $.
   $}
 
+  $( The set of positive integers is nonempty.  (Contributed by Glauco
+     Siliprandi, 8-Apr-2021.) $)
+  nnn0 $p |- NN =/= (/) $=
+    ( c1 cn 1nn ne0ii ) ABCD $.
+
   ${
     nnred.1 $e |- ( ph -> A e. NN ) $.
     $( A positive integer is a real number.  (Contributed by Mario Carneiro,
@@ -138754,6 +139182,18 @@ $)
        Carneiro, 18-Feb-2014.) $)
     nnmulcli $p |- ( A x. B ) e. NN $=
       ( cn wcel cmul co nnmulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  ${
+    nnaddcli.1 $e |- A e. NN $.
+    nnaddcli.2 $e |- B e. NN $.
+    $( Closure of addition of positive integers, in inference form.  Inference
+       associated with ~ nnaddcl .  The multiplication counterpart is the
+       existing ~ nnmulcli .  Proof supplied by Owen Orger.  AI-assisted
+       naming, description, and verification by OpenAI Codex.  (Contributed by
+       Owen Orger, 11-Nov-2026.) $)
+    nnaddcli $p |- ( A + B ) e. NN $=
+      ( cn wcel wa caddc co pm3.2i nnaddcl ax-mp ) AEFZBEFZGABHIEFMNCDJABKL $.
   $}
 
   ${
@@ -145225,6 +145665,11 @@ $)
   rpreccl $p |- ( A e. RR+ -> ( 1 / A ) e. RR+ ) $=
     ( c1 crp wcel cdiv co 1rp rpdivcl mpan ) BCDACDBAEFCDGBAHI $.
 
+  $( The reciprocal of a positive natural number is a positive real number.
+     (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+  nnrecrp $p |- ( N e. NN -> ( 1 / N ) e. RR+ ) $=
+    ( cn wcel crp c1 cdiv co nnrp rpreccl syl ) ABCADCEAFGDCAHAIJ $.
+
   $( Closure law for half of a positive real.  (Contributed by Mario Carneiro,
      31-Jan-2014.) $)
   rphalfcl $p |- ( A e. RR+ -> ( A / 2 ) e. RR+ ) $=
@@ -145976,6 +146421,18 @@ $)
     wa df-ne renemnf pnfnemnf neeq1 mpbiri jaoi neneqd pm4.71i 3bitr4i ) ABCZAD
     EZFZAGEZFZUJHZQUIULQAICZAGJZQUIUIUJKUMUKUNULUMUGUHUJLUKAMUGUHUJNOAGRPUIULUI
     AGUGUNUHASUHUNDGJTADGUAUBUCUDUEUF $.
+
+  ${
+    xrred.1 $e |- ( ph -> A e. RR* ) $.
+    xrred.2 $e |- ( ph -> A =/= -oo ) $.
+    xrred.3 $e |- ( ph -> A =/= +oo ) $.
+    $( An extended real that is neither minus infinity, nor plus infinity, is
+       real.  (Contributed by Glauco Siliprandi, 3-Mar-2021.) $)
+    xrred $p |- ( ph -> A e. RR ) $=
+      ( cr wcel cpnf wceq wo wn cxr cmnf wne wa jca xrnemnf sylib neneqd pm2.53
+      con1d sylc ) ABFGZBHIZJZUDKUCABLGZBMNZOUEAUFUGCDPBQRABHESUEUCUDUCUDTUAUB
+      $.
+  $}
 
   $( An extended real other than plus infinity is real or negative infinite.
      (Contributed by Mario Carneiro, 20-Aug-2015.) $)
@@ -149094,6 +149551,35 @@ $)
       DR $.
   $}
 
+  ${
+    eliood.1 $e |- ( ph -> A e. RR* ) $.
+    eliood.2 $e |- ( ph -> B e. RR* ) $.
+    eliood.3 $e |- ( ph -> C e. RR ) $.
+    eliood.4 $e |- ( ph -> A < C ) $.
+    eliood.5 $e |- ( ph -> C < B ) $.
+    $( Membership in an open real interval.  (Contributed by Glauco Siliprandi,
+       11-Dec-2019.) $)
+    eliood $p |- ( ph -> C e. ( A (,) B ) ) $=
+      ( cioo co wcel cr clt wbr cxr w3a wb elioo2 syl2anc mpbir3and ) ADBCJKLZD
+      MLZBDNOZDCNOZGHIABPLCPLUBUCUDUEQREFBCDSTUA $.
+  $}
+
+  $( An element of a left-closed right-open interval is less than its upper
+     bound.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+  icoltub $p |- ( ( A e. RR* /\ B e. RR* /\ C e. ( A [,) B ) ) -> C < B ) $=
+    ( cxr wcel cico co clt wbr wa cle w3a elico1 simp3 biimtrdi 3impia ) ADEZBD
+    EZCABFGEZCBHIZQRJSCDEZACKIZTLTABCMUAUBTNOP $.
+
+  ${
+    icoltubd.1 $e |- ( ph -> A e. RR* ) $.
+    icoltubd.2 $e |- ( ph -> B e. RR* ) $.
+    icoltubd.3 $e |- ( ph -> C e. ( A [,) B ) ) $.
+    $( An element of a left-closed right-open interval is less than its upper
+       bound.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    icoltubd $p |- ( ph -> C < B ) $=
+      ( cxr wcel cico co clt wbr icoltub syl3anc ) ABHICHIDBCJKIDCLMEFGBCDNO $.
+  $}
+
   $( Alternate definition of the positive real numbers.  (Contributed by
      Thierry Arnoux, 4-May-2020.) $)
   dfrp2 $p |- RR+ = ( 0 (,) +oo ) $=
@@ -149113,6 +149599,22 @@ $)
     elicod $p |- ( ph -> C e. ( A [,) B ) ) $=
       ( cico co wcel cxr cle wbr clt w3a wb elico1 syl2anc mpbir3and ) ADBCJKLZ
       DMLZBDNOZDCPOZGHIABMLCMLUBUCUDUEQREFBCDSTUA $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d F x $.  $d ph x $.
+    preimaicomnf.1 $e |- ( ph -> F : A --> RR* ) $.
+    preimaicomnf.2 $e |- ( ph -> B e. RR* ) $.
+    $( Preimage of an open interval, unbounded below.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    preimaicomnf $p |- ( ph -> ( `' F " ( -oo [,) B ) ) = { x e. A | ( F ` x )
+       < B } ) $=
+      ( ccnv cmnf wcel crab wbr cxr wa mnfxr a1i ad2antrr simpr ex adantr co cv
+      cico cima cfv clt wfn wceq ffnd syl icoltub syl3anc ffvelcdmda cle mnfled
+      fncnvima2 elicod impbid rabbidva eqtrd ) AEHIDUCUAZUDZBUBZEUEZVAJZBCKZVDD
+      UFLZBCKAECUGVBVFUHACMEFUIBCVAEUPUJAVEVGBCAVCCJZNZVEVGVIVEVGVIVENZIMJZDMJZ
+      VEVGVKVJOPAVLVHVEGQVIVERIDVDUKULSVIVGVEVIVGNZIDVDVKVMOPAVLVHVGGQVIVDMJVGA
+      CMVCEFUMZTVIIVDUNLVGVIVDVNUOTVIVGRUQSURUSUT $.
   $}
 
   $( An element of a left-closed right-open interval is greater than or equal
@@ -149483,6 +149985,32 @@ $)
       ( A <_ C /\ D <_ B ) ) -> ( C (,) D ) C_ ( A (,) B ) ) $=
       ( va vb vx vw cioo clt cle df-ioo cv xrlelttr xrltletr ixxss12 ) EFGHABCD
       IJJJJIKKEFGLZQACHMZNRDBOP $.
+  $}
+
+  ${
+    $d A x $.  $d ph x $.
+    icomnfinre.1 $e |- ( ph -> A e. RR* ) $.
+    $( A left-closed, right-open, interval of extended reals, intersected with
+       the Reals.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    icomnfinre $p |- ( ph -> ( ( -oo [,) A ) i^i RR ) = ( -oo (,) A ) ) $=
+      ( vx cmnf cico co cr cin cioo cv wcel cxr mnfxr a1i adantr elinel2 adantl
+      wa mnfltd elinel1 icoltubd eliood ssd wss ioossico ioossre ssini eqssd )
+      AEBFGZHIZEBJGZADUKULADKZUKLZSZEBUMEMLUONOZABMLUNCPZUNUMHLAUMUJHQRZUOUMURT
+      UOEBUMUPUQUNUMUJLAUMUJHUARUBUCUDULUKUEAULUJHEBUFEBUGUHOUI $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d F x $.  $d ph x $.
+    preimaioomnf.1 $e |- ( ph -> F : A --> RR ) $.
+    preimaioomnf.2 $e |- ( ph -> B e. RR* ) $.
+    $( Preimage of an open interval, unbounded below.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    preimaioomnf $p |- ( ph -> ( `' F " ( -oo (,) B ) ) = { x e. A | ( F ` x )
+       < B } ) $=
+      ( ccnv cmnf cioo co cima cico cv cfv clt wbr crab cr cin crn fimacnvinrn2
+      wfun wceq ffund frnd syl2anc icomnfinre imaeq2d eqtr2d frexr preimaicomnf
+      wss eqtrd ) AEHZIDJKZLZUOIDMKZLZBNEODPQBCRAUSUOURSTZLZUQAEUCEUASUMUSVAUDA
+      CSEFUEACSEFUFURSEUBUGAUTUPUOADGUHUIUJABCDEACEFUKGULUN $.
   $}
 
   ${
@@ -154164,6 +154692,83 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Bounds using reciprocal integers
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+
+  ${
+    $d A n $.
+    $( Any positive real number is greater than the reciprocal of a positive
+       integer.  (Contributed by Glauco Siliprandi, 8-Apr-2021.) $)
+    rpgtrecnn $p |- ( A e. RR+ -> E. n e. NN ( 1 / n ) < A ) $=
+      ( crp wcel c1 cdiv co cfl cfv caddc cn clt wbr cv wrex cn0 cr cc0 syl2anc
+      syl rpreccl rpred rpge0d flge0nn0 nn0p1nn flltp1 nnrpd ltrecd mpbid rpne0
+      cle rpcn recrecd breqtrd wceq oveq2 breq1d rspcev ) ACDZEAFGZHIZEJGZKDZEV
+      BFGZALMZEBNZFGZALMZBKOUSVAPDZVCUSUTQDZRUTUKMVIUSUTAUAZUBZUSUTVKUCUTUDSVAU
+      ETZUSVDEUTFGZALUSUTVBLMZVDVNLMUSVJVOVLUTUFTUSUTVBVKUSVBVMUGUHUIUSAAULAUJU
+      MUNVHVEBVBKVFVBUOVGVDALVFVBEFUPUQURS $.
+  $}
+
+  ${
+    $d A n x $.  $d B n x $.  $d ph x $.
+    xrralrecnnle.n $e |- F/ n ph $.
+    xrralrecnnle.a $e |- ( ph -> A e. RR* ) $.
+    xrralrecnnle.b $e |- ( ph -> B e. RR ) $.
+    $( Show that ` A ` is less than ` B ` by showing that there is no positive
+       bound on the difference.  (Contributed by Glauco Siliprandi,
+       8-Apr-2021.) $)
+    xrralrecnnle $p |- ( ph -> ( A <_ B <-> A. n e. NN A <_ ( B + ( 1 / n ) ) )
+       ) $=
+      ( vx cle wbr co cn wa nfv wcel cxr ad2antrr adantl crp ex c1 cv cdiv wral
+      caddc nfan adantr nnrecre readdcld rexrd adantlr rexr syl simplr clt nnrp
+      cr rpreccl ltaddrpd xrlelttrd xrltled ralrimi wrex rpgtrecnn nfra1 simpll
+      wi rspa adantll jca simpr ad4antr rpre ad5ant13 ad5ant14 simp-4r ad2antlr
+      ltadd2dd adantl3r syl21anc rexlimd mpd ralrimiva wb syl2anc mpbird impbid
+      xralrple ) ABCIJZBCUADUBZUCKZUEKZIJZDLUDZAWIWNAWIMZWMDLAWIDEWIDNUFWOWJLOZ
+      WMWOWPMZBWLABPOZWIWPFQZAWPWLPOZWIAWPMZWLXACWKACUQOZWPGUGZWPWKUQOZAWJUHZRU
+      IUJZUKZWQBCWLWSACPOZWIWPAXBXHGCULUMQXGAWIWPUNAWPCWLUOJWIXACWKXCWPWKSOZAWP
+      WJSOXIWJUPWJURUMRUSUKUTVATVBTAWNWIAWNMZWIBCHUBZUEKZIJZHSUDZXJXMHSXJXKSOZM
+      ZWKXKUOJZDLVCZXMXOXRXJXKDVDRXPXQXMDLXJXODAWNDEWMDLVEUFXODNUFXMDNXPWPXQXMV
+      GZXPWPMAWMMZXOWPXSXJWPXTXOXJWPMAWMAWNWPVFWNWPWMAWMDLVHVIVJUKXJXOWPUNXPWPV
+      KXTXOMWPMZXQXMYAXQMZBXLAWRWMXOWPXQFVLZAXOXLPOWMWPXQAXOMZXLYDCXKAXBXOGUGZX
+      OXKUQOZAXKVMRZUIUJVNZYBBWLXLYCAWPWTWMXOXQXFVOYHAWMXOWPXQVPAXOWPXQWLXLUOJW
+      MYDWPMZXQMWKXKCWPXDYDXQXEVQYDYFWPXQYGQYDXBWPXQYEQYIXQVKVRVSUTVATVTTWAWBWC
+      AWIXNWDZWNAWRXBYJFGHBCWHWEUGWFTWG $.
+  $}
+
+  ${
+    $d A n $.  $d B n $.
+    xrralrecnnge.n $e |- F/ n ph $.
+    xrralrecnnge.a $e |- ( ph -> A e. RR ) $.
+    xrralrecnnge.b $e |- ( ph -> B e. RR* ) $.
+    $( Show that ` A ` is less than ` B ` by showing that there is no positive
+       bound on the difference.  (Contributed by Glauco Siliprandi,
+       26-Jun-2021.) $)
+    xrralrecnnge $p |- ( ph -> ( A <_ B <-> A. n e. NN ( A - ( 1 / n ) ) <_ B )
+       ) $=
+      ( cle wbr c1 co cn wa wcel cxr adantr adantl ad2antrr cpnf cmnf cdiv cmin
+      cv wral nfv nfan nnrecre resubcld rexrd adantlr clt crp rpreccld ltsubrpd
+      cr nnrp simplr xrltletrd xrltled ex ralrimi wceq pnfxr a1i ltpnfd breqtrd
+      id eqcomd wn wne 1nn oveq2 oveq2d breq1d rspcva syl2anc simpr adantll cc0
+      ax-1ne0 redivcld mnfltd mnfxr xrltnled mpbid pm2.65da neqned xrralrecnnle
+      neqne xrred caddc lesubaddd bicomd ralbida bitr2d biimpd imp an32s syldan
+      1red pm2.61dan impbid ) ABCHIZBJDUCZUAKZUBKZCHIZDLUDZAXCXHAXCMZXGDLAXCDEX
+      CDUEUFXIXDLNZXGXIXJMZXFCAXJXFONXCAXJMZXFXLBXEABUONZXJFPZXJXEUONZAXDUGZQUH
+      UIUJZACONZXCXJGRZXKXFBCXQABONZXCXJABFUIZRXSAXJXFBUKIXCXLBXEXNXJXEULNAXJXD
+      XDUPUMQUNUJAXCXJUQURUSUTVAUTAXHXCAXHMZCSVBZXCYBYCMBSCHABSHIXHYCABSYASONAV
+      CVDABFVEUSRYCSCVBYBYCCSYCVGVHQVFYBYCVIZCUONZXCYBYDMCAXRXHYDGRYBCTVJYDYBCT
+      YBCTVBZBJJUAKZUBKZTHIZXHYFYIAXHYFMYHCTHXHYHCHIZYFXHJLNZXHYJYKXHVKVDXHVGXG
+      YJDJLXDJVBZXFYHCHYLXEYGBUBXDJJUAVLVMVNVOVPPXHYFVQVFVRAYIVIZXHYFATYHUKIYMA
+      YHABYGFAJJAWTZYNJVSVJAVTVDWAUHZWBATYHTONAWCVDAYHYOUIWDWERWFWGPYDCSVJYBCSW
+      IQWJAYEXHXCAYEMZXHXCYPXHXCYPXCBCXEWKKHIZDLUDXHYPBCDAYEDEYEDUEUFZAXTYEYAPA
+      YEVQZWHYPYQXGDLYRYPXJMZXGYQYTBXECAXJXMYEXNUJXJXOYPXPQYPYEXJYSPWLWMWNWOWPW
+      QWRWSXAUTXB $.
+  $}
+
+
+$(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   The modulo (remainder) operation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -155652,6 +156257,18 @@ $)
       ( vx com cn0 cn cvv wcel cv c1 caddc cmpt cc0 crdg cres wf1o cen wbr omex
       co nn0ex eqid hashgf1o f1oen2g mp3an nn0ennn entr2i ) BCDBEFCEFBCAEAGHIRJ
       KLBMZNBCOPQSAUFUFTUABCUFEEUBUCUDUE $.
+  $}
+
+  ${
+    $d A f $.
+    $( There exists a mapping from ` NN ` onto any (nonempty) countable set.
+       (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
+    nnfoctb $p |- ( ( A ~<_ _om /\ A =/= (/) ) -> E. f f : NN -onto-> A ) $=
+      ( com cdom wbr c0 wne wa csdm cn cv wfo wex simpr wb cvv wcel wrel adantr
+      a1i reldom brrelex1 mpancom 0sdomg syl mpbird nnenom ensymi domentr mpdan
+      cen fodomr syl2anc ) ACDEZAFGZHZFAIEZAJDEZJABKLBMUPUQUOUNUONUNUQUOOZUOUNA
+      PQZUSDRZUNUTVAUNUATACDUBUCAPUDUESUFUNURUOUNCJUKEZURVBUNJCUGUHTACJUIUJSJAB
+      ULUM $.
   $}
 
   $( ` NN ` is countable.  (Contributed by Thierry Arnoux, 29-Dec-2016.) $)
@@ -211470,6 +212087,55 @@ $)
       mpt0 eqtri wrel eqtrdi cdm relxp restfn fndmi releqi mpbir ovprc2 pm2.61i
       cxp ) ACDZEAFGZEHUKULBEBIAJZKZLZEECDUKULUOHMBAECCNOUOELEUNEBUMRPQSUAEAFFU
       BZTCCUJZTCCUCUPUQUQFUDUEUFUGUHUI $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d J x $.  $d X x $.
+    elrestd.1 $e |- ( ph -> J e. V ) $.
+    elrestd.2 $e |- ( ph -> B e. W ) $.
+    elrestd.3 $e |- ( ph -> X e. J ) $.
+    elrestd.4 $e |- A = ( X i^i B ) $.
+    $( A sufficient condition for being an open set of a subspace topology.
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    elrestd $p |- ( ph -> A e. ( J |`t B ) ) $=
+      ( vx crest co wcel cv cin wceq wrex syl2anc a1i rspceeqv wb elrest mpbird
+      ineq1 ) ABDCMNOZBLPZCQZRLDSZAGDOBGCQZRZUJJULAKUALGDUIUKBUHGCUFUBTADEOCFOU
+      GUJUCHILBCDEFUDTUE $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d ph x y z $.
+    restuni3.1 $e |- ( ph -> A e. V ) $.
+    restuni3.2 $e |- ( ph -> B e. W ) $.
+    $( The underlying set of a subspace induced by the subspace operator
+       ` |``t ` .  The result can be applied, for instance, to topologies and
+       sigma-algebras.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    restuni3 $p |- ( ph -> U. ( A |`t B ) = ( U. A i^i B ) ) $=
+      ( vx vz vy cv wcel wa wrex wi simpr syl2anc adantr mpd adantl co cuni cin
+      crest wral wss eluni2 bilani w3a wb elrest mpbid 3adant3 simpl eleqtrd ex
+      wceq 3ad2ant3 reximdv rexlimdv elinel1 elunii elinel2 rexlimdva ralrimiva
+      3exp elind dfss3 sylibr sylib eqid 3adant1r simp3 simp1r syl eleq2 rspcev
+      elrestd eqelssd ) AHBCUDUAZUBZBUBZCUCZAHKZWCLZHWAUEWAWCUFAWEHWAAWDWALZMZW
+      DIKZCUCZLZIBNZWEWGWDJKZLZJVTNZWKWFWNAJWDVTUGZUHAWNWKOWFAWMWKJVTAWLVTLZWMW
+      KAWPWMUIZWLWIUQZIBNZWKAWPWSWMAWPMWPWSAWPPAWPWSUJZWPABDLZCELZWTFGIWLCBDEUK
+      QRULUMWQWRWJIBWMAWRWJOWPWMWRWJWMWRMWDWLWIWMWRUNWMWRPUOUPURUSSVFUTRSWGWJWE
+      IBWHBLZWJWEOWGXCWJWEXCWJMZWBCWDXDWDWHLZXCWDWBLZWJXEXCWDWHCVATXCWJUNWDWHBV
+      BQWJWDCLZXCWDWHCVCTVGUPTVDSVEHWAWCVHVIAWEMZWNWFXHXEIBNZWNWEXIAWEXFXIWDWBC
+      VAIWDBUGVJTXHXEWNIBXHXCXEWNXHXCXEUIZWIVTLZWJWNAXCXEXKWEAXCXKXEAXCMWICBDEW
+      HAXAXCFRAXBXCGRAXCPWIVKVRUMVLXJXEXGWJXHXCXEVMXJWEXGAWEXCXEVNWDWBCVCVOXEXG
+      MWHCWDXEXGUNXEXGPVGQWMWJJWIVTWLWIWDVPVQQVFUTSWOVIVS $.
+  $}
+
+  ${
+    restuni4.1 $e |- ( ph -> A e. V ) $.
+    restuni4.2 $e |- ( ph -> B C_ U. A ) $.
+    $( The underlying set of a subspace induced by the ` |``t ` operator.  The
+       result can be applied, for instance, to topologies and sigma-algebras.
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    restuni4 $p |- ( ph -> U. ( A |`t B ) = B ) $=
+      ( cuni cin crest wceq incom a1i wss dfss sylib cvv uniexd ssexd restuni3
+      co 3eqtr4rd ) ACBGZHZUBCHZCBCITGUCUDJACUBKLACUBMCUCJFCUBNOABCDPEACUBPABDE
+      QFRSUA $.
   $}
 
   ${
@@ -399557,6 +400223,1136 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Abstract measure theory
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Sigma-algebras
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+  $c sigAlgebra $.
+
+  $( Extend class notation to include the function giving the sigma-algebras on
+     a given base set. $)
+  csiga $a class sigAlgebra $.
+
+  ${
+    $d o s x $.
+    $( Define a sigma-algebra, i.e. a set closed under complement and countable
+       union.  Literature usually uses capital greek sigma and omega letters
+       for the algebra set, and the base set respectively.  We are using ` S `
+       and ` O ` as a parallel.  (Contributed by Thierry Arnoux,
+       3-Sep-2016.) $)
+    df-siga $a |- sigAlgebra = ( o e. _V |-> { s | ( s C_ ~P o /\
+      ( o e. s /\ A. x e. s ( o \ x ) e. s
+      /\ A. x e. ~P s ( x ~<_ _om -> U. x e. s ) ) ) } ) $.
+  $}
+
+  ${
+    $d o s $.
+    $( Lemma for ~ issiga and ~ isrnsiga .  The class of sigma-algebras with
+       base set ` o ` is a set.  Note: a more generic version with
+       ` ( O e. _V -> ... ) ` could be useful for ~ sigaval .  (Contributed by
+       Thierry Arnoux, 24-Oct-2016.) $)
+    sigaex $p |- { s | ( s C_ ~P o /\ ( o e. s /\ A. x e. s ( o \ x ) e. s
+      /\ A. x e. ~P s ( x ~<_ _om -> U. x e. s ) ) ) } e. _V $=
+      ( cv wcel cdif wral com cdom wbr cuni wi cpw w3a crab wss cab cvv pwexg
+      wa df-rab velpw anbi1i abbii eqtri vex mp2b rabex eqeltrri ) BDZCDZEUJADZ
+      FUKEAUKGULHIJULKUKELAUKMGNZCUJMZMZOZUKUNPZUMTZCQZRUPUKUOEZUMTZCQUSUMCUOUA
+      VAURCUTUQUMCUNUBUCUDUEUMCUOUJREUNREUOREBUFUJRSUNRSUGUHUI $.
+  $}
+
+  ${
+    $d o s x O $.  $d o s x S $.
+    $( An alternative definition of the sigma-algebra, for a given base set.
+       (Contributed by Thierry Arnoux, 19-Sep-2016.) $)
+    issiga $p |- ( S e. _V -> ( S e. ( sigAlgebra ` O ) <->
+      ( S C_ ~P O /\ ( O e. S /\ A. x e. S ( O \ x ) e. S
+      /\ A. x e. ~P S ( x ~<_ _om -> U. x e. S ) ) ) ) ) $=
+      ( vs vo cvv wcel wa csiga cpw wss cv cdif wral wi w3a elex a1i wb wceq
+      cfv com cdom wbr cuni elfvex jca simpr1 anc2ri df-siga sigaex pweq sseq2d
+      syl sseq1 eleq12 simpr difeq1 adantr eleq1d eleq2 adantl raleqbidv imbi2d
+      sylan9bb bitrd 3anbi123d anbi12d abfmpel pm5.21ndd ) BFGZCFGZVKHZBCIUAZGZ
+      BCJZKZCBGZCALZMZBGZABNZVSUBUCUDZVSUEZBGZOZABJZNZPZHZVOVMOVKVOVLVKBCIUFBVN
+      QUGRVKWJVLWJVLOVKWJVRVLVQVRWBWHUHCBQUNRUIVMVOWJSOVKDLZELZJZKZWLWKGZWLVSMZ
+      WKGZAWKNZWCWDWKGZOZAWKJZNZPZHWJEDCBIFFAEDUJAEDUKWLCTZWKBTZHZWNVQXCWIXDWNW
+      KVPKXEVQXDWMVPWKWLCULUMWKBVPUOVEXFWOVRWRWBXBWHWLCWKBUPXFWQWAAWKBXDXEUQXFW
+      QVTWKGZWAXFWPVTWKXDWPVTTXEWLCVSURUSUTXEXGWASXDWKBVTVAVBVFVCXEXBWHSXDXEWTW
+      FAXAWGWKBULXEWSWEWCWKBWDVAVDVCVBVGVHVIRVJ $.
+  $}
+
+  ${
+    $d o s x S $.
+    $( The property of being a sigma-algebra on an indefinite base set.
+       (Contributed by Thierry Arnoux, 3-Sep-2016.)  (Proof shortened by
+       Thierry Arnoux, 23-Oct-2016.) $)
+    isrnsiga $p |- ( S e. U. ran sigAlgebra <-> ( S e. _V /\
+      E. o ( S C_ ~P o /\ ( o e. S /\ A. x e. S ( o \ x ) e. S
+      /\ A. x e. ~P S ( x ~<_ _om -> U. x e. S ) ) ) ) ) $=
+      ( vs csiga crn cuni wcel cvv cv cpw wss cdif wral com cdom wi w3a eleq2
+      wa wbr wrex df-siga sigaex wceq sseq1 raleqbi1dv pweq raleqbidv 3anbi123d
+      wex imbi2d anbi12d abfmpunirn rexv anbi2i bitri ) BEFGHBIHZBCJZKZLZUSBHZU
+      SAJZMZBHZABNZVCOPUAZVCGZBHZQZABKZNZRZTZCIUBZTURVNCUKZTDJZUTLZUSVQHZVDVQHZ
+      AVQNZVGVHVQHZQZAVQKZNZRZTVNCDBEIACDUCACDUDVQBUEZVRVAWFVMVQBUTUFWGVSVBWAVF
+      WEVLVQBUSSVTVEAVQBVQBVDSUGWGWCVJAWDVKVQBUHWGWBVIVGVQBVHSULUIUJUMUNVOVPURV
+      NCUOUPUQ $.
+  $}
+
+  ${
+    $d o x S $.  $d x O $.
+    $( Property of being a sigma-algebra with a given base set, noting that the
+       base set of a sigma-algebra is actually its union set.  (Contributed by
+       Thierry Arnoux, 24-Sep-2016.)  (Revised by Thierry Arnoux,
+       23-Oct-2016.) $)
+    issgon $p |- ( S e. ( sigAlgebra ` O ) <->
+      ( S e. U. ran sigAlgebra /\ O = U. S ) ) $=
+      ( vx vo csiga wcel cuni wceq wa elex cpw wss cdif wral w3a elpwuni biimpa
+      cv ancom eqcom cfv crn fvssunirn sseli cvv com cdom wbr wi issiga 3imtr4i
+      3ad2antr1 biimtrdi mpcom jca isrnsiga simprbi wb pweq sseq2d eleq1 difeq1
+      wex eleq1d ralbidv anbi12d syl ibi exlimiv simprd biimprd pwuni sseqtrrid
+      3anbi12d jctild anim2d biimpar syl56 impcom impbii ) ABEUAZFZAEUBGZFZBAGZ
+      HZIWBWDWFWAWCAEBUCUDAUEFZWBWFAWAJWGWBABKZLZBAFZBCRZMZAFZCANZWKUFUGUHWKGAF
+      UICAKNZOZIZWFCABUJZWIWNWJWFWOWJWIIWEBHZWIWJIWFWJWIWSABPQWIWJSBWETUKULUMUN
+      UOWFWDWBWDWGWEAFZWEWKMZAFZCANZWOOZIWFWGWQIWBWDWGXDAWCJWDAWEKZLZXDWDADRZKZ
+      LZXGAFZXGWKMZAFZCANZWOOZIZDVCZXFXDIZWDWGXPCADUPUQXOXQDXOXQXOXGWEHZXOXQURX
+      IXMXJXRWOXJXIIWEXGHZXIXJIXRXJXIXSAXGPQXIXJSXGWETUKULXRXIXFXNXDXRXHXEAXGWE
+      USUTXRXJWTXMXCWOXGWEAVAXRXLXBCAXRXKXAAXGWEWKVBVDVEVNVFVGVHVIVGVJUOWFXDWQW
+      GWFXDWPWIWFWPXDWFWJWTWNXCWOBWEAVAWFWMXBCAWFWLXAABWEWKVBVDVEVNVKWFXEAWHAVL
+      BWEUSVMVOVPWGWBWQWRVQVRVSVT $.
+  $}
+
+  $( A sigma-algebra is a sigma on its union set.  (Contributed by Thierry
+     Arnoux, 6-Jun-2017.) $)
+  sgon $p |- ( S e. U. ran sigAlgebra -> S e. ( sigAlgebra ` U. S ) ) $=
+    ( csiga crn cuni wcel wceq cfv eqid wa issgon biimpri mpan2 ) ABCDEZADZNFZA
+    NBGEZNHPMOIANJKL $.
+
+  ${
+    $d o x S $.
+    $( A sigma-algebra contains the empty set.  (Contributed by Thierry Arnoux,
+       4-Sep-2016.) $)
+    0elsiga $p |- ( S e. U. ran sigAlgebra -> (/) e. S ) $=
+      ( vo vx csiga crn cuni wcel cv cpw wss cdif wral com wbr wi w3a wa wex c0
+      cdom cvv isrnsiga simprbi 3simpa adantl eximi difeq2 eqtrdi eleq1d rspcva
+      weq difid exlimiv 3syl ) ADEFGZABHZIJZUPAGZUPCHZKZAGZCALZUSMTNUSFAGOCAILZ
+      PZQZBRZURVBQZBRSAGZUOAUAGVFCABUBUCVEVGBVDVGUQURVBVCUDUEUFVGVHBVAVHCUPACBU
+      KZUTSAVIUTUPUPKSUSUPUPUGUPULUHUIUJUMUN $.
+  $}
+
+  ${
+    $d x S $.  $d x A $.
+    $( A sigma-algebra is a set of subset of the base set.  (Contributed by
+       Thierry Arnoux, 18-Jan-2017.) $)
+    sigasspw $p |- ( S e. ( sigAlgebra ` A ) -> S C_ ~P A ) $=
+      ( vx csiga cfv wcel cpw wss cv cdif wral com cdom wbr cuni wi w3a wa elex
+      cvv issiga biimpa mpancom simpld ) BADEZFZBAGHZABFACIZJBFCBKUHLMNUHOBFPCB
+      GKQZBTFZUFUGUIRZBUESUJUFUKCBAUAUBUCUD $.
+  $}
+
+  ${
+    $d o x S $.  $d x A $.
+    $( A sigma-algebra is closed under countable union.  (Contributed by
+       Thierry Arnoux, 26-Dec-2016.) $)
+    sigaclcu $p |- ( ( S e. U. ran sigAlgebra /\ A e. ~P S /\ A ~<_ _om )
+        -> U. A e. S ) $=
+      ( vx vo csiga crn cuni wcel cpw com cdom wbr w3a cv wi wral simp2 cdif wa
+      wss wex cvv isrnsiga simprbi simpr3 exlimiv syl 3ad2ant1 simp3 wceq breq1
+      unieq eleq1d imbi12d rspcv syl3c ) BEFGHZABIZHZAJKLZMUSCNZJKLZVAGZBHZOZCU
+      RPZUTAGZBHZUQUSUTQUQUSVFUTUQBDNZITZVIBHZVIVARBHCBPZVFMSZDUAZVFUQBUBHVNCBD
+      UCUDVMVFDVJVKVLVFUEUFUGUHUQUSUTUIVEUTVHOCAURVAAUJZVBUTVDVHVAAJKUKVOVCVGBV
+      AAULUMUNUOUP $.
+  $}
+
+  ${
+    $d z A $.  $d z B $.  $d k z S $.
+    sigaclcuni.1 $e |- F/_ k A $.
+    $( A sigma-algebra is closed under countable union: indexed union version.
+       (Contributed by Thierry Arnoux, 8-Jun-2017.) $)
+    sigaclcuni $p |- ( ( S e. U. ran sigAlgebra /\ A. k e. A B e. S
+             /\ A ~<_ _om ) -> U_ k e. A B e. S ) $=
+      ( vz csiga crn cuni wcel wral com cdom wbr wceq wrex 3ad2ant2 eqeltrd syl
+      wa w3a ciun cab dfiun2g cpw simp1 wss r19.29 simpr simpl rexlimivw abssdv
+      cv ex wb elpw2g mpbird abrexctf 3ad2ant3 sigaclcu syl3anc ) CGHIZJZBCJZDA
+      KZALMNZUAZDABUBZFUMZBOZDAPZFUCZIZCVEVCVHVMOVFDFABCUDQVGVCVLCUEJZVLLMNZVMC
+      JVCVEVFUFZVGVNVLCUGZVEVCVQVFVEVKFCVEVKVICJZVEVKTVDVJTZDAPVRVDVJDAUHVSVRDA
+      VSVIBCVDVJUIVDVJUJRUKSUNULQVGVCVNVQUOVPVLCVBUPSUQVFVCVOVEDFABEURUSVLCUTVA
+      R $.
+  $}
+
+  $( An element of a sigma-algebra is a subset of the base set.  (Contributed
+     by Thierry Arnoux, 6-Jun-2017.) $)
+  elsigass $p |- ( ( S e. U. ran sigAlgebra /\ A e. S ) -> A C_ U. S ) $=
+    ( csiga crn cuni wcel wa cpw cfv wss sgon sigasspw syl sselda elpwid ) BCDE
+    FZABFGABEZPBQHZAPBQCIFBRJBKQBLMNO $.
+
+  ${
+    $d x S $.
+    $( The property of being a sigma-algebra, universe is the union set.
+       (Contributed by Thierry Arnoux, 11-Nov-2016.) $)
+    isrnsigau $p |- ( S e. U. ran sigAlgebra -> ( S C_ ~P U. S /\ ( U. S e. S
+      /\ A. x e. S ( U. S \ x ) e. S
+      /\ A. x e. ~P S ( x ~<_ _om -> U. x e. S ) ) ) ) $=
+      ( csiga crn cuni wcel cfv cpw wss cv cdif wral com cdom wbr wi w3a wa cvv
+      sgon wb elex issiga syl mpbid ) BCDEZFZBBEZCGFZBUHHIUHBFUHAJZKBFABLUJMNOU
+      JEBFPABHLQRZBTUGBSFUIUKUABUFUBABUHUCUDUE $.
+  $}
+
+  ${
+    $d x A $.  $d x S $.
+    $( A sigma-algebra is closed under complement relative to its base set.
+       This is immediate from the definition, see ~ issiga , but the library
+       states it nowhere in this form.  (Contributed by Vincent Gonzalez,
+       17-Aug-2026.) $)
+    difunielsiga $p |- ( ( S e. U. ran sigAlgebra /\ A e. S ) ->
+      ( U. S \ A ) e. S ) $=
+      ( vx csiga crn cuni wcel cv cdif wral com wbr wi cpw wss isrnsigau simprd
+      cdom w3a simp2d wceq difeq2 eleq1d rspccva sylan ) BDEFGZBFZCHZIZBGZCBJZA
+      BGUGAIZBGZUFUGBGZUKUHKRLUHFBGMCBNJZUFBUGNOUNUKUOSCBPQTUJUMCABUHAUAUIULBUH
+      AUGUBUCUDUE $.
+    $( $j usage 'difunielsiga' avoids 'ax-ac' 'ax-ac2'; $)
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x S $.
+    $( A sigma-algebra is closed under pairwise unions.  (Contributed by
+       Thierry Arnoux, 13-Dec-2016.) $)
+    unelsiga $p |- ( ( S e. U. ran sigAlgebra /\ A e. S /\ B e. S ) ->
+      ( A u. B ) e. S ) $=
+      ( vx csiga crn cuni wcel w3a cpr cun wceq uniprg 3adant1 com cdom wbr cpw
+      wi wral cv cdif isrnsigau simprd simp3d 3ad2ant1 prct prelpwi breq1 unieq
+      wss wa eleq1d imbi12d rspcv syl mp2d eqeltrrd ) CEFGHZACHZBCHZIZABJZGZABK
+      ZCUTVAVDVELUSABCCMNVBDUAZOPQZVFGZCHZSZDCRZTZVCOPQZVDCHZUSUTVLVAUSCGZCHZVO
+      VFUBCHDCTZVLUSCVORUKVPVQVLIDCUCUDUEUFUTVAVMUSABCCUGNUTVAVLVMVNSZSZUSUTVAU
+      LVCVKHVSABCUHVJVRDVCVKVFVCLZVGVMVIVNVFVCOPUIVTVHVDCVFVCUJUMUNUOUPNUQUR $.
+  $}
+
+  $( A sigma-algebra is closed under class differences.  The proof goes through
+     ~ difunielsiga and ~ unelsiga rather than countable intersection, and so
+     does not use ~ ax-ac .  (Contributed by Thierry Arnoux, 13-Sep-2016.)
+     (Proof shortened by Vincent Gonzalez, 17-Aug-2026.) $)
+  difelsiga $p |- ( ( S e. U. ran sigAlgebra /\ A e. S /\ B e. S ) ->
+    ( A \ B ) e. S ) $=
+    ( csiga crn cuni wcel w3a cdif cun wceq difun1 a1i wss simp1 simp2 elsigass
+    syl2anc dfss4 difunielsiga sylib difeq1d eqtrd unelsiga syl3anc eqeltrrd
+    simp3 ) CDEFGZACGZBCGZHZCFZULAIZBJZIZABIZCUKUOULUMIZBIZUPUOURKUKULUMBLMUKUQ
+    ABUKAULNZUQAKUKUHUIUSUHUIUJOZUHUIUJPZACQRAULSUAUBUCUKUHUNCGZUOCGUTUKUHUMCGZ
+    UJVBUTUKUHUIVCUTVAACTRUHUIUJUGUMBCUDUEUNCTRUF $.
+  $( $j usage 'difelsiga' avoids 'ax-ac' 'ax-ac2'; $)
+
+  $( A sigma-algebra is closed under pairwise intersections.  (Contributed by
+     Thierry Arnoux, 13-Dec-2016.) $)
+  inelsiga $p |- ( ( S e. U. ran sigAlgebra /\ A e. S /\ B e. S ) ->
+    ( A i^i B ) e. S ) $=
+    ( csiga crn cuni wcel w3a cin cdif dfin4 difelsiga syld3an3 eqeltrid ) CDEF
+    GZACGZBCGZHABIAABJZJZCABKOPQRCGSCGABCLARCLMN $.
+
+  ${
+    $d k ph $.  $d k S $.  $d k A $.  $d k F $.
+    sigapreimct.1 $e |- ( ph -> S e. U. ran sigAlgebra ) $.
+    sigapreimct.2 $e |- ( ph -> A ~<_ _om ) $.
+    sigapreimct.3 $e |- ( ( ph /\ k e. A ) -> ( `' F " { k } ) e. S ) $.
+    $( The preimage of a countable class is measurable if each of its singleton
+       fibers is measurable.  Express the preimage as the countable union of
+       those fibers.  The assertion holds for a relation F as well as for a
+       function.  Prepared with AI assistance from OpenAI Codex.  (Contributed
+       by Owen Orger, 17-Nov-2026.) $)
+    sigapreimct $p |- ( ph -> ( `' F " A ) e. S ) $=
+      ( ccnv cima cv csn ciun iunid imaeq2i imaiun eqtr3i csiga crn wcel cuni
+      wral com cdom wbr w3a ralrimiva 3jca nfcv sigaclcuni syl eqeltrid ) AEIZB
+      JZDBUMDKLZJZMZCUMDBUOMZJUNUQURBUMDBNODUMBUOPQACRSUATZUPCTZDBUBZBUCUDUEZUF
+      UQCTAUSVAVBFAUTDBHUGGUHBUPCDDBUIUJUKUL $.
+  $}
+
+  ${
+    $d A n $.  $d B n $.  $d C n $.  $d n ph $.  $d n x $.
+    preimageiingt.x $e |- F/ x ph $.
+    preimageiingt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    preimageiingt.c $e |- ( ph -> C e. RR ) $.
+    $( A preimage of a left-closed, unbounded above interval, expressed as an
+       indexed intersection of preimages of open, unbounded above intervals.
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    preimageiingt $p |- ( ph -> { x e. A | C <_ B } = |^|_ n e. NN { x e. A | (
+       C - ( 1 / n ) ) < B } ) $=
+      ( cle wbr crab cn cv wcel wral wa cxr ad2antrr ex c1 cdiv co cmin ciin wi
+      clt wss simpllr cr adantr nnrecre adantl resubcld rexrd ad3antrrr nnrecrp
+      ad4ant14 crp ltsubrpd simplr xrltletrd rabidd ralrimiva wb cvv elv sylibr
+      eliin ralrimia nfcv nfrab1 nfiin rabssf c0 wne wceq iinrab ax-mp ad4ant13
+      nnn0 simpr xrltled ralimdva imp nfra1 nfan xrralrecnnge ss2rabdf eqsstrid
+      nfv mpbird eqssd ) AEDJKZBCLZFMEUAFNZUBUCZUDUCZDUGKZBCLZUEZAWNBNZXAOZUFZB
+      CPWOXAUHAXDBCGAXBCOZQZWNXCXFWNQZXBWTOZFMPZXCXGXHFMXGWPMOZQZWSBCAXEWNXJUIX
+      KWREDAXJWRROZXEWNAXJQZWRXMEWQAEUJOZXJIUKZXJWQUJOAWPULUMUNUOZURAEROXEWNXJA
+      EIUOUPXFDROZWNXJHSAXJWREUGKXEWNXMEWQXOXJWQUSOAWPUQUMUTURXFWNXJVAVBVCVDXCX
+      IVEBFXBMWTVFVIVGVHTVJWNBCXAFBMWTBMVKWSBCVLVMVNVHAXAWSFMPZBCLZWOMVOVPXAXSV
+      QWAWSFBMCVRVSAXRWNBCGXFXRWNXFXRQZWNWRDJKZFMPZXFXRYBXFWSYAFMXFXJQZWSYAYCWS
+      QWRDAXJXLXEWSXPVTXFXQXJWSHSYCWSWBWCTWDWEXTEDFXFXRFXFFWKWSFMWFWGAXNXEXRISX
+      FXQXRHUKWHWLTWIWJWM $.
+  $}
+
+  ${
+    $d A n $.  $d B n $.  $d C n $.  $d n ph $.  $d n x $.
+    preimaleiinlt.x $e |- F/ x ph $.
+    preimaleiinlt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    preimaleiinlt.c $e |- ( ph -> C e. RR ) $.
+    $( A preimage of a left-open, right-closed, unbounded below interval,
+       expressed as an indexed intersection of preimages of open, unbound below
+       intervals.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    preimaleiinlt $p |- ( ph -> { x e. A | B <_ C } = |^|_ n e. NN { x e. A | B
+       < ( C + ( 1 / n ) ) } ) $=
+      ( cle wbr crab cn wcel wral wa ad2antrr cr rexrd ex c1 cv cdiv caddc ciin
+      co clt wi wss simpllr cxr ad3antrrr adantr nnrecre adantl readdcld simplr
+      ad4ant14 crp nnrecrp ltaddrpd xrlelttrd rabidd ralrimiva wb cvv eliin elv
+      sylibr ralrimia nfcv nfrab1 nfiin rabssf c0 wne wceq nnn0 iinrab ad4ant13
+      simpr xrltled ralimdva imp nfv nfra1 xrralrecnnle mpbird ss2rabdf eqsstrd
+      mp1i nfan eqssd ) ADEJKZBCLZFMDEUAFUBZUCUFZUDUFZUGKZBCLZUEZAWNBUBZXANZUHZ
+      BCOWOXAUIAXDBCGAXBCNZPZWNXCXFWNPZXBWTNZFMOZXCXGXHFMXGWPMNZPZWSBCAXEWNXJUJ
+      XKDEWRXFDUKNZWNXJHQXKEAERNZXEWNXJIULSXKWRAXJWRRNZXEWNAXJPZEWQAXMXJIUMZXJW
+      QRNAWPUNUOUPZURSXFWNXJUQAXJEWRUGKXEWNXOEWQXPXJWQUSNAWPUTUOVAURVBVCVDXCXIV
+      EBFXBMWTVFVGVHVITVJWNBCXAFBMWTBMVKWSBCVLVMVNVIAXAWSFMOZBCLZWOMVOVPXAXSVQA
+      VRWSFBMCVSWKAXRWNBCGXFXRWNXFXRPZWNDWRJKZFMOZXFXRYBXFWSYAFMXFXJPZWSYAYCWSP
+      ZDWRXFXLXJWSHQYDWRAXJXNXEWSXQVTSYCWSWAWBTWCWDXTDEFXFXRFXFFWEWSFMWFWLXFXLX
+      RHUMAXMXEXRIQWGWHTWIWJWM $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  The class of sigma-algebras
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+
+  $c SAlg $.
+
+  $( Extend class notation with the class of all sigma-algebras. $)
+  csalg $a class SAlg $.
+
+  ${
+    $d x y $.
+    $( Define the class of sigma-algebras.  (Contributed by Glauco Siliprandi,
+       17-Aug-2020.) $)
+    df-salg $a |- SAlg = { x | ( (/) e. x /\ A. y e. x ( U. x \ y ) e. x /\
+                                A. y e. ~P x ( y ~<_ _om -> U. y e. x ) ) } $.
+  $}
+
+  ${
+    $d S x y $.
+    $( Express the predicate " ` S ` is a sigma-algebra."  (Contributed by
+       Glauco Siliprandi, 17-Aug-2020.) $)
+    issal $p |- ( S e. V -> ( S e. SAlg <-> ( (/) e. S /\ A. y e. S ( U. S \ y
+       ) e. S /\ A. y e. ~P S ( y ~<_ _om -> U. y e. S ) ) ) ) $=
+      ( vx c0 cv wcel cuni cdif wral com cdom wbr cpw w3a csalg eleq2 raleqbidv
+      wi wceq id unieq difeq1d eleq12d pweq imbi2d 3anbi123d df-salg elab2g ) E
+      DFZGZUJHZAFZIZUJGZAUJJZUMKLMZUMHZUJGZSZAUJNZJZOEBGZBHZUMIZBGZABJZUQURBGZS
+      ZABNZJZODBPCUJBTZUKVCUPVGVBVKUJBEQVLUOVFAUJBVLUAZVLUNVEUJBVLULVDUMUJBUBUC
+      VMUDRVLUTVIAVAVJUJBUEVLUSVHUQUJBURQUFRUGDAUHUI $.
+  $}
+
+  ${
+    $d E y $.  $d S y $.
+    $( The complement of an element of a sigma-algebra is in the sigma-algebra.
+       (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
+    saldifcl $p |- ( ( S e. SAlg /\ E e. S ) -> ( U. S \ E ) e. S ) $=
+      ( vy csalg wcel wa cuni cv cdif wceq difeq2 eleq1d wral c0 com wbr wi cpw
+      cdom w3a issal ibi simp2d adantr simpr rspcdva ) ADEZBAEZFAGZCHZIZAEZUIBI
+      ZAECABUJBJUKUMAUJBUIKLUGULCAMZUHUGNAEZUNUJOSPUJGAEQCARMZUGUOUNUPTCADUAUBU
+      CUDUGUHUEUF $.
+  $}
+
+  ${
+    $d S y $.
+    $( The empty set belongs to every sigma-algebra.  (Contributed by Glauco
+       Siliprandi, 17-Aug-2020.) $)
+    0sal $p |- ( S e. SAlg -> (/) e. S ) $=
+      ( vy csalg wcel c0 cuni cv cdif wral com cdom wbr wi cpw w3a issal simp1d
+      ibi ) ACDZEADZAFBGZHADBAIZUAJKLUAFADMBANIZSTUBUCOBACPRQ $.
+  $}
+
+  $( A set is an element of any sigma-algebra on it.  (Contributed by Glauco
+     Siliprandi, 17-Aug-2020.) $)
+  saluni $p |- ( S e. SAlg -> U. S e. S ) $=
+    ( csalg wcel cuni c0 cdif dif0 0sal saldifcl mpdan eqeltrrid ) ABCZADZMEFZA
+    MGLEACNACAHAEIJK $.
+
+  ${
+    $d S y $.  $d T y $.
+    salunicl.s $e |- ( ph -> S e. SAlg ) $.
+    salunicl.t $e |- ( ph -> T e. ~P S ) $.
+    salunicl.tct $e |- ( ph -> T ~<_ _om ) $.
+    $( SAlg sigma-algebra is closed under countable union.  (Contributed by
+       Glauco Siliprandi, 17-Aug-2020.) $)
+    salunicl $p |- ( ph -> U. T e. S ) $=
+      ( vy com cdom wbr cuni wcel cv wi cpw wceq breq1 unieq wral csalg imbi12d
+      eleq1d c0 cdif w3a wb issal syl mpbid simp3d rspcdva mpd ) ACHIJZCKZBLZFA
+      GMZHIJZUPKZBLZNZUMUONGBOZCUPCPZUQUMUSUOUPCHIQVBURUNBUPCRUBUAAUCBLZBKUPUDB
+      LGBSZUTGVASZABTLZVCVDVEUEZDAVFVFVGUFDGBTUGUHUIUJEUKUL $.
+  $}
+
+  ${
+    saliunclf.1 $e |- F/ k ph $.
+    saliunclf.2 $e |- F/_ k S $.
+    saliunclf.3 $e |- F/_ k K $.
+    saliunclf.4 $e |- ( ph -> S e. SAlg ) $.
+    saliunclf.5 $e |- ( ph -> K ~<_ _om ) $.
+    saliunclf.6 $e |- ( ( ph /\ k e. K ) -> E e. S ) $.
+    $( SAlg sigma-algebra is closed under countable indexed union.
+       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
+    saliunclf $p |- ( ph -> U_ k e. K E e. S ) $=
+      ( ciun cmpt crn cuni wcel syl com cdom wbr wral ralrimia csalg rnmptssdff
+      wceq dfiun3g eqid sselpwd rn1st salunicl eqeltrd ) ACEDLZCEDMZNZOZBADBPZC
+      EUAULUOUEAUPCEFKUBCEDBUFQABUNIAUNBUCIACEDBUMFHGUMUGKUDUHAERSTUNRSTJCEDHUI
+      QUJUK $.
+  $}
+
+  ${
+    $d K k $.  $d S k $.  $d k ph $.
+    saliuncl.s $e |- ( ph -> S e. SAlg ) $.
+    saliuncl.kct $e |- ( ph -> K ~<_ _om ) $.
+    saliuncl.b $e |- ( ( ph /\ k e. K ) -> E e. S ) $.
+    $( SAlg sigma-algebra is closed under countable indexed union.
+       (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
+    saliuncl $p |- ( ph -> U_ k e. K E e. S ) $=
+      ( nfv nfcv saliunclf ) ABCDEACICBJCEJFGHK $.
+  $}
+
+  ${
+    saliinclf.1 $e |- F/ k ph $.
+    saliinclf.2 $e |- F/_ k S $.
+    saliinclf.3 $e |- F/_ k K $.
+    saliinclf.4 $e |- ( ph -> S e. SAlg ) $.
+    saliinclf.5 $e |- ( ph -> K ~<_ _om ) $.
+    saliinclf.6 $e |- ( ph -> K =/= (/) ) $.
+    saliinclf.7 $e |- ( ( ph /\ k e. K ) -> E e. S ) $.
+    $( SAlg sigma-algebra is closed under countable indexed intersection.
+       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
+    saliinclf $p |- ( ph -> |^|_ k e. K E e. S ) $=
+      ( ciin cuni cdif wcel cin wceq syl saldifcl cv wa incom wss elssuni dfss2
+      ciun sylib dfin4 a1i 3eqtr3a iineq2d c0 wne nfuni iindif2f eqtrd syl2an2r
+      csalg saliunclf syl2anc eqeltrd ) ACEDMZBNZCEVDDOZUGZOZBAVCCEVDVEOZMZVGAC
+      EDVHFACUAEPZUBZDVDQZVDDQZDVHDVDUCVKDVDUDZVLDRVKDBPZVNLDBUESDVDUFUHVMVHRVK
+      VDDUIUJUKULAEUMUNVIVGRKCEVDVEHCBGUOUPSUQABUSPZVFBPVGBPIABCVEEFGHIJAVPVJVO
+      VEBPILBDTURUTBVFTVAVB $.
+  $}
+
+  ${
+    $d K k $.  $d S k $.  $d k ph $.
+    saliincl.s $e |- ( ph -> S e. SAlg ) $.
+    saliincl.kct $e |- ( ph -> K ~<_ _om ) $.
+    saliincl.kn0 $e |- ( ph -> K =/= (/) ) $.
+    saliincl.e $e |- ( ( ph /\ k e. K ) -> E e. S ) $.
+    $( SAlg sigma-algebra is closed under countable indexed intersection.
+       (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
+    saliincl $p |- ( ph -> |^|_ k e. K E e. S ) $=
+      ( nfv nfcv saliinclf ) ABCDEACJCBKCEKFGHIL $.
+  $}
+
+  ${
+    $d S y $.  $d ph y $.
+    issald.s $e |- ( ph -> S e. V ) $.
+    issald.z $e |- ( ph -> (/) e. S ) $.
+    issald.x $e |- X = U. S $.
+    issald.d $e |- ( ( ph /\ y e. S ) -> ( X \ y ) e. S ) $.
+    issald.u $e |- ( ( ph /\ y e. ~P S /\ y ~<_ _om ) -> U. y e. S ) $.
+    $( Sufficient condition to prove that ` S ` is sigma-algebra.  (Contributed
+       by Glauco Siliprandi, 3-Jan-2021.) $)
+    issald $p |- ( ph -> S e. SAlg ) $=
+      ( csalg wcel c0 cuni cv cdif wral com cdom ralrimiva wbr wi cpw wa eqcomi
+      difeq1i eqeltrid 3expia w3a wb issal syl mpbir3and ) ACKLZMCLZCNZBOZPZCLZ
+      BCQZUQRSUAZUQNCLZUBZBCUCZQZGAUSBCAUQCLUDUREUQPCUPEUQEUPHUEUFIUGTAVCBVDAUQ
+      VDLVAVBJUHTACDLUNUOUTVEUIUJFBCDUKULUM $.
+  $}
+
+  ${
+    $d S e y $.  $d e n y $.  $d e ph y $.
+    issalnnd.s $e |- ( ph -> S e. V ) $.
+    issalnnd.z $e |- ( ph -> (/) e. S ) $.
+    issalnnd.x $e |- X = U. S $.
+    issalnnd.d $e |- ( ( ph /\ y e. S ) -> ( X \ y ) e. S ) $.
+    issalnnd.i $e |- ( ( ph /\ e : NN --> S ) -> U_ n e. NN ( e ` n ) e. S ) $.
+    $( Sufficient condition to prove that ` S ` is sigma-algebra.  (Contributed
+       by Glauco Siliprandi, 3-Mar-2021.) $)
+    issalnnd $p |- ( ph -> S e. SAlg ) $=
+      ( cv wcel c0 wceq wa adantl adantr cn cpw com cdom wbr w3a cuni unieq a1i
+      uni0 eqtrd eqeltrd 3ad2antl1 wne neqne wfo wex nnfoctb 3ad2antl3 cfv ciun
+      wn wi founiiun simpll fof wss elpwi fssd adantll syl2anc 3adantl3 exlimdv
+      wf ex mpd syldan pm2.61dan issald ) ABCFGHIJKABMZCUANZVSUBUCUDZUEZVSOPZVS
+      UFZCNZAVTWCWEWAAWCQWDOCWCWDOPAWCWDOUFZOVSOUGWFOPWCUIUHUJRAOCNWCISUKULWBWC
+      VAZVSOUMZWEWGWHWBVSOUNRWBWHQZTVSDMZUOZDUPZWEWAAWHWLVTVSDUQURWIWKWEDAVTWHW
+      KWEVBZWAAVTQZWMWHWNWKWEWNWKQZWDETEMWJUSUTZCWKWDWPPWNETVSWJVCRWOATCWJVMZWP
+      CNAVTWKVDVTWKWQAVTWKQTVSCWJWKTVSWJVMVTTVSWJVERVTVSCVFWKVSCVGSVHVILVJUKVNS
+      VKVLVOVPVQVR $.
+  $}
+
+  ${
+    saldifcld.1 $e |- ( ph -> S e. SAlg ) $.
+    saldifcld.2 $e |- ( ph -> E e. S ) $.
+    $( The complement of an element of a sigma-algebra is in the sigma-algebra.
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    saldifcld $p |- ( ph -> ( U. S \ E ) e. S ) $=
+      ( csalg wcel cuni cdif saldifcl syl2anc ) ABFGCBGBHCIBGDEBCJK $.
+  $}
+
+  ${
+    0sald.1 $e |- ( ph -> S e. SAlg ) $.
+    $( The empty set belongs to every sigma-algebra.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    0sald $p |- ( ph -> (/) e. S ) $=
+      ( csalg wcel c0 0sal syl ) ABDEFBECBGH $.
+  $}
+
+  ${
+    $d D e $.  $d D x $.  $d E e n $.  $d E n x $.  $d F e $.  $d F x $.
+    $d G y $.  $d H y $.  $d S e n $.  $d S n x $.  $d S n y $.  $d n ph $.
+    subsaliuncllem.f $e |- F/ y ph $.
+    subsaliuncllem.s $e |- ( ph -> S e. V ) $.
+    subsaliuncllem.g $e |- G = ( n e. NN |-> { x e. S | ( F ` n ) = ( x i^i D )
+       } ) $.
+    subsaliuncllem.e $e |- E = ( H o. G ) $.
+    subsaliuncllem.h $e |- ( ph -> H Fn ran G ) $.
+    subsaliuncllem.y $e |- ( ph -> A. y e. ran G ( H ` y ) e. y ) $.
+    $( A subspace sigma-algebra is closed under countable union.  This is Lemma
+       121A (iii) of [Fremlin1] p. 35.  (Contributed by Glauco Siliprandi,
+       26-Jun-2021.) $)
+    subsaliuncllem $p |- ( ph -> E. e e. ( S ^m NN ) A. n e. NN ( F ` n ) = ( (
+       e ` n ) i^i D ) ) $=
+      ( cn wcel cmap co cv cfv cin wceq wral wrex ccom wf crn wfn wa wss cvv wb
+      crab vex elrnmpt ax-mp biimpi wi ssrab2 a1i eqsstrd rexlimiv mpd r19.21bi
+      id adantl sseldd ralrimi jca ffnfv sylibr eqid rabexd ralrimivw fnmpt syl
+      ex dffn3 sylib fco syl2anc elmapd mpbird eqeltrid ffvelcdmda adantr fveq2
+      nnex eleq12d rspcva wfun ffund cdm simpr cmpt dmeqi dmmptg eqcomd eleqtrd
+      eqtrd fvcod fvmpt2d ineq1 eqeq2d elrab simprd fveq1 ineq1d ralbidv rspcev
+      ralrimiva ) AHESUAUBZTGUCZIUDZXQHUDZDUEZUFZGSUGZXRXQFUCZUDZDUEZUFZGSUGZFX
+      PUHAHKJUIZXPPAYHXPTSEYHUJZAJUKZEKUJZSYJJUJZYIAKYJULZCUCZKUDZETZCYJUGZUMYK
+      AYMYQQAYPCYJMAYNYJTZYPAYRUMYNEYOYRYNEUNZAYRYNXRBUCZDUEZUFZBEUQZUFZGSUHZYS
+      YRUUEYNUOTYRUUEUPCURGSUUCYNJUOOUSUTVAUUEYSVBYRUUDYSGSUUDYSVBXQSTZUUDYNUUC
+      EUUDVIUUCEUNUUDUUBBEVCVDVEVDVFVDVGVJAYOYNTZCYJRVHVKWAVLVMCYJEKVNVOAJSULZY
+      LAUUCUOTZGSUGZUUHAUUIGSAUUBBEUUCLUUCVPNVQZVRZGSUUCJUOOVSVTSJWBWCZSYJEKJWD
+      WEAESYHLUONSUOTAWLVDWFWGWHAYAGSAUUFUMZXSETZYAUUNXSUUCTZUUOYAUMUUNUUPXQJUD
+      ZKUDZUUQTZUUNUUQYJTUUGCYJUGZUUSASYJXQJUUMWIAUUTUUFRWJUUGUUSCUUQYJYNUUQUFZ
+      YOUURYNUUQYNUUQKWKUVAVIWMWNWEUUNXSUURUUCUUQUUNXQKJHAJWOUUFASYJJUUMWPWJUUN
+      XQSJWQZAUUFWRASUVBUFUUFAUVBSAUVBGSUUCWSZWQZSUVBUVDUFAJUVCOWTVDAUUJUVDSUFU
+      ULGSUUCUOXAVTXDXBWJXCPXEUUNUUQUUCAGSUUCJUOJUVCUFAOVDAUUIUUFUUKWJXFXBWMWGU
+      UBYABXSEYTXSUFUUAXTXRYTXSDXGXHXIWCXJXOYGYBFHXPYCHUFZYFYAGSUVEYEXTXRUVEYDX
+      SDXQYCHXKXLXHXMXNWE $.
+  $}
+
+  ${
+    $d D e f n z $.  $d D e m n z $.  $d D f n x y z $.  $d F e f n z $.
+    $d F e m n z $.  $d F f n x y z $.  $d S e f n z $.  $d S e m n z $.
+    $d S f n x y z $.  $d T e $.  $d e f n ph z $.  $d m n x y z $.
+    $d ph y z $.
+    subsaliuncl.1 $e |- ( ph -> S e. SAlg ) $.
+    subsaliuncl.2 $e |- ( ph -> D e. V ) $.
+    subsaliuncl.3 $e |- T = ( S |`t D ) $.
+    subsaliuncl.4 $e |- ( ph -> F : NN --> T ) $.
+    $( A subspace sigma-algebra is closed under countable union.  This is Lemma
+       121A (iii) of [Fremlin1] p. 35.  The proof uses ~ fnrndomnum rather than
+       ~ fnrndomg , and so does not require ~ ax-ac .  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.)  (Revised by Vincent Gonzalez,
+       30-Aug-2026.) $)
+    subsaliuncl $p |- ( ph -> U_ n e. NN ( F ` n ) e. T ) $=
+      ( vx vy vm vz cv wceq cn wcel cvv ve vf cfv wral cmap wrex ciun crab cmpt
+      cin co crn wfn wa wex cdom wbr com csalg eqid rabexd ralrimivw fnmpt ccrd
+      syl cdm con0 omelon nnct ondomen mp2an fnrndomnum ax-mp a1i domtr syl2anc
+      wi c0 wne wb vex elrnmpt bilani w3a simp3 crest ffvelcdmda eleqtrdi elexd
+      elrest adantr mpbid rabn0 3adant3 eqnetrd 3exp rexlimdv mpd axccdom simpl
+      sylibr fveq2 eqeq1d rabbidv cbvmptv fneq2i biimpi ad2antrl raleqi adantrl
+      rneqi ccom 3ad2ant1 eqeq2d cbvrabv mpteq2i eqtr2i coeq2i biimpri 3ad2ant2
+      ineq1 eqcomi id eleq12d cbvralvw bitri 3ad2ant3 subsaliuncllem syl3anc ex
+      nfv exlimdv wf elmapi adantl saliuncl elrestd nfra1 rspa iuneq2df iunin1
+      eqtrd mpbird ) AEPZFUCZUUDUAPZUCZBUJZQZERUDZUACRUEUKZUFZERUUEUGZDSZAUBPZE
+      RUUELPZBUJZQZLCUHZUIZULZUMZMPZUUOUCZUVCSZMUVAUDZUNZUBUOUULAMUBUVAAUVARUPU
+      QZRURUPUQZUVAURUPUQAUUTRUMZUVHAUUSTSZERUDUVJAUVKERAUURLCUUSUSUUSUTHVAVBER
+      UUSUUTTUUTUTZVCVERVDVFSZUVJUVHVQURVGSUVIUVMVHVIURRVJVKRUUTVLVMVEUVIAVIVNU
+      VARURVOVPAUVCUVASZUNUVCUUSQZERUFZUVCVRVSZUVNUVPAUVCTSUVNUVPVTMWAERUUSUVCU
+      UTTUVLWBVMWCAUVPUVQVQUVNAUVOUVQERAUUDRSZUVOUVQAUVRUVOWDUVCUUSVRAUVRUVOWEA
+      UVRUUSVRVSZUVOAUVRUNZUURLCUFZUVSUVTUUECBWFUKZSZUWAUVTUUEDUWBARDUUDFKWGJWH
+      AUWCUWAVTZUVRACUSSZBTSZUWDHABGIWIZLUUEBCUSTWJVPWKWLUURLCWMXAWNWOWPWQWKWRW
+      SAUVGUULUBAUVGUULAUVGUNAUUONRNPZFUCZUUQQZLCUHZUIZULZUMZUVEMUWMUDZUULAUVGW
+      TUVBUWNAUVFUVBUWNUVAUWMUUOUUTUWLENRUUSUWKUUDUWHQZUURUWJLCUWPUUEUWIUUQUUDU
+      WHFXBXCXDXEZXKZXFZXGXHAUVFUWOUVBUVFUWOAUVEMUVAUWMUWRXIWCXJAUWNUWOWDZLOBCU
+      AEUUONRUWIOPZBUJZQZOCUHZUIZXLFUUTUUOUSUWTOYKAUWNUWEUWOHXMUVLUXEUUTUUOUUTU
+      WLUXEUWQNRUWKUXDUWJUXCLOCUUPUXAQUUQUXBUWIUUPUXABYAXNXOXPXQXRUWNAUVBUWOUVB
+      UWNUWSXSXTUWOAUXAUUOUCZUXASZOUVAUDZUWNUWOUXHUWOUVFUXHUVEMUWMUVAUVAUWMUWRY
+      BXIUVEUXGMOUVAUVCUXAQZUVDUXFUVCUXAUVCUXAUUOXBUXIYCYDYEYFXGYGYHYIYJYLWRAUU
+      JUUNUAUUKAUUFUUKSZUUJUUNAUXJUUJWDZUUNERUUGUGZBUJZUWBSUXKUXMBCUSTUXLAUXJUW
+      EUUJHXMAUXJUWFUUJUWGXMAUXJUXLCSUUJAUXJUNZCEUUGRAUWEUXJHWKUVIUXNVIVNUXNRCU
+      UDUUFUXJRCUUFYMAUUFCRYNYOWGYPWNUXMUTYQUXKUUMUXMDUWBUUJAUUMUXMQUXJUUJUUMER
+      UUHUGZUXMUUJERUUEUUHUUIERYRUUIERYSYTUXOUXMQUUJERBUUGUUAVNUUBYGDUWBQUXKJVN
+      YDUUCWPWQWR $.
+    $( $j usage 'subsaliuncl' avoids 'ax-ac' 'ax-ac2'; $)
+  $}
+
+  ${
+    $d D n $.  $d D y $.  $d S n $.  $d S y $.  $d T f n x $.  $d T x y $.
+    $d f n ph x $.  $d ph x y $.
+    subsalsal.1 $e |- ( ph -> S e. SAlg ) $.
+    subsalsal.2 $e |- ( ph -> D e. V ) $.
+    subsalsal.3 $e |- T = ( S |`t D ) $.
+    $( A subspace sigma-algebra is a sigma algebra.  This is Lemma 121A of
+       [Fremlin1] p. 35.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    subsalsal $p |- ( ph -> T e. SAlg ) $=
+      ( vy cuni wcel a1i c0 csalg cin cv wa wceq cdif adantr vx vf vn cvv crest
+      ovexi 0sald 0in eqcomi elrestd eleqtrrdi eqid wrex eleqtrdi adantl elrest
+      co id wb syl2anc mpbid wi 3adant3 3ad2ant1 simpr saldifcld restuni3 eqtrd
+      unieqi difeq12d indifdir eleq12d 3adant2 mpbird 3exp rexlimdv subsaliuncl
+      w3a mpd cn wf issalnnd ) AUADUBUCUDDJZDUDKADCBUEHUFLAMCBUEUQZDAMBCNEMFGAC
+      FUGMBOMBUHUIUJHUKWCULAUAPZDKZQZWEIPZBOZRZICUMZWCWESZDKZWGWEWDKZWKWFWNAWFW
+      EDWDWFURHUNUOAWNWKUSZWFACNKZBEKZWOFGIWEBCNEUPUTTVAAWKWMVBWFAWJWMICAWHCKZW
+      JWMAWRWJVRZWMCJZWHSZBOZWDKZWSXBBCNEXAAWRWPWJAWPWRFTZVCAWRWQWJGVDAWRXACKWJ
+      AWRQCWHXDAWRVEVFVCXBULUJAWJWMXCUSWRAWJQZWLXBDWDXEWLWTBOZWISZXBXEWCXFWEWIA
+      WCXFRWJAWCWDJZXFWCXHRADWDHVILACBNEFGVGVHTAWJVEVJXGXBRXEXBXGWTWHBVKUILVHDW
+      DRXEHLVLVMVNVOVPTVSAVTDUBPZWAZQBCDUCXIEAWPXJFTAWQXJGTHAXJVEVQWB $.
+  $}
+
+  ${
+    $d x y $.
+    $( Identify the class of sigma-algebras with the union of the range of the
+       sigma-algebra operator.  This connects ~ df-salg with ~ df-siga so that
+       results using either interface can be reused.  Prepared with AI
+       assistance from OpenAI Codex.  (Contributed by Owen Orger,
+       16-Nov-2026.) $)
+    salrnsiga $p |- SAlg = U. ran sigAlgebra $=
+      ( vx vy csalg csiga crn cuni cv wcel cpw wss wral w3a wb elex simp2 simp3
+      cvv syl 3jca mpbird cfv cdif com cdom wbr wi wa ssid sspwuni mpbir saluni
+      a1i c0 id issal mpbid jca issiga elfvunirn 0elsiga isrnsigau simpr impbii
+      eqriv ) ACDEFZAGZCHZVFVEHZVGVFVFFZDUAHZVHVGVJVFVIIJZVIVFHZVIBGZUBVFHBVFKZ
+      VMUCUDUEVMFVFHUFBVFIKZLZUGZVGVKVPVKVGVKVIVIJVIUHVFVIUIUJULVGVLVNVOVFUKVGU
+      MVFHZVNVOLZVNVGVGVSVGUNVGVFQHZVGVSMZVFCNZBVFQUOZRUPZVRVNVOORVGVSVOWDVRVNV
+      OPRSUQVGVTVJVQMWBBVFVIURRTVIVFDUSRVHVGVSVHVRVNVOVFUTVHVPVNVHVQVPBVFVAVKVP
+      VBRZVLVNVOORVHVPVOWEVLVNVOPRSVHVTWAVFVENWCRTVCVD $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Real measurable functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+  $c SMblFn $.
+
+  $( Extend class notation with the class of real-valued measurable functions
+     w.r.t. sigma-algebras. $)
+  csmblfn $a class SMblFn $.
+
+  ${
+    $d s f a $.
+    $( Define a real-valued measurable function w.r.t. a given sigma-algebra.
+       See Definition 121C of [Fremlin1] p. 36 and Definition 135E (b) of
+       [Fremlin1] p. 80 .  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    df-smblfn $a |- SMblFn = ( s e. SAlg |-> { f e. ( RR ^pm U. s ) | A. a e.
+      RR ( `' f " ( -oo (,) a ) ) e. ( s |`t dom f ) } ) $.
+  $}
+
+  ${
+    $d A a x $.  $d B a $.  $d C a x $.  $d S a $.
+    salpreimagelt.x $e |- F/ x ph $.
+    salpreimagelt.a $e |- F/ a ph $.
+    salpreimagelt.s $e |- ( ph -> S e. SAlg ) $.
+    salpreimagelt.u $e |- A = U. S $.
+    salpreimagelt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    salpreimagelt.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | a <_ B } e. S ) $.
+    salpreimagelt.c $e |- ( ph -> C e. RR ) $.
+    $( If all the preimages of left-closed, unbounded below intervals, belong
+       to a sigma-algebra, then all the preimages of right-open, unbounded
+       below intervals, belong to the sigma-algebra.  (iv) implies (i) in
+       Proposition 121B of [Fremlin1] p. 36.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    salpreimagelt $p |- ( ph -> { x e. A | B < C } e. S ) $=
+      ( wbr crab cle cdif cr wcel clt cuni wceq eqcomi difeq1d rexrd preimagelt
+      a1i eqtr2d wa ancli cv wi nfcv nfel1 nfan nfim eleq1 anbi2d breq1 rabbidv
+      nfv eleq1d imbi12d vtoclg1f sylc saldifcld eqeltrd ) ADEUAOBCPZFUBZEDQOZB
+      CPZRZFAVMCVLRVIAVJCVLVJCUCACVJKUDUHUEABCDEHLAENUFUGUIAFVLJAESTZAVNUJZVLFT
+      ZNAVNNUKAGULZSTZUJZVQDQOZBCPZFTZUMVOVPUMGESVOVPGAVNGIGESGEUNUOUPVPGVBUQVQ
+      EUCZVSVOWBVPWCVRVNAVQESURUSWCWAVLFWCVTVKBCVQEDQUTVAVCVDMVEVFVGVH $.
+  $}
+
+  ${
+    $d A a x $.  $d B a $.  $d C a x $.  $d S a $.
+    salpreimalegt.x $e |- F/ x ph $.
+    salpreimalegt.a $e |- F/ a ph $.
+    salpreimalegt.s $e |- ( ph -> S e. SAlg ) $.
+    salpreimalegt.u $e |- A = U. S $.
+    salpreimalegt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    salpreimalegt.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | B <_ a } e. S ) $.
+    salpreimalegt.c $e |- ( ph -> C e. RR ) $.
+    $( If all the preimages of right-closed, unbounded below intervals, belong
+       to a sigma-algebra, then all the preimages of left-open, unbounded above
+       intervals, belong to the sigma-algebra.  (ii) implies (iii) in
+       Proposition 121B of [Fremlin1] p. 35.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    salpreimalegt $p |- ( ph -> { x e. A | C < B } e. S ) $=
+      ( wbr crab cle cdif cr wcel clt cuni wceq eqcomi difeq1d rexrd preimalegt
+      a1i eqtr2d wa ancli cv wi nfv nfan nfim eleq1 anbi2d breq2 rabbidv eleq1d
+      imbi12d vtoclg1f sylc saldifcld eqeltrd ) AEDUAOBCPZFUBZDEQOZBCPZRZFAVKCV
+      JRVGAVHCVJVHCUCACVHKUDUHUEABCDEHLAENUFUGUIAFVJJAESTZAVLUJZVJFTZNAVLNUKAGU
+      LZSTZUJZDVOQOZBCPZFTZUMVMVNUMGESVMVNGAVLGIVLGUNUOVNGUNUPVOEUCZVQVMVTVNWAV
+      PVLAVOESUQURWAVSVJFWAVRVIBCVOEDQUSUTVAVBMVCVDVEVF $.
+  $}
+
+  ${
+    $d A a n $.  $d B a n $.  $d C a n x $.  $d S a n $.  $d n ph $.
+    salpreimagtge.x $e |- F/ x ph $.
+    salpreimagtge.a $e |- F/ a ph $.
+    salpreimagtge.s $e |- ( ph -> S e. SAlg ) $.
+    salpreimagtge.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    salpreimagtge.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | a < B } e. S ) $.
+    salpreimagtge.c $e |- ( ph -> C e. RR ) $.
+    $( If all the preimages of left-open, unbounded above intervals, belong to
+       a sigma-algebra, then all the preimages of left-closed, unbounded above
+       intervals, belong to the sigma-algebra.  (iii) implies (iv) in
+       Proposition 121B of [Fremlin1] p. 35.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    salpreimagtge $p |- ( ph -> { x e. A | C <_ B } e. S ) $=
+      ( vn wbr crab cn clt wcel cr cle c1 cdiv cmin ciin preimageiingt com cdom
+      cv co nnct a1i c0 wne nnn0 wa adantr nnrecre adantl resubcld wi nfan nfim
+      nfv ovex eleq1 anbi2d breq1 rabbidv eleq1d imbi12d vtoclf syldan saliincl
+      wceq eqeltrd ) AEDUAOBCPNQEUBNUIZUCUJZUDUJZDROZBCPZUEFABCDENHKMUFAFNWAQJQ
+      UGUHOAUKULQUMUNAUOULAVQQSZVSTSZWAFSZAWBUPEVRAETSWBMUQWBVRTSAVQURUSUTAGUIZ
+      TSZUPZWEDROZBCPZFSZVAAWCUPZWDVAGVSWKWDGAWCGIWCGVDVBWDGVDVCEVRUDVEWEVSVOZW
+      GWKWJWDWLWFWCAWEVSTVFVGWLWIWAFWLWHVTBCWEVSDRVHVIVJVKLVLVMVNVP $.
+  $}
+
+  ${
+    $d A a b x $.  $d B a b $.  $d C a x $.  $d S a b $.  $d b ph $.
+    salpreimagtlt.x $e |- F/ x ph $.
+    salpreimagtlt.a $e |- F/ a ph $.
+    salpreimagtlt.s $e |- ( ph -> S e. SAlg ) $.
+    salpreimagtlt.u $e |- A = U. S $.
+    salpreimagtlt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    salpreimagtlt.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | a < B } e. S ) $.
+    salpreimagtlt.c $e |- ( ph -> C e. RR ) $.
+    $( If all the preimages of lef-open, unbounded above intervals, belong to a
+       sigma-algebra, then all the preimages of right-open, unbounded below
+       intervals, belong to the sigma-algebra.  (iii) implies (i) in
+       Proposition 121B of [Fremlin1] p. 36.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    salpreimagtlt $p |- ( ph -> { x e. A | B < C } e. S ) $=
+      ( vb cv cr wcel nfv clt wa nfan csalg adantr cxr adantlr wbr crab wi nfim
+      wceq eleq1w anbi2d breq1 rabbidv eleq1d simpr salpreimagtge salpreimagelt
+      imbi12d chvarfv ) ABCDEFGHIJKLAGPZQRZUAZBCDVBFOAVCBHVCBSUBVDOSAFUCRVCJUDA
+      BPCRDUERVCLUFAOPZQRZVEDTUGZBCUHZFRZVCVDVBDTUGZBCUHZFRZUIAVFUAZVIUIGOVMVIG
+      AVFGIVFGSUBVIGSUJVBVEUKZVDVMVLVIVNVCVFAGOQULUMVNVKVHFVNVJVGBCVBVEDTUNUOUP
+      UTMVAUFAVCUQURNUS $.
+  $}
+
+  ${
+    $d A a n $.  $d B a n $.  $d C a n x $.  $d S a n $.  $d n ph $.
+    salpreimaltle.x $e |- F/ x ph $.
+    salpreimaltle.a $e |- F/ a ph $.
+    salpreimaltle.s $e |- ( ph -> S e. SAlg ) $.
+    salpreimaltle.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    salpreimaltle.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | B < a } e. S ) $.
+    salpreimaltle.c $e |- ( ph -> C e. RR ) $.
+    $( If all the preimages of right-open, unbounded below intervals, belong to
+       a sigma-algebra, then all the preimages of right-closed, unbounded below
+       intervals, belong to the sigma-algebra.  (i) implies (ii) in Proposition
+       121B of [Fremlin1] p. 35.  (Contributed by Glauco Siliprandi,
+       26-Jun-2021.) $)
+    salpreimaltle $p |- ( ph -> { x e. A | B <_ C } e. S ) $=
+      ( vn wbr crab cn wcel wa cr cle c1 cv cdiv co caddc clt preimaleiinlt com
+      ciin cdom nnct a1i c0 wne nnn0 simpl nnrecre adantl readdcld sylan wi nfv
+      nfan nfim ovex eleq1 anbi2d breq2 rabbidv eleq1d imbi12d syl2anc saliincl
+      wceq vtoclf eqeltrd ) ADEUAOBCPNQDEUBNUCZUDUEZUFUEZUGOZBCPZUJFABCDENHKMUH
+      AFNWBQJQUIUKOAULUMQUNUOAUPUMAVRQRZSAVTTRZWBFRZAWCUQAETRZWCWDMWFWCSEVSWFWC
+      UQWCVSTRWFVRURUSUTVAAGUCZTRZSZDWGUGOZBCPZFRZVBAWDSZWEVBGVTWMWEGAWDGIWDGVC
+      VDWEGVCVEEVSUFVFWGVTVOZWIWMWLWEWNWHWDAWGVTTVGVHWNWKWBFWNWJWABCWGVTDUGVIVJ
+      VKVLLVPVMVNVQ $.
+  $}
+
+  ${
+    $d D a x $.  $d F a f $.  $d F a x $.  $d S a f s $.  $d S a x $.
+    $d a ph s $.  $d ph x $.
+    issmflem.s $e |- ( ph -> S e. SAlg ) $.
+    issmflem.d $e |- D = dom F $.
+    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
+       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
+       all open intervals unbounded below are in the subspace sigma-algebra
+       induced by its domain.  The domain of ` F ` is required to be a subset
+       of the underlying set of ` S ` .  Definition 121C of [Fremlin1] p. 36,
+       and Proposition 121B (i) of [Fremlin1] p. 35 .  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    issmflem $p |- ( ph -> ( F e. ( SMblFn ` S ) <-> ( D C_ U. S /\ F : D -->
+       RR /\ A. a e. RR { x e. D | ( F ` x ) < a } e. ( S |`t D ) ) ) ) $=
+      ( vf wcel wss cr crest co wa wceq cvv a1i adantr adantl vs csmblfn cfv wf
+      cuni cv clt wbr crab wral w3a cpm ccnv cmnf cioo cima cdm simpr df-smblfn
+      csalg unieq oveq2d rabeqdv oveq1 ralbidv rabbidv eqtrd ovex rabex fvmptd3
+      eleq2d eleqtrd elrabi elpmi2 eqsstrid syldan elpmi simpld wb feq2i mpbird
+      cnveq imaeq1d dmeq eleq12d elrab simprbi syl2anc simpl rexrd preimaioomnf
+      rspa eqcomd oveq2i ralrimiva 3jca ex reex uniexd simprr fssxp xpss1 sstrd
+      syl cxp dmss dmxpss elpm2r syl22anc 3adantr3 ralbidva biimpd imp 3adantr1
+      jca sylibr impbid ) AEDUBUCZJZCDUEZKZCLEUDZBUFEUCFUFZUGUHBCUIZDCMNZJZFLUJ
+      ZUKZAXSYHAXSOZYAYBYGAXSELXTULNZJZYAYIEIUFZUMZUNYCUONZUPZDYLUQZMNZJZFLUJZI
+      YJUIZJZYKYIEXRYTAXSURAXRYTPXSAUADYOUAUFZYPMNZJZFLUJZILUUBUEZULNZUIZYTUTUB
+      QIUAFUSUUBDPZUUHUUEIYJUIYTUUIUUEIUUGYJUUIUUFXTLULUUBDVAVBVCUUIUUEYSIYJUUI
+      UUDYRFLUUIUUCYQYOUUBDYPMVDVKVEVFVGGYTQJAYSIYJLXTULVHVIRVJZSVLZYSIEYJVMXDZ
+      YKYAAYKCEUQZXTHLXTEVNVOTVPYIYBUUMLEUDZYIUUNUUMXTKZYIYKUUNUUOOUULLXTEVQXDV
+      RYBUUNVSYICUUMLEHVTRWAZYIYFFLYIYCLJZOZYFEUMZYNUPZDUUMMNZJZUURUVBFLUJZUUQU
+      VBYIUVCUUQYIUUAUVCUUKUUAYKUVCYSUVCIEYJYLEPZYRUVBFLUVDYOUUTYQUVAUVDYMUUSYN
+      YLEWBWCUVDYPUUMDMYLEWDVBWEVEWFZWGXDSYIUUQURZUVBFLWLWHUURYDUUTYEUVAUURYBUU
+      QYDUUTPYIYBUUQUUPSUVFYBUUQOZUUTYDUVGBCYCEYBUUQWIUVGYCYBUUQURWJWKWMZWHYEUV
+      APUURCUUMDMHWNRWEWAWOWPWQAYHXSAYHOZEYTXRUVIYKUVCOUUAUVIYKUVCAYAYBYKYGAYAY
+      BOZOZLQJZXTQJZYBYAYKUVLUVKWRRAUVMUVJADUTGWSSAYAYBWTAUVJEXTLXEZKZYAUVJUVOA
+      UVJECLXEZUVNYBEUVPKYACLEXATYAUVPUVNKYBCXTLXBSXCTAUVOOCUUMXTHUVOUUOAUVOUUM
+      UVNUQZXTEUVNXFUVQXTKUVOXTLXGRXCTVOVPLXTCEQQXHXIXJAYBYGUVCYAYBYGOUVCAYBYGU
+      VCYBYGUVCYBYFUVBFLUVGYDUUTYEUVAUVHUVGCUUMDMCUUMPUVGHRVBWEXKXLXMTXNXOUVEXP
+      AYTXRPYHAXRYTUUJWMSVLWQXQ $.
+  $}
+
+  ${
+    $d D a b x y $.  $d F a b x y $.  $d S a b y $.  $d b ph y $.
+    issmf.s $e |- ( ph -> S e. SAlg ) $.
+    issmf.d $e |- D = dom F $.
+    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
+       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
+       all open intervals unbounded below are in the subspace sigma-algebra
+       induced by its domain.  The domain of ` F ` is required to be a subset
+       of the underlying set of ` S ` .  Definition 121C of [Fremlin1] p. 36,
+       and Proposition 121B (i) of [Fremlin1] p. 35 .  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    issmf $p |- ( ph -> ( F e. ( SMblFn ` S ) <-> ( D C_ U. S /\ F : D --> RR
+       /\ A. a e. RR { x e. D | ( F ` x ) < a } e. ( S |`t D ) ) ) ) $=
+      ( vy vb cfv wcel cr cv clt wbr crab wral w3a wb csmblfn cuni wss wf crest
+      co issmflem breq2 rabbidv eleq1d fveq2 breq1d cbvrabv eleq1i a1i cbvralvw
+      wceq bitrd 3anbi3i ) AEDUAKLCDUBUCZCMEUDZINZEKZJNZOPZICQZDCUEUFZLZJMRZSZU
+      TVABNZEKZFNZOPZBCQZVGLZFMRZSZAICDEJGHUGVJVRTAVIVQUTVAVHVPJFMVDVMUQZVHVCVM
+      OPZICQZVGLZVPVSVFWAVGVSVEVTICVDVMVCOUHUIUJWBVPTVSWAVOVGVTVNIBCVBVKUQVCVLV
+      MOVBVKEUKULUMUNUOURUPUSUOUR $.
+  $}
+
+  ${
+    $d D a b x $.  $d F a b x $.  $d S a b x $.  $d b ph $.
+    issmfgtlem.x $e |- F/ x ph $.
+    issmfgtlem.a $e |- F/ a ph $.
+    issmfgtlem.s $e |- ( ph -> S e. SAlg ) $.
+    issmfgtlem.d $e |- D = dom F $.
+    issmfgtlem.i $e |- ( ph -> D C_ U. S ) $.
+    issmfgtlem.f $e |- ( ph -> F : D --> RR ) $.
+    issmfgtlem.p $e |- ( ph -> A. a e. RR { x e. D | a < ( F ` x ) } e. ( S |`t
+       D ) ) $.
+    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
+       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
+       all left-open intervals unbounded above are in the subspace
+       sigma-algebra induced by its domain.  The domain of ` F ` is required to
+       be a subset of the underlying set of ` S ` .  Definition 121C of
+       [Fremlin1] p. 36, and Proposition 121B (iii) of [Fremlin1] p. 35 .
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    issmfgtlem $p |- ( ph -> F e. ( SMblFn ` S ) ) $=
+      ( vb wcel cr crab wa adantr cvv csmblfn cfv cuni wss wf cv clt crest wral
+      wbr co w3a wceq csalg restuni4 eqcomd rabeqdv nfv nfan uniexd simpr ssexd
+      mpdan eqid subsalsal cxr eleqtrd ffvelcdmd rexrd adantlr r19.21bi eqeltrd
+      salpreimagtlt ralrimiva 3jca issmf mpbird ) AEDUAUBOCDUCZUDZCPEUEZBUFZEUB
+      ZNUFZUGUJZBCQZDCUHUKZOZNPUIZULAVSVTWHKLAWGNPAWCPOZRZWEWDBWFUCZQZWFAWEWLUM
+      WIAWDBCWKAWKCADCUNIKUOZUPUQSWJBWKWBWCWFFAWIBGWIBURUSAWIFHWIFURUSAWFUNOWIA
+      CDWFTIAVSCTOKAVSRCVRTAVRTOVSADUNIUTSAVSVAVBVCWFVDVESWKVDAWAWKOZWBVFOWIAWN
+      RZWBWOCPWAEAVTWNLSWOWAWKCAWNVAAWKCUMWNWMSVGVHVIVJAFUFZPOZWPWBUGUJZBWKQZWF
+      OWIAWQRWSWRBCQZWFAWSWTUMWQAWRBWKCWMUQSAWTWFOFPMVKVLVJAWIVAVMVLVNVOABCDENI
+      JVPVQ $.
+  $}
+
+  ${
+    $d D a b x $.  $d F a b x $.  $d S a b x $.  $d b ph $.
+    issmfgelem.x $e |- F/ x ph $.
+    issmfgelem.a $e |- F/ a ph $.
+    issmfgelem.s $e |- ( ph -> S e. SAlg ) $.
+    issmfgelem.d $e |- D = dom F $.
+    issmfgelem.i $e |- ( ph -> D C_ U. S ) $.
+    issmfgelem.f $e |- ( ph -> F : D --> RR ) $.
+    issmfgelem.p $e |- ( ph -> A. a e. RR { x e. D | a <_ ( F ` x ) } e. ( S
+       |`t D ) ) $.
+    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
+       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
+       all left-closed intervals unbounded above are in the subspace
+       sigma-algebra induced by its domain.  The domain of ` F ` is required to
+       be a subset of the underlying set of ` S ` .  Definition 121C of
+       [Fremlin1] p. 36, and Proposition 121B (iv) of [Fremlin1] p. 36 .
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    issmfgelem $p |- ( ph -> F e. ( SMblFn ` S ) ) $=
+      ( vb wcel cr crab wa adantr cvv csmblfn cfv cuni wss wf cv clt crest wral
+      wbr co w3a wceq csalg restuni4 eqcomd rabeqdv nfv nfan uniexd simpr ssexd
+      mpdan eqid subsalsal cxr eleqtrd ffvelcdmd rexrd adantlr cle eleq1d mpbid
+      ralbid rspa syl2anc salpreimagelt eqeltrd ralrimiva 3jca issmf mpbird ) A
+      EDUAUBOCDUCZUDZCPEUEZBUFZEUBZNUFZUGUJZBCQZDCUHUKZOZNPUIZULAWDWEWMKLAWLNPA
+      WHPOZRZWJWIBWKUCZQZWKAWJWQUMWNAWIBCWPAWPCADCUNIKUOZUPZUQSWOBWPWGWHWKFAWNB
+      GWNBURUSAWNFHWNFURUSAWKUNOWNACDWKTIAWDCTOKAWDRCWCTAWCTOWDADUNIUTSAWDVAVBV
+      CWKVDVESWPVDAWFWPOZWGVFOWNAWTRZWGXACPWFEAWEWTLSXAWFWPCAWTVAAWPCUMWTWRSVGV
+      HVIVJAFUFZPOZXBWGVKUJZBWPQZWKOZWNAXCRXFFPUIZXCXFAXGXCAXDBCQZWKOZFPUIXGMAX
+      IXFFPHAXHXEWKAXDBCWPWSUQVLVNVMSAXCVAXFFPVOVPVJAWNVAVQVRVSVTABCDENIJWAWB
+      $.
+  $}
+
+  ${
+    $d A a b x $.  $d B a b $.  $d C a x $.  $d S a b $.  $d b ph $.
+    salpreimalelt.x $e |- F/ x ph $.
+    salpreimalelt.a $e |- F/ a ph $.
+    salpreimalelt.s $e |- ( ph -> S e. SAlg ) $.
+    salpreimalelt.u $e |- A = U. S $.
+    salpreimalelt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    salpreimalelt.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | B <_ a } e. S ) $.
+    salpreimalelt.c $e |- ( ph -> C e. RR ) $.
+    $( If all the preimages of right-closed, unbounded below intervals, belong
+       to a sigma-algebra, then all the preimages of right-open, unbounded
+       below intervals, belong to the sigma-algebra.  (ii) implies (i) in
+       Proposition 121B of [Fremlin1] p. 36.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    salpreimalelt $p |- ( ph -> { x e. A | B < C } e. S ) $=
+      ( vb cv wcel nfv nfan adantlr cr wa adantr cxr clt wbr crab salpreimalegt
+      csalg cle simpr salpreimagtge salpreimagelt ) ABCDEFGHIJKLAGPZUAQZUBZBCDU
+      NFOAUOBHUOBRSUPORAFUIQZUOJUCABPCQZDUDQZUOLTAOPZUAQZUTDUEUFBCUGFQUOAVAUBBC
+      DUTFGAVABHVABRSAVAGIVAGRSAUQVAJUCKAURUSVALTAUODUNUJUFBCUGFQVAMTAVAUKUHTAU
+      OUKULNUM $.
+  $}
+
+  ${
+    $d A a x $.  $d D a x $.  $d F a x $.  $d S a $.
+    smfpreimalt.s $e |- ( ph -> S e. SAlg ) $.
+    smfpreimalt.f $e |- ( ph -> F e. ( SMblFn ` S ) ) $.
+    smfpreimalt.d $e |- D = dom F $.
+    smfpreimalt.a $e |- ( ph -> A e. RR ) $.
+    $( Given a function measurable w.r.t. to a sigma-algebra, the preimage of
+       an open interval unbounded below is in the subspace sigma-algebra
+       induced by its domain.  (Contributed by Glauco Siliprandi,
+       26-Jun-2021.) $)
+    smfpreimalt $p |- ( ph -> { x e. D | ( F ` x ) < A } e. ( S |`t D ) ) $=
+      ( va cr wcel cv cfv clt wbr crab crest co wral cuni wss csmblfn w3a issmf
+      wf mpbid simp3d wceq breq2 rabbidv eleq1d rspcva syl2anc ) ACLMBNFOZKNZPQ
+      ZBDRZEDSTZMZKLUAZUPCPQZBDRZUTMZJADEUBUCZDLFUGZVBAFEUDOMVFVGVBUEHABDEFKGIU
+      FUHUIVAVEKCLUQCUJZUSVDUTVHURVCBDUQCUPPUKULUMUNUO $.
+  $}
+
+  ${
+    $d D a x $.  $d F a x $.  $d S a x $.
+    smff.s $e |- ( ph -> S e. SAlg ) $.
+    smff.f $e |- ( ph -> F e. ( SMblFn ` S ) ) $.
+    smff.d $e |- D = dom F $.
+    $( A function measurable w.r.t. to a sigma-algebra, is actually a function.
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    smff $p |- ( ph -> F : D --> RR ) $=
+      ( vx va cuni wss cr wf cv cfv clt wbr crab crest wcel co wral csmblfn w3a
+      issmf mpbid simp2d ) ABCJKZBLDMZHNDOINPQHBRCBSUATILUBZADCUCOTUHUIUJUDFAHB
+      CDIEGUEUFUG $.
+  $}
+
+  ${
+    $d D a x $.  $d F a x $.  $d S a $.
+    smfdmss.s $e |- ( ph -> S e. SAlg ) $.
+    smfdmss.f $e |- ( ph -> F e. ( SMblFn ` S ) ) $.
+    smfdmss.d $e |- D = dom F $.
+    $( The domain of a function measurable w.r.t. to a sigma-algebra, is a
+       subset of the set underlying the sigma-algebra.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    smfdmss $p |- ( ph -> D C_ U. S ) $=
+      ( vx va cuni wss cr wf cv cfv clt wbr crab crest wcel co wral csmblfn w3a
+      issmf mpbid simp1d ) ABCJKZBLDMZHNDOINPQHBRCBSUATILUBZADCUCOTUHUIUJUDFAHB
+      CDIEGUEUFUG $.
+  $}
+
+  ${
+    $d D a b x $.  $d F a b x $.  $d S a b x $.  $d b ph $.
+    issmflelem.x $e |- F/ x ph $.
+    issmflelem.a $e |- F/ a ph $.
+    issmflelem.s $e |- ( ph -> S e. SAlg ) $.
+    issmflelem.d $e |- D = dom F $.
+    issmflelem.i $e |- ( ph -> D C_ U. S ) $.
+    issmflelem.f $e |- ( ph -> F : D --> RR ) $.
+    issmflelem.l $e |- ( ( ph /\ a e. RR ) -> { x e. D | ( F ` x ) <_ a } e. (
+       S |`t D ) ) $.
+    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
+       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
+       all right-closed intervals unbounded below are in the subspace
+       sigma-algebra induced by its domain.  The domain of ` F ` is required to
+       be a subset of the underlying set of ` S ` .  Definition 121C of
+       [Fremlin1] p. 36, and Proposition 121B (ii) of [Fremlin1] p. 35 .
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    issmflelem $p |- ( ph -> F e. ( SMblFn ` S ) ) $=
+      ( vb wcel cr crab wa wceq adantr csmblfn cfv cuni wss wf cv clt wbr crest
+      co wral w3a csalg simpr restuni4 eqcomd mpdan rabeqdv nfv nfan cvv uniexd
+      ssexd subsalsal cxr eleqtrd ffvelcdmda syldan rexrd adantlr salpreimalelt
+      eqid cle eqeltrd ralrimiva 3jca issmf mpbird ) AEDUAUBOCDUCZUDZCPEUEZBUFZ
+      EUBZNUFZUGUHZBCQZDCUIUJZOZNPUKZULAVTWAWIKLAWHNPAWDPOZRZWFWEBWGUCZQZWGAWFW
+      MSWJAWEBCWLAVTCWLSKAVTRZWLCWNDCUMADUMOVTITZAVTUNZUOZUPUQURTWKBWLWCWDWGFAW
+      JBGWJBUSUTAWJFHWJFUSUTAWGUMOZWJAVTWRKWNCDWGVAWOWNCVSVAAVSVAOVTADUMIVBTWPV
+      CWGVLVDUQTWLVLAWBWLOZWCVEOWJAWSRZWCAWSWBCOWCPOWTWBWLCAWSUNAWLCSZWSAVTXAKW
+      QUQZTVFACPWBELVGVHVIVJAFUFZPOZWCXCVMUHZBWLQZWGOWJAXDRXFXEBCQZWGAXFXGSXDAX
+      EBWLCXBURTMVNVJAWJUNVKVNVOVPABCDENIJVQVR $.
+  $}
+
+  ${
+    $d D a b x y $.  $d D b c y $.  $d F a b x y $.  $d F b c y $.
+    $d S a b y $.  $d S b c y $.  $d b c ph y $.
+    issmfle.s $e |- ( ph -> S e. SAlg ) $.
+    issmfle.d $e |- D = dom F $.
+    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
+       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
+       all right-closed intervals unbounded below are in the subspace
+       sigma-algebra induced by its domain.  The domain of ` F ` is required to
+       be b subset of the underlying set of ` S ` .  Definition 121C of
+       [Fremlin1] p. 36, and Proposition 121B (ii) of [Fremlin1] p. 35 .
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    issmfle $p |- ( ph -> ( F e. ( SMblFn ` S ) <-> ( D C_ U. S /\ F : D --> RR
+       /\ A. a e. RR { x e. D | ( F ` x ) <_ a } e. ( S |`t D ) ) ) ) $=
+      ( vy vb wcel cr cv cle wbr crab wa adantr nfv nfan vc csmblfn cfv cuni wf
+      wss crest co wral w3a csalg simpr smfdmss smff cvv uniexd ssexd subsalsal
+      syldan eqid cxr frexr ffvelcdmda clt smfpreimalt adantlr salpreimaltle ex
+      ralrimi 3jca nfcv nfrab1 nfel nfralw nf3an nfra1 simpr1 3ad2antl3 adantll
+      simpr2 rspa issmflelem impbid wceq breq2 rabbidv fveq2 breq1d cbvrabv a1i
+      wb eqtrd eleq1d cbvralvw 3anbi3i bitrd ) AEDUBUCKZCDUDZUFZCLEUEZIMZEUCZJM
+      ZNOZICPZDCUGUHZKZJLUIZUJZWSWTBMZEUCZFMZNOZBCPZXFKZFLUIZUJZAWQXIAWQXIAWQQZ
+      WSWTXHXRCDEADUKKZWQGRZAWQULZHUMZXRCDEXTYAHUNZXRXGJLAWQJAJSZWQJSTXRXCLKZXG
+      XRYEQZICXBXCXFUAXRYEIAWQIAISZWQISTYEISTYFUASXRXFUKKYEXRCDXFUOXTAWQWSCUOKY
+      BAWSQCWRUOAWRUOKWSADUKGUPRAWSULUQUSXFUTURRYFCVAXAEXRCVAEUEYEXRCEYCVBRVCXR
+      UAMZLKZXBYHVDOICPXFKYEXRYIQIYHCDEXRXSYIXTRXRWQYIYARHXRYIULVEVFXRYEULVGVHV
+      IVJVHAXIWQAXIQICDEJAXIIYGWSWTXHIWSISWTISXGIJLILVKIXEXFXDICVLIXFVKVMVNVOTA
+      XIJYDWSWTXHJWSJSWTJSXGJLVPVOTAXSXIGRHAWSWTXHVQAWSWTXHVTXIYEXGAXHWSYEXGWTX
+      GJLWAVRVSWBVHWCXIXQWKAXHXPWSWTXGXOJFLXCXLWDZXEXNXFYJXEXBXLNOZICPZXNYJXDYK
+      ICXCXLXBNWEWFYLXNWDYJYKXMIBCXAXJWDXBXKXLNXAXJEWGWHWIWJWLWMWNWOWJWP $.
+  $}
+
+  ${
+    $d D a b x y $.  $d D b c y $.  $d F a b x y $.  $d F b c y $.
+    $d S a b y $.  $d S b c y $.  $d b c ph y $.
+    issmfgt.s $e |- ( ph -> S e. SAlg ) $.
+    issmfgt.d $e |- D = dom F $.
+    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
+       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
+       all left-open intervals unbounded above are in the subspace
+       sigma-algebra induced by its domain.  The domain of ` F ` is required to
+       be b subset of the underlying set of ` S ` .  Definition 121C of
+       [Fremlin1] p. 36, and Proposition 121B (iii) of [Fremlin1] p. 35 .
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    issmfgt $p |- ( ph -> ( F e. ( SMblFn ` S ) <-> ( D C_ U. S /\ F : D --> RR
+       /\ A. a e. RR { x e. D | a < ( F ` x ) } e. ( S |`t D ) ) ) ) $=
+      ( vb vy vc wcel cr cv clt crab wa adantr simpr nfv csmblfn cfv wss wf wbr
+      cuni crest co wral w3a smfdmss smff nfan wceq restuni4 eqcomd rabeqdv cvv
+      csalg uniexd ssexd eqid subsalsal cxr eleqtrd ffvelcdmd rexrd adantlr cle
+      syldan issmfle simp3d eleq1d ralbidv mpbird syl2anc salpreimalegt eqeltrd
+      mpbid rspa ralrimi 3jca nfcv nfrab1 nfel nfralw nf3an nfra1 simpr1 simpr2
+      ex simpr3 issmfgtlem impbid wb breq1 rabbidv fveq2 cbvrabv eqtrd cbvralvw
+      breq2d a1i 3anbi3i bitrd ) AEDUAUBLZCDUFZUCZCMEUDZINZJNZEUBZOUEZJCPZDCUGU
+      HZLZIMUIZUJZXHXIFNZBNZEUBZOUEZBCPZXOLZFMUIZUJZAXFXRAXFXRAXFQZXHXIXQYGCDEA
+      DUSLZXFGRZAXFSZHUKZYGCDEYIYJHULZYGXPIMAXFIAITZXFITUMYGXJMLZXPYGYNQZXNXMJX
+      OUFZPZXOYGXNYQUNYNYGXMJCYPYGYPCYGDCUSYIYKUOZUPUQRYOJYPXLXJXOKYGYNJAXFJAJT
+      ZXFJTUMYNJTUMYOKTYGXOUSLYNYGCDXOURYIAXFXHCURLYKAXHQCXGURAXGURLXHADUSGUTRA
+      XHSVAVJXOVBVCRYPVBYGXKYPLZXLVDLYNYGYTQZXLUUACMXKEYGXIYTYLRUUAXKYPCYGYTSYG
+      YPCUNYTYRRVEVFVGVHYGKNZMLZXLUUBVIUEZJYPPZXOLZYNYGUUCQUUFKMUIZUUCUUFYGUUGU
+      UCYGUUGUUDJCPZXOLZKMUIZYGXHXIUUJYGXFXHXIUUJUJYJYGJCDEKYIHVKVSVLYGUUFUUIKM
+      YGUUEUUHXOYGUUDJYPCYRUQVMVNVORYGUUCSUUFKMVTVPVHYGYNSVQVRWKWAWBWKAXRXFAXRQ
+      JCDEIAXRJYSXHXIXQJXHJTXIJTXPJIMJMWCJXNXOXMJCWDJXOWCWEWFWGUMAXRIYMXHXIXQIX
+      HITXIITXPIMWHWGUMAYHXRGRHAXHXIXQWIAXHXIXQWJAXHXIXQWLWMWKWNXRYFWOAXQYEXHXI
+      XPYDIFMXJXSUNZXNYCXOUUKXNXSXLOUEZJCPZYCUUKXMUULJCXJXSXLOWPWQUUMYCUNUUKUUL
+      YBJBCXKXTUNXLYAXSOXKXTEWRXBWSXCWTVMXAXDXCXE $.
+  $}
+
+  ${
+    $d A a x $.  $d D a x $.  $d F a x $.  $d S a $.
+    smfpreimagt.s $e |- ( ph -> S e. SAlg ) $.
+    smfpreimagt.f $e |- ( ph -> F e. ( SMblFn ` S ) ) $.
+    smfpreimagt.d $e |- D = dom F $.
+    smfpreimagt.a $e |- ( ph -> A e. RR ) $.
+    $( Given a function measurable w.r.t. to a sigma-algebra, the preimage of
+       an open interval unbounded above is in the subspace sigma-algebra
+       induced by its domain.  (Contributed by Glauco Siliprandi,
+       26-Jun-2021.) $)
+    smfpreimagt $p |- ( ph -> { x e. D | A < ( F ` x ) } e. ( S |`t D ) ) $=
+      ( va cr wcel cv cfv clt wbr crab crest co wral wss wf csmblfn w3a issmfgt
+      cuni mpbid simp3d wceq breq1 rabbidv eleq1d rspcva syl2anc ) ACLMKNZBNFOZ
+      PQZBDRZEDSTZMZKLUAZCUQPQZBDRZUTMZJADEUGUBZDLFUCZVBAFEUDOMVFVGVBUEHABDEFKG
+      IUFUHUIVAVEKCLUPCUJZUSVDUTVHURVCBDUPCUQPUKULUMUNUO $.
+  $}
+
+  ${
+    $d D a b x y $.  $d D b c y $.  $d F a b x y $.  $d F b c y $.
+    $d S a b y $.  $d S b c y $.  $d b c ph y $.
+    issmfge.s $e |- ( ph -> S e. SAlg ) $.
+    issmfge.d $e |- D = dom F $.
+    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
+       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
+       all left-closed intervals unbounded above are in the subspace
+       sigma-algebra induced by its domain.  The domain of ` F ` is required to
+       be b subset of the underlying set of ` S ` .  Definition 121C of
+       [Fremlin1] p. 36, and Proposition 121B (iv) of [Fremlin1] p. 36 .
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    issmfge $p |- ( ph -> ( F e. ( SMblFn ` S ) <-> ( D C_ U. S /\ F : D --> RR
+       /\ A. a e. RR { x e. D | a <_ ( F ` x ) } e. ( S |`t D ) ) ) ) $=
+      ( vb vy wcel cr cv cle wbr crab wa adantr simpr nfv vc csmblfn cfv wss wf
+      cuni crest co wral w3a csalg smfdmss smff nfan cvv uniexd ssexd subsalsal
+      eqid cxr ffvelcdmda rexrd adantlr clt smfpreimagt salpreimagtge ralrimiva
+      syldan 3jca nfcv nfrab1 nfel nfralw nf3an simpr1 simpr2 simpr3 issmfgelem
+      ex nfra1 impbid wb wceq breq1 rabbidv fveq2 breq2d cbvrabv eqtrd cbvralvw
+      a1i eleq1d 3anbi3i bitrd ) AEDUBUCKZCDUFZUDZCLEUEZIMZJMZEUCZNOZJCPZDCUGUH
+      ZKZILUIZUJZWQWRFMZBMZEUCZNOZBCPZXDKZFLUIZUJZAWOXGAWOXGAWOQZWQWRXFXPCDEADU
+      KKZWOGRZAWOSZHULZXPCDEXRXSHUMZXPXEILXPWSLKZQZJCXAWSXDUAXPYBJAWOJAJTZWOJTU
+      NYBJTUNYCUATXPXDUKKYBXPCDXDUOXRAWOWQCUOKXTAWQQCWPUOAWPUOKWQADUKGUPRAWQSUQ
+      VHXDUSURRXPWTCKZXAUTKYBXPYEQXAXPCLWTEYAVAVBVCXPUAMZLKZYFXAVDOJCPXDKYBXPYG
+      QJYFCDEXPXQYGXRRXPWOYGXSRHXPYGSVEVCXPYBSVFVGVIVSAXGWOAXGQJCDEIAXGJYDWQWRX
+      FJWQJTWRJTXEJILJLVJJXCXDXBJCVKJXDVJVLVMVNUNAXGIAITWQWRXFIWQITWRITXEILVTVN
+      UNAXQXGGRHAWQWRXFVOAWQWRXFVPAWQWRXFVQVRVSWAXGXOWBAXFXNWQWRXEXMIFLWSXHWCZX
+      CXLXDYHXCXHXANOZJCPZXLYHXBYIJCWSXHXANWDWEYJXLWCYHYIXKJBCWTXIWCXAXJXHNWTXI
+      EWFWGWHWKWIWLWJWMWKWN $.
+  $}
+
+  ${
+    $d A a x $.  $d D a x $.  $d F a x $.  $d S a $.
+    smfpreimage.s $e |- ( ph -> S e. SAlg ) $.
+    smfpreimage.f $e |- ( ph -> F e. ( SMblFn ` S ) ) $.
+    smfpreimage.d $e |- D = dom F $.
+    smfpreimage.a $e |- ( ph -> A e. RR ) $.
+    $( Given a function measurable w.r.t. to a sigma-algebra, the preimage of a
+       closed interval unbounded above is in the subspace sigma-algebra induced
+       by its domain.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    smfpreimage $p |- ( ph -> { x e. D | A <_ ( F ` x ) } e. ( S |`t D ) ) $=
+      ( va cr wcel cv cfv cle wbr crab crest co wral wss wf csmblfn w3a issmfge
+      cuni mpbid simp3d wceq breq1 rabbidv eleq1d rspcva syl2anc ) ACLMKNZBNFOZ
+      PQZBDRZEDSTZMZKLUAZCUQPQZBDRZUTMZJADEUGUBZDLFUCZVBAFEUDOMVFVGVBUEHABDEFKG
+      IUFUHUIVAVEKCLUPCUJZUSVDUTVHURVCBDUPCUQPUKULUMUNUO $.
+  $}
+
+  ${
+    $d k x y $.  $d k x y ph $.  $d k x y S $.  $d k x y F $.  $d k x y G $.
+    smffile.1 $e |- ( ph -> S e. U. ran sigAlgebra ) $.
+    smffile.2 $e |- ( ph -> F e. ( SMblFn ` S ) ) $.
+    smffile.3 $e |- ( ph -> F : U. S --> RR ) $.
+    smffile.4 $e |- ( ph -> G : U. S --> RR ) $.
+    smffile.5 $e |- ( ph -> ran G e. Fin ) $.
+    smffile.6 $e |- ( ph -> A. y e. ran G ( `' G " { y } ) e. S ) $.
+    $( Compare a finite-range real function with measurable fibers to a real
+       measurable function on the same full space.  The set where the first
+       function is at most the second is measurable.  Partition that set along
+       the finite-range fibers; on each fiber the comparison is an ordinary
+       measurable level set.  Prepared with AI assistance from OpenAI Codex.
+       (Contributed by Owen Orger, 16-Nov-2026.) $)
+    smffile $p |- ( ph -> { x e. U. S | ( G ` x ) <_ ( F ` x ) } e. S ) $=
+      ( vk crab cima cin wceq cr wcel adantr crn cfv cle wbr cuni ccnv csn ciun
+      iunin2 a1i cdm iunid imaeq2i imaiun cnvimarndm 3eqtr3i fdmd eqtrid ineq2d
+      incom wss ssrab2 sseqin2 sylib 3eqtrd csiga csalg salrnsiga eleqtrrdi cfn
+      cv com cdom fict syl wa breq1 pm5.32ri rabbii wfn fncnvima2 wb ffvelcdmda
+      ffnd wf elsng rabbidva eqtrd inrab eqtrdi 3eqtr4a crest csmblfn eqid frnd
+      co sselda smfpreimage rabeqdv oveq2d cvv elexd restid 3eltr3d sneq eleq1d
+      imaeq2d wral simpr rspcdva inelsiga syl3anc eqeltrd saliuncl eqeltrrd ) A
+      MFUAZBVKZFUBZXQEUBZUCUDZBDUEZNZFUFZMVKZUGZOZPZUHZYBDAYHYBMXPYFUHZPZYBYAPZ
+      YBYHYJQAMXPYBYFUIUJAYIYAYBAYIFUKZYAYCMXPYEUHZOYCXPOYIYLYMXPYCMXPULUMMYCXP
+      YEUNFUOUPAYARFJUQURUSAYKYAYBPZYBYBYAUTAYBYAVAZYNYBQYOAXTBYAVBUJYBYAVCVDUR
+      VEADMYGXPADVFUAUEZVGGVHVIZAXPVJSXPVLVMUDKXPVNVOAYDXPSZVPZYGYDXSUCUDZBYANZ
+      YFPZDYSXTXRYDQZVPZBYANZYTUUCVPZBYANZYGUUBUUDUUFBYAUUCXTYTXRYDXSUCVQVRVSYS
+      YGYBUUCBYANZPUUEYSYFUUHYBYSYFXRYESZBYANZUUHYSFYAVTZYFUUJQAUUKYRAYARFJWDTB
+      YAYEFWAVOYSUUIUUCBYAYSXQYASVPXRRSUUIUUCWBYSYARXQFAYARFWEYRJTWCXRYDRWFVOWG
+      WHZUSXTUUCBYAWIWJYSUUBUUAUUHPUUGYSYFUUHUUAUULUSYTUUCBYAWIWJWKYSDYPSZUUADS
+      YFDSZUUBDSAUUMYRGTYSYTBEUKZNDUUOWLWPZUUADYSBYDUUODEADVGSYRYQTAEDWMUBSYRHT
+      UUOWNAXPRYDAYARFJWOWQWRYSYTBUUOYAAUUOYAQYRAYAREIUQZTWSAUUPDQYRAUUPDYAWLWP
+      ZDAUUOYADWLUUQWTADXASUURDQADYPGXBDXAYAYAWNXCVOWHTXDYSYCCVKZUGZOZDSZUUNCXP
+      YDUUSYDQZUVAYFDUVCUUTYEYCUUSYDXEXGXFAUVBCXPXHYRLTAYRXIXJUUAYFDXKXLXMXNXO
+      $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Basic number theory
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
@@ -519873,19 +521669,6 @@ $)
       FYGRCQHVIVJVKACEGLVLXQYIYKYPWKWGWHWIWLWM $.
   $}
 
-  ${
-    $d x y B $.  $d x y F $.  $d x y V $.  $d y ps $.
-    abfmpunirn.1 $e |- F = ( x e. V |-> { y | ph } ) $.
-    abfmpunirn.2 $e |- { y | ph } e. _V $.
-    abfmpunirn.3 $e |- ( y = B -> ( ph <-> ps ) ) $.
-    $( Membership in a union of a mapping function-defined family of sets.
-       (Contributed by Thierry Arnoux, 28-Sep-2016.) $)
-    abfmpunirn $p |- ( B e. U. ran F <-> ( B e. _V /\ E. x e. V ps ) ) $=
-      ( crn cuni wcel cvv wrex elex cab cv cfv wfn wb fnmpti fnunirn ax-mp wceq
-      fvmpt2 mpan2 eleq2d rexbiia bitri elabg rexbidv bitrid biadanii ) EFKLZMZ
-      ENMZBCGOZEUOPUPEADQZMZCGOZUQURUPECRZFSZMZCGOZVAFGTUPVEUACGUSFIHUBCEFGUCUD
-      VDUTCGVBGMZVCUSEVFUSNMVCUSUEICGUSNFHUFUGUHUIUJUQUTBCGABDENJUKULUMUN $.
-  $}
 
   ${
     $d x y B $.  $d x y F $.  $d x y V $.  $d y W $.  $d y ps $.
@@ -519919,21 +521702,6 @@ $)
       BCPZAVPVSOVTUMVCAVSVPVTMUOUKUPUQURUCVICEGJUSUFUTVBUR $.
   $}
 
-  ${
-    $d x y A $.  $d x y B $.  $d x y F $.  $d x y V $.  $d y W $.  $d x y ps $.
-    $d y W $.
-    abfmpel.1 $e |- F = ( x e. V |-> { y | ph } ) $.
-    abfmpel.2 $e |- { y | ph } e. _V $.
-    abfmpel.3 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
-    $( Membership in an element of a mapping function-defined family of sets.
-       (Contributed by Thierry Arnoux, 19-Oct-2016.) $)
-    abfmpel $p |- ( ( A e. V /\ B e. W ) -> ( B e. ( F ` A ) <-> ps ) ) $=
-      ( wcel wa cab wb cvv wceq cv ancoms cfv wsbc csb csbex fvmpts mpan2 csbab
-      eqtrdi eleq2d adantr wi wal simpl adantll sbcied ex alrimiv elabgt sylan2
-      bitrd ) EHMZFIMZNFEGUAZMZFACEUBZDOZMZBVAVDVGPVBVAVCVFFVAVCCEADOZUCZVFVAVI
-      QMVCVIRCEVHKUDCEVHHGQJUEUFACDEUGUHUIUJVBVAVGBPZVAVBDSFRZVEBPZUKZDULVJVAVM
-      DVAVKVLVAVKNABCEHVAVKUMVKCSERZABPZVAVNVKVOLTUNUOUPUQVEBDFIURUSTUT $.
-  $}
 
   ${
     $d x y $.  $d y A $.  $d y B $.  $d y C $.  $d y ph $.
@@ -521094,19 +522862,10 @@ $(
 $)
 
   $( TODO - remove antecedent! $)
-  $( A singleton is countable.  (Contributed by Thierry Arnoux,
-     16-Sep-2016.) $)
-  snct $p |- ( A e. V -> { A } ~<_ _om ) $=
-    ( wcel csn c1o cen wbr com cdom ensn1g c0 csdm wne peano1 ne0ii 0sdom mpbir
-    omex 0sdom1dom mpbi endomtr sylancl ) ABCADZEFGEHIGZUCHIGABJKHLGZUDUEHKMKHN
-    OHRPQHSTUCEHUAUB $.
+
 
   $( TODO - remove antecedent! $)
-  $( An unordered pair is countable.  (Contributed by Thierry Arnoux,
-     16-Sep-2016.) $)
-  prct $p |- ( ( A e. V /\ B e. W ) -> { A , B } ~<_ _om ) $=
-    ( wcel wa cpr csn cun com cdom df-pr wbr snct unctb syl2an eqbrtrid ) ACEZB
-    DEZFABGAHZBHZIZJKABLRTJKMUAJKMUBJKMSACNBDNTUAOPQ $.
+
 
   ${
     $d x y A $.  $d y B $.
@@ -521124,26 +522883,6 @@ $)
 
   $}
 
-  ${
-    $d x y $.  $d y A $.  $d y B $.
-    mptctf.1 $e |- F/_ x A $.
-    $( A countable mapping set is countable, using bound-variable hypotheses
-       instead of distinct variable conditions.  (Contributed by Thierry
-       Arnoux, 8-Mar-2017.) $)
-    mptctf $p |- ( A ~<_ _om -> ( x e. A |-> B ) ~<_ _om ) $=
-      ( com cdom wbr cmpt wfun cdm funmpt cvv wcel wss ctex crab eqid dmmpt cab
-      eqsstri cv df-rab simpl ss2abi abid2f sseqtri ssdomg mpisyl domtr mpancom
-      wa wfn funfn fnct sylanb sylancr ) BEFGZABCHZIZURJZEFGZUREFGZABCKUTBFGZUQ
-      VAUQBLMUTBNVCBOUTCLMZABPZBABCURURQRVEAUABMZVDUKZASZBVDABUBVHVFASBVGVFAVFV
-      DUCUDABDUEUFTTUTBLUGUHUTBEUIUJUSURUTULVAVBURUMUTURUNUOUP $.
-
-    $( An image set of a countable set is countable, using bound-variable
-       hypotheses instead of distinct variable conditions.  (Contributed by
-       Thierry Arnoux, 8-Mar-2017.) $)
-    abrexctf $p |- ( A ~<_ _om -> { y | E. x e. A y = B } ~<_ _om ) $=
-      ( com cdom wbr cv wceq wrex cab cmpt crn eqid rnmpt mptctf rnct eqbrtrrid
-      syl ) CFGHZBIDJACKBLACDMZNZFGABCDUBUBOPUAUBFGHUCFGHACDEQUBRTS $.
-  $}
 
   ${
     $d A f g x $.  $d V f g $.  $d Z f g x $.
@@ -558701,37 +560440,6 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
-  $c sigAlgebra $.
-
-  $( Extend class notation to include the function giving the sigma-algebras on
-     a given base set. $)
-  csiga $a class sigAlgebra $.
-
-  ${
-    $d o s x $.
-    $( Define a sigma-algebra, i.e. a set closed under complement and countable
-       union.  Literature usually uses capital greek sigma and omega letters
-       for the algebra set, and the base set respectively.  We are using ` S `
-       and ` O ` as a parallel.  (Contributed by Thierry Arnoux,
-       3-Sep-2016.) $)
-    df-siga $a |- sigAlgebra = ( o e. _V |-> { s | ( s C_ ~P o /\
-      ( o e. s /\ A. x e. s ( o \ x ) e. s
-      /\ A. x e. ~P s ( x ~<_ _om -> U. x e. s ) ) ) } ) $.
-  $}
-
-  ${
-    $d o s $.
-    $( Lemma for ~ issiga and ~ isrnsiga .  The class of sigma-algebras with
-       base set ` o ` is a set.  Note: a more generic version with
-       ` ( O e. _V -> ... ) ` could be useful for ~ sigaval .  (Contributed by
-       Thierry Arnoux, 24-Oct-2016.) $)
-    sigaex $p |- { s | ( s C_ ~P o /\ ( o e. s /\ A. x e. s ( o \ x ) e. s
-      /\ A. x e. ~P s ( x ~<_ _om -> U. x e. s ) ) ) } e. _V $=
-      ( cv wcel cdif wral com cdom wbr cuni wi cpw w3a crab wss cab cvv pwexg
-      wa df-rab velpw anbi1i abbii eqtri vex mp2b rabex eqeltrri ) BDZCDZEUJADZ
-      FUKEAUKGULHIJULKUKELAUKMGNZCUJMZMZOZUKUNPZUMTZCQZRUPUKUOEZUMTZCQUSUMCUOUA
-      VAURCUTUQUMCUNUBUCUDUEUMCUOUJREUNREUOREBUFUJRSUNRSUGUHUI $.
-  $}
 
   ${
     $d s o x O $.
@@ -558750,51 +560458,9 @@ $)
       BVJUOUPUQURUSUTADCVAVBVD $.
   $}
 
-  ${
-    $d o s x O $.  $d o s x S $.
-    $( An alternative definition of the sigma-algebra, for a given base set.
-       (Contributed by Thierry Arnoux, 19-Sep-2016.) $)
-    issiga $p |- ( S e. _V -> ( S e. ( sigAlgebra ` O ) <->
-      ( S C_ ~P O /\ ( O e. S /\ A. x e. S ( O \ x ) e. S
-      /\ A. x e. ~P S ( x ~<_ _om -> U. x e. S ) ) ) ) ) $=
-      ( vs vo cvv wcel wa csiga cpw wss cv cdif wral wi w3a elex a1i wb wceq
-      cfv com cdom wbr cuni elfvex jca simpr1 anc2ri df-siga sigaex pweq sseq2d
-      syl sseq1 eleq12 simpr difeq1 adantr eleq1d eleq2 adantl raleqbidv imbi2d
-      sylan9bb bitrd 3anbi123d anbi12d abfmpel pm5.21ndd ) BFGZCFGZVKHZBCIUAZGZ
-      BCJZKZCBGZCALZMZBGZABNZVSUBUCUDZVSUEZBGZOZABJZNZPZHZVOVMOVKVOVLVKBCIUFBVN
-      QUGRVKWJVLWJVLOVKWJVRVLVQVRWBWHUHCBQUNRUIVMVOWJSOVKDLZELZJZKZWLWKGZWLVSMZ
-      WKGZAWKNZWCWDWKGZOZAWKJZNZPZHWJEDCBIFFAEDUJAEDUKWLCTZWKBTZHZWNVQXCWIXDWNW
-      KVPKXEVQXDWMVPWKWLCULUMWKBVPUOVEXFWOVRWRWBXBWHWLCWKBUPXFWQWAAWKBXDXEUQXFW
-      QVTWKGZWAXFWPVTWKXDWPVTTXEWLCVSURUSUTXEXGWASXDWKBVTVAVBVFVCXEXBWHSXDXEWTW
-      FAXAWGWKBULXEWSWEWCWKBWDVAVDVCVBVGVHVIRVJ $.
-  $}
 
   ${
-    $d o s x S $.
-    $( The property of being a sigma-algebra on an indefinite base set.
-       (Contributed by Thierry Arnoux, 3-Sep-2016.)  (Proof shortened by
-       Thierry Arnoux, 23-Oct-2016.) $)
-    isrnsiga $p |- ( S e. U. ran sigAlgebra <-> ( S e. _V /\
-      E. o ( S C_ ~P o /\ ( o e. S /\ A. x e. S ( o \ x ) e. S
-      /\ A. x e. ~P S ( x ~<_ _om -> U. x e. S ) ) ) ) ) $=
-      ( vs csiga crn cuni wcel cvv cv cpw wss cdif wral com cdom wi w3a eleq2
-      wa wbr wrex df-siga sigaex wceq sseq1 raleqbi1dv pweq raleqbidv 3anbi123d
-      wex imbi2d anbi12d abfmpunirn rexv anbi2i bitri ) BEFGHBIHZBCJZKZLZUSBHZU
-      SAJZMZBHZABNZVCOPUAZVCGZBHZQZABKZNZRZTZCIUBZTURVNCUKZTDJZUTLZUSVQHZVDVQHZ
-      AVQNZVGVHVQHZQZAVQKZNZRZTVNCDBEIACDUCACDUDVQBUEZVRVAWFVMVQBUTUFWGVSVBWAVF
-      WEVLVQBUSSVTVEAVQBVQBVDSUGWGWCVJAWDVKVQBUHWGWBVIVGVQBVHSULUIUJUMUNVOVPURV
-      NCUOUPUQ $.
-
-    $( A sigma-algebra contains the empty set.  (Contributed by Thierry Arnoux,
-       4-Sep-2016.) $)
-    0elsiga $p |- ( S e. U. ran sigAlgebra -> (/) e. S ) $=
-      ( vo vx csiga crn cuni wcel cv cpw wss cdif wral com wbr wi w3a wa wex c0
-      cdom cvv isrnsiga simprbi 3simpa adantl eximi difeq2 eqtrdi eleq1d rspcva
-      weq difid exlimiv 3syl ) ADEFGZABHZIJZUPAGZUPCHZKZAGZCALZUSMTNUSFAGOCAILZ
-      PZQZBRZURVBQZBRSAGZUOAUAGVFCABUBUCVEVGBVDVGUQURVBVCUDUEUFVGVHBVAVHCUPACBU
-      KZUTSAVIUTUPUPKSUSUPUPUGUPULUHUIUJUMUN $.
-
-    $d x A $.
+    $d o s x S $.  $d x A $.
     $( A sigma-algebra contains its base universe set.  (Contributed by Thierry
        Arnoux, 26-Oct-2016.) $)
     baselsiga $p |- ( S e. ( sigAlgebra ` A ) -> A e. S ) $=
@@ -558802,39 +560468,6 @@ $)
       w3a issiga simplbda simp1d mpancom ) BDEZBAFGZEZABEZBUFHUEUGIUHACJZKBECBL
       ZUIMNOUIPBEQCBRLZUEUGBARSUHUJUKTCBAUAUBUCUD $.
 
-    $( A sigma-algebra is a set of subset of the base set.  (Contributed by
-       Thierry Arnoux, 18-Jan-2017.) $)
-    sigasspw $p |- ( S e. ( sigAlgebra ` A ) -> S C_ ~P A ) $=
-      ( vx csiga cfv wcel cpw wss cv cdif wral com cdom wbr cuni wi w3a wa elex
-      cvv issiga biimpa mpancom simpld ) BADEZFZBAGHZABFACIZJBFCBKUHLMNUHOBFPCB
-      GKQZBTFZUFUGUIRZBUESUJUFUKCBAUAUBUCUD $.
-
-    $( A sigma-algebra is closed under countable union.  (Contributed by
-       Thierry Arnoux, 26-Dec-2016.) $)
-    sigaclcu $p |- ( ( S e. U. ran sigAlgebra /\ A e. ~P S /\ A ~<_ _om )
-        -> U. A e. S ) $=
-      ( vx vo csiga crn cuni wcel cpw com cdom wbr w3a cv wi wral simp2 cdif wa
-      wss wex cvv isrnsiga simprbi simpr3 exlimiv syl 3ad2ant1 simp3 wceq breq1
-      unieq eleq1d imbi12d rspcv syl3c ) BEFGHZABIZHZAJKLZMUSCNZJKLZVAGZBHZOZCU
-      RPZUTAGZBHZUQUSUTQUQUSVFUTUQBDNZITZVIBHZVIVARBHCBPZVFMSZDUAZVFUQBUBHVNCBD
-      UCUDVMVFDVJVKVLVFUEUFUGUHUQUSUTUIVEUTVHOCAURVAAUJZVBUTVDVHVAAJKUKVOVCVGBV
-      AAULUMUNUOUP $.
-
-    ${
-      $d z A $.  $d z B $.  $d k z S $.
-      sigaclcuni.1 $e |- F/_ k A $.
-      $( A sigma-algebra is closed under countable union: indexed union
-         version.  (Contributed by Thierry Arnoux, 8-Jun-2017.) $)
-      sigaclcuni $p |- ( ( S e. U. ran sigAlgebra /\ A. k e. A B e. S
-             /\ A ~<_ _om ) -> U_ k e. A B e. S ) $=
-        ( vz csiga crn cuni wcel wral com cdom wbr wceq 3ad2ant2 wa eqeltrd syl
-        wrex w3a ciun cv cab dfiun2g cpw simp1 wss r19.29 simpr simpl rexlimivw
-        ex abssdv wb elpw2g mpbird abrexctf 3ad2ant3 sigaclcu syl3anc ) CGHIZJZ
-        BCJZDAKZALMNZUAZDABUBZFUCZBOZDATZFUDZIZCVEVCVHVMOVFDFABCUEPVGVCVLCUFJZV
-        LLMNZVMCJVCVEVFUGZVGVNVLCUHZVEVCVQVFVEVKFCVEVKVICJZVEVKQVDVJQZDATVRVDVJ
-        DAUIVSVRDAVSVIBCVDVJUJVDVJUKRULSUMUNPVGVCVNVQUOVPVLCVBUPSUQVFVCVOVEDFAB
-        EURUSVLCUTVAR $.
-    $}
 
     $( A sigma-algebra is closed under finite union.  (Contributed by Thierry
        Arnoux, 28-Dec-2016.) $)
@@ -558886,40 +560519,6 @@ $)
       VDCMAUSUOGRVCUTDFUNAVAUOVBRVESBCDEUJTUIHUK $.
   $}
 
-  ${
-    $d o x S $.  $d x O $.
-    $( Property of being a sigma-algebra with a given base set, noting that the
-       base set of a sigma-algebra is actually its union set.  (Contributed by
-       Thierry Arnoux, 24-Sep-2016.)  (Revised by Thierry Arnoux,
-       23-Oct-2016.) $)
-    issgon $p |- ( S e. ( sigAlgebra ` O ) <->
-      ( S e. U. ran sigAlgebra /\ O = U. S ) ) $=
-      ( vx vo csiga wcel cuni wceq wa elex cpw wss cdif wral w3a elpwuni biimpa
-      cv ancom eqcom cfv crn fvssunirn sseli cvv com cdom wbr wi issiga 3imtr4i
-      3ad2antr1 biimtrdi mpcom jca isrnsiga simprbi wb pweq sseq2d eleq1 difeq1
-      wex eleq1d ralbidv anbi12d syl ibi exlimiv simprd biimprd pwuni sseqtrrid
-      3anbi12d jctild anim2d biimpar syl56 impcom impbii ) ABEUAZFZAEUBGZFZBAGZ
-      HZIWBWDWFWAWCAEBUCUDAUEFZWBWFAWAJWGWBABKZLZBAFZBCRZMZAFZCANZWKUFUGUHWKGAF
-      UICAKNZOZIZWFCABUJZWIWNWJWFWOWJWIIWEBHZWIWJIWFWJWIWSABPQWIWJSBWETUKULUMUN
-      UOWFWDWBWDWGWEAFZWEWKMZAFZCANZWOOZIWFWGWQIWBWDWGXDAWCJWDAWEKZLZXDWDADRZKZ
-      LZXGAFZXGWKMZAFZCANZWOOZIZDVCZXFXDIZWDWGXPCADUPUQXOXQDXOXQXOXGWEHZXOXQURX
-      IXMXJXRWOXJXIIWEXGHZXIXJIXRXJXIXSAXGPQXIXJSXGWETUKULXRXIXFXNXDXRXHXEAXGWE
-      USUTXRXJWTXMXCWOXGWEAVAXRXLXBCAXRXKXAAXGWEWKVBVDVEVNVFVGVHVIVGVJUOWFXDWQW
-      GWFXDWPWIWFWPXDWFWJWTWNXCWOBWEAVAWFWMXBCAWFWLXAABWEWKVBVDVEVNVKWFXEAWHAVL
-      BWEUSVMVOVPWGWBWQWRVQVRVSVT $.
-  $}
-
-  $( A sigma-algebra is a sigma on its union set.  (Contributed by Thierry
-     Arnoux, 6-Jun-2017.) $)
-  sgon $p |- ( S e. U. ran sigAlgebra -> S e. ( sigAlgebra ` U. S ) ) $=
-    ( csiga crn cuni wcel wceq cfv eqid wa issgon biimpri mpan2 ) ABCDEZADZNFZA
-    NBGEZNHPMOIANJKL $.
-
-  $( An element of a sigma-algebra is a subset of the base set.  (Contributed
-     by Thierry Arnoux, 6-Jun-2017.) $)
-  elsigass $p |- ( ( S e. U. ran sigAlgebra /\ A e. S ) -> A C_ U. S ) $=
-    ( csiga crn cuni wcel wa cpw cfv wss sgon sigasspw syl sselda elpwid ) BCDE
-    FZABFGABEZPBQHZAPBQCIFBRJBKQBLMNO $.
 
   $( Dropping the base information off a sigma-algebra.  (Contributed by
      Thierry Arnoux, 13-Feb-2017.) $)
@@ -558928,14 +560527,7 @@ $)
 
   ${
     $d x S $.
-    $( The property of being a sigma-algebra, universe is the union set.
-       (Contributed by Thierry Arnoux, 11-Nov-2016.) $)
-    isrnsigau $p |- ( S e. U. ran sigAlgebra -> ( S C_ ~P U. S /\ ( U. S e. S
-      /\ A. x e. S ( U. S \ x ) e. S
-      /\ A. x e. ~P S ( x ~<_ _om -> U. x e. S ) ) ) ) $=
-      ( csiga crn cuni wcel cfv cpw wss cv cdif wral com cdom wbr wi w3a wa cvv
-      sgon wb elex issiga syl mpbid ) BCDEZFZBBEZCGFZBUHHIUHBFUHAJZKBFABLUJMNOU
-      JEBFPABHLQRZBTUGBSFUIUKUABUFUBABUHUCUDUE $.
+
 
     $( A sigma-algebra contains its universe set.  (Contributed by Thierry
        Arnoux, 13-Feb-2017.)  (Proof shortened by Thierry Arnoux,
@@ -559022,54 +560614,6 @@ $)
       $.
   $}
 
-  ${
-    $d x A $.  $d x S $.
-    $( A sigma-algebra is closed under complement relative to its base set.
-       This is immediate from the definition, see ~ issiga , but the library
-       states it nowhere in this form.  (Contributed by Vincent Gonzalez,
-       17-Aug-2026.) $)
-    difunielsiga $p |- ( ( S e. U. ran sigAlgebra /\ A e. S ) ->
-      ( U. S \ A ) e. S ) $=
-      ( vx csiga crn cuni wcel cv cdif wral com wbr wi cpw wss isrnsigau simprd
-      cdom w3a simp2d wceq difeq2 eleq1d rspccva sylan ) BDEFGZBFZCHZIZBGZCBJZA
-      BGUGAIZBGZUFUGBGZUKUHKRLUHFBGMCBNJZUFBUGNOUNUKUOSCBPQTUJUMCABUHAUAUIULBUH
-      AUGUBUCUDUE $.
-    $( $j usage 'difunielsiga' avoids 'ax-ac' 'ax-ac2'; $)
-  $}
-
-  ${
-    $d x A $.  $d x B $.  $d x S $.
-    $( A sigma-algebra is closed under pairwise unions.  (Contributed by
-       Thierry Arnoux, 13-Dec-2016.) $)
-    unelsiga $p |- ( ( S e. U. ran sigAlgebra /\ A e. S /\ B e. S ) ->
-      ( A u. B ) e. S ) $=
-      ( vx csiga crn cuni wcel w3a cpr cun wceq uniprg 3adant1 com cdom wbr cpw
-      wi wral cv cdif isrnsigau simprd simp3d 3ad2ant1 prct prelpwi breq1 unieq
-      wss wa eleq1d imbi12d rspcv syl mp2d eqeltrrd ) CEFGHZACHZBCHZIZABJZGZABK
-      ZCUTVAVDVELUSABCCMNVBDUAZOPQZVFGZCHZSZDCRZTZVCOPQZVDCHZUSUTVLVAUSCGZCHZVO
-      VFUBCHDCTZVLUSCVORUKVPVQVLIDCUCUDUEUFUTVAVMUSABCCUGNUTVAVLVMVNSZSZUSUTVAU
-      LVCVKHVSABCUHVJVRDVCVKVFVCLZVGVMVIVNVFVCOPUIVTVHVDCVFVCUJUMUNUOUPNUQUR $.
-  $}
-
-  $( A sigma-algebra is closed under class differences.  The proof goes through
-     ~ difunielsiga and ~ unelsiga rather than countable intersection, and so
-     does not use ~ ax-ac .  (Contributed by Thierry Arnoux, 13-Sep-2016.)
-     (Proof shortened by Vincent Gonzalez, 17-Aug-2026.) $)
-  difelsiga $p |- ( ( S e. U. ran sigAlgebra /\ A e. S /\ B e. S ) ->
-    ( A \ B ) e. S ) $=
-    ( csiga crn cuni wcel w3a cdif cun wceq difun1 a1i wss simp1 simp2 elsigass
-    syl2anc dfss4 difunielsiga sylib difeq1d eqtrd unelsiga syl3anc eqeltrrd
-    simp3 ) CDEFGZACGZBCGZHZCFZULAIZBJZIZABIZCUKUOULUMIZBIZUPUOURKUKULUMBLMUKUQ
-    ABUKAULNZUQAKUKUHUIUSUHUIUJOZUHUIUJPZACQRAULSUAUBUCUKUHUNCGZUOCGUTUKUHUMCGZ
-    UJVBUTUKUHUIVCUTVAACTRUHUIUJUGUMBCUDUEUNCTRUF $.
-  $( $j usage 'difelsiga' avoids 'ax-ac' 'ax-ac2'; $)
-
-  $( A sigma-algebra is closed under pairwise intersections.  (Contributed by
-     Thierry Arnoux, 13-Dec-2016.) $)
-  inelsiga $p |- ( ( S e. U. ran sigAlgebra /\ A e. S /\ B e. S ) ->
-    ( A i^i B ) e. S ) $=
-    ( csiga crn cuni wcel w3a cin cdif dfin4 difelsiga syld3an3 eqeltrid ) CDEF
-    GZACGZBCGZHABIAABJZJZCABKOPQRCGSCGABCLARCLMN $.
 
   ${
     $d x A $.  $d x S $.
@@ -744127,17 +745671,6 @@ $)
       ( eleqtri sselii elini ) ACEABCFGJDEAIHKL $.
   $}
 
-  ${
-    nnaddcli.1 $e |- A e. NN $.
-    nnaddcli.2 $e |- B e. NN $.
-    $( Closure of addition of positive integers, in inference form.  Inference
-       associated with ~ nnaddcl .  The multiplication counterpart is the
-       existing ~ nnmulcli .  Proof supplied by Owen Orger.  AI-assisted
-       naming, description, and verification by OpenAI Codex.  (Contributed by
-       Owen Orger, 11-Nov-2026.) $)
-    nnaddcli $p |- ( A + B ) e. NN $=
-      ( cn wcel wa caddc co pm3.2i nnaddcl ax-mp ) AEFZBEFZGABHIEFMNCDJABKL $.
-  $}
 
   ${
     nnaddmulcli.1 $e |- A e. NN $.
@@ -775235,57 +776768,6 @@ $)
       CJJCUJULUPVLVKVJJFUQVNVMVCVBJJCUKSUMVACVDJUNUOUM $.
   $}
 
-  ${
-    $d f g w x y z $.  $d f u x y $.  $d f w x y z A $.
-    $( For a finite set, a choice function exists, without using the axiom of
-       choice.  (Contributed by Glauco Siliprandi, 20-Apr-2017.) $)
-    fnchoice $p |- ( A e. Fin -> E. f ( f Fn A /\ A. x e. A ( x =/= (/) ->
-                                  ( f ` x ) e. x ) ) ) $=
-      ( vw cv wfn c0 wcel wral wa wex wceq anbi12d cvv a1i simplr adantr jca ex
-      syl vy vz vg vu wne cfv wi csn cun fneq2 raleq exbidv 0ex fneq1 fn0 mpbir
-      eqid ceqsexv2d ral0 exan cfn wn cop wf biimpi ad2antrl vex simpllr fsnunf
-      dffn2 syl121anc sylibr simprr nfra1 nfan simpr nelne2 necomd fvunsn neeq1
-      fveq2 eleq1d bitrd imbi12d cbvralvw rspcv biimtrrid syl3c eqeltrd simp-4l
-      nfv eleq2w elsni 3ad2ant2 simp1 eqtrd simp3 pm2.21ddne syl3anc elun sylib
-      w3a mpjaodan ralrimi syl21anc eximdv snex unex fveq1 imbi2d ralbidv spcev
-      eximi syl6 ax5e imp an32s cbvexvw neq0 exdistrv simprrl simprrr ad3antrrr
-      wo simpl simplrl cdm neleqtrrd fsnunfv 3eltr4d 2eximdv exlimiv findcard2s
-      fndmd pm2.61dan ) CEZDEZFZAEZGUEZYSYPUFZYSHZUGZAYQIZJZCKYPGFZUUCAGIZJZCKY
-      PUAEZFZUUCAUUIIZJZCKZYPUUIUBEZUHZUIZFZUUCAUUPIZJZCKZYPBFZUUCABIZJZCKDUAUB
-      BYQGLZUUEUUHCUVDYRUUFUUDUUGYQGYPUJUUCAYQGUKMULYQUUILZUUEUULCUVEYRUUJUUDUU
-      KYQUUIYPUJUUCAYQUUIUKMULYQUUPLZUUEUUSCUVFYRUUQUUDUURYQUUPYPUJUUCAYQUUPUKM
-      ULYQBLZUUEUVCCUVGYRUVAUUDUVBYQBYPUJUUCAYQBUKMULUUFUUGCUUFGGFZCGUMGYPGUNUV
-      HGGLGUQGUOUPURUUCAUSUTUUIVAHZUUNUUIHVBZJZUUMUUTUVKUUMJZUUNGLZUUTUVLUVMJUC
-      EZUUPFZYTYSUVNUFZYSHZUGZAUUPIZJZUCKZUUTUVKUVMUUMUWAUVKUVMJZUUMUWAUWBUUMUW
-      ACKZUWAUWBUUMYPUUNYQVCZUHZUIZUUPFZYTYSUWFUFZYSHZUGZAUUPIZJZCKUWCUWBUULUWL
-      CUWBUULUWLUWBUULJZUWGUWKUWMUUPNUWFVDZUWGUWMUUINYPVDZUUNNHZUVJYQNHZUWNUUJU
-      WOUWBUUKUUJUWOUUIYPVJZVEVFUWPUWMUBVGZOUVIUVJUVMUULVHZUWQUWMDVGZOUUINYPNUU
-      NYQVIZVKUUPUWFVJZVLUWMUVMUVJUUKUWKUVKUVMUULPUWTUWBUUJUUKVMUVMUVJJZUUKJZUW
-      JAUUPUXDUUKAUXDAWKUUCAUUIVNZVOUXEYSUUPHZUWJUXEUXGJZYTUWIUXHYTJZYSUUIHZUWI
-      YSUUOHZUXIUXJJZUWHUUAYSUXLUUNYSUEZUWHUUALZUXLUXJUVJJZUXMUXLUXJUVJUXIUXJVP
-      ZUXIUVJUXJUXHUVJYTUVMUVJUUKUXGVHQQRUXOYSUUNYSUUNUUIVQVRZTYPUUNYQYSVSZTUXL
-      UXJUUKYTUUBUXPUXIUUKUXJUXDUUKUXGYTVHQUXHYTUXJPUUKUDEZGUEZUXSYPUFZUXSHZUGZ
-      UDUUIIUXJUUCUYCUUCUDAUUIUXSYSLZUXTYTUYBUUBUXSYSGVTUYDUYBUUAUXSHUUBUYDUYAU
-      UAUXSUXSYSYPWAWBUDAUUAWLWCWDZWEUYCUUCUDYSUUIUYEWFWGZWHWIUXIUXKJUVMUXKYTUW
-      IUXIUVMUXKUVMUVJUUKUXGYTWJQUXIUXKVPUXHYTUXKPUVMUXKYTXBZUWIYSGUYGYSUUNGUXK
-      UVMYSUUNLZYTYSUUNWMZWNUVMUXKYTWOWPUVMUXKYTWQWRWSUXIUXGUXJUXKYDZUXEUXGYTPY
-      SUUIUUOWTZXAXCSSXDXERSXFUWLUWACUVTUWLUCUWFYPUWECVGUWDXGXHUVNUWFLZUVOUWGUV
-      SUWKUUPUVNUWFUNUYLUVRUWJAUUPUYLUVQUWIYTUYLUVPUWHYSYSUVNUWFXIWBXJXKMXLZXMX
-      NUWACXOZXNXPXQUUSUVTCUCYPUVNLZUUQUVOUURUVSUUPYPUVNUNUYOUUCUVRAUUPUYOUUBUV
-      QYTUYOUUAUVPYSYSYPUVNXIWBXJXKMXRZVLUVLUVMVBZJZUVJYQUUNHZDKZUUMJZJZUUTUYRU
-      VJVUAUVIUVJUUMUYQVHUYRUYTUUMUYRUYQUYTUVLUYQVPDUUNXSXAUVKUUMUYQPRRVUBUWAUU
-      TVUBUWCDKZUWAUVJVUAVUCVUAUYSUULJZCKDKUVJVUCUYSUULDCXTUVJVUDUWADCUVJVUDUWA
-      UVJVUDJZUWLUWAVUEUWGUWKVUEUWNUWGVUEUWOUWPUVJUWQUWNVUEUUJUWOUVJUYSUUJUUKYA
-      ZUWRXAUWPVUEUWSOUVJVUDYEUWQVUEUXAOUXBVKUXCVLVUEUWJAUUPUVJVUDAUVJAWKUYSUUL
-      AUYSAWKUUJUUKAUUJAWKUXFVOVOVOVUEUXGUWJVUEUXGJZYTUWIVUGYTJZUXJUWIUXKVUHUXJ
-      JZUWHUUAYSVUIUXOUXNVUIUXJUVJVUHUXJVPZUVJVUDUXGYTUXJWJRUXOUXMUXNUXQUXRTTVU
-      IUXJUUKYTUUBVUJVUEUUKUXGYTUXJUVJUYSUUJUUKYBYCVUGYTUXJPUYFWHWIVUHUXKJZYQUU
-      NUWHYSVUHUYSUXKVUGUYSYTUVJUYSUULUXGYFQQVUKUWHUUNUWFUFZYQVUKUYHUWHVULLVUKU
-      XKUYHVUHUXKVPUYITZYSUUNUWFWATVUKUWPUWQUUNYPYGZHVBVULYQLUWPVUKUWSOUWQVUKUX
-      AOVUKVUNUUIUUNUVJVUDUXGYTUXKWJVUKUUIYPVUEUUJUXGYTUXKVUFYCYNYHYPNNUUNYQYIW
-      SWPVUMYJVUHUXGUYJVUEUXGYTPUYKXAXCSSXDRUYMTSYKWGXPUWCUWADUYNYLTUYPVLTYOSYM
-      $.
-  $}
 
   ${
     $d k x y A $.  $d k x J $.  $d k x y X $.  $d k y ph $.  $d y B $.
@@ -775609,27 +777091,6 @@ $)
       ( wn pm2.65i notnotri ) AAEBCDFG $.
   $}
 
-  ${
-    iuneq2df.1 $e |- F/ x ph $.
-    iuneq2df.2 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
-    $( Equality deduction for indexed union.  (Contributed by Glauco
-       Siliprandi, 17-Aug-2020.) $)
-    iuneq2df $p |- ( ph -> U_ x e. A B = U_ x e. A C ) $=
-      ( wceq wral ciun cv wcel ex ralrimi iuneq2 syl ) ADEHZBCIBCDJBCEJHAQBCFAB
-      KCLQGMNBCDEOP $.
-  $}
-
-  ${
-    $d A f $.
-    $( There exists a mapping from ` NN ` onto any (nonempty) countable set.
-       (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
-    nnfoctb $p |- ( ( A ~<_ _om /\ A =/= (/) ) -> E. f f : NN -onto-> A ) $=
-      ( com cdom wbr c0 wne wa csdm cn cv wfo wex simpr wb cvv wcel wrel adantr
-      a1i reldom brrelex1 mpancom 0sdomg syl mpbird nnenom ensymi domentr mpdan
-      cen fodomr syl2anc ) ACDEZAFGZHZFAIEZAJDEZJABKLBMUPUQUOUNUONUNUQUOOZUOUNA
-      PQZUSDRZUNUTVAUNUATACDUBUCAPUDUESUFUNURUOUNCJUKEZURVBUNJCUGUHTACJUIUJSJAB
-      ULUM $.
-  $}
 
   $( An element of the powerset of ` B ` intersected with anything, is a subset
      of ` B ` .  (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
@@ -775918,16 +777379,6 @@ $)
       BDFATDJUAHMNACEJSUBOGBCDEPQR $.
   $}
 
-  ${
-    $d A x $.  $d B x $.
-    ssdf.1 $e |- F/ x ph $.
-    ssdf.2 $e |- ( ( ph /\ x e. A ) -> x e. B ) $.
-    $( A sufficient condition for a subclass relationship.  (Contributed by
-       Glauco Siliprandi, 3-Jan-2021.) $)
-    ssdf $p |- ( ph -> A C_ B ) $=
-      ( cv wcel wral wss ex ralrimi dfss3 sylibr ) ABGZDHZBCICDJAPBCEAOCHPFKLBC
-      DMN $.
-  $}
 
   ${
     ssnct.1 $e |- ( ph -> -. A ~<_ _om ) $.
@@ -775960,14 +777411,6 @@ $)
       ( nfv elintd ) ABCDEABHFGI $.
   $}
 
-  ${
-    $d A x $.  $d B x $.  $d ph x $.
-    ssd.1 $e |- ( ( ph /\ x e. A ) -> x e. B ) $.
-    $( A sufficient condition for a subclass relationship.  (Contributed by
-       Glauco Siliprandi, 3-Jan-2021.) $)
-    ssd $p |- ( ph -> A C_ B ) $=
-      ( nfv ssdf ) ABCDABFEG $.
-  $}
 
   $( Introducing any antecedent in a restricted universal quantification.
      (Contributed by Glauco Siliprandi, 3-Mar-2021.) $)
@@ -776221,10 +777664,6 @@ $)
       ( wss wn wpss wa dfpss3 mpbi simpri ) ABDZBADEZABFKLGCABHIJ $.
   $}
 
-  $( Membership in a restricted abstraction, implication.  (Contributed by
-     Glauco Siliprandi, 26-Jun-2021.) $)
-  rabidim2 $p |- ( x e. { x e. A | ph } -> ph ) $=
-    ( cv crab wcel rabid simprbi ) BDZABCEFICFAABCGH $.
 
   ${
     $d A B $.
@@ -776287,19 +777726,6 @@ $)
       ( cxr wss clt csup wcel supxrcl syl ) ABDEBDFGDHCBIJ $.
   $}
 
-  ${
-    $d A x $.  $d B x $.  $d J x $.  $d X x $.
-    elrestd.1 $e |- ( ph -> J e. V ) $.
-    elrestd.2 $e |- ( ph -> B e. W ) $.
-    elrestd.3 $e |- ( ph -> X e. J ) $.
-    elrestd.4 $e |- A = ( X i^i B ) $.
-    $( A sufficient condition for being an open set of a subspace topology.
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    elrestd $p |- ( ph -> A e. ( J |`t B ) ) $=
-      ( vx crest co wcel cv cin wceq wrex syl2anc a1i rspceeqv wb elrest mpbird
-      ineq1 ) ABDCMNOZBLPZCQZRLDSZAGDOBGCQZRZUJJULAKUALGDUIUKBUHGCUFUBTADEOCFOU
-      GUJUCHILBCDEFUDTUE $.
-  $}
 
   ${
     $d B x $.  $d C y $.  $d Z x $.
@@ -776341,14 +777767,6 @@ $)
       FZAGCFZBDFZACHZTRSIRUARSJRRUAKSABCDQLMNTACOP $.
   $}
 
-  ${
-    abssf.1 $e |- F/_ x A $.
-    $( Class abstraction in a subclass relationship.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    abssf $p |- ( { x | ph } C_ A <-> A. x ( ph -> x e. A ) ) $=
-      ( cab wss cv wcel wi wal abid2f sseq2i ss2ab bitr3i ) ABEZCFOBGCHZBEZFAPI
-      BJQCOBCDKLAPBMN $.
-  $}
 
   ${
     supxrubd.1 $e |- ( ph -> A C_ RR* ) $.
@@ -776397,47 +777815,6 @@ $)
       ( nfcv eliin2f ) ABCDACEF $.
   $}
 
-  ${
-    ssrab2f.1 $e |- F/_ x A $.
-    $( Subclass relation for a restricted class.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    ssrab2f $p |- { x e. A | ph } C_ A $=
-      ( crab wss cv wcel nfrab1 dfss3f rabidim1 mprgbir ) ABCEZCFBGCHBMBMCABCID
-      JABCKL $.
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.  $d ph x y z $.
-    restuni3.1 $e |- ( ph -> A e. V ) $.
-    restuni3.2 $e |- ( ph -> B e. W ) $.
-    $( The underlying set of a subspace induced by the subspace operator
-       ` |``t ` .  The result can be applied, for instance, to topologies and
-       sigma-algebras.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    restuni3 $p |- ( ph -> U. ( A |`t B ) = ( U. A i^i B ) ) $=
-      ( vx vz vy cv wcel wa wrex wi simpr syl2anc adantr mpd adantl co cuni cin
-      crest wral wss eluni2 bilani w3a wb elrest mpbid 3adant3 simpl eleqtrd ex
-      wceq 3ad2ant3 reximdv rexlimdv elinel1 elunii elinel2 rexlimdva ralrimiva
-      3exp elind dfss3 sylibr sylib eqid 3adant1r simp3 simp1r syl eleq2 rspcev
-      elrestd eqelssd ) AHBCUDUAZUBZBUBZCUCZAHKZWCLZHWAUEWAWCUFAWEHWAAWDWALZMZW
-      DIKZCUCZLZIBNZWEWGWDJKZLZJVTNZWKWFWNAJWDVTUGZUHAWNWKOWFAWMWKJVTAWLVTLZWMW
-      KAWPWMUIZWLWIUQZIBNZWKAWPWSWMAWPMWPWSAWPPAWPWSUJZWPABDLZCELZWTFGIWLCBDEUK
-      QRULUMWQWRWJIBWMAWRWJOWPWMWRWJWMWRMWDWLWIWMWRUNWMWRPUOUPURUSSVFUTRSWGWJWE
-      IBWHBLZWJWEOWGXCWJWEXCWJMZWBCWDXDWDWHLZXCWDWBLZWJXEXCWDWHCVATXCWJUNWDWHBV
-      BQWJWDCLZXCWDWHCVCTVGUPTVDSVEHWAWCVHVIAWEMZWNWFXHXEIBNZWNWEXIAWEXFXIWDWBC
-      VAIWDBUGVJTXHXEWNIBXHXCXEWNXHXCXEUIZWIVTLZWJWNAXCXEXKWEAXCXKXEAXCMWICBDEW
-      HAXAXCFRAXBXCGRAXCPWIVKVRUMVLXJXEXGWJXHXCXEVMXJWEXGAWEXCXEVNWDWBCVCVOXEXG
-      MWHCWDXEXGUNXEXGPVGQWMWJJWIVTWLWIWDVPVQQVFUTSWOVIVS $.
-  $}
-
-  ${
-    rabssf.1 $e |- F/_ x B $.
-    $( Restricted class abstraction in a subclass relationship.  (Contributed
-       by Glauco Siliprandi, 26-Jun-2021.) $)
-    rabssf $p |- ( { x e. A | ph } C_ B <-> A. x e. A ( ph -> x e. B ) ) $=
-      ( crab wss cv wcel wa cab wi wral df-rab sseq1i abssf impexp albii df-ral
-      wal bitr4i 3bitri ) ABCFZDGBHZCIZAJZBKZDGUFUDDIZLZBTZAUHLZBCMZUCUGDABCNOU
-      FBDEPUJUEUKLZBTULUIUMBUEAUHQRUKBCSUAUB $.
-  $}
 
   ${
     $d A x $.  $d C y $.  $d Z x $.  $d Z y $.
@@ -776456,17 +777833,6 @@ $)
       VITUPURUS $.
   $}
 
-  ${
-    restuni4.1 $e |- ( ph -> A e. V ) $.
-    restuni4.2 $e |- ( ph -> B C_ U. A ) $.
-    $( The underlying set of a subspace induced by the ` |``t ` operator.  The
-       result can be applied, for instance, to topologies and sigma-algebras.
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    restuni4 $p |- ( ph -> U. ( A |`t B ) = B ) $=
-      ( cuni cin crest wceq incom a1i wss dfss sylib cvv uniexd ssexd restuni3
-      co 3eqtr4rd ) ACBGZHZUBCHZCBCITGUCUDJACUBKLACUBMCUCJFCUBNOABCDPEACUBPABDE
-      QFRSUA $.
-  $}
 
   ${
     restuni6.1 $e |- ( ph -> A e. V ) $.
@@ -776757,14 +778123,6 @@ $)
       ( ctop wcel cin inopn syl3anc ) ADHIBDICDIBCJDIEFGBCDKL $.
   $}
 
-  ${
-    ss2rabdf.1 $e |- F/ x ph $.
-    ss2rabdf.2 $e |- ( ( ph /\ x e. A ) -> ( ps -> ch ) ) $.
-    $( Deduction of restricted abstraction subclass from implication.
-       (Contributed by Glauco Siliprandi, 21-Dec-2024.) $)
-    ss2rabdf $p |- ( ph -> { x e. A | ps } C_ { x e. A | ch } ) $=
-      ( wi ralrimia ss2rabd ) ABCDEABCHDEFGIJ $.
-  $}
 
   ${
     $( If ` A ` is open, then ` A ` is open in the restriction to itself.
@@ -776810,15 +778168,6 @@ $)
       ( ctop wcel cuni eqid topopn syl restsubel ) ABCFDACFGCHZCGDCMMIJKEL $.
   $}
 
-  ${
-    rabidd.1 $e |- ( ph -> x e. A ) $.
-    rabidd.2 $e |- ( ph -> ch ) $.
-    $( An "identity" law of concretion for restricted abstraction.  Special
-       case of Definition 2.1 of [Quine] p. 16.  (Contributed by Glauco
-       Siliprandi, 24-Jan-2025.) $)
-    rabidd $p |- ( ph -> x e. { x e. A | ch } ) $=
-      ( cv wcel crab rabid sylanbrc ) ACGZDHBLBCDIHEFBCDJK $.
-  $}
 
   ${
     iunssdf.1 $e |- F/ x ph $.
@@ -776844,44 +778193,6 @@ $)
       TUDBCDEHUEUF $.
   $}
 
-  ${
-    r19.3rzf.1 $e |- F/ x ph $.
-    r19.3rzf.2 $e |- F/_ x A $.
-    $( Restricted quantification of wff not containing quantified variable.
-       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
-    r19.3rzf $p |- ( A =/= (/) -> ( ph <-> A. x e. A ph ) ) $=
-      ( c0 wne cv wcel wex wi wral wb n0f biimt sylbi wal df-ral 19.23 bitri
-      bitr4di ) CFGZABHCIZBJZAKZABCLZUBUDAUEMBCENUDAOPUFUCAKBQUEABCRUCABDSTUA
-      $.
-  $}
-
-  ${
-    r19.28zf.1 $e |- F/ x ph $.
-    r19.28zf.2 $e |- F/_ x A $.
-    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
-       is valid only when the domain of quantification is not empty.
-       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
-    r19.28zf $p |- ( A =/= (/) -> ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e.
-       A ps ) ) ) $=
-      ( c0 wne wa wral r19.26 r19.3rzf anbi1d bitr4id ) DGHZABICDJACDJZBCDJZIAQ
-      IABCDKOAPQACDEFLMN $.
-  $}
-
-  ${
-    $d A y $.  $d B y $.  $d C y $.  $d x y $.
-    iindif2f.1 $e |- F/_ x A $.
-    iindif2f.2 $e |- F/_ x B $.
-    $( Indexed intersection of class difference.  Generalization of half of
-       theorem "De Morgan's laws".  (Contributed by Glauco Siliprandi,
-       24-Jan-2025.) $)
-    iindif2f $p |- ( A =/= (/) -> |^|_ x e. A ( B \ C ) = ( B \ U_ x e. A C ) )
-       $=
-      ( vy c0 wne cdif ciin ciun cv wcel wral wn wa nfcri r19.28zf eldif bicomi
-      ralbii wrex ralnex eliun xchbinxr anbi2i 3bitr3g wb cvv eliin elv 3bitr4g
-      eqrdv ) BHIZGABCDJZKZCABDLZJZUOGMZUPNZABOZUTCNZUTURNZPZQZUTUQNZUTUSNUOVCU
-      TDNZPZQZABOVCVIABOZQVBVFVCVIABAGCFRESVJVAABVAVJUTCDTUAUBVKVEVCVKVHABUCVDV
-      HABUDAUTBDUEUFUGUHVGVBUIGAUTBUPUJUKULUTCURTUMUN $.
-  $}
 
   ${
     ralfal.1 $e |- F/_ x A $.
@@ -777074,18 +778385,6 @@ $)
       ( wss cmpt cres wceq resmpt ax-mp ) CBFABDGCHACDGIEABCDJK $.
   $}
 
-  ${
-    $d A x y $.  $d B x y $.  $d F x y $.
-    $( Union expressed as an indexed union, when a map onto is given.
-       (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
-    founiiun $p |- ( F : A -onto-> B -> U. B = U_ x e. A ( F ` x ) ) $=
-      ( vy wfo cuni cv ciun cfv uniiun wss wrex wral wcel wa wceq syl ralrimiva
-      iunss2 foelcdmi eqimss2 reximi fof ffvelcdmda ssidd rspcev syl2anc eqtrid
-      sseq2 eqssd ) BCDFZCGECEHZIZABAHZDJZIZECKULUNUQULUMUPLZABMZECNUNUQLULUSEC
-      ULUMCOPUPUMQZABMUSABCDUMUAUTURABUMUPUBUCRSEACBUMUPTRULUPUMLZECMZABNUQUNLU
-      LVBABULUOBOPZUPCOUPUPLZVBULBCUODBCDUDUEVCUPUFVAVDEUPCUMUPUPUJUGUHSAEBCUPU
-      MTRUKUI $.
-  $}
 
   $( Distribution law for range of a restriction over a union.  (Contributed by
      Glauco Siliprandi, 17-Aug-2020.) $)
@@ -777500,39 +778799,6 @@ $)
       BODIFDBJPABKABCDLMN $.
   $}
 
-  ${
-    $d A f g x $.  $d A g x y $.  $d B f g $.  $d B g y $.  $d g ph x y $.
-    choicefi.a $e |- ( ph -> A e. Fin ) $.
-    choicefi.b $e |- ( ( ph /\ x e. A ) -> B e. W ) $.
-    choicefi.n $e |- ( ( ph /\ x e. A ) -> B =/= (/) ) $.
-    $( For a finite set, a choice function exists, without using the axiom of
-       choice.  (Contributed by Glauco Siliprandi, 24-Dec-2020.) $)
-    choicefi $p |- ( ph -> E. f ( f Fn A /\ A. x e. A ( f ` x ) e. B ) ) $=
-      ( vg vy cv wfn cfv wcel wral wa wceq cvv syl2anc cmpt crn c0 wne wi mptfi
-      wex cfn rnfi fnchoice 4syl simpl simprl nfv nfan rspa adantll wrex wb vex
-      nfra1 eqid elrnmpt ax-mp bilani w3a simp3 3adant3 eqnetrd rexlimdv adantr
-      3exp mpd adantlr id imp ex ralrimi rsp adantrl ccom mptexd coexg 3ad2ant1
-      syl a1i wss simpr ralrimiva fnmpt ssidd fnco nfcv nfmpt1 nfrn nffn nfralw
-      syl3anc nf3an wfun cdm funmpt dmmptd eqcomd eleqtrd fvco fvmpt2 3ad2antl1
-      fveq2d eqtrd elrnmpt1 simpl3 fveq2 eleq12d rspcva eqeltrd fneq1 nfco nfeq
-      jca fveq1 eleq1d ralbid anbi12d spcegv sylc exlimdv ) AJLZBCDUAZUBZMZKLZU
-      CUDZYLYHNZYLOZUEZKYJPZQZJUGZELZCMZBLZYTNZDOZBCPZQZEUGZACUHOYIUHOYJUHOYSGB
-      CDUFYIUIKYJJUJUKAYRUUGJAYRUUGAYRQAYKYOKYJPZUUGAYRULAYKYQUMAYQUUHYKAYQQZYO
-      KYJAYQKAKUNYPKYJVAUOZUUIUUHYLYJOZYOUEUUIYOKYJUUJUUIUUKYOUUIUUKQYPYMYOYQUU
-      KYPAYPKYJUPUQAUUKYMYQAUUKQYLDRZBCURZYMUUKUUMAYLSOUUKUUMUSKUTBCDYLYISYIVBZ
-      VCVDVEAUUMYMUEUUKAUULYMBCAUUBCOZUULYMAUUOUULVFYLDUCAUUOUULVGAUUODUCUDUULI
-      VHVIVLVJVKVMVNYPYMYOYPVOVPTVQVRYOKYJVSWEVRVTAYKUUHVFZYHYIWAZSOZUUQCMZUUBU
-      UQNZDOZBCPZQZUUGAYKUURUUHAYHSOZYISOUURUVDAJUTWFABCDUHGWBYHYISSWCTWDUUPUUS
-      UVBAYKUUSUUHAYKQZYKYICMZYJYJWGUUSAYKWHAUVFYKADFOZBCPUVFAUVGBCHWIBCDYIFUUN
-      WJWEVKUVEYJWKYJCYHYIWLWRVHUUPUVABCAYKUUHBABUNBYJYHBYHWMZBYIBCDWNZWOZWPYOB
-      KYJUVJYOBUNWQWSUUPUUOUVAUUPUUOQZUUTDYHNZDAYKUUOUUTUVLRUUHAUUOQZUUTUUBYINZ
-      YHNZUVLUVMYIWTZUUBYIXAZOUUTUVORUVPUVMBCDXBWFUVMUUBCUVQAUUOWHZACUVQRUUOAUV
-      QCABYICDFUUNHXCXDVKXEUUBYHYIXFTUVMUVNDYHUVMUUOUVGUVNDRUVRHBCDFYIUUNXGTXIX
-      JXHUVKDYJOZUUHUVLDOZAYKUUOUVSUUHUVMUUOUVGUVSUVRHBCDYIFUUNXKTXHAYKUUHUUOXL
-      YOUVTKDYJUULYNUVLYLDYLDYHXMUULVOXNXOTXPVQVRXTUUFUVCEUUQSYTUUQRZUUAUUSUUEU
-      VBCYTUUQXQUWAUUDUVABCBYTUUQBYTWMBYHYIUVHUVIXRXSUWAUUCUUTDUUBYTUUQYAYBYCYD
-      YEYFWRVQYGVM $.
-  $}
 
   ${
     $d A x y z $.  $d B x y z $.  $d ph x y z $.
@@ -777862,29 +779128,6 @@ $)
       ( elexi imaex ) ABACDEF $.
   $}
 
-  ${
-    $d X f g z $.  $d X g x z $.  $d g ph z $.
-    axccdom.1 $e |- ( ph -> X ~<_ _om ) $.
-    axccdom.2 $e |- ( ( ph /\ z e. X ) -> z =/= (/) ) $.
-    $( Relax the constraint on ax-cc to dominance instead of equinumerosity.
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    axccdom $p |- ( ph -> E. f ( f Fn X /\ A. z e. X ( f ` z ) e. z ) ) $=
-      ( vg vx wcel cv cfv wral wa wex simpr adantlr com cen wbr cvv cfn wfn wne
-      c0 choicefi cdom csdm adantr isfinite2 con3i adantl jca bren2 sylibr ctex
-      wn syl wceq breq1 raleq exbidv imbi12d ax-cc vtoclg sylc cmpt mptexd fvex
-      wi rgenw eqid fnmpt ax-mp a1i nfv nfra1 id fvmpt2 syl2anc adantll eqeltrd
-      nfan rspa ex ralrimi fneq1 nfcv nfmpt1 fveq1 eleq1d ralbid anbi12d spcegv
-      nfeq exlimdv mpd syldan pm2.61dan ) ADUAIZCJZDUBZBJZWTKZXBIZBDLZMZCNZAWSM
-      ZBDXBCDAWSOXHXBDIZOAXIXBUDUCZWSFPUEAWSUPZDQRSZXGAXKMZDQUFSZDQUGSZUPZMXLXM
-      XNXPAXNXKEUHXKXPAXOWSDUIUJUKULDQUMUNAXLMZXJXBGJZKZXBIZVIZBDLZGNZXGXQDTIZX
-      LYCAYDXLAXNYDEDUOUQZUHAXLOHJZQRSZYABYFLZGNZVIXLYCVIHDTYFDURZYGXLYIYCYFDQR
-      USYJYHYBGYABYFDUTVAVBHBGVCVDVEXQYBXGGXQYBXGAYBXGXLAYBMZBDXSVFZTIZYLDUBZXB
-      YLKZXBIZBDLZMZXGAYMYBABDXSTYEVGUHYKYNYQYNYKXSTIZBDLYNYSBDXBXRVHZVJBDXSYLT
-      YLVKZVLVMVNYKYPBDAYBBABVOYABDVPWBYKXIYPYKXIMZYOXSXBXIYOXSURZYKXIXIYSUUCXI
-      VQYSXIYTVNBDXSTYLUUAVRVSUKUUBYAXJXTYBXIYAAYABDWCVTAXIXJYBFPYAVQVEWAWDWEUL
-      XFYRCYLTWTYLURZXAYNXEYQDWTYLWFUUDXDYPBDBWTYLBWTWGBDXSWHWNUUDXCYOXBXBWTYLW
-      IWJWKWLWMVEPWDWOWPWQWR $.
-  $}
 
   ${
     dmmptdff.x $e |- F/ x ph $.
@@ -777909,10 +779152,6 @@ $)
       ( nfcv dmmptdff ) ABCDEFGBDJHIK $.
   $}
 
-  $( The domain of a partial function.  (Contributed by Glauco Siliprandi,
-     26-Jun-2021.) $)
-  elpmi2 $p |- ( F e. ( A ^pm B ) -> dom F C_ B ) $=
-    ( cpm co wcel cdm wf wss elpmi simprd ) CABDEFCGZACHLBIABCJK $.
 
   ${
     $d A x y $.  $d B x y $.  $d C y $.  $d F x y $.  $d R x y $.  $d S x y $.
@@ -777989,14 +779228,6 @@ $)
       EJZBEBKZUALZMBEUBFLZMABEDUABENZBFEGUEOACDEFHIPQBEUCUDUBEFRST $.
   $}
 
-  ${
-    dmmptssf.1 $e |- F/_ x A $.
-    dmmptssf.2 $e |- F = ( x e. A |-> B ) $.
-    $( The domain of a mapping is a subset of its base class.  (Contributed by
-       Glauco Siliprandi, 23-Oct-2021.) $)
-    dmmptssf $p |- dom F C_ A $=
-      ( cdm cvv wcel crab dmmpt ssrab2f eqsstri ) DGCHIZABJBABCDFKNABELM $.
-  $}
 
   ${
     dmmptdf2.x $e |- F/ x ph $.
@@ -778461,19 +779692,6 @@ $)
       ( cmpt eqid dmmptdff ) ABBCDIZCDEFGLJHK $.
   $}
 
-  ${
-    $d A y $.  $d B y $.  $d C y $.  $d x y $.
-    fmptff.1 $e |- F/_ x A $.
-    fmptff.2 $e |- F/_ x B $.
-    fmptff.3 $e |- F = ( x e. A |-> C ) $.
-    $( Functionality of the mapping operation.  (Contributed by Glauco
-       Siliprandi, 5-Jan-2025.) $)
-    fmptff $p |- ( A. x e. A C e. B <-> F : A --> B ) $=
-      ( vy wcel wral cv csb wf nfcv nfv nfcsb1v nfel weq cmpt eleq1d eqtri fmpt
-      csbeq1a cbvralfw cbvmptf bitri ) DCJZABKAILZDMZCJZIBKBCENUHUKAIBFIBOZUHIP
-      AUJCAUIDQZGRAISDUJCAUIDUDZUAUEIBCUJEEABDTIBUJTHAIBDUJFULIDOUMUNUFUBUCUG
-      $.
-  $}
 
   ${
     fvmptelcdmf.a $e |- F/_ x A $.
@@ -778510,43 +779728,6 @@ $)
       MUABCDNZMZDUAEUCHOUBUBADFKUDDPUBQIBCDFGRST $.
   $}
 
-  ${
-    rn1st.1 $e |- F/_ x B $.
-    $( The range of a function with a first-countable domain is itself
-       first-countable.  This is a variation of ~ 1stcrestlem , with a not-free
-       hypothesis replacing a disjoint variable constraint.  (Contributed by
-       Glauco Siliprandi, 24-Jan-2025.) $)
-    rn1st $p |- ( B ~<_ _om -> ran ( x e. B |-> C ) ~<_ _om ) $=
-      ( com cdom wbr cmpt crn cdm ccrd wcel wfo wss con0 word cvv mpancom domtr
-      mpisyl ordom wb reldom brrelex2i elong mpbiri ondomen eqid dmmptssf ssnum
-      syl sylancl wfun funmpt funforn mpbi fodomnum ctex ssdomg syl2anc ) BEFGZ
-      ABCHZIZVBJZFGZVDEFGZVCEFGVAVDKJZLZVDVCVBMZVEVABVGLZVDBNZVHEOLZVAVJVAVLEPZ
-      UAVAEQLVLVMUBBEFUCUDEQUEUKUFEBUGRABCVBDVBUHUIZBVDUJULVBUMVIABCUNVBUOUPVDV
-      CVBUQTVDBFGZVAVFVABQLVKVOBURVNVDBQUSTVDBESRVCVDESUT $.
-  $}
-
-  ${
-    rnmptssff.1 $e |- F/_ x A $.
-    rnmptssff.2 $e |- F/_ x C $.
-    rnmptssff.3 $e |- F = ( x e. A |-> B ) $.
-    $( The range of a function given by the maps-to notation as a subset.
-       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
-    rnmptssff $p |- ( A. x e. A B e. C -> ran F C_ C ) $=
-      ( wcel wral wf crn wss fmptff frn sylbi ) CDIABJBDEKELDMABDCEFGHNBDEOP $.
-  $}
-
-  ${
-    rnmptssdff.1 $e |- F/ x ph $.
-    rnmptssdff.2 $e |- F/_ x A $.
-    rnmptssdff.3 $e |- F/_ x C $.
-    rnmptssdff.4 $e |- F = ( x e. A |-> B ) $.
-    rnmptssdff.5 $e |- ( ( ph /\ x e. A ) -> B e. C ) $.
-    $( The range of a function given by the maps-to notation as a subset.
-       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
-    rnmptssdff $p |- ( ph -> ran F C_ C ) $=
-      ( wcel wral crn wss ralrimia rnmptssff syl ) ADELZBCMFNEOASBCGKPBCDEFHIJQ
-      R $.
-  $}
 
   ${
     fvmpt4d.1 $e |- F/_ x A $.
@@ -779911,17 +781092,6 @@ $)
       ZBCKJLZMZAUBUCFGNABOPCOPUAUDQDEBCRST $.
   $}
 
-  ${
-    xrred.1 $e |- ( ph -> A e. RR* ) $.
-    xrred.2 $e |- ( ph -> A =/= -oo ) $.
-    xrred.3 $e |- ( ph -> A =/= +oo ) $.
-    $( An extended real that is neither minus infinity, nor plus infinity, is
-       real.  (Contributed by Glauco Siliprandi, 3-Mar-2021.) $)
-    xrred $p |- ( ph -> A e. RR ) $=
-      ( cr wcel cpnf wceq wo wn cxr cmnf wne wa jca xrnemnf sylib neneqd pm2.53
-      con1d sylc ) ABFGZBHIZJZUDKUCABLGZBMNZOUEAUFUGCDPBQRABHESUEUCUDUCUDTUAUB
-      $.
-  $}
 
   $( The cartesian square of ` RR ` is a subset of the cartesian square of
      ` CC ` .  (Contributed by Glauco Siliprandi, 3-Mar-2021.) $)
@@ -780212,27 +781382,13 @@ $)
       $.
   $}
 
-  $( The set of positive integers is nonempty.  (Contributed by Glauco
-     Siliprandi, 8-Apr-2021.) $)
-  nnn0 $p |- NN =/= (/) $=
-    ( c1 cn 1nn ne0ii ) ABCD $.
+
   $( A finite set of sequential integer is countable.  (Contributed by Glauco
      Siliprandi, 8-Apr-2021.) $)
   fzct $p |- ( N ... M ) ~<_ _om $=
     ( cfz co cz wss com cdom wbr fzssz zct ssct mp2an ) BACDZEFEGHINGHIBAJKNELM
     $.
-  ${
-    $d A n $.
-    $( Any positive real number is greater than the reciprocal of a positive
-       integer.  (Contributed by Glauco Siliprandi, 8-Apr-2021.) $)
-    rpgtrecnn $p |- ( A e. RR+ -> E. n e. NN ( 1 / n ) < A ) $=
-      ( crp wcel c1 cdiv co cfl cfv caddc cn clt wbr cv wrex cn0 cr cc0 syl2anc
-      syl rpreccl rpred rpge0d flge0nn0 nn0p1nn flltp1 nnrpd ltrecd mpbid rpne0
-      cle rpcn recrecd breqtrd wceq oveq2 breq1d rspcev ) ACDZEAFGZHIZEJGZKDZEV
-      BFGZALMZEBNZFGZALMZBKOUSVAPDZVCUSUTQDZRUTUKMVIUSUTAUAZUBZUSUTVKUCUTUDSVAU
-      ETZUSVDEUTFGZALUSUTVBLMZVDVNLMUSVJVOVLUTUFTUSUTVBVKUSVBVMUGUHUIUSAAULAUJU
-      MUNVHVEBVBKVFVBUOVGVDALVFVBEFUPUQURS $.
-  $}
+
 
   $( A half-open integer interval is a subset of an upper set of integers.
      (Contributed by Glauco Siliprandi, 8-Apr-2021.) $)
@@ -780250,32 +781406,6 @@ $)
       BDOZAPQRADQRSUFUGUHTUFUGUHUAUFUGUIUHBCAUBUCBCAUDUE $.
   $}
 
-  ${
-    $d A n x $.  $d B n x $.  $d ph x $.
-    xrralrecnnle.n $e |- F/ n ph $.
-    xrralrecnnle.a $e |- ( ph -> A e. RR* ) $.
-    xrralrecnnle.b $e |- ( ph -> B e. RR ) $.
-    $( Show that ` A ` is less than ` B ` by showing that there is no positive
-       bound on the difference.  (Contributed by Glauco Siliprandi,
-       8-Apr-2021.) $)
-    xrralrecnnle $p |- ( ph -> ( A <_ B <-> A. n e. NN A <_ ( B + ( 1 / n ) ) )
-       ) $=
-      ( vx cle wbr co cn wa nfv wcel cxr ad2antrr adantl crp ex c1 cv cdiv wral
-      caddc nfan adantr nnrecre readdcld rexrd adantlr rexr syl simplr clt nnrp
-      cr rpreccl ltaddrpd xrlelttrd xrltled ralrimi wrex rpgtrecnn nfra1 simpll
-      wi rspa adantll jca simpr ad4antr rpre ad5ant13 ad5ant14 simp-4r ad2antlr
-      ltadd2dd adantl3r syl21anc rexlimd mpd ralrimiva wb syl2anc mpbird impbid
-      xralrple ) ABCIJZBCUADUBZUCKZUEKZIJZDLUDZAWIWNAWIMZWMDLAWIDEWIDNUFWOWJLOZ
-      WMWOWPMZBWLABPOZWIWPFQZAWPWLPOZWIAWPMZWLXACWKACUQOZWPGUGZWPWKUQOZAWJUHZRU
-      IUJZUKZWQBCWLWSACPOZWIWPAXBXHGCULUMQXGAWIWPUNAWPCWLUOJWIXACWKXCWPWKSOZAWP
-      WJSOXIWJUPWJURUMRUSUKUTVATVBTAWNWIAWNMZWIBCHUBZUEKZIJZHSUDZXJXMHSXJXKSOZM
-      ZWKXKUOJZDLVCZXMXOXRXJXKDVDRXPXQXMDLXJXODAWNDEWMDLVEUFXODNUFXMDNXPWPXQXMV
-      GZXPWPMAWMMZXOWPXSXJWPXTXOXJWPMAWMAWNWPVFWNWPWMAWMDLVHVIVJUKXJXOWPUNXPWPV
-      KXTXOMWPMZXQXMYAXQMZBXLAWRWMXOWPXQFVLZAXOXLPOWMWPXQAXOMZXLYDCXKAXBXOGUGZX
-      OXKUQOZAXKVMRZUIUJVNZYBBWLXLYCAWPWTWMXOXQXFVOYHAWMXOWPXQVPAXOWPXQWLXLUOJW
-      MYDWPMZXQMWKXKCWPXDYDXQXEVQYDYFWPXQYGQYDXBWPXQYEQYIXQVKVRVSUTVATVTTWAWBWC
-      AWIXNWDZWNAWRXBYJFGHBCWHWEUGWFTWG $.
-  $}
 
   $( A finite set of sequential integer is countable.  (Contributed by Glauco
      Siliprandi, 8-Apr-2021.) $)
@@ -780283,18 +781413,6 @@ $)
     ( cfzo co cz wss com cdom wbr fzossz zct ssct mp2an ) BACDZEFEGHINGHIBAJKNE
     LM $.
 
-  ${
-    frexr.1 $e |- ( ph -> F : A --> RR ) $.
-    $( A function taking real values, is a function taking extended real
-       values.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    frexr $p |- ( ph -> F : A --> RR* ) $=
-      ( cr cxr wss ressxr a1i fssd ) ABEFCDEFGAHIJ $.
-  $}
-
-  $( The reciprocal of a positive natural number is a positive real number.
-     (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-  nnrecrp $p |- ( N e. NN -> ( 1 / N ) e. RR+ ) $=
-    ( cn wcel crp c1 cdiv co nnrp rpreccl syl ) ABCADCEAFGDCAHAIJ $.
 
   ${
     reclt0d.1 $e |- ( ph -> A e. RR ) $.
@@ -780328,34 +781446,6 @@ $)
       ( cxr wss clt cinf wcel infxrcl syl ) ABDEBDFGDHCBIJ $.
   $}
 
-  ${
-    $d A n $.  $d B n $.
-    xrralrecnnge.n $e |- F/ n ph $.
-    xrralrecnnge.a $e |- ( ph -> A e. RR ) $.
-    xrralrecnnge.b $e |- ( ph -> B e. RR* ) $.
-    $( Show that ` A ` is less than ` B ` by showing that there is no positive
-       bound on the difference.  (Contributed by Glauco Siliprandi,
-       26-Jun-2021.) $)
-    xrralrecnnge $p |- ( ph -> ( A <_ B <-> A. n e. NN ( A - ( 1 / n ) ) <_ B )
-       ) $=
-      ( cle wbr c1 co cn wa wcel cxr adantr adantl ad2antrr cpnf cmnf cdiv cmin
-      cv wral nfv nfan nnrecre resubcld rexrd adantlr clt crp rpreccld ltsubrpd
-      cr nnrp simplr xrltletrd xrltled ex ralrimi wceq pnfxr a1i ltpnfd breqtrd
-      id eqcomd wn wne 1nn oveq2 oveq2d breq1d rspcva syl2anc simpr adantll cc0
-      ax-1ne0 redivcld mnfltd mnfxr xrltnled mpbid pm2.65da neqned xrralrecnnle
-      neqne xrred caddc lesubaddd bicomd ralbida bitr2d biimpd imp an32s syldan
-      1red pm2.61dan impbid ) ABCHIZBJDUCZUAKZUBKZCHIZDLUDZAXCXHAXCMZXGDLAXCDEX
-      CDUEUFXIXDLNZXGXIXJMZXFCAXJXFONXCAXJMZXFXLBXEABUONZXJFPZXJXEUONZAXDUGZQUH
-      UIUJZACONZXCXJGRZXKXFBCXQABONZXCXJABFUIZRXSAXJXFBUKIXCXLBXEXNXJXEULNAXJXD
-      XDUPUMQUNUJAXCXJUQURUSUTVAUTAXHXCAXHMZCSVBZXCYBYCMBSCHABSHIXHYCABSYASONAV
-      CVDABFVEUSRYCSCVBYBYCCSYCVGVHQVFYBYCVIZCUONZXCYBYDMCAXRXHYDGRYBCTVJYDYBCT
-      YBCTVBZBJJUAKZUBKZTHIZXHYFYIAXHYFMYHCTHXHYHCHIZYFXHJLNZXHYJYKXHVKVDXHVGXG
-      YJDJLXDJVBZXFYHCHYLXEYGBUBXDJJUAVLVMVNVOVPPXHYFVQVFVRAYIVIZXHYFATYHUKIYMA
-      YHABYGFAJJAWTZYNJVSVJAVTVDWAUHZWBATYHTONAWCVDAYHYOUIWDWERWFWGPYDCSVJYBCSW
-      IQWJAYEXHXCAYEMZXHXCYPXHXCYPXCBCXEWKKHIZDLUDXHYPBCDAYEDEYEDUEUFZAXTYEYAPA
-      YEVQZWHYPYQXGDLYRYPXJMZXGYQYTBXECAXJXMYEXNUJXJXOYPXPQYPYEXJYSPWLWMWNWOWPW
-      QWRWSXAUTXB $.
-  $}
 
   ${
     reclt0.1 $e |- ( ph -> A e. RR ) $.
@@ -781864,18 +782954,6 @@ $)
       KULRGABESZDBTUDUAUEAUNCQKUMUGUJRUOFGBCDUBUFUC $.
   $}
 
-  ${
-    eliood.1 $e |- ( ph -> A e. RR* ) $.
-    eliood.2 $e |- ( ph -> B e. RR* ) $.
-    eliood.3 $e |- ( ph -> C e. RR ) $.
-    eliood.4 $e |- ( ph -> A < C ) $.
-    eliood.5 $e |- ( ph -> C < B ) $.
-    $( Membership in an open real interval.  (Contributed by Glauco Siliprandi,
-       11-Dec-2019.) $)
-    eliood $p |- ( ph -> C e. ( A (,) B ) ) $=
-      ( cioo co wcel cr clt wbr cxr w3a wb elioo2 syl2anc mpbir3and ) ADBCJKLZD
-      MLZBDNOZDCNOZGHIABPLCPLUBUCUDUEQREFBCDSTUA $.
-  $}
 
   ${
     iooabslt.1 $e |- ( ph -> A e. RR ) $.
@@ -781978,11 +783056,6 @@ $)
       DMLZBDNOZDCPOZGHIABMLCMLUBUCUDUEQREFBCDSTUA $.
   $}
 
-  $( An element of a left-closed right-open interval is less than its upper
-     bound.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
-  icoltub $p |- ( ( A e. RR* /\ B e. RR* /\ C e. ( A [,) B ) ) -> C < B ) $=
-    ( cxr wcel cico co clt wbr wa cle w3a elico1 simp3 biimtrdi 3impia ) ADEZBD
-    EZCABFGEZCBHIZQRJSCDEZACKIZTLTABCMUAUBTNOP $.
 
   ${
     $d A x y z $.  $d B x y z $.  $d C x y z $.
@@ -782540,15 +783613,6 @@ $)
       ( cxr wcel cioo co clt wbr iooltub syl3anc ) ABHICHIDBCJKIDCLMEFGBCDNO $.
   $}
 
-  ${
-    icoltubd.1 $e |- ( ph -> A e. RR* ) $.
-    icoltubd.2 $e |- ( ph -> B e. RR* ) $.
-    icoltubd.3 $e |- ( ph -> C e. ( A [,) B ) ) $.
-    $( An element of a left-closed right-open interval is less than its upper
-       bound.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    icoltubd $p |- ( ph -> C < B ) $=
-      ( cxr wcel cico co clt wbr icoltub syl3anc ) ABHICHIDBCJKIDCLMEFGBCDNO $.
-  $}
 
   ${
     $d A x $.  $d B x $.  $d ph x $.
@@ -782611,17 +783675,7 @@ $)
      26-Jun-2021.) $)
   ioofun $p |- Fun (,) $=
     ( cxr cxp cr cpw cioo wf wfun ioof ffun ax-mp ) AABZCDZEFEGHKLEIJ $.
-  ${
-    $d A x $.  $d ph x $.
-    icomnfinre.1 $e |- ( ph -> A e. RR* ) $.
-    $( A left-closed, right-open, interval of extended reals, intersected with
-       the Reals.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    icomnfinre $p |- ( ph -> ( ( -oo [,) A ) i^i RR ) = ( -oo (,) A ) ) $=
-      ( vx cmnf cico co cr cin cioo cv wcel cxr mnfxr a1i adantr elinel2 adantl
-      wa mnfltd elinel1 icoltubd eliood ssd wss ioossico ioossre ssini eqssd )
-      AEBFGZHIZEBJGZADUKULADKZUKLZSZEBUMEMLUONOZABMLUNCPZUNUMHLAUMUJHQRZUOUMURT
-      UOEBUMUPUQUNUMUJLAUMUJHUARUBUCUDULUKUEAULUJHEBUFEBUGUHOUI $.
-  $}
+
 
   ${
     sqrlearg.1 $e |- ( ph -> A e. RR ) $.
@@ -816407,18 +817461,6 @@ $(
   Proofs for most of the theorems in section 111 of [Fremlin1]
 $)
 
-  $c SAlg $.
-
-  $( Extend class notation with the class of all sigma-algebras. $)
-  csalg $a class SAlg $.
-
-  ${
-    $d x y $.
-    $( Define the class of sigma-algebras.  (Contributed by Glauco Siliprandi,
-       17-Aug-2020.) $)
-    df-salg $a |- SAlg = { x | ( (/) e. x /\ A. y e. x ( U. x \ y ) e. x /\
-                                A. y e. ~P x ( y ~<_ _om -> U. y e. x ) ) } $.
-  $}
 
   $c SalOn $.
 
@@ -816451,18 +817493,6 @@ $)
                                           x C_ s ) } ) $.
   $}
 
-  ${
-    $d S x y $.
-    $( Express the predicate " ` S ` is a sigma-algebra."  (Contributed by
-       Glauco Siliprandi, 17-Aug-2020.) $)
-    issal $p |- ( S e. V -> ( S e. SAlg <-> ( (/) e. S /\ A. y e. S ( U. S \ y
-       ) e. S /\ A. y e. ~P S ( y ~<_ _om -> U. y e. S ) ) ) ) $=
-      ( vx c0 cv wcel cuni cdif wral com cdom wbr cpw w3a csalg eleq2 raleqbidv
-      wi wceq id unieq difeq1d eleq12d pweq imbi2d 3anbi123d df-salg elab2g ) E
-      DFZGZUJHZAFZIZUJGZAUJJZUMKLMZUMHZUJGZSZAUJNZJZOEBGZBHZUMIZBGZABJZUQURBGZS
-      ZABNZJZODBPCUJBTZUKVCUPVGVBVKUJBEQVLUOVFAUJBVLUAZVLUNVEUJBVLULVDUMUJBUBUC
-      VMUDRVLUTVIAVAVJUJBUEVLUSVHUQUJBURQUFRUGDAUHUI $.
-  $}
 
   ${
     $d V y $.  $d X y $.
@@ -816479,19 +817509,6 @@ $)
       $.
   $}
 
-  ${
-    $d S y $.  $d T y $.
-    salunicl.s $e |- ( ph -> S e. SAlg ) $.
-    salunicl.t $e |- ( ph -> T e. ~P S ) $.
-    salunicl.tct $e |- ( ph -> T ~<_ _om ) $.
-    $( SAlg sigma-algebra is closed under countable union.  (Contributed by
-       Glauco Siliprandi, 17-Aug-2020.) $)
-    salunicl $p |- ( ph -> U. T e. S ) $=
-      ( vy com cdom wbr cuni wcel cv wi cpw wceq breq1 unieq wral csalg imbi12d
-      eleq1d c0 cdif w3a wb issal syl mpbid simp3d rspcdva mpd ) ACHIJZCKZBLZFA
-      GMZHIJZUPKZBLZNZUMUONGBOZCUPCPZUQUMUSUOUPCHIQVBURUNBUPCRUBUAAUCBLZBKUPUDB
-      LGBSZUTGVASZABTLZVCVDVEUEZDAVFVFVGUFDGBTUGUHUIUJEUKUL $.
-  $}
 
   ${
     $d E y $.  $d F y $.  $d S y $.
@@ -816532,25 +817549,6 @@ $)
       UUDXCYJFPWRYJWCWGKVESVEWPYIXHHNSWEVFWNJDWOWPXAXGWFWHWMPBWICWNJWJWKWL $.
   $}
 
-  ${
-    $d E y $.  $d S y $.
-    $( The complement of an element of a sigma-algebra is in the sigma-algebra.
-       (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
-    saldifcl $p |- ( ( S e. SAlg /\ E e. S ) -> ( U. S \ E ) e. S ) $=
-      ( vy csalg wcel wa cuni cv cdif wceq difeq2 eleq1d wral c0 com wbr wi cpw
-      cdom w3a issal ibi simp2d adantr simpr rspcdva ) ADEZBAEZFAGZCHZIZAEZUIBI
-      ZAECABUJBJUKUMAUJBUIKLUGULCAMZUHUGNAEZUNUJOSPUJGAEQCARMZUGUOUNUPTCADUAUBU
-      CUDUGUHUEUF $.
-  $}
-
-  ${
-    $d S y $.
-    $( The empty set belongs to every sigma-algebra.  (Contributed by Glauco
-       Siliprandi, 17-Aug-2020.) $)
-    0sal $p |- ( S e. SAlg -> (/) e. S ) $=
-      ( vy csalg wcel c0 cuni cv cdif wral com cdom wbr wi cpw w3a issal simp1d
-      ibi ) ACDZEADZAFBGZHADBAIZUAJKLUAFADMBANIZSTUBUCOBACPRQ $.
-  $}
 
   ${
     $d V x $.  $d X s x $.
@@ -816568,32 +817566,6 @@ $)
       TVAVB $.
   $}
 
-  ${
-    saliunclf.1 $e |- F/ k ph $.
-    saliunclf.2 $e |- F/_ k S $.
-    saliunclf.3 $e |- F/_ k K $.
-    saliunclf.4 $e |- ( ph -> S e. SAlg ) $.
-    saliunclf.5 $e |- ( ph -> K ~<_ _om ) $.
-    saliunclf.6 $e |- ( ( ph /\ k e. K ) -> E e. S ) $.
-    $( SAlg sigma-algebra is closed under countable indexed union.
-       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
-    saliunclf $p |- ( ph -> U_ k e. K E e. S ) $=
-      ( ciun cmpt crn cuni wcel syl com cdom wbr wral ralrimia csalg rnmptssdff
-      wceq dfiun3g eqid sselpwd rn1st salunicl eqeltrd ) ACEDLZCEDMZNZOZBADBPZC
-      EUAULUOUEAUPCEFKUBCEDBUFQABUNIAUNBUCIACEDBUMFHGUMUGKUDUHAERSTUNRSTJCEDHUI
-      QUJUK $.
-  $}
-
-  ${
-    $d K k $.  $d S k $.  $d k ph $.
-    saliuncl.s $e |- ( ph -> S e. SAlg ) $.
-    saliuncl.kct $e |- ( ph -> K ~<_ _om ) $.
-    saliuncl.b $e |- ( ( ph /\ k e. K ) -> E e. S ) $.
-    $( SAlg sigma-algebra is closed under countable indexed union.
-       (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
-    saliuncl $p |- ( ph -> U_ k e. K E e. S ) $=
-      ( nfv nfcv saliunclf ) ABCDEACICBJCEJFGHK $.
-  $}
 
   $( The intersection of two sets in a sigma-algebra is in the sigma-algebra.
      (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
@@ -816604,42 +817576,7 @@ $)
     UQURURUSUSURIZIZVCUQURKUNUOURVELUPUNUORZVEURVFURUSMVEURLVFURBUSURBMVFBCNOUO
     BUSMUNBAPSUAURUSUBUCUDQVEVCLUQVDVBUSUSBCUEUFOUIUQUNVBAEZVCAEUNUOUPUJZUQUNUT
     AEZVAAEZVGVHUNUOVIUPABTQUNUPVJUOACTUGAUTVAUHUKAVBTULUM $.
-  $( A set is an element of any sigma-algebra on it.  (Contributed by Glauco
-     Siliprandi, 17-Aug-2020.) $)
-  saluni $p |- ( S e. SAlg -> U. S e. S ) $=
-    ( csalg wcel cuni c0 cdif dif0 0sal saldifcl mpdan eqeltrrid ) ABCZADZMEFZA
-    MGLEACNACAHAEIJK $.
 
-  ${
-    saliinclf.1 $e |- F/ k ph $.
-    saliinclf.2 $e |- F/_ k S $.
-    saliinclf.3 $e |- F/_ k K $.
-    saliinclf.4 $e |- ( ph -> S e. SAlg ) $.
-    saliinclf.5 $e |- ( ph -> K ~<_ _om ) $.
-    saliinclf.6 $e |- ( ph -> K =/= (/) ) $.
-    saliinclf.7 $e |- ( ( ph /\ k e. K ) -> E e. S ) $.
-    $( SAlg sigma-algebra is closed under countable indexed intersection.
-       (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
-    saliinclf $p |- ( ph -> |^|_ k e. K E e. S ) $=
-      ( ciin cuni cdif wcel cin wceq syl saldifcl cv wa incom wss elssuni dfss2
-      ciun sylib dfin4 a1i 3eqtr3a iineq2d c0 wne nfuni iindif2f eqtrd syl2an2r
-      csalg saliunclf syl2anc eqeltrd ) ACEDMZBNZCEVDDOZUGZOZBAVCCEVDVEOZMZVGAC
-      EDVHFACUAEPZUBZDVDQZVDDQZDVHDVDUCVKDVDUDZVLDRVKDBPZVNLDBUESDVDUFUHVMVHRVK
-      VDDUIUJUKULAEUMUNVIVGRKCEVDVEHCBGUOUPSUQABUSPZVFBPVGBPIABCVEEFGHIJAVPVJVO
-      VEBPILBDTURUTBVFTVAVB $.
-  $}
-
-  ${
-    $d K k $.  $d S k $.  $d k ph $.
-    saliincl.s $e |- ( ph -> S e. SAlg ) $.
-    saliincl.kct $e |- ( ph -> K ~<_ _om ) $.
-    saliincl.kn0 $e |- ( ph -> K =/= (/) ) $.
-    saliincl.e $e |- ( ( ph /\ k e. K ) -> E e. S ) $.
-    $( SAlg sigma-algebra is closed under countable indexed intersection.
-       (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
-    saliincl $p |- ( ph -> |^|_ k e. K E e. S ) $=
-      ( nfv nfcv saliinclf ) ABCDEACJCBKCEKFGHIL $.
-  $}
 
   $( The difference of two elements of a sigma-algebra is in the sigma-algebra.
      (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
@@ -816719,21 +817656,6 @@ $)
       URTUAUKURBUBUCUHUDUEUFUIUG $.
   $}
 
-  ${
-    $d S y $.  $d ph y $.
-    issald.s $e |- ( ph -> S e. V ) $.
-    issald.z $e |- ( ph -> (/) e. S ) $.
-    issald.x $e |- X = U. S $.
-    issald.d $e |- ( ( ph /\ y e. S ) -> ( X \ y ) e. S ) $.
-    issald.u $e |- ( ( ph /\ y e. ~P S /\ y ~<_ _om ) -> U. y e. S ) $.
-    $( Sufficient condition to prove that ` S ` is sigma-algebra.  (Contributed
-       by Glauco Siliprandi, 3-Jan-2021.) $)
-    issald $p |- ( ph -> S e. SAlg ) $=
-      ( csalg wcel c0 cuni cv cdif wral com cdom ralrimiva wbr wi cpw wa eqcomi
-      difeq1i eqeltrid 3expia w3a wb issal syl mpbir3and ) ACKLZMCLZCNZBOZPZCLZ
-      BCQZUQRSUAZUQNCLZUBZBCUCZQZGAUSBCAUQCLUDUREUQPCUPEUQEUPHUEUFIUGTAVCBVDAUQ
-      VDLVAVBJUHTACDLUNUOUTVEUIUJFBCDUKULUM $.
-  $}
 
   ${
     $d A x y $.  $d S x y $.  $d ph x $.
@@ -816997,26 +817919,6 @@ $)
       OWPBXGXITWQVIWRBXGWTXAWSWIACXGDGHXGWAXBXGEDXCUTXD $.
   $}
 
-  ${
-    $d S e y $.  $d e n y $.  $d e ph y $.
-    issalnnd.s $e |- ( ph -> S e. V ) $.
-    issalnnd.z $e |- ( ph -> (/) e. S ) $.
-    issalnnd.x $e |- X = U. S $.
-    issalnnd.d $e |- ( ( ph /\ y e. S ) -> ( X \ y ) e. S ) $.
-    issalnnd.i $e |- ( ( ph /\ e : NN --> S ) -> U_ n e. NN ( e ` n ) e. S ) $.
-    $( Sufficient condition to prove that ` S ` is sigma-algebra.  (Contributed
-       by Glauco Siliprandi, 3-Mar-2021.) $)
-    issalnnd $p |- ( ph -> S e. SAlg ) $=
-      ( cv wcel c0 wceq wa adantl adantr cn cpw com cdom wbr w3a cuni unieq a1i
-      uni0 eqtrd eqeltrd 3ad2antl1 wne neqne wfo wex nnfoctb 3ad2antl3 cfv ciun
-      wn wi founiiun simpll fof wss elpwi fssd adantll syl2anc 3adantl3 exlimdv
-      wf ex mpd syldan pm2.61dan issald ) ABCFGHIJKABMZCUANZVSUBUCUDZUEZVSOPZVS
-      UFZCNZAVTWCWEWAAWCQWDOCWCWDOPAWCWDOUFZOVSOUGWFOPWCUIUHUJRAOCNWCISUKULWBWC
-      VAZVSOUMZWEWGWHWBVSOUNRWBWHQZTVSDMZUOZDUPZWEWAAWHWLVTVSDUQURWIWKWEDAVTWHW
-      KWEVBZWAAVTQZWMWHWNWKWEWNWKQZWDETEMWJUSUTZCWKWDWPPWNETVSWJVCRWOATCWJVMZWP
-      CNAVTWKVDVTWKWQAVTWKQTVSCWJWKTVSWJVMVTTVSWJVERVTVSCVFWKVSCVGSVHVILVJUKVNS
-      VKVLVOVPVQVR $.
-  $}
 
   ${
     $d e n y $.
@@ -817030,14 +817932,6 @@ $)
       IVCUTVDCTTUQVAUSUJULVBCUMUNSUOUP $.
   $}
 
-  ${
-    saldifcld.1 $e |- ( ph -> S e. SAlg ) $.
-    saldifcld.2 $e |- ( ph -> E e. S ) $.
-    $( The complement of an element of a sigma-algebra is in the sigma-algebra.
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    saldifcld $p |- ( ph -> ( U. S \ E ) e. S ) $=
-      ( csalg wcel cuni cdif saldifcl syl2anc ) ABFGCBGBHCIBGDEBCJK $.
-  $}
 
   ${
     saluncld.1 $e |- ( ph -> S e. SAlg ) $.
@@ -817058,13 +817952,6 @@ $)
       ( csalgen cfv csalg wcel salgencl syl eqeltrid ) ABDGHZIFADCJNIJECDKLM $.
   $}
 
-  ${
-    0sald.1 $e |- ( ph -> S e. SAlg ) $.
-    $( The empty set belongs to every sigma-algebra.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    0sald $p |- ( ph -> (/) e. S ) $=
-      ( csalg wcel c0 0sal syl ) ABDEFBECBGH $.
-  $}
 
   ${
     iooborel.1 $e |- J = ( topGen ` ran (,) ) $.
@@ -817132,110 +818019,6 @@ $)
       FTMUGUHUISUJTMUKULSURTVBCRSUTMRUMBCVAEHIUNTUOUPTUQ $.
   $}
 
-  ${
-    $d D e $.  $d D x $.  $d E e n $.  $d E n x $.  $d F e $.  $d F x $.
-    $d G y $.  $d H y $.  $d S e n $.  $d S n x $.  $d S n y $.  $d n ph $.
-    subsaliuncllem.f $e |- F/ y ph $.
-    subsaliuncllem.s $e |- ( ph -> S e. V ) $.
-    subsaliuncllem.g $e |- G = ( n e. NN |-> { x e. S | ( F ` n ) = ( x i^i D )
-       } ) $.
-    subsaliuncllem.e $e |- E = ( H o. G ) $.
-    subsaliuncllem.h $e |- ( ph -> H Fn ran G ) $.
-    subsaliuncllem.y $e |- ( ph -> A. y e. ran G ( H ` y ) e. y ) $.
-    $( A subspace sigma-algebra is closed under countable union.  This is Lemma
-       121A (iii) of [Fremlin1] p. 35.  (Contributed by Glauco Siliprandi,
-       26-Jun-2021.) $)
-    subsaliuncllem $p |- ( ph -> E. e e. ( S ^m NN ) A. n e. NN ( F ` n ) = ( (
-       e ` n ) i^i D ) ) $=
-      ( cn wcel cmap co cv cfv cin wceq wral wrex ccom wf crn wfn wa wss cvv wb
-      crab vex elrnmpt ax-mp biimpi wi ssrab2 a1i eqsstrd rexlimiv mpd r19.21bi
-      id adantl sseldd ralrimi jca ffnfv sylibr eqid rabexd ralrimivw fnmpt syl
-      ex dffn3 sylib fco syl2anc elmapd mpbird eqeltrid ffvelcdmda adantr fveq2
-      nnex eleq12d rspcva wfun ffund cdm simpr cmpt dmeqi dmmptg eqcomd eleqtrd
-      eqtrd fvcod fvmpt2d ineq1 eqeq2d elrab simprd fveq1 ineq1d ralbidv rspcev
-      ralrimiva ) AHESUAUBZTGUCZIUDZXQHUDZDUEZUFZGSUGZXRXQFUCZUDZDUEZUFZGSUGZFX
-      PUHAHKJUIZXPPAYHXPTSEYHUJZAJUKZEKUJZSYJJUJZYIAKYJULZCUCZKUDZETZCYJUGZUMYK
-      AYMYQQAYPCYJMAYNYJTZYPAYRUMYNEYOYRYNEUNZAYRYNXRBUCZDUEZUFZBEUQZUFZGSUHZYS
-      YRUUEYNUOTYRUUEUPCURGSUUCYNJUOOUSUTVAUUEYSVBYRUUDYSGSUUDYSVBXQSTZUUDYNUUC
-      EUUDVIUUCEUNUUDUUBBEVCVDVEVDVFVDVGVJAYOYNTZCYJRVHVKWAVLVMCYJEKVNVOAJSULZY
-      LAUUCUOTZGSUGZUUHAUUIGSAUUBBEUUCLUUCVPNVQZVRZGSUUCJUOOVSVTSJWBWCZSYJEKJWD
-      WEAESYHLUONSUOTAWLVDWFWGWHAYAGSAUUFUMZXSETZYAUUNXSUUCTZUUOYAUMUUNUUPXQJUD
-      ZKUDZUUQTZUUNUUQYJTUUGCYJUGZUUSASYJXQJUUMWIAUUTUUFRWJUUGUUSCUUQYJYNUUQUFZ
-      YOUURYNUUQYNUUQKWKUVAVIWMWNWEUUNXSUURUUCUUQUUNXQKJHAJWOUUFASYJJUUMWPWJUUN
-      XQSJWQZAUUFWRASUVBUFUUFAUVBSAUVBGSUUCWSZWQZSUVBUVDUFAJUVCOWTVDAUUJUVDSUFU
-      ULGSUUCUOXAVTXDXBWJXCPXEUUNUUQUUCAGSUUCJUOJUVCUFAOVDAUUIUUFUUKWJXFXBWMWGU
-      UBYABXSEYTXSUFUUAXTXRYTXSDXGXHXIWCXJXOYGYBFHXPYCHUFZYFYAGSUVEYEXTXRUVEYDX
-      SDXQYCHXKXLXHXMXNWE $.
-  $}
-
-  ${
-    $d D e f n z $.  $d D e m n z $.  $d D f n x y z $.  $d F e f n z $.
-    $d F e m n z $.  $d F f n x y z $.  $d S e f n z $.  $d S e m n z $.
-    $d S f n x y z $.  $d T e $.  $d e f n ph z $.  $d m n x y z $.
-    $d ph y z $.
-    subsaliuncl.1 $e |- ( ph -> S e. SAlg ) $.
-    subsaliuncl.2 $e |- ( ph -> D e. V ) $.
-    subsaliuncl.3 $e |- T = ( S |`t D ) $.
-    subsaliuncl.4 $e |- ( ph -> F : NN --> T ) $.
-    $( A subspace sigma-algebra is closed under countable union.  This is Lemma
-       121A (iii) of [Fremlin1] p. 35.  The proof uses ~ fnrndomnum rather than
-       ~ fnrndomg , and so does not require ~ ax-ac .  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.)  (Revised by Vincent Gonzalez,
-       30-Aug-2026.) $)
-    subsaliuncl $p |- ( ph -> U_ n e. NN ( F ` n ) e. T ) $=
-      ( vx vy vm vz cv wceq cn wcel cvv ve vf cfv wral cmap wrex ciun crab cmpt
-      cin co crn wfn wa wex cdom wbr com csalg eqid rabexd ralrimivw fnmpt ccrd
-      syl cdm con0 omelon nnct ondomen mp2an fnrndomnum ax-mp a1i domtr syl2anc
-      wi c0 wne wb vex elrnmpt bilani w3a simp3 crest ffvelcdmda eleqtrdi elexd
-      elrest adantr mpbid rabn0 3adant3 eqnetrd 3exp rexlimdv mpd axccdom simpl
-      sylibr fveq2 eqeq1d rabbidv cbvmptv fneq2i biimpi ad2antrl raleqi adantrl
-      rneqi ccom 3ad2ant1 eqeq2d cbvrabv mpteq2i eqtr2i coeq2i biimpri 3ad2ant2
-      ineq1 eqcomi id eleq12d cbvralvw bitri 3ad2ant3 subsaliuncllem syl3anc ex
-      nfv exlimdv wf elmapi adantl saliuncl elrestd nfra1 rspa iuneq2df iunin1
-      eqtrd mpbird ) AEPZFUCZUUDUAPZUCZBUJZQZERUDZUACRUEUKZUFZERUUEUGZDSZAUBPZE
-      RUUELPZBUJZQZLCUHZUIZULZUMZMPZUUOUCZUVCSZMUVAUDZUNZUBUOUULAMUBUVAAUVARUPU
-      QZRURUPUQZUVAURUPUQAUUTRUMZUVHAUUSTSZERUDUVJAUVKERAUURLCUUSUSUUSUTHVAVBER
-      UUSUUTTUUTUTZVCVERVDVFSZUVJUVHVQURVGSUVIUVMVHVIURRVJVKRUUTVLVMVEUVIAVIVNU
-      VARURVOVPAUVCUVASZUNUVCUUSQZERUFZUVCVRVSZUVNUVPAUVCTSUVNUVPVTMWAERUUSUVCU
-      UTTUVLWBVMWCAUVPUVQVQUVNAUVOUVQERAUUDRSZUVOUVQAUVRUVOWDUVCUUSVRAUVRUVOWEA
-      UVRUUSVRVSZUVOAUVRUNZUURLCUFZUVSUVTUUECBWFUKZSZUWAUVTUUEDUWBARDUUDFKWGJWH
-      AUWCUWAVTZUVRACUSSZBTSZUWDHABGIWIZLUUEBCUSTWJVPWKWLUURLCWMXAWNWOWPWQWKWRW
-      SAUVGUULUBAUVGUULAUVGUNAUUONRNPZFUCZUUQQZLCUHZUIZULZUMZUVEMUWMUDZUULAUVGW
-      TUVBUWNAUVFUVBUWNUVAUWMUUOUUTUWLENRUUSUWKUUDUWHQZUURUWJLCUWPUUEUWIUUQUUDU
-      WHFXBXCXDXEZXKZXFZXGXHAUVFUWOUVBUVFUWOAUVEMUVAUWMUWRXIWCXJAUWNUWOWDZLOBCU
-      AEUUONRUWIOPZBUJZQZOCUHZUIZXLFUUTUUOUSUWTOYKAUWNUWEUWOHXMUVLUXEUUTUUOUUTU
-      WLUXEUWQNRUWKUXDUWJUXCLOCUUPUXAQUUQUXBUWIUUPUXABYAXNXOXPXQXRUWNAUVBUWOUVB
-      UWNUWSXSXTUWOAUXAUUOUCZUXASZOUVAUDZUWNUWOUXHUWOUVFUXHUVEMUWMUVAUVAUWMUWRY
-      BXIUVEUXGMOUVAUVCUXAQZUVDUXFUVCUXAUVCUXAUUOXBUXIYCYDYEYFXGYGYHYIYJYLWRAUU
-      JUUNUAUUKAUUFUUKSZUUJUUNAUXJUUJWDZUUNERUUGUGZBUJZUWBSUXKUXMBCUSTUXLAUXJUW
-      EUUJHXMAUXJUWFUUJUWGXMAUXJUXLCSUUJAUXJUNZCEUUGRAUWEUXJHWKUVIUXNVIVNUXNRCU
-      UDUUFUXJRCUUFYMAUUFCRYNYOWGYPWNUXMUTYQUXKUUMUXMDUWBUUJAUUMUXMQUXJUUJUUMER
-      UUHUGZUXMUUJERUUEUUHUUIERYRUUIERYSYTUXOUXMQUUJERBUUGUUAVNUUBYGDUWBQUXKJVN
-      YDUUCWPWQWR $.
-    $( $j usage 'subsaliuncl' avoids 'ax-ac' 'ax-ac2'; $)
-  $}
-
-  ${
-    $d D n $.  $d D y $.  $d S n $.  $d S y $.  $d T f n x $.  $d T x y $.
-    $d f n ph x $.  $d ph x y $.
-    subsalsal.1 $e |- ( ph -> S e. SAlg ) $.
-    subsalsal.2 $e |- ( ph -> D e. V ) $.
-    subsalsal.3 $e |- T = ( S |`t D ) $.
-    $( A subspace sigma-algebra is a sigma algebra.  This is Lemma 121A of
-       [Fremlin1] p. 35.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    subsalsal $p |- ( ph -> T e. SAlg ) $=
-      ( vy cuni wcel a1i c0 csalg cin cv wa wceq cdif adantr vx vf vn cvv crest
-      ovexi 0sald 0in eqcomi elrestd eleqtrrdi eqid wrex eleqtrdi adantl elrest
-      co id wb syl2anc mpbid wi 3adant3 3ad2ant1 simpr saldifcld restuni3 eqtrd
-      unieqi difeq12d indifdir eleq12d 3adant2 mpbird 3exp rexlimdv subsaliuncl
-      w3a mpd cn wf issalnnd ) AUADUBUCUDDJZDUDKADCBUEHUFLAMCBUEUQZDAMBCNEMFGAC
-      FUGMBOMBUHUIUJHUKWCULAUAPZDKZQZWEIPZBOZRZICUMZWCWESZDKZWGWEWDKZWKWFWNAWFW
-      EDWDWFURHUNUOAWNWKUSZWFACNKZBEKZWOFGIWEBCNEUPUTTVAAWKWMVBWFAWJWMICAWHCKZW
-      JWMAWRWJVRZWMCJZWHSZBOZWDKZWSXBBCNEXAAWRWPWJAWPWRFTZVCAWRWQWJGVDAWRXACKWJ
-      AWRQCWHXDAWRVEVFVCXBULUJAWJWMXCUSWRAWJQZWLXBDWDXEWLWTBOZWISZXBXEWCXFWEWIA
-      WCXFRWJAWCWDJZXFWCXHRADWDHVILACBNEFGVGVHTAWJVEVJXGXBRXEXBXGWTWHBVKUILVHDW
-      DRXEHLVLVMVNVOVPTVSAVTDUBPZWAZQBCDUCXIEAWPXJFTAWQXJGTHAXJVEVQWB $.
-  $}
 
   ${
     subsaluni.1 $e |- ( ph -> S e. SAlg ) $.
@@ -827915,20 +828698,6 @@ $(
 
 $)
 
-  $c SMblFn $.
-
-  $( Extend class notation with the class of real-valued measurable functions
-     w.r.t. sigma-algebras. $)
-  csmblfn $a class SMblFn $.
-
-  ${
-    $d s f a $.
-    $( Define a real-valued measurable function w.r.t. a given sigma-algebra.
-       See Definition 121C of [Fremlin1] p. 36 and Definition 135E (b) of
-       [Fremlin1] p. 80 .  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    df-smblfn $a |- SMblFn = ( s e. SAlg |-> { f e. ( RR ^pm U. s ) | A. a e.
-      RR ( `' f " ( -oo (,) a ) ) e. ( s |`t dom f ) } ) $.
-  $}
 
   ${
     $d A y $.  $d F y $.  $d ph y $.  $d x y $.
@@ -827959,43 +828728,6 @@ $)
       ( nfcv pimltmnf2f ) ABCDEBCGFH $.
   $}
 
-  ${
-    $d A x $.
-    preimagelt.x $e |- F/ x ph $.
-    preimagelt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    preimagelt.c $e |- ( ph -> C e. RR* ) $.
-    $( The preimage of a right-open, unbounded below interval, is the
-       complement of a left-closed unbounded above interval.  (Contributed by
-       Glauco Siliprandi, 26-Jun-2021.) $)
-    preimagelt $p |- ( ph -> ( A \ { x e. A | C <_ B } ) = { x e. A | B < C } )
-                   $=
-      ( cle wbr crab nfrab1 wcel wa adantl rabid cxr sylan2 adantr xrltnled clt
-      cdif nfcv nfdif cv eldifi wn eldifn anim1i sylibr mtand sylanbrc rabidim1
-      mpbird rabidim2 mpbid intnand sylnibr eldifd impbida eqrd ) ABCEDIJZBCKZU
-      BZDEUAJZBCKZFBCVCBCUCVBBCLUDVEBCLABUEZVDMZVGVFMZAVHNZVGCMZVEVIVHVKAVGCVCU
-      FZOVJVEVBUGZVHVMAVHVBVGVCMZVGCVCUHVHVBNVKVBNZVNVHVKVBVLUIVBBCPZUJUKOVJDEV
-      HAVKDQMZVLGRAEQMZVHHSTUNVEBCPULAVINZVGCVCVIVKAVEBCUMZOVSVOVNVSVBVKVSVEVMV
-      IVEAVEBCUOOVSDEVIAVKVQVTGRAVRVIHSTUPUQVPURUSUTVA $.
-  $}
-
-  ${
-    $d A x $.
-    preimalegt.x $e |- F/ x ph $.
-    preimalegt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    preimalegt.c $e |- ( ph -> C e. RR* ) $.
-    $( The preimage of a left-open, unbounded above interval, is the complement
-       of a right-closed unbounded below interval.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    preimalegt $p |- ( ph -> ( A \ { x e. A | B <_ C } ) = { x e. A | C < B } )
-                   $=
-      ( cle wbr crab nfrab1 wcel wa adantl rabid cxr adantr sylan2 xrltnled clt
-      cdif nfcv nfdif cv eldifi wn eldifn anim1i sylibr mtand sylanbrc rabidim1
-      mpbird rabidim2 mpbid intnand sylnibr eldifd impbida eqrd ) ABCDEIJZBCKZU
-      BZEDUAJZBCKZFBCVCBCUCVBBCLUDVEBCLABUEZVDMZVGVFMZAVHNZVGCMZVEVIVHVKAVGCVCU
-      FZOVJVEVBUGZVHVMAVHVBVGVCMZVGCVCUHVHVBNVKVBNZVNVHVKVBVLUIVBBCPZUJUKOVJEDA
-      EQMZVHHRVHAVKDQMZVLGSTUNVEBCPULAVINZVGCVCVIVKAVEBCUMZOVSVOVNVSVBVKVSVEVMV
-      IVEAVEBCUOOVSEDAVQVIHRVIAVKVRVTGSTUPUQVPURUSUTVA $.
-  $}
 
   ${
     $d A x $.
@@ -828089,28 +828821,6 @@ $)
       ( nfcv pimgtpnf2f ) ABCDEBCGFH $.
   $}
 
-  ${
-    $d A a x $.  $d B a $.  $d C a x $.  $d S a $.
-    salpreimagelt.x $e |- F/ x ph $.
-    salpreimagelt.a $e |- F/ a ph $.
-    salpreimagelt.s $e |- ( ph -> S e. SAlg ) $.
-    salpreimagelt.u $e |- A = U. S $.
-    salpreimagelt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    salpreimagelt.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | a <_ B } e. S ) $.
-    salpreimagelt.c $e |- ( ph -> C e. RR ) $.
-    $( If all the preimages of left-closed, unbounded below intervals, belong
-       to a sigma-algebra, then all the preimages of right-open, unbounded
-       below intervals, belong to the sigma-algebra.  (iv) implies (i) in
-       Proposition 121B of [Fremlin1] p. 36.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    salpreimagelt $p |- ( ph -> { x e. A | B < C } e. S ) $=
-      ( wbr crab cle cdif cr wcel clt cuni wceq eqcomi difeq1d rexrd preimagelt
-      a1i eqtr2d wa ancli cv wi nfcv nfel1 nfan nfim eleq1 anbi2d breq1 rabbidv
-      nfv eleq1d imbi12d vtoclg1f sylc saldifcld eqeltrd ) ADEUAOBCPZFUBZEDQOZB
-      CPZRZFAVMCVLRVIAVJCVLVJCUCACVJKUDUHUEABCDEHLAENUFUGUIAFVLJAESTZAVNUJZVLFT
-      ZNAVNNUKAGULZSTZUJZVQDQOZBCPZFTZUMVOVPUMGESVOVPGAVNGIGESGEUNUOUPVPGVBUQVQ
-      EUCZVSVOWBVPWCVRVNAVQESURUSWCWAVLFWCVTVKBCVQEDQUTVAVCVDMVEVFVGVH $.
-  $}
 
   ${
     pimrecltpos.x $e |- F/ x ph $.
@@ -828140,28 +828850,6 @@ $)
       QBCWFWGWHR $.
   $}
 
-  ${
-    $d A a x $.  $d B a $.  $d C a x $.  $d S a $.
-    salpreimalegt.x $e |- F/ x ph $.
-    salpreimalegt.a $e |- F/ a ph $.
-    salpreimalegt.s $e |- ( ph -> S e. SAlg ) $.
-    salpreimalegt.u $e |- A = U. S $.
-    salpreimalegt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    salpreimalegt.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | B <_ a } e. S ) $.
-    salpreimalegt.c $e |- ( ph -> C e. RR ) $.
-    $( If all the preimages of right-closed, unbounded below intervals, belong
-       to a sigma-algebra, then all the preimages of left-open, unbounded above
-       intervals, belong to the sigma-algebra.  (ii) implies (iii) in
-       Proposition 121B of [Fremlin1] p. 35.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    salpreimalegt $p |- ( ph -> { x e. A | C < B } e. S ) $=
-      ( wbr crab cle cdif cr wcel clt cuni wceq eqcomi difeq1d rexrd preimalegt
-      a1i eqtr2d wa ancli cv wi nfv nfan nfim eleq1 anbi2d breq2 rabbidv eleq1d
-      imbi12d vtoclg1f sylc saldifcld eqeltrd ) AEDUAOBCPZFUBZDEQOZBCPZRZFAVKCV
-      JRVGAVHCVJVHCUCACVHKUDUHUEABCDEHLAENUFUGUIAFVJJAESTZAVLUJZVJFTZNAVLNUKAGU
-      LZSTZUJZDVOQOZBCPZFTZUMVMVNUMGESVMVNGAVLGIVLGUNUOVNGUNUPVOEUCZVQVMVTVNWAV
-      PVLAVOESUQURWAVSVJFWAVRVIBCVOEDQUSUTVAVBMVCVDVEVF $.
-  $}
 
   ${
     $d A x $.
@@ -828186,21 +828874,6 @@ $)
       WMDETWSWRXBWLVSAWLWNVSWOVSBCVDQRZWMEWRVIVJVKVLXAXCVMVNVOVP $.
   $}
 
-  ${
-    $d A x $.  $d B x $.  $d F x $.  $d ph x $.
-    preimaicomnf.1 $e |- ( ph -> F : A --> RR* ) $.
-    preimaicomnf.2 $e |- ( ph -> B e. RR* ) $.
-    $( Preimage of an open interval, unbounded below.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    preimaicomnf $p |- ( ph -> ( `' F " ( -oo [,) B ) ) = { x e. A | ( F ` x )
-       < B } ) $=
-      ( ccnv cmnf wcel crab wbr cxr wa mnfxr a1i ad2antrr simpr ex adantr co cv
-      cico cima cfv clt wfn wceq ffnd syl icoltub syl3anc ffvelcdmda cle mnfled
-      fncnvima2 elicod impbid rabbidva eqtrd ) AEHIDUCUAZUDZBUBZEUEZVAJZBCKZVDD
-      UFLZBCKAECUGVBVFUHACMEFUIBCVAEUPUJAVEVGBCAVCCJZNZVEVGVIVEVGVIVENZIMJZDMJZ
-      VEVGVKVJOPAVLVHVEGQVIVERIDVDUKULSVIVGVEVIVGNZIDVDVKVMOPAVLVHVGGQVIVDMJVGA
-      CMVCEFUMZTVIIVDUNLVGVIVDVNUOTVIVGRUQSURUSUT $.
-  $}
 
   ${
     $d A y $.  $d F y $.  $d ph y $.  $d x y $.
@@ -828401,69 +829074,6 @@ $)
       XTYJBIDPYAXGXMXNBYGIBYGYBBIYKPYJBDYCYDYEXGYF $.
   $}
 
-  ${
-    $d A x $.  $d B x $.  $d F x $.  $d ph x $.
-    preimaioomnf.1 $e |- ( ph -> F : A --> RR ) $.
-    preimaioomnf.2 $e |- ( ph -> B e. RR* ) $.
-    $( Preimage of an open interval, unbounded below.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    preimaioomnf $p |- ( ph -> ( `' F " ( -oo (,) B ) ) = { x e. A | ( F ` x )
-       < B } ) $=
-      ( ccnv cmnf cioo co cima cico cv cfv clt wbr crab cr cin crn fimacnvinrn2
-      wfun wceq ffund frnd syl2anc icomnfinre imaeq2d eqtr2d frexr preimaicomnf
-      wss eqtrd ) AEHZIDJKZLZUOIDMKZLZBNEODPQBCRAUSUOURSTZLZUQAEUCEUASUMUSVAUDA
-      CSEFUEACSEFUFURSEUBUGAUTUPUOADGUHUIUJABCDEACEFUKGULUN $.
-  $}
-
-  ${
-    $d A n $.  $d B n $.  $d C n $.  $d n ph $.  $d n x $.
-    preimageiingt.x $e |- F/ x ph $.
-    preimageiingt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    preimageiingt.c $e |- ( ph -> C e. RR ) $.
-    $( A preimage of a left-closed, unbounded above interval, expressed as an
-       indexed intersection of preimages of open, unbounded above intervals.
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    preimageiingt $p |- ( ph -> { x e. A | C <_ B } = |^|_ n e. NN { x e. A | (
-       C - ( 1 / n ) ) < B } ) $=
-      ( cle wbr crab cn cv wcel wral wa cxr ad2antrr ex c1 cdiv co cmin ciin wi
-      clt wss simpllr cr adantr nnrecre adantl resubcld rexrd ad3antrrr nnrecrp
-      ad4ant14 crp ltsubrpd simplr xrltletrd rabidd ralrimiva wb cvv elv sylibr
-      eliin ralrimia nfcv nfrab1 nfiin rabssf c0 wne wceq iinrab ax-mp ad4ant13
-      nnn0 simpr xrltled ralimdva imp nfra1 nfan xrralrecnnge ss2rabdf eqsstrid
-      nfv mpbird eqssd ) AEDJKZBCLZFMEUAFNZUBUCZUDUCZDUGKZBCLZUEZAWNBNZXAOZUFZB
-      CPWOXAUHAXDBCGAXBCOZQZWNXCXFWNQZXBWTOZFMPZXCXGXHFMXGWPMOZQZWSBCAXEWNXJUIX
-      KWREDAXJWRROZXEWNAXJQZWRXMEWQAEUJOZXJIUKZXJWQUJOAWPULUMUNUOZURAEROXEWNXJA
-      EIUOUPXFDROZWNXJHSAXJWREUGKXEWNXMEWQXOXJWQUSOAWPUQUMUTURXFWNXJVAVBVCVDXCX
-      IVEBFXBMWTVFVIVGVHTVJWNBCXAFBMWTBMVKWSBCVLVMVNVHAXAWSFMPZBCLZWOMVOVPXAXSV
-      QWAWSFBMCVRVSAXRWNBCGXFXRWNXFXRQZWNWRDJKZFMPZXFXRYBXFWSYAFMXFXJQZWSYAYCWS
-      QWRDAXJXLXEWSXPVTXFXQXJWSHSYCWSWBWCTWDWEXTEDFXFXRFXFFWKWSFMWFWGAXNXEXRISX
-      FXQXRHUKWHWLTWIWJWM $.
-  $}
-
-  ${
-    $d A n $.  $d B n $.  $d C n $.  $d n ph $.  $d n x $.
-    preimaleiinlt.x $e |- F/ x ph $.
-    preimaleiinlt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    preimaleiinlt.c $e |- ( ph -> C e. RR ) $.
-    $( A preimage of a left-open, right-closed, unbounded below interval,
-       expressed as an indexed intersection of preimages of open, unbound below
-       intervals.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    preimaleiinlt $p |- ( ph -> { x e. A | B <_ C } = |^|_ n e. NN { x e. A | B
-       < ( C + ( 1 / n ) ) } ) $=
-      ( cle wbr crab cn wcel wral wa ad2antrr cr rexrd ex c1 cv cdiv caddc ciin
-      co clt wi wss simpllr cxr ad3antrrr adantr nnrecre adantl readdcld simplr
-      ad4ant14 crp nnrecrp ltaddrpd xrlelttrd rabidd ralrimiva wb cvv eliin elv
-      sylibr ralrimia nfcv nfrab1 nfiin rabssf c0 wne wceq nnn0 iinrab ad4ant13
-      simpr xrltled ralimdva imp nfv nfra1 xrralrecnnle mpbird ss2rabdf eqsstrd
-      mp1i nfan eqssd ) ADEJKZBCLZFMDEUAFUBZUCUFZUDUFZUGKZBCLZUEZAWNBUBZXANZUHZ
-      BCOWOXAUIAXDBCGAXBCNZPZWNXCXFWNPZXBWTNZFMOZXCXGXHFMXGWPMNZPZWSBCAXEWNXJUJ
-      XKDEWRXFDUKNZWNXJHQXKEAERNZXEWNXJIULSXKWRAXJWRRNZXEWNAXJPZEWQAXMXJIUMZXJW
-      QRNAWPUNUOUPZURSXFWNXJUQAXJEWRUGKXEWNXOEWQXPXJWQUSNAWPUTUOVAURVBVCVDXCXIV
-      EBFXBMWTVFVGVHVITVJWNBCXAFBMWTBMVKWSBCVLVMVNVIAXAWSFMOZBCLZWOMVOVPXAXSVQA
-      VRWSFBMCVSWKAXRWNBCGXFXRWNXFXRPZWNDWRJKZFMOZXFXRYBXFWSYAFMXFXJPZWSYAYCWSP
-      ZDWRXFXLXJWSHQYDWRAXJXNXEWSXQVTSYCWSWAWBTWCWDXTDEFXFXRFXFFWEWSFMWFWLXFXLX
-      RHUMAXMXEXRIQWGWHTWIWJWM $.
-  $}
 
   ${
     pimgtmnff.1 $e |- F/ x ph $.
@@ -828515,201 +829125,6 @@ $)
       QXJWEPDXLXMXNVOVDVEVGWBBCVHVIVJVPVQBWCWGWBBCVRWFBCVRVSVI $.
   $}
 
-  ${
-    $d A a n $.  $d B a n $.  $d C a n x $.  $d S a n $.  $d n ph $.
-    salpreimagtge.x $e |- F/ x ph $.
-    salpreimagtge.a $e |- F/ a ph $.
-    salpreimagtge.s $e |- ( ph -> S e. SAlg ) $.
-    salpreimagtge.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    salpreimagtge.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | a < B } e. S ) $.
-    salpreimagtge.c $e |- ( ph -> C e. RR ) $.
-    $( If all the preimages of left-open, unbounded above intervals, belong to
-       a sigma-algebra, then all the preimages of left-closed, unbounded above
-       intervals, belong to the sigma-algebra.  (iii) implies (iv) in
-       Proposition 121B of [Fremlin1] p. 35.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    salpreimagtge $p |- ( ph -> { x e. A | C <_ B } e. S ) $=
-      ( vn wbr crab cn clt wcel cr cle c1 cdiv cmin ciin preimageiingt com cdom
-      cv co nnct a1i c0 wne nnn0 wa adantr nnrecre adantl resubcld wi nfan nfim
-      nfv ovex eleq1 anbi2d breq1 rabbidv eleq1d imbi12d vtoclf syldan saliincl
-      wceq eqeltrd ) AEDUAOBCPNQEUBNUIZUCUJZUDUJZDROZBCPZUEFABCDENHKMUFAFNWAQJQ
-      UGUHOAUKULQUMUNAUOULAVQQSZVSTSZWAFSZAWBUPEVRAETSWBMUQWBVRTSAVQURUSUTAGUIZ
-      TSZUPZWEDROZBCPZFSZVAAWCUPZWDVAGVSWKWDGAWCGIWCGVDVBWDGVDVCEVRUDVEWEVSVOZW
-      GWKWJWDWLWFWCAWEVSTVFVGWLWIWAFWLWHVTBCWEVSDRVHVIVJVKLVLVMVNVP $.
-  $}
-
-  ${
-    $d A a n $.  $d B a n $.  $d C a n x $.  $d S a n $.  $d n ph $.
-    salpreimaltle.x $e |- F/ x ph $.
-    salpreimaltle.a $e |- F/ a ph $.
-    salpreimaltle.s $e |- ( ph -> S e. SAlg ) $.
-    salpreimaltle.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    salpreimaltle.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | B < a } e. S ) $.
-    salpreimaltle.c $e |- ( ph -> C e. RR ) $.
-    $( If all the preimages of right-open, unbounded below intervals, belong to
-       a sigma-algebra, then all the preimages of right-closed, unbounded below
-       intervals, belong to the sigma-algebra.  (i) implies (ii) in Proposition
-       121B of [Fremlin1] p. 35.  (Contributed by Glauco Siliprandi,
-       26-Jun-2021.) $)
-    salpreimaltle $p |- ( ph -> { x e. A | B <_ C } e. S ) $=
-      ( vn wbr crab cn wcel wa cr cle c1 cv cdiv co caddc clt preimaleiinlt com
-      ciin cdom nnct a1i c0 wne nnn0 simpl nnrecre adantl readdcld sylan wi nfv
-      nfan nfim ovex eleq1 anbi2d breq2 rabbidv eleq1d imbi12d syl2anc saliincl
-      wceq vtoclf eqeltrd ) ADEUAOBCPNQDEUBNUCZUDUEZUFUEZUGOZBCPZUJFABCDENHKMUH
-      AFNWBQJQUIUKOAULUMQUNUOAUPUMAVRQRZSAVTTRZWBFRZAWCUQAETRZWCWDMWFWCSEVSWFWC
-      UQWCVSTRWFVRURUSUTVAAGUCZTRZSZDWGUGOZBCPZFRZVBAWDSZWEVBGVTWMWEGAWDGIWDGVC
-      VDWEGVCVEEVSUFVFWGVTVOZWIWMWLWEWNWHWDAWGVTTVGVHWNWKWBFWNWJWABCWGVTDUGVIVJ
-      VKVLLVPVMVNVQ $.
-  $}
-
-  ${
-    $d D a x $.  $d F a f $.  $d F a x $.  $d S a f s $.  $d S a x $.
-    $d a ph s $.  $d ph x $.
-    issmflem.s $e |- ( ph -> S e. SAlg ) $.
-    issmflem.d $e |- D = dom F $.
-    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
-       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
-       all open intervals unbounded below are in the subspace sigma-algebra
-       induced by its domain.  The domain of ` F ` is required to be a subset
-       of the underlying set of ` S ` .  Definition 121C of [Fremlin1] p. 36,
-       and Proposition 121B (i) of [Fremlin1] p. 35 .  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    issmflem $p |- ( ph -> ( F e. ( SMblFn ` S ) <-> ( D C_ U. S /\ F : D -->
-       RR /\ A. a e. RR { x e. D | ( F ` x ) < a } e. ( S |`t D ) ) ) ) $=
-      ( vf wcel wss cr crest co wa wceq cvv a1i adantr adantl vs csmblfn cfv wf
-      cuni cv clt wbr crab wral w3a cpm ccnv cmnf cioo cima cdm simpr df-smblfn
-      csalg unieq oveq2d rabeqdv oveq1 ralbidv rabbidv eqtrd ovex rabex fvmptd3
-      eleq2d eleqtrd elrabi elpmi2 eqsstrid syldan elpmi simpld wb feq2i mpbird
-      cnveq imaeq1d dmeq eleq12d elrab simprbi syl2anc simpl rexrd preimaioomnf
-      rspa eqcomd oveq2i ralrimiva 3jca ex reex uniexd simprr fssxp xpss1 sstrd
-      syl cxp dmss dmxpss elpm2r syl22anc 3adantr3 ralbidva biimpd imp 3adantr1
-      jca sylibr impbid ) AEDUBUCZJZCDUEZKZCLEUDZBUFEUCFUFZUGUHBCUIZDCMNZJZFLUJ
-      ZUKZAXSYHAXSOZYAYBYGAXSELXTULNZJZYAYIEIUFZUMZUNYCUONZUPZDYLUQZMNZJZFLUJZI
-      YJUIZJZYKYIEXRYTAXSURAXRYTPXSAUADYOUAUFZYPMNZJZFLUJZILUUBUEZULNZUIZYTUTUB
-      QIUAFUSUUBDPZUUHUUEIYJUIYTUUIUUEIUUGYJUUIUUFXTLULUUBDVAVBVCUUIUUEYSIYJUUI
-      UUDYRFLUUIUUCYQYOUUBDYPMVDVKVEVFVGGYTQJAYSIYJLXTULVHVIRVJZSVLZYSIEYJVMXDZ
-      YKYAAYKCEUQZXTHLXTEVNVOTVPYIYBUUMLEUDZYIUUNUUMXTKZYIYKUUNUUOOUULLXTEVQXDV
-      RYBUUNVSYICUUMLEHVTRWAZYIYFFLYIYCLJZOZYFEUMZYNUPZDUUMMNZJZUURUVBFLUJZUUQU
-      VBYIUVCUUQYIUUAUVCUUKUUAYKUVCYSUVCIEYJYLEPZYRUVBFLUVDYOUUTYQUVAUVDYMUUSYN
-      YLEWBWCUVDYPUUMDMYLEWDVBWEVEWFZWGXDSYIUUQURZUVBFLWLWHUURYDUUTYEUVAUURYBUU
-      QYDUUTPYIYBUUQUUPSUVFYBUUQOZUUTYDUVGBCYCEYBUUQWIUVGYCYBUUQURWJWKWMZWHYEUV
-      APUURCUUMDMHWNRWEWAWOWPWQAYHXSAYHOZEYTXRUVIYKUVCOUUAUVIYKUVCAYAYBYKYGAYAY
-      BOZOZLQJZXTQJZYBYAYKUVLUVKWRRAUVMUVJADUTGWSSAYAYBWTAUVJEXTLXEZKZYAUVJUVOA
-      UVJECLXEZUVNYBEUVPKYACLEXATYAUVPUVNKYBCXTLXBSXCTAUVOOCUUMXTHUVOUUOAUVOUUM
-      UVNUQZXTEUVNXFUVQXTKUVOXTLXGRXCTVOVPLXTCEQQXHXIXJAYBYGUVCYAYBYGOUVCAYBYGU
-      VCYBYGUVCYBYFUVBFLUVGYDUUTYEUVAUVHUVGCUUMDMCUUMPUVGHRVBWEXKXLXMTXNXOUVEXP
-      AYTXRPYHAXRYTUUJWMSVLWQXQ $.
-  $}
-
-  ${
-    $d D a b x y $.  $d F a b x y $.  $d S a b y $.  $d b ph y $.
-    issmf.s $e |- ( ph -> S e. SAlg ) $.
-    issmf.d $e |- D = dom F $.
-    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
-       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
-       all open intervals unbounded below are in the subspace sigma-algebra
-       induced by its domain.  The domain of ` F ` is required to be a subset
-       of the underlying set of ` S ` .  Definition 121C of [Fremlin1] p. 36,
-       and Proposition 121B (i) of [Fremlin1] p. 35 .  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    issmf $p |- ( ph -> ( F e. ( SMblFn ` S ) <-> ( D C_ U. S /\ F : D --> RR
-       /\ A. a e. RR { x e. D | ( F ` x ) < a } e. ( S |`t D ) ) ) ) $=
-      ( vy vb cfv wcel cr cv clt wbr crab wral w3a wb csmblfn cuni wss wf crest
-      co issmflem breq2 rabbidv eleq1d fveq2 breq1d cbvrabv eleq1i a1i cbvralvw
-      wceq bitrd 3anbi3i ) AEDUAKLCDUBUCZCMEUDZINZEKZJNZOPZICQZDCUEUFZLZJMRZSZU
-      TVABNZEKZFNZOPZBCQZVGLZFMRZSZAICDEJGHUGVJVRTAVIVQUTVAVHVPJFMVDVMUQZVHVCVM
-      OPZICQZVGLZVPVSVFWAVGVSVEVTICVDVMVCOUHUIUJWBVPTVSWAVOVGVTVNIBCVBVKUQVCVLV
-      MOVBVKEUKULUMUNUOURUPUSUOUR $.
-  $}
-
-  ${
-    $d A a b x $.  $d B a b $.  $d C a x $.  $d S a b $.  $d b ph $.
-    salpreimalelt.x $e |- F/ x ph $.
-    salpreimalelt.a $e |- F/ a ph $.
-    salpreimalelt.s $e |- ( ph -> S e. SAlg ) $.
-    salpreimalelt.u $e |- A = U. S $.
-    salpreimalelt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    salpreimalelt.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | B <_ a } e. S ) $.
-    salpreimalelt.c $e |- ( ph -> C e. RR ) $.
-    $( If all the preimages of right-closed, unbounded below intervals, belong
-       to a sigma-algebra, then all the preimages of right-open, unbounded
-       below intervals, belong to the sigma-algebra.  (ii) implies (i) in
-       Proposition 121B of [Fremlin1] p. 36.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    salpreimalelt $p |- ( ph -> { x e. A | B < C } e. S ) $=
-      ( vb cv wcel nfv nfan adantlr cr wa adantr cxr clt wbr crab salpreimalegt
-      csalg cle simpr salpreimagtge salpreimagelt ) ABCDEFGHIJKLAGPZUAQZUBZBCDU
-      NFOAUOBHUOBRSUPORAFUIQZUOJUCABPCQZDUDQZUOLTAOPZUAQZUTDUEUFBCUGFQUOAVAUBBC
-      DUTFGAVABHVABRSAVAGIVAGRSAUQVAJUCKAURUSVALTAUODUNUJUFBCUGFQVAMTAVAUKUHTAU
-      OUKULNUM $.
-  $}
-
-  ${
-    $d A a b x $.  $d B a b $.  $d C a x $.  $d S a b $.  $d b ph $.
-    salpreimagtlt.x $e |- F/ x ph $.
-    salpreimagtlt.a $e |- F/ a ph $.
-    salpreimagtlt.s $e |- ( ph -> S e. SAlg ) $.
-    salpreimagtlt.u $e |- A = U. S $.
-    salpreimagtlt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    salpreimagtlt.p $e |- ( ( ph /\ a e. RR ) -> { x e. A | a < B } e. S ) $.
-    salpreimagtlt.c $e |- ( ph -> C e. RR ) $.
-    $( If all the preimages of lef-open, unbounded above intervals, belong to a
-       sigma-algebra, then all the preimages of right-open, unbounded below
-       intervals, belong to the sigma-algebra.  (iii) implies (i) in
-       Proposition 121B of [Fremlin1] p. 36.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    salpreimagtlt $p |- ( ph -> { x e. A | B < C } e. S ) $=
-      ( vb cv cr wcel nfv clt wa nfan csalg adantr cxr adantlr wbr crab wi nfim
-      wceq eleq1w anbi2d breq1 rabbidv eleq1d simpr salpreimagtge salpreimagelt
-      imbi12d chvarfv ) ABCDEFGHIJKLAGPZQRZUAZBCDVBFOAVCBHVCBSUBVDOSAFUCRVCJUDA
-      BPCRDUERVCLUFAOPZQRZVEDTUGZBCUHZFRZVCVDVBDTUGZBCUHZFRZUIAVFUAZVIUIGOVMVIG
-      AVFGIVFGSUBVIGSUJVBVEUKZVDVMVLVIVNVCVFAGOQULUMVNVKVHFVNVJVGBCVBVEDTUNUOUP
-      UTMVAUFAVCUQURNUS $.
-  $}
-
-  ${
-    $d A a x $.  $d D a x $.  $d F a x $.  $d S a $.
-    smfpreimalt.s $e |- ( ph -> S e. SAlg ) $.
-    smfpreimalt.f $e |- ( ph -> F e. ( SMblFn ` S ) ) $.
-    smfpreimalt.d $e |- D = dom F $.
-    smfpreimalt.a $e |- ( ph -> A e. RR ) $.
-    $( Given a function measurable w.r.t. to a sigma-algebra, the preimage of
-       an open interval unbounded below is in the subspace sigma-algebra
-       induced by its domain.  (Contributed by Glauco Siliprandi,
-       26-Jun-2021.) $)
-    smfpreimalt $p |- ( ph -> { x e. D | ( F ` x ) < A } e. ( S |`t D ) ) $=
-      ( va cr wcel cv cfv clt wbr crab crest co wral cuni wss csmblfn w3a issmf
-      wf mpbid simp3d wceq breq2 rabbidv eleq1d rspcva syl2anc ) ACLMBNFOZKNZPQ
-      ZBDRZEDSTZMZKLUAZUPCPQZBDRZUTMZJADEUBUCZDLFUGZVBAFEUDOMVFVGVBUEHABDEFKGIU
-      FUHUIVAVEKCLUQCUJZUSVDUTVHURVCBDUQCUPPUKULUMUNUO $.
-  $}
-
-  ${
-    $d D a x $.  $d F a x $.  $d S a x $.
-    smff.s $e |- ( ph -> S e. SAlg ) $.
-    smff.f $e |- ( ph -> F e. ( SMblFn ` S ) ) $.
-    smff.d $e |- D = dom F $.
-    $( A function measurable w.r.t. to a sigma-algebra, is actually a function.
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    smff $p |- ( ph -> F : D --> RR ) $=
-      ( vx va cuni wss cr wf cv cfv clt wbr crab crest wcel co wral csmblfn w3a
-      issmf mpbid simp2d ) ABCJKZBLDMZHNDOINPQHBRCBSUATILUBZADCUCOTUHUIUJUDFAHB
-      CDIEGUEUFUG $.
-  $}
-
-  ${
-    $d D a x $.  $d F a x $.  $d S a $.
-    smfdmss.s $e |- ( ph -> S e. SAlg ) $.
-    smfdmss.f $e |- ( ph -> F e. ( SMblFn ` S ) ) $.
-    smfdmss.d $e |- D = dom F $.
-    $( The domain of a function measurable w.r.t. to a sigma-algebra, is a
-       subset of the set underlying the sigma-algebra.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
-    smfdmss $p |- ( ph -> D C_ U. S ) $=
-      ( vx va cuni wss cr wf cv cfv clt wbr crab crest wcel co wral csmblfn w3a
-      issmf mpbid simp1d ) ABCJKZBLDMZHNDOINPQHBRCBSUATILUBZADCUCOTUHUIUJUDFAHB
-      CDIEGUEUFUG $.
-  $}
 
   ${
     $d D a y $.  $d F a y $.  $d S a $.  $d a x y $.
@@ -828937,66 +829352,6 @@ $)
       BDABSNVBETADBUMQNVBHTUTAVBUQUNUOUR $.
   $}
 
-  ${
-    $d D a b x $.  $d F a b x $.  $d S a b x $.  $d b ph $.
-    issmflelem.x $e |- F/ x ph $.
-    issmflelem.a $e |- F/ a ph $.
-    issmflelem.s $e |- ( ph -> S e. SAlg ) $.
-    issmflelem.d $e |- D = dom F $.
-    issmflelem.i $e |- ( ph -> D C_ U. S ) $.
-    issmflelem.f $e |- ( ph -> F : D --> RR ) $.
-    issmflelem.l $e |- ( ( ph /\ a e. RR ) -> { x e. D | ( F ` x ) <_ a } e. (
-       S |`t D ) ) $.
-    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
-       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
-       all right-closed intervals unbounded below are in the subspace
-       sigma-algebra induced by its domain.  The domain of ` F ` is required to
-       be a subset of the underlying set of ` S ` .  Definition 121C of
-       [Fremlin1] p. 36, and Proposition 121B (ii) of [Fremlin1] p. 35 .
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    issmflelem $p |- ( ph -> F e. ( SMblFn ` S ) ) $=
-      ( vb wcel cr crab wa wceq adantr csmblfn cfv cuni wss wf cv clt wbr crest
-      co wral w3a csalg simpr restuni4 eqcomd mpdan rabeqdv nfv nfan cvv uniexd
-      ssexd subsalsal cxr eleqtrd ffvelcdmda syldan rexrd adantlr salpreimalelt
-      eqid cle eqeltrd ralrimiva 3jca issmf mpbird ) AEDUAUBOCDUCZUDZCPEUEZBUFZ
-      EUBZNUFZUGUHZBCQZDCUIUJZOZNPUKZULAVTWAWIKLAWHNPAWDPOZRZWFWEBWGUCZQZWGAWFW
-      MSWJAWEBCWLAVTCWLSKAVTRZWLCWNDCUMADUMOVTITZAVTUNZUOZUPUQURTWKBWLWCWDWGFAW
-      JBGWJBUSUTAWJFHWJFUSUTAWGUMOZWJAVTWRKWNCDWGVAWOWNCVSVAAVSVAOVTADUMIVBTWPV
-      CWGVLVDUQTWLVLAWBWLOZWCVEOWJAWSRZWCAWSWBCOWCPOWTWBWLCAWSUNAWLCSZWSAVTXAKW
-      QUQZTVFACPWBELVGVHVIVJAFUFZPOZWCXCVMUHZBWLQZWGOWJAXDRXFXEBCQZWGAXFXGSXDAX
-      EBWLCXBURTMVNVJAWJUNVKVNVOVPABCDENIJVQVR $.
-  $}
-
-  ${
-    $d D a b x y $.  $d D b c y $.  $d F a b x y $.  $d F b c y $.
-    $d S a b y $.  $d S b c y $.  $d b c ph y $.
-    issmfle.s $e |- ( ph -> S e. SAlg ) $.
-    issmfle.d $e |- D = dom F $.
-    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
-       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
-       all right-closed intervals unbounded below are in the subspace
-       sigma-algebra induced by its domain.  The domain of ` F ` is required to
-       be b subset of the underlying set of ` S ` .  Definition 121C of
-       [Fremlin1] p. 36, and Proposition 121B (ii) of [Fremlin1] p. 35 .
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    issmfle $p |- ( ph -> ( F e. ( SMblFn ` S ) <-> ( D C_ U. S /\ F : D --> RR
-       /\ A. a e. RR { x e. D | ( F ` x ) <_ a } e. ( S |`t D ) ) ) ) $=
-      ( vy vb wcel cr cv cle wbr crab wa adantr nfv nfan vc csmblfn cfv cuni wf
-      wss crest co wral w3a csalg simpr smfdmss smff cvv uniexd ssexd subsalsal
-      syldan eqid cxr frexr ffvelcdmda clt smfpreimalt adantlr salpreimaltle ex
-      ralrimi 3jca nfcv nfrab1 nfel nfralw nf3an nfra1 simpr1 3ad2antl3 adantll
-      simpr2 rspa issmflelem impbid wceq breq2 rabbidv fveq2 breq1d cbvrabv a1i
-      wb eqtrd eleq1d cbvralvw 3anbi3i bitrd ) AEDUBUCKZCDUDZUFZCLEUEZIMZEUCZJM
-      ZNOZICPZDCUGUHZKZJLUIZUJZWSWTBMZEUCZFMZNOZBCPZXFKZFLUIZUJZAWQXIAWQXIAWQQZ
-      WSWTXHXRCDEADUKKZWQGRZAWQULZHUMZXRCDEXTYAHUNZXRXGJLAWQJAJSZWQJSTXRXCLKZXG
-      XRYEQZICXBXCXFUAXRYEIAWQIAISZWQISTYEISTYFUASXRXFUKKYEXRCDXFUOXTAWQWSCUOKY
-      BAWSQCWRUOAWRUOKWSADUKGUPRAWSULUQUSXFUTURRYFCVAXAEXRCVAEUEYEXRCEYCVBRVCXR
-      UAMZLKZXBYHVDOICPXFKYEXRYIQIYHCDEXRXSYIXTRXRWQYIYARHXRYIULVEVFXRYEULVGVHV
-      IVJVHAXIWQAXIQICDEJAXIIYGWSWTXHIWSISWTISXGIJLILVKIXEXFXDICVLIXFVKVMVNVOTA
-      XIJYDWSWTXHJWSJSWTJSXGJLVPVOTAXSXIGRHAWSWTXHVQAWSWTXHVTXIYEXGAXHWSYEXGWTX
-      GJLWAVRVSWBVHWCXIXQWKAXHXPWSWTXGXOJFLXCXLWDZXEXNXFYJXEXBXLNOZICPZXNYJXDYK
-      ICXCXLXBNWEWFYLXNWDYJYKXMIBCXAXJWDXBXKXLNXAXJEWGWHWIWJWLWMWNWOWJWP $.
-  $}
 
   ${
     $d A x $.  $d R x $.
@@ -829157,70 +829512,6 @@ $)
       IUFUHUIVAVEKCLUQCUJZUSVDUTVHURVCBDUQCUPPUKULUMUNUO $.
   $}
 
-  ${
-    $d D a b x $.  $d F a b x $.  $d S a b x $.  $d b ph $.
-    issmfgtlem.x $e |- F/ x ph $.
-    issmfgtlem.a $e |- F/ a ph $.
-    issmfgtlem.s $e |- ( ph -> S e. SAlg ) $.
-    issmfgtlem.d $e |- D = dom F $.
-    issmfgtlem.i $e |- ( ph -> D C_ U. S ) $.
-    issmfgtlem.f $e |- ( ph -> F : D --> RR ) $.
-    issmfgtlem.p $e |- ( ph -> A. a e. RR { x e. D | a < ( F ` x ) } e. ( S |`t
-       D ) ) $.
-    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
-       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
-       all left-open intervals unbounded above are in the subspace
-       sigma-algebra induced by its domain.  The domain of ` F ` is required to
-       be a subset of the underlying set of ` S ` .  Definition 121C of
-       [Fremlin1] p. 36, and Proposition 121B (iii) of [Fremlin1] p. 35 .
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    issmfgtlem $p |- ( ph -> F e. ( SMblFn ` S ) ) $=
-      ( vb wcel cr crab wa adantr cvv csmblfn cfv cuni wss wf cv clt crest wral
-      wbr co w3a wceq csalg restuni4 eqcomd rabeqdv nfv nfan uniexd simpr ssexd
-      mpdan eqid subsalsal cxr eleqtrd ffvelcdmd rexrd adantlr r19.21bi eqeltrd
-      salpreimagtlt ralrimiva 3jca issmf mpbird ) AEDUAUBOCDUCZUDZCPEUEZBUFZEUB
-      ZNUFZUGUJZBCQZDCUHUKZOZNPUIZULAVSVTWHKLAWGNPAWCPOZRZWEWDBWFUCZQZWFAWEWLUM
-      WIAWDBCWKAWKCADCUNIKUOZUPUQSWJBWKWBWCWFFAWIBGWIBURUSAWIFHWIFURUSAWFUNOWIA
-      CDWFTIAVSCTOKAVSRCVRTAVRTOVSADUNIUTSAVSVAVBVCWFVDVESWKVDAWAWKOZWBVFOWIAWN
-      RZWBWOCPWAEAVTWNLSWOWAWKCAWNVAAWKCUMWNWMSVGVHVIVJAFUFZPOZWPWBUGUJZBWKQZWF
-      OWIAWQRWSWRBCQZWFAWSWTUMWQAWRBWKCWMUQSAWTWFOFPMVKVLVJAWIVAVMVLVNVOABCDENI
-      JVPVQ $.
-  $}
-
-  ${
-    $d D a b x y $.  $d D b c y $.  $d F a b x y $.  $d F b c y $.
-    $d S a b y $.  $d S b c y $.  $d b c ph y $.
-    issmfgt.s $e |- ( ph -> S e. SAlg ) $.
-    issmfgt.d $e |- D = dom F $.
-    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
-       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
-       all left-open intervals unbounded above are in the subspace
-       sigma-algebra induced by its domain.  The domain of ` F ` is required to
-       be b subset of the underlying set of ` S ` .  Definition 121C of
-       [Fremlin1] p. 36, and Proposition 121B (iii) of [Fremlin1] p. 35 .
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    issmfgt $p |- ( ph -> ( F e. ( SMblFn ` S ) <-> ( D C_ U. S /\ F : D --> RR
-       /\ A. a e. RR { x e. D | a < ( F ` x ) } e. ( S |`t D ) ) ) ) $=
-      ( vb vy vc wcel cr cv clt crab wa adantr simpr nfv csmblfn cfv wss wf wbr
-      cuni crest co wral w3a smfdmss smff nfan wceq restuni4 eqcomd rabeqdv cvv
-      csalg uniexd ssexd eqid subsalsal cxr eleqtrd ffvelcdmd rexrd adantlr cle
-      syldan issmfle simp3d eleq1d ralbidv mpbird syl2anc salpreimalegt eqeltrd
-      mpbid rspa ralrimi 3jca nfcv nfrab1 nfel nfralw nf3an nfra1 simpr1 simpr2
-      ex simpr3 issmfgtlem impbid wb breq1 rabbidv fveq2 cbvrabv eqtrd cbvralvw
-      breq2d a1i 3anbi3i bitrd ) AEDUAUBLZCDUFZUCZCMEUDZINZJNZEUBZOUEZJCPZDCUGU
-      HZLZIMUIZUJZXHXIFNZBNZEUBZOUEZBCPZXOLZFMUIZUJZAXFXRAXFXRAXFQZXHXIXQYGCDEA
-      DUSLZXFGRZAXFSZHUKZYGCDEYIYJHULZYGXPIMAXFIAITZXFITUMYGXJMLZXPYGYNQZXNXMJX
-      OUFZPZXOYGXNYQUNYNYGXMJCYPYGYPCYGDCUSYIYKUOZUPUQRYOJYPXLXJXOKYGYNJAXFJAJT
-      ZXFJTUMYNJTUMYOKTYGXOUSLYNYGCDXOURYIAXFXHCURLYKAXHQCXGURAXGURLXHADUSGUTRA
-      XHSVAVJXOVBVCRYPVBYGXKYPLZXLVDLYNYGYTQZXLUUACMXKEYGXIYTYLRUUAXKYPCYGYTSYG
-      YPCUNYTYRRVEVFVGVHYGKNZMLZXLUUBVIUEZJYPPZXOLZYNYGUUCQUUFKMUIZUUCUUFYGUUGU
-      UCYGUUGUUDJCPZXOLZKMUIZYGXHXIUUJYGXFXHXIUUJUJYJYGJCDEKYIHVKVSVLYGUUFUUIKM
-      YGUUEUUHXOYGUUDJYPCYRUQVMVNVORYGUUCSUUFKMVTVPVHYGYNSVQVRWKWAWBWKAXRXFAXRQ
-      JCDEIAXRJYSXHXIXQJXHJTXIJTXPJIMJMWCJXNXOXMJCWDJXOWCWEWFWGUMAXRIYMXHXIXQIX
-      HITXIITXPIMWHWGUMAYHXRGRHAXHXIXQWIAXHXIXQWJAXHXIXQWLWMWKWNXRYFWOAXQYEXHXI
-      XPYDIFMXJXSUNZXNYCXOUUKXNXSXLOUEZJCPZYCUUKXMUULJCXJXSXLOWPWQUUMYCUNUUKUUL
-      YBJBCXKXTUNXLYAXSOXKXTEWRXBWSXCWTVMXAXDXCXE $.
-  $}
 
   ${
     $d D x $.  $d F a x $.  $d S a $.
@@ -829317,22 +829608,6 @@ $)
       $.
   $}
 
-  ${
-    $d A a x $.  $d D a x $.  $d F a x $.  $d S a $.
-    smfpreimagt.s $e |- ( ph -> S e. SAlg ) $.
-    smfpreimagt.f $e |- ( ph -> F e. ( SMblFn ` S ) ) $.
-    smfpreimagt.d $e |- D = dom F $.
-    smfpreimagt.a $e |- ( ph -> A e. RR ) $.
-    $( Given a function measurable w.r.t. to a sigma-algebra, the preimage of
-       an open interval unbounded above is in the subspace sigma-algebra
-       induced by its domain.  (Contributed by Glauco Siliprandi,
-       26-Jun-2021.) $)
-    smfpreimagt $p |- ( ph -> { x e. D | A < ( F ` x ) } e. ( S |`t D ) ) $=
-      ( va cr wcel cv cfv clt wbr crab crest co wral wss wf csmblfn w3a issmfgt
-      cuni mpbid simp3d wceq breq1 rabbidv eleq1d rspcva syl2anc ) ACLMKNZBNFOZ
-      PQZBDRZEDSTZMZKLUAZCUQPQZBDRZUTMZJADEUGUBZDLFUCZVBAFEUDOMVFVGVBUEHABDEFKG
-      IUFUHUIVAVEKCLUPCUJZUSVDUTVHURVCBDUPCUQPUKULUMUNUO $.
-  $}
 
   ${
     $d A p q $.  $d B p q $.  $d C p q $.  $d D p q $.  $d K x $.  $d R p q $.
@@ -829531,67 +829806,6 @@ $)
       USCOUNURFUHUIUJUKALCDEFHIJKULUM $.
   $}
 
-  ${
-    $d D a b x $.  $d F a b x $.  $d S a b x $.  $d b ph $.
-    issmfgelem.x $e |- F/ x ph $.
-    issmfgelem.a $e |- F/ a ph $.
-    issmfgelem.s $e |- ( ph -> S e. SAlg ) $.
-    issmfgelem.d $e |- D = dom F $.
-    issmfgelem.i $e |- ( ph -> D C_ U. S ) $.
-    issmfgelem.f $e |- ( ph -> F : D --> RR ) $.
-    issmfgelem.p $e |- ( ph -> A. a e. RR { x e. D | a <_ ( F ` x ) } e. ( S
-       |`t D ) ) $.
-    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
-       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
-       all left-closed intervals unbounded above are in the subspace
-       sigma-algebra induced by its domain.  The domain of ` F ` is required to
-       be a subset of the underlying set of ` S ` .  Definition 121C of
-       [Fremlin1] p. 36, and Proposition 121B (iv) of [Fremlin1] p. 36 .
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    issmfgelem $p |- ( ph -> F e. ( SMblFn ` S ) ) $=
-      ( vb wcel cr crab wa adantr cvv csmblfn cfv cuni wss wf cv clt crest wral
-      wbr co w3a wceq csalg restuni4 eqcomd rabeqdv nfv nfan uniexd simpr ssexd
-      mpdan eqid subsalsal cxr eleqtrd ffvelcdmd rexrd adantlr cle eleq1d mpbid
-      ralbid rspa syl2anc salpreimagelt eqeltrd ralrimiva 3jca issmf mpbird ) A
-      EDUAUBOCDUCZUDZCPEUEZBUFZEUBZNUFZUGUJZBCQZDCUHUKZOZNPUIZULAWDWEWMKLAWLNPA
-      WHPOZRZWJWIBWKUCZQZWKAWJWQUMWNAWIBCWPAWPCADCUNIKUOZUPZUQSWOBWPWGWHWKFAWNB
-      GWNBURUSAWNFHWNFURUSAWKUNOWNACDWKTIAWDCTOKAWDRCWCTAWCTOWDADUNIUTSAWDVAVBV
-      CWKVDVESWPVDAWFWPOZWGVFOWNAWTRZWGXACPWFEAWEWTLSXAWFWPCAWTVAAWPCUMWTWRSVGV
-      HVIVJAFUFZPOZXBWGVKUJZBWPQZWKOZWNAXCRXFFPUIZXCXFAXGXCAXDBCQZWKOZFPUIXGMAX
-      IXFFPHAXHXEWKAXDBCWPWSUQVLVNVMSAXCVAXFFPVOVPVJAWNVAVQVRVSVTABCDENIJWAWB
-      $.
-  $}
-
-  ${
-    $d D a b x y $.  $d D b c y $.  $d F a b x y $.  $d F b c y $.
-    $d S a b y $.  $d S b c y $.  $d b c ph y $.
-    issmfge.s $e |- ( ph -> S e. SAlg ) $.
-    issmfge.d $e |- D = dom F $.
-    $( The predicate " ` F ` is a real-valued measurable function w.r.t. to the
-       sigma-algebra ` S ` ".  A function is measurable iff the preimages of
-       all left-closed intervals unbounded above are in the subspace
-       sigma-algebra induced by its domain.  The domain of ` F ` is required to
-       be b subset of the underlying set of ` S ` .  Definition 121C of
-       [Fremlin1] p. 36, and Proposition 121B (iv) of [Fremlin1] p. 36 .
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    issmfge $p |- ( ph -> ( F e. ( SMblFn ` S ) <-> ( D C_ U. S /\ F : D --> RR
-       /\ A. a e. RR { x e. D | a <_ ( F ` x ) } e. ( S |`t D ) ) ) ) $=
-      ( vb vy wcel cr cv cle wbr crab wa adantr simpr nfv vc csmblfn cfv wss wf
-      cuni crest co wral w3a csalg smfdmss smff nfan cvv uniexd ssexd subsalsal
-      eqid cxr ffvelcdmda rexrd adantlr clt smfpreimagt salpreimagtge ralrimiva
-      syldan 3jca nfcv nfrab1 nfel nfralw nf3an simpr1 simpr2 simpr3 issmfgelem
-      ex nfra1 impbid wb wceq breq1 rabbidv fveq2 breq2d cbvrabv eqtrd cbvralvw
-      a1i eleq1d 3anbi3i bitrd ) AEDUBUCKZCDUFZUDZCLEUEZIMZJMZEUCZNOZJCPZDCUGUH
-      ZKZILUIZUJZWQWRFMZBMZEUCZNOZBCPZXDKZFLUIZUJZAWOXGAWOXGAWOQZWQWRXFXPCDEADU
-      KKZWOGRZAWOSZHULZXPCDEXRXSHUMZXPXEILXPWSLKZQZJCXAWSXDUAXPYBJAWOJAJTZWOJTU
-      NYBJTUNYCUATXPXDUKKYBXPCDXDUOXRAWOWQCUOKXTAWQQCWPUOAWPUOKWQADUKGUPRAWQSUQ
-      VHXDUSURRXPWTCKZXAUTKYBXPYEQXAXPCLWTEYAVAVBVCXPUAMZLKZYFXAVDOJCPXDKYBXPYG
-      QJYFCDEXPXQYGXRRXPWOYGXSRHXPYGSVEVCXPYBSVFVGVIVSAXGWOAXGQJCDEIAXGJYDWQWRX
-      FJWQJTWRJTXEJILJLVJJXCXDXBJCVKJXDVJVLVMVNUNAXGIAITWQWRXFIWQITWRITXEILVTVN
-      UNAXQXGGRHAWQWRXFVOAWQWRXFVPAWQWRXFVQVRVSWAXGXOWBAXFXNWQWRXEXMIFLWSXHWCZX
-      CXLXDYHXCXHXANOZJCPZXLYHXBYIJCWSXHXANWDWEYJXLWCYHYIXKJBCWTXIWCXAXJXHNWTXI
-      EWFWGWHWKWIWLWJWMWKWN $.
-  $}
 
   ${
     $d C r $.  $d F x $.  $d P r $.  $d S k m n $.  $d S s $.  $d Z j n $.
@@ -830139,21 +830353,6 @@ $)
       URACVJEPAVJCVPUSUTVAVB $.
   $}
 
-  ${
-    $d A a x $.  $d D a x $.  $d F a x $.  $d S a $.
-    smfpreimage.s $e |- ( ph -> S e. SAlg ) $.
-    smfpreimage.f $e |- ( ph -> F e. ( SMblFn ` S ) ) $.
-    smfpreimage.d $e |- D = dom F $.
-    smfpreimage.a $e |- ( ph -> A e. RR ) $.
-    $( Given a function measurable w.r.t. to a sigma-algebra, the preimage of a
-       closed interval unbounded above is in the subspace sigma-algebra induced
-       by its domain.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    smfpreimage $p |- ( ph -> { x e. D | A <_ ( F ` x ) } e. ( S |`t D ) ) $=
-      ( va cr wcel cv cfv cle wbr crab crest co wral wss wf csmblfn w3a issmfge
-      cuni mpbid simp3d wceq breq1 rabbidv eleq1d rspcva syl2anc ) ACLMKNZBNFOZ
-      PQZBDRZEDSTZMZKLUAZCUQPQZBDRZUTMZJADEUGUBZDLFUCZVBAFEUDOMVFVGVBUEHABDEFKG
-      IUFUHUIVAVEKCLUPCUJZUSVDUTVHURVCBDUPCUQPUKULUMUNUO $.
-  $}
 
   ${
     $d S f $.
