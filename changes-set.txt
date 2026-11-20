@@ -93,6 +93,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+18-Nov-26 mptssALT    mptss       Moved from TA's mathbox to main set.mm
  8-Nov-26 rru         rur
  8-Nov-26 cardprcALT  [same]      Moved from AD's mathbox to main set.mm
  8-Nov-26 cardprcr    [same]      Moved from AD's mathbox to main set.mm
