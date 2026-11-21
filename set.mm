@@ -883132,6 +883132,143 @@ $)
   $}
 
   ${
+    $d K x y $.  $d N x y $.  $d P x y $.  $d Z x y $.  $d ph x y $.
+    fphpmodgridd.1 $e |- ( ph -> N e. NN ) $.
+    fphpmodgridd.2 $e |- ( ph -> K e. NN ) $.
+    fphpmodgridd.3 $e |- ( ph -> P e. NN ) $.
+    fphpmodgridd.4 $e |- ( ph -> Z e. ZZ ) $.
+    fphpmodgridd.5 $e |- ( ph -> P < ( N x. K ) ) $.
+    $( A rectangular grid with more points than residue classes has a collision
+       under the integer linear residue map.  Apply ~ fphpd to the displayed
+       map.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fphpmodgridd $p |- ( ph -> E. x e. ( ( 0 ..^ N ) X. ( 0 ..^ K ) )
+      E. y e. ( ( 0 ..^ N ) X. ( 0 ..^ K ) ) ( x =/= y /\
+      ( ( ( ( 1st ` x ) x. Z ) + ( 2nd ` x ) ) mod P )
+      = ( ( ( ( 1st ` y ) x. Z ) + ( 2nd ` y ) ) mod P ) ) ) $=
+      ( cc0 co cfv cmul chash wcel wceq syl cfzo cxp cv c1st c2nd caddc cmo clt
+      wbr csdm cn0 nnnn0d hashfzo0 fzofi hashxp mp2an oveq12d eqtrid 3brtr4d wb
+      xpfi hashsdom sylib wa cz cn xp1st elfzoelz adantl adantr zmulcld zaddcld
+      cfn xp2nd zmodfzo syl2anc fveq2 oveq1d fphpd ) ABCMFUANZMEUANZUBZMDUANZBU
+      CZUDOZGPNZWDUEOZUFNZDUGNZCUCZUDOZGPNZWJUEOZUFNZDUGNAWCQOZWBQOZUHUIZWCWBUJ
+      UIZADFEPNZWOWPUHLADUKRWODSADJULDUMTAWPVTQOZWAQOZPNZWSVTVMRZWAVMRZWPXBSMFU
+      NZMEUNZVTWAUOUPAWTFXAEPAFUKRWTFSAFHULFUMTAEUKRXAESAEIULEUMTUQURUSWCVMRWBV
+      MRZWQWRUTMDUNXCXDXGXEXFVTWAVAUPWCWBVBUPVCAWDWBRZVDZWHVERDVFRZWIWCRXIWFWGX
+      IWEGXHWEVERZAXHWEVTRXKWDVTWAVGWEMFVHTVIAGVERXHKVJVKXHWGVERZAXHWGWARXLWDVT
+      WAVNWGMEVHTVIVLAXJXHJVJWHDVOVPWDWJSZWHWNDUGXMWFWLWGWMUFXMWEWKGPWDWJUDVQVR
+      WDWJUEVQUQVRVS $.
+  $}
+
+  ${
+    modgridneqd.1 $e |- ( ph -> P e. NN ) $.
+    modgridneqd.2 $e |- ( ph -> A e. ( 0 ..^ P ) ) $.
+    modgridneqd.3 $e |- ( ph -> B e. ( 0 ..^ P ) ) $.
+    modgridneqd.4 $e |- ( ph -> C e. ( 0 ..^ P ) ) $.
+    modgridneqd.5 $e |- ( ph -> D e. ( 0 ..^ P ) ) $.
+    modgridneqd.6 $e |- ( ph -> Z e. ZZ ) $.
+    modgridneqd.7 $e |- ( ph -> ( Z gcd P ) = 1 ) $.
+    modgridneqd.8 $e |- ( ph -> <. A , C >. =/= <. B , D >. ) $.
+    modgridneqd.9 $e |- ( ph ->
+      ( ( ( A x. Z ) + C ) mod P ) = ( ( ( B x. Z ) + D ) mod P ) ) $.
+    $( Lemma for ~ modgridbndd .  Consider two distinct points ` <. A , C >. `
+       and ` <. B , D >. ` with coordinates in ` ( 0 ..^ P ) ` .  Suppose
+       ` ( ( A x. Z ) + C ) ` and ` ( ( B x. Z ) + D ) ` have equal residues
+       modulo ` P ` .  If ` Z ` is coprime to the positive modulus ` P ` , then
+       ` A =/= B ` and ` C =/= D ` .  Equal first coordinates would force
+       ` C = D ` by ~ addmodlteq2d .  With equal second coordinates,
+       cancellation of ` Z ` by ~ cncongrcoprm and comparison of the
+       representatives by ~ modlteq would give ` A = B ` .  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
+    modgridneqd $p |- ( ph -> ( A =/= B /\ C =/= D ) ) $=
+      ( wceq co wcel cmo wne cop wa simpr cmul cc0 cfzo adantr elfzoelz zmulcld
+      cr cz zred caddc oveq1d eqtr3d addmodlteq2d opeq12d mteqand oveq2d eqtr4d
+      syl wb cn cgcd c1 cncongrcoprm syl32anc crp nnrpd modaddb modlteq syl2anc
+      syl22anc 3bitr3d mpbid jca ) ABCUADEUAABCBDUBCEUBOABCQZUCZBCDEAVRUDZVSCGU
+      ERZDEFADUFFUGRZSZVRKUHAEWBSVRLUHAWAUKSZVRAWAACGACWBSZCULSZJCUFFUIVBZMUJUM
+      ZUHVSBGUERZDUNRZFTRZWADUNRZFTRZWAEUNRZFTRZVSWJWLFTVSWIWADUNVSBCGUEVTUOUOU
+      OAWKWOQZVRPUHUPUQURUSZADEBCWQADEQZUCZWKWMQZVRWSWKWOWMAWPWRPUHWSWLWNFTWSDE
+      WAUNAWRUDUTUOVAAWTVRVCWRAWIFTRWAFTRQZBFTRCFTRQZWTVRABULSZWFGULSFVDSGFVERV
+      FQXAXBVCABWBSZXCIBUFFUIVBZWGMHNBCGFVGVHAWIUKSWDDUKSFVISXAWTVCAWIABGXEMUJU
+      MWHADAWCDULSKDUFFUIVBUMAFHVJWIWADFVKVNAXDWEXBVRVCIJBCFVLVMVOUHVPUSVQ $.
+  $}
+
+  ${
+    modgridbndd.1 $e |- ( ph -> P e. NN ) $.
+    modgridbndd.2 $e |- ( ph -> A e. ( 0 ..^ N ) ) $.
+    modgridbndd.3 $e |- ( ph -> B e. ( 0 ..^ N ) ) $.
+    modgridbndd.4 $e |- ( ph -> C e. ( 0 ..^ K ) ) $.
+    modgridbndd.5 $e |- ( ph -> D e. ( 0 ..^ K ) ) $.
+    modgridbndd.6 $e |- ( ph -> Z e. ZZ ) $.
+    modgridbndd.7 $e |- ( ph -> ( Z gcd P ) = 1 ) $.
+    modgridbndd.8 $e |- ( ph -> <. A , C >. =/= <. B , D >. ) $.
+    modgridbndd.9 $e |- ( ph ->
+      ( ( ( A x. Z ) + C ) mod P ) = ( ( ( B x. Z ) + D ) mod P ) ) $.
+    modgridbndd.10 $e |- ( ph -> N <_ P ) $.
+    modgridbndd.11 $e |- ( ph -> K <_ P ) $.
+    $( Lemma for ~ modbndgridd .  When two distinct points on the rectangular
+       grid give the same linear residue modulo ` P ` , the coordinate
+       differences ` ( A - B ) ` and ` ( D - C ) ` have absolute values below
+       the respective grid widths ` N ` and ` K ` .  For ` Z ` coprime to the
+       positive modulus ` P ` and widths at most ` P ` , ~ modgridneqd makes
+       both differences nonzero.  By ~ modlin2subd , the product of the first
+       difference and ` Z ` is congruent to the second difference modulo
+       ` P ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    modgridbndd $p |- ( ph ->
+      ( ( ( abs ` ( A - B ) ) e. NN /\ ( abs ` ( A - B ) ) < N ) /\
+      ( ( abs ` ( D - C ) ) e. NN /\ ( abs ` ( D - C ) ) < K ) /\
+      ( ( ( A - B ) x. Z ) mod P ) = ( ( D - C ) mod P ) ) ) $=
+      ( cmin co cabs cfv cn wcel clt wbr wa cmul cmo wceq cc0 cfzo elfzoelz syl
+      cz wne fzoss2eld modgridneqd simpld nnabsclsubd fzomaxdif0d simprd necomd
+      nnzd jca zred nnrpd modlin2subd 3jca ) ABCUAUBZUCUDZUEUFZVMHUGUHZUIEDUAUB
+      ZUCUDZUEUFZVQGUGUHZUIVLIUJUBFUKUBVPFUKUBULAVNVOABCABUMHUNUBZUFBUQUFKBUMHU
+      OUPZACVTUFCUQUFLCUMHUOUPZABCURZDEURZABCDEFIJABHUMFAFJVFZSKUSACHUMFWESLUSA
+      DGUMFWETMUSAEGUMFWETNUSOPQRUTZVAVBABCHKLVCVGAVRVSAEDAEUMGUNUBZUFEUQUFNEUM
+      GUOUPZADWGUFDUQUFMDUMGUOUPZADEAWCWDWFVDVEVBAEDGNMVCVGABCDEFIABWAVHACWBVHA
+      DWIVHAEWHVHAIOVHAFJVIRVJVK $.
+  $}
+
+  ${
+    $d K d k x y $.  $d N d k x y $.  $d P d k x y $.  $d Z d k x y $.
+    $d ph x y $.
+    modbndgridd.1 $e |- ( ph -> P e. NN ) $.
+    modbndgridd.2 $e |- ( ph -> N e. NN ) $.
+    modbndgridd.3 $e |- ( ph -> K e. NN ) $.
+    modbndgridd.4 $e |- ( ph -> Z e. ZZ ) $.
+    modbndgridd.5 $e |- ( ph -> ( Z gcd P ) = 1 ) $.
+    modbndgridd.6 $e |- ( ph -> N <_ P ) $.
+    modbndgridd.7 $e |- ( ph -> K <_ P ) $.
+    modbndgridd.8 $e |- ( ph -> P < ( N x. K ) ) $.
+    $( Lemma for ~ modbndzd .  For a positive modulus ` P ` and an integer
+       ` Z ` coprime to it, there exist nonzero integers ` k ` and ` d ` with
+       absolute values below ` N ` and ` K ` , respectively, and ` ( k x. Z ) `
+       congruent to ` d ` modulo ` P ` , provided the positive grid widths
+       ` N ` and ` K ` are at most ` P ` and ` P < ( N x. K ) ` .  By
+       ~ fphpmodgridd two grid points give the same residue.  Their coordinate
+       differences supply the witnesses by ~ modgridbndd .  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
+    modbndgridd $p |- ( ph -> E. k e. ZZ E. d e. ZZ
+      ( ( ( abs ` k ) e. NN /\ ( abs ` k ) < N ) /\
+        ( ( abs ` d ) e. NN /\ ( abs ` d ) < K ) /\
+        ( ( k x. Z ) mod P ) = ( d mod P ) ) ) $=
+      ( co wceq cn wcel cz vx vy cv wne c1st cfv cmul c2nd caddc cmo wa cc0 cxp
+      cfzo wrex cabs clt wbr w3a fphpmodgridd fveq2 eleq1d breq1d anbi12d oveq1
+      cmin oveq1d eqeq1d 3anbi13d 3anbi23d xp1st ad2antlr elfzoelz syl ad2antrl
+      eqeq2d zsubcld xp2nd ad2antrr cgcd c1 cop simprrl 1st2nd2 3netr3d simprrr
+      cle modgridbndd 2rspcedvdw rexlimdvaa rexlimdva mpd ) AUAUCZUBUCZUDZWMUEU
+      FZFUGPWMUHUFZUIPBUJPWNUEUFZFUGPWNUHUFZUIPBUJPQZUKZUBULEUNPZULDUNPZUMZUOZU
+      AXDUOCUCZUPUFZRSXGEUQURZUKZGUCZUPUFZRSXKDUQURZUKZXFFUGPZBUJPZXJBUJPZQZUSZ
+      GTUOCTUOZAUAUBBDEFIJHKOUTAXEXSUAXDAWMXDSZUKZXAXSUBXDYAWNXDSZXAUKZUKZXRWPW
+      RVFPZUPUFZRSYFEUQURZUKZXMYEFUGPZBUJPZXPQZUSYHWSWQVFPZUPUFZRSYMDUQURZUKZYJ
+      YLBUJPZQZUSCGYEYLTTXFYEQZXIYHXQYKXMYRXGRSYFRSXHYGYRXGYFRXFYEUPVAZVBYRXGYF
+      EUQYSVCVDYRXOYJXPYRXNYIBUJXFYEFUGVEVGVHVIXJYLQZXMYOYKYQYHYTXKRSYMRSXLYNYT
+      XKYMRXJYLUPVAZVBYTXKYMDUQUUAVCVDYTXPYPYJXJYLBUJVEVPVJYDWPWRYDWPXBSZWPTSXT
+      UUBAYCWMXBXCVKVLZWPULEVMVNYDWRXBSZWRTSYBUUDYAXAWNXBXCVKVOZWRULEVMVNVQYDWS
+      WQYDWSXCSZWSTSYBUUFYAXAWNXBXCVRVOZWSULDVMVNYDWQXCSZWQTSXTUUHAYCWMXBXCVRVL
+      ZWQULDVMVNVQYDWPWRWQWSBDEFABRSXTYCHVSUUCUUEUUIUUGAFTSXTYCKVSAFBVTPWAQXTYC
+      LVSYDWMWNWPWQWBZWRWSWBZYAYBWOWTWCXTWMUUJQAYCWMXBXCWDVLYBWNUUKQYAXAWNXBXCW
+      DVOWEYAYBWOWTWFAEBWGURXTYCMVSADBWGURXTYCNVSWHWIWJWKWL $.
+  $}
+
+  ${
     ndvdsmul2d.1 $e |- ( ph -> Q e. ZZ ) $.
     ndvdsmul2d.2 $e |- ( ph -> -. P || ( Q x. D ) ) $.
     $( If ` Q ` is an integer and ` P ` does not divide ` ( Q x. D ) ` , then
@@ -883175,6 +883312,18 @@ $)
       syl2anc nnred nnrpd ltdivmuld nnne0d divcan2d 3jca ) ABCJKZLMZUKDNOZCUKPK
       BQACBROZULHABLMCLMUNULSEFBCUAUDUBAUMBCDPKNOIABDCABEUEGACFUFUGUCABCABETACF
       TACFUHUIUJ $.
+  $}
+
+  ${
+    gt3ndvds23d.1 $e |- ( ph -> 3 < A ) $.
+    $( If ` 3 < A ` , then ` A ` divides neither two nor three.  (Contributed
+       by Zhi Wang, 20-Oct-2026.) $)
+    gt3ndvds23d $p |- ( ph -> ( -. A || 2 /\ -. A || 3 ) ) $=
+      ( c2 cdvds wbr wn c3 cz wcel dvdszrcl simpld zred cr 3re a1i cn wi dvdsle
+      cle clt 2re 2nn mpan2 mpcom 2le3 letrd lensymd nsyl3 3nn jca ) ABDEFZGBHE
+      FZGULHBUAFZAULBHULBULBIJZDIJBDKLZMZHNJZULOPZULBDHUQDNJULUBPUSUOULBDTFZUPU
+      ODQJULUTRUCBDSUDUEDHTFULUFPUGUHCUIUMUNAUMBHUMBUMUOHIJBHKLZMURUMOPUOUMBHTF
+      ZVAUOHQJUMVBRUJBHSUDUEUHCUIUK $.
   $}
 
   ${
@@ -883316,6 +883465,34 @@ $)
   $}
 
   ${
+    $d N d $.  $d N j $.  $d N k $.  $d N y $.  $d D d $.  $d D j $.  $d D k $.
+    $d D y $.  $d d j $.  $d d k $.  $d d y $.  $d j k $.  $d j y $.  $d k y $.
+    $( Multiplication by a positive divisor ` D ` of a positive integer ` N `
+       is a bijection from the positive divisors of ` ( N / D ) ` onto the
+       positive divisors of ` N ` divisible by ` D ` .  (Contributed by Zhi
+       Wang, 5-Nov-2026.) $)
+    dvdsquotf1o $p |- ( ( N e. NN /\ D e. NN /\ D || N ) ->
+      ( d e. { k e. NN | k || ( N / D ) } |-> ( D x. d ) ) :
+        { k e. NN | k || ( N / D ) } -1-1-onto->
+          { j e. { k e. NN | k || N } | D || j } ) $=
+      ( cn wcel cdvds wbr cv co crab cmul wa breq1 adantr cz nnzd wceq nncnd vy
+      cdiv cmpt eqid breq2 simp2 elrabi adantl nnmulcld simpr elrabrd nndivdvds
+      w3a wi biimp3a dvdscmul syl3anc mpd simp1 nnne0d divcan2d elrabd dvdsmul1
+      breqtrd syl2anc wb syl mpbid 3brtr4d cc0 wne dvdscmulr syl112anc divmul2d
+      eqcom adantrl bitrid f1o2d ) DFGZAFGZADHIZUMZEUACJDAUBKZHIZCFLZABJHIZBCJD
+      HIZCFLZLZAEJMKZUAJZAUBKZEWEWJUCZWMUDWBEJWEGZNZWFAWJHIZBWJWHBJWJAHUEWOWGWJ
+      DHICWJFCJWJDHOWOAEJWBVTWNVSVTWAUFZPZWNEJFGZWBWDCEJFUGZUHZUIWOWJAWCMKZDHWO
+      EJWCHIZWJXBHIZWOWDXCCEJFCJEJWCHOWBWNUJUKWOEJQGZWCQGZAQGZXCXDUNWOEJXARZWBX
+      FWNWBWCVSVTWAWCFGDAULUORZPWOAWRRZAEJWCUPUQURWBXBDSZWNWBDAWBDVSVTWAUSTWBAW
+      QTWBAWQUTVAZPVDVBWOXGXEWPXJXHAEJVCVEVBWBWKWIGZNZWDWLWCHIZCWLFCJWLWCHOXNAW
+      KHIZWLFGZXNWFXPBWKWHBJWKAHUEWBXMUJUKXNWKFGZVTXPXQVFXNWKWHGZXRXMXSWBWFBWKW
+      HUGUHZWGCWKFUGVGZWBVTXMWQPZWKAULVEVHZXNAWLMKZXBHIZXOXNWKDYDXBHXNWGWKDHICW
+      KFCJWKDHOXTUKXNWKAXNWKYATXNAYBTXNAYBUTZVAWBXKXMXLPVIXNWLQGXFXGAVJVKYEXOVF
+      XNWLYCRWBXFXMXIPXNAYBRYFAWLWCVLVMVHVBEJWLSWLEJSWBWNXMNZNZWKWJSEJWLVOYHWKE
+      JAYHWKWBXMXRWNYAVPTYHEJYGWSWBWNWSXMWTPUHTYHAWBVTYGWQPZTYHAYIUTVNVQVR $.
+  $}
+
+  ${
     odd2p1m1d.1 $e |- ( ph -> Q e. ZZ ) $.
     $( The integers adjacent to an even integer are odd.  (Contributed by Zhi
        Wang, 20-Oct-2026.) $)
@@ -883450,18 +883627,6 @@ $)
       ( cprime c2 csn cdif wcel c3 cdvds wbr wn cr 2re a1i 3re prmz zred clt c1
       syl 2lt3 lttrd gtned eldifsnd 1lt3 prmintndvdsd jca ) ABEFGHIJBKLMABEFCAF
       BFNIAOPZAFJBUJJNIAQPABEIZBNICUKBBRSUBFJTLAUCPDUDUEUFABJCUAJTLAUGPDUHUI $.
-  $}
-
-  ${
-    prmgt3ndvds23d.1 $e |- ( ph -> 3 < P ) $.
-    $( If ` 3 < P ` , then ` P ` divides neither two nor three.  (Contributed
-       by Zhi Wang, 20-Oct-2026.) $)
-    prmgt3ndvds23d $p |- ( ph -> ( -. P || 2 /\ -. P || 3 ) ) $=
-      ( c2 cdvds wbr wn c3 cz wcel dvdszrcl simpld zred cr 3re a1i cn wi dvdsle
-      cle clt 2re 2nn mpan2 mpcom 2le3 letrd lensymd nsyl3 3nn jca ) ABDEFZGBHE
-      FZGULHBUAFZAULBHULBULBIJZDIJBDKLZMZHNJZULOPZULBDHUQDNJULUBPUSUOULBDTFZUPU
-      ODQJULUTRUCBDSUDUEDHTFULUFPUGUHCUIUMUNAUMBHUMBUMUOHIJBHKLZMURUMOPUOUMBHTF
-      ZVAUOHQJUMVBRUJBHSUDUEUHCUIUK $.
   $}
 
   ${
@@ -883678,34 +883843,6 @@ $)
   $}
 
   ${
-    $d N d $.  $d N j $.  $d N k $.  $d N y $.  $d P d $.  $d P j $.  $d P k $.
-    $d P y $.  $d d j $.  $d d k $.  $d d y $.  $d j k $.  $d j y $.  $d k y $.
-    $( Multiplication by a positive divisor ` P ` of a positive integer ` N `
-       is a bijection from the positive divisors of ` ( N / P ) ` onto the
-       positive divisors of ` N ` divisible by ` P ` .  (Contributed by Zhi
-       Wang, 5-Nov-2026.) $)
-    dvdsquotf1o $p |- ( ( N e. NN /\ P e. NN /\ P || N ) ->
-      ( d e. { k e. NN | k || ( N / P ) } |-> ( P x. d ) ) :
-        { k e. NN | k || ( N / P ) } -1-1-onto->
-          { j e. { k e. NN | k || N } | P || j } ) $=
-      ( cn wcel cdvds wbr cv co crab cmul wa breq1 adantr cz nnzd wceq nncnd vy
-      cdiv cmpt eqid breq2 simp2 elrabi adantl nnmulcld simpr elrabrd nndivdvds
-      w3a wi biimp3a dvdscmul syl3anc mpd simp1 nnne0d divcan2d elrabd dvdsmul1
-      breqtrd syl2anc wb syl mpbid 3brtr4d cc0 wne dvdscmulr syl112anc divmul2d
-      eqcom adantrl bitrid f1o2d ) DFGZAFGZADHIZUMZEUACJDAUBKZHIZCFLZABJHIZBCJD
-      HIZCFLZLZAEJMKZUAJZAUBKZEWEWJUCZWMUDWBEJWEGZNZWFAWJHIZBWJWHBJWJAHUEWOWGWJ
-      DHICWJFCJWJDHOWOAEJWBVTWNVSVTWAUFZPZWNEJFGZWBWDCEJFUGZUHZUIWOWJAWCMKZDHWO
-      EJWCHIZWJXBHIZWOWDXCCEJFCJEJWCHOWBWNUJUKWOEJQGZWCQGZAQGZXCXDUNWOEJXARZWBX
-      FWNWBWCVSVTWAWCFGDAULUORZPWOAWRRZAEJWCUPUQURWBXBDSZWNWBDAWBDVSVTWAUSTWBAW
-      QTWBAWQUTVAZPVDVBWOXGXEWPXJXHAEJVCVEVBWBWKWIGZNZWDWLWCHIZCWLFCJWLWCHOXNAW
-      KHIZWLFGZXNWFXPBWKWHBJWKAHUEWBXMUJUKXNWKFGZVTXPXQVFXNWKWHGZXRXMXSWBWFBWKW
-      HUGUHZWGCWKFUGVGZWBVTXMWQPZWKAULVEVHZXNAWLMKZXBHIZXOXNWKDYDXBHXNWGWKDHICW
-      KFCJWKDHOXTUKXNWKAXNWKYATXNAYBTXNAYBUTZVAWBXKXMXLPVIXNWLQGXFXGAVJVKYEXOVF
-      XNWLYCRWBXFXMXIPXNAYBRYFAWLWCVLVMVHVBEJWLSWLEJSWBWNXMNZNZWKWJSEJWLVOYHWKE
-      JAYHWKWBXMXRWNYAVPTYHEJYGWSWBWNWSXMWTPUHTYHAWBVTYGWQPZTYHAYIUTVNVQVR $.
-  $}
-
-  ${
     $d N j $.  $d N k $.  $d N t $.  $d P j $.  $d P k $.  $d P t $.  $d j k $.
     $d j t $.  $d k t $.
     $( The positive divisors of ` N ` not divisible by a prime divisor ` P `
@@ -883806,143 +883943,6 @@ $)
       ZIUKAVKEKLZCOLZQEKLZCOLZVGVHAVLEKLZCOLZVRVTAVKULNEMNCUMNZWBVRPAVKABDHVPUK
       UNIAVNWCGVNCCUOURUPVKECUQRAWAVSCOAVLQEKAVJVMVOUSSSUTAVQVFCOABDEABHTADVPTA
       EITZVASAVSECOAEWDVBSVCVD $.
-  $}
-
-  ${
-    $d K x y $.  $d N x y $.  $d P x y $.  $d Z x y $.  $d ph x y $.
-    fphpmodgridd.1 $e |- ( ph -> N e. NN ) $.
-    fphpmodgridd.2 $e |- ( ph -> K e. NN ) $.
-    fphpmodgridd.3 $e |- ( ph -> P e. NN ) $.
-    fphpmodgridd.4 $e |- ( ph -> Z e. ZZ ) $.
-    fphpmodgridd.5 $e |- ( ph -> P < ( N x. K ) ) $.
-    $( A rectangular grid with more points than residue classes has a collision
-       under the integer linear residue map.  Apply ~ fphpd to the displayed
-       map.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fphpmodgridd $p |- ( ph -> E. x e. ( ( 0 ..^ N ) X. ( 0 ..^ K ) )
-      E. y e. ( ( 0 ..^ N ) X. ( 0 ..^ K ) ) ( x =/= y /\
-      ( ( ( ( 1st ` x ) x. Z ) + ( 2nd ` x ) ) mod P )
-      = ( ( ( ( 1st ` y ) x. Z ) + ( 2nd ` y ) ) mod P ) ) ) $=
-      ( cc0 co cfv cmul chash wcel wceq syl cfzo cxp cv c1st c2nd caddc cmo clt
-      wbr csdm cn0 nnnn0d hashfzo0 fzofi hashxp mp2an oveq12d eqtrid 3brtr4d wb
-      xpfi hashsdom sylib wa cz cn xp1st elfzoelz adantl adantr zmulcld zaddcld
-      cfn xp2nd zmodfzo syl2anc fveq2 oveq1d fphpd ) ABCMFUANZMEUANZUBZMDUANZBU
-      CZUDOZGPNZWDUEOZUFNZDUGNZCUCZUDOZGPNZWJUEOZUFNZDUGNAWCQOZWBQOZUHUIZWCWBUJ
-      UIZADFEPNZWOWPUHLADUKRWODSADJULDUMTAWPVTQOZWAQOZPNZWSVTVMRZWAVMRZWPXBSMFU
-      NZMEUNZVTWAUOUPAWTFXAEPAFUKRWTFSAFHULFUMTAEUKRXAESAEIULEUMTUQURUSWCVMRWBV
-      MRZWQWRUTMDUNXCXDXGXEXFVTWAVAUPWCWBVBUPVCAWDWBRZVDZWHVERDVFRZWIWCRXIWFWGX
-      IWEGXHWEVERZAXHWEVTRXKWDVTWAVGWEMFVHTVIAGVERXHKVJVKXHWGVERZAXHWGWARXLWDVT
-      WAVNWGMEVHTVIVLAXJXHJVJWHDVOVPWDWJSZWHWNDUGXMWFWLWGWMUFXMWEWKGPWDWJUDVQVR
-      WDWJUEVQUQVRVS $.
-  $}
-
-  ${
-    modgridneqd.1 $e |- ( ph -> P e. NN ) $.
-    modgridneqd.2 $e |- ( ph -> A e. ( 0 ..^ P ) ) $.
-    modgridneqd.3 $e |- ( ph -> B e. ( 0 ..^ P ) ) $.
-    modgridneqd.4 $e |- ( ph -> C e. ( 0 ..^ P ) ) $.
-    modgridneqd.5 $e |- ( ph -> D e. ( 0 ..^ P ) ) $.
-    modgridneqd.6 $e |- ( ph -> Z e. ZZ ) $.
-    modgridneqd.7 $e |- ( ph -> ( Z gcd P ) = 1 ) $.
-    modgridneqd.8 $e |- ( ph -> <. A , C >. =/= <. B , D >. ) $.
-    modgridneqd.9 $e |- ( ph ->
-      ( ( ( A x. Z ) + C ) mod P ) = ( ( ( B x. Z ) + D ) mod P ) ) $.
-    $( Lemma for ~ modgridbndd .  Consider two distinct points ` <. A , C >. `
-       and ` <. B , D >. ` with coordinates in ` ( 0 ..^ P ) ` .  Suppose
-       ` ( ( A x. Z ) + C ) ` and ` ( ( B x. Z ) + D ) ` have equal residues
-       modulo ` P ` .  If ` Z ` is coprime to the positive modulus ` P ` , then
-       ` A =/= B ` and ` C =/= D ` .  Equal first coordinates would force
-       ` C = D ` by ~ addmodlteq2d .  With equal second coordinates,
-       cancellation of ` Z ` by ~ cncongrcoprm and comparison of the
-       representatives by ~ modlteq would give ` A = B ` .  (Contributed by Zhi
-       Wang, 17-Oct-2026.) $)
-    modgridneqd $p |- ( ph -> ( A =/= B /\ C =/= D ) ) $=
-      ( wceq co wcel cmo wne cop wa simpr cmul cc0 cfzo adantr elfzoelz zmulcld
-      cr cz zred caddc oveq1d eqtr3d addmodlteq2d opeq12d mteqand oveq2d eqtr4d
-      syl wb cn cgcd c1 cncongrcoprm syl32anc crp nnrpd modaddb modlteq syl2anc
-      syl22anc 3bitr3d mpbid jca ) ABCUADEUAABCBDUBCEUBOABCQZUCZBCDEAVRUDZVSCGU
-      ERZDEFADUFFUGRZSZVRKUHAEWBSVRLUHAWAUKSZVRAWAACGACWBSZCULSZJCUFFUIVBZMUJUM
-      ZUHVSBGUERZDUNRZFTRZWADUNRZFTRZWAEUNRZFTRZVSWJWLFTVSWIWADUNVSBCGUEVTUOUOU
-      OAWKWOQZVRPUHUPUQURUSZADEBCWQADEQZUCZWKWMQZVRWSWKWOWMAWPWRPUHWSWLWNFTWSDE
-      WAUNAWRUDUTUOVAAWTVRVCWRAWIFTRWAFTRQZBFTRCFTRQZWTVRABULSZWFGULSFVDSGFVERV
-      FQXAXBVCABWBSZXCIBUFFUIVBZWGMHNBCGFVGVHAWIUKSWDDUKSFVISXAWTVCAWIABGXEMUJU
-      MWHADAWCDULSKDUFFUIVBUMAFHVJWIWADFVKVNAXDWEXBVRVCIJBCFVLVMVOUHVPUSVQ $.
-  $}
-
-  ${
-    modgridbndd.1 $e |- ( ph -> P e. NN ) $.
-    modgridbndd.2 $e |- ( ph -> A e. ( 0 ..^ N ) ) $.
-    modgridbndd.3 $e |- ( ph -> B e. ( 0 ..^ N ) ) $.
-    modgridbndd.4 $e |- ( ph -> C e. ( 0 ..^ K ) ) $.
-    modgridbndd.5 $e |- ( ph -> D e. ( 0 ..^ K ) ) $.
-    modgridbndd.6 $e |- ( ph -> Z e. ZZ ) $.
-    modgridbndd.7 $e |- ( ph -> ( Z gcd P ) = 1 ) $.
-    modgridbndd.8 $e |- ( ph -> <. A , C >. =/= <. B , D >. ) $.
-    modgridbndd.9 $e |- ( ph ->
-      ( ( ( A x. Z ) + C ) mod P ) = ( ( ( B x. Z ) + D ) mod P ) ) $.
-    modgridbndd.10 $e |- ( ph -> N <_ P ) $.
-    modgridbndd.11 $e |- ( ph -> K <_ P ) $.
-    $( Lemma for ~ modbndgridd .  When two distinct points on the rectangular
-       grid give the same linear residue modulo ` P ` , the coordinate
-       differences ` ( A - B ) ` and ` ( D - C ) ` have absolute values below
-       the respective grid widths ` N ` and ` K ` .  For ` Z ` coprime to the
-       positive modulus ` P ` and widths at most ` P ` , ~ modgridneqd makes
-       both differences nonzero.  By ~ modlin2subd , the product of the first
-       difference and ` Z ` is congruent to the second difference modulo
-       ` P ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    modgridbndd $p |- ( ph ->
-      ( ( ( abs ` ( A - B ) ) e. NN /\ ( abs ` ( A - B ) ) < N ) /\
-      ( ( abs ` ( D - C ) ) e. NN /\ ( abs ` ( D - C ) ) < K ) /\
-      ( ( ( A - B ) x. Z ) mod P ) = ( ( D - C ) mod P ) ) ) $=
-      ( cmin co cabs cfv cn wcel clt wbr wa cmul cmo wceq cc0 cfzo elfzoelz syl
-      cz wne fzoss2eld modgridneqd simpld nnabsclsubd fzomaxdif0d simprd necomd
-      nnzd jca zred nnrpd modlin2subd 3jca ) ABCUAUBZUCUDZUEUFZVMHUGUHZUIEDUAUB
-      ZUCUDZUEUFZVQGUGUHZUIVLIUJUBFUKUBVPFUKUBULAVNVOABCABUMHUNUBZUFBUQUFKBUMHU
-      OUPZACVTUFCUQUFLCUMHUOUPZABCURZDEURZABCDEFIJABHUMFAFJVFZSKUSACHUMFWESLUSA
-      DGUMFWETMUSAEGUMFWETNUSOPQRUTZVAVBABCHKLVCVGAVRVSAEDAEUMGUNUBZUFEUQUFNEUM
-      GUOUPZADWGUFDUQUFMDUMGUOUPZADEAWCWDWFVDVEVBAEDGNMVCVGABCDEFIABWAVHACWBVHA
-      DWIVHAEWHVHAIOVHAFJVIRVJVK $.
-  $}
-
-  ${
-    $d K d k x y $.  $d N d k x y $.  $d P d k x y $.  $d Z d k x y $.
-    $d ph x y $.
-    modbndgridd.1 $e |- ( ph -> P e. NN ) $.
-    modbndgridd.2 $e |- ( ph -> N e. NN ) $.
-    modbndgridd.3 $e |- ( ph -> K e. NN ) $.
-    modbndgridd.4 $e |- ( ph -> Z e. ZZ ) $.
-    modbndgridd.5 $e |- ( ph -> ( Z gcd P ) = 1 ) $.
-    modbndgridd.6 $e |- ( ph -> N <_ P ) $.
-    modbndgridd.7 $e |- ( ph -> K <_ P ) $.
-    modbndgridd.8 $e |- ( ph -> P < ( N x. K ) ) $.
-    $( Lemma for ~ modbndzd .  For a positive modulus ` P ` and an integer
-       ` Z ` coprime to it, there exist nonzero integers ` k ` and ` d ` with
-       absolute values below ` N ` and ` K ` , respectively, and ` ( k x. Z ) `
-       congruent to ` d ` modulo ` P ` , provided the positive grid widths
-       ` N ` and ` K ` are at most ` P ` and ` P < ( N x. K ) ` .  By
-       ~ fphpmodgridd two grid points give the same residue.  Their coordinate
-       differences supply the witnesses by ~ modgridbndd .  (Contributed by Zhi
-       Wang, 17-Oct-2026.) $)
-    modbndgridd $p |- ( ph -> E. k e. ZZ E. d e. ZZ
-      ( ( ( abs ` k ) e. NN /\ ( abs ` k ) < N ) /\
-        ( ( abs ` d ) e. NN /\ ( abs ` d ) < K ) /\
-        ( ( k x. Z ) mod P ) = ( d mod P ) ) ) $=
-      ( co wceq cn wcel cz vx vy cv wne c1st cfv cmul c2nd caddc cmo wa cc0 cxp
-      cfzo wrex cabs clt wbr w3a fphpmodgridd fveq2 eleq1d breq1d anbi12d oveq1
-      cmin oveq1d eqeq1d 3anbi13d 3anbi23d xp1st ad2antlr elfzoelz syl ad2antrl
-      eqeq2d zsubcld xp2nd ad2antrr cgcd c1 cop simprrl 1st2nd2 3netr3d simprrr
-      cle modgridbndd 2rspcedvdw rexlimdvaa rexlimdva mpd ) AUAUCZUBUCZUDZWMUEU
-      FZFUGPWMUHUFZUIPBUJPWNUEUFZFUGPWNUHUFZUIPBUJPQZUKZUBULEUNPZULDUNPZUMZUOZU
-      AXDUOCUCZUPUFZRSXGEUQURZUKZGUCZUPUFZRSXKDUQURZUKZXFFUGPZBUJPZXJBUJPZQZUSZ
-      GTUOCTUOZAUAUBBDEFIJHKOUTAXEXSUAXDAWMXDSZUKZXAXSUBXDYAWNXDSZXAUKZUKZXRWPW
-      RVFPZUPUFZRSYFEUQURZUKZXMYEFUGPZBUJPZXPQZUSYHWSWQVFPZUPUFZRSYMDUQURZUKZYJ
-      YLBUJPZQZUSCGYEYLTTXFYEQZXIYHXQYKXMYRXGRSYFRSXHYGYRXGYFRXFYEUPVAZVBYRXGYF
-      EUQYSVCVDYRXOYJXPYRXNYIBUJXFYEFUGVEVGVHVIXJYLQZXMYOYKYQYHYTXKRSYMRSXLYNYT
-      XKYMRXJYLUPVAZVBYTXKYMDUQUUAVCVDYTXPYPYJXJYLBUJVEVPVJYDWPWRYDWPXBSZWPTSXT
-      UUBAYCWMXBXCVKVLZWPULEVMVNYDWRXBSZWRTSYBUUDYAXAWNXBXCVKVOZWRULEVMVNVQYDWS
-      WQYDWSXCSZWSTSYBUUFYAXAWNXBXCVRVOZWSULDVMVNYDWQXCSZWQTSXTUUHAYCWMXBXCVRVL
-      ZWQULDVMVNVQYDWPWRWQWSBDEFABRSXTYCHVSUUCUUEUUIUUGAFTSXTYCKVSAFBVTPWAQXTYC
-      LVSYDWMWNWPWQWBZWRWSWBZYAYBWOWTWCXTWMUUJQAYCWMXBXCWDVLYBWNUUKQYAXAWNXBXCW
-      DVOWEYAYBWOWTWFAEBWGURXTYCMVSADBWGURXTYCNVSWHWIWJWKWL $.
   $}
 
   ${
@@ -887781,15 +887781,15 @@ $)
     liouodd2congd $p |- ( ph -> ( ( F ` ( 2 x. Z ) ) = ( F ` N ) /\
       ( F ` -u ( 2 x. ( 2 x. Z ) ) ) = ( F ` -u ( 2 x. N ) ) ) ) $=
       ( c2 cmul co c3 cfv wceq cneg liouodd23eqd cz 3z a1i zmulcld liouoddcongd
-      wcel eqtrd 2z znegcld cdvds wbr prmgt3ndvds23d simpld prmndvdsmuld cprime
-      wn wb prmnn syl nnzd dvdsnegb syl2anc mtbid mulneg2d fveq2d mul12d negeqd
-      cn zcnd 3eqtr3d liouoddmulnegcongd jca ) AQFRSZDUAZEDUAZUBQVQRSUCZDUAZQER
-      SUCDUAZUBAVRTFRSZDUAVSABFCDGHIJKMNPUDABWCECDIATFTUEUJAUFUGZMUHZLOUIUKAWAQ
-      WCRSZUCZDUAZWBAQVQUCZRSZDUATWIRSZDUAWAWHABWICDGHIJKAVQAQFQUEUJAULUGZMUHZU
-      MACVQUNUOZCWIUNUOZAQFCJWLMACQUNUOUTCTUNUOUTACKUPUQNURACUEUJVQUEUJWNWOVAAC
-      ACUSUJCVLUJJCVBVCZVDWMCVQVEVFVGPUDAWJVTDAQVQAQWLVMZAVQWMVMZVHVIAWKWGDAWKT
-      VQRSZUCWGATVQATWDVMZWRVHAWSWFATQFWTWQAFMVMVJVKUKVIVNABWCECDQIWPWLWELOVOUK
-      VP $.
+      wcel eqtrd 2z znegcld cdvds wbr wn gt3ndvds23d simpld prmndvdsmuld cprime
+      wb cn prmnn syl nnzd dvdsnegb syl2anc mtbid mulneg2d fveq2d mul12d negeqd
+      zcnd 3eqtr3d liouoddmulnegcongd jca ) AQFRSZDUAZEDUAZUBQVQRSUCZDUAZQERSUC
+      DUAZUBAVRTFRSZDUAVSABFCDGHIJKMNPUDABWCECDIATFTUEUJAUFUGZMUHZLOUIUKAWAQWCR
+      SZUCZDUAZWBAQVQUCZRSZDUATWIRSZDUAWAWHABWICDGHIJKAVQAQFQUEUJAULUGZMUHZUMAC
+      VQUNUOZCWIUNUOZAQFCJWLMACQUNUOUPCTUNUOUPACKUQURNUSACUEUJVQUEUJWNWOVAACACU
+      TUJCVBUJJCVCVDZVEWMCVQVFVGVHPUDAWJVTDAQVQAQWLVMZAVQWMVMZVIVJAWKWGDAWKTVQR
+      SZUCWGATVQATWDVMZWRVIAWSWFATQFWTWQAFMVMVKVLUKVJVNABWCECDQIWPWLWELOVOUKVP
+      $.
   $}
 
   ${
@@ -887848,28 +887848,28 @@ $)
        contradiction.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd2eqd $p |- ( ph -> ( F ` -u ( 2 x. N ) ) = ( F ` N ) ) $=
       ( c2 cmul co wceq c3 wcel wbr cneg cfv cmin cexp cmo wn clt cprime adantr
-      wa cn c4 2nn a1i nnzd eqid 3nn prmgt3ndvds23d simprd modprminvmuld simpld
-      cz cdvds zmulcld syl eqcomd nn2ltfzod fzo1ndvdsd ndvdsmodcongd ndvdsmul2d
-      prmnn prmndvdsmuld liouoddred nnmulcld znegcld cdif prmgt3factsd oddn2prm
-      csn cv caddc cliou c1 wrex liouodd2led simpr neqned leneltd liouodd2congd
-      w3a 3brtr4d liouodd2posrepd simp1d nnred zred nnrpd crp modabs2 modratiod
-      cr syl2anc cc0 wb fzo0ss1 simp3d elfzo1 syl3anbrc sselid modlteq rprege0d
-      cfzo mpbid liouodd2nebndd ltmul23d gtned neneqd condan ) ANEOPZUADUBZEDUB
-      ZQZRNRCNUCPUDPCUEPZEOPZOPZCUEPZOPZXRQZAYAUFZUJZYFCUEPXRCUEPQZYGYIYEEYCCNR
-      YIYEYIYEUKSZNYEOPCUGTZCULYEOPUGTZYFCUGTZUJZYIBYDCDFGHACUHSZYHIUIZARCUGTYH
-      JUIZYINYCYINNUKSYIUMUNZUOZYIYCVBSZRYCOPZCUEPZECUEPZQZYIRCYBEYBUPYQYIRRUKS
-      YIUQUNZUOZYIEAEUKSYHKUIZUOZYICNVCTUFZCRVCTUFZYICYRURZUSUTZVAZVDZYINYCCYQY
-      TUUNYIUUJUUKUULVAYIYCCRUUGYIEUUBCYIYPCUKSZYQCVKVEZUUIYIRYCUUGUUNVDYIUUCUU
-      DYIUUAUUEUUMUSZVFYIECYICEUUQUUHAXRCUGTZYHLUIZVGVHVIVJZVLYIXTXSYDDUBZNYDOP
-      UADUBZUGYIXTXSYIBECDHUUQUUIVMYIBXRUACDHUUQYIXRYIXRYINEYSUUHVNZUOVOVMYIBCD
-      EFGHUUQYICUHNVSVPSZNCVCTUFYIUVERCVCTUFYICYQYRVQVACVRVEUUHUUTANCOPFVTGVTWA
-      PQFVTWBUBWCQGVTWBUBWCQWJGUKWDFUKWDUFYHMUIZWEYIXSXTAYHWFWGZWHYIUVBXTQZUVCX
-      SQZYIBCDEYCFGHYQYRUUIUUNUVAUURUVFWIZVAYIUVHUVIUVJUSWKUVFWLZWMZWNYIEUUHWNZ
-      YIYCUUNWOYTUUGYICUUQWPZYIYDWTSCWQSYECUEPYEQYIYDUUOWOUVNYDCWRXAUURWSYIYFXB
-      CXKPZSXRUVOSYJYGXCYIWCCXKPZUVOYFCXDYIYFUKSUUPYNYFUVPSYIRYEUUFUVLVNUUQYIYM
-      YNYIYKYLYOUVKXEZUSCYFXFXGXHYIUVPUVOXRCXDYIXRUKSUUPUUSXRUVPSUVDUUQUUTCXRXF
-      XGXHYFXRCXIXAXLYIYFXRYIXRYFYIXRUVDWNYIYEECYIYEYIYEUVLWPXJUVMYICUUQWNYIYMY
-      NUVQVAYICULEOPUGTREOPCUGTYIBCDEFGHYQYRUUHUUTUVFUVGXMUSXNXOXPXQ $.
+      wa cn c4 2nn a1i nnzd cz eqid 3nn gt3ndvds23d simprd modprminvmuld simpld
+      cdvds zmulcld syl eqcomd fzo1ndvdsd ndvdsmodcongd ndvdsmul2d prmndvdsmuld
+      prmnn nn2ltfzod liouoddred nnmulcld znegcld cdif prmgt3factsd oddn2prm cv
+      csn caddc cliou w3a wrex liouodd2led neqned leneltd liouodd2congd 3brtr4d
+      c1 simpr liouodd2posrepd simp1d nnred zred nnrpd cr crp modabs2 modratiod
+      syl2anc cc0 cfzo wb fzo0ss1 simp3d elfzo1 syl3anbrc sselid mpbid rprege0d
+      modlteq liouodd2nebndd ltmul23d gtned neneqd condan ) ANEOPZUADUBZEDUBZQZ
+      RNRCNUCPUDPCUEPZEOPZOPZCUEPZOPZXRQZAYAUFZUJZYFCUEPXRCUEPQZYGYIYEEYCCNRYIY
+      EYIYEUKSZNYEOPCUGTZCULYEOPUGTZYFCUGTZUJZYIBYDCDFGHACUHSZYHIUIZARCUGTYHJUI
+      ZYINYCYINNUKSYIUMUNZUOZYIYCUPSZRYCOPZCUEPZECUEPZQZYIRCYBEYBUQYQYIRRUKSYIU
+      RUNZUOZYIEAEUKSYHKUIZUOZYICNVCTUFZCRVCTUFZYICYRUSZUTVAZVBZVDZYINYCCYQYTUU
+      NYIUUJUUKUULVBYIYCCRUUGYIEUUBCYIYPCUKSZYQCVKVEZUUIYIRYCUUGUUNVDYIUUCUUDYI
+      UUAUUEUUMUTZVFYIECYICEUUQUUHAXRCUGTZYHLUIZVLVGVHVIZVJYIXTXSYDDUBZNYDOPUAD
+      UBZUGYIXTXSYIBECDHUUQUUIVMYIBXRUACDHUUQYIXRYIXRYINEYSUUHVNZUOVOVMYIBCDEFG
+      HUUQYICUHNVTVPSZNCVCTUFYIUVERCVCTUFYICYQYRVQVBCVRVEUUHUUTANCOPFVSGVSWAPQF
+      VSWBUBWJQGVSWBUBWJQWCGUKWDFUKWDUFYHMUIZWEYIXSXTAYHWKWFZWGYIUVBXTQZUVCXSQZ
+      YIBCDEYCFGHYQYRUUIUUNUVAUURUVFWHZVBYIUVHUVIUVJUTWIUVFWLZWMZWNYIEUUHWNZYIY
+      CUUNWOYTUUGYICUUQWPZYIYDWQSCWRSYECUEPYEQYIYDUUOWOUVNYDCWSXAUURWTYIYFXBCXC
+      PZSXRUVOSYJYGXDYIWJCXCPZUVOYFCXEYIYFUKSUUPYNYFUVPSYIRYEUUFUVLVNUUQYIYMYNY
+      IYKYLYOUVKXFZUTCYFXGXHXIYIUVPUVOXRCXEYIXRUKSUUPUUSXRUVPSUVDUUQUUTCXRXGXHX
+      IYFXRCXLXAXJYIYFXRYIXRYFYIXRUVDWNYIYEECYIYEYIYEUVLWPXKUVMYICUUQWNYIYMYNUV
+      QVBYICULEOPUGTREOPCUGTYIBCDEFGHYQYRUUHUUTUVFUVGXMUTXNXOXPXQ $.
   $}
 
   ${
@@ -888140,30 +888140,30 @@ $)
     liouoddmuldlem1 $p |- ( ph ->
       ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F ` N ) ) ) $=
       ( c2 cmul co cmo wceq cfv c3 wa cn wcel cprime prmnn syl adantr cz 2z a1i
-      nnzd zmulcld cdvds wn prmgt3ndvds23d simpld c1 cfzo nn2ltfzod2 fzo1ndvdsd
-      wbr clt prmndvdsmuld nn2ltfzod syl3anbrc rspc2fvovd liouodd23prodmuld csn
-      elfzo1 cdif prmgt3factsd oddn2prm cv cabs fvoveqeq2 cc0 wne ndvdsmodcongd
-      simpr 3z simprd ndvdsmul2d mpjaodan nbrne1 syl2anc necomd nnabscl rspcdva
-      dvds0 liouoddmulabsd liouoddmulcand liouoddmul2bid mpbird ) AUIIUJUKZJUJU
-      KZEULUKDEULUKUMZFJUJUKZHUNZFHUNZJHUNZUJUKUMUOIUJUKZJUJUKZEULUKUIDUJUKZEUL
-      UKUMZAXKUPZBDEFHXIJNAEUQURZXKAEUSURYAOEUTVAZVBZAJVCURZXKAJSVFZVBZAFVCURZX
-      KAFQVFZVBAXIVCURXKAUIIUIVCURZAVDVEZAIUAVFZVGZVBZADVCURZXKUCVBZAEXIVHVPVIX
-      KAUIIEOYJYKAEUIVHVPVIZEUOVHVPVIZAEPVJZVKAIEAIVLEVMUKURXIEVQVPAEIFYBQUAUBR
-      VNVKVOZVRZVBAXKWNZAXIXLUJUKHUNXIHUNZXMUJUKUMZXKAUUCXPXLUJUKHUNXPHUNZXMUJU
-      KUMZABEHIXLLMNOPYKAFJYHYEVGZYSAFJEOYHYEAFEAEFYBQRVSVOZAJEAEJYBSTVSVOZVRZU
-      EAGCIXLVLFVMUKZVCEVHHUJUJUFAIUQURFUQURIFVQVPIUUJURUAQUBFIWDVTZUUFUUIWAWBZ
-      VKVBAXJHUNUUBXOUJUKUMZXKAUUMXQHUNUUDXOUJUKUMZABEHIJLMNOPYKYEYSUUHUEAGCIJU
-      UJVCEVHHUJUJUFUUKYEUUHWAWBZVKVBAFDUJUKHUNXNDHUNUJUKUMZXKABDEFHNYBAEUSUIWC
-      WEURZUIEVHVPVIAUUQUOEVHVPVIAEOPWFVKEWGVAYHUCAFKWHUJUKHUNXNKWHHUNUJUKUMFDW
-      IUNZUJUKHUNXNUURHUNUJUKUMKVLJVMUKZUURKWHUURFXNHUJUJWJUGAUURUQURZJUQURUURJ
-      VQVPUURUUSURAYNDWKWLUUTUCAWKDAEWKVHVPZEDVHVPVIZWKDWLAEVCURUVAAEYBVFEXDVAA
-      XKUVBXSXTXJDEYCXTXIJYMYFVGYOUUAAEXJVHVPVIXKAXIJEOYLYEYTUUHVRVBWMAXSUPZDEU
-      IYIUVCVDVEUVCXQXREAYAXSYBVBZUVCXPJAXPVCURXSAUOIUOVCURAWOVEZYKVGZVBZAYDXSY
-      EVBZVGAXRVCURXSAUIDYJUCVGVBZAXSWNZAEXQVHVPVIXSAXPJEOUVFYEAUOIEOUVEYKAYPYQ
-      YRWPYSVRZUUHVRVBWMWQUHWRZEWKDVHWSWTXADXBWTSUDJUURWDVTXCXEZVBXFUVCBXREFHXP
-      JNUVDUVHAYGXSYHVBUVGUVIAEXPVHVPVIXSUVKVBUVJAUUEXSAUUCUUEUULWPVBAUUNXSAUUM
-      UUNUUOWPVBAFXRUJUKHUNXNXRHUNUJUKUMZXSAUVNUUPUVMABDEFHLMNOPYHUCUUGUVLUEXGX
-      HVBXFUHWR $.
+      nnzd zmulcld cdvds wbr wn gt3ndvds23d simpld c1 clt nn2ltfzod2 fzo1ndvdsd
+      cfzo prmndvdsmuld nn2ltfzod elfzo1 syl3anbrc rspc2fvovd liouodd23prodmuld
+      simpr csn cdif prmgt3factsd oddn2prm cabs fvoveqeq2 cc0 wne ndvdsmodcongd
+      cv dvds0 simprd ndvdsmul2d mpjaodan nbrne1 syl2anc necomd nnabscl rspcdva
+      3z liouoddmulabsd liouoddmulcand liouoddmul2bid mpbird ) AUIIUJUKZJUJUKZE
+      ULUKDEULUKUMZFJUJUKZHUNZFHUNZJHUNZUJUKUMUOIUJUKZJUJUKZEULUKUIDUJUKZEULUKU
+      MZAXKUPZBDEFHXIJNAEUQURZXKAEUSURYAOEUTVAZVBZAJVCURZXKAJSVFZVBZAFVCURZXKAF
+      QVFZVBAXIVCURXKAUIIUIVCURZAVDVEZAIUAVFZVGZVBZADVCURZXKUCVBZAEXIVHVIVJXKAU
+      IIEOYJYKAEUIVHVIVJZEUOVHVIVJZAEPVKZVLAIEAIVMEVQUKURXIEVNVIAEIFYBQUAUBRVOV
+      LVPZVRZVBAXKWDZAXIXLUJUKHUNXIHUNZXMUJUKUMZXKAUUCXPXLUJUKHUNXPHUNZXMUJUKUM
+      ZABEHIXLLMNOPYKAFJYHYEVGZYSAFJEOYHYEAFEAEFYBQRVSVPZAJEAEJYBSTVSVPZVRZUEAG
+      CIXLVMFVQUKZVCEVHHUJUJUFAIUQURFUQURIFVNVIIUUJURUAQUBFIVTWAZUUFUUIWBWCZVLV
+      BAXJHUNUUBXOUJUKUMZXKAUUMXQHUNUUDXOUJUKUMZABEHIJLMNOPYKYEYSUUHUEAGCIJUUJV
+      CEVHHUJUJUFUUKYEUUHWBWCZVLVBAFDUJUKHUNXNDHUNUJUKUMZXKABDEFHNYBAEUSUIWEWFU
+      RZUIEVHVIVJAUUQUOEVHVIVJAEOPWGVLEWHVAYHUCAFKWNUJUKHUNXNKWNHUNUJUKUMFDWIUN
+      ZUJUKHUNXNUURHUNUJUKUMKVMJVQUKZUURKWNUURFXNHUJUJWJUGAUURUQURZJUQURUURJVNV
+      IUURUUSURAYNDWKWLUUTUCAWKDAEWKVHVIZEDVHVIVJZWKDWLAEVCURUVAAEYBVFEWOVAAXKU
+      VBXSXTXJDEYCXTXIJYMYFVGYOUUAAEXJVHVIVJXKAXIJEOYLYEYTUUHVRVBWMAXSUPZDEUIYI
+      UVCVDVEUVCXQXREAYAXSYBVBZUVCXPJAXPVCURXSAUOIUOVCURAXDVEZYKVGZVBZAYDXSYEVB
+      ZVGAXRVCURXSAUIDYJUCVGVBZAXSWDZAEXQVHVIVJXSAXPJEOUVFYEAUOIEOUVEYKAYPYQYRW
+      PYSVRZUUHVRVBWMWQUHWRZEWKDVHWSWTXADXBWTSUDJUURVTWAXCXEZVBXFUVCBXREFHXPJNU
+      VDUVHAYGXSYHVBUVGUVIAEXPVHVIVJXSUVKVBUVJAUUEXSAUUCUUEUULWPVBAUUNXSAUUMUUN
+      UUOWPVBAFXRUJUKHUNXNXRHUNUJUKUMZXSAUVNUUPUVMABDEFHLMNOPYHUCUUGUVLUEXGXHVB
+      XFUHWR $.
   $}
 
   ${
