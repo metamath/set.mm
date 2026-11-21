@@ -14751,13 +14751,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-mpl</td>
-  <td>~ df-mplcoe</td>
-  <td>our definition does not assume decidable equality for
-  coefficients</td>
-</tr>
-
-<tr>
   <td>psrvalstr</td>
   <td>~ psrvalstrd</td>
   <td>adds set existence conditions</td>
@@ -14781,6 +14774,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>~ psrbagaddclfi</td>
   <td>for a finite index set</td>
 </tr>
+
 <tr>
   <td><i>in general</i></td>
   <td>the set.mm proof uses fsuppunfi and replacing it
@@ -14790,14 +14784,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>psrbaglefi</td>
-  <td>~ psrbaglefifi</td>
+  <td>~ psrbaglefimap</td>
   <td>requires that the index set is finite</td>
 </tr>
 
 <tr>
   <td>psrbagleadd1</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses psrbagaddcl</td>
+  <td>~ psrbagleadd1fi</td>
+  <td>requires that the index set is finite and put into
+  deduction form</td>
 </tr>
 
 <tr>
@@ -14962,6 +14957,13 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>psr1</td>
+  <td>psr1fi</td>
+  <td>requires a finite index set and changes ` D ` to
+  ` NN0 ^m I `</td>
+</tr>
+
+<tr>
   <td>mvrid</td>
   <td>~ mvridfi</td>
   <td>adds requirement that the index set is finite</td>
@@ -14987,43 +14989,20 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>mplval</td>
-  <td>~ mplvalcoe</td>
-  <td>adds set existence conditions and changes the expansion
-  of the value to reflect ~ df-mplcoe</td>
-</tr>
-
-<tr>
-  <td>mplbas</td>
-  <td>~ mplbascoe</td>
-  <td>adds set existence conditions and changes the expansion
-  of the value to reflect ~ df-mplcoe</td>
-</tr>
-
-<tr>
-  <td>mplelbas</td>
-  <td>~ mplelbascoe</td>
-  <td>adds set existence conditions and changes the expansion
-  of the value to reflect ~ df-mplcoe</td>
+  <td>~ mplvalg</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
   <td>mvrcl</td>
-  <td><i>none</i></td>
-  <td>might be feasible (for finite index sets) once we fix the
-  definition of ` mPoly ` to handle empty index sets</td>
+  <td>~ mvrclfi</td>
+  <td>adds requirement that the index set is finite</td>
 </tr>
 
 <tr>
   <td>mvrf2</td>
-  <td><i>none</i></td>
-  <td>should be feasible (with ` I e. W ` changed to ` I e. Fin ` )</td>
-</tr>
-
-<tr>
-  <td>mplelsfi</td>
-  <td><i>none</i></td>
-  <td>it may be possible to come up with a replacement which takes
-  into account the way ~ df-mplcoe works</td>
+  <td>~ mvrf2fi</td>
+  <td>adds requirement that the index set is finite</td>
 </tr>
 
 <tr>
@@ -15052,9 +15031,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>mplsubrglem , mplsubrg</td>
-  <td><i>none</i></td>
-  <td>would require development of multiplication of two polynomials</td>
+  <td>mplsubrglem</td>
+  <td>~ mplsubrglemcl</td>
+  <td>removes several hypotheses</td>
+</tr>
+
+<tr>
+  <td>mplsubrg</td>
+  <td>~ mplsubrgfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
@@ -15071,9 +15056,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>mplmulr</td>
-  <td><i>none</i></td>
-  <td>should be provable (with set existence conditions) in a manner
-  similar to ~ mplplusgg</td>
+  <td>~ mplmulrg</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
@@ -15083,15 +15067,23 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>mplmul</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses psrmulfval and mplmulr</td>
+  <td>mpl1</td>
+  <td>~ mpl1fi</td>
+  <td>requires the polynomial to have a finite number of
+  variables</td>
 </tr>
 
 <tr>
-  <td>mpl1</td>
+  <td>mplsca</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses mplsubrg and psr1</td>
+  <td>since we have ~ ressscag it would appear we just
+  need psrsca</td>
+</tr>
+
+<tr>
+  <td>mplvsca2</td>
+  <td><i>none</i></td>
+  <td>the set.mm theorem would seem to only need small changes</td>
 </tr>
 
 <tr>
@@ -15120,8 +15112,98 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>mplring</td>
+  <td>~ mplringfi</td>
+  <td>requires polynomials to have a finite number of
+  variables</td>
+</tr>
+
+<tr>
+  <td>mpllvec</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses mplsubrg</td>
+  <td>would appear to be feasible given development of
+  vector spaces, mplsca , and mpllmod</td>
+</tr>
+
+<tr>
+  <td>mplcrng</td>
+  <td><i>none</i></td>
+  <td>would appear to be feasible if we have psrcrng</td>
+</tr>
+
+<tr>
+  <td>mplassa</td>
+  <td><i>none</i></td>
+  <td>would appear to be feasible if we have psrassa</td>
+</tr>
+
+<tr>
+  <td>evlslem4</td>
+  <td><i>none</i></td>
+  <td>this would appear to be doable only if the ring has
+  decidable equality</td>
+</tr>
+
+<tr>
+  <td>psrbagev1</td>
+  <td>~ psrbagev1fi</td>
+  <td>for a finite index set</td>
+</tr>
+
+<tr>
+  <td>psrbagev2</td>
+  <td>~ psrbagev2fi</td>
+  <td>for a finite index set</td>
+</tr>
+
+<tr>
+  <td>evlslem2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evlslem4</td>
+</tr>
+
+<tr>
+  <td>evlslem3</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mplmon2cl and gsumpt .  The usages of
+  ` if ` should be fine due to ~ psrbagdceq .  The references to
+  the support of a function may be unneeeded because ~ gsumclfi needs
+  finite rather than finitely supported.</td>
+</tr>
+
+<tr>
+  <td>evlslem6</td>
+  <td><i>none</i></td>
+  <td>It would appear that a slightly modified version of the
+  set.mm proof would work.  The use of suppssfifsupp and related
+  steps could apparently be replaced by ~ fdmfifsupp (although
+  looking at where this is used, finitely supported may not be needed
+  and finite might be better).</td>
+</tr>
+
+<tr>
+  <td>evlslem1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mplascl , evlslem3 , mplassa , mplsca ,
+  evlslem6 , evlslem2 , and gsumpt</td>
+</tr>
+
+<tr>
+  <td>evlseu</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evlslem1 , mplasclf , aspval2 ,
+  and mplbas2</td>
+</tr>
+
+<tr>
+  <td>evlsval2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evlseu and pwsdiagrhm</td>
+</tr>
+
+<tr>
+  <td>evlsrhm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evlsval2</td>
 </tr>
 
 <TR>
