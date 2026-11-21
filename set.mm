@@ -886624,8 +886624,8 @@ $)
          and every integer not divisible by ` P ` .  Strong induction uses
          ~ ralnnindhypd to restrict its hypothesis to smaller positive
          multipliers.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-      lioumodmuldlem2 $p |- ( ph -> ( N < P -> A. z e. ZZ ( -. P || z ->
-        ( F ` ( N x. z ) ) = ( ( F ` N ) x. ( F ` z ) ) ) ) ) $=
+      lioumodmuldlem2 $p |- ( ph -> ( N < P -> A. z e. ZZ
+        ( -. P || z -> ( F ` ( N x. z ) ) = ( ( F ` N ) x. ( F ` z ) ) ) ) ) $=
         ( vv cv cmul co cfv wceq cz vn vm vi vj vk clt wbr cdvds wral fvoveqeq1
         wn wi breq1 imbi2d ralbidv imbi12d cn wcel w3a wne cabs cmo wrex cprime
         wa simpll simpl1 3syl adantr simpl2 ad3antrrr 1red nnred nnge1d leneltd
@@ -887910,8 +887910,8 @@ $)
         ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liouoddmuldlem1.13 $e |- ( ph -> A. k e. ( 1 ..^ Q ) A. z e. ZZ
       ( -. P || z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    liouoddmuldlem1.14 $e |- ( ph ->
-      A. r e. ( 1 ..^ N ) ( F ` ( Q x. r ) ) = ( ( F ` Q ) x. ( F ` r ) ) ) $.
+    liouoddmuldlem1.14 $e |- ( ph -> A. r e. ( 1 ..^ N )
+      ( F ` ( Q x. r ) ) = ( ( F ` Q ) x. ( F ` r ) ) ) $.
     liouoddmuldlem1.15 $e |- ( ph ->
       ( ( ( ( 2 x. K ) x. N ) mod P ) = ( D mod P ) \/
       ( ( ( 3 x. K ) x. N ) mod P ) = ( ( 2 x. D ) mod P ) ) ) $.
@@ -887971,9 +887971,8 @@ $)
       liouoddmuldlem2.9 $e |- ( ph -> -. E. a e. NN E. b e. NN
         ( ( 2 x. P ) = ( a + b ) /\
           ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-      liouoddmuldlem2.10 $e |- ( ph ->
-        A. r e. ( 1 ..^ N ) ( F ` ( Q x. r ) )
-          = ( ( F ` Q ) x. ( F ` r ) ) ) $.
+      liouoddmuldlem2.10 $e |- ( ph -> A. r e. ( 1 ..^ N )
+        ( F ` ( Q x. r ) ) = ( ( F ` Q ) x. ( F ` r ) ) ) $.
       $( Lemma for ~ liouoddmuld .  Extend multiplicativity of the odd
          completion in ~ liouoddval from positive second factors below ` N ` to
          an even second factor ` N ` .  Under the displayed bounds and absence
@@ -888007,8 +888006,8 @@ $)
         ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liouoddmuldlem3.13 $e |- ( ph -> A. k e. ( 1 ..^ Q ) A. z e. ZZ
       ( -. P || z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    liouoddmuldlem3.14 $e |- ( ph ->
-      A. r e. ( 1 ..^ N ) ( F ` ( Q x. r ) ) = ( ( F ` Q ) x. ( F ` r ) ) ) $.
+    liouoddmuldlem3.14 $e |- ( ph -> A. r e. ( 1 ..^ N )
+      ( F ` ( Q x. r ) ) = ( ( F ` Q ) x. ( F ` r ) ) ) $.
     $( Lemma for ~ liouoddmuld .  For the odd completion of ~ liouoddval ,
        multiplicativity at smaller first factors and smaller positive second
        factors implies the identity at ` Q ` and an odd positive integer ` N `
@@ -888067,9 +888066,8 @@ $)
          multipliers.  Strong induction is on ` N ` .  The interval and
          construction are explained in ~ liouoddval .  Here twice ` P ` has no
          positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-      liouoddmuldlem4 $p |- ( ph ->
-        ( N < ( P / 2 ) -> ( F ` ( Q x. N ) )
-          = ( ( F ` Q ) x. ( F ` N ) ) ) ) $=
+      liouoddmuldlem4 $p |- ( ph -> ( N < ( P / 2 ) ->
+        ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F ` N ) ) ) ) $=
         ( vn vm vr cv c2 cdiv co clt wbr cmul cfv wi breq1 fvoveqeq2 imbi12d cn
         wceq wcel wral w3a wa cdvds c1 cprime simpll1 c3 simpll2 simp2 nnred cr
         syl prmnn 3ad2ant1 crp 2rp a1i ltmuldiv2d adantr simpr caddc cliou wrex
@@ -888254,9 +888252,8 @@ $)
          integer ` Q < ( P / 2 ) ` and every integer not divisible by ` P ` .
          Outer strong induction on ` Q ` uses the inner induction in
          ~ liouoddmuldlem4 .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-      liouoddmuldlem8 $p |- ( ph -> ( Q < ( P / 2 )
-        -> A. z e. ZZ ( -. P || z ->
-        ( F ` ( Q x. z ) ) = ( ( F ` Q ) x. ( F ` z ) ) ) ) ) $=
+      liouoddmuldlem8 $p |- ( ph -> ( Q < ( P / 2 ) -> A. z e. ZZ
+        ( -. P || z -> ( F ` ( Q x. z ) ) = ( ( F ` Q ) x. ( F ` z ) ) ) ) ) $=
         ( cv co cmul cfv wceq wi cz vq vu vv vk c2 cdiv clt cdvds wn wral breq1
         wbr fvoveqeq1 imbi2d ralbidv imbi12d wcel w3a cprime simpll simpl1 3syl
         cn wa simpl2 syl simpr nnred prmnn crp 2rp a1i ltmuldiv2d mpbird simplr
