@@ -185392,6 +185392,12 @@ $)
       ply1lss $p |- ( R e. Ring -> U e. ( LSubSp ` S ) ) $=
         ( crg wcel c1o cmpl co psr1valpsr eqid ply1bas com cfn 1onn nnfi mp1i
         id mpllssfi ) BHIZJBKLZBCDJBCFMUDNABDEGOJPIJQIUCRJSTUCUAUB $.
+
+      $( Univariate polynomials form a subring of the set of univariate power
+         series.  (Contributed by Mario Carneiro, 9-Feb-2015.) $)
+      ply1subrg $p |- ( R e. Ring -> U e. ( SubRing ` S ) ) $=
+        ( crg wcel c1o cmpl co psr1valpsr eqid ply1bas com cfn 1onn nnfi mp1i
+        id mplsubrgfi ) BHIZJBKLZBCDJBCFMUDNABDEGOJPIJQIUCRJSTUCUAUB $.
     $}
   $}
 
