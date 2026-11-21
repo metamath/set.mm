@@ -185383,6 +185383,16 @@ $)
         VEVFLBRRTVGVHVIVTWMVJWCWMVSBWOVTLVSSWOSZWJWMBWLWOWNWMSWPVKVLVQVMVRVNVOV
         P $.
     $}
+
+    ${
+      ply1lss.2 $e |- S = ( PwSer1 ` R ) $.
+      ply1lss.u $e |- U = ( Base ` P ) $.
+      $( Univariate polynomials form a linear subspace of the set of univariate
+         power series.  (Contributed by Mario Carneiro, 9-Feb-2015.) $)
+      ply1lss $p |- ( R e. Ring -> U e. ( LSubSp ` S ) ) $=
+        ( crg wcel c1o cmpl co psr1valpsr eqid ply1bas com cfn 1onn nnfi mp1i
+        id mpllssfi ) BHIZJBKLZBCDJBCFMUDNABDEGOJPIJQIUCRJSTUCUAUB $.
+    $}
   $}
 
 
