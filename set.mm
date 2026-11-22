@@ -882443,8 +882443,8 @@ $)
     mulp1m1subd.1 $e |- ( ph -> A e. CC ) $.
     mulp1m1subd.2 $e |- ( ph -> B e. CC ) $.
     $( The products at coefficients ` ( A + 1 ) ` and ` ( A - 1 ) ` differ by
-       twice ` B ` ; those at ` A ` and ` ( A - 1 ) ` differ by ` B ` .  Both
-       parameters may be complex.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       twice ` B ` ; those at ` A ` and ` ( A - 1 ) ` differ by ` B ` .
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     mulp1m1subd $p |- ( ph ->
       ( ( ( ( A + 1 ) x. B ) - ( ( A - 1 ) x. B ) ) = ( 2 x. B ) /\
         ( ( A x. B ) - ( ( A - 1 ) x. B ) ) = B ) ) $=
@@ -882976,11 +882976,11 @@ $)
     modaddsubd.2 $e |- ( ph -> ( -u B <_ A /\ A <_ B ) ) $.
     modaddsubd.3 $e |- ( ph -> P e. RR+ ) $.
     modaddsubd.4 $e |- ( ph -> ( 2 x. B ) < P ) $.
-    $( Lemma for ~ m1lgsd .  Let ` B ` be real and ` P ` a positive real
-       greater than ` ( 2 x. B ) ` .  If ` -u B <_ A ` and ` A <_ B ` , then
-       ` ( A + B ) ` is nonnegative and less than ` P ` .  Reduction modulo
-       ` P ` fixes this sum by ~ modid , and subtracting ` B ` recovers ` A ` .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( Let ` B ` be real and ` P ` a positive real greater than
+       ` ( 2 x. B ) ` .  If ` -u B <_ A ` and ` A <_ B ` , then ` ( A + B ) `
+       is nonnegative and less than ` P ` .  Reduction modulo ` P ` fixes this
+       sum by ~ modid , and subtracting ` B ` recovers ` A ` .  (Contributed by
+       Zhi Wang, 17-Oct-2026.) $)
     modaddsubd $p |- ( ph -> ( ( ( A + B ) mod P ) - B ) = A ) $=
       ( caddc co cxr wcel cr cmnf clt wbr cle simpld cc0 c2 cneg simprd lerelxr
       cmo brel syl mnfxr a1i renegcld rexrd mnfltd xrltletrd syl22anc recnd crp
@@ -883124,15 +883124,14 @@ $)
     modgridneqd.8 $e |- ( ph -> <. A , C >. =/= <. B , D >. ) $.
     modgridneqd.9 $e |- ( ph ->
       ( ( ( A x. Z ) + C ) mod P ) = ( ( ( B x. Z ) + D ) mod P ) ) $.
-    $( Lemma for ~ modgridbndd .  Consider two distinct points ` <. A , C >. `
-       and ` <. B , D >. ` with coordinates in ` ( 0 ..^ P ) ` .  Suppose
-       ` ( ( A x. Z ) + C ) ` and ` ( ( B x. Z ) + D ) ` have equal residues
-       modulo ` P ` .  If ` Z ` is coprime to the positive modulus ` P ` , then
-       ` A =/= B ` and ` C =/= D ` .  Equal first coordinates would force
-       ` C = D ` by ~ addmodlteq2d .  With equal second coordinates,
-       cancellation of ` Z ` by ~ cncongrcoprm and comparison of the
-       representatives by ~ modlteq would give ` A = B ` .  (Contributed by Zhi
-       Wang, 17-Oct-2026.) $)
+    $( Consider two distinct points ` <. A , C >. ` and ` <. B , D >. ` with
+       coordinates in ` ( 0 ..^ P ) ` .  Suppose ` ( ( A x. Z ) + C ) ` and
+       ` ( ( B x. Z ) + D ) ` have equal residues modulo ` P ` .  If ` Z ` is
+       coprime to the positive modulus ` P ` , then ` A =/= B ` and
+       ` C =/= D ` .  Equal first coordinates would force ` C = D ` by
+       ~ addmodlteq2d .  With equal second coordinates, cancellation of ` Z `
+       by ~ cncongrcoprm and comparison of the representatives by ~ modlteq
+       would give ` A = B ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     modgridneqd $p |- ( ph -> ( A =/= B /\ C =/= D ) ) $=
       ( wceq co wcel cmo wne cop wa simpr cmul cc0 cfzo adantr elfzoelz zmulcld
       cr cz zred caddc oveq1d eqtr3d addmodlteq2d opeq12d mteqand oveq2d eqtr4d
@@ -883159,14 +883158,14 @@ $)
       ( ( ( A x. Z ) + C ) mod P ) = ( ( ( B x. Z ) + D ) mod P ) ) $.
     modgridbndd.10 $e |- ( ph -> N <_ P ) $.
     modgridbndd.11 $e |- ( ph -> K <_ P ) $.
-    $( Lemma for ~ modbndgridd .  When two distinct points on the rectangular
-       grid give the same linear residue modulo ` P ` , the coordinate
-       differences ` ( A - B ) ` and ` ( D - C ) ` have absolute values below
-       the respective grid widths ` N ` and ` K ` .  For ` Z ` coprime to the
-       positive modulus ` P ` and widths at most ` P ` , ~ modgridneqd makes
-       both differences nonzero.  By ~ modlin2subd , the product of the first
-       difference and ` Z ` is congruent to the second difference modulo
-       ` P ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( When two distinct points on the rectangular grid give the same linear
+       residue modulo ` P ` , the coordinate differences ` ( A - B ) ` and
+       ` ( D - C ) ` have absolute values below the respective grid widths
+       ` N ` and ` K ` .  For ` Z ` coprime to the positive modulus ` P ` and
+       widths at most ` P ` , ~ modgridneqd makes both differences nonzero.  By
+       ~ modlin2subd , the product of the first difference and ` Z ` is
+       congruent to the second difference modulo ` P ` .  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
     modgridbndd $p |- ( ph ->
       ( ( ( abs ` ( A - B ) ) e. NN /\ ( abs ` ( A - B ) ) < N ) /\
       ( ( abs ` ( D - C ) ) e. NN /\ ( abs ` ( D - C ) ) < K ) /\
@@ -883192,14 +883191,13 @@ $)
     modbndgridd.6 $e |- ( ph -> N <_ P ) $.
     modbndgridd.7 $e |- ( ph -> K <_ P ) $.
     modbndgridd.8 $e |- ( ph -> P < ( N x. K ) ) $.
-    $( Lemma for ~ modbndzd .  For a positive modulus ` P ` and an integer
-       ` Z ` coprime to it, there exist nonzero integers ` k ` and ` d ` with
-       absolute values below ` N ` and ` K ` , respectively, and ` ( k x. Z ) `
-       congruent to ` d ` modulo ` P ` , provided the positive grid widths
-       ` N ` and ` K ` are at most ` P ` and ` P < ( N x. K ) ` .  By
-       ~ fphpmodgridd two grid points give the same residue.  Their coordinate
-       differences supply the witnesses by ~ modgridbndd .  (Contributed by Zhi
-       Wang, 17-Oct-2026.) $)
+    $( For a positive modulus ` P ` and an integer ` Z ` coprime to it, there
+       exist nonzero integers ` k ` and ` d ` with absolute values below ` N `
+       and ` K ` , respectively, and ` ( k x. Z ) ` congruent to ` d ` modulo
+       ` P ` , provided the positive grid widths ` N ` and ` K ` are at most
+       ` P ` and ` P < ( N x. K ) ` .  By ~ fphpmodgridd two grid points give
+       the same residue.  Their coordinate differences supply the witnesses by
+       ~ modgridbndd .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     modbndgridd $p |- ( ph -> E. k e. ZZ E. d e. ZZ
       ( ( ( abs ` k ) e. NN /\ ( abs ` k ) < N ) /\
         ( ( abs ` d ) e. NN /\ ( abs ` d ) < K ) /\
@@ -888512,14 +888510,13 @@ $)
     liougb2prmdivd.3 $e |- ( ph -> P e. Prime ) $.
     liougb2prmdivd.4 $e |- ( ph -> P || A ) $.
     $d A w z $.  $d P w z $.  $d a w z $.  $d b w z $.  $d ph w z $.
-    $( Lemma for ~ liougb2nnd .  If a positive integer ` A ` has Liouville
-       value one and a prime divisor ` P ` , then twice ` A ` is a sum of two
-       positive integers with Liouville value minus one.  For even ` A ` apply
-       ~ liougb4evend .  For odd ` A ` the prime divisor is at least three.  If
-       ` P = 3 ` , apply ~ liougb3divd .  If ` 3 < P ` , ~ liougbprmd gives two
-       summands of Liouville value one at twice ` P ` , and ~ liougbprmdivd
-       transfers that pair to twice ` A ` .  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( If a positive integer ` A ` has Liouville value one and a prime divisor
+       ` P ` , then twice ` A ` is a sum of two positive integers with
+       Liouville value minus one.  For even ` A ` apply ~ liougb4evend .  For
+       odd ` A ` the prime divisor is at least three.  If ` P = 3 ` , apply
+       ~ liougb3divd .  If ` 3 < P ` , ~ liougbprmd gives two summands of
+       Liouville value one at twice ` P ` , and ~ liougbprmdivd transfers that
+       pair to twice ` A ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougb2prmdivd $p |- ( ph -> E. a e. NN E. b e. NN
       ( ( 2 x. A ) = ( a + b ) /\
         ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
@@ -888538,12 +888535,12 @@ $)
     $d A p $.  $d a p $.  $d b p $.  $d p ph $.  $d A a b $.
     liougb2nnd.1 $e |- ( ph -> A e. NN ) $.
     liougb2nnd.2 $e |- ( ph -> 1 < A ) $.
-    $( Lemma for ~ liougbd .  The double of every positive integer ` A `
-       greater than one is a sum of two positive integers at which Liouville's
-       function is minus one.  If the value at ` A ` is minus one, take ` A `
-       as both summands.  Otherwise its value is one by ~ liounncl .  Choose a
-       prime divisor of ` A ` by ~ exprmfctd and apply ~ liougb2prmdivd .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( The double of every positive integer ` A ` greater than one is a sum of
+       two positive integers at which Liouville's function is minus one.  If
+       the value at ` A ` is minus one, take ` A ` as both summands.  Otherwise
+       its value is one by ~ liounncl .  Choose a prime divisor of ` A ` by
+       ~ exprmfctd and apply ~ liougb2prmdivd .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liougb2nnd $p |- ( ph -> E. a e. NN E. b e. NN
       ( ( 2 x. A ) = ( a + b ) /\
         ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
