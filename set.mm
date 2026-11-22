@@ -883699,14 +883699,14 @@ $)
 
   ${
     $d N d k $.  $d P d k $.  $d Q d k $.
-    mod23exdlem2.1 $e |- ( ph -> Q e. NN ) $.
-    mod23exdlem2.2 $e |- ( ph -> N e. NN ) $.
-    mod23exdlem2.3 $e |- ( ph -> P e. NN ) $.
-    mod23exdlem2.4 $e |- ( ph -> 1 < Q ) $.
-    mod23exdlem2.5 $e |- ( ph -> -. 2 || N ) $.
-    mod23exdlem2.6 $e |- ( ph -> -. 2 || P ) $.
-    mod23exdlem2.7 $e |- ( ph -> P < ( ( 2 x. Q ) x. N ) ) $.
-    mod23exdlem2.8 $e |- ( ph -> -. 3 || Q ) $.
+    mod23exd.1 $e |- ( ph -> Q e. NN ) $.
+    mod23exd.2 $e |- ( ph -> N e. NN ) $.
+    mod23exd.3 $e |- ( ph -> P e. NN ) $.
+    mod23exd.4 $e |- ( ph -> 1 < Q ) $.
+    mod23exd.5 $e |- ( ph -> -. 2 || N ) $.
+    mod23exd.6 $e |- ( ph -> -. 2 || P ) $.
+    mod23exd.7 $e |- ( ph -> P < ( ( 2 x. Q ) x. N ) ) $.
+    mod23exd.8 $e |- ( ph -> -. 3 || Q ) $.
     ${
       mod23exdlem2.9 $e |- ( ph -> ( ( ( 2 x. Q ) - 1 ) x. N ) < P ) $.
       $( Lemma for ~ mod23exd .  For odd positive integers ` N ` and ` P ` and
@@ -886051,7 +886051,7 @@ $)
   $}
 
   ${
-    liougb4gapdescd.1 $e |- S = { t e. NN | E. a e. NN E. b e. NN
+    liougb4gap0d.1 $e |- S = { t e. NN | E. a e. NN E. b e. NN
       ( ( M = ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) /\
         t = ( b - a ) ) } $.
     ${
@@ -886120,11 +886120,11 @@ $)
 
   ${
     $d A a b $.  $d B a b $.  $d M a b $.
-    liougb4poseqd.1 $e |- ( ph -> A e. NN ) $.
-    liougb4poseqd.2 $e |- ( ph -> B e. NN ) $.
-    liougb4poseqd.3 $e |- ( ph -> M = ( A + B ) ) $.
-    liougb4poseqd.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
-    liougb4poseqd.5 $e |- ( ph -> ( lam ` B ) = 1 ) $.
+    liougb4pospaird.1 $e |- ( ph -> A e. NN ) $.
+    liougb4pospaird.2 $e |- ( ph -> B e. NN ) $.
+    liougb4pospaird.3 $e |- ( ph -> M = ( A + B ) ) $.
+    liougb4pospaird.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
+    liougb4pospaird.5 $e |- ( ph -> ( lam ` B ) = 1 ) $.
     ${
       $d A t $.  $d B t $.  $d M t $.  $d a t $.  $d b t $.
       liougb4poseqd.6 $e |- ( ph -> -. E. a e. NN E. b e. NN
@@ -886385,8 +886385,8 @@ $)
   $}
 
   ${
-    lioumodmuldlem1.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
-    lioumodmuldlem1.2 $e |- ( ph -> P e. Prime ) $.
+    lioumodmuld.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
+    lioumodmuld.2 $e |- ( ph -> P e. Prime ) $.
     ${
       $d D a b $.  $d D x $.  $d F k z $.  $d K a b $.  $d K k z $.  $d K x $.
       $d N a b $.  $d N k z $.  $d N x $.  $d P a b $.  $d P k z $.  $d P x $.
@@ -886607,10 +886607,10 @@ $(
 $)
 
   ${
-    liou2refl1d.1 $e |- ( ph -> P e. NN ) $.
-    liou2refl1d.2 $e |- ( ph -> A e. NN ) $.
-    liou2refl1d.3 $e |- ( ph -> A < P ) $.
-    liou2refl1d.4 $e |- ( ph -> -. E. a e. NN E. b e. NN
+    liou2refld.1 $e |- ( ph -> P e. NN ) $.
+    liou2refld.2 $e |- ( ph -> A e. NN ) $.
+    liou2refld.3 $e |- ( ph -> A < P ) $.
+    liou2refld.4 $e |- ( ph -> -. E. a e. NN E. b e. NN
       ( ( 2 x. P ) = ( a + b ) /\
         ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     ${
@@ -886694,10 +886694,10 @@ $)
   $}
 
   ${
-    liou2pair23m1d.1 $e |- ( ph -> U e. NN ) $.
-    liou2pair23m1d.2 $e |- ( ph -> V e. NN ) $.
-    liou2pair23m1d.3 $e |- ( ph -> P = ( ( 3 x. U ) + ( 2 x. V ) ) ) $.
-    liou2pair23m1d.4 $e |- ( ph -> -. E. a e. NN E. b e. NN
+    liou2pair23led.1 $e |- ( ph -> U e. NN ) $.
+    liou2pair23led.2 $e |- ( ph -> V e. NN ) $.
+    liou2pair23led.3 $e |- ( ph -> P = ( ( 3 x. U ) + ( 2 x. V ) ) ) $.
+    liou2pair23led.4 $e |- ( ph -> -. E. a e. NN E. b e. NN
       ( ( 2 x. P ) = ( a + b ) /\
         ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     ${
@@ -887252,7 +887252,7 @@ $)
 
   ${
     $d N a b $.  $d N x $.  $d P a b $.  $d P x $.
-    liouodd23midd.1 $e |- F = ( x e. ZZ |->
+    liouodd23halfd.1 $e |- F = ( x e. ZZ |->
       if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
         -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
     ${
@@ -887315,11 +887315,11 @@ $)
 
   ${
     $d P a b $.  $d P x $.
-    liouodd23fzod.1 $e |- F = ( x e. ZZ |->
+    liouodd23eqd.1 $e |- F = ( x e. ZZ |->
       if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
         -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouodd23fzod.2 $e |- ( ph -> P e. Prime ) $.
-    liouodd23fzod.3 $e |- ( ph -> 3 < P ) $.
+    liouodd23eqd.2 $e |- ( ph -> P e. Prime ) $.
+    liouodd23eqd.3 $e |- ( ph -> 3 < P ) $.
     ${
       $d N a b $.  $d N x $.
       liouodd23fzod.4 $e |- ( ph -> N e. ( 1 ..^ P ) ) $.
@@ -887461,11 +887461,11 @@ $)
 
   ${
     $d N a b $.  $d N x $.  $d P a b $.  $d P x $.
-    liouodd2eqd.1 $e |- F = ( x e. ZZ |->
+    liouodd2fzod.1 $e |- F = ( x e. ZZ |->
       if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
         -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouodd2eqd.2 $e |- ( ph -> P e. Prime ) $.
-    liouodd2eqd.3 $e |- ( ph -> 3 < P ) $.
+    liouodd2fzod.2 $e |- ( ph -> P e. Prime ) $.
+    liouodd2fzod.3 $e |- ( ph -> 3 < P ) $.
     ${
       liouodd2eqd.4 $e |- ( ph -> N e. NN ) $.
       liouodd2eqd.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
@@ -888014,11 +888014,11 @@ $)
   $}
 
   ${
-    liouoddmuldlem7.1 $e |- F = ( x e. ZZ |->
+    liouoddmulhalfd.1 $e |- F = ( x e. ZZ |->
       if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
         -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddmuldlem7.2 $e |- ( ph -> P e. Prime ) $.
-    liouoddmuldlem7.3 $e |- ( ph -> 3 < P ) $.
+    liouoddmulhalfd.2 $e |- ( ph -> P e. Prime ) $.
+    liouoddmulhalfd.3 $e |- ( ph -> 3 < P ) $.
     ${
       $d F k z $.  $d P a b $.  $d P k z $.  $d P x $.  $d Q a b $.
       $d Q k z $.  $d Q x $.  $d Z a b $.  $d Z x $.  $d Z z $.
@@ -888165,11 +888165,11 @@ $)
 
   ${
     $d P a b $.
-    liouoddsqd.1 $e |- F = ( x e. ZZ |->
+    liouoddnqrd.1 $e |- F = ( x e. ZZ |->
       if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
         -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddsqd.2 $e |- ( ph -> P e. Prime ) $.
-    liouoddsqd.3 $e |- ( ph -> 3 < P ) $.
+    liouoddnqrd.2 $e |- ( ph -> P e. Prime ) $.
+    liouoddnqrd.3 $e |- ( ph -> 3 < P ) $.
     ${
       $d P x $.  $d Z x $.
       liouoddsqd.4 $e |- ( ph -> Z e. ZZ ) $.
@@ -888188,7 +888188,7 @@ $)
         CUKTKLULUQUMTUN $.
     $}
 
-    liouoddlgs1d.4 $e |- ( ph -> A e. ZZ ) $.
+    liouoddnqrd.4 $e |- ( ph -> A e. ZZ ) $.
     ${
       $d A u x $.  $d F u $.  $d P u x $.  $d ph u $.
       liouoddlgs1d.5 $e |- ( ph -> ( A /L P ) = 1 ) $.
