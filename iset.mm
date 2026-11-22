@@ -185401,6 +185401,16 @@ $)
     $}
   $}
 
+  ${
+    psr1rcl.p $e |- P = ( PwSer1 ` R ) $.
+    psr1rcl.b $e |- B = ( Base ` P ) $.
+    $( A univariate power series is a multivariate power series on one index.
+       (Contributed by Stefan O'Rear, 25-Mar-2015.) $)
+    psr1bascl $p |- ( F e. B -> F e. ( Base ` ( 1o mPwSer R ) ) ) $=
+      ( wcel c1o cmps co cbs cfv id eqid psr1bas2 eleqtrdi ) DAGZDAHCIJZKLQMACB
+      REFRNOP $.
+  $}
+
 
 $(
 ###############################################################################
