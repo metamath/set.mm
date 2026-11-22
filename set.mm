@@ -882313,25 +882313,21 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
-  ${
-    $( The equations ` ( F `` ( A G C ) ) = ( ( F `` A ) H D ) ` and
-       ` ( F `` ( B G C ) ) = ( ( F `` B ) H D ) ` are equivalent when
-       ` A = B ` .  (Contributed by Zhi Wang, 4-Nov-2026.) $)
-    fvoveqeq1 $p |- ( A = B -> ( ( F ` ( A G C ) ) = ( ( F ` A ) H D ) <->
-      ( F ` ( B G C ) ) = ( ( F ` B ) H D ) ) ) $=
-      ( wceq co cfv fvoveq1 fveq2 oveq1d eqeq12d ) ABHZACFIEJBCFIEJAEJZDGIBEJZD
-      GIABCEFKOPQDGABELMN $.
-  $}
+  $( The equations ` ( F `` ( A G C ) ) = ( ( F `` A ) H D ) ` and
+     ` ( F `` ( B G C ) ) = ( ( F `` B ) H D ) ` are equivalent when
+     ` A = B ` .  (Contributed by Zhi Wang, 4-Nov-2026.) $)
+  fvoveqeq1 $p |- ( A = B -> ( ( F ` ( A G C ) ) = ( ( F ` A ) H D ) <->
+    ( F ` ( B G C ) ) = ( ( F ` B ) H D ) ) ) $=
+    ( wceq co cfv fvoveq1 fveq2 oveq1d eqeq12d ) ABHZACFIEJBCFIEJAEJZDGIBEJZDGI
+    ABCEFKOPQDGABELMN $.
 
-  ${
-    $( The equations ` ( F `` ( C G A ) ) = ( D H ( F `` A ) ) ` and
-       ` ( F `` ( C G B ) ) = ( D H ( F `` B ) ) ` are equivalent when
-       ` A = B ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    fvoveqeq2 $p |- ( A = B -> ( ( F ` ( C G A ) ) = ( D H ( F ` A ) ) <->
-      ( F ` ( C G B ) ) = ( D H ( F ` B ) ) ) ) $=
-      ( wceq co cfv oveq2 fveq2d fveq2 oveq2d eqeq12d ) ABHZCAFIZEJCBFIZEJDAEJZ
-      GIDBEJZGIPQREABCFKLPSTDGABEMNO $.
-  $}
+  $( The equations ` ( F `` ( C G A ) ) = ( D H ( F `` A ) ) ` and
+     ` ( F `` ( C G B ) ) = ( D H ( F `` B ) ) ` are equivalent when
+     ` A = B ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+  fvoveqeq2 $p |- ( A = B -> ( ( F ` ( C G A ) ) = ( D H ( F ` A ) ) <->
+    ( F ` ( C G B ) ) = ( D H ( F ` B ) ) ) ) $=
+    ( wceq co cfv oveq2 fveq2d fveq2 oveq2d eqeq12d ) ABHZCAFIZEJCBFIZEJDAEJZGI
+    DBEJZGIPQREABCFKLPSTDGABEMNO $.
 
   ${
     $d A y $.  $d B y $.  $d F y $.  $d G y $.  $d H y $.  $d P y $.  $d R y $.
@@ -882418,8 +882414,9 @@ $)
 
   ${
     halfpre2p1d.1 $e |- ( ph -> A e. CC ) $.
-    $( Doubling the successor of half a predecessor recovers the successor.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( For a complex number ` A ` , adding one to ` ( ( A - 1 ) / 2 ) ` and
+       then doubling gives ` ( A + 1 ) ` .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     halfpre2p1d $p |- ( ph ->
       ( 2 x. ( ( ( A - 1 ) / 2 ) + 1 ) ) = ( A + 1 ) ) $=
       ( c2 c1 cmin cdiv caddc cmul 2cnd 1cnd subcld halfcld adddid cc0 wne 2ne0
@@ -882545,31 +882542,25 @@ $)
       BUIAUPBLJABGCUTVATSUJ $.
   $}
 
-  ${
-    $( The square of either integer sign is one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    m1p1sq $p |- ( A e. { -u 1 , 1 } -> ( A x. A ) = 1 ) $=
-      ( c1 cneg cpr wcel wceq wo co elpri id oveq12d neg1mulneg1e1 eqtrdi 1t1e1
-      cmul jaoi syl ) ABCZBDEARFZABFZGAAOHZBFZARBISUBTSUARROHBSARAROSJSJKLMTUAB
-      BOHBTABABOTJTJKNMPQ $.
-  $}
+  $( The square of either integer sign is one.  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  m1p1sq $p |- ( A e. { -u 1 , 1 } -> ( A x. A ) = 1 ) $=
+    ( c1 cneg cpr wcel wceq wo cmul co elpri oveq12d neg1mulneg1e1 eqtrdi 1t1e1
+    id jaoi syl ) ABCZBDEARFZABFZGAAHIZBFZARBJSUBTSUARRHIBSARARHSOSOKLMTUABBHIB
+    TABABHTOTOKNMPQ $.
 
-  ${
-    $( Negation preserves membership in the set of two integer signs.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    m1p1negcl $p |- ( A e. { -u 1 , 1 } -> -u A e. { -u 1 , 1 } ) $=
-      ( c1 cneg cpr wcel wceq elpri negeq negneg1e1 eqtrdi prid2 eqeltrdi negex
-      wo 1ex prid1 jaoi syl ) ABCZBDZEASFZABFZNACTEZASBGUAUCUBUAACBTUAACSCBASHI
-      JSBOKLUBACSTABHSBBMPLQR $.
-  $}
+  $( Negation preserves membership in the set of two integer signs.
+     (Contributed by Zhi Wang, 20-Oct-2026.) $)
+  m1p1negcl $p |- ( A e. { -u 1 , 1 } -> -u A e. { -u 1 , 1 } ) $=
+    ( c1 cneg cpr wcel wo elpri negeq negneg1e1 eqtrdi 1ex prid2 eqeltrdi negex
+    wceq prid1 jaoi syl ) ABCZBDZEASOZABOZFACTEZASBGUAUCUBUAACBTUAACSCBASHIJSBK
+    LMUBACSTABHSBBNPMQR $.
 
-  ${
-    $( Either integer sign is nonzero.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    m1p1ne0 $p |- ( A e. { -u 1 , 1 } -> A =/= 0 ) $=
-      ( c1 cneg cpr wcel cc0 wn wne neg1ne0 necomi 0ne1 nelpri nelne2 mpan2 ) A
-      BCZBDZEFPEGAFHFOBOFIJKLAFPMN $.
-  $}
+  $( Either integer sign is nonzero.  (Contributed by Zhi Wang,
+     20-Oct-2026.) $)
+  m1p1ne0 $p |- ( A e. { -u 1 , 1 } -> A =/= 0 ) $=
+    ( c1 cneg cpr wcel cc0 wn wne neg1ne0 necomi 0ne1 nelpri nelne2 mpan2 ) ABC
+    ZBDZEFPEGAFHFOBOFIJKLAFPMN $.
 
   ${
     nnsubd.1 $e |- ( ph -> A e. NN ) $.
@@ -882583,12 +882574,10 @@ $)
       RMDEBCNOP $.
   $}
 
-  ${
-    $( Every positive integer is a nonzero integer.  (Contributed by Zhi Wang,
-       2-Nov-2026.) $)
-    nnznz $p |- ( A e. NN -> A e. ( ZZ \ { 0 } ) ) $=
-      ( cn wcel cz cc0 nnz nnne0 eldifsnd ) ABCADEAFAGH $.
-  $}
+  $( Every positive integer is a nonzero integer.  (Contributed by Zhi Wang,
+     2-Nov-2026.) $)
+  nnznz $p |- ( A e. NN -> A e. ( ZZ \ { 0 } ) ) $=
+    ( cn wcel cz cc0 nnz nnne0 eldifsnd ) ABCADEAFAGH $.
 
   ${
     $d B m $.  $d N m $.  $d ch m $.  $d k m $.  $d k ph $.
@@ -882609,7 +882598,7 @@ $)
   $}
 
   ${
-    $d M z $.  $d ph z $.  $d S x y z $.  $d M x y $.  $d ph x y $.
+    $d S x y $.  $d M x y $.  $d ph x y $.
     uzdesc0d.1 $e |- ( ph -> S C_ ( ZZ>= ` M ) ) $.
     uzdesc0d.2 $e |- ( ( ph /\ x e. S ) -> E. y e. S y < x ) $.
     $( A subset of an upper-integer ray admitting strict descent from every
@@ -882623,12 +882612,10 @@ $)
       GUHUIUTCDUJUKULAVBDNADVIRZDNUPZVBUMFVKVLVBDBCEUNUQURUOUS $.
   $}
 
-  ${
-    $( Every positive integer is a nonzero rational.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    nnqnz $p |- ( A e. NN -> A e. ( QQ \ { 0 } ) ) $=
-      ( cn wcel cq cc0 nnq nnne0 eldifsnd ) ABCADEAFAGH $.
-  $}
+  $( Every positive integer is a nonzero rational.  (Contributed by Zhi Wang,
+     27-Oct-2026.) $)
+  nnqnz $p |- ( A e. NN -> A e. ( QQ \ { 0 } ) ) $=
+    ( cn wcel cq cc0 nnq nnne0 eldifsnd ) ABCADEAFAGH $.
 
   ${
     sub3dblpd.1 $e |- ( ph -> A e. RR ) $.
@@ -882671,11 +882658,11 @@ $)
     ltmultrd.4 $e |- C e. RR $.
     ltmultrd.5 $e |- D e. RR $.
     ltmultrd.6 $e |- C <_ D $.
-    $( An upper bound on a multiple of a nonnegative real also bounds the
-       multiple by any smaller or equal real coefficient.  The closed
-       coefficient hypotheses accept real-membership and comparison facts
-       directly.  The hypothesis ` B e. RR ` is retained to avoid ~ ax-cnex .
-       (Contributed by Zhi Wang, 18-Nov-2026.) $)
+    $( If ` ( D x. A ) < B ` for a nonnegative real ` A ` , then
+       ` ( C x. A ) < B ` for any real coefficient ` C <_ D ` .  The
+       coefficient hypotheses are closed.  The hypothesis ` B e. RR ` is
+       retained to avoid ~ ax-cnex .  (Contributed by Zhi Wang,
+       18-Nov-2026.) $)
     ltmultrd $p |- ( ph -> ( C x. A ) < B ) $=
       ( cmul co cr wcel a1i cc0 cle wbr remulcld simpld simprd lemul1ad lelttrd
       ) ADBLMEBLMCADBDNOAIPZABNOZQBRSZFUAZTAEBENOAJPZUHTGADEBUEUIUHAUFUGFUBDERS
@@ -882760,23 +882747,19 @@ $)
       BBHIJCKABABDLABDMNFOP $.
   $}
 
-  ${
-    $( A number equal to minus one or one is real.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    m1p1re $p |- ( A e. { -u 1 , 1 } -> A e. RR ) $=
-      ( c1 cneg cpr cr wcel wss neg1rr 1re prssi mp2an sseli ) BCZBDZEAMEFBEFNE
-      GHIMBEJKL $.
-  $}
+  $( A number equal to minus one or one is real.  (Contributed by Zhi Wang,
+     20-Oct-2026.) $)
+  m1p1re $p |- ( A e. { -u 1 , 1 } -> A e. RR ) $=
+    ( c1 cneg cpr cr wcel wss neg1rr 1re prssi mp2an sseli ) BCZBDZEAMEFBEFNEGH
+    IMBEJKL $.
 
-  ${
-    $( A number equal to minus one or one lies between these two values.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    m1p1bnd $p |- ( A e. { -u 1 , 1 } -> ( -u 1 <_ A /\ A <_ 1 ) ) $=
-      ( c1 cneg cpr wcel wceq wo cle wbr wa elpri neg1rr leidi id breqtrrid cn0
-      1nn0 nn0negleid ax-mp jaoi eqbrtrdi 1re eqlei2 jca syl ) ABCBDEABCFZABFZG
-      ZBCAHIZABHIZJABCBKUHUIUJUFUIUGUFBCBCAHBCLMUFNZOUGBCBAHBPEBCBHIQBRSZUGNOTU
-      FUJUGUFABCBHUKULUABAUBUCTUDUE $.
-  $}
+  $( A number equal to minus one or one lies between these two values.
+     (Contributed by Zhi Wang, 20-Oct-2026.) $)
+  m1p1bnd $p |- ( A e. { -u 1 , 1 } -> ( -u 1 <_ A /\ A <_ 1 ) ) $=
+    ( c1 cneg cpr wcel wceq wo cle wbr wa elpri neg1rr leidi breqtrrid cn0 1nn0
+    id nn0negleid ax-mp jaoi eqbrtrdi 1re eqlei2 jca syl ) ABCBDEABCFZABFZGZBCA
+    HIZABHIZJABCBKUHUIUJUFUIUGUFBCBCAHBCLMUFQZNUGBCBAHBOEBCBHIPBRSZUGQNTUFUJUGU
+    FABCBHUKULUABAUBUCTUDUE $.
 
   ${
     fzoss2eld.1 $e |- ( ph -> N e. ZZ ) $.
@@ -882863,10 +882846,10 @@ $)
     fldivp1bndd.1 $e |- ( ph -> A e. NN ) $.
     fldivp1bndd.2 $e |- ( ph -> B e. RR+ ) $.
     fldivp1bndd.3 $e |- ( ph -> 1 < B ) $.
-    $( The floor of a positive integer divided by a real greater than one, plus
-       one, lies between one and the numerator.  Its product with the
-       denominator exceeds the numerator.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( For a positive integer ` A ` and a real number ` B ` greater than one,
+       adding one to the floor of ` ( A / B ) ` gives a positive integer at
+       most ` A ` .  Multiplying this integer by ` B ` gives a number strictly
+       greater than ` A ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     fldivp1bndd $p |- ( ph ->
       ( ( ( |_ ` ( A / B ) ) + 1 ) e. NN /\
         ( ( |_ ` ( A / B ) ) + 1 ) <_ A /\
@@ -883031,7 +883014,8 @@ $)
       wb dvdsval3 mtbid fzo1fzo0n0 sylanbrc ) ABCGHZICJHKZUGILUGMCJHKABNKZCOKZU
       HDEBCPQAUGIACBRSZUGITZFAUJUIUKULUBEDCBUCQUDUAUGCUEUF $.
 
-    $( The canonical residue of a negation complements a nonzero residue.
+    $( If the positive integer ` B ` does not divide the integer ` A ` , the
+       residue of ` -u A ` modulo ` B ` is ` B ` minus the residue of ` A ` .
        (Contributed by Zhi Wang, 17-Oct-2026.) $)
     negmodndvdsd $p |- ( ph -> ( -u A mod B ) = ( B - ( A mod B ) ) ) $=
       ( cmo co cneg cmin cr wcel crp wceq zred nnrpd modcld negmod syl2anc cfzo
@@ -883796,7 +883780,7 @@ $)
   $}
 
   ${
-    $d N j k t $.  $d P j k t $.
+    $d N j k $.  $d P j k $.
     $( The positive divisors of ` N ` not divisible by a prime divisor ` P `
        are unchanged when ` N ` is divided by ` P ` .  (Contributed by Zhi
        Wang, 5-Nov-2026.) $)
@@ -883866,15 +883850,13 @@ $)
       VPUJWJAWHWAAWJWHWARAWJWHWAJUKULUMUNUOULUPKUQ $.
   $}
 
-  ${
-    $( The canonical numerator of a nonzero rational is nonzero.  (Contributed
-       by Zhi Wang, 5-Nov-2026.) $)
-    qnumne0 $p |- ( A e. ( QQ \ { 0 } ) -> ( numer ` A ) =/= 0 ) $=
-      ( cq cc0 csn cdif wcel cdenom cfv cmul co cnumer wceq eldifi qmuldeneqnum
-      syl cc qcn cn qdencl nncnd eldifsni nnne0d mulne0d eqnetrrd ) ABCDEFZAAGH
-      ZIJZAKHZCUEABFZUGUHLABCDMZANOUEAUFUEUIAPFUJAQOUEUFUEUIUFRFUJASOZTABCUAUEU
-      FUKUBUCUD $.
-  $}
+  $( The canonical numerator of a nonzero rational is nonzero.  (Contributed by
+     Zhi Wang, 5-Nov-2026.) $)
+  qnumne0 $p |- ( A e. ( QQ \ { 0 } ) -> ( numer ` A ) =/= 0 ) $=
+    ( cq cc0 csn cdif wcel cdenom cfv cmul co cnumer eldifi qmuldeneqnum syl cc
+    wceq qcn cn qdencl nncnd eldifsni nnne0d mulne0d eqnetrrd ) ABCDEFZAAGHZIJZ
+    AKHZCUEABFZUGUHPABCDLZAMNUEAUFUEUIAOFUJAQNUEUFUEUIUFRFUJASNZTABCUAUEUFUKUBU
+    CUD $.
 
   ${
     modprminvmuld.1 $e |- R = ( ( A ^ ( P - 2 ) ) mod P ) $.
@@ -884151,12 +884133,10 @@ $)
       QCEUIUADEACEFRUBUCDBCUDUMUNCUEUF $.
   $}
 
-  ${
-    $( The domain of the signed prime Omega function is the set of nonzero
-       rationals.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    bomdm $p |- dom Omega = ( QQ \ { 0 } ) $=
-      ( cq cc0 csn cdif cbom bomfn fndmi ) ABCDEFG $.
-  $}
+  $( The domain of the signed prime Omega function is the set of nonzero
+     rationals.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+  bomdm $p |- dom Omega = ( QQ \ { 0 } ) $=
+    ( cq cc0 csn cdif cbom bomfn fndmi ) ABCDEFG $.
 
   ${
     $d A p q $.  $d B p $.  $d p ph $.
@@ -884177,7 +884157,7 @@ $)
   $}
 
   ${
-    $d A p q $.  $d A x $.  $d p x $.  $d q x $.
+    $d A p q $.
     $( Express the signed prime Omega function at a nonzero integer as a sum of
        prime multiplicities over its prime divisors.  For ` A e. NN ` , this
        gives the prime-factor count with multiplicity.  (Contributed by Zhi
@@ -884272,19 +884252,17 @@ $)
       ZVSSVNWFBWOCDWDWEVTYBWJWORWFWJWKWOWJWHVMYCVSSVNWAWB $.
   $}
 
-  ${
-    $( The signed prime Omega function converts a quotient of nonzero rationals
-       to a difference.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomdiv $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
-      ( Omega ` ( A / B ) ) = ( ( Omega ` A ) - ( Omega ` B ) ) ) $=
-      ( cq cc0 csn cdif wcel wa co cbom cfv eldifad eldifsnbd qcn syl ffvelcdmi
-      cz cc bomf zcnd cdiv wne simpl simpr qdivcl syl3anc divne0d eldifsnd cmul
-      caddc wceq bommul sylancom divcan1d fveq2d eqtr3d mvlraddd ) ACDEFZGZBURG
-      ZHZABUAIZJKZBJKZAJKZVAVCVAVBURGZVCQGVAVBCDVAACGZBCGZBDUBVBCGVAACDEUSUTUCZ
-      LZVABCDEUSUTUDZLZVABCDVKMZABUEUFVAABVAVGARGVJANOZVAVHBRGVLBNOZVAACDVIMVMU
-      GUHZURQVBJSPOTVAUTVDRGVKUTVDURQBJSPTOVAVBBUIIZJKZVCVDUJIZVEUSUTVFVRVSUKVP
-      VBBULUMVAVQAJVAABVNVOVMUNUOUPUQ $.
-  $}
+  $( The signed prime Omega function converts a quotient of nonzero rationals
+     to a difference.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bomdiv $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
+    ( Omega ` ( A / B ) ) = ( ( Omega ` A ) - ( Omega ` B ) ) ) $=
+    ( cq cc0 csn cdif wcel wa co cbom cfv cz eldifad eldifsnbd cc qcn ffvelcdmi
+    syl bomf zcnd cdiv wne simpl simpr syl3anc divne0d eldifsnd cmul caddc wceq
+    qdivcl bommul sylancom divcan1d fveq2d eqtr3d mvlraddd ) ACDEFZGZBURGZHZABU
+    AIZJKZBJKZAJKZVAVCVAVBURGZVCLGVAVBCDVAACGZBCGZBDUBVBCGVAACDEUSUTUCZMZVABCDE
+    USUTUDZMZVABCDVKNZABUKUEVAABVAVGAOGVJAPRZVAVHBOGVLBPRZVAACDVINVMUFUGZURLVBJ
+    SQRTVAUTVDOGVKUTVDURLBJSQTRVAVBBUHIZJKZVCVDUIIZVEUSUTVFVRVSUJVPVBBULUMVAVQA
+    JVAABVNVOVMUNUOUPUQ $.
 
   ${
     $d A p q $.  $d K p q $.
@@ -884305,43 +884283,33 @@ $)
       TWLWJBOVTAWFCDVRVSUTWTWBWFPVTWBWEVMQVLVNVO $.
   $}
 
-  ${
-    $( The signed prime Omega function of an integer power of a prime is its
-       exponent.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomprmexp $p |- ( ( P e. Prime /\ K e. ZZ ) ->
-      ( Omega ` ( P ^ K ) ) = K ) $=
-      ( cprime wcel cz wa cexp co cbom cfv cmul cq cc0 cdif wceq cn prmnn nnqnz
-      csn c1 syl bomexp sylan bomprm oveq2d zcn mulridd sylan9eq eqtrd ) ACDZBE
-      DZFABGHIJZBAIJZKHZBUJALMSNDZUKULUNOUJAPDUOAQARUAABUBUCUJUKUNBTKHBUJUMTBKA
-      UDUEUKBBUFUGUHUI $.
-  $}
+  $( The signed prime Omega function of an integer power of a prime is its
+     exponent.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bomprmexp $p |- ( ( P e. Prime /\ K e. ZZ ) -> ( Omega ` ( P ^ K ) ) = K ) $=
+    ( cprime wcel cz wa cexp co cbom cfv cmul cq cc0 csn cdif cn prmnn nnqnz c1
+    wceq syl bomexp sylan bomprm oveq2d zcn mulridd sylan9eq eqtrd ) ACDZBEDZFA
+    BGHIJZBAIJZKHZBUJALMNODZUKULUNTUJAPDUOAQARUAABUBUCUJUKUNBSKHBUJUMSBKAUDUEUK
+    BBUFUGUHUI $.
 
-  ${
-    $d p q $.
-    $( The prime Omega function has value zero at one.  (Contributed by Zhi
-       Wang, 17-Oct-2026.) $)
-    bom1 $p |- ( Omega ` 1 ) = 0 $=
-      ( c2 cc0 cexp co cbom cfv c1 2nn0 numexp0 fveq2i cprime wcel cz wceq 2prm
-      0z bomprmexp mp2an eqtr3i ) ABCDZEFZGEFBTGEAHIJAKLBMLUABNOPABQRS $.
-  $}
+  $( The prime Omega function has value zero at one.  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  bom1 $p |- ( Omega ` 1 ) = 0 $=
+    ( c2 cc0 cexp co cbom cfv c1 2nn0 numexp0 fveq2i cprime wcel wceq bomprmexp
+    cz 2prm 0z mp2an eqtr3i ) ABCDZEFZGEFBTGEAHIJAKLBOLUABMPQABNRS $.
 
-  ${
-    $( The prime Omega function at four is two.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    bom4 $p |- ( Omega ` 4 ) = 2 $=
-      ( c2 cexp co cbom cfv c4 sq2 fveq2i cprime wcel cz wceq 2prm 2z bomprmexp
-      mp2an eqtr3i ) AABCZDEZFDEARFDGHAIJAKJSALMNAAOPQ $.
-  $}
+  $( The prime Omega function at four is two.  (Contributed by Zhi Wang,
+     27-Oct-2026.) $)
+  bom4 $p |- ( Omega ` 4 ) = 2 $=
+    ( c2 cexp co cbom cfv c4 fveq2i cprime wcel cz wceq 2prm 2z bomprmexp mp2an
+    sq2 eqtr3i ) AABCZDEZFDEARFDPGAHIAJISAKLMAANOQ $.
 
-  ${
-    $( The signed prime Omega function changes sign under reciprocation.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomrec $p |- ( A e. ( QQ \ { 0 } ) ->
-      ( Omega ` ( 1 / A ) ) = -u ( Omega ` A ) ) $=
-      ( cq cc0 csn cdif wcel c1 cdiv co cbom cfv cmin cneg wceq 1nn nnqnz ax-mp
-      cn bomdiv mpan bom1 oveq1i eqtrdi df-neg eqtr4di ) ABCDEZFZGAHIJKZCAJKZLI
-      ZUIMUGUHGJKZUILIZUJGUFFZUGUHULNGRFUMOGPQGASTUKCUILUAUBUCUIUDUE $.
-  $}
+  $( The signed prime Omega function changes sign under reciprocation.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bomrec $p |- ( A e. ( QQ \ { 0 } ) ->
+    ( Omega ` ( 1 / A ) ) = -u ( Omega ` A ) ) $=
+    ( cq cc0 csn cdif wcel c1 cdiv co cbom cmin cneg wceq cn nnqnz ax-mp bomdiv
+    cfv 1nn mpan bom1 oveq1i eqtrdi df-neg eqtr4di ) ABCDEZFZGAHIJRZCAJRZKIZUIL
+    UGUHGJRZUIKIZUJGUFFZUGUHULMGNFUMSGOPGAQTUKCUIKUAUBUCUIUDUE $.
 
   ${
     $d A p q $.
@@ -884357,48 +884325,40 @@ $)
       $.
   $}
 
-  ${
-    $( Taking the absolute value of a nonzero rational does not change its
-       signed prime Omega value.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomabs $p |- ( A e. ( QQ \ { 0 } ) -> ( Omega ` ( abs ` A ) ) =
-      ( Omega ` A ) ) $=
-      ( cq cc0 csn cdif wcel cabs cfv wceq cbom cneg fveq2 a1i bomneg sylan9eqr
-      wi ex eldifi qred absord mpjaod ) ABCDEFZAGHZAIZUCJHZAJHZIZUCAKIZUDUGPUBU
-      CAJLMUBUHUGUHUBUEAKJHUFUCAKJLANOQUBAUBAABCDRSTUA $.
-  $}
+  $( Taking the absolute value of a nonzero rational does not change its signed
+     prime Omega value.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bomabs $p |- ( A e. ( QQ \ { 0 } ) -> ( Omega ` ( abs ` A ) ) =
+    ( Omega ` A ) ) $=
+    ( cq cc0 csn cdif wcel cabs cfv wceq cbom cneg wi fveq2 bomneg sylan9eqr ex
+    a1i eldifi qred absord mpjaod ) ABCDEFZAGHZAIZUCJHZAJHZIZUCAKIZUDUGLUBUCAJM
+    QUBUHUGUHUBUEAKJHUFUCAKJMANOPUBAUBAABCDRSTUA $.
 
-  ${
-    $( The signed prime Omega function at minus one is zero.  (Contributed by
-       Zhi Wang, 27-Oct-2026.) $)
-    bomneg1 $p |- ( Omega ` -u 1 ) = 0 $=
-      ( c1 cneg cbom cfv cc0 cn wcel cq csn cdif wceq 1nn nnqnz mp2b bom1 eqtri
-      bomneg ) ABCDZACDZEAFGAHEIJGRSKLAMAQNOP $.
-  $}
+  $( The signed prime Omega function at minus one is zero.  (Contributed by Zhi
+     Wang, 27-Oct-2026.) $)
+  bomneg1 $p |- ( Omega ` -u 1 ) = 0 $=
+    ( c1 cneg cbom cfv cc0 cn wcel cq csn cdif wceq 1nn nnqnz bomneg mp2b eqtri
+    bom1 ) ABCDZACDZEAFGAHEIJGRSKLAMANOQP $.
 
-  ${
-    $( The signed prime Omega function takes nonnegative integer values on
-       nonzero integers.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomzcl $p |- ( A e. ( ZZ \ { 0 } ) -> ( Omega ` A ) e. NN0 ) $=
-      ( cz cc0 csn cdif wcel cabs cfv cbom cn0 cq wceq eldifi eldifsni eldifsnd
-      zq syl bomabs cn wne nnabscl syl2anc bomnncl eqeltrrd ) ABCDEFZAGHZIHZAIH
-      ZJUEAKCDEFUGUHLUEAKCUEABFZAKFABCDMZAPQABCNZOARQUEUFSFZUGJFUEUIACTULUJUKAU
-      AUBUFUCQUD $.
-  $}
+  $( The signed prime Omega function takes nonnegative integer values on
+     nonzero integers.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bomzcl $p |- ( A e. ( ZZ \ { 0 } ) -> ( Omega ` A ) e. NN0 ) $=
+    ( cz cc0 csn cdif wcel cabs cfv cbom cn0 cq eldifi zq syl eldifsni eldifsnd
+    wceq bomabs cn wne nnabscl syl2anc bomnncl eqeltrrd ) ABCDEFZAGHZIHZAIHZJUE
+    AKCDEFUGUHQUEAKCUEABFZAKFABCDLZAMNABCOZPARNUEUFSFZUGJFUEUIACTULUJUKAUAUBUFU
+    CNUD $.
 
-  ${
-    $( The signed prime Omega value of a nonzero rational is the difference of
-       its values at the absolute numerator and denominator.  (Contributed by
-       Zhi Wang, 27-Oct-2026.) $)
-    bomnumden $p |- ( A e. ( QQ \ { 0 } ) ->
-      ( Omega ` A ) = ( ( Omega ` ( abs ` ( numer ` A ) ) ) -
-        ( Omega ` ( denom ` A ) ) ) ) $=
-      ( cq cc0 csn cdif wcel cnumer cfv cdenom cdiv co cbom cmin cabs cz eldifi
-      wceq qnumcl 3syl syl zq qnumne0 eldifsnd qdencl nnqnz bomdiv qeqnumdivden
-      cn syl2anc fveq2d bomabs oveq1d 3eqtr4d ) ABCDEZFZAGHZAIHZJKZLHZUPLHZUQLH
-      ZMKZALHUPNHLHZVAMKUOUPUNFZUQUNFZUSVBQUOUPBCUOABFZUPOFUPBFABCDPZARUPUASAUB
-      UCZUOVFUQUHFVEVGAUDUQUESUPUQUFUIUOAURLUOVFAURQVGAUGTUJUOVCUTVAMUOVDVCUTQV
-      HUPUKTULUM $.
-  $}
+  $( The signed prime Omega value of a nonzero rational is the difference of
+     its values at the absolute numerator and denominator.  (Contributed by Zhi
+     Wang, 27-Oct-2026.) $)
+  bomnumden $p |- ( A e. ( QQ \ { 0 } ) ->
+    ( Omega ` A ) = ( ( Omega ` ( abs ` ( numer ` A ) ) ) -
+      ( Omega ` ( denom ` A ) ) ) ) $=
+    ( cq cc0 csn cdif wcel cnumer cfv cdenom cdiv co cbom cmin cabs wceq eldifi
+    cz qnumcl 3syl syl zq qnumne0 eldifsnd cn qdencl nnqnz syl2anc qeqnumdivden
+    bomdiv fveq2d bomabs oveq1d 3eqtr4d ) ABCDEZFZAGHZAIHZJKZLHZUPLHZUQLHZMKZAL
+    HUPNHLHZVAMKUOUPUNFZUQUNFZUSVBOUOUPBCUOABFZUPQFUPBFABCDPZARUPUASAUBUCZUOVFU
+    QUDFVEVGAUEUQUFSUPUQUIUGUOAURLUOVFAUROVGAUHTUJUOVCUTVAMUOVDVCUTOVHUPUKTULUM
+    $.
 
   ${
     $d n p q $.
@@ -884415,75 +884375,64 @@ $)
       $.
   $}
 
-  ${
-    $( The signed prime Omega function restricted to a class of nonzero
-       integers takes nonnegative integer values.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    bomresf $p |- ( T C_ ( ZZ \ { 0 } ) -> ( Omega |` T ) : T --> NN0 ) $=
-      ( vn cz cc0 csn cdif cn0 cbom cres wf wss cv cfv cmpt wceq wtru bomf zssq
-      cq a1i ssdif mp1i feqresmpt mptru bomzcl fmpti fssres2 mpan ) CDEFZGHUIIZ
-      JAUIKAGHAIJBUIGBLHMZUJUJBUIUKNOPBSDEFZCUIHULCHJPQTCSKUIULKPRCSDEUAUBUCUDB
-      LUEUFUIGAHUGUH $.
-  $}
+  $( The signed prime Omega function restricted to a class of nonzero integers
+     takes nonnegative integer values.  (Contributed by Zhi Wang,
+     27-Oct-2026.) $)
+  bomresf $p |- ( T C_ ( ZZ \ { 0 } ) -> ( Omega |` T ) : T --> NN0 ) $=
+    ( vn cz cc0 csn cdif cn0 cbom cres wf wss cv cfv cmpt wceq wtru cq bomf a1i
+    zssq ssdif mp1i feqresmpt mptru bomzcl fmpti fssres2 mpan ) CDEFZGHUIIZJAUI
+    KAGHAIJBUIGBLHMZUJUJBUIUKNOPBQDEFZCUIHULCHJPRSCQKUIULKPTCQDEUAUBUCUDBLUEUFU
+    IGAHUGUH $.
 
-  ${
-    $( The range of the signed prime Omega function is the integers.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomrn $p |- ran Omega = ZZ $=
-      ( vx cbom crn cz cq cc0 csn cdif wf wss bomf frn ax-mp wcel cexp wne 2ne0
-      cv c2 mp3an12 co cfv cprime wceq 2prm bomprmexp mpan wfn bomfn 2z qexpclz
-      zq cc 2cn expne0i eldifsnd fnfvelrn sylancr eqeltrrd ssriv eqssi ) BCDEFG
-      HZDBIBCDJKVBDBLMADBCARDNZSAROUAZBUBZARBCSUCNVCVEARUDUESARUFUGVCBVBUHVDVBN
-      VEBCNUIVCVDEFSENZSFPZVCVDENSDNVFUJSULMQSARUKTSUMNVGVCVDFPUNQSARUOTUPVBVDB
-      UQURUSUTVA $.
-  $}
+  $( The range of the signed prime Omega function is the integers.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bomrn $p |- ran Omega = ZZ $=
+    ( vx cbom crn cz cq cc0 csn cdif wf wss bomf frn ax-mp cv wcel c2 cexp 2ne0
+    wne mp3an12 co cfv cprime wceq 2prm bomprmexp mpan wfn bomfn 2z qexpclz 2cn
+    zq cc expne0i eldifsnd fnfvelrn sylancr eqeltrrd ssriv eqssi ) BCDEFGHZDBIB
+    CDJKVBDBLMADBCANDOZPANQUAZBUBZANBCPUCOVCVEANUDUEPANUFUGVCBVBUHVDVBOVEBCOUIV
+    CVDEFPEOZPFSZVCVDEOPDOVFUJPUMMRPANUKTPUNOVGVCVDFSULRPANUOTUPVBVDBUQURUSUTVA
+    $.
 
-  ${
-    $( The signed prime Omega function is nondecreasing under divisibility of
-       nonzero integers.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomdvdsle $p |- ( ( N =/= 0 /\ M || N ) ->
-      ( Omega ` M ) <_ ( Omega ` N ) ) $=
-      ( cc0 wne cdvds wbr wa cbom cfv co cn0 wcel cq cz syl eldifsnd wb syl2anc
-      cdif bomzcl cle cmin cdiv csn simpr dvdszrcl simprd zq simpl simpld 0dvds
-      wceq necon3bbid mpbird nbrne2 bomdiv dvdsval2 syl3anc mpbid zcnd eqeltrrd
-      wn divne0d nn0sub ) BCDZABEFZGZAHIZBHIZUAFZVIVHUBJZKLZVGBAUCJZHIZVKKVGBMC
-      UDZSZLAVPLVNVKULVGBMCVGBNLZBMLVGANLZVQVGVFVRVQGVEVFUEZABUFOZUGZBUHOVEVFUI
-      ZPVGAMCVGVRAMLVGVRVQVTUJZAUHOVGVFCBEFZVBZACDZVSVGWEVEWBVGWDBCVGVQWDBCULQW
-      ABUKOUMUNACBEUORZPBAUPRVGVMNVOSZLVNKLVGVMNCVGVFVMNLZVSVGVRWFVQVFWIQWCWGWA
-      ABUQURUSVGBAVGBWAUTVGAWCUTWBWGVCPVMTOVAVGVHKLZVIKLZVJVLQVGAWHLWJVGANCWCWG
-      PATOVGBWHLWKVGBNCWAWBPBTOVHVIVDRUN $.
-  $}
+  $( The signed prime Omega function is nondecreasing under divisibility of
+     nonzero integers.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bomdvdsle $p |- ( ( N =/= 0 /\ M || N ) ->
+    ( Omega ` M ) <_ ( Omega ` N ) ) $=
+    ( cc0 wne cdvds wbr wa cbom cfv co cn0 wcel cq cdif cz syl eldifsnd syl2anc
+    wb bomzcl cle cmin cdiv wceq simpr dvdszrcl simprd zq simpl simpld wn 0dvds
+    csn necon3bbid mpbird nbrne2 bomdiv dvdsval2 syl3anc mpbid divne0d eqeltrrd
+    zcnd nn0sub ) BCDZABEFZGZAHIZBHIZUAFZVIVHUBJZKLZVGBAUCJZHIZVKKVGBMCUMZNZLAV
+    PLVNVKUDVGBMCVGBOLZBMLVGAOLZVQVGVFVRVQGVEVFUEZABUFPZUGZBUHPVEVFUIZQVGAMCVGV
+    RAMLVGVRVQVTUJZAUHPVGVFCBEFZUKZACDZVSVGWEVEWBVGWDBCVGVQWDBCUDSWABULPUNUOACB
+    EUPRZQBAUQRVGVMOVONZLVNKLVGVMOCVGVFVMOLZVSVGVRWFVQVFWISWCWGWAABURUSUTVGBAVG
+    BWAVCVGAWCVCWBWGVAQVMTPVBVGVHKLZVIKLZVJVLSVGAWHLWJVGAOCWCWGQATPVGBWHLWKVGBO
+    CWAWBQBTPVHVIVDRUO $.
 
-  ${
-    $( For two nonzero integers, the sum of their signed prime Omega values
-       equals the sum of the corresponding values at their gcd and lcm.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomgcdlcm $p |- ( ( M e. ( ZZ \ { 0 } ) /\ N e. ( ZZ \ { 0 } ) ) ->
-      ( ( Omega ` ( M gcd N ) ) + ( Omega ` ( M lcm N ) ) ) =
-      ( ( Omega ` M ) + ( Omega ` N ) ) ) $=
-      ( cz cc0 cdif wcel wa co cmul cbom cfv caddc wceq wne eldifad syl2anc syl
-      cn cq eldifsnd csn cgcd clcm simpl simpr eldifsnbd gcd2n0cl syl3anc wo wn
-      cabs neanior sylib lcmn0cl nnmulcom lcmgcd eqtrd fveq2d zq qmulcl mulne0d
-      jca zcnd bomabs nnqnz bommul 3eqtr3d ) ACDUAZEZFZBVIFZGZABUBHZABUCHZIHZJK
-      ZABIHZJKZVMJKVNJKLHZAJKBJKLHZVLVPVQUKKZJKZVRVLVOWAJVLVOVNVMIHZWAVLVMRFZVN
-      RFZVOWCMVLACFZBCFZBDNZWDVLACVHVJVKUDZOZVLBCVHVJVKUEZOZVLBCDWKUFZABUGUHZVL
-      WFWGGZADMBDMUIUJZWEVLWFWGWJWLVBZVLADNZWHGWPVLWRWHVLACDWIUFZWMVBADBDULUMAB
-      UNPZVMVNUOPVLWOWCWAMWQABUPQUQURVLVQSVHEZFWBVRMVLVQSDVLASFZBSFZVQSFVLWFXBW
-      JAUSQZVLWGXCWLBUSQZABUTPVLABVLAWJVCVLBWLVCWSWMVATVQVDQUQVLVMXAFZVNXAFZVPV
-      SMVLWDXFWNVMVEQVLWEXGWTVNVEQVMVNVFPVLAXAFBXAFVRVTMVLASDXDWSTVLBSDXEWMTABV
-      FPVG $.
-  $}
+  $( For two nonzero integers, the sum of their signed prime Omega values
+     equals the sum of the corresponding values at their gcd and lcm.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bomgcdlcm $p |- ( ( M e. ( ZZ \ { 0 } ) /\ N e. ( ZZ \ { 0 } ) ) ->
+    ( ( Omega ` ( M gcd N ) ) + ( Omega ` ( M lcm N ) ) ) =
+    ( ( Omega ` M ) + ( Omega ` N ) ) ) $=
+    ( cz cc0 cdif wcel wa co cmul cbom cfv caddc cn wceq wne eldifad syl2anc cq
+    syl eldifsnd csn cgcd clcm simpl simpr eldifsnbd gcd2n0cl syl3anc wo wn jca
+    cabs neanior sylib lcmn0cl nnmulcom lcmgcd eqtrd fveq2d qmulcl zcnd mulne0d
+    zq bomabs nnqnz bommul 3eqtr3d ) ACDUAZEZFZBVIFZGZABUBHZABUCHZIHZJKZABIHZJK
+    ZVMJKVNJKLHZAJKBJKLHZVLVPVQULKZJKZVRVLVOWAJVLVOVNVMIHZWAVLVMMFZVNMFZVOWCNVL
+    ACFZBCFZBDOZWDVLACVHVJVKUDZPZVLBCVHVJVKUEZPZVLBCDWKUFZABUGUHZVLWFWGGZADNBDN
+    UIUJZWEVLWFWGWJWLUKZVLADOZWHGWPVLWRWHVLACDWIUFZWMUKADBDUMUNABUOQZVMVNUPQVLW
+    OWCWANWQABUQSURUSVLVQRVHEZFWBVRNVLVQRDVLARFZBRFZVQRFVLWFXBWJAVCSZVLWGXCWLBV
+    CSZABUTQVLABVLAWJVAVLBWLVAWSWMVBTVQVDSURVLVMXAFZVNXAFZVPVSNVLWDXFWNVMVESVLW
+    EXGWTVNVESVMVNVFQVLAXAFBXAFVRVTNVLARDXDWSTVLBRDXEWMTABVFQVG $.
 
-  ${
-    $( Every prime valuation of a nonzero integer is bounded by its signed
-       prime Omega value.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bompc $p |- ( ( P e. Prime /\ N e. ( ZZ \ { 0 } ) ) ->
-      ( P pCnt N ) <_ ( Omega ` N ) ) $=
-      ( cz cc0 csn cdif wcel cprime wne wa cpc co cbom cfv cle wbr eldifsn cexp
-      wceq pczcl nn0zd bomprmexp syldan cdvds pczdvds bomdvdsle syl2an2 breq1dd
-      simpr sylan2b ) BCDEFGAHGZBCGZBDIZJZABKLZBMNZOPBCDQUKUNJZAUORLZMNZUOUPOUK
-      UNUOCGUSUOSUQUOABTUAAUOUBUCUNUMUKURBUDPUSUPOPULUMUIABUEURBUFUGUHUJ $.
-  $}
+  $( Every prime valuation of a nonzero integer is bounded by its signed prime
+     Omega value.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bompc $p |- ( ( P e. Prime /\ N e. ( ZZ \ { 0 } ) ) ->
+    ( P pCnt N ) <_ ( Omega ` N ) ) $=
+    ( cz cc0 csn cdif wcel cprime wne wa cpc cbom cfv cle wbr eldifsn cexp wceq
+    co pczcl nn0zd bomprmexp syldan cdvds simpr pczdvds syl2an2 breq1dd sylan2b
+    bomdvdsle ) BCDEFGAHGZBCGZBDIZJZABKSZBLMZNOBCDPUKUNJZAUOQSZLMZUOUPNUKUNUOCG
+    USUORUQUOABTUAAUOUBUCUNUMUKURBUDOUSUPNOULUMUEABUFURBUJUGUHUI $.
 
   ${
     $d N p $.
@@ -884499,33 +884448,29 @@ $)
       EUQUTURVA $.
   $}
 
-  ${
-    $( The prime Omega function of a positive integer is positive exactly when
-       the input exceeds one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomnnpos $p |- ( A e. NN -> ( 0 < ( Omega ` A ) <-> 1 < A ) ) $=
-      ( cn wcel cbom cfv cc0 wne c1 clt bomnn0 necon3bid bomnncl nn0red nn0ge0d
-      wbr 0red leltned nngt1ne1 3bitr4d ) ABCZADEZFGAHGFUAIOHAIOTUAFAHAJKTFUATP
-      TUAALMTUAALNQARS $.
-  $}
+  $( The prime Omega function of a positive integer is positive exactly when
+     the input exceeds one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bomnnpos $p |- ( A e. NN -> ( 0 < ( Omega ` A ) <-> 1 < A ) ) $=
+    ( cn wcel cbom cfv cc0 wne c1 clt wbr bomnn0 necon3bid 0red bomnncl nn0ge0d
+    nn0red leltned nngt1ne1 3bitr4d ) ABCZADEZFGAHGFUAIJHAIJTUAFAHAKLTFUATMTUAA
+    NPTUAANOQARS $.
 
-  ${
-    $( The prime Omega function increases strictly along proper divisibility of
-       positive integers.  If one nonzero integer divides another of different
-       absolute value, the same strict inequality follows by applying this
-       theorem to their absolute values using ~ absdvdsb , ~ dvdsabsb , and
-       ~ bomabs .  The positive-integer form applies directly to the prime
-       divisors in ~ bomnn1 .  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomdvdslt $p |- ( ( ( M e. NN /\ N e. NN ) /\ ( M || N /\ M =/= N ) ) ->
-      ( Omega ` M ) < ( Omega ` N ) ) $=
-      ( cn wcel wa wbr wne cbom cfv clt cc0 co c1 nncnd wb syl2anc mpbird nnqnz
-      syl cr cdvds cmin simplr simpll nnne0d simprr necomd divne1d simprl mpbid
-      cdiv nndivdvds bomnnpos nngt1ne1 bitrd cq csn cdif bomdiv breqtrd bomnncl
-      wceq nn0red posdifd ) ACDZBCDZEZABUAFZABGZEZEZAHIZBHIZJFKVMVLUBLZJFVKKBAU
-      KLZHIZVNJVKKVPJFZVOMGZVKBAVKBVEVFVJUCZNVKAVEVFVJUDZNVKAVTUEVKABVGVHVIUFUG
-      UHVKVOCDZVQVROVKVHWAVGVHVIUIVKVFVEVHWAOVSVTBAULPUJWAVQMVOJFVRVOUMVOUNUOSQ
-      VKBUPKUQURZDZAWBDZVPVNVBVKVFWCVSBRSVKVEWDVTARSBAUSPUTVKVLVMVKVEVLTDVTVEVL
-      AVAVCSVKVFVMTDVSVFVMBVAVCSVDQ $.
-  $}
+  $( The prime Omega function increases strictly along proper divisibility of
+     positive integers.  If one nonzero integer divides another of different
+     absolute value, the same strict inequality follows by applying this
+     theorem to their absolute values using ~ absdvdsb , ~ dvdsabsb , and
+     ~ bomabs .  The positive-integer form applies directly to the prime
+     divisors in ~ bomnn1 .  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bomdvdslt $p |- ( ( ( M e. NN /\ N e. NN ) /\ ( M || N /\ M =/= N ) ) ->
+    ( Omega ` M ) < ( Omega ` N ) ) $=
+    ( cn wcel wa wbr wne cfv clt cc0 co c1 nncnd wb syl2anc syl mpbird nnqnz cr
+    cbom cdvds cmin simplr simpll nnne0d simprr necomd divne1d simprl nndivdvds
+    cdiv mpbid bomnnpos nngt1ne1 cq csn cdif wceq bomdiv breqtrd bomnncl nn0red
+    bitrd posdifd ) ACDZBCDZEZABUAFZABGZEZEZATHZBTHZIFJVMVLUBKZIFVKJBAUKKZTHZVN
+    IVKJVPIFZVOLGZVKBAVKBVEVFVJUCZMVKAVEVFVJUDZMVKAVTUEVKABVGVHVIUFUGUHVKVOCDZV
+    QVRNVKVHWAVGVHVIUIVKVFVEVHWANVSVTBAUJOULWAVQLVOIFVRVOUMVOUNVCPQVKBUOJUPUQZD
+    ZAWBDZVPVNURVKVFWCVSBRPVKVEWDVTARPBAUSOUTVKVLVMVKVEVLSDVTVEVLAVAVBPVKVFVMSD
+    VSVFVMBVAVBPVDQ $.
 
   ${
     $d N p $.
@@ -884564,19 +884509,17 @@ $)
       VRWQVRWMWQVSVTVTMXPBWNWRXPWAYHYDWBWCWDWEWF $.
   $}
 
-  ${
-    $( The prime Omega function of a positive integer is bounded by its
-       base-two logarithm.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomlelog $p |- ( N e. NN -> ( Omega ` N ) <_ ( 2 logb N ) ) $=
-      ( cn wcel c2 cbom cfv cexp co clogb cle cuz cz wceq 2z uzid ax-mp bomnncl
-      sylancr wbr crp nn0zd nnlogbexp bomexp2le wb rpexpcl nnrp logbleb mp3an2i
-      2rp mpbid breq1dd ) ABCZDDAEFZGHZIHZUMDAIHZJULDDKFCZUMLCZUOUMMDLCUQNDOPZU
-      LUMAQUAZDUMUBRULUNAJSZUOUPJSZAUCUQULUNTCZATCVAVBUDUSULDTCURVCUIUTDUMUERAU
-      FDUNAUGUHUJUK $.
-  $}
+  $( The prime Omega function of a positive integer is bounded by its base-two
+     logarithm.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  bomlelog $p |- ( N e. NN -> ( Omega ` N ) <_ ( 2 logb N ) ) $=
+    ( cn wcel c2 cbom cfv cexp co clogb cle cuz cz wceq 2z uzid bomnncl sylancr
+    ax-mp wbr crp nn0zd nnlogbexp bomexp2le wb 2rp rpexpcl nnrp logbleb mp3an2i
+    mpbid breq1dd ) ABCZDDAEFZGHZIHZUMDAIHZJULDDKFCZUMLCZUOUMMDLCUQNDORZULUMAPU
+    AZDUMUBQULUNAJSZUOUPJSZAUCUQULUNTCZATCVAVBUDUSULDTCURVCUEUTDUMUFQAUGDUNAUHU
+    IUJUK $.
 
   ${
-    $d u v z $.  $d F j k u v y $.  $d F k x y z $.  $d J k x y z $.
+    $d u v z $.  $d F k u v y $.  $d F k x y z $.  $d J k x y z $.
     $( The signed prime Omega function maps finite products of nonzero
        rationals to sums.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     bomprod $p |- ( ( J e. Fin /\ F : J --> ( QQ \ { 0 } ) ) ->
@@ -884612,8 +884555,7 @@ $)
   $}
 
   ${
-    $d F a b c t y $.  $d F b c d t y $.  $d F a b n t x y z $.
-    $d F n p t x y z $.  $d F p q x $.  $d d t y z $.
+    $d F a b t x y z $.  $d F p t x y z $.
     $( Characterize the signed prime Omega function among complex-valued
        functions on the nonzero rationals by complete additivity and the value
        one on primes.  Prime factorization determines the values on positive
@@ -884693,91 +884635,86 @@ $)
   $( Liouville's function, defined in ~ df-liou . $)
   cliou $a class lam $.
 
-  ${
-    $( Define Liouville's function on the rationals, extending its
-       positive-integer definition and assigning value zero at zero.  On
-       nonzero inputs its value is minus one raised to the value of the signed
-       prime Omega function; see ~ liouval .
+  $( Define Liouville's function on the rationals, extending its
+     positive-integer definition and assigning value zero at zero.  On nonzero
+     inputs its value is minus one raised to the value of the signed prime
+     Omega function; see ~ liouval .
 
-       The name "Liouville's function" is used both for this rational extension
-       and for its positive-integer restriction.  Domain qualifiers are
-       included when a comparison needs the distinction.
+     The name "Liouville's function" is used both for this rational extension
+     and for its positive-integer restriction.  Domain qualifiers are included
+     when a comparison needs the distinction.
 
-       For positive integers, Liouville's function has value one when the
-       number of prime factors counted with multiplicity is even, and minus one
-       when it is odd; see ~ lioueq1 and ~ lioueqm1 for the corresponding
-       criteria on nonzero rationals.  See T. M. Apostol, "Introduction to
-       Analytic Number Theory" (1976), section 2.12, p. 37,
-       ~ https://doi.org/10.1007/978-1-4757-5579-4 .
+     For positive integers, Liouville's function has value one when the number
+     of prime factors counted with multiplicity is even, and minus one when it
+     is odd; see ~ lioueq1 and ~ lioueqm1 for the corresponding criteria on
+     nonzero rationals.  See T. M. Apostol, "Introduction to Analytic Number
+     Theory" (1976), section 2.12, p. 37,
+     ~ https://doi.org/10.1007/978-1-4757-5579-4 .
 
-       Hajdu and Hajdu, "On the Liouville function on rational polynomial
-       values" (2021), section 1, ~ https://doi.org/10.4064/aa200706-31-5 ,
-       extend the positive-integer function to positive rationals by
-       ` ( lam `` ( n / k ) ) = ( ( lam `` n ) / ( lam `` k ) ) ` for
-       ` n , k e. NN ` .  To obtain the formula used here, observe that the
-       prime valuations in ~ df-bom subtract denominator multiplicities, so
-       ` ( Omega `` ( n / k ) ) = ( ( Omega `` n ) - ( Omega `` k ) ) ` by
-       ~ bomdiv .  Consequently, the quotient of the two positive-integer
-       values of Liouville's function is
-       ` ( ( -u 1 ^ ( Omega `` n ) ) / ( -u 1 ^ ( Omega `` k ) ) ) `
-       ` = ( -u 1 ^ ( ( Omega `` n ) - ( Omega `` k ) ) ) `
-       ` = ( -u 1 ^ ( Omega `` ( n / k ) ) ) ` .  Common factors cancel in the
-       difference, so the fraction need not be reduced.  The product version is
-       ~ lioudiv ; the nonzero values have square one by ~ liouvalsq .
+     Hajdu and Hajdu, "On the Liouville function on rational polynomial values"
+     (2021), section 1, ~ https://doi.org/10.4064/aa200706-31-5 , extend the
+     positive-integer function to positive rationals by
+     ` ( lam `` ( n / k ) ) = ( ( lam `` n ) / ( lam `` k ) ) ` for
+     ` n , k e. NN ` .  To obtain the formula used here, observe that the prime
+     valuations in ~ df-bom subtract denominator multiplicities, so
+     ` ( Omega `` ( n / k ) ) = ( ( Omega `` n ) - ( Omega `` k ) ) ` by
+     ~ bomdiv .  Consequently, the quotient of the two positive-integer values
+     of Liouville's function is
+     ` ( ( -u 1 ^ ( Omega `` n ) ) / ( -u 1 ^ ( Omega `` k ) ) ) `
+     ` = ( -u 1 ^ ( ( Omega `` n ) - ( Omega `` k ) ) ) `
+     ` = ( -u 1 ^ ( Omega `` ( n / k ) ) ) ` .  Common factors cancel in the
+     difference, so the fraction need not be reduced.  The product version is
+     ~ lioudiv ; the nonzero values have square one by ~ liouvalsq .
 
-       Immediately before Theorem 2.4, the same paper extends the function to
-       negative rationals by ` ( lam `` x ) = ( lam `` ( -u x ) ) ` .  The
-       signed prime Omega values are unchanged by negating a nonzero rational
-       ( ~ bomneg ), so the same exponential formula gives this convention too;
-       see ~ liouneg .
+     Immediately before Theorem 2.4, the same paper extends the function to
+     negative rationals by ` ( lam `` x ) = ( lam `` ( -u x ) ) ` .  The signed
+     prime Omega values are unchanged by negating a nonzero rational
+     ( ~ bomneg ), so the same exponential formula gives this convention too;
+     see ~ liouneg .
 
-       The value at zero is a separate convention, following Helfgott's choice
-       for integer inputs in "The parity problem for reducible cubic forms"
-       (2006), introduction after equation (1.1),
-       ~ https://arxiv.org/abs/math/0408142 .  Since ` Omega ` is defined only
-       on nonzero rationals, the explicit zero branch extends the function to
-       all of ` QQ ` .  Complete multiplicativity on rationals is ~ lioumul ;
-       ~ liouuniq2 shows how it determines the value at zero once the nonzero
-       evaluations are fixed.
+     The value at zero is a separate convention, following Helfgott's choice
+     for integer inputs in "The parity problem for reducible cubic forms"
+     (2006), introduction after equation (1.1),
+     ~ https://arxiv.org/abs/math/0408142 .  Since ` Omega ` is defined only on
+     nonzero rationals, the explicit zero branch extends the function to all of
+     ` QQ ` .  Complete multiplicativity on rationals is ~ lioumul ;
+     ~ liouuniq2 shows how it determines the value at zero once the nonzero
+     evaluations are fixed.
 
-       The function defined here differs from the "Liouville function of the
-       first kind" proposed by A. Vieru in section 7, p. 22 of
-       arXiv:1306.0496v4 (2015 revision of the 2013 preprint),
-       ~ https://arxiv.org/pdf/1306.0496v4#page=22 .  His equal-count clause
-       assigns to a fraction the negative of Liouville's function at its
-       denominator.  Thus it gives minus one at ` ( 4 / 9 ) ` : both integer
-       prime-factor counts are two, and the value of Liouville's function at
-       nine is one.  The defining formula here gives one at that fraction,
-       since its signed prime Omega value is zero.  The two prescriptions
-       therefore disagree where that proposal gives an explicit rule.  On p. 23
-       the same source proposes a second kind: value one when the two
-       prime-factor counts differ by one, and minus one when they are equal.
-       This also gives minus one at ` ( 4 / 9 ) ` .  The following note leaves
-       larger count differences undecided.  Neither partial prescription is
-       adopted as a complete rational extension.  The first prescription also
-       needs a convention for choosing the fraction's numerator and
-       denominator: without one, the equal fractions one over one and two over
-       two receive opposite values.
+     The function defined here differs from the "Liouville function of the
+     first kind" proposed by A. Vieru in section 7, p. 22 of arXiv:1306.0496v4
+     (2015 revision of the 2013 preprint),
+     ~ https://arxiv.org/pdf/1306.0496v4#page=22 .  His equal-count clause
+     assigns to a fraction the negative of Liouville's function at its
+     denominator.  Thus it gives minus one at ` ( 4 / 9 ) ` : both integer
+     prime-factor counts are two, and the value of Liouville's function at nine
+     is one.  The defining formula here gives one at that fraction, since its
+     signed prime Omega value is zero.  The two prescriptions therefore
+     disagree where that proposal gives an explicit rule.  On p. 23 the same
+     source proposes a second kind: value one when the two prime-factor counts
+     differ by one, and minus one when they are equal.  This also gives minus
+     one at ` ( 4 / 9 ) ` .  The following note leaves larger count differences
+     undecided.  Neither partial prescription is adopted as a complete rational
+     extension.  The first prescription also needs a convention for choosing
+     the fraction's numerator and denominator: without one, the equal fractions
+     one over one and two over two receive opposite values.
 
-       A different completely multiplicative rational extension of the
-       positive-integer function is obtained by multiplying by signum; see
-       ~ lioununiq .  It is excluded here by the normalization at minus one in
-       ~ liouuniq .
+     A different completely multiplicative rational extension of the
+     positive-integer function is obtained by multiplying by signum; see
+     ~ lioununiq .  It is excluded here by the normalization at minus one in
+     ~ liouuniq .
 
-       For evaluations at zero, one, and primes see ~ liou0 , ~ liou1 , and
-       ~ liouprm .  The Goldbach applications are ~ liougb4 and ~ liougb .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    df-liou $a |- lam = ( x e. QQ |->
-      if ( x = 0 , 0 , ( -u 1 ^ ( Omega ` x ) ) ) ) $.
-  $}
+     For evaluations at zero, one, and primes see ~ liou0 , ~ liou1 , and
+     ~ liouprm .  The Goldbach applications are ~ liougb4 and ~ liougb .
+     (Contributed by Zhi Wang, 17-Oct-2026.) $)
+  df-liou $a |- lam = ( x e. QQ |->
+    if ( x = 0 , 0 , ( -u 1 ^ ( Omega ` x ) ) ) ) $.
 
-  ${
-    $( Liouville's function is defined on exactly the rationals.  (Contributed
-       by Zhi Wang, 17-Oct-2026.) $)
-    lioufn $p |- lam Fn QQ $=
-      ( vx cq cv cc0 wceq c1 cneg cbom cfv cexp co cliou c0ex ovex ifex df-liou
-      cif fnmpti ) ABACDEZDFGACHIZJKZQLSDUAMFGTJNOAPR $.
-  $}
+  $( Liouville's function is defined on exactly the rationals.  (Contributed by
+     Zhi Wang, 17-Oct-2026.) $)
+  lioufn $p |- lam Fn QQ $=
+    ( vx cq cv cc0 wceq c1 cneg cbom cfv cexp co cliou c0ex ovex df-liou fnmpti
+    cif ifex ) ABACDEZDFGACHIZJKZQLSDUAMFGTJNRAOP $.
 
   ${
     $d A x $.
@@ -884791,418 +884728,329 @@ $)
       LMNBCAEZUDUGUFUIDBCADOUJUEUHFGJBCAHPQRBSUGDUITFGUHJUAUBUC $.
   $}
 
-  ${
-    $( The domain of Liouville's function is the rationals.  (Contributed by
-       Zhi Wang, 17-Oct-2026.) $)
-    lioudm $p |- dom lam = QQ $=
-      ( cq cliou lioufn fndmi ) ABCD $.
-  $}
+  $( The domain of Liouville's function is the rationals.  (Contributed by Zhi
+     Wang, 17-Oct-2026.) $)
+  lioudm $p |- dom lam = QQ $=
+    ( cq cliou lioufn fndmi ) ABCD $.
 
-  ${
-    $( At a nonzero rational input, Liouville's function equals minus one
-       raised to the signed prime Omega value.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liouval $p |- ( A e. ( QQ \ { 0 } ) ->
-      ( lam ` A ) = ( -u 1 ^ ( Omega ` A ) ) ) $=
-      ( cq cc0 csn cdif wcel cliou cfv wceq c1 cneg cbom co cif eldifi liouval0
-      cexp syl eldifsnneq iffalsed eqtrd ) ABCDEFZAGHZACIZCJKALHQMZNZUEUBABFUCU
-      FIABCDOAPRUBUDCUEABCSTUA $.
-  $}
+  $( At a nonzero rational input, Liouville's function equals minus one raised
+     to the signed prime Omega value.  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  liouval $p |- ( A e. ( QQ \ { 0 } ) ->
+    ( lam ` A ) = ( -u 1 ^ ( Omega ` A ) ) ) $=
+    ( cq cc0 csn cdif wcel cliou cfv wceq c1 cneg cbom cexp cif eldifi liouval0
+    co syl eldifsnneq iffalsed eqtrd ) ABCDEFZAGHZACIZCJKALHMQZNZUEUBABFUCUFIAB
+    CDOAPRUBUDCUEABCSTUA $.
 
-  ${
-    $( Liouville's function has value zero at zero.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou0 $p |- ( lam ` 0 ) = 0 $=
-      ( cc0 cliou cfv wceq c1 cneg cbom cexp co cif cz wcel cq 0z liouval0 mp2b
-      zq eqid iftruei eqtri ) ABCZAADZAEFAGCHIZJZAAKLAMLUAUDDNAQAOPUBAUCARST $.
-  $}
+  $( Liouville's function has value zero at zero.  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  liou0 $p |- ( lam ` 0 ) = 0 $=
+    ( cc0 cliou cfv wceq c1 cneg cbom cexp co cif cz wcel cq liouval0 mp2b eqid
+    0z zq iftruei eqtri ) ABCZAADZAEFAGCHIZJZAAKLAMLUAUDDQARANOUBAUCAPST $.
 
-  ${
-    $( Liouville's function takes one of two signs on nonzero rationals.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liounzcl $p |- ( A e. ( QQ \ { 0 } ) -> ( lam ` A ) e. { -u 1 , 1 } ) $=
-      ( cq cc0 csn cdif wcel cliou cfv c1 cneg cbom cexp co cpr liouval cz bomf
-      ffvelcdmi m1expcl2 syl eqeltrd ) ABCDEZFZAGHIJAKHZLMZIJINZAOUCUDPFUEUFFUB
-      PAKQRUDSTUA $.
-  $}
+  $( Liouville's function takes one of two signs on nonzero rationals.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liounzcl $p |- ( A e. ( QQ \ { 0 } ) -> ( lam ` A ) e. { -u 1 , 1 } ) $=
+    ( cq cc0 csn cdif wcel cliou cfv c1 cneg cbom cexp co cpr liouval ffvelcdmi
+    cz bomf m1expcl2 syl eqeltrd ) ABCDEZFZAGHIJAKHZLMZIJINZAOUCUDQFUEUFFUBQAKR
+    PUDSTUA $.
 
-  ${
-    $( A nonzero value of Liouville's function has a nonzero argument.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioune0 $p |- ( ( lam ` A ) =/= 0 -> A =/= 0 ) $=
-      ( cc0 cliou cfv wceq fveq2 liou0 eqtrdi necon3i ) ABACDZBABEJBCDBABCFGHI
-      $.
-  $}
+  $( A nonzero value of Liouville's function has a nonzero argument.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  lioune0 $p |- ( ( lam ` A ) =/= 0 -> A =/= 0 ) $=
+    ( cc0 cliou cfv wceq fveq2 liou0 eqtrdi necon3i ) ABACDZBABEJBCDBABCFGHI $.
 
-  ${
-    $( An argument where Liouville's function is one is nonzero.  (Contributed
-       by Zhi Wang, 27-Oct-2026.) $)
-    liou1ne0 $p |- ( ( lam ` A ) = 1 -> A =/= 0 ) $=
-      ( cliou cfv c1 wceq cc0 wne ax-1ne0 neeq1 mpbiri lioune0 syl ) ABCZDEZMFG
-      ZAFGNODFGHMDFIJAKL $.
-  $}
+  $( An argument where Liouville's function is one is nonzero.  (Contributed by
+     Zhi Wang, 27-Oct-2026.) $)
+  liou1ne0 $p |- ( ( lam ` A ) = 1 -> A =/= 0 ) $=
+    ( cliou cfv c1 wceq cc0 wne ax-1ne0 neeq1 mpbiri lioune0 syl ) ABCZDEZMFGZA
+    FGNODFGHMDFIJAKL $.
 
-  ${
-    $( An argument where Liouville's function is minus one is nonzero.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioum1ne0 $p |- ( ( lam ` A ) = -u 1 -> A =/= 0 ) $=
-      ( cliou cfv c1 cneg wceq cc0 wne neg1ne0 neeq1 mpbiri lioune0 syl ) ABCZD
-      EZFZNGHZAGHPQOGHINOGJKALM $.
-  $}
+  $( An argument where Liouville's function is minus one is nonzero.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  lioum1ne0 $p |- ( ( lam ` A ) = -u 1 -> A =/= 0 ) $=
+    ( cliou cfv c1 cneg wceq cc0 wne neg1ne0 neeq1 mpbiri lioune0 syl ) ABCZDEZ
+    FZNGHZAGHPQOGHINOGJKALM $.
 
-  ${
-    $( Liouville's function vanishes at a rational input exactly when the input
-       is zero.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioueq0 $p |- ( A e. QQ -> ( ( lam ` A ) = 0 <-> A = 0 ) ) $=
-      ( cq wcel cliou cfv cc0 wne lioune0 wa cneg cpr csn cdif eldifsn liounzcl
-      c1 sylbir m1p1ne0 syl ex impbid2 necon4bid ) ABCZADEZFAFUCUDFGZAFGZAHUCUF
-      UEUCUFIZUDPJPKCZUEUGABFLMCUHABFNAOQUDRSTUAUB $.
-  $}
+  $( Liouville's function vanishes at a rational input exactly when the input
+     is zero.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  lioueq0 $p |- ( A e. QQ -> ( ( lam ` A ) = 0 <-> A = 0 ) ) $=
+    ( cq wcel cliou cfv cc0 wne lioune0 wa c1 cneg cpr csn cdif liounzcl sylbir
+    eldifsn m1p1ne0 syl ex impbid2 necon4bid ) ABCZADEZFAFUCUDFGZAFGZAHUCUFUEUC
+    UFIZUDJKJLCZUEUGABFMNCUHABFQAOPUDRSTUAUB $.
 
-  ${
-    $( The zero fiber of Liouville's function on the rationals is the singleton
-       zero.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioueq0sn $p |- { x e. QQ | ( lam ` x ) = 0 } = { 0 } $=
-      ( cv cliou cfv cc0 wceq cq crab csn lioueq0 rabbiia cz wcel 0z rabsn mp2b
-      zq eqtri ) ABZCDEFZAGHSEFZAGHZEITUAAGSJKELMEGMUBEIFNEQAGEOPR $.
-  $}
+  $( The zero fiber of Liouville's function on the rationals is the singleton
+     zero.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  lioueq0sn $p |- { x e. QQ | ( lam ` x ) = 0 } = { 0 } $=
+    ( cv cliou cfv cc0 wceq cq crab lioueq0 rabbiia cz wcel 0z rabsn mp2b eqtri
+    csn zq ) ABZCDEFZAGHSEFZAGHZEQTUAAGSIJEKLEGLUBEQFMERAGENOP $.
 
-  ${
-    $( Liouville's function maps the rationals to minus one, zero, or one.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouf $p |- lam : QQ --> { -u 1 , 0 , 1 } $=
-      ( vx cq c1 cneg cc0 ctp cv cliou cfv wfn cmpt wceq lioufn dffn5 mpbi wcel
-      wa lioueq0 biimpar c0ex tpid2 wne cpr wss negex tpid1 1ex tpid3 prssi csn
-      eqeltrdi mp2an cdif eldifsn liounzcl sylbir sselid pm2.61dane fmpti ) ABC
-      DECFZAGHIZHHBJHABVAKLMABHNOAGBPZVAUTPAGEVBAGELZQVAEUTVBVAELVCAGRSCDECTUAU
-      KVBAGEUBQZCDCUCZUTVACDUTPCUTPVEUTUDCDECCUEUFCDECUGUHCDCUTUIULVDAGBEUJUMPV
-      AVEPAGBEUNAGUOUPUQURUS $.
-  $}
+  $( Liouville's function maps the rationals to minus one, zero, or one.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liouf $p |- lam : QQ --> { -u 1 , 0 , 1 } $=
+    ( vx cq c1 cneg cc0 ctp cv cliou cfv wfn cmpt wceq lioufn mpbi wcel lioueq0
+    dffn5 wa biimpar c0ex tpid2 eqeltrdi wne cpr wss negex tpid1 1ex tpid3 cdif
+    prssi mp2an csn eldifsn liounzcl sylbir sselid pm2.61dane fmpti ) ABCDECFZA
+    GHIZHHBJHABVAKLMABHQNAGBOZVAUTOAGEVBAGELZRVAEUTVBVAELVCAGPSCDECTUAUBVBAGEUC
+    RZCDCUDZUTVACDUTOCUTOVEUTUECDECCUFUGCDECUHUICDCUTUKULVDAGBEUMUJOVAVEOAGBEUN
+    AGUOUPUQURUS $.
 
-  ${
-    $( Liouville's function takes real values on rationals.  (Contributed by
-       Zhi Wang, 2-Nov-2026.) $)
-    lioure $p |- ( A e. QQ -> ( lam ` A ) e. RR ) $=
-      ( cq wcel c1 cneg cc0 ctp cr cliou cfv wss neg1rr 0re 1re tpssi ffvelcdmi
-      mp3an liouf sselid ) ABCDEFDGZHAIJDEHCFHCDHCTHKLMNDEFDHOQBTAIRPS $.
-  $}
+  $( Liouville's function takes real values on rationals.  (Contributed by Zhi
+     Wang, 2-Nov-2026.) $)
+  lioure $p |- ( A e. QQ -> ( lam ` A ) e. RR ) $=
+    ( cq wcel c1 cneg cc0 ctp cr cliou cfv wss neg1rr 0re 1re tpssi mp3an liouf
+    ffvelcdmi sselid ) ABCDEFDGZHAIJDEHCFHCDHCTHKLMNDEFDHOPBTAIQRS $.
 
-  ${
-    $( Liouville's function takes one of two signs on positive integers.
-       Specialization of ~ liounzcl .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liounncl $p |- ( A e. NN -> ( lam ` A ) e. { -u 1 , 1 } ) $=
-      ( cn wcel cq cc0 csn cdif cliou cfv c1 cneg cpr nnqnz liounzcl syl ) ABCA
-      DEFGCAHIJKJLCAMANO $.
-  $}
+  $( Liouville's function takes one of two signs on positive integers.
+     Specialization of ~ liounzcl .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+  liounncl $p |- ( A e. NN -> ( lam ` A ) e. { -u 1 , 1 } ) $=
+    ( cn wcel cq cc0 csn cdif cliou cfv c1 cneg cpr nnqnz liounzcl syl ) ABCADE
+    FGCAHIJKJLCAMANO $.
 
-  ${
-    $( Liouville's function takes complex values on positive integers.
-       Consequence of ~ lioure and ~ recn .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liounncn $p |- ( A e. NN -> ( lam ` A ) e. CC ) $=
-      ( cn wcel cq cliou cfv cc nnq lioure recnd syl ) ABCADCZAEFZGCAHLMAIJK $.
-  $}
+  $( Liouville's function takes complex values on positive integers.
+     Consequence of ~ lioure and ~ recn .  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  liounncn $p |- ( A e. NN -> ( lam ` A ) e. CC ) $=
+    ( cn wcel cq cliou cfv cc nnq lioure recnd syl ) ABCADCZAEFZGCAHLMAIJK $.
 
-  ${
-    $( At a nonzero rational, Liouville's function is minus one exactly when it
-       is not one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioum1b $p |- ( A e. ( QQ \ { 0 } ) -> ( ( lam ` A ) = -u 1 <->
-      ( lam ` A ) =/= 1 ) ) $=
-      ( cq cc0 csn cdif wcel cliou cfv c1 cneg wceq wne cn nnneneg ax-mp necomi
-      1nn neeq1 mpbiri cpr liounzcl elprn2 sylan ex impbid2 ) ABCDEFZAGHZIJKZUG
-      ILZUHUIIJILIIJIMFIIJLQINOPUGIJIRSUFUIUHUFUGIJITFUIUHAUAUGIJIUBUCUDUE $.
-  $}
+  $( At a nonzero rational, Liouville's function is minus one exactly when it
+     is not one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  lioum1b $p |- ( A e. ( QQ \ { 0 } ) -> ( ( lam ` A ) = -u 1 <->
+    ( lam ` A ) =/= 1 ) ) $=
+    ( cq cc0 csn cdif wcel cliou cfv c1 cneg wceq wne cn 1nn ax-mp necomi neeq1
+    nnneneg mpbiri cpr liounzcl elprn2 sylan ex impbid2 ) ABCDEFZAGHZIJKZUGILZU
+    HUIIJILIIJIMFIIJLNIROPUGIJIQSUFUIUHUFUGIJITFUIUHAUAUGIJIUBUCUDUE $.
 
-  ${
-    $( For a rational input and a nonzero rational input, the two Liouville
-       values have product one exactly when they are equal.  (Contributed by
-       Zhi Wang, 27-Oct-2026.) $)
-    lioumul1b $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
-      ( ( ( lam ` A ) x. ( lam ` B ) ) = 1 <->
-        ( lam ` A ) = ( lam ` B ) ) ) $=
-      ( cq wcel cc0 csn cdif wa cliou cfv cmul co wceq c1 cneg cpr liounzcl syl
-      cr recnd adantl m1p1sq eqeq2d lioure adantr m1p1re wne m1p1ne0 mulcan2d
-      bitr3d ) ACDZBCEFGDZHZAIJZBIJZKLZUOUOKLZMUPNMUNUOMUMUQNUPUMUONONPDZUQNMUL
-      URUKBQUAZUOUBRUCUMUNUOUOUMUNUKUNSDULAUDUETUMUOUMURUOSDUSUOUFRTZUTUMURUOEU
-      GUSUOUHRUIUJ $.
-  $}
+  $( For a rational input and a nonzero rational input, the two Liouville
+     values have product one exactly when they are equal.  (Contributed by Zhi
+     Wang, 27-Oct-2026.) $)
+  lioumul1b $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
+    ( ( ( lam ` A ) x. ( lam ` B ) ) = 1 <->
+      ( lam ` A ) = ( lam ` B ) ) ) $=
+    ( cq wcel cc0 csn cdif wa cliou cfv cmul co wceq c1 cneg cpr liounzcl recnd
+    syl cr adantl m1p1sq eqeq2d lioure adantr m1p1re m1p1ne0 mulcan2d bitr3d
+    wne ) ACDZBCEFGDZHZAIJZBIJZKLZUOUOKLZMUPNMUNUOMUMUQNUPUMUONONPDZUQNMULURUKB
+    QUAZUOUBSUCUMUNUOUOUMUNUKUNTDULAUDUERUMUOUMURUOTDUSUOUFSRZUTUMURUOEUJUSUOUG
+    SUHUI $.
 
-  ${
-    $( At a nonzero rational input, Liouville's function is one exactly when
-       the signed prime Omega value is even.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    lioueq1 $p |- ( A e. ( QQ \ { 0 } ) ->
-      ( ( lam ` A ) = 1 <-> 2 || ( Omega ` A ) ) ) $=
-      ( cq cc0 csn cdif wcel cliou cfv c1 wceq cneg cbom cexp co c2 wbr liouval
-      cdvds eqeq1d cz wb bomf ffvelcdmi m1exp1 syl bitrd ) ABCDEZFZAGHZIJIKALHZ
-      MNZIJZOUJRPZUHUIUKIAQSUHUJTFULUMUAUGTALUBUCUJUDUEUF $.
-  $}
+  $( At a nonzero rational input, Liouville's function is one exactly when the
+     signed prime Omega value is even.  (Contributed by Zhi Wang,
+     27-Oct-2026.) $)
+  lioueq1 $p |- ( A e. ( QQ \ { 0 } ) ->
+    ( ( lam ` A ) = 1 <-> 2 || ( Omega ` A ) ) ) $=
+    ( cq cc0 csn cdif wcel cliou cfv c1 wceq cneg cbom cexp co c2 cdvds liouval
+    wbr eqeq1d cz wb bomf ffvelcdmi m1exp1 syl bitrd ) ABCDEZFZAGHZIJIKALHZMNZI
+    JZOUJPRZUHUIUKIAQSUHUJTFULUMUAUGTALUBUCUJUDUEUF $.
 
-  ${
-    $( At a nonzero rational input, Liouville's function is minus one exactly
-       when the signed prime Omega value is odd.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    lioueqm1 $p |- ( A e. ( QQ \ { 0 } ) ->
-      ( ( lam ` A ) = -u 1 <-> -. 2 || ( Omega ` A ) ) ) $=
-      ( cq cc0 csn cdif wcel cliou cfv c1 cneg wceq wne c2 cdvds wbr wn lioum1b
-      cbom lioueq1 necon3abid bitrd ) ABCDEFZAGHZIJKUCILMARHNOZPAQUBUDUCIASTUA
-      $.
-  $}
+  $( At a nonzero rational input, Liouville's function is minus one exactly
+     when the signed prime Omega value is odd.  (Contributed by Zhi Wang,
+     27-Oct-2026.) $)
+  lioueqm1 $p |- ( A e. ( QQ \ { 0 } ) ->
+    ( ( lam ` A ) = -u 1 <-> -. 2 || ( Omega ` A ) ) ) $=
+    ( cq cc0 csn cdif wcel cliou cfv c1 cneg wceq wne c2 cbom cdvds wbr lioum1b
+    wn lioueq1 necon3abid bitrd ) ABCDEFZAGHZIJKUCILMANHOPZRAQUBUDUCIASTUA $.
 
-  ${
-    $( The square of Liouville's function at a nonzero rational is one.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouvalsq $p |- ( A e. ( QQ \ { 0 } ) -> ( ( lam ` A ) ^ 2 ) = 1 ) $=
-      ( cq cc0 csn cdif wcel cliou cfv c1 cneg cpr c2 cexp wceq liounzcl m1p1re
-      co cmul recnd sqvald m1p1sq eqtrd syl ) ABCDEFAGHZIJIKFZUDLMQZINAOUEUFUDU
-      DRQIUEUDUEUDUDPSTUDUAUBUC $.
-  $}
+  $( The square of Liouville's function at a nonzero rational is one.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liouvalsq $p |- ( A e. ( QQ \ { 0 } ) -> ( ( lam ` A ) ^ 2 ) = 1 ) $=
+    ( cq cc0 csn cdif wcel cliou cfv c1 cneg cpr cexp wceq liounzcl cmul m1p1re
+    c2 co recnd sqvald m1p1sq eqtrd syl ) ABCDEFAGHZIJIKFZUDQLRZIMANUEUFUDUDORI
+    UEUDUEUDUDPSTUDUAUBUC $.
 
-  ${
-    $( The absolute value of Liouville's function at a nonzero rational is one.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouabs1 $p |- ( A e. ( QQ \ { 0 } ) -> ( abs ` ( lam ` A ) ) = 1 ) $=
-      ( cq cc0 csn cdif wcel cliou cfv cabs c2 co csqrt c1 cr eldifi lioure syl
-      cexp absred liouvalsq fveq2d sqrt1 eqtrdi eqtrd ) ABCDEFZAGHZIHUFJRKZLHZM
-      UEUFUEABFUFNFABCDOAPQSUEUHMLHMUEUGMLATUAUBUCUD $.
-  $}
+  $( The absolute value of Liouville's function at a nonzero rational is one.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liouabs1 $p |- ( A e. ( QQ \ { 0 } ) -> ( abs ` ( lam ` A ) ) = 1 ) $=
+    ( cq cc0 csn cdif wcel cliou cfv cabs c2 cexp co csqrt c1 eldifi lioure syl
+    cr absred liouvalsq fveq2d sqrt1 eqtrdi eqtrd ) ABCDEFZAGHZIHUFJKLZMHZNUEUF
+    UEABFUFRFABCDOAPQSUEUHNMHNUEUGNMATUAUBUCUD $.
 
-  ${
-    $( The absolute value of Liouville's function at a rational is at most one.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioule1 $p |- ( A e. QQ -> ( abs ` ( lam ` A ) ) <_ 1 ) $=
-      ( cq wcel cliou cfv cabs c1 cle wbr cc0 wceq lioueq0 biimpar abs00bd 0le1
-      wa eqbrtrdi wne csn cdif eldifsn liouabs1 sylbir 1le1 pm2.61dane ) ABCZAD
-      EZFEZGHIAJUFAJKZPZUHJGHUJUGUFUGJKUIALMNOQUFAJRPZUHGGHUKABJSTCUHGKABJUAAUB
-      UCUDQUE $.
-  $}
+  $( The absolute value of Liouville's function at a rational is at most one.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  lioule1 $p |- ( A e. QQ -> ( abs ` ( lam ` A ) ) <_ 1 ) $=
+    ( cq wcel cliou cfv cabs c1 cle wbr cc0 wa lioueq0 biimpar abs00bd eqbrtrdi
+    wceq 0le1 wne csn cdif eldifsn liouabs1 sylbir 1le1 pm2.61dane ) ABCZADEZFE
+    ZGHIAJUFAJPZKZUHJGHUJUGUFUGJPUIALMNQOUFAJRKZUHGGHUKABJSTCUHGPABJUAAUBUCUDOU
+    E $.
 
-  ${
-    $( At every rational input, Liouville's function has value between minus
-       one and one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    lioubnd $p |- ( A e. QQ -> ( -u 1 <_ ( lam ` A ) /\ ( lam ` A ) <_ 1 ) ) $=
-      ( cq wcel cliou cfv cabs c1 cle wbr cneg lioule1 lioure 1red absled mpbid
-      wa ) ABCZADEZFEGHIGJRHIRGHIPAKQRGALQMNO $.
-  $}
+  $( At every rational input, Liouville's function has value between minus one
+     and one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+  lioubnd $p |- ( A e. QQ -> ( -u 1 <_ ( lam ` A ) /\ ( lam ` A ) <_ 1 ) ) $=
+    ( cq wcel cliou cfv cabs c1 cle wbr cneg lioule1 lioure 1red absled mpbid
+    wa ) ABCZADEZFEGHIGJRHIRGHIPAKQRGALQMNO $.
 
-  ${
-    $( Liouville's function has value minus one at every prime.  (Contributed
-       by Zhi Wang, 17-Oct-2026.) $)
-    liouprm $p |- ( P e. Prime -> ( lam ` P ) = -u 1 ) $=
-      ( cprime wcel cliou cfv c1 cneg wceq cbom cdvds wbr n2dvds1 bomprm breq2d
-      c2 wn mtbiri cn cq cc0 csn cdif wb prmnn nnqnz lioueqm1 3syl mpbird ) ABC
-      ZADEFGHZOAIEZJKZPZUIULOFJKLUIUKFOJAMNQUIARCASTUAUBCUJUMUCAUDAUEAUFUGUH $.
-  $}
+  $( Liouville's function has value minus one at every prime.  (Contributed by
+     Zhi Wang, 17-Oct-2026.) $)
+  liouprm $p |- ( P e. Prime -> ( lam ` P ) = -u 1 ) $=
+    ( cprime wcel cliou cfv c1 cneg wceq c2 cbom cdvds wn n2dvds1 bomprm breq2d
+    wbr mtbiri cn cq cc0 csn cdif wb prmnn nnqnz lioueqm1 3syl mpbird ) ABCZADE
+    FGHZIAJEZKPZLZUIULIFKPMUIUKFIKANOQUIARCASTUAUBCUJUMUCAUDAUEAUFUGUH $.
 
-  ${
-    $( Liouville's function at 2 is minus one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou2 $p |- ( lam ` 2 ) = -u 1 $=
-      ( c2 cprime wcel cliou cfv c1 cneg wceq 2prm liouprm ax-mp ) ABCADEFGHIAJ
-      K $.
-  $}
+  $( Liouville's function at 2 is minus one.  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  liou2 $p |- ( lam ` 2 ) = -u 1 $=
+    ( c2 cprime wcel cliou cfv c1 cneg wceq 2prm liouprm ax-mp ) ABCADEFGHIAJK
+    $.
 
-  ${
-    $( Liouville's function at 3 is minus one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou3 $p |- ( lam ` 3 ) = -u 1 $=
-      ( c3 cprime wcel cliou cfv c1 cneg wceq 3prm liouprm ax-mp ) ABCADEFGHIAJ
-      K $.
-  $}
+  $( Liouville's function at 3 is minus one.  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  liou3 $p |- ( lam ` 3 ) = -u 1 $=
+    ( c3 cprime wcel cliou cfv c1 cneg wceq 3prm liouprm ax-mp ) ABCADEFGHIAJK
+    $.
 
-  ${
-    $( Liouville's function at 5 is minus one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou5 $p |- ( lam ` 5 ) = -u 1 $=
-      ( c5 cprime wcel cliou cfv c1 cneg wceq 5prm liouprm ax-mp ) ABCADEFGHIAJ
-      K $.
-  $}
+  $( Liouville's function at 5 is minus one.  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  liou5 $p |- ( lam ` 5 ) = -u 1 $=
+    ( c5 cprime wcel cliou cfv c1 cneg wceq 5prm liouprm ax-mp ) ABCADEFGHIAJK
+    $.
 
-  ${
-    $( Liouville's function at 7 is minus one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou7 $p |- ( lam ` 7 ) = -u 1 $=
-      ( c7 cprime wcel cliou cfv c1 cneg wceq 7prm liouprm ax-mp ) ABCADEFGHIAJ
-      K $.
-  $}
+  $( Liouville's function at 7 is minus one.  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  liou7 $p |- ( lam ` 7 ) = -u 1 $=
+    ( c7 cprime wcel cliou cfv c1 cneg wceq 7prm liouprm ax-mp ) ABCADEFGHIAJK
+    $.
 
-  ${
-    $( Complete multiplicativity of Liouville's function on the rationals.  For
-       nonzero inputs, this follows from ~ bommul and the integer exponent law
-       ~ expaddz via ~ liouval .  A zero input is handled by ~ liou0 .
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioumul $p |- ( ( A e. QQ /\ B e. QQ ) ->
-      ( lam ` ( A x. B ) ) = ( ( lam ` A ) x. ( lam ` B ) ) ) $=
-      ( cq wcel wa cmul co cliou cfv wceq cc0 wb cc syl2an qcn wne cbom eldifsn
-      cexp cz liou0 fveq2 adantl wo lioueq0 adantr orbi12d lioure recnd 3bitr4d
-      mul0or biimpar 3eqtr4a c1 cneg qmulcl csn cdif liouval sylbir sylan caddc
-      mulne0b ffvelcdmi neg1cn neg1ne0 expaddz mpanl12 bommul oveqan12d 3eqtr4d
-      bomf oveq2d syl2anbr an4s syldan eqtrd pm2.61dane ) ACDZBCDZEZABFGZHIZAHI
-      ZBHIZFGZJWBKWAWBKJZEKHIKWCWFUAWGWCKHIJWAWBKHUBUCWAWFKJZWGWAWDKJZWEKJZUDZA
-      KJZBKJZUDZWHWGWAWIWLWJWMVSWIWLLVTAUEUFVTWJWMLVSBUEUCUGVSWDMDWEMDWHWKLVTVS
-      WDAUHUIVTWEBUHUIWDWEUKNVSAMDZBMDZWGWNLVTAOBOABUKNUJULUMWAWBKPZEWCUNUOZWBQ
-      IZSGZWFWAWBCDZWQWCWTJZABUPXAWQEWBCKUQURZDXBWBCKRWBUSUTVAWAWQAKPZBKPZEZWTW
-      FJZWAXFWQVSWOWPXFWQLVTAOBOABVCNULVSXDVTXEXGVSXDEAXCDZBXCDZXGVTXEEACKRBCKR
-      XHXIEZWRAQIZBQIZVBGZSGZWRXKSGZWRXLSGZFGZWTWFXHXKTDZXLTDZXNXQJZXIXCTAQVLVD
-      XCTBQVLVDWRMDWRKPXRXSEXTVEVFWRXKXLVGVHNXJWSXMWRSABVIVMXHXIWDXOWEXPFAUSBUS
-      VJVKVNVOVPVQVR $.
-  $}
+  $( Complete multiplicativity of Liouville's function on the rationals.  For
+     nonzero inputs, this follows from ~ bommul and the integer exponent law
+     ~ expaddz via ~ liouval .  A zero input is handled by ~ liou0 .
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  lioumul $p |- ( ( A e. QQ /\ B e. QQ ) ->
+    ( lam ` ( A x. B ) ) = ( ( lam ` A ) x. ( lam ` B ) ) ) $=
+    ( cq wcel wa cmul co cliou cfv wceq cc0 wb syl2an qcn wne cbom cexp eldifsn
+    cc cz liou0 fveq2 adantl lioueq0 adantr orbi12d lioure recnd mul0or 3bitr4d
+    wo biimpar 3eqtr4a c1 cneg qmulcl csn cdif liouval sylan mulne0b caddc bomf
+    sylbir ffvelcdmi neg1cn neg1ne0 expaddz mpanl12 bommul oveq2d syl2anbr an4s
+    oveqan12d 3eqtr4d syldan eqtrd pm2.61dane ) ACDZBCDZEZABFGZHIZAHIZBHIZFGZJW
+    BKWAWBKJZEKHIKWCWFUAWGWCKHIJWAWBKHUBUCWAWFKJZWGWAWDKJZWEKJZUKZAKJZBKJZUKZWH
+    WGWAWIWLWJWMVSWIWLLVTAUDUEVTWJWMLVSBUDUCUFVSWDSDWESDWHWKLVTVSWDAUGUHVTWEBUG
+    UHWDWEUIMVSASDZBSDZWGWNLVTANBNABUIMUJULUMWAWBKOZEWCUNUOZWBPIZQGZWFWAWBCDZWQ
+    WCWTJZABUPXAWQEWBCKUQURZDXBWBCKRWBUSVDUTWAWQAKOZBKOZEZWTWFJZWAXFWQVSWOWPXFW
+    QLVTANBNABVAMULVSXDVTXEXGVSXDEAXCDZBXCDZXGVTXEEACKRBCKRXHXIEZWRAPIZBPIZVBGZ
+    QGZWRXKQGZWRXLQGZFGZWTWFXHXKTDZXLTDZXNXQJZXIXCTAPVCVEXCTBPVCVEWRSDWRKOXRXSE
+    XTVFVGWRXKXLVHVIMXJWSXMWRQABVJVKXHXIWDXOWEXPFAUSBUSVNVOVLVMVPVQVR $.
 
-  ${
-    $( Multiplication by two negates the value of Liouville's function at a
-       rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liou2mul $p |- ( A e. QQ -> ( lam ` ( 2 x. A ) ) = -u ( lam ` A ) ) $=
-      ( cq wcel c2 cmul co cliou c1 cneg wceq cz 2z zq ax-mp lioumul mpan liou2
-      cfv oveq1i eqtrdi lioure recnd mulm1d eqtrd ) ABCZDAEFGRZHIAGRZEFZUGIUEUF
-      DGRZUGEFZUHDBCZUEUFUJJDKCUKLDMNDAOPUIHIUGEQSTUEUGUEUGAUAUBUCUD $.
-  $}
+  $( Multiplication by two negates the value of Liouville's function at a
+     rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liou2mul $p |- ( A e. QQ -> ( lam ` ( 2 x. A ) ) = -u ( lam ` A ) ) $=
+    ( cq wcel c2 cmul co cliou cfv c1 cneg wceq cz 2z ax-mp lioumul mpan oveq1i
+    zq liou2 eqtrdi lioure recnd mulm1d eqtrd ) ABCZDAEFGHZIJAGHZEFZUGJUEUFDGHZ
+    UGEFZUHDBCZUEUFUJKDLCUKMDRNDAOPUIIJUGESQTUEUGUEUGAUAUBUCUD $.
 
-  ${
-    $( Multiplication by three negates the value of Liouville's function at a
-       rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liou3mul $p |- ( A e. QQ -> ( lam ` ( 3 x. A ) ) = -u ( lam ` A ) ) $=
-      ( cq wcel c3 cmul co cliou cfv c1 cneg wceq cn 3nn nnq ax-mp lioumul mpan
-      liou3 oveq1i eqtrdi lioure recnd mulm1d eqtrd ) ABCZDAEFGHZIJAGHZEFZUGJUE
-      UFDGHZUGEFZUHDBCZUEUFUJKDLCUKMDNODAPQUIIJUGERSTUEUGUEUGAUAUBUCUD $.
-  $}
+  $( Multiplication by three negates the value of Liouville's function at a
+     rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liou3mul $p |- ( A e. QQ -> ( lam ` ( 3 x. A ) ) = -u ( lam ` A ) ) $=
+    ( cq wcel c3 cmul co cliou cfv c1 cneg wceq cn 3nn ax-mp lioumul mpan liou3
+    nnq oveq1i eqtrdi lioure recnd mulm1d eqtrd ) ABCZDAEFGHZIJAGHZEFZUGJUEUFDG
+    HZUGEFZUHDBCZUEUFUJKDLCUKMDRNDAOPUIIJUGEQSTUEUGUEUGAUAUBUCUD $.
 
-  ${
-    $( Liouville's function at six is one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou6 $p |- ( lam ` 6 ) = 1 $=
-      ( c3 c2 cmul co cliou cfv cneg c6 c1 cn wcel wceq 2nn liou3mul mp2b 3t2e6
-      cq nnq fveq2i liou2 negeqi negneg1e1 eqtri 3eqtr3i ) ABCDZEFZBEFZGZHEFIBJ
-      KBQKUFUHLMBRBNOUEHEPSUHIGGIUGIGTUAUBUCUD $.
-  $}
+  $( Liouville's function at six is one.  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  liou6 $p |- ( lam ` 6 ) = 1 $=
+    ( c3 c2 cmul co cliou cfv cneg c6 c1 cn wcel cq wceq 2nn nnq liou3mul 3t2e6
+    mp2b fveq2i liou2 negeqi negneg1e1 eqtri 3eqtr3i ) ABCDZEFZBEFZGZHEFIBJKBLK
+    UFUHMNBOBPRUEHEQSUHIGGIUGIGTUAUBUCUD $.
 
-  ${
-    $( Two values of Liouville's function at nonzero rationals have product
-       minus one exactly when they differ.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    lioumulm1b $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
-      ( ( ( lam ` A ) x. ( lam ` B ) ) = -u 1 <->
-        ( lam ` A ) =/= ( lam ` B ) ) ) $=
-      ( cq cc0 wcel wa cliou cfv cmul co c1 wne eldifi syl2an wb cc eldifsn qcn
-      wceq anim1i cdif cneg lioumul eqeq1d qmulcl sylbi mulne0 eldifsnd lioum1b
-      csn syl bitr3d neeq1d lioumul1b sylan necon3bid 3bitrd ) ACDUJZUAZEZBUSEZ
-      FZAGHZBGHZIJZKUBZSZABIJZGHZKLZVEKLVCVDLVBVIVFSZVGVJVBVIVEVFUTACEZBCEZVIVE
-      SVAACURMZBCURMZABUCNZUDVBVHUSEVKVJOVBVHCDUTVLVMVHCEVAVNVOABUENUTAPEZADLZF
-      ZBPEZBDLZFZVHDLVAUTVLVRFVSACDQVLVQVRARTUFVAVMWAFWBBCDQVMVTWABRTUFABUGNUHV
-      HUIUKULVBVIVEKVPUMVBVEKVCVDUTVLVAVEKSVCVDSOVNABUNUOUPUQ $.
-  $}
+  $( Two values of Liouville's function at nonzero rationals have product minus
+     one exactly when they differ.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  lioumulm1b $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
+    ( ( ( lam ` A ) x. ( lam ` B ) ) = -u 1 <->
+      ( lam ` A ) =/= ( lam ` B ) ) ) $=
+    ( cq cc0 wcel wa cliou cfv cmul co c1 wceq wne eldifi syl2an wb eldifsn qcn
+    cc anim1i csn cdif cneg lioumul eqeq1d qmulcl sylbi mulne0 eldifsnd lioum1b
+    syl bitr3d neeq1d lioumul1b sylan necon3bid 3bitrd ) ACDUAZUBZEZBUSEZFZAGHZ
+    BGHZIJZKUCZLZABIJZGHZKMZVEKMVCVDMVBVIVFLZVGVJVBVIVEVFUTACEZBCEZVIVELVAACURN
+    ZBCURNZABUDOZUEVBVHUSEVKVJPVBVHCDUTVLVMVHCEVAVNVOABUFOUTASEZADMZFZBSEZBDMZF
+    ZVHDMVAUTVLVRFVSACDQVLVQVRARTUGVAVMWAFWBBCDQVMVTWABRTUGABUHOUIVHUJUKULVBVIV
+    EKVPUMVBVEKVCVDUTVLVAVEKLVCVDLPVNABUNUOUPUQ $.
 
-  ${
-    $( Liouville's function commutes with integer powers of nonzero rational
-       inputs.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouexp $p |- ( ( A e. ( QQ \ { 0 } ) /\ K e. ZZ ) ->
-      ( lam ` ( A ^ K ) ) = ( ( lam ` A ) ^ K ) ) $=
-      ( cq cc0 wcel cz wa cexp co cliou cfv cbom cmul wceq wne syl liouval zcnd
-      cc adantr cdif c1 cneg eldifsn birani simpld simprd simpr qexpclz syl3anc
-      csn expne0d eldifsnd bomexp ffvelcdmi mulcomd eqtrd oveq2d neg1cn neg1ne0
-      qcn bomf pm3.2i a1i expmulz syl12anc 3eqtrd oveq1d eqtr4d ) ACDUKUAZEZBFE
-      ZGZABHIZJKZUBUCZALKZHIZBHIZAJKZBHIVMVOVPVNLKZHIZVPVQBMIZHIZVSVMVNVJEVOWBN
-      VMVNCDVMACEZADOZVLVNCEVMWEWFVKWEWFGVLACDUDUEZUFZVMWEWFWGUGZVKVLUHZABUIUJV
-      MABVMWEASEWHAVAPWIWJULUMVNQPVMWAWCVPHVMWABVQMIWCABUNVMBVQVMBWJRVMVQVKVQFE
-      ZVLVJFALVBUOTZRUPUQURVMVPSEZVPDOZGZWKVLWDVSNWOVMWMWNUSUTVCVDWLWJVPVQBVEVF
-      VGVMVTVRBHVKVTVRNVLAQTVHVI $.
-  $}
+  $( Liouville's function commutes with integer powers of nonzero rational
+     inputs.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liouexp $p |- ( ( A e. ( QQ \ { 0 } ) /\ K e. ZZ ) ->
+    ( lam ` ( A ^ K ) ) = ( ( lam ` A ) ^ K ) ) $=
+    ( cq cc0 wcel cz wa cexp co cliou cfv cbom cmul wceq wne syl liouval adantr
+    cc zcnd csn cdif c1 cneg eldifsn birani simpld simprd simpr qexpclz syl3anc
+    expne0d eldifsnd bomexp bomf ffvelcdmi mulcomd oveq2d neg1cn neg1ne0 pm3.2i
+    qcn eqtrd a1i expmulz syl12anc 3eqtrd oveq1d eqtr4d ) ACDUAUBZEZBFEZGZABHIZ
+    JKZUCUDZALKZHIZBHIZAJKZBHIVMVOVPVNLKZHIZVPVQBMIZHIZVSVMVNVJEVOWBNVMVNCDVMAC
+    EZADOZVLVNCEVMWEWFVKWEWFGVLACDUEUFZUGZVMWEWFWGUHZVKVLUIZABUJUKVMABVMWEASEWH
+    AVBPWIWJULUMVNQPVMWAWCVPHVMWABVQMIWCABUNVMBVQVMBWJTVMVQVKVQFEZVLVJFALUOUPRZ
+    TUQVCURVMVPSEZVPDOZGZWKVLWDVSNWOVMWMWNUSUTVAVDWLWJVPVQBVEVFVGVMVTVRBHVKVTVR
+    NVLAQRVHVI $.
 
-  ${
-    $( Liouville's function is one at the square of every nonzero rational.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liousq $p |- ( A e. ( QQ \ { 0 } ) -> ( lam ` ( A ^ 2 ) ) = 1 ) $=
-      ( cq cc0 csn cdif wcel c2 cexp co cliou cfv c1 cz wceq 2z mpan2 liouvalsq
-      liouexp eqtrd ) ABCDEFZAGHIJKZAJKGHIZLTGMFUAUBNOAGRPAQS $.
-  $}
+  $( Liouville's function is one at the square of every nonzero rational.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liousq $p |- ( A e. ( QQ \ { 0 } ) -> ( lam ` ( A ^ 2 ) ) = 1 ) $=
+    ( cq cc0 csn cdif wcel c2 cexp co cliou cfv c1 cz wceq 2z liouexp liouvalsq
+    mpan2 eqtrd ) ABCDEFZAGHIJKZAJKGHIZLTGMFUAUBNOAGPRAQS $.
 
-  ${
-    $( Multiplication by a nonzero rational square preserves Liouville's
-       function.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioumulsq $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
-      ( lam ` ( A x. ( B ^ 2 ) ) ) = ( lam ` A ) ) $=
-      ( cq wcel cc0 csn cdif wa c2 cexp co cmul cliou cfv wceq eldifi qsqcl syl
-      c1 lioumul sylan2 liousq adantl oveq2d lioure recnd mulridd adantr 3eqtrd
-      ) ACDZBCEFGDZHZABIJKZLKMNZAMNZUMMNZLKZUOSLKZUOUKUJUMCDZUNUQOUKBCDUSBCEFPB
-      QRAUMTUAULUPSUOLUKUPSOUJBUBUCUDUJURUOOUKUJUOUJUOAUEUFUGUHUI $.
-  $}
+  $( Multiplication by a nonzero rational square preserves Liouville's
+     function.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  lioumulsq $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
+    ( lam ` ( A x. ( B ^ 2 ) ) ) = ( lam ` A ) ) $=
+    ( cq wcel cc0 csn cdif wa c2 cexp co cmul cliou cfv c1 eldifi qsqcl lioumul
+    wceq syl sylan2 liousq adantl oveq2d lioure recnd mulridd adantr 3eqtrd ) A
+    CDZBCEFGDZHZABIJKZLKMNZAMNZUMMNZLKZUOOLKZUOUKUJUMCDZUNUQSUKBCDUSBCEFPBQTAUM
+    RUAULUPOUOLUKUPOSUJBUBUCUDUJURUOSUKUJUOUJUOAUEUFUGUHUI $.
 
-  ${
-    $( Liouville's function has value one at one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou1 $p |- ( lam ` 1 ) = 1 $=
-      ( c1 c2 cexp co cliou cfv sq1 fveq2i cn wcel cc0 csn cdif wceq 1nn liousq
-      cq nnqnz mp2b eqtr3i ) ABCDZEFZAEFAUAAEGHAIJAQKLMJUBANOARAPST $.
-  $}
+  $( Liouville's function has value one at one.  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  liou1 $p |- ( lam ` 1 ) = 1 $=
+    ( c1 c2 cexp co cliou cfv sq1 fveq2i cn wcel cq cc0 csn cdif wceq 1nn nnqnz
+    liousq mp2b eqtr3i ) ABCDZEFZAEFAUAAEGHAIJAKLMNJUBAOPAQARST $.
 
-  ${
-    $( Liouville's function at four is one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou4 $p |- ( lam ` 4 ) = 1 $=
-      ( c2 cexp co cliou cfv c4 c1 sq2 fveq2i cn wcel cq cc0 csn cdif 2nn nnqnz
-      wceq liousq mp2b eqtr3i ) AABCZDEZFDEGUBFDHIAJKALMNOKUCGRPAQASTUA $.
-  $}
+  $( Liouville's function at four is one.  (Contributed by Zhi Wang,
+     17-Oct-2026.) $)
+  liou4 $p |- ( lam ` 4 ) = 1 $=
+    ( c2 cexp co cliou cfv c4 c1 sq2 fveq2i cn wcel cc0 csn cdif wceq 2nn nnqnz
+    cq liousq mp2b eqtr3i ) AABCZDEZFDEGUBFDHIAJKARLMNKUCGOPAQASTUA $.
 
-  ${
-    $( Liouville's function commutes with nonnegative integer powers of
-       rational inputs.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouexpnn0 $p |- ( ( A e. QQ /\ K e. NN0 ) -> ( lam ` ( A ^ K ) ) =
-      ( ( lam ` A ) ^ K ) ) $=
-      ( cq wcel wa cexp co cliou cfv wceq liou0 0exp fveq2d 3eqtr4a c1 ad2antlr
-      cc0 eqtrdi simpr oveq1d cn0 cn wo elnn0 liou1 oveq2 0exp0e1 sylbi 3eqtr4d
-      jaoi wne csn cdif cz simpll eldifsnd nn0z liouexp syl2anc pm2.61dane ) AC
-      DZBUADZEZABFGZHIZAHIZBFGZJZAQVCAQJZEZQBFGZHIZVKVEVGVBVLVKJZVAVIVBBUBDZBQJ
-      ZUCVMBUDVNVMVOVNQHIZQVLVKKVNVKQHBLMBLNVOOHIOVLVKUEVOVKOHVOVKQQFGOBQQFUFUG
-      RZMVQNUJUHPVJVDVKHVJAQBFVCVISZTMVJVFQBFVJVFVPQVJAQHVRMKRTUIVCAQUKZEZACQUL
-      UMDBUNDZVHVTACQVAVBVSUOVCVSSUPVBWAVAVSBUQPABURUSUT $.
-  $}
+  $( Liouville's function commutes with nonnegative integer powers of rational
+     inputs.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liouexpnn0 $p |- ( ( A e. QQ /\ K e. NN0 ) -> ( lam ` ( A ^ K ) ) =
+    ( ( lam ` A ) ^ K ) ) $=
+    ( cq wcel wa cexp co cliou cfv wceq cc0 liou0 0exp fveq2d 3eqtr4a c1 eqtrdi
+    ad2antlr simpr oveq1d cn0 cn wo elnn0 liou1 oveq2 0exp0e1 sylbi 3eqtr4d wne
+    jaoi csn cdif cz simpll eldifsnd nn0z liouexp syl2anc pm2.61dane ) ACDZBUAD
+    ZEZABFGZHIZAHIZBFGZJZAKVCAKJZEZKBFGZHIZVKVEVGVBVLVKJZVAVIVBBUBDZBKJZUCVMBUD
+    VNVMVOVNKHIZKVLVKLVNVKKHBMNBMOVOPHIPVLVKUEVOVKPHVOVKKKFGPBKKFUFUGQZNVQOUKUH
+    RVJVDVKHVJAKBFVCVISZTNVJVFKBFVJVFVPKVJAKHVRNLQTUIVCAKUJZEZACKULUMDBUNDZVHVT
+    ACKVAVBVSUOVCVSSUPVBWAVAVSBUQRABURUSUT $.
 
-  ${
-    $( Liouville's function at an integer power of a prime is the corresponding
-       power of minus one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouprmexp $p |- ( ( P e. Prime /\ K e. ZZ ) -> ( lam ` ( P ^ K ) ) =
-      ( -u 1 ^ K ) ) $=
-      ( cprime wcel cz wa cexp co cliou cfv c1 cneg cq cc0 csn cdif prmnn nnqnz
-      wceq cn syl liouexp sylan liouprm eqidd oveqan12d eqtrd ) ACDZBEDZFABGHIJ
-      ZAIJBGHZKLBGHUHAMNOPDZUIUJUKSUHATDULAQARUAABUBUCUHUIAIJKLBBGAUDUIBUEUFUG
-      $.
-  $}
+  $( Liouville's function at an integer power of a prime is the corresponding
+     power of minus one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liouprmexp $p |- ( ( P e. Prime /\ K e. ZZ ) -> ( lam ` ( P ^ K ) ) =
+    ( -u 1 ^ K ) ) $=
+    ( cprime wcel cz wa cexp co cliou cfv c1 cneg cq cc0 csn cdif wceq cn prmnn
+    nnqnz syl liouexp sylan liouprm eqidd oveqan12d eqtrd ) ACDZBEDZFABGHIJZAIJ
+    BGHZKLBGHUHAMNOPDZUIUJUKQUHARDULASATUAABUBUCUHUIAIJKLBBGAUDUIBUEUFUG $.
 
-  ${
-    $( Liouville's function of a rational quotient with nonzero denominator is
-       the product of its values at the numerator and denominator.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioudiv $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
-      ( lam ` ( A / B ) ) = ( ( lam ` A ) x. ( lam ` B ) ) ) $=
-      ( cq wcel cc0 csn cdif wa cdiv co c2 cmul cliou cfv cc qcn adantl syl2anc
-      syl wceq cexp simpl eldifi sqcld wne eldifsni div32d sqdivid oveq2d eqtrd
-      fveq2d qdivcl syl3anc lioumulsq sylancom lioumul 3eqtr3d ) ACDZBCEFGDZHZA
-      BIJZBKUAJZLJZMNZABLJZMNZVAMNZAMNBMNLJZUTVCVEMUTVCAVBBIJZLJVEUTABVBUTURAOD
-      URUSUBZAPSUTBCDZBODZUSVKURBCEFUCQZBPSZUTBVNUDUSBEUEZURBCEUFQZUGUTVIBALUTV
-      LVOVIBTVNVPBUHRUIUJUKURUSVACDZVDVGTUTURVKVOVQVJVMVPABULUMVABUNUOUTURVKVFV
-      HTVJVMABUPRUQ $.
-  $}
+  $( Liouville's function of a rational quotient with nonzero denominator is
+     the product of its values at the numerator and denominator.  (Contributed
+     by Zhi Wang, 27-Oct-2026.) $)
+  lioudiv $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
+    ( lam ` ( A / B ) ) = ( ( lam ` A ) x. ( lam ` B ) ) ) $=
+    ( cq wcel cc0 csn cdif wa cdiv co c2 cmul cliou cfv cc qcn syl wceq syl2anc
+    adantl cexp simpl eldifi sqcld eldifsni div32d sqdivid oveq2d fveq2d qdivcl
+    wne eqtrd syl3anc lioumulsq sylancom lioumul 3eqtr3d ) ACDZBCEFGDZHZABIJZBK
+    UAJZLJZMNZABLJZMNZVAMNZAMNBMNLJZUTVCVEMUTVCAVBBIJZLJVEUTABVBUTURAODURUSUBZA
+    PQUTBCDZBODZUSVKURBCEFUCTZBPQZUTBVNUDUSBEUKZURBCEUETZUFUTVIBALUTVLVOVIBRVNV
+    PBUGSUHULUIURUSVACDZVDVGRUTURVKVOVQVJVMVPABUJUMVABUNUOUTURVKVFVHRVJVMABUPSU
+    Q $.
 
-  ${
-    $( Liouville's function is unchanged by reciprocation of a nonzero
-       rational.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liourec $p |- ( A e. ( QQ \ { 0 } ) ->
-      ( lam ` ( 1 / A ) ) = ( lam ` A ) ) $=
-      ( cq cc0 csn cdif wcel c1 cdiv co cliou cfv cmul wceq lioudiv mpan oveq1i
-      1q liou1 eqtrdi eldifi lioure recnd mullidd syl eqtrd ) ABCDEFZGAHIJKZGAJ
-      KZLIZUHUFUGGJKUHLIZUIGBFUFUGUJMQGANOGJKGUHLRPSUFABFZUIUHMABCDTUKUHUKUHAUA
-      UBUCUDUE $.
-  $}
+  $( Liouville's function is unchanged by reciprocation of a nonzero rational.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liourec $p |- ( A e. ( QQ \ { 0 } ) -> ( lam ` ( 1 / A ) ) = ( lam ` A ) ) $=
+    ( cq cc0 csn cdif wcel c1 cdiv co cliou cfv cmul wceq 1q lioudiv mpan liou1
+    oveq1i eqtrdi eldifi lioure recnd mullidd syl eqtrd ) ABCDEFZGAHIJKZGAJKZLI
+    ZUHUFUGGJKUHLIZUIGBFUFUGUJMNGAOPGJKGUHLQRSUFABFZUIUHMABCDTUKUHUKUHAUAUBUCUD
+    UE $.
 
-  ${
-    $( For a rational numerator and a nonzero rational denominator, Liouville's
-       function of their quotient is one exactly when its values at the two
-       inputs are equal.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioudiv1b $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
-      ( ( lam ` ( A / B ) ) = 1 <-> ( lam ` A ) = ( lam ` B ) ) ) $=
-      ( cq wcel cc0 csn cdif wa cdiv co cliou cfv c1 wceq cmul eqeq1d lioumul1b
-      lioudiv bitrd ) ACDBCEFGDHZABIJKLZMNAKLZBKLZOJZMNUBUCNTUAUDMABRPABQS $.
-  $}
+  $( For a rational numerator and a nonzero rational denominator, Liouville's
+     function of their quotient is one exactly when its values at the two
+     inputs are equal.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  lioudiv1b $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
+    ( ( lam ` ( A / B ) ) = 1 <-> ( lam ` A ) = ( lam ` B ) ) ) $=
+    ( cq wcel cc0 csn cdif wa cdiv cliou cfv wceq cmul lioudiv eqeq1d lioumul1b
+    co c1 bitrd ) ACDBCEFGDHZABIQJKZRLAJKZBJKZMQZRLUBUCLTUAUDRABNOABPS $.
 
   ${
     liouprmdivd.1 $e |- ( ph -> A e. QQ ) $.
@@ -885246,88 +885094,70 @@ $)
       UHAURNGUIUJUK $.
   $}
 
-  ${
-    $( Liouville's function is unchanged by negating a rational input.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouneg $p |- ( A e. QQ -> ( lam ` -u A ) = ( lam ` A ) ) $=
-      ( cq wcel cneg cliou cfv cc0 wceq c1 cbom cexp co cif qnegcl liouval0 syl
-      qcn negeq0d ifbid wn wa csn cdif simpl simpr neqned bomneg oveq2d ifeq2da
-      eldifsnd 3eqtr2d eqtr4d ) ABCZADEFZAGHZGIDAJFZKLZMZAEFUMUNADGHZGIDADJFZKL
-      ZMZUOGVAMURUMADBCUNVBHANADOPUMUOUSGVAUMAAQRSUMUOVAUQGUMUOTZUAZUTUPIDKVDAB
-      GUBUCCUTUPHVDABGUMVCUDVDAGUMVCUEUFUJAUGPUHUIUKAOUL $.
-  $}
+  $( Liouville's function is unchanged by negating a rational input.
+     (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liouneg $p |- ( A e. QQ -> ( lam ` -u A ) = ( lam ` A ) ) $=
+    ( cq wcel cneg cliou cfv cc0 wceq cbom cexp cif qnegcl liouval0 syl negeq0d
+    c1 co qcn ifbid wn wa csn simpl simpr neqned eldifsnd bomneg oveq2d ifeq2da
+    cdif 3eqtr2d eqtr4d ) ABCZADEFZAGHZGPDAIFZJQZKZAEFUMUNADGHZGPDADIFZJQZKZUOG
+    VAKURUMADBCUNVBHALADMNUMUOUSGVAUMAAROSUMUOVAUQGUMUOTZUAZUTUPPDJVDABGUBUJCUT
+    UPHVDABGUMVCUCVDAGUMVCUDUEUFAUGNUHUIUKAMUL $.
 
-  ${
-    $( Liouville's function at minus one is one.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    liouneg1 $p |- ( lam ` -u 1 ) = 1 $=
-      ( c1 cneg cliou cfv cq wcel wceq 1q liouneg ax-mp liou1 eqtri ) ABCDZACDZ
-      AAEFMNGHAIJKL $.
-  $}
+  $( Liouville's function at minus one is one.  (Contributed by Zhi Wang,
+     27-Oct-2026.) $)
+  liouneg1 $p |- ( lam ` -u 1 ) = 1 $=
+    ( c1 cneg cliou cfv cq wcel wceq 1q liouneg ax-mp liou1 eqtri ) ABCDZACDZAA
+    EFMNGHAIJKL $.
 
-  ${
-    $( Liouville's function is unchanged by taking the absolute value of a
-       rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouabs $p |- ( A e. QQ -> ( lam ` ( abs ` A ) ) = ( lam ` A ) ) $=
-      ( wcel cabs cfv wceq cliou cneg fveq2 adantl liouneg sylan9eqr qre absord
-      cq mpjaodan ) ANBZACDZAEZQFDZAFDZEZQAGEZRUAPQAFHIUBPSAGFDTQAGFHAJKPAALMO
-      $.
-  $}
+  $( Liouville's function is unchanged by taking the absolute value of a
+     rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liouabs $p |- ( A e. QQ -> ( lam ` ( abs ` A ) ) = ( lam ` A ) ) $=
+    ( wcel cabs cfv wceq cliou cneg fveq2 adantl liouneg sylan9eqr qre mpjaodan
+    cq absord ) ANBZACDZAEZQFDZAFDZEZQAGEZRUAPQAFHIUBPSAGFDTQAGFHAJKPAALOM $.
 
-  ${
-    $( Liouville's function of a rational is the product of its values at the
-       absolute numerator and denominator.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    liounumden $p |- ( A e. QQ ->
-      ( lam ` A ) = ( ( lam ` ( abs ` ( numer ` A ) ) ) x.
-        ( lam ` ( denom ` A ) ) ) ) $=
-      ( cq wcel cnumer cfv cdenom cdiv cliou cmul cabs cc0 csn cdif wceq qnumcl
-      co cz zq syl cn qdencl lioudiv syl2anc qeqnumdivden fveq2d liouabs oveq1d
-      nnqnz 3eqtr4d ) ABCZADEZAFEZGPZHEZUKHEZULHEZIPZAHEUKJEHEZUPIPUJUKBCZULBKL
-      MCZUNUQNUJUKQCUSAOUKRSZUJULTCUTAUAULUHSUKULUBUCUJAUMHAUDUEUJURUOUPIUJUSUR
-      UONVAUKUFSUGUI $.
-  $}
+  $( Liouville's function of a rational is the product of its values at the
+     absolute numerator and denominator.  (Contributed by Zhi Wang,
+     27-Oct-2026.) $)
+  liounumden $p |- ( A e. QQ ->
+    ( lam ` A ) = ( ( lam ` ( abs ` ( numer ` A ) ) ) x.
+      ( lam ` ( denom ` A ) ) ) ) $=
+    ( cq wcel cnumer cfv cdenom cdiv co cliou cmul cabs cc0 cdif wceq cz qnumcl
+    csn zq syl cn qdencl lioudiv syl2anc qeqnumdivden fveq2d liouabs 3eqtr4d
+    nnqnz oveq1d ) ABCZADEZAFEZGHZIEZUKIEZULIEZJHZAIEUKKEIEZUPJHUJUKBCZULBLQMCZ
+    UNUQNUJUKOCUSAPUKRSZUJULTCUTAUAULUHSUKULUBUCUJAUMIAUDUEUJURUOUPJUJUSURUONVA
+    UKUFSUIUG $.
 
-  ${
-    $( The restriction of Liouville's function to positive integers is
-       determined by the parity of the prime Omega function.  (Contributed by
-       Zhi Wang, 27-Oct-2026.) $)
-    lioures $p |- ( lam |` NN ) = ( n e. NN |-> ( -u 1 ^ ( Omega ` n ) ) ) $=
-      ( cliou cn cres cq cv cfv cmpt c1 cneg cbom cexp co wfn wceq lioufn dffn5
-      mpbi reseq1i wcel wss nnssq ax-mp cc0 csn cdif nnqnz liouval syl mpteq2ia
-      resmpt 3eqtri ) BCDAEAFBGZHZCDZACUMHZACIJAFKGLMZHBUNCBENBUNOPAEBQRSCEUAUO
-      UPOUBAECUMUKUCACUMUQAFCTAFEUDUEUFTUMUQOAFUGAFUHUIUJUL $.
-  $}
+  $( The restriction of Liouville's function to positive integers is determined
+     by the parity of the prime Omega function.  (Contributed by Zhi Wang,
+     27-Oct-2026.) $)
+  lioures $p |- ( lam |` NN ) = ( n e. NN |-> ( -u 1 ^ ( Omega ` n ) ) ) $=
+    ( cliou cn cres cq cv cfv cmpt c1 cneg cbom cexp wfn wceq lioufn dffn5 mpbi
+    co reseq1i wcel wss nnssq resmpt ax-mp cc0 csn cdif liouval mpteq2ia 3eqtri
+    nnqnz syl ) BCDAEAFBGZHZCDZACUMHZACIJAFKGLRZHBUNCBEMBUNNOAEBPQSCEUAUOUPNUBA
+    ECUMUCUDACUMUQAFCTAFEUEUFUGTUMUQNAFUKAFUHULUIUJ $.
 
-  ${
-    $( Liouville's function restricted to positive integers takes one of two
-       signs.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouresf $p |- ( lam |` NN ) : NN --> { -u 1 , 1 } $=
-      ( vn cn c1 cneg cpr cv cliou cfv cres cmpt wceq wtru cq cc0 ctp liouf a1i
-      wf wss nnssq feqresmpt mptru liounncl fmpti ) ABCDCEAFGHZGBIZUFABUEJKLAMC
-      DNCOZBGMUGGRLPQBMSLTQUAUBAFUCUD $.
-  $}
+  $( Liouville's function restricted to positive integers takes one of two
+     signs.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liouresf $p |- ( lam |` NN ) : NN --> { -u 1 , 1 } $=
+    ( vn cn c1 cneg cpr cv cliou cfv cres cmpt wceq cq cc0 ctp wf liouf a1i wss
+    wtru nnssq feqresmpt mptru liounncl fmpti ) ABCDCEAFGHZGBIZUFABUEJKSALCDMCN
+    ZBGLUGGOSPQBLRSTQUAUBAFUCUD $.
 
-  ${
-    $( The range of Liouville's function is exactly the set consisting of minus
-       one, zero, and one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liourn $p |- ran lam = { -u 1 , 0 , 1 } $=
-      ( cliou crn c1 cneg cc0 ctp cq wf wss liouf ax-mp wcel c2 lioufn fnfvelrn
-      cfv cz zq mp2an eqeltrri frn liou2 2z liou0 0z liou1 1q tpssi mp3an eqssi
-      wfn ) ABCDECFZGULAHABULIJGULAUAKCDABLEABLCABLULABIMAPZCDABUBAGUKZMGLZUMAB
-      LNMQLUOUCMRKGMAOSTEAPZEABUDUNEGLZUPABLNEQLUQUEERKGEAOSTCAPZCABUFUNCGLURAB
-      LNUGGCAOSTCDECABUHUIUJ $.
-  $}
+  $( The range of Liouville's function is exactly the set consisting of minus
+     one, zero, and one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  liourn $p |- ran lam = { -u 1 , 0 , 1 } $=
+    ( cliou crn c1 cneg cc0 ctp cq wf wss liouf ax-mp c2 cfv lioufn cz fnfvelrn
+    wcel zq mp2an eqeltrri frn liou2 wfn 2z liou0 0z liou1 1q tpssi mp3an eqssi
+    ) ABCDECFZGULAHABULIJGULAUAKCDABQEABQCABQULABILAMZCDABUBAGUCZLGQZUMABQNLOQU
+    OUDLRKGLAPSTEAMZEABUEUNEGQZUPABQNEOQUQUFERKGEAPSTCAMZCABUGUNCGQURABQNUHGCAP
+    STCDECABUIUJUK $.
 
-  ${
-    $( A positive integer with Liouville's function value minus one is at least
-       two.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioum1ge2 $p |- ( ( A e. NN /\ ( lam ` A ) = -u 1 ) -> 2 <_ A ) $=
-      ( cn wcel cn0 cc0 wne cliou cfv c1 cneg wceq c2 cle wbr nnnn0 nnne0 fveq2
-      liou1 eqtrdi 1nn nnneneg mp1i eqnetrd necon2i nn0n0n1ge2 syl2an3an ) ABCA
-      DCAEFAGHZIJKAIFLAMNAOAPAIUGIJAIKZUGIIJUHUGIGHIAIGQRSIBCIIJFUHTIUAUBUCUDAU
-      EUF $.
-  $}
+  $( A positive integer with Liouville's function value minus one is at least
+     two.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+  lioum1ge2 $p |- ( ( A e. NN /\ ( lam ` A ) = -u 1 ) -> 2 <_ A ) $=
+    ( cn wcel cn0 cc0 wne cliou cfv c1 cneg wceq c2 cle nnnn0 nnne0 fveq2 liou1
+    wbr eqtrdi 1nn nnneneg mp1i eqnetrd necon2i nn0n0n1ge2 syl2an3an ) ABCADCAE
+    FAGHZIJKAIFLAMRANAOAIUGIJAIKZUGIIJUHUGIGHIAIGPQSIBCIIJFUHTIUAUBUCUDAUEUF $.
 
   ${
     $d A p $.
@@ -885346,7 +885176,7 @@ $)
   $}
 
   ${
-    $d u v z $.  $d F j k u v y $.  $d F k x y z $.  $d J k x y z $.
+    $d u v z $.  $d F k u v y $.  $d F k x y z $.  $d J k x y z $.
     $( Liouville's function maps finite products of rationals to products.
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liouprod $p |- ( ( J e. Fin /\ F : J --> QQ ) ->
@@ -885391,22 +885221,20 @@ $)
       WQVPEXAWRGXCABVNWQCVQTVRVSWMWFAVTXBUPEWGWOGXCAWAAWBTABWCWDWE $.
   $}
 
-  ${
-    $( On positive integers, the M&ouml;bius value equals the Liouville value
-       multiplied by the square of the M&ouml;bius value.  (Contributed by Zhi
-       Wang, 27-Oct-2026.) $)
-    lioumuid $p |- ( N e. NN ->
-      ( mmu ` N ) = ( ( lam ` N ) x. ( ( mmu ` N ) ^ 2 ) ) ) $=
-      ( cn wcel cmu cfv cliou c2 cexp co cmul wceq cc0 wa liounncn mul01d simpr
-      adantr sq0id oveq2d c1 3eqtr4rd wne liousqf biimpar oveq1d csn cdif nnqnz
-      cq liouvalsq syl eqtr3d mulridd 3eqtrrd pm2.61dane ) ABCZADEZAFEZUQGHIZJI
-      ZKUQLUPUQLKZMZURLJIZLUTUQUPVCLKVAUPURANOQVBUSLURJVBUQUPVAPZRSVDUAUPUQLUBZ
-      MZUTURTJIZURUQVFUSTURJVFURGHIZUSTVFURUQGHUPURUQKVEAUCUDZUEUPVHTKZVEUPAUIL
-      UFUGCVJAUHAUJUKQULSUPVGURKVEUPURANUMQVIUNUO $.
-  $}
+  $( On positive integers, the M&ouml;bius value equals the Liouville value
+     multiplied by the square of the M&ouml;bius value.  (Contributed by Zhi
+     Wang, 27-Oct-2026.) $)
+  lioumuid $p |- ( N e. NN ->
+    ( mmu ` N ) = ( ( lam ` N ) x. ( ( mmu ` N ) ^ 2 ) ) ) $=
+    ( cn wcel cmu cfv cliou c2 cexp co cmul cc0 wa liounncn mul01d adantr simpr
+    wceq sq0id oveq2d c1 3eqtr4rd wne liousqf biimpar oveq1d csn cdif liouvalsq
+    cq nnqnz syl eqtr3d mulridd 3eqtrrd pm2.61dane ) ABCZADEZAFEZUQGHIZJIZQUQKU
+    PUQKQZLZURKJIZKUTUQUPVCKQVAUPURAMNOVBUSKURJVBUQUPVAPZRSVDUAUPUQKUBZLZUTURTJ
+    IZURUQVFUSTURJVFURGHIZUSTVFURUQGHUPURUQQVEAUCUDZUEUPVHTQZVEUPAUIKUFUGCVJAUJ
+    AUHUKOULSUPVGURQVEUPURAMUMOVIUNUO $.
 
   ${
-    $d N d j k u x y $.  $d P d j k u x y $.
+    $d N d j k u x $.  $d P d j k u x $.
     $( Lemma for ~ liousum .  When the prime ` P ` divides the positive integer
        ` N ` , the divisor sums of Liouville's function at ` N ` and
        ` ( N / P ) ` add to the sum over divisors of ` N ` not divisible by
@@ -885439,8 +885267,7 @@ $)
   $}
 
   ${
-    $d m y $.  $d N k x $.  $d N m x z $.  $d d j k n p u x $.
-    $d d j k n p w x y $.  $d j k n p t $.  $d m w x z $.  $d y z $.
+    $d m y $.  $d N k x $.  $d N m x $.  $d d j k w x y $.  $d m w x $.
     $( On positive integers, the divisor sum of Liouville's function is the
        indicator of perfect squares.  Theorem 2.19 in [ApostolNT] p. 38.  The
        proof cancels the contributions of divisors paired by a prime factor and
@@ -885584,8 +885411,7 @@ $)
   $}
 
   ${
-    $d F a b c t y $.  $d F b c d t y $.  $d F a b n t x y z $.
-    $d F n p t x y z $.  $d F p q x $.  $d d t y z $.
+    $d F a b t x y z $.  $d F p t x y z $.
     $( Characterize Liouville's function by complex-valued complete
        multiplicativity on rationals, value minus one on primes, and value one
        at minus one.  The first conditions determine the values on positive
@@ -885702,9 +885528,9 @@ $)
     lgsprmp1d.2 $e |- ( ph -> R e. ( Prime \ { 2 } ) ) $.
     lgsprmp1d.3 $e |- ( ph -> R || ( P + 1 ) ) $.
     lgsprmp1d.4 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
-    $( If ` ( ( P - 1 ) / 2 ) ` is odd, quadratic reciprocity makes a prime
-       divisor of ` ( P + 1 ) ` a quadratic residue modulo ` P ` , under the
-       stated odd-prime hypotheses.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( Let ` P ` be an odd prime for which ` ( ( P - 1 ) / 2 ) ` is odd.  Every
+       odd prime divisor of ` ( P + 1 ) ` is a quadratic residue modulo ` P `
+       by quadratic reciprocity.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     lgsprmp1d $p |- ( ph -> ( R /L P ) = 1 ) $=
       ( co c1 c2 cexp cz wcel nnzd cn syl cmul wceq cdvds wbr gausslemma2dlem0a
       clgs cneg cmin cdiv lgscl syl2anc zcnd neg1z a1i cprime csn oddprm nnnn0d
@@ -888431,9 +888257,9 @@ $)
     liouoddprmnqrd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN
       ( ( 2 x. P ) = ( a + b ) /\
         ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( If twice a prime ` P > 3 ` has no positive-positive pair, no prime below
-       half of ` P ` is a quadratic residue modulo ` P ` .  (Contributed by Zhi
-       Wang, 20-Oct-2026.) $)
+    $( If ` P ` is a prime greater than three and twice ` P ` has no
+       positive-positive pair, no prime below half of ` P ` is a quadratic
+       residue modulo ` P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddprmnqrd $p |- ( ph -> -. ( R /L P ) = 1 ) $=
       ( vx co c2 clt wbr cliou cfv cneg wcel syl cz cmo cdiv cmin cif cmpt eqid
       cv cprime cn prmnn nnzd c1 cmul nnred crp ltmuldiv2d mpbird liouoddval1d2
@@ -888443,7 +888269,7 @@ $)
   $}
 
   ${
-    $d P c $.  $d a c $.  $d b c $.  $d c ph $.  $d P a b $.  $d P x $.
+    $d P c $.  $d a c $.  $d b c $.  $d c ph $.  $d P a b $.
     liougbprmd.1 $e |- ( ph -> P e. Prime ) $.
     liougbprmd.2 $e |- ( ph -> 3 < P ) $.
     $( Twice every prime above three is the sum of two positive integers at
@@ -888636,10 +888462,11 @@ $)
     liougb3sqd.2 $e |- ( ph -> 3 || A ) $.
     liougb3sqd.3 $e |- ( ph -> 3 || ( A / 3 ) ) $.
     liougb3sqd.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
-    $( If ` A ` has value one under Liouville's function and two successive
-       exact factors of three, scale the negative-negative pair at eighteen by
-       ` ( ( A / 3 ) / 3 ) ` to obtain a negative-negative pair for twice
-       ` A ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If a positive multiple ` A ` of nine has Liouville value one, twice
+       ` A ` has a negative-negative pair.  Dividing by three twice preserves
+       the original sign, so scaling the pair in ~ liougb18 by
+       ` ( ( A / 3 ) / 3 ) ` gives the required pair.  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
     liougb3sqd $p |- ( ph -> E. a e. NN E. b e. NN
       ( ( 2 x. A ) = ( a + b ) /\
         ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
