@@ -185445,6 +185445,12 @@ $)
       RHUGUHRUIUJWDCRUKULEUMUNUPUQZBCVRPEVRURZUSUPVQVSUTVQVRMCSOZPCVRWKVASPPVFZ
       TMPIZVQWBWLPIVBVCWJMCPPSVGVDVEVQLPTVTPIZWAPIZVHNWMTWNVQWBWOVIVCWJMCPPNVGV
       DWPPVTLVTLVJVKVLVMVNVPVO $.
+
+    $( A univariate polynomial is a multivariate polynomial on one index.
+       (Contributed by Stefan O'Rear, 25-Mar-2015.) $)
+    ply1bascl2 $p |- ( F e. B -> F e. ( Base ` ( 1o mPoly R ) ) ) $=
+      ( wcel c1o cmpl co cbs cfv ply1bas eleq2i biimpi ) DAGDHCIJKLZGAPDBCAEFMN
+      O $.
   $}
 
 
