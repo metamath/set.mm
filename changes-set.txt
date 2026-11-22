@@ -93,6 +93,21 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+22-Nov-26 cbru        [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 df-bru      [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bruval      [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 brucn       [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bruval2     [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bruval3     [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bruvalexp   [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bru1        [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bru2        [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bru4        [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bru3val     [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bru3cj      [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bru3sq      [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bru3eq      [same]      Moved from AV's mathbox to main set.mm
+22-Nov-26 bru3sqbru   [same]      Moved from AV's mathbox to main set.mm
  8-Nov-26 rru         rur
  8-Nov-26 cardprcALT  [same]      Moved from AD's mathbox to main set.mm
  8-Nov-26 cardprcr    [same]      Moved from AD's mathbox to main set.mm

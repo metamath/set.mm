@@ -391594,6 +391594,153 @@ $)
       DYOQYIYJVYIBVYRUWJYIUXGUWQVYJBAUXFDGYSYPUWKYRUWL $.
   $}
 
+  $c bRoU $.
+
+  $( Extend class notation with the mapping yielding the basic ` N ` -th root
+     of unity. $)
+  cbru $a class bRoU $.
+
+  $( Define the mapping yielding the basic ` N ` -th root of unity.  In
+     ~ cxpeq , this is called "the primitive ` N ` -th root of unity with the
+     smallest positive argument".  (Contributed by AV, 24-Oct-2026.) $)
+  df-bru $a |- bRoU = ( n e. NN
+                        |-> ( exp ` ( ( 2 x. ( _pi x. _i ) ) / n ) ) ) $.
+
+  ${
+    $d N n $.
+    $( The basic ` N ` -th root of unity.  (Contributed by AV, 24-Oct-2026.) $)
+    bruval $p |- ( N e. NN
+                -> ( bRoU ` N ) = ( exp ` ( ( 2 x. ( _pi x. _i ) ) / N ) ) ) $=
+      ( vn c2 cpi ci cmul co cv cdiv ce cfv cbru wceq oveq2 fveq2d df-bru fvmpt
+      cn fvex ) BACDEFGFGZBHZIGZJKTAIGZJKRLUAAMUBUCJUAATINOBPUCJSQ $.
+  $}
+
+  $( The basic ` N ` -th root of unity is a complex number.  (Contributed by
+     AV, 24-Oct-2026.) $)
+  brucn $p |- ( N e. NN -> ( bRoU ` N ) e. CC ) $=
+    ( cn wcel cbru cfv c2 cpi ci cmul co cdiv bruval 2cn picn ax-icn mulcli a1i
+    ce cc nncn nnne0 divcld efcld eqeltrd ) ABCZADEFGHIJZIJZAKJZRESALUEUHUEUGAU
+    GSCUEFUFMGHNOPPQATAUAUBUCUD $.
+
+  $( An alternate way to express the basic ` N ` -th root of unity, see
+     ~ cxpeq .  (Contributed by AV, 24-Oct-2026.) $)
+  bruval2 $p |- ( N e. NN -> ( bRoU ` N ) = ( -u 1 ^c ( 2 / N ) ) ) $=
+    ( cn wcel c2 cpi ci cmul co cdiv ce cfv cneg clog cbru ccxp a1i picn ax-icn
+    c1 cc 2cn mulcli nncn nnne0 div23d logm1 mulcomi eqtr2i oveq2d eqtrd fveq2d
+    wceq bruval neg1cn cc0 wne neg1ne0 divcld cxpefd 3eqtr4d ) ABCZDEFGHZGHAIHZ
+    JKDAIHZSLZMKZGHZJKANKVEVDOHVAVCVGJVAVCVDVBGHVGVADVBADTCVAUAPZVBTCVAEFQRUBPA
+    UCZAUDZUEVAVBVFVDGVBVFULVAVFFEGHVBUFFERQUGUHPUIUJUKAUMVAVEVDVETCVAUNPVEUOUP
+    VAUQPVADAVHVIVJURUSUT $.
+
+  $( An alternate way to express the basic ` N ` -th root of unity.
+     (Contributed by AV, 24-Oct-2026.) $)
+  bruval3 $p |- ( N e. NN -> ( bRoU ` N ) = ( ( cos ` ( ( 2 x. _pi ) / N ) )
+                              + ( _i x. ( sin ` ( ( 2 x. _pi ) / N ) ) ) ) ) $=
+    ( cn wcel cbru cfv c2 cpi ci cmul co cdiv ce ccos csin wceq picn ax-icn a1i
+    cc 3eqtrd caddc bruval mulcomi oveq2d 2cnd mul12d eqtrd oveq1d 2picn div23d
+    nncn nnne0 div32d fveq2d divcld efival syl ) ABCZADEFGHIJZIJZAKJZLEHFGIJZAK
+    JZIJZLEZVCMEHVCNEIJUAJZAUBURVAVDLURVAHVBIJZAKJHAKJVBIJVDURUTVGAKURUTFHGIJZI
+    JVGURUSVHFIUSVHOURGHPQUCRUDURFHGURUEHSCURQRZGSCURPRUFUGUHURHVBAVIVBSCURUIRZ
+    AUKZAULZUJURHAVBVIVKVJVLUMTUNURVCSCVEVFOURVBAVJVKVLUOVCUPUQT $.
+
+  $( The ` N ` -th power of the basic ` N ` -th root of unity is 1.
+     (Contributed by AV, 24-Oct-2026.) $)
+  bruvalexp $p |- ( N e. NN -> ( ( bRoU ` N ) ^ N ) = 1 ) $=
+    ( cn wcel cbru cfv cexp co c1 cneg cdiv ccxp bruval2 oveq1d root1id eqtrd
+    c2 ) ABCZADEZAFGHIPAJGKGZAFGHQRSAFALMANO $.
+
+  $( The basic (and only) 1st root of unity is 1.  (Contributed by AV,
+     24-Oct-2026.) $)
+  bru1 $p |- ( bRoU ` 1 ) = 1 $=
+    ( c1 cbru cfv cneg c2 cdiv co ccxp cn wcel wceq 1nn bruval2 ax-mp 2cn div1i
+    oveq2i cexp cc eqtri cc0 wne cz neg1cn neg1ne0 2z cxpexpz mp3an neg1sqe1 )
+    ABCZADZEAFGZHGZAAIJUJUMKLAMNUMUKEHGZAULEUKHEOPQUNUKERGZAUKSJUKUAUBEUCJUNUOK
+    UDUEUFUKEUGUHUITTT $.
+
+  $( The basic 2nd root of unity is ` -u 1 ` .  (Contributed by AV,
+     24-Oct-2026.) $)
+  bru2 $p |- ( bRoU ` 2 ) = -u 1 $=
+    ( c2 cbru cfv c1 cneg cdiv co ccxp cn wcel 2nn bruval2 ax-mp 2div2e1 oveq2i
+    wceq cc neg1cn cxp1 3eqtri ) ABCZDEZAAFGZHGZUBDHGZUBAIJUAUDPKALMUCDUBHNOUBQ
+    JUEUBPRUBSMT $.
+
+  $( The basic 4th root of unity is ` _i ` .  (Contributed by AV,
+     27-Oct-2026.) $)
+  bru4 $p |- ( bRoU ` 4 ) = _i $=
+    ( c1 cneg c2 c4 cdiv co ccxp csqrt cbru ci cmul 2t1e2 2t2e4 oveq12i cc wcel
+    cfv wceq 2cnne0 ax-mp cc0 wne wa ax-1cn divcan5 mp3an eqtr3i oveq2i cxpsqrt
+    neg1cn eqtri cn 4nn bruval2 sqrtm1 3eqtr4i ) ABZCDEFZGFZUQHQZDIQZJUSUQACEFZ
+    GFZUTURVBUQGCAKFZCCKFZEFZURVBVDCVEDELMNAOPCOPCUAUBUCZVGVFVBRUDSSACCUEUFUGUH
+    UQOPVCUTRUJUQUITUKDULPVAUSRUMDUNTUOUP $.
+
+  ${
+    bru3eq.w $e |- W = ( bRoU ` 3 ) $.
+    $( An alternate way to express the basic 3rd root of unity.  (Contributed
+       by AV, 24-Oct-2026.) $)
+    bru3val $p |- W = ( ( -u 1 + ( _i x. ( sqrt ` 3 ) ) ) / 2 ) $=
+      ( c3 cfv c2 cpi cmul co cdiv ccos ci csin caddc wceq 2cn 2ne0 oveq2i cmin
+      c1 3eqtri cbru cneg csqrt cn wcel 3nn bruval3 ax-mp ax-icn 3pos sqrtpclii
+      3re recni divassi neg1cn mulcli divdiri cexp picn 3cn fveq2i divcli cos2t
+      3ne0 cc sincos3rdpi simpri oveq1i sqrecii eqtri sqvali ax-1cn c4 cc0 4ne0
+      2t2e4 eqnetri wne wa 2cnne0 divcan5 mp3an eqtr3i 2div2e1 eqcomi divsubdir
+      eqtr4i negsubdi2i 2m1e1 negeqi oveq12 divreci divcan2i oveq12i 3eqtr4ri
+      sin2t ) ACUADZEFGHCIHZJDZKWRLDZGHZMHZSUBZKCUCDZGHZMHEIHZBCUDUEWQXBNUFCUGU
+      HXCEIHZXEEIHZMHXGKXDEIHZGHZMHXFXBXHXJXGMKXDEUIXDCULUJUKUMZOPUNQXCXEEUOKXD
+      UIXKUPOPUQWSXGXAXJMWSEFCIHZGHZJDZESEEURHZIHZGHZSRHZXGWRXMJEFCOUSUTVDUNZVA
+      XNEXLJDZEURHZGHZSRHZXRXLVEUEZXNYCNFCUSUTVDVBZXLVCUHYBXQSRYAXPEGYASEIHZEUR
+      HXPXTYFEURXLLDZXINZXTYFNZVFVGVHEOPVIVJQVHVJXRYFSRHZSERHZEIHZXGXQYFSRXQESE
+      EGHZIHZGHZYFXPYNEGXOYMSIEOVKQQESGHYMIHZYOYFESYMOVLEEOOUPYMVMVNVPVOVQUNSVE
+      UEZEVEUEZEVNVRVSZYSYPYFNVLVTVTSEEWAWBWCVJVHYJYFEEIHZRHZYLSYTYFRYTSWDWEQYQ
+      YRYSYLUUANVLOVTSEEWFWBWGYKXCEIESRHZUBYKXCESOVLWHUUBSWIWJWCVHTTWTXIKGWTXML
+      DZEYGXTGHZGHZXIWRXMLXSVAYDUUCUUENYEXLWPUHUUEEXIYFGHZGHEXIEIHZGHXIUUDUUFEG
+      YHYIVSUUDUUFNVFYGXIXTYFGWKUHQUUFUUGEGUUGUUFXIEXDEXKOPVBZOPWLWEQXIEUUHOPWM
+      TTQWNWOT $.
+
+    $( The complex conjugate of the basic 3rd root of unity.  (Contributed by
+       AV, 24-Oct-2026.) $)
+    bru3cj $p |- ( * ` W ) = ( W ^ 2 ) $=
+      ( ccj cfv c1 cneg c2 c3 co cexp wcel wceq ax-mp eqtri fveq2i cc wa pm3.2i
+      3nn eqcomi cdiv ccxp cmin cbru cn bruval2 neg1cn 2cn 3cn 3ne0 divcli exp1
+      cxpcl cz 1z root1cj 3m1e2 oveq12i 3eqtri ) ACDEFZGHUAIZUBIZCDZVBHEUCIZJIZ
+      AGJIAVBCAHUDDZVBBHUEKZVFVBLSHUFMNZOVCVBEJIZCDZVEVBVICVIVBVBPKZVIVBLUTPKZV
+      APKZQVKVLVMUGGHUHUIUJUKRUTVAUMMVBULMTOVGEUNKZQVJVELVGVNSUOREHUPMNVBAVDGJA
+      VBVHTUQURUS $.
+
+    $( The square of the basic 3rd root of unity.  (Contributed by AV,
+       24-Oct-2026.) $)
+    bru3sq $p |- ( W ^ 2 ) = ( ( -u 1 / 2 )
+                               - ( _i x. ( ( sqrt ` 3 ) / 2 ) ) ) $=
+      ( ccj cfv c2 cexp co c1 cdiv ci c3 cmul caddc fveq2i ax-icn 2cn 2ne0 wcel
+      cr rehalfcli cneg csqrt cmin bru3cj bru3val neg1cn sqrtpclii recni mulcli
+      3pos divdiri divassi oveq2i eqtri wceq neg1rr cjreim mp2an 3eqtri eqtr3i
+      3re ) ACDZAEFGHUAZEIGZJKUBDZEIGZLGZUCGZABUDVBVCJVELGZMGEIGZCDVDVGMGZCDZVH
+      AVJCABUENVJVKCVJVDVIEIGZMGVKVCVIEUFJVEOVEKVAUJUGZUHZUIPQUKVMVGVDMJVEEOVOP
+      QULUMUNNVDSRVFSRVLVHUOVCUPTVEVNTVDVFUQURUSUT $.
+
+    $( The basic 3rd root of unity ` _om ` satisfies the equation
+       ` _om ^ 2 + _om + 1 = 0 ` .  (Contributed by AV, 24-Oct-2026.) $)
+    bru3eq $p |- ( ( ( W ^ 2 ) + W ) + 1 ) = 0 $=
+      ( c2 co caddc c1 cneg cdiv ci cmul cc0 oveq1i wcel ax-1cn 2cn 2ne0 oveq2i
+      cc eqtri ax-icn cexp c3 csqrt cfv cmin bru3sq bru3val oveq12i wceq divneg
+      mp3an halfcn mulneg2i 2thalfe1 negeqi neg1cn divcli 2timesi 3eqtr3ri 3pos
+      wne sqrtpclii recni mulcli divdiri divassi nppcan3 negsubdii 3eqtr4i neg0
+      3re 1m1e0 3eqtri ) ACUADZAEDZFEDFGZCHDZIUBUCUDZCHDZJDZUEDZVPIVRJDZEDCHDZE
+      DZFEDZFFUEDZGZKVOWDFEVNWAAWCEABUFABUGUHLVQVQEDZFEDVPFEDWEWGWHVPFECFCHDZGZ
+      JDZCVQJDVPWHWJVQCJFRMCRMCKVAWJVQUINOPFCUJUKQWKCWIJDZGVPCWIOULUMWLFUNUOSVQ
+      VPCUPOPUQZURUSLWDWHFEWDWAVQVTEDZEDZWHWCWNWAEWCVQWBCHDZEDWNVPWBCUPIVRTVRUB
+      VKUTVBVCZVDOPVEWPVTVQEIVRCTWQOPVFQSQVQRMZVTRMWRWOWHUIWMIVSTVRCWQOPUQVDWMV
+      QVTVQVGUKSLFFNNVHVIWGKGKWFKVLUOVJSVM $.
+
+    $( The square of the basic 3rd root of unity expressed by the basic 3rd
+       root of unity.  (Contributed by AV, 24-Oct-2026.) $)
+    bru3sqbru $p |- ( W ^ 2 ) = ( -u 1 - W ) $=
+      ( c2 cexp co c1 caddc cneg cmin cc0 wceq ax-1cn c3 cbru cfv cc wcel mp2an
+      cn 3nn brucn ax-mp eqeltri addcomi oveq2i sqcli addassi bru3eq 3eqtr2i wb
+      addcli addeq0 mpbi negdi2 eqtri ) ACDEZFAGEZHZFHAIEZUPUQGEZJKZUPURKZUTUPA
+      FGEZGEUPAGEFGEJUQVCUPGFALAMNOZPBMSQVDPQTMUAUBUCZUDUEUPAFAVEUFZVELUGABUHUI
+      UPPQUQPQVAVBUJVFFALVEUKUPUQULRUMFPQAPQURUSKLVEFAUNRUO $.
+  $}
+
   $( If the ` N ` -th root of an integer ` A ` is rational, that root must be
      an integer.  Generalization of ~ zsqrtelqelz to positive integer roots.
      (Contributed by Steven Nguyen, 6-Apr-2023.) $)
@@ -517518,55 +517665,44 @@ $)
     $( Let ` X ` , ` Y ` , ` Z ` be one third of the angles of a positively
        oriented triangle with vertices ` A ` , ` B ` , ` C ` .  The product
        ` J ` of the rotation coefficients for twice these angles is the
-       rotation by ` ( 2 x. ( _pi / 3 ) ) ` , so it is a cube root of unity
-       other than ` 1 ` .  (Contributed by JAG, 13-Oct-2026.) $)
-    morlemj $p |- ( ph
-        -> ( J = ( exp ` ( _i x. ( 2 x. ( _pi / 3 ) ) ) ) /\ ( J ^ 3 ) = 1 /\ J
-        =/= 1 ) ) $=
-      ( ci c2 cpi c3 cdiv co cmul ce cfv wceq cexp c1 wne a1i caddc oveq12d cc0
-      cmin cioo wcel cr elioore syl recnd ang180pos simp1d addcld simp2d cc 3cn
-      3ne0 divdird oveq1d eqtrd eqcomd addassd addcomd simp3d 3eqtrd oveq2d 2cn
-      divcld eqeltrd adddid ax-icn mulcld fveq2d efadd syl2anc cz pire 3z efexp
-      mul12d divcan2d ef2pi cre cneg ccos csin efival 2re 3re redivcld remulcld
-      recoscld resincld crre cos2t csqrt sincos3rdpi simpri halfre mulassd 1cnd
-      sqvald 2ne0 mullidd negsubdi2d 2halves pncan2d renegcld 0red 1red clt wbr
-      negeqd halfgt0 lt0neg2d mpbid 0lt1 lttrd ltned eqnetrd re1 eqcomi neeqtrd
-      neneqd wi fveq2 mtod neqned 3jca ) AHUDUEUFUGUHUIZUJUIZUJUIZUKULZUMHUGUNU
-      IZUOUMHUOUPAHUDUEIUJUIZUJUIZUKULUDUEJUJUIZUJUIZUKULUJUIZUDUEKUJUIZUJUIZUK
-      ULZUJUIZUUJHUUTUMAUCUQAUUJUUTAUUJUUMUUOURUIZUURURUIZUKULZUUTAUUIUVBUKAUUI
-      UDUULUUNURUIZUUQURUIZUJUIZUVBAUUHUVEUDUJAUUHUEIJURUIZKURUIZUJUIZUVEAUVIUU
-      HAUVHUUGUEUJAUVHEDVAUIFDVAUIGUIZUGUHUIZFEVAUIDEVAUIGUIZUGUHUIZURUIZDFVAUI
-      EFVAUIGUIZUGUHUIZURUIZUVJUVLURUIZUVOURUIZUGUHUIZUUGAUVGUVNKUVPURAIUVKJUVM
-      URIUVKUMAMUQZJUVMUMANUQZUSKUVPUMAOUQZUSAUVTUVQAUVTUVRUGUHUIZUVPURUIUVQAUV
-      RUVOUGAUVJUVLAUVJAUVJUTUFVBUIZVCUVJVDVCUBUVJUTUFVEVFVGZAUVLAUVLUWEVCZUVLV
-      DVCAUWGUVOUWEVCZUVLUVOURUIZUVJURUIZUFUMZABCDEFGLPQRSTUAUBVHZVIUVLUTUFVEVF
-      VGZVJAUVOAUWHUVOVDVCAUWGUWHUWKUWLVKUVOUTUFVEVFVGZUGVLVCAVMUQZUGUTUPAVNUQZ
-      VOAUWDUVNUVPURAUVJUVLUGUWFUWMUWOUWPVOVPVQVRAUVSUFUGUHAUVSUVJUWIURUIUWJUFA
-      UVJUVLUVOUWFUWMUWNVSAUVJUWIUWFAUVLUVOUWMUWNVJVTAUWGUWHUWKUWLWAWBVPWBWCVRA
-      UVIUEUVGUJUIZUUQURUIUVEAUEUVGKUEVLVCAWDUQZAIJAIUVKVLUWAAUVJUGUWFUWOUWPWEW
-      FZAJUVMVLUWBAUVLUGUWMUWOUWPWEWFZVJAKUVPVLUWCAUVOUGUWNUWOUWPWEWFZWGAUWQUVD
-      UUQURAUEIJUWRUWSUWTWGVPVQVQWCAUVFUDUVDUJUIZUURURUIUVBAUDUVDUUQUDVLVCAWHUQ
-      ZAUULUUNAUEIUWRUWSWIZAUEJUWRUWTWIZVJAUEKUWRUXAWIZWGAUXBUVAUURURAUDUULUUNU
-      XCUXDUXEWGVPVQVQWJAUVCUVAUKULZUUSUJUIZUUTAUVAVLVCUURVLVCUVCUXHUMAUUMUUOAU
-      DUULUXCUXDWIZAUDUUNUXCUXEWIZVJAUDUUQUXCUXFWIUVAUURWKWLAUXGUUPUUSUJAUUMVLV
-      CUUOVLVCUXGUUPUMUXIUXJUUMUUOWKWLVPVQVQVRVQZAUUKUUJUGUNUIZUOAHUUJUGUNUXKVP
-      AUXLUGUUIUJUIZUKULZUDUEUFUJUIZUJUIZUKULZUOAUXNUXLAUUIVLVCUGWMVCZUXNUXLUMA
-      UDUUHUXCAUEUUGUWRAUFUGAUFUFVDVCAWNUQZVGZUWOUWPWEZWIZWIUXRAWOUQUUIUGWPWLVR
-      AUXMUXPUKAUXMUDUGUUHUJUIZUJUIUXPAUGUDUUHUWOUXCUYBWQAUYCUXOUDUJAUYCUEUGUUG
-      UJUIZUJUIUXOAUGUEUUGUWOUWRUYAWQAUYDUFUEUJAUFUGUXTUWOUWPWRWCVQWCVQWJUXQUOU
-      MAWSUQWBVQAHUOAHUOUMZHWTULZUOWTULZUMZAUYFUYGAUYFUOUYGAUYFUOUEUHUIZXAZUOAU
-      YFUEUYIUEUNUIZUJUIZUOVAUIZUYJAUYFUUHXBULZUYMAUYFUYNUDUUHXCULZUJUIURUIZWTU
-      LZUYNAHUYPWTAHUUJUYPUXKAUUHVLVCUUJUYPUMUYBUUHXDVFVQWJAUYNVDVCUYOVDVCUYQUY
-      NUMAUUHAUEUUGUEVDVCAXEUQAUFUGUXSUGVDVCAXFUQUWPXGXHZXIAUUHUYRXJUYNUYOXKWLV
-      QAUYNUEUUGXBULZUEUNUIZUJUIZUOVAUIZUYMAUUGVLVCUYNVUBUMUYAUUGXLVFAVUAUYLUOV
-      AAUYTUYKUEUJAUYSUYIUEUNUYSUYIUMZAUUGXCULUGXMULUEUHUIUMVUCXNXOUQVPWCVPVQVQ
-      AUYMUYIUOVAUIZUYJAUYLUYIUOVAAUYLUOUYIUJUIZUYIAUYLUEUYIUYIUJUIZUJUIZUEUYIU
-      JUIZUYIUJUIZVUEAUYKVUFUEUJAUYIAUYIUYIVDVCAXPUQZVGZXSWCAVUIVUGAUEUYIUYIUWR
-      VUKVUKXQVRAVUHUOUYIUJAUOUEAXRZUWRUEUTUPAXTUQWRVPWBAUYIVUKYAVQVPAVUDUOUYIV
-      AUIZXAZUYJAVUNVUDAUOUYIVULVUKYBVRAVUMUYIAVUMUYIUYIURUIZUYIVAUIZUYIAVUPVUM
-      AVUOUOUYIVAAUOVLVCVUOUOUMVULUOYCVFVPVRAUYIUYIVUKVUKYDVQYJVQVQVQAUYJUOAUYI
-      VUJYEZAUYJUTUOVUQAYFAYGAUTUYIYHYIZUYJUTYHYIVURAYKUQAUYIVUJYLYMUTUOYHYIAYN
-      UQYOYPYQUOUYGUMAUYGUOYRYSUQYTUUAUYEUYHUUBAHUOWTUUCUQUUDUUEUUF $.
+       rotation by ` ( 2 x. ( _pi / 3 ) ) ` , which is the basic cube root of
+       unity ` ( bRoU `` 3 ) ` ; in particular it is a cube root of unity other
+       than ` 1 ` .  (Contributed by JAG, 13-Oct-2026.) $)
+    morlemj $p |- ( ph -> ( J = ( bRoU ` 3 ) /\ ( J ^ 3 ) = 1 /\ J =/= 1 ) )
+      $=
+      ( c3 cbru cfv wceq cexp co c1 wne ci c2 cpi cdiv cmul ce a1i cmin oveq12d
+      caddc cc0 cioo cr elioore syl recnd ang180pos simp1d addcld simp2d cc 3cn
+      wcel divdird oveq1d eqtrd eqcomd addassd addcomd simp3d 3eqtrd oveq2d 2cn
+      divcld eqeltrd adddid ax-icn mulcld fveq2d efadd syl2anc 3nn bruval ax-mp
+      3ne0 picn mulcomi oveq2i mul12i eqtri oveq1i mulcli divassi 3eqtri fveq2i
+      cn eqtr4d bruvalexp wa simpr sq1 1p1e2 2p1e3 eqid bru3eq adantr eqtr3d ex
+      necon3d mpd 3jca ) AHUDUEUFZUGHUDUHUIZUJUGHUJUKZAHULUMUNUDUOUIZUPUIZUPUIZ
+      UQUFZYCAHULUMIUPUIZUPUIZUQUFULUMJUPUIZUPUIZUQUFUPUIZULUMKUPUIZUPUIZUQUFZU
+      PUIZYIHYRUGAUCURAYIYRAYIYKYMVAUIZYPVAUIZUQUFZYRAYHYTUQAYHULYJYLVAUIZYOVAU
+      IZUPUIZYTAYGUUCULUPAYGUMIJVAUIZKVAUIZUPUIZUUCAUUGYGAUUFYFUMUPAUUFEDUSUIFD
+      USUIGUIZUDUOUIZFEUSUIDEUSUIGUIZUDUOUIZVAUIZDFUSUIEFUSUIGUIZUDUOUIZVAUIZUU
+      HUUJVAUIZUUMVAUIZUDUOUIZYFAUUEUULKUUNVAAIUUIJUUKVAIUUIUGAMURZJUUKUGANURZU
+      TKUUNUGAOURZUTAUURUUOAUURUUPUDUOUIZUUNVAUIUUOAUUPUUMUDAUUHUUJAUUHAUUHVBUN
+      VCUIZVNUUHVDVNUBUUHVBUNVEVFVGZAUUJAUUJUVCVNZUUJVDVNAUVEUUMUVCVNZUUJUUMVAU
+      IZUUHVAUIZUNUGZABCDEFGLPQRSTUAUBVHZVIUUJVBUNVEVFVGZVJAUUMAUVFUUMVDVNAUVEU
+      VFUVIUVJVKUUMVBUNVEVFVGZUDVLVNAVMURZUDVBUKZAWPURZVOAUVBUULUUNVAAUUHUUJUDU
+      VDUVKUVMUVOVOVPVQVRAUUQUNUDUOAUUQUUHUVGVAUIUVHUNAUUHUUJUUMUVDUVKUVLVSAUUH
+      UVGUVDAUUJUUMUVKUVLVJVTAUVEUVFUVIUVJWAWBVPWBWCVRAUUGUMUUEUPUIZYOVAUIUUCAU
+      MUUEKUMVLVNAWDURZAIJAIUUIVLUUSAUUHUDUVDUVMUVOWEWFZAJUUKVLUUTAUUJUDUVKUVMU
+      VOWEWFZVJAKUUNVLUVAAUUMUDUVLUVMUVOWEWFZWGAUVPUUBYOVAAUMIJUVQUVRUVSWGVPVQV
+      QWCAUUDULUUBUPUIZYPVAUIYTAULUUBYOULVLVNAWHURZAYJYLAUMIUVQUVRWIZAUMJUVQUVS
+      WIZVJAUMKUVQUVTWIZWGAUWAYSYPVAAULYJYLUWBUWCUWDWGVPVQVQWJAUUAYSUQUFZYQUPUI
+      ZYRAYSVLVNYPVLVNUUAUWGUGAYKYMAULYJUWBUWCWIZAULYLUWBUWDWIZVJAULYOUWBUWEWIY
+      SYPWKWLAUWFYNYQUPAYKVLVNYMVLVNUWFYNUGUWHUWIYKYMWKWLVPVQVQVRVQYCYIUGAYCUMU
+      NULUPUIZUPUIZUDUOUIZUQUFZYIUDXGVNZYCUWMUGWMUDWNWOUWLYHUQUWLULUMUNUPUIZUPU
+      IZUDUOUIULUWOUDUOUIZUPUIYHUWKUWPUDUOUWKUMULUNUPUIZUPUIUWPUWJUWRUMUPUNULWQ
+      WHWRWSUMULUNWDWHWQWTXAXBULUWOUDWHUMUNWDWQXCVMWPXDUWQYGULUPUMUNUDWDWQVMWPX
+      DWSXEXFXAURXHZAYDYCUDUHUIZUJAHYCUDUHUWSVPUWTUJUGZAUWNUXAWMUDXIWOURVQAUVNY
+      EUVOAHUJUDVBAHUJUGZUDVBUGAUXBXJZHUMUHUIZHVAUIZUJVAUIZUDVBUXCUXFUJUMUHUIZU
+      JVAUIZUJVAUIZUDUXCUXEUXHUJVAUXCUXDUXGHUJVAUXCHUJUMUHAUXBXKZVPUXJUTVPUXIUD
+      UGUXCUXIUMUJVAUIUDUXHUMUJVAUXHUJUJVAUIUMUXGUJUJVAXLXBXMXAXBXNXAURVQAUXFVB
+      UGUXBAUXFYCUMUHUIZYCVAUIZUJVAUIZVBAUXEUXLUJVAAUXDUXKHYCVAAHYCUMUHUWSVPUWS
+      UTVPUXMVBUGAYCYCXOXPURVQXQXRXSXTYAYB $.
   $}
 
   ${
@@ -517994,7 +518130,7 @@ $)
     $( The vertices ` P ` , ` Q ` , ` R ` of the Morley triangle satisfy the
        linear relation ` ( ( P + ( J x. Q ) ) + ( ( J ^ 2 ) x. R ) ) = 0 ` ,
        where ` J ` is the product of the rotation coefficients for twice the
-       trisected angles.  The hypotheses are those of ~ morleyR2 .  The
+       trisected angles.  The hypotheses are those of ~ morleyConnes .  The
        relation follows from ~ morlemlinalg , applied to the rotations of
        ~ morlemfix3 and ~ morlemid , with ` J ` given by ~ morlemj .
        (Contributed by JAG, 13-Oct-2026.) $)
@@ -518002,76 +518138,34 @@ $)
         = 0 ) $=
       ( ci c2 cmul co ce cfv cc wcel ax-icn a1i 2cn cmin cdiv wceq cc0 cpi cioo
       c3 cr elioore syl recnd 3cn wne 3ne0 divcld eqeltrd efcld caddc ang180pos
-      mulcld simp1d simp2d efne0d cexp morlemj simp3d 3re redivcld clt eliooord
-      c1 wbr simpld 3pos divgt0d breqtrrd addassd addcld addcomd eqcomd oveq12d
-      wa divdird oveq1d 3eqtrd morlemdne0 morlemfix3 0cnd morlemid morlemlinalg
-      eqtrd ) ADEFVBVCMVDVEZVDVEZVFVGZGHIVBVCLVDVEZVDVEZVFVGZVBVCNVDVEZVDVEZVFV
-      GZKSTUAUBUCUDAYHAVBYGVBVHVIAVJVKZAVCLVCVHVIAVLVKZALEDVMVEFDVMVEJVEZVSVNVE
-      ZVHLYPVOAPVKZAYOVSAYOAYOVPVQVRVEZVIZYOVTVIUNYOVPVQWAWBZWCZVSVHVIAWDVKZVSV
-      PWEAWFVKZWGWHZWLWLZWIAYEAVBYDYMAVCMYNAMFEVMVEDEVMVEJVEZVSVNVEZVHMUUGVOAQV
-      KZAUUFVSAUUFAUUFYRVIZUUFVTVIAUUIDFVMVEEFVMVEJVEZYRVIZUUFUUJWJVEZYOWJVEZVQ
-      VOZABCDEFJOSTUAUEUFUGUNWKZWMZUUFVPVQWAWBZWCZUUBUUCWGWHZWLWLZWIAYKAVBYJYMA
-      VCNYNANUUJVSVNVEZVHNUVAVOARVKZAUUJVSAUUJAUUKUUJVTVIAUUIUUKUUNUUOWNZUUJVPV
-      QWAWBZWCZUUBUUCWGWHZWLWLZWIAYHUUEWOAYEUUTWOAYKUVGWOKYIYFVDVEYLVDVEVOAVAVK
-      AKVBVCVQVSVNVEZVDVEVDVEVFVGVOZKVSWPVEXCVOZKXCWEZABCDEFJKLMNOPQRSTUAUEUFUG
-      UNVAWQZWNAUVIUVJUVKUVLWRAMNLAMUUGVTUUHAUUFVSUUQVSVTVIAWSVKZUUCWTWHZANUVAV
-      TUVBAUUJVSUVDUVMUUCWTWHZALYPVTYQAYOVSYTUVMUUCWTWHZAVPUUGMXAAUUFVSUUQUVMAV
-      PUUFXAXDZUUFVQXAXDZAUUIUVQUVRXNUUPUUFVPVQXBWBXEVPVSXAXDAXFVKZXGUUHXHZAVPU
-      VANXAAUUJVSUVDUVMAVPUUJXAXDZUUJVQXAXDZAUUKUWAUWBXNUVCUUJVPVQXBWBXEUVSXGUV
-      BXHZAVPYPLXAAYOVSYTUVMAVPYOXAXDZYOVQXAXDZAYSUWDUWEXNUNYOVPVQXBWBXEUVSXGYQ
-      XHZAMNWJVEZLWJVEZLMWJVEZNWJVEZUVHAUWJUWHAUWJLUWGWJVEUWHALMNUUDUUSUVFXIALU
-      WGUUDAMNUUSUVFXJXKYCXLAUWJYPUUGWJVEZUVAWJVEZYOUUFWJVEZUUJWJVEZVSVNVEZUVHA
-      UWIUWKNUVAWJALYPMUUGWJYQUUHXMUVBXMAUWOUWLAUWOUWMVSVNVEZUVAWJVEUWLAUWMUUJV
-      SAYOUUFUUAUURXJUVEUUBUUCXOAUWPUWKUVAWJAYOUUFVSUUAUURUUBUUCXOXPYCXLAUWNVQV
-      SVNAUWNYOUULWJVEUUMVQAYOUUFUUJUUAUURUVEXIAYOUULUUAAUUFUUJUURUVEXJXKAUUIUU
-      KUUNUUOWRXQXPXQZYCXRANLMUVOUVPUVNUWCUWFUVTANLWJVEMWJVEZUWJUVHAUWRNUWIWJVE
-      UWJANLMUVFUUDUUSXIANUWIUVFALMUUDUUSXJXKYCUWQYCXRALMNUVPUVNUVOUWFUVTUWCUWQ
-      XRADYIEYFIEVMVEVDVEWJVEDVMVEVDVEWJVEIVOZEYFFYLGFVMVEVDVEWJVEEVMVEVDVEWJVE
-      GVOZFYLDYIHDVMVEVDVEWJVEFVMVEVDVEWJVEHVOZABCDEFGHIJLMNOSTUAUBUCUDUEUFUGUH
-      UIUJUKULUMUOUPUQURUSUTXSZWMAUWSUWTUXAUXBWNAUWSUWTUXAUXBWRABCDEFJVPLMNOPQR
-      STUAAXTUEUFUGYAYB $.
-  $}
-
-  ${
-    cubeq1facd.s $e |- ( ph -> S e. CC ) $.
-    cubeq1facd.1 $e |- ( ph -> ( S ^ 3 ) = 1 ) $.
-    $( If ` ( S ^ 3 ) = 1 ` , then ` ( S - 1 ) ` times
-       ` ( ( ( S ^ 2 ) + S ) + 1 ) ` is zero.  (Deduction form.)  (Contributed
-       by JAG, 13-Oct-2026.) $)
-    cubeq1facd $p |- ( ph -> ( ( S - 1 ) x. ( ( ( S ^ 2 ) + S ) + 1 ) )
-        = 0 ) $=
-      ( c1 cmin co c2 cexp caddc cmul cc0 cubm1d oveq1d wceq 1m1e0 a1i 3eqtrd
-      c3 ) ABEFGBHIGBJGEJGKGBSIGZEFGEEFGZLABCMATEEFDNUALOAPQR $.
-  $}
-
-  ${
-    cubeq1absd.j $e |- ( ph -> J e. CC ) $.
-    cubeq1absd.1 $e |- ( ph -> ( J ^ 3 ) = 1 ) $.
-    $( A complex cube root of unity has absolute value ` 1 ` .  (Deduction
-       form.)  (Contributed by JAG, 13-Oct-2026.) $)
-    cubeq1absd $p |- ( ph -> ( abs ` J ) = 1 ) $=
-      ( cabs cfv c1 cmin co cc0 wceq cexp caddc recnd readdcld a1i eqtrd eqtr3d
-      cdiv c3 c2 cmul abscld 1cnd subcld resqcld sqge0d absge0d addge0d clt wbr
-      1red 0lt1 addgegt0d gt0ne0d divcan4d cn0 wcel 3nn0 fveq2d abs1 cubeq1facd
-      absexpd oveq1d div0d subeq0ad mpbid ) ABEFZGHIZJKVHGKAVIVHUALIZVHMIZGMIZU
-      BIZVLSIZVIJAVIVLAVHGAVHABCUCZNZAUDZUEAVLAVKGAVJVHAVHVOUFZVOOZAULZONZAVLAV
-      KGVSVTAVJVHVRVOAVHVOUGABCUHUIJGUJUKAUMPUNUOZUPAVNJVLSIJAVMJVLSAVHVPABTLIZ
-      EFZVHTLIGABTCTUQURAUSPVCAWDGEFZGAWCGEDUTWEGKAVAPQRVBVDAVLWAWBVEQRAVHGVPVQ
-      VFVG $.
-  $}
-
-  ${
-    cubeq1sumd.j $e |- ( ph -> J e. CC ) $.
-    cubeq1sumd.1 $e |- ( ph -> ( J ^ 3 ) = 1 ) $.
-    cubeq1sumd.2 $e |- ( ph -> J =/= 1 ) $.
-    $( A cube root of unity ` J ` other than ` 1 ` satisfies
-       ` ( ( ( J ^ 2 ) + J ) + 1 ) = 0 ` .  (Deduction form.)  (Contributed by
-       JAG, 13-Oct-2026.) $)
-    cubeq1sumd $p |- ( ph -> ( ( ( J ^ 2 ) + J ) + 1 ) = 0 ) $=
-      ( c1 cmin co c2 cexp caddc cmul cdiv cc0 sqcld addcld 1cnd subcld subne0d
-      divcan3d cubeq1facd oveq1d div0d eqtrd eqtr3d ) ABFGHZBIJHZBKHZFKHZLHZUFM
-      HZUINAUIUFAUHFAUGBABCOCPAQZPABFCULRZABFCULESZTAUKNUFMHNAUJNUFMABCDUAUBAUF
-      UMUNUCUDUE $.
+      mulcld simp1d simp2d efne0d cbru cexp morlemj simp3d 3re redivcld clt wbr
+      c1 wa eliooord simpld 3pos divgt0d breqtrrd addassd addcld addcomd eqcomd
+      oveq12d divdird oveq1d 3eqtrd morlemdne0 morlemfix3 morlemid morlemlinalg
+      eqtrd 0cnd ) ADEFVBVCMVDVEZVDVEZVFVGZGHIVBVCLVDVEZVDVEZVFVGZVBVCNVDVEZVDV
+      EZVFVGZKSTUAUBUCUDAYIAVBYHVBVHVIAVJVKZAVCLVCVHVIAVLVKZALEDVMVEFDVMVEJVEZV
+      SVNVEZVHLYQVOAPVKZAYPVSAYPAYPVPVQVRVEZVIZYPVTVIUNYPVPVQWAWBZWCZVSVHVIAWDV
+      KZVSVPWEAWFVKZWGWHZWLWLZWIAYFAVBYEYNAVCMYOAMFEVMVEDEVMVEJVEZVSVNVEZVHMUUH
+      VOAQVKZAUUGVSAUUGAUUGYSVIZUUGVTVIAUUJDFVMVEEFVMVEJVEZYSVIZUUGUUKWJVEZYPWJ
+      VEZVQVOZABCDEFJOSTUAUEUFUGUNWKZWMZUUGVPVQWAWBZWCZUUCUUDWGWHZWLWLZWIAYLAVB
+      YKYNAVCNYOANUUKVSVNVEZVHNUVBVOARVKZAUUKVSAUUKAUULUUKVTVIAUUJUULUUOUUPWNZU
+      UKVPVQWAWBZWCZUUCUUDWGWHZWLWLZWIAYIUUFWOAYFUVAWOAYLUVHWOKYJYGVDVEYMVDVEVO
+      AVAVKAKVSWPVGVOZKVSWQVEXDVOZKXDWEZABCDEFJKLMNOPQRSTUAUEUFUGUNVAWRZWNAUVIU
+      VJUVKUVLWSAMNLAMUUHVTUUIAUUGVSUURVSVTVIAWTVKZUUDXAWHZANUVBVTUVCAUUKVSUVEU
+      VMUUDXAWHZALYQVTYRAYPVSUUAUVMUUDXAWHZAVPUUHMXBAUUGVSUURUVMAVPUUGXBXCZUUGV
+      QXBXCZAUUJUVQUVRXEUUQUUGVPVQXFWBXGVPVSXBXCAXHVKZXIUUIXJZAVPUVBNXBAUUKVSUV
+      EUVMAVPUUKXBXCZUUKVQXBXCZAUULUWAUWBXEUVDUUKVPVQXFWBXGUVSXIUVCXJZAVPYQLXBA
+      YPVSUUAUVMAVPYPXBXCZYPVQXBXCZAYTUWDUWEXEUNYPVPVQXFWBXGUVSXIYRXJZAMNWJVEZL
+      WJVEZLMWJVEZNWJVEZVQVSVNVEZAUWJUWHAUWJLUWGWJVEUWHALMNUUEUUTUVGXKALUWGUUEA
+      MNUUTUVGXLXMYCXNAUWJYQUUHWJVEZUVBWJVEZYPUUGWJVEZUUKWJVEZVSVNVEZUWKAUWIUWL
+      NUVBWJALYQMUUHWJYRUUIXOUVCXOAUWPUWMAUWPUWNVSVNVEZUVBWJVEUWMAUWNUUKVSAYPUU
+      GUUBUUSXLUVFUUCUUDXPAUWQUWLUVBWJAYPUUGVSUUBUUSUUCUUDXPXQYCXNAUWOVQVSVNAUW
+      OYPUUMWJVEUUNVQAYPUUGUUKUUBUUSUVFXKAYPUUMUUBAUUGUUKUUSUVFXLXMAUUJUULUUOUU
+      PWSXRXQXRZYCXSANLMUVOUVPUVNUWCUWFUVTANLWJVEMWJVEZUWJUWKAUWSNUWIWJVEUWJANL
+      MUVGUUEUUTXKANUWIUVGALMUUEUUTXLXMYCUWRYCXSALMNUVPUVNUVOUWFUVTUWCUWRXSADYJ
+      EYGIEVMVEVDVEWJVEDVMVEVDVEWJVEIVOZEYGFYMGFVMVEVDVEWJVEEVMVEVDVEWJVEGVOZFY
+      MDYJHDVMVEVDVEWJVEFVMVEVDVEWJVEHVOZABCDEFGHIJLMNOSTUAUBUCUDUEUFUGUHUIUJUK
+      ULUMUOUPUQURUSUTXTZWMAUWTUXAUXBUXCWNAUWTUXAUXBUXCWSABCDEFJVPLMNOPQRSTUAAY
+      DUEUFUGYAYB $.
   $}
 
   ${
@@ -518103,84 +518197,91 @@ $)
     morlemeqd.u $e |- ( ph -> U e. CC ) $.
     morlemeqd.v $e |- ( ph -> V e. CC ) $.
     morlemeqd.w $e |- ( ph -> W e. CC ) $.
-    morlemeqd.j $e |- ( ph -> J e. CC ) $.
-    morlemeqd.1 $e |- ( ph -> ( J ^ 3 ) = 1 ) $.
-    morlemeqd.2 $e |- ( ph -> J =/= 1 ) $.
+    morlemeqd.j $e |- ( ph -> J = ( bRoU ` 3 ) ) $.
     morlemeqd.3 $e |- ( ph -> ( ( U + ( J x. V ) ) + ( ( J ^ 2 ) x. W ) )
         = 0 ) $.
     $( If ` ( ( U + ( J x. V ) ) + ( ( J ^ 2 ) x. W ) ) = 0 ` , where ` J ` is
-       a cube root of unity other than ` 1 ` , then the side ` ( V - W ) ` of
-       the triangle with vertices ` U ` , ` V ` , ` W ` is ` J ` times its side
-       ` ( U - V ) ` .  (Contributed by JAG, 13-Oct-2026.) $)
+       the basic cube root of unity ` ( bRoU `` 3 ) ` , then the side
+       ` ( V - W ) ` of the triangle with vertices ` U ` , ` V ` , ` W ` is
+       ` J ` times its side ` ( U - V ) ` .  (Contributed by JAG,
+       13-Oct-2026.) $)
     morlemeqd $p |- ( ph -> ( V - W ) = ( J x. ( U - V ) ) ) $=
-      ( cmin co cmul wceq caddc mulcld cc0 eqtrd subdid oveq2d addsubassd sqcld
-      c2 cexp addcld addcomd morlemeqrot eqtr3d c1 1cnd adddird mullidd oveq12d
-      addassd oveq1d mul02d eqtr4d addcand mpbid pncan2d subcld subaddd mpbird
-      cubeq1sumd ) ADEMNCBDMNZONZPEVHQNZDPAVIECBONZCDONZMNZQNZDAVHVLEQACBDIFGUA
-      UBAEVJQNZVKMNZVMDAEVJVKHACBIFRZACDIGRZUCAVOVKDQNZVKMNDAVNVRVKMACUEUFNZDON
-      ZVNQNZVTVRQNZPVNVRPAWASWBAVNVTQNWASAVNVTAEVJHVPUGZAVSDACIUDZGRZUHABCDEFGH
-      IJLUIUJAVSCQNZUKQNZDONZWBSAWHVTVKQNZDQNZWBAWHWFDONZUKDONZQNWJAWFUKDAVSCWD
-      IUGAULGUMAWKWIWLDQAVSCDWDIGUMADGUNUOTAVTVKDWEVQGUPTAWHSDONSAWGSDOACIJKVFU
-      QADGURTUJUSAVTVNVRWEWCAVKDVQGUGUTVAUQAVKDVQGVBTUJTADEVHGHACVGIABDFGVCRVDV
-      E $.
+      ( cmin co cmul wceq caddc c3 cexp cc0 c1 eqtrd cbru cfv cc wcel 3nn brucn
+      cn ax-mp a1i eqeltrd subdid oveq2d mulcld addsubassd addcld sqcld addcomd
+      c2 oveq1d bruvalexp morlemeqrot 1cnd adddird mullidd oveq12d addassd eqid
+      eqtr3d bru3eq mul02d eqtr4d addcand mpbid pncan2d subcld subaddd mpbird )
+      ADEKLCBDKLZMLZNEVSOLZDNAVTECBMLZCDMLZKLZOLZDAVSWCEOACBDACPUAUBZUCIWEUCUDZ
+      APUGUDZWFUEPUFUHUIUJZFGUKULAEWAOLZWBKLZWDDAEWAWBHACBWHFUMZACDWHGUMZUNAWJW
+      BDOLZWBKLDAWIWMWBKACURQLZDMLZWIOLZWOWMOLZNWIWMNAWPRWQAWIWOOLWPRAWIWOAEWAH
+      WKUOZAWNDACWHUPZGUMZUQABCDEFGHWHACPQLWEPQLZSACWEPQIUSXASNZAWGXBUEPUTUHUIT
+      JVAVHAWNCOLZSOLZDMLZWQRAXEWOWBOLZDOLZWQAXEXCDMLZSDMLZOLXGAXCSDAWNCWSWHUOA
+      VBGVCAXHXFXIDOAWNCDWSWHGVCADGVDVETAWOWBDWTWLGVFTAXERDMLRAXDRDMAXDWEURQLZW
+      EOLZSOLZRAXCXKSOAWNXJCWEOACWEURQIUSIVEUSXLRNAWEWEVGVIUITUSADGVJTVHVKAWOWI
+      WMWTWRAWBDWLGUOVLVMUSAWBDWLGVNTVHTADEVSGHACVRWHABDFGVOUMVPVQ $.
   $}
 
   ${
     morlemeqi.u $e |- ( ph -> U e. CC ) $.
     morlemeqi.v $e |- ( ph -> V e. CC ) $.
     morlemeqi.w $e |- ( ph -> W e. CC ) $.
-    morlemeqi.j $e |- ( ph -> J e. CC ) $.
-    morlemeqi.1 $e |- ( ph -> ( J ^ 3 ) = 1 ) $.
-    morlemeqi.2 $e |- ( ph -> J =/= 1 ) $.
+    morlemeqi.j $e |- ( ph -> J = ( bRoU ` 3 ) ) $.
     morlemeqi.3 $e |- ( ph -> ( ( U + ( J x. V ) ) + ( ( J ^ 2 ) x. W ) )
         = 0 ) $.
     $( Three complex numbers ` U ` , ` V ` , ` W ` with
-       ` ( ( U + ( J x. V ) ) + ( ( J ^ 2 ) x. W ) ) = 0 ` , for a cube root of
-       unity ` J ` other than ` 1 ` , form an equilateral triangle: all three
-       sides have the length of ` ( U - V ) ` .  (Contributed by JAG,
-       13-Oct-2026.) $)
+       ` ( ( U + ( J x. V ) ) + ( ( J ^ 2 ) x. W ) ) = 0 ` , for ` J ` the
+       basic cube root of unity ` ( bRoU `` 3 ) ` , form an equilateral
+       triangle: all three sides have the length of ` ( U - V ) ` .
+       (Contributed by JAG, 13-Oct-2026.) $)
     morlemeqi $p |- ( ph
         -> ( ( abs ` ( W - U ) ) = ( abs ` ( U - V ) ) /\ ( abs ` ( V - W ) )
         = ( abs ` ( U - V ) ) ) ) $=
-      ( cmin co cabs cfv wceq c1 cmul morlemeqd fveq2d subcld cubeq1absd oveq1d
-      morlemeqrot absmuld 3eqtrd abscld recnd mullidd eqtrd eqcomd jca ) AEBMNZ
-      OPZBDMNZOPZQDEMNZOPZUQQAUQUOAUQRUOSNZUOAUQCUNSNZOPCOPZUOSNUTAUPVAOAECBDHF
-      GIJKABCDEFGHIJLUETUAACUNIAEBHFUBZUFAVBRUOSACIJUCZUDUGAUOAUOAUNVCUHUIUJUKU
-      LAUSRUQSNZUQAUSCUPSNZOPVBUQSNVEAURVFOABCDEFGHIJKLTUAACUPIABDFGUBZUFAVBRUQ
-      SVDUDUGAUQAUQAUPVGUHUIUJUKUM $.
+      ( co cabs cfv wceq c1 cmul c3 ci c2 cpi cmin cbru cc wcel 3nn brucn ax-mp
+      cn a1i eqeltrd oveq1d bruvalexp eqtrd morlemeqrot morlemeqd fveq2d subcld
+      cexp absmuld cdiv ce bruval ax-icn mulcomi oveq2i 2cn mul12i eqtri oveq1i
+      picn mulcli 3cn 3ne0 divassi fveq2i 2re pire 3re redivcli remulcli absefi
+      cr 3eqtrd abscld recnd mullidd eqcomd jca ) AEBUAKZLMZBDUAKZLMZNDEUAKZLMZ
+      WLNAWLWJAWLOWJPKZWJAWLCWIPKZLMCLMZWJPKWOAWKWPLAECBDHFGIABCDEFGHACQUBMZUCI
+      WRUCUDZAQUHUDZWSUEQUFUGUIUJZACQURKWRQURKZOACWRQURIUKXBONZAWTXCUEQULUGUIUM
+      JUNUOUPACWIXAAEBHFUQZUSAWQOWJPAWQRSTQUTKZPKZPKZVAMZLMZOACXHLACWRXHIWRXHNA
+      WRSTRPKZPKZQUTKZVAMZXHWTWRXMNUEQVBUGXLXGVAXLRSTPKZQUTKZPKZXGXLRXNPKZQUTKX
+      PXKXQQUTXKSRTPKZPKXQXJXRSPTRVJVCVDVESRTVFVCVJVGVHVIRXNQVCSTVFVJVKVLVMVNVH
+      XOXFRPSTQVFVJVLVMVNVEVHVOVHUIUMUPXIONZAXFWBUDXSSXEVPTQVQVRVMVSVTXFWAUGUIU
+      MZUKWCAWJAWJAWIXDWDWEWFUMWGAWNOWLPKZWLAWNCWKPKZLMWQWLPKYAAWMYBLABCDEFGHIJ
+      UOUPACWKXAABDFGUQZUSAWQOWLPXTUKWCAWLAWLAWKYCWDWEWFUMWH $.
   $}
 
   ${
     $d A x y $.  $d B x y $.  $d C x y $.  $d P x y $.  $d Q x y $.
     $d R x y $.
-    morleyR2.f $e |- F
+    morleyConnes.f $e |- F
         = ( x e. ( CC \ { 0 } ) , y e. ( CC \ { 0 } )
         |-> ( Im ` ( log ` ( y / x ) ) ) ) $.
-    morleyR2.x $e |- X = ( ( ( B - A ) F ( C - A ) ) / 3 ) $.
-    morleyR2.y $e |- Y = ( ( ( C - B ) F ( A - B ) ) / 3 ) $.
-    morleyR2.z $e |- Z = ( ( ( A - C ) F ( B - C ) ) / 3 ) $.
-    morleyR2.a $e |- ( ph -> A e. CC ) $.
-    morleyR2.b $e |- ( ph -> B e. CC ) $.
-    morleyR2.c $e |- ( ph -> C e. CC ) $.
-    morleyR2.p $e |- ( ph -> P e. CC ) $.
-    morleyR2.q $e |- ( ph -> Q e. CC ) $.
-    morleyR2.r $e |- ( ph -> R e. CC ) $.
-    morleyR2.ab $e |- ( ph -> A =/= B ) $.
-    morleyR2.bc $e |- ( ph -> B =/= C ) $.
-    morleyR2.ca $e |- ( ph -> C =/= A ) $.
-    morleyR2.ra $e |- ( ph -> R =/= A ) $.
-    morleyR2.rb $e |- ( ph -> R =/= B ) $.
-    morleyR2.pb $e |- ( ph -> P =/= B ) $.
-    morleyR2.pc $e |- ( ph -> P =/= C ) $.
-    morleyR2.qc $e |- ( ph -> Q =/= C ) $.
-    morleyR2.qa $e |- ( ph -> Q =/= A ) $.
-    morleyR2.o $e |- ( ph -> ( ( B - A ) F ( C - A ) ) e. ( 0 (,) _pi ) ) $.
-    morleyR2.1 $e |- ( ph -> ( ( B - A ) F ( R - A ) ) = X ) $.
-    morleyR2.2 $e |- ( ph -> ( ( Q - A ) F ( C - A ) ) = X ) $.
-    morleyR2.3 $e |- ( ph -> ( ( C - B ) F ( P - B ) ) = Y ) $.
-    morleyR2.4 $e |- ( ph -> ( ( R - B ) F ( A - B ) ) = Y ) $.
-    morleyR2.5 $e |- ( ph -> ( ( A - C ) F ( Q - C ) ) = Z ) $.
-    morleyR2.6 $e |- ( ph -> ( ( P - C ) F ( B - C ) ) = Z ) $.
+    morleyConnes.x $e |- X = ( ( ( B - A ) F ( C - A ) ) / 3 ) $.
+    morleyConnes.y $e |- Y = ( ( ( C - B ) F ( A - B ) ) / 3 ) $.
+    morleyConnes.z $e |- Z = ( ( ( A - C ) F ( B - C ) ) / 3 ) $.
+    morleyConnes.a $e |- ( ph -> A e. CC ) $.
+    morleyConnes.b $e |- ( ph -> B e. CC ) $.
+    morleyConnes.c $e |- ( ph -> C e. CC ) $.
+    morleyConnes.p $e |- ( ph -> P e. CC ) $.
+    morleyConnes.q $e |- ( ph -> Q e. CC ) $.
+    morleyConnes.r $e |- ( ph -> R e. CC ) $.
+    morleyConnes.ab $e |- ( ph -> A =/= B ) $.
+    morleyConnes.bc $e |- ( ph -> B =/= C ) $.
+    morleyConnes.ca $e |- ( ph -> C =/= A ) $.
+    morleyConnes.ra $e |- ( ph -> R =/= A ) $.
+    morleyConnes.rb $e |- ( ph -> R =/= B ) $.
+    morleyConnes.pb $e |- ( ph -> P =/= B ) $.
+    morleyConnes.pc $e |- ( ph -> P =/= C ) $.
+    morleyConnes.qc $e |- ( ph -> Q =/= C ) $.
+    morleyConnes.qa $e |- ( ph -> Q =/= A ) $.
+    morleyConnes.o $e |- ( ph
+      -> ( ( B - A ) F ( C - A ) ) e. ( 0 (,) _pi ) ) $.
+    morleyConnes.1 $e |- ( ph -> ( ( B - A ) F ( R - A ) ) = X ) $.
+    morleyConnes.2 $e |- ( ph -> ( ( Q - A ) F ( C - A ) ) = X ) $.
+    morleyConnes.3 $e |- ( ph -> ( ( C - B ) F ( P - B ) ) = Y ) $.
+    morleyConnes.4 $e |- ( ph -> ( ( R - B ) F ( A - B ) ) = Y ) $.
+    morleyConnes.5 $e |- ( ph -> ( ( A - C ) F ( Q - C ) ) = Z ) $.
+    morleyConnes.6 $e |- ( ph -> ( ( P - C ) F ( B - C ) ) = Z ) $.
     $( Morley's trisector theorem in the complex plane: the three points where
        adjacent angle trisectors of a triangle meet form an equilateral
        triangle.  The triangle has distinct vertices ` A ` , ` B ` , ` C ` and
@@ -518195,22 +518296,14 @@ $)
        relation of ~ morlemlin , and that relation says the triangle with
        vertices ` P ` , ` Q ` , ` R ` is equilateral ( ~ morlemeqi ).
        (Contributed by JAG, 13-Oct-2026.) $)
-    morleyR2 $p |- ( ph
+    morleyConnes $p |- ( ph
         -> ( ( abs ` ( R - P ) ) = ( abs ` ( P - Q ) ) /\ ( abs ` ( Q - R ) )
         = ( abs ` ( P - Q ) ) ) ) $=
-      ( ci c2 cmul co ce cfv cc wcel ax-icn a1i 2cn cmin cdiv wceq cc0 cpi cioo
-      c3 cr elioore syl recnd 3cn wne 3ne0 divcld eqeltrd efcld caddc ang180pos
-      mulcld simp1d simp2d cexp c1 eqid morlemj simp3d morlemlin morlemeqi ) AG
-      UTVAKVBVCZVBVCZVDVEZUTVALVBVCZVBVCZVDVEZVBVCZUTVAMVBVCZVBVCZVDVEZVBVCZHIU
-      AUBUCAXFXIAXBXEAXAAUTWTUTVFVGAVHVIZAVAKVAVFVGAVJVIZAKEDVKVCFDVKVCJVCZVQVL
-      VCZVFKXNVMAOVIAXMVQAXMAXMVNVOVPVCZVGXMVRVGUMXMVNVOVSVTWAVQVFVGAWBVIZVQVNW
-      CAWDVIZWEWFWJWJWGAXDAUTXCXKAVALXLALFEVKVCDEVKVCJVCZVQVLVCZVFLXSVMAPVIAXRV
-      QAXRAXRXOVGZXRVRVGAXTDFVKVCEFVKVCJVCZXOVGZXRYAWHVCXMWHVCVOVMZABCDEFJNRSTU
-      DUEUFUMWIZWKXRVNVOVSVTWAXPXQWEWFWJWJWGWJAXHAUTXGXKAVAMXLAMYAVQVLVCZVFMYEV
-      MAQVIAYAVQAYAAYBYAVRVGAXTYBYCYDWLYAVNVOVSVTWAXPXQWEWFWJWJWGWJAXJUTVAVOVQV
-      LVCVBVCVBVCVDVEVMZXJVQWMVCWNVMZXJWNWCZABCDEFJXJKLMNOPQRSTUDUEUFUMXJWOZWPZ
-      WLAYFYGYHYJWQABCDEFGHIJXJKLMNOPQRSTUAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURUS
-      YIWRWS $.
+      ( ci c2 cmul co ce cfv c3 cbru wceq cexp c1 eqid morlemj simp1d morlemlin
+      wne morlemeqi ) AGUTVAKVBVCVBVCVDVEUTVALVBVCVBVCVDVEVBVCUTVAMVBVCVBVCVDVE
+      VBVCZHIUAUBUCAVQVFVGVEVHVQVFVIVCVJVHVQVJVOABCDEFJVQKLMNOPQRSTUDUEUFUMVQVK
+      ZVLVMABCDEFGHIJVQKLMNOPQRSTUAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURUSVRVNVP
+      $.
   $}
 
 $( (End of Jorge Agra's mathbox.) $)
@@ -860745,160 +860838,6 @@ $)
     ( ci cc wcel c2 cexp co cgz wa cmul wi ax-icn c1 cneg i2 cz neg1z zgz ax-mp
     eqeltri gzilaz lazmulcl mp2an ) CDECFGHZIEAIEBIEJABKHIELMUENOZIPUFQEUFIERUF
     STUAABICUBUCUD $.
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Basic ` N ` -th root of unity
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
-  $c bRoU $.
-
-  $( Extend class notation with the mapping yielding the basic ` N ` -th root
-     of unity. $)
-  cbru $a class bRoU $.
-
-  $( Define the mapping yielding the basic ` N ` -th root of unity.  In
-     ~ cxpeq , this is called "the primitive ` N ` -th root of unity with the
-     smallest positive argument".  (Contributed by AV, 24-Oct-2026.) $)
-  df-bru $a |- bRoU = ( n e. NN
-                        |-> ( exp ` ( ( 2 x. ( _pi x. _i ) ) / n ) ) ) $.
-
-  ${
-    $d N n $.
-    $( The basic ` N ` -th root of unity.  (Contributed by AV, 24-Oct-2026.) $)
-    bruval $p |- ( N e. NN
-                -> ( bRoU ` N ) = ( exp ` ( ( 2 x. ( _pi x. _i ) ) / N ) ) ) $=
-      ( vn c2 cpi ci cmul co cv cdiv ce cfv cbru wceq oveq2 fveq2d df-bru fvmpt
-      cn fvex ) BACDEFGFGZBHZIGZJKTAIGZJKRLUAAMUBUCJUAATINOBPUCJSQ $.
-  $}
-
-  $( The basic ` N ` -th root of unity is a complex number.  (Contributed by
-     AV, 24-Oct-2026.) $)
-  brucn $p |- ( N e. NN -> ( bRoU ` N ) e. CC ) $=
-    ( cn wcel cbru cfv c2 cpi ci cmul co cdiv bruval 2cn picn ax-icn mulcli a1i
-    ce cc nncn nnne0 divcld efcld eqeltrd ) ABCZADEFGHIJZIJZAKJZRESALUEUHUEUGAU
-    GSCUEFUFMGHNOPPQATAUAUBUCUD $.
-
-  $( An alternate way to express the basic ` N ` -th root of unity, see
-     ~ cxpeq .  (Contributed by AV, 24-Oct-2026.) $)
-  bruval2 $p |- ( N e. NN -> ( bRoU ` N ) = ( -u 1 ^c ( 2 / N ) ) ) $=
-    ( cn wcel c2 cpi ci cmul co cdiv ce cfv cneg clog cbru ccxp a1i picn ax-icn
-    c1 cc 2cn mulcli nncn nnne0 div23d logm1 mulcomi eqtr2i oveq2d eqtrd fveq2d
-    wceq bruval neg1cn cc0 wne neg1ne0 divcld cxpefd 3eqtr4d ) ABCZDEFGHZGHAIHZ
-    JKDAIHZSLZMKZGHZJKANKVEVDOHVAVCVGJVAVCVDVBGHVGVADVBADTCVAUAPZVBTCVAEFQRUBPA
-    UCZAUDZUEVAVBVFVDGVBVFULVAVFFEGHVBUFFERQUGUHPUIUJUKAUMVAVEVDVETCVAUNPVEUOUP
-    VAUQPVADAVHVIVJURUSUT $.
-
-  $( An alternate way to express the basic ` N ` -th root of unity.
-     (Contributed by AV, 24-Oct-2026.) $)
-  bruval3 $p |- ( N e. NN -> ( bRoU ` N ) = ( ( cos ` ( ( 2 x. _pi ) / N ) )
-                              + ( _i x. ( sin ` ( ( 2 x. _pi ) / N ) ) ) ) ) $=
-    ( cn wcel cbru cfv c2 cpi ci cmul co cdiv ce ccos csin wceq picn ax-icn a1i
-    cc 3eqtrd caddc bruval mulcomi oveq2d 2cnd mul12d eqtrd oveq1d 2picn div23d
-    nncn nnne0 div32d fveq2d divcld efival syl ) ABCZADEFGHIJZIJZAKJZLEHFGIJZAK
-    JZIJZLEZVCMEHVCNEIJUAJZAUBURVAVDLURVAHVBIJZAKJHAKJVBIJVDURUTVGAKURUTFHGIJZI
-    JVGURUSVHFIUSVHOURGHPQUCRUDURFHGURUEHSCURQRZGSCURPRUFUGUHURHVBAVIVBSCURUIRZ
-    AUKZAULZUJURHAVBVIVKVJVLUMTUNURVCSCVEVFOURVBAVJVKVLUOVCUPUQT $.
-
-  $( The ` N ` -th power of the basic ` N ` -th root of unity is 1.
-     (Contributed by AV, 24-Oct-2026.) $)
-  bruvalexp $p |- ( N e. NN -> ( ( bRoU ` N ) ^ N ) = 1 ) $=
-    ( cn wcel cbru cfv cexp co c1 cneg cdiv ccxp bruval2 oveq1d root1id eqtrd
-    c2 ) ABCZADEZAFGHIPAJGKGZAFGHQRSAFALMANO $.
-
-  $( The basic (and only) 1st root of unity is 1.  (Contributed by AV,
-     24-Oct-2026.) $)
-  bru1 $p |- ( bRoU ` 1 ) = 1 $=
-    ( c1 cbru cfv cneg c2 cdiv co ccxp cn wcel wceq 1nn bruval2 ax-mp 2cn div1i
-    oveq2i cexp cc eqtri cc0 wne cz neg1cn neg1ne0 2z cxpexpz mp3an neg1sqe1 )
-    ABCZADZEAFGZHGZAAIJUJUMKLAMNUMUKEHGZAULEUKHEOPQUNUKERGZAUKSJUKUAUBEUCJUNUOK
-    UDUEUFUKEUGUHUITTT $.
-
-  $( The basic 2nd root of unity is ` -u 1 ` .  (Contributed by AV,
-     24-Oct-2026.) $)
-  bru2 $p |- ( bRoU ` 2 ) = -u 1 $=
-    ( c2 cbru cfv c1 cneg cdiv co ccxp cn wcel 2nn bruval2 ax-mp 2div2e1 oveq2i
-    wceq cc neg1cn cxp1 3eqtri ) ABCZDEZAAFGZHGZUBDHGZUBAIJUAUDPKALMUCDUBHNOUBQ
-    JUEUBPRUBSMT $.
-
-  $( The basic 4th root of unity is ` _i ` .  (Contributed by AV,
-     27-Oct-2026.) $)
-  bru4 $p |- ( bRoU ` 4 ) = _i $=
-    ( c1 cneg c2 c4 cdiv co ccxp csqrt cbru ci cmul 2t1e2 2t2e4 oveq12i cc wcel
-    cfv wceq 2cnne0 ax-mp cc0 wne wa ax-1cn divcan5 mp3an eqtr3i oveq2i cxpsqrt
-    neg1cn eqtri cn 4nn bruval2 sqrtm1 3eqtr4i ) ABZCDEFZGFZUQHQZDIQZJUSUQACEFZ
-    GFZUTURVBUQGCAKFZCCKFZEFZURVBVDCVEDELMNAOPCOPCUAUBUCZVGVFVBRUDSSACCUEUFUGUH
-    UQOPVCUTRUJUQUITUKDULPVAUSRUMDUNTUOUP $.
-
-  ${
-    bru3eq.w $e |- W = ( bRoU ` 3 ) $.
-    $( An alternate way to express the basic 3rd root of unity.  (Contributed
-       by AV, 24-Oct-2026.) $)
-    bru3val $p |- W = ( ( -u 1 + ( _i x. ( sqrt ` 3 ) ) ) / 2 ) $=
-      ( c3 cfv c2 cpi cmul co cdiv ccos ci csin caddc wceq 2cn 2ne0 oveq2i cmin
-      c1 3eqtri cbru cneg csqrt cn wcel 3nn bruval3 ax-mp ax-icn 3pos sqrtpclii
-      3re recni divassi neg1cn mulcli divdiri cexp picn 3cn fveq2i divcli cos2t
-      3ne0 cc sincos3rdpi simpri oveq1i sqrecii eqtri sqvali ax-1cn c4 cc0 4ne0
-      2t2e4 eqnetri wne wa 2cnne0 divcan5 mp3an eqtr3i 2div2e1 eqcomi divsubdir
-      eqtr4i negsubdi2i 2m1e1 negeqi oveq12 divreci divcan2i oveq12i 3eqtr4ri
-      sin2t ) ACUADZEFGHCIHZJDZKWRLDZGHZMHZSUBZKCUCDZGHZMHEIHZBCUDUEWQXBNUFCUGU
-      HXCEIHZXEEIHZMHXGKXDEIHZGHZMHXFXBXHXJXGMKXDEUIXDCULUJUKUMZOPUNQXCXEEUOKXD
-      UIXKUPOPUQWSXGXAXJMWSEFCIHZGHZJDZESEEURHZIHZGHZSRHZXGWRXMJEFCOUSUTVDUNZVA
-      XNEXLJDZEURHZGHZSRHZXRXLVEUEZXNYCNFCUSUTVDVBZXLVCUHYBXQSRYAXPEGYASEIHZEUR
-      HXPXTYFEURXLLDZXINZXTYFNZVFVGVHEOPVIVJQVHVJXRYFSRHZSERHZEIHZXGXQYFSRXQESE
-      EGHZIHZGHZYFXPYNEGXOYMSIEOVKQQESGHYMIHZYOYFESYMOVLEEOOUPYMVMVNVPVOVQUNSVE
-      UEZEVEUEZEVNVRVSZYSYPYFNVLVTVTSEEWAWBWCVJVHYJYFEEIHZRHZYLSYTYFRYTSWDWEQYQ
-      YRYSYLUUANVLOVTSEEWFWBWGYKXCEIESRHZUBYKXCESOVLWHUUBSWIWJWCVHTTWTXIKGWTXML
-      DZEYGXTGHZGHZXIWRXMLXSVAYDUUCUUENYEXLWPUHUUEEXIYFGHZGHEXIEIHZGHXIUUDUUFEG
-      YHYIVSUUDUUFNVFYGXIXTYFGWKUHQUUFUUGEGUUGUUFXIEXDEXKOPVBZOPWLWEQXIEUUHOPWM
-      TTQWNWOT $.
-
-    $( The complex conjugate of the basic 3rd root of unity.  (Contributed by
-       AV, 24-Oct-2026.) $)
-    bru3cj $p |- ( * ` W ) = ( W ^ 2 ) $=
-      ( ccj cfv c1 cneg c2 c3 co cexp wcel wceq ax-mp eqtri fveq2i cc wa pm3.2i
-      3nn eqcomi cdiv ccxp cmin cbru cn bruval2 neg1cn 2cn 3cn 3ne0 divcli exp1
-      cxpcl cz 1z root1cj 3m1e2 oveq12i 3eqtri ) ACDEFZGHUAIZUBIZCDZVBHEUCIZJIZ
-      AGJIAVBCAHUDDZVBBHUEKZVFVBLSHUFMNZOVCVBEJIZCDZVEVBVICVIVBVBPKZVIVBLUTPKZV
-      APKZQVKVLVMUGGHUHUIUJUKRUTVAUMMVBULMTOVGEUNKZQVJVELVGVNSUOREHUPMNVBAVDGJA
-      VBVHTUQURUS $.
-
-    $( The square of the basic 3rd root of unity.  (Contributed by AV,
-       24-Oct-2026.) $)
-    bru3sq $p |- ( W ^ 2 ) = ( ( -u 1 / 2 )
-                               - ( _i x. ( ( sqrt ` 3 ) / 2 ) ) ) $=
-      ( ccj cfv c2 cexp co c1 cdiv ci c3 cmul caddc fveq2i ax-icn 2cn 2ne0 wcel
-      cr rehalfcli cneg csqrt cmin bru3cj bru3val neg1cn sqrtpclii recni mulcli
-      3pos divdiri divassi oveq2i eqtri wceq neg1rr cjreim mp2an 3eqtri eqtr3i
-      3re ) ACDZAEFGHUAZEIGZJKUBDZEIGZLGZUCGZABUDVBVCJVELGZMGEIGZCDVDVGMGZCDZVH
-      AVJCABUENVJVKCVJVDVIEIGZMGVKVCVIEUFJVEOVEKVAUJUGZUHZUIPQUKVMVGVDMJVEEOVOP
-      QULUMUNNVDSRVFSRVLVHUOVCUPTVEVNTVDVFUQURUSUT $.
-
-    $( The basic 3rd root of unity ` _om ` satisfies the equation
-       ` _om ^ 2 + _om + 1 = 0 ` .  (Contributed by AV, 24-Oct-2026.) $)
-    bru3eq $p |- ( ( ( W ^ 2 ) + W ) + 1 ) = 0 $=
-      ( c2 co caddc c1 cneg cdiv ci cmul cc0 oveq1i wcel ax-1cn 2cn 2ne0 oveq2i
-      cc eqtri ax-icn cexp c3 csqrt cfv cmin bru3sq bru3val oveq12i wceq divneg
-      mp3an halfcn mulneg2i 2thalfe1 negeqi neg1cn divcli 2timesi 3eqtr3ri 3pos
-      wne sqrtpclii recni mulcli divdiri divassi nppcan3 negsubdii 3eqtr4i neg0
-      3re 1m1e0 3eqtri ) ACUADZAEDZFEDFGZCHDZIUBUCUDZCHDZJDZUEDZVPIVRJDZEDCHDZE
-      DZFEDZFFUEDZGZKVOWDFEVNWAAWCEABUFABUGUHLVQVQEDZFEDVPFEDWEWGWHVPFECFCHDZGZ
-      JDZCVQJDVPWHWJVQCJFRMCRMCKVAWJVQUINOPFCUJUKQWKCWIJDZGVPCWIOULUMWLFUNUOSVQ
-      VPCUPOPUQZURUSLWDWHFEWDWAVQVTEDZEDZWHWCWNWAEWCVQWBCHDZEDWNVPWBCUPIVRTVRUB
-      VKUTVBVCZVDOPVEWPVTVQEIVRCTWQOPVFQSQVQRMZVTRMWRWOWHUIWMIVSTVRCWQOPUQVDWMV
-      QVTVQVGUKSLFFNNVHVIWGKGKWFKVLUOVJSVM $.
-
-    $( The square of the basic 3rd root of unity expressed by the basic 3rd
-       root of unity.  (Contributed by AV, 24-Oct-2026.) $)
-    bru3sqbru $p |- ( W ^ 2 ) = ( -u 1 - W ) $=
-      ( c2 cexp co c1 caddc cneg cmin cc0 wceq ax-1cn c3 cbru cfv cc wcel mp2an
-      cn 3nn brucn ax-mp eqeltri addcomi oveq2i sqcli addassi bru3eq 3eqtr2i wb
-      addcli addeq0 mpbi negdi2 eqtri ) ACDEZFAGEZHZFHAIEZUPUQGEZJKZUPURKZUTUPA
-      FGEZGEUPAGEFGEJUQVCUPGFALAMNOZPBMSQVDPQTMUAUBUCZUDUEUPAFAVEUFZVELUGABUHUI
-      UPPQUQPQVAVBUJVFFALVEUKUPUQULRUMFPQAPQURUSKLVEFAUNRUO $.
-  $}
-
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
