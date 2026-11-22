@@ -883672,9 +883672,9 @@ $)
     mod23exdlem1.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
     mod23exdlem1.6 $e |- ( ph -> P < ( ( ( 2 x. Q ) - 1 ) x. N ) ) $.
     $( Lemma for ~ mod23exd .  When ` P ` lies strictly between ` ( 2 x. N ) `
-       and ` ( ( ( 2 x. Q ) - 1 ) x. N ) ` and is not divisible by ` N ` , the
-       bounded signed congruence witnesses of ~ mod23exd exist.  An adjacent
-       even multiple supplies them.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       and ` ( ( ( 2 x. Q ) - 1 ) x. N ) ` and is not divisible by ` N ` , an
+       adjacent even multiple of ` N ` supplies the bounded signed congruence
+       witnesses.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     mod23exdlem1 $p |- ( ph -> E. k e. NN E. d e. ZZ
       ( ( k < Q /\ ( abs ` d ) e. NN /\ ( abs ` d ) < N ) /\
       ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d mod P ) \/
@@ -883716,10 +883716,9 @@ $)
          if ` P ` lies strictly between ` ( ( ( 2 x. Q ) - 1 ) x. N ) ` and
          ` ( ( 2 x. Q ) x. N ) ` , there are a positive integer ` k < Q ` and a
          nonzero integer ` d ` with ` ( abs `` d ) < N ` satisfying one of the
-         two displayed congruences.  This is the case of ~ mod23exd proved
-         using the odd coefficients adjacent to twice ` Q ` and the halved
-         remainders in ~ halfsubmulbndd .  (Contributed by Zhi Wang,
-         20-Oct-2026.) $)
+         two displayed congruences.  The proof uses the odd coefficients
+         adjacent to twice ` Q ` and the halved remainders in
+         ~ halfsubmulbndd .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
       mod23exdlem2 $p |- ( ph -> E. k e. NN E. d e. ZZ
         ( ( k < Q /\ ( abs ` d ) e. NN /\ ( abs ` d ) < N ) /\
         ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d mod P ) \/
@@ -885480,9 +885479,9 @@ $)
     $( Characterize Liouville's function by complex-valued complete
        multiplicativity on rationals and its evaluation formula on
        ` dom Omega ` (see ~ bomdm and ~ liouval ).  Alternate version of
-       ~ liouuniq .  The evaluation formula supplies both normalization
-       conditions in ~ liouuniq ; complete multiplicativity then determines the
-       value at zero.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+       ~ liouuniq .  The evaluation formula fixes the values at primes and at
+       minus one.  Complete multiplicativity then determines the value at zero.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liouuniq2 $p |- ( F = lam <->
       ( F : QQ --> CC /\
         A. x e. dom Omega ( F ` x ) = ( -u 1 ^ ( Omega ` x ) ) /\
@@ -888605,9 +888604,9 @@ $)
 
   ${
     $d a b n $.
-    $( Alternate version of ~ liougb , with an outer restricted universal
-       quantifier.  Restricted generalization of ~ liougb gives this closed
-       statement without duplicating its proof chain.  (Contributed by Zhi
+    $( Every positive even integer greater than two is a sum of two positive
+       integers with Liouville value minus one.  This closed alternate version
+       of ~ liougb follows by restricted generalization.  (Contributed by Zhi
        Wang, 20-Oct-2026.) $)
     liougbral $p |- A. n e. NN ( ( 2 || n /\ 2 < n ) ->
       E. a e. NN E. b e. NN ( n = ( a + b ) /\
