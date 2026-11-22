@@ -185418,6 +185418,17 @@ $)
       $.
   $}
 
+  ${
+    ply1rcl.p $e |- P = ( Poly1 ` R ) $.
+    ply1rcl.b $e |- B = ( Base ` P ) $.
+    ply1basf.k $e |- K = ( Base ` R ) $.
+    $( Univariate polynomial base set elements are functions.  (Contributed by
+       Stefan O'Rear, 21-Mar-2015.) $)
+    ply1basf $p |- ( F e. B -> F : ( NN0 ^m 1o ) --> K ) $=
+      ( va wcel c1o cmpl co cbs cfv cn0 cmap eqid psr1baslem id eleqtrdi mplelf
+      ply1bas ) DAJZKCLMZNOZPKQMUECIKEDUERHUFRISUDDAUFUDTBCAFGUCUAUB $.
+  $}
+
 
 $(
 ###############################################################################
