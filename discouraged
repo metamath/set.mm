@@ -12496,9 +12496,6 @@
 "psubspi2N" is used by "pclfinN".
 "psubspi2N" is used by "pclfinclN".
 "qexALT" is used by "reexALT".
-"ralimd4vOLD" is used by "ralimd6vOLD".
-"ralimdvvOLD" is used by "ralimd4vOLD".
-"ralimdvvOLD" is used by "ralimd6vOLD".
 "ralrnmpt" is used by "rexrnmpt".
 "rb-ax1" is used by "rblem1".
 "rb-ax1" is used by "rblem2".
@@ -16494,7 +16491,6 @@ New usage of "eelTT1" is discouraged (0 uses).
 New usage of "eelTTT" is discouraged (0 uses).
 New usage of "eexinst01" is discouraged (2 uses).
 New usage of "eexinst11" is discouraged (2 uses).
-New usage of "efne0OLD" is discouraged (0 uses).
 New usage of "eighmorth" is discouraged (0 uses).
 New usage of "eighmre" is discouraged (1 uses).
 New usage of "eigorth" is discouraged (1 uses).
@@ -18761,9 +18757,6 @@ New usage of "r1pwALT" is discouraged (0 uses).
 New usage of "rab0OLD" is discouraged (0 uses).
 New usage of "rabss2OLD" is discouraged (0 uses).
 New usage of "ralcom2" is discouraged (0 uses).
-New usage of "ralimd4vOLD" is discouraged (1 uses).
-New usage of "ralimd6vOLD" is discouraged (0 uses).
-New usage of "ralimdvvOLD" is discouraged (2 uses).
 New usage of "ralrnmpt" is discouraged (1 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rankwflembOLD" is discouraged (0 uses).
@@ -18961,6 +18954,7 @@ New usage of "rngosubdi" is discouraged (1 uses).
 New usage of "rngosubdir" is discouraged (0 uses).
 New usage of "rngoueqz" is discouraged (2 uses).
 New usage of "rninOLD" is discouraged (0 uses).
+New usage of "rpmulgcdOLD" is discouraged (0 uses).
 New usage of "rspsbc2" is discouraged (2 uses).
 New usage of "rspsbc2VD" is discouraged (0 uses).
 New usage of "ruALT" is discouraged (0 uses).
@@ -19033,7 +19027,6 @@ New usage of "sbied" is discouraged (3 uses).
 New usage of "sbiedv" is discouraged (1 uses).
 New usage of "sbn1ALT" is discouraged (0 uses).
 New usage of "sbralieALT" is discouraged (0 uses).
-New usage of "sbralieOLD" is discouraged (0 uses).
 New usage of "sbrimvwOLD" is discouraged (0 uses).
 New usage of "sbtALT" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
@@ -20343,7 +20336,6 @@ Proof modification of "eelTT1" is discouraged (47 steps).
 Proof modification of "eelTTT" is discouraged (50 steps).
 Proof modification of "eexinst01" is discouraged (15 steps).
 Proof modification of "eexinst11" is discouraged (19 steps).
-Proof modification of "efne0OLD" is discouraged (67 steps).
 Proof modification of "el.OLD" is discouraged (55 steps).
 Proof modification of "el021old" is discouraged (18 steps).
 Proof modification of "el0321old" is discouraged (20 steps).
@@ -21083,9 +21075,6 @@ Proof modification of "r1funlimOLD" is discouraged (47 steps).
 Proof modification of "r1pwALT" is discouraged (151 steps).
 Proof modification of "rab0OLD" is discouraged (33 steps).
 Proof modification of "rabss2OLD" is discouraged (66 steps).
-Proof modification of "ralimd4vOLD" is discouraged (29 steps).
-Proof modification of "ralimd6vOLD" is discouraged (33 steps).
-Proof modification of "ralimdvvOLD" is discouraged (23 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "rankwflembOLD" is discouraged (214 steps).
 Proof modification of "rb-ax1" is discouraged (32 steps).
@@ -21226,6 +21215,7 @@ Proof modification of "rp-frege3g" is discouraged (24 steps).
 Proof modification of "rp-misc1-frege" is discouraged (29 steps).
 Proof modification of "rp-simp2" is discouraged (9 steps).
 Proof modification of "rp-simp2-frege" is discouraged (15 steps).
+Proof modification of "rpmulgcdOLD" is discouraged (199 steps).
 Proof modification of "rpnnen1" is discouraged (175 steps).
 Proof modification of "rpnnen1lem1" is discouraged (345 steps).
 Proof modification of "rpnnen1lem3" is discouraged (468 steps).
@@ -21262,7 +21252,6 @@ Proof modification of "sbcssgVD" is discouraged (229 steps).
 Proof modification of "sbequiOLD" is discouraged (17 steps).
 Proof modification of "sbn1ALT" is discouraged (41 steps).
 Proof modification of "sbralieALT" is discouraged (98 steps).
-Proof modification of "sbralieOLD" is discouraged (185 steps).
 Proof modification of "sbrimvwOLD" is discouraged (59 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtALT" is discouraged (12 steps).
