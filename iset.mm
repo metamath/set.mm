@@ -185006,6 +185006,15 @@ $)
       GMZNUEUGUFORFUHGFUEABUFUGCUIDUJUCUDPUCUDSQUGUFUHUHMTUAUB $.
   $}
 
+  ${
+    mplringd.p $e |- P = ( I mPoly R ) $.
+    mplringfid.i $e |- ( ph -> I e. Fin ) $.
+    mplringd.r $e |- ( ph -> R e. Ring ) $.
+    $( The polynomial ring is a ring.  (Contributed by SN, 7-Feb-2025.) $)
+    mplringfid $p |- ( ph -> P e. Ring ) $=
+      ( cfn wcel crg mplringfi syl2anc ) ADHICJIBJIFGBCDEKL $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
