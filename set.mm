@@ -400535,66 +400535,17 @@ $)
     sigapreimct.1 $e |- ( ph -> S e. U. ran sigAlgebra ) $.
     sigapreimct.2 $e |- ( ph -> A ~<_ _om ) $.
     sigapreimct.3 $e |- ( ( ph /\ k e. A ) -> ( `' F " { k } ) e. S ) $.
-    $( The preimage of a countable class is measurable if each of its singleton
-       fibers is measurable.  Express the preimage as the countable union of
-       those fibers.  The assertion holds for a relation F as well as for a
-       function.  Prepared with AI assistance from OpenAI Codex.  (Contributed
+    $( The preimage of an at most countable class ` A ` belongs to a
+       sigma-algebra ` S ` whenever each singleton fiber belongs to ` S ` .
+       Express the preimage as the countable union of those fibers and use
+       ~ sigaclcuni .  The assertion holds for relations as well as for
+       functions.  Prepared with AI assistance from OpenAI Codex.  (Contributed
        by Owen Orger, 17-Nov-2026.) $)
     sigapreimct $p |- ( ph -> ( `' F " A ) e. S ) $=
       ( ccnv cima cv csn ciun iunid imaeq2i imaiun eqtr3i csiga crn wcel cuni
       wral com cdom wbr w3a ralrimiva 3jca nfcv sigaclcuni syl eqeltrid ) AEIZB
       JZDBUMDKLZJZMZCUMDBUOMZJUNUQURBUMDBNODUMBUOPQACRSUATZUPCTZDBUBZBUCUDUEZUF
       UQCTAUSVAVBFAUTDBHUGGUHBUPCDDBUIUJUKUL $.
-  $}
-
-  ${
-    $d A n $.  $d B n $.  $d C n $.  $d n ph $.  $d n x $.
-    preimageiingt.x $e |- F/ x ph $.
-    preimageiingt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    preimageiingt.c $e |- ( ph -> C e. RR ) $.
-    $( A preimage of a left-closed, unbounded above interval, expressed as an
-       indexed intersection of preimages of open, unbounded above intervals.
-       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    preimageiingt $p |- ( ph -> { x e. A | C <_ B } = |^|_ n e. NN { x e. A | (
-       C - ( 1 / n ) ) < B } ) $=
-      ( cle wbr crab cn cv wcel wral wa cxr ad2antrr ex c1 cdiv co cmin ciin wi
-      clt wss simpllr cr adantr nnrecre adantl resubcld rexrd ad3antrrr nnrecrp
-      ad4ant14 crp ltsubrpd simplr xrltletrd rabidd ralrimiva wb cvv elv sylibr
-      eliin ralrimia nfcv nfrab1 nfiin rabssf c0 wne wceq iinrab ax-mp ad4ant13
-      nnn0 simpr xrltled ralimdva imp nfra1 nfan xrralrecnnge ss2rabdf eqsstrid
-      nfv mpbird eqssd ) AEDJKZBCLZFMEUAFNZUBUCZUDUCZDUGKZBCLZUEZAWNBNZXAOZUFZB
-      CPWOXAUHAXDBCGAXBCOZQZWNXCXFWNQZXBWTOZFMPZXCXGXHFMXGWPMOZQZWSBCAXEWNXJUIX
-      KWREDAXJWRROZXEWNAXJQZWRXMEWQAEUJOZXJIUKZXJWQUJOAWPULUMUNUOZURAEROXEWNXJA
-      EIUOUPXFDROZWNXJHSAXJWREUGKXEWNXMEWQXOXJWQUSOAWPUQUMUTURXFWNXJVAVBVCVDXCX
-      IVEBFXBMWTVFVIVGVHTVJWNBCXAFBMWTBMVKWSBCVLVMVNVHAXAWSFMPZBCLZWOMVOVPXAXSV
-      QWAWSFBMCVRVSAXRWNBCGXFXRWNXFXRQZWNWRDJKZFMPZXFXRYBXFWSYAFMXFXJQZWSYAYCWS
-      QWRDAXJXLXEWSXPVTXFXQXJWSHSYCWSWBWCTWDWEXTEDFXFXRFXFFWKWSFMWFWGAXNXEXRISX
-      FXQXRHUKWHWLTWIWJWM $.
-  $}
-
-  ${
-    $d A n $.  $d B n $.  $d C n $.  $d n ph $.  $d n x $.
-    preimaleiinlt.x $e |- F/ x ph $.
-    preimaleiinlt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
-    preimaleiinlt.c $e |- ( ph -> C e. RR ) $.
-    $( A preimage of a left-open, right-closed, unbounded below interval,
-       expressed as an indexed intersection of preimages of open, unbound below
-       intervals.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
-    preimaleiinlt $p |- ( ph -> { x e. A | B <_ C } = |^|_ n e. NN { x e. A | B
-       < ( C + ( 1 / n ) ) } ) $=
-      ( cle wbr crab cn wcel wral wa ad2antrr cr rexrd ex c1 cv cdiv caddc ciin
-      co clt wi wss simpllr cxr ad3antrrr adantr nnrecre adantl readdcld simplr
-      ad4ant14 crp nnrecrp ltaddrpd xrlelttrd rabidd ralrimiva wb cvv eliin elv
-      sylibr ralrimia nfcv nfrab1 nfiin rabssf c0 wne wceq nnn0 iinrab ad4ant13
-      simpr xrltled ralimdva imp nfv nfra1 xrralrecnnle mpbird ss2rabdf eqsstrd
-      mp1i nfan eqssd ) ADEJKZBCLZFMDEUAFUBZUCUFZUDUFZUGKZBCLZUEZAWNBUBZXANZUHZ
-      BCOWOXAUIAXDBCGAXBCNZPZWNXCXFWNPZXBWTNZFMOZXCXGXHFMXGWPMNZPZWSBCAXEWNXJUJ
-      XKDEWRXFDUKNZWNXJHQXKEAERNZXEWNXJIULSXKWRAXJWRRNZXEWNAXJPZEWQAXMXJIUMZXJW
-      QRNAWPUNUOUPZURSXFWNXJUQAXJEWRUGKXEWNXOEWQXPXJWQUSNAWPUTUOVAURVBVCVDXCXIV
-      EBFXBMWTVFVGVHVITVJWNBCXAFBMWTBMVKWSBCVLVMVNVIAXAWSFMOZBCLZWOMVOVPXAXSVQA
-      VRWSFBMCVSWKAXRWNBCGXFXRWNXFXRPZWNDWRJKZFMOZXFXRYBXFWSYAFMXFXJPZWSYAYCWSP
-      ZDWRXFXLXJWSHQYDWRAXJXNXEWSXQVTSYCWSWAWBTWCWDXTDEFXFXRFXFFWEWSFMWFWLXFXLX
-      RHUMAXMXEXRIQWGWHTWIWJWM $.
   $}
 
 
@@ -400912,6 +400863,56 @@ $(
   Real measurable functions
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
+
+  ${
+    $d A n $.  $d B n $.  $d C n $.  $d n ph $.  $d n x $.
+    preimageiingt.x $e |- F/ x ph $.
+    preimageiingt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    preimageiingt.c $e |- ( ph -> C e. RR ) $.
+    $( A preimage of a left-closed, unbounded above interval, expressed as an
+       indexed intersection of preimages of open, unbounded above intervals.
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    preimageiingt $p |- ( ph -> { x e. A | C <_ B } = |^|_ n e. NN { x e. A | (
+       C - ( 1 / n ) ) < B } ) $=
+      ( cle wbr crab cn cv wcel wral wa cxr ad2antrr ex c1 cdiv co cmin ciin wi
+      clt wss simpllr cr adantr nnrecre adantl resubcld rexrd ad3antrrr nnrecrp
+      ad4ant14 crp ltsubrpd simplr xrltletrd rabidd ralrimiva wb cvv elv sylibr
+      eliin ralrimia nfcv nfrab1 nfiin rabssf c0 wne wceq iinrab ax-mp ad4ant13
+      nnn0 simpr xrltled ralimdva imp nfra1 nfan xrralrecnnge ss2rabdf eqsstrid
+      nfv mpbird eqssd ) AEDJKZBCLZFMEUAFNZUBUCZUDUCZDUGKZBCLZUEZAWNBNZXAOZUFZB
+      CPWOXAUHAXDBCGAXBCOZQZWNXCXFWNQZXBWTOZFMPZXCXGXHFMXGWPMOZQZWSBCAXEWNXJUIX
+      KWREDAXJWRROZXEWNAXJQZWRXMEWQAEUJOZXJIUKZXJWQUJOAWPULUMUNUOZURAEROXEWNXJA
+      EIUOUPXFDROZWNXJHSAXJWREUGKXEWNXMEWQXOXJWQUSOAWPUQUMUTURXFWNXJVAVBVCVDXCX
+      IVEBFXBMWTVFVIVGVHTVJWNBCXAFBMWTBMVKWSBCVLVMVNVHAXAWSFMPZBCLZWOMVOVPXAXSV
+      QWAWSFBMCVRVSAXRWNBCGXFXRWNXFXRQZWNWRDJKZFMPZXFXRYBXFWSYAFMXFXJQZWSYAYCWS
+      QWRDAXJXLXEWSXPVTXFXQXJWSHSYCWSWBWCTWDWEXTEDFXFXRFXFFWKWSFMWFWGAXNXEXRISX
+      FXQXRHUKWHWLTWIWJWM $.
+  $}
+
+  ${
+    $d A n $.  $d B n $.  $d C n $.  $d n ph $.  $d n x $.
+    preimaleiinlt.x $e |- F/ x ph $.
+    preimaleiinlt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
+    preimaleiinlt.c $e |- ( ph -> C e. RR ) $.
+    $( A preimage of a left-open, right-closed, unbounded below interval,
+       expressed as an indexed intersection of preimages of open, unbound below
+       intervals.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    preimaleiinlt $p |- ( ph -> { x e. A | B <_ C } = |^|_ n e. NN { x e. A | B
+       < ( C + ( 1 / n ) ) } ) $=
+      ( cle wbr crab cn wcel wral wa ad2antrr cr rexrd ex c1 cv cdiv caddc ciin
+      co clt wi wss simpllr cxr ad3antrrr adantr nnrecre adantl readdcld simplr
+      ad4ant14 crp nnrecrp ltaddrpd xrlelttrd rabidd ralrimiva wb cvv eliin elv
+      sylibr ralrimia nfcv nfrab1 nfiin rabssf c0 wne wceq nnn0 iinrab ad4ant13
+      simpr xrltled ralimdva imp nfv nfra1 xrralrecnnle mpbird ss2rabdf eqsstrd
+      mp1i nfan eqssd ) ADEJKZBCLZFMDEUAFUBZUCUFZUDUFZUGKZBCLZUEZAWNBUBZXANZUHZ
+      BCOWOXAUIAXDBCGAXBCNZPZWNXCXFWNPZXBWTNZFMOZXCXGXHFMXGWPMNZPZWSBCAXEWNXJUJ
+      XKDEWRXFDUKNZWNXJHQXKEAERNZXEWNXJIULSXKWRAXJWRRNZXEWNAXJPZEWQAXMXJIUMZXJW
+      QRNAWPUNUOUPZURSXFWNXJUQAXJEWRUGKXEWNXOEWQXPXJWQUSNAWPUTUOVAURVBVCVDXCXIV
+      EBFXBMWTVFVGVHVITVJWNBCXAFBMWTBMVKWSBCVLVMVNVIAXAWSFMOZBCLZWOMVOVPXAXSVQA
+      VRWSFBMCVSWKAXRWNBCGXFXRWNXFXRPZWNDWRJKZFMOZXFXRYBXFWSYAFMXFXJPZWSYAYCWSP
+      ZDWRXFXLXJWSHQYDWRAXJXNXEWSXQVTSYCWSWAWBTWCWDXTDEFXFXRFXFFWEWSFMWFWLXFXLX
+      RHUMAXMXEXRIQWGWHTWIWJWM $.
+  $}
 
 
   $c SMblFn $.
