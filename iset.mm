@@ -185429,6 +185429,24 @@ $)
       ply1bas ) DAJZKCLMZNOZPKQMUECIKEDUERHUFRISUDDAUFUDTBCAFGUCUAUB $.
   $}
 
+  ${
+    $d P a $.  $d R a $.
+    ply1bascl.p $e |- P = ( Poly1 ` R ) $.
+    ply1bascl.b $e |- B = ( Base ` P ) $.
+    $( A univariate polynomial is a univariate power series.  (Contributed by
+       Stefan O'Rear, 25-Mar-2015.) $)
+    ply1bascl $p |- ( F e. B -> F e. ( Base ` ( PwSer1 ` R ) ) ) $=
+      ( va vr wcel cps1 cfv cbs c1o cmpl co cvv cress cpl1 cmps wfn wceq cdm cv
+      basm wrel wfun df-ply1 funmpt2 funrel ax-mp relelfvdm mpan eleq2s exlimiv
+      wex syl elexd eqid ply1valg eqidd psr1valpsr fnpsr 1oex mp3an12i eqeltrid
+      cxp fnovex basfn fnmpl funfvex funfni sylancr ressbasssd eqsstrid pm2.43i
+      sseld ) DAIZDCJKZLKZIVQAVSDVQABLKVSFVQMCNOZLKZVSBPVRPVQCPIZBVRWAQOUAVQCRU
+      BZVQGUCZBIZGUOCWCIZDAGBFUDWEWFGWFWDCRKZBRUEZWDWGIWFRUFWHHPHUCZJKMWINOLKQO
+      RHUGUHRUIUJWDCRUKULEUMUNUPUQZBCVRPEVRURZUSUPVQVSUTVQVRMCSOZPCVRWKVASPPVFZ
+      TMPIZVQWBWLPIVBVCWJMCPPSVGVDVEVQLPTVTPIZWAPIZVHNWMTWNVQWBWOVIVCWJMCPPNVGV
+      DWPPVTLVTLVJVKVLVMVNVPVO $.
+  $}
+
 
 $(
 ###############################################################################
