@@ -69111,11 +69111,9 @@ $)
 
   ${
     $d A x $.  $d R x $.
-    $( Shorter proof of ~ idref which depends on ~ ax-10 and ~ ax-12 .  Two
-       ways to state that a relation is reflexive on a class.  (Contributed by
-       FL, 15-Jan-2012.)  (Proof shortened by Mario Carneiro, 3-Nov-2015.)
-       (Revised by NM, 30-Mar-2016.)  The "proof modification is discouraged"
-       tag is here only because this is an *ALT result.
+    $( Alternate proof of ~ idref , shorter but depends on ~ ax-10 and
+       ~ ax-12 .  (Contributed by FL, 15-Jan-2012.)  (Proof shortened by Mario
+       Carneiro, 3-Nov-2015.)  (Revised by NM, 30-Mar-2016.)
        (Proof modification is discouraged.)  (New usage is discouraged.) $)
     idrefALT $p |- ( ( _I |` A ) C_ R <-> A. x e. A x R x ) $=
       ( cv cop wcel wral cmpt crn wss wbr cid cres wf eqid fmpt wfn opex fnmpti
