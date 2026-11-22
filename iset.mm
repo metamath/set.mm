@@ -185409,6 +185409,13 @@ $)
     psr1bascl $p |- ( F e. B -> F e. ( Base ` ( 1o mPwSer R ) ) ) $=
       ( wcel c1o cmps co cbs cfv id eqid psr1bas2 eleqtrdi ) DAGZDAHCIJZKLQMACB
       REFRNOP $.
+
+    psr1basf.k $e |- K = ( Base ` R ) $.
+    $( Univariate power series base set elements are functions.  (Contributed
+       by Stefan O'Rear, 25-Mar-2015.) $)
+    psr1basf $p |- ( F e. B -> F : ( NN0 ^m 1o ) --> K ) $=
+      ( cn0 c1o cmap co wf elmapi psr1bas eleq2s ) IJKLZEDMDEQKLADEQNACBEFGHOP
+      $.
   $}
 
 
