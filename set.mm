@@ -211406,7 +211406,7 @@ $)
     ( cnx cbs cfv ceuf basendxnn nnrei c1 cdc clt 2nn 1nn0 1lt10 declti basendx
     c2 eufndx 3brtr4i ltneii ) ABCZADCZSEFGOGHSTIOGGJKKLMNPQR $.
 
-  $( The slot for the ring multiplication is not the slot for the Euclidean
+  $( The slot for the group (addition) is not the slot for the Euclidean
      function in an extensible structure.  (Contributed by Thierry Arnoux,
      15-Nov-2026.) $)
   plusgndxneufndx $p |- ( +g ` ndx ) =/= ( EuclF ` ndx ) $=
@@ -211414,7 +211414,7 @@ $)
     c1 1nn0 declti eufndx 3brtr4i ltneii ) ABCZADCZUAUAEFGHIJEEOKUAUBLEOEMPHNQG
     RST $.
 
-  $( The slot for the ring multiplication is not the slot for the Euclidean
+  $( The slot for the ring (multiplication) is not the slot for the Euclidean
      function in an extensible structure.  (Contributed by Thierry Arnoux,
      15-Nov-2026.) $)
   mulrndxneufndx $p |- ( .r ` ndx ) =/= ( EuclF ` ndx ) $=
@@ -211422,16 +211422,17 @@ $)
     c1 3lt10 declti eufndx 3brtr4i ltneii ) ABCZADCZUBUBEFGHIJEKPLUBUCMKPENOHQR
     GSTUA $.
 
-  $( The slot for the ring multiplication is not the slot for the Euclidean
-     function in an extensible structure.  (Contributed by Thierry Arnoux,
+  $( The slot for the scalar product is not the slot for the Euclidean function
+     in an extensible structure.  (Contributed by Thierry Arnoux,
      15-Nov-2026.) $)
   vscandxneufndx $p |- ( .s ` ndx ) =/= ( EuclF ` ndx ) $=
     ( cnx cvsca cfv ceuf c6 cn0 vscandx 6nn0 eqeltri nn0rei c2 cdc clt 2nn 1nn0
     c1 6lt10 declti eufndx 3brtr4i ltneii ) ABCZADCZUBUBEFGHIJEKPLUBUCMKPENOHQR
     GSTUA $.
 
-  $( The slot for the scalars is not the slot for the Euclidean function in an
-     extensible structure.  (Contributed by Thierry Arnoux, 15-Nov-2026.) $)
+  $( The slot for the scalar field is not the slot for the Euclidean function
+     in an extensible structure.  (Contributed by Thierry Arnoux,
+     15-Nov-2026.) $)
   scandxneufndx $p |- ( Scalar ` ndx ) =/= ( EuclF ` ndx ) $=
     ( cnx csca cfv ceuf c5 cn0 scandx 5nn0 eqeltri nn0rei c2 cdc clt 1nn0 5lt10
     c1 2nn declti eufndx 3brtr4i ltneii ) ABCZADCZUBUBEFGHIJEKPLUBUCMKPEQNHORGS
@@ -296867,12 +296868,13 @@ $)
   $}
 
   ${
-    $d r x y R $.  $d r x y S $.  $d P x y $.  $d S x y $.
+    $d P x y $.  $d R r x y $.  $d S r x y $.
     ply1val.1 $e |- P = ( Poly1 ` R ) $.
     ${
       ply1val.2 $e |- S = ( PwSer1 ` R ) $.
       $( The value of the set of univariate polynomials.  (Contributed by Mario
-         Carneiro, 9-Feb-2015.) $)
+         Carneiro, 9-Feb-2015.)  Revise ~ df-ply1 .  (Revised by Thierry
+         Arnoux, 15-Nov-2026.) $)
       ply1val $p |- ( R e. V -> P = ( ( S |`s ( Base ` ( 1o mPoly R ) ) )
                                sSet <. ( EuclF ` ndx ) , ( deg1 ` R ) >. ) ) $=
         ( vr wcel cpl1 cfv c1o cmpl co cbs cress cdg1 cop csts cvv cps1 ceuf cv
@@ -296895,7 +296897,8 @@ $)
       ply1bas.u $e |- U = ( Base ` P ) $.
       $( The value of the base set of univariate polynomials.  (Contributed by
          Mario Carneiro, 9-Feb-2015.)  Remove hypothesis.  (Revised by SN,
-         20-May-2025.) $)
+         20-May-2025.)  Revise ~ df-ply1 .  (Revised by Thierry Arnoux,
+         15-Nov-2026.) $)
       ply1bas $p |- U = ( Base ` ( 1o mPoly R ) ) $=
         ( cvv wcel c1o cmpl co cbs cfv wceq cps1 cress cnx eqid fveq2d c0 cpl1
         ceuf cdg1 cop csts ply1val basendxneufndx setsnid eqtr4di cmps psr1bas2
@@ -297598,7 +297601,8 @@ $)
     $d P x y $.  $d R x y $.
     ply1ring.p $e |- P = ( Poly1 ` R ) $.
     $( Univariate polynomials form a ring.  (Contributed by Stefan O'Rear,
-       22-Mar-2015.) $)
+       22-Mar-2015.)  Revise ~ df-ply1 .  (Revised by Thierry Arnoux,
+       15-Nov-2026.) $)
     ply1ring $p |- ( R e. Ring -> P e. Ring ) $=
       ( vx vy crg wcel cfv cbs cress co eqid cplusg csts fveq2d setsnid eqtr4di
       cv oveqdr cmulr cps1 c1o cmpl csubrg ply1subrg eqeltrrid oveq2i subrgring
@@ -297647,7 +297651,8 @@ $)
       EHABUOCDURUGUHUIULUM $.
 
     $( Univariate polynomials form a left module.  (Contributed by Stefan
-       O'Rear, 26-Mar-2015.) $)
+       O'Rear, 26-Mar-2015.)  Revise ~ df-ply1 .  (Revised by Thierry Arnoux,
+       15-Nov-2026.) $)
     ply1lmod $p |- ( R e. Ring -> P e. LMod ) $=
       ( vx vy crg wcel clmod cfv cbs cress wceq eqid ply1bas oveq2d cplusg csts
       co cv cvsca cps1 c1o cmpl clss psr1lmod ply1lss eqeltrrid lsslmod syl2anc
@@ -297671,7 +297676,8 @@ $)
       UELZUFMUGBFNUHBOGZHGMHGUGMUHUIMHBONPAUIHCQHSHGTUAUBUCUD $.
 
     $( The ring of univariate polynomials is an associative algebra.
-       (Contributed by Mario Carneiro, 9-Feb-2015.) $)
+       (Contributed by Mario Carneiro, 9-Feb-2015.)  Revise ~ df-ply1 .
+       (Revised by Thierry Arnoux, 15-Nov-2026.) $)
     ply1assa $p |- ( R e. CRing -> P e. AssAlg ) $=
       ( vx vy ccrg wcel casa cfv cbs cress co eqid syl wa csca csts cmulr cvsca
       cplusg cps1 clss crg crngring ply1subrg ply1lss cur wss psr1assa subrg1cl
