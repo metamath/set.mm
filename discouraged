@@ -634,6 +634,9 @@
 "ac3" is used by "axac2".
 "ad11antr" is used by "simp-12l".
 "ad11antr" is used by "simp-12r".
+"adcnellaz" is used by "bru3sqez".
+"adcnmulzlaz" is used by "adcnellaz".
+"adcnmulzlaz" is used by "lazmulcl".
 "addassnq" is used by "addasspr".
 "addassnq" is used by "ltaddnq".
 "addassnq" is used by "ltexprlem7".
@@ -4929,6 +4932,7 @@
 "df-itv" is used by "itvid".
 "df-itv" is used by "itvndx".
 "df-kb" is used by "kbfval".
+"df-laz" is used by "lazval".
 "df-leop" is used by "leopg".
 "df-lnfn" is used by "ellnfn".
 "df-lng" is used by "lngid".
@@ -6165,6 +6169,19 @@
 "elimphu" is used by "ajfun".
 "elimphu" is used by "dipass".
 "elimphu" is used by "dipdir".
+"ellaz" is used by "adcnlaz".
+"ellaz" is used by "adcnmulzlaz".
+"ellaz" is used by "ellazim".
+"ellaz" is used by "gzilaz".
+"ellaz" is used by "lazcn".
+"ellaz" is used by "lazlinz".
+"ellaz" is used by "zellaz".
+"ellazim" is used by "lazaddcl".
+"ellazim" is used by "lazcjcl".
+"ellazim" is used by "lazmulcl".
+"ellazim" is used by "lazmulzcl".
+"ellazim" is used by "laznegcl".
+"ellazim" is used by "lazssaz".
 "ellnfn" is used by "0lnfn".
 "ellnfn" is used by "bralnfn".
 "ellnfn" is used by "cnlnadjlem2".
@@ -6804,6 +6821,7 @@
 "gt0srpr" is used by "mulgt0sr".
 "gt0srpr" is used by "recexsrlem".
 "gte-lteh" is used by "ex-gte".
+"gzilaz" is used by "gzmulclALT".
 "h0elch" is used by "atcv0eq".
 "h0elch" is used by "atcvat2".
 "h0elch" is used by "atcveq0".
@@ -9261,6 +9279,23 @@
 "latmassOLD" is used by "lhp2at0".
 "latmassOLD" is used by "omlfh1N".
 "latmmdiN" is used by "omlfh1N".
+"lazaddcl" is used by "ezsubrg".
+"lazaddcl" is used by "lazcjcl".
+"lazaddcl" is used by "lazmulcl".
+"lazaddcl" is used by "lazsubcl".
+"lazcn" is used by "ezsubrg".
+"lazcn" is used by "lazsubcl".
+"lazlinz" is used by "lazaddcl".
+"lazlinz" is used by "lazmulzcl".
+"lazlinz" is used by "laznegcl".
+"lazmulcl" is used by "ezsubrg".
+"lazmulcl" is used by "gzmulclALT".
+"lazmulzcl" is used by "lazcjcl".
+"lazmulzcl" is used by "lazmulcl".
+"laznegcl" is used by "ezsubrg".
+"laznegcl" is used by "lazsubcl".
+"lazsubcl" is used by "bru3sqez".
+"lazval" is used by "ellaz".
 "lecm" is used by "chirredlem2".
 "lecmi" is used by "lecm".
 "lecmi" is used by "lecmii".
@@ -14282,6 +14317,11 @@
 "wvhc3" is used by "dfvd3an".
 "wvhc3" is used by "dfvd3ani".
 "wvhc3" is used by "dfvd3anir".
+"zellaz" is used by "adcnlaz".
+"zellaz" is used by "bru3sqez".
+"zellaz" is used by "ezsubrg".
+"zellaz" is used by "lazcjcl".
+"zellaz" is used by "lazmulcl".
 "zerdivemp1x" is used by "isdrngo2".
 "zexALT" is used by "qexALT".
 "zfac" is used by "axacndlem4".
@@ -14480,6 +14520,9 @@ New usage of "ad5ant124OLD" is discouraged (0 uses).
 New usage of "ad5ant125OLD" is discouraged (0 uses).
 New usage of "ad5ant134OLD" is discouraged (0 uses).
 New usage of "ad5ant135OLD" is discouraged (0 uses).
+New usage of "adcnellaz" is discouraged (1 uses).
+New usage of "adcnlaz" is discouraged (0 uses).
+New usage of "adcnmulzlaz" is discouraged (2 uses).
 New usage of "addassnq" is discouraged (4 uses).
 New usage of "addasspi" is discouraged (1 uses).
 New usage of "addasspr" is discouraged (17 uses).
@@ -15998,6 +16041,7 @@ New usage of "df-ip" is discouraged (2 uses).
 New usage of "df-ipo" is discouraged (1 uses).
 New usage of "df-itv" is discouraged (2 uses).
 New usage of "df-kb" is discouraged (1 uses).
+New usage of "df-laz" is discouraged (1 uses).
 New usage of "df-leop" is discouraged (1 uses).
 New usage of "df-lnfn" is discouraged (1 uses).
 New usage of "df-lng" is discouraged (2 uses).
@@ -16555,6 +16599,8 @@ New usage of "elimphu" is discouraged (3 uses).
 New usage of "elirrvALT" is discouraged (0 uses).
 New usage of "elirrvOLD" is discouraged (0 uses).
 New usage of "elirrvOLDOLD" is discouraged (0 uses).
+New usage of "ellaz" is discouraged (7 uses).
+New usage of "ellazim" is discouraged (6 uses).
 New usage of "ellnfn" is discouraged (5 uses).
 New usage of "ellnop" is discouraged (9 uses).
 New usage of "elmaprdOLD" is discouraged (0 uses).
@@ -16872,6 +16918,7 @@ New usage of "gt-lth" is discouraged (1 uses).
 New usage of "gt0srpr" is discouraged (2 uses).
 New usage of "gte-lte" is discouraged (0 uses).
 New usage of "gte-lteh" is discouraged (1 uses).
+New usage of "gzilaz" is discouraged (1 uses).
 New usage of "gzmulclALT" is discouraged (0 uses).
 New usage of "h0elch" is discouraged (44 uses).
 New usage of "h0elsh" is discouraged (10 uses).
@@ -17567,6 +17614,16 @@ New usage of "largei" is discouraged (0 uses).
 New usage of "latmassOLD" is discouraged (17 uses).
 New usage of "latmmdiN" is discouraged (1 uses).
 New usage of "lautcnvclN" is discouraged (0 uses).
+New usage of "lazaddcl" is discouraged (4 uses).
+New usage of "lazcjcl" is discouraged (0 uses).
+New usage of "lazcn" is discouraged (2 uses).
+New usage of "lazlinz" is discouraged (3 uses).
+New usage of "lazmulcl" is discouraged (2 uses).
+New usage of "lazmulzcl" is discouraged (2 uses).
+New usage of "laznegcl" is discouraged (2 uses).
+New usage of "lazssaz" is discouraged (0 uses).
+New usage of "lazsubcl" is discouraged (1 uses).
+New usage of "lazval" is discouraged (1 uses).
 New usage of "lcd0vvalN" is discouraged (0 uses).
 New usage of "lcdlkreq2N" is discouraged (0 uses).
 New usage of "lcdlkreqN" is discouraged (0 uses).
@@ -19548,6 +19605,7 @@ New usage of "xp0OLD" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 New usage of "xrge0tmdALT" is discouraged (0 uses).
 New usage of "zaddablx" is discouraged (0 uses).
+New usage of "zellaz" is discouraged (5 uses).
 New usage of "zerdivemp1x" is discouraged (1 uses).
 New usage of "zexALT" is discouraged (1 uses).
 New usage of "zfac" is discouraged (1 uses).

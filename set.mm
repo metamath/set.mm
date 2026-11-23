@@ -859268,6 +859268,20 @@ $)
     ( cc wcel cz csn cun caz cfv azssid wo snidg olcd elun sylibr sseldd ) ABCZ
     DAEZFZAGHAAIPADCZAQCZJARCPTSABKLADQMNO $.
 
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Linear adjunction of a complex number to the ring of integers
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+  This section is experimental resp. obsolete.  It was intended to be a
+  generalization of the Gussian integers ` Z[i] ` defined in section
+  "Lagrange's four-square theorem" (see ~ df-gz ) to be used also for
+  Eisenstein integers ` ( Z[] `` ( bRoU `` 3 ) ) `.  But such a definition is
+  not necessary anymore.
+
+$)
+
   $c Z[]l $.
 
   $( Extend class notation with the linear adjunctions of a complex number to
@@ -859278,7 +859292,7 @@ $)
     $d a b s x $.
     $( Define the mapping yielding the adjunctions of a complex number to the
        ring of integers.  Analogous to ~ df-gz .  (Contributed by AV,
-       24-Oct-2026.) $)
+       24-Oct-2026.)  (New usage is discouraged.) $)
     df-laz $a |- Z[]l = ( s e. CC |-> { x e. CC | E. a e. ZZ E. b e. ZZ
                                       x = ( a + ( b x. s ) ) } ) $.
   $}
@@ -859286,7 +859300,7 @@ $)
   ${
     $d S a b s x $.
     $( An adjunction of a complex number to the ring of integers.  (Contributed
-       by AV, 24-Oct-2026.) $)
+       by AV, 24-Oct-2026.)  (New usage is discouraged.) $)
     lazval $p |- ( S e. CC -> ( Z[]l ` S ) = { x e. CC | E. a e. ZZ E. b e. ZZ
                                              x = ( a + ( b x. S ) ) } ) $=
       ( vs cv cmul co caddc wceq cz wrex crab claz oveq2 oveq2d eqeq2d 2rexbidv
@@ -859299,7 +859313,8 @@ $)
     $d A a b x $.  $d S a b x $.
     $( Elementhood in an adjunction of a complex number to the ring of
        integers.  Such an element is also called "extended integer" in the
-       following.  (Contributed by AV, 24-Oct-2026.) $)
+       following.  (Contributed by AV, 24-Oct-2026.)
+       (New usage is discouraged.) $)
     ellaz $p |- ( S e. CC -> ( A e. ( Z[]l ` S ) <-> ( A e. CC
                        /\ E. a e. ZZ E. b e. ZZ A = ( a + ( b x. S ) ) ) ) ) $=
       ( vx cc wcel claz cfv cv cmul co caddc wceq cz wrex crab wa lazval eleq2d
@@ -859310,19 +859325,20 @@ $)
   ${
     $d A a b $.  $d S a b $.
     $( Representation of an "extended integer".  (Contributed by AV,
-       25-Oct-2026.) $)
+       25-Oct-2026.)  (New usage is discouraged.) $)
     ellazim $p |- ( ( S e. CC /\ A e. ( Z[]l ` S ) )
                    -> E. a e. ZZ E. b e. ZZ A = ( a + ( b x. S ) ) ) $=
       ( cc wcel claz cfv cv cmul co caddc wceq cz wrex ellaz simplbda ) BEFABGH
       FAEFACIDIBJKLKMDNOCNOABCDPQ $.
 
     $( An extended integer is a complex number.  (Contributed by AV,
-       24-Oct-2026.) $)
+       24-Oct-2026.)  (New usage is discouraged.) $)
     lazcn $p |- ( S e. CC -> ( A e. ( Z[]l ` S ) -> A e. CC ) ) $=
       ( va vb cc wcel claz cfv cv cmul co caddc wceq cz wa ellaz simpl biimtrdi
       wrex ) BEFABGHFAEFZACIDIBJKLKMDNSCNSZOTABCDPTUAQR $.
 
-    $( An integer is an extended integer.  (Contributed by AV, 24-Oct-2026.) $)
+    $( An integer is an extended integer.  (Contributed by AV, 24-Oct-2026.)
+       (New usage is discouraged.)  $)
     zellaz $p |- ( ( S e. CC /\ A e. ZZ ) -> A e. ( Z[]l ` S ) ) $=
       ( va vb cc wcel cz wa claz cv cmul co caddc wceq wrex oveq1 eqeq2d oveq2d
       cfv cc0 zcn adantl simpr 0zd simpl mul02d addridd eqtr2d 2rspcedvdw ellaz
@@ -859336,7 +859352,7 @@ $)
     $d S a b c i p x $.
     $( A linear adjunction of a complex number to the ring of integers is a
        subset of the adjunction of the complex number to the ring of integers.
-       (Contributed by AV, 31-Oct-2026.) $)
+       (Contributed by AV, 31-Oct-2026.)  (New usage is discouraged.) $)
     lazssaz $p |- ( S e. CC -> ( Z[]l ` S ) C_ ( Z[] ` S ) ) $=
       ( vx va vb vp vc vi cc wcel cfv cv cmul co wceq cz wrex wa cn0 cvv a1i ex
       claz caz caddc ellazim csn cun ccnfld crgspn cply cc0 c1 cfz cif cmpt csu
@@ -859355,7 +859371,8 @@ $)
   ${
     $d C a b $.  $d S a b $.
     $( The extended complex number multiplied with an integer is an extended
-       integer.  (Contributed by AV, 25-Oct-2026.) $)
+       integer.  (Contributed by AV, 25-Oct-2026.)
+       (New usage is discouraged.) $)
     adcnmulzlaz $p |- ( ( S e. CC /\ C e. ZZ )
                         -> ( C x. S ) e. ( Z[]l ` S ) ) $=
       ( va vb cc wcel cz wa cmul co claz cfv cv caddc wceq zcn cc0 oveq1 eqeq2d
@@ -859367,14 +859384,15 @@ $)
   $}
 
   $( The adjoined complex number is an extended integer.  (Contributed by AV,
-     25-Oct-2026.) $)
+     25-Oct-2026.)  (New usage is discouraged.) $)
   adcnellaz $p |- ( S e. CC -> S e. ( Z[]l ` S ) ) $=
     ( cc wcel c1 cmul co claz cfv mullid cz 1z adcnmulzlaz mpan2 eqeltrrd ) ABC
     ZDAEFZAAGHZAIODJCPQCKDALMN $.
 
   ${
     $d A a b $.  $d B a b $.  $d S a b $.
-    $( Construct an extended integer.  (Contributed by AV, 25-Oct-2026.) $)
+    $( Construct an extended integer.  (Contributed by AV, 25-Oct-2026.)
+       (New usage is discouraged.)  $)
     lazlinz $p |- ( S e. CC -> ( ( A e. ZZ /\ B e. ZZ )
                                 -> ( A + ( B x. S ) ) e. ( Z[]l ` S ) ) ) $=
       ( va vb cc wcel cz wa cmul co caddc cv wceq zcn adantr adantl simpl oveq1
@@ -859388,7 +859406,8 @@ $)
   ${
     $d S a b s $.
     $( The adjunction of an integer to the ring of integers yields the
-       integers.  (Contributed by AV, 25-Oct-2026.) $)
+       integers.  (Contributed by AV, 25-Oct-2026.)
+       (New usage is discouraged.) $)
     adcnlaz $p |- ( S e. ZZ -> ( Z[]l ` S ) = ZZ ) $=
       ( vs va vb cz wcel claz cfv cv cc cmul co caddc wceq wrex wa wb zcn ellaz
       syl simprl simpr simpl zmulcl syl2anr zaddcld eleq1 syl5ibrcom rexlimdvva
@@ -859401,7 +859420,8 @@ $)
   ${
     $d a b s $.
     $( The Gaussian integers are the adjunction of ` _i ` to the ring of
-       integers.  (Contributed by AV, 25-Oct-2026.) $)
+       integers.  (Contributed by AV, 25-Oct-2026.)
+       (New usage is discouraged.) $)
     gzilaz $p |- Z[i] = ( Z[]l ` _i ) $=
       ( vs va vb ci cfv cv cc wcel cre cz cmul co caddc wceq wa oveq2d ad2antll
       cim ax-icn eqtrd cgz claz 3anass oveq1 eqeq2d simprl simprr simpl replimd
@@ -859422,7 +859442,7 @@ $)
     $d A a b $.  $d R a b $.  $d S a b $.
     laznegcl.r $e |- R = ( Z[]l ` S ) $.
     $( The extended integers are closed under negation.  (Contributed by AV,
-       25-Oct-2026.) $)
+       25-Oct-2026.)  (New usage is discouraged.) $)
     laznegcl $p |- ( S e. CC -> ( A e. R -> -u A e. R ) ) $=
       ( va vb wcel cc cneg wa cv cmul co caddc cz wrex zcn adantr adantl znegcl
       claz eleq2i wceq ellazim negeq simpl mulcl syl2anr negdid mulneg1d eqcomd
@@ -859436,7 +859456,7 @@ $)
 
     $d B a b $.
     $( The extended integers are closed under multiplication with an integer.
-       (Contributed by AV, 25-Oct-2026.) $)
+       (Contributed by AV, 25-Oct-2026.)  (New usage is discouraged.) $)
     lazmulzcl $p |- ( S e. CC -> ( ( B e. ZZ /\ A e. R )
                                   -> ( B x. A ) e. R ) ) $=
       ( va vb cc wcel cz cmul co wa cv caddc wceq wrex adantr zcn adantl eleq2i
@@ -859452,7 +859472,7 @@ $)
 
     $d A a b c d $.  $d B c d $.  $d R c d $.  $d S c d $.
     $( The extended integers are closed under addition.  (Contributed by AV,
-       25-Oct-2026.) $)
+       25-Oct-2026.)  (New usage is discouraged.) $)
     lazaddcl $p |- ( S e. CC -> ( ( A e. R /\ B e. R ) -> ( A + B ) e. R ) ) $=
       ( va vb vc vd wcel wa cc caddc co cv cmul wceq cz wrex zcn eleq2i anbi12i
       claz cfv ellazim ex wi simpl adantr adantl zaddcl syl2an jca lazlinz sylc
@@ -859469,7 +859489,7 @@ $)
       PWEXGVFWJWPKWDXFCAWIBWOMVHVIVJVKVLVMVNVMVOVQVP $.
 
     $( The extended integers are closed under subtraction.  (Contributed by AV,
-       25-Oct-2026.) $)
+       25-Oct-2026.)  (New usage is discouraged.) $)
     lazsubcl $p |- ( S e. CC -> ( ( A e. R /\ B e. R ) -> ( A - B ) e. R ) ) $=
       ( cc wcel wa cmin co cneg caddc claz cfv eleq2i lazcn a1dd biimtrid imp
       wi imp32 adantld negsubd laznegcl anim2d lazaddcl syldan eqeltrrd ex ) DF
@@ -859479,7 +859499,7 @@ $)
 
     $( The extended integers are closed under multiplication if the square of
        the adjoined complex number is an extended integer.  (Contributed by AV,
-       25-Oct-2026.) $)
+       25-Oct-2026.)  (New usage is discouraged.) $)
     lazmulcl $p |- ( ( S e. CC /\ ( S ^ 2 ) e. R )
                     -> ( ( A e. R /\ B e. R ) -> ( A x. B ) e. R ) ) $=
       ( va vb vc vd cc wcel co wa cv cmul caddc cz wrex adantr zcn c2 cexp wceq
@@ -859510,7 +859530,7 @@ $)
 
     $( The extended integers are closed under conjugation if the conjugation of
        the adjoined complex number is an extended integer.  (Contributed by AV,
-       26-Oct-2026.) $)
+       26-Oct-2026.)  (New usage is discouraged.) $)
     lazcjcl $p |- ( ( S e. CC /\ ( * ` S ) e. R )
                    -> ( A e. R -> ( * ` A ) e. R ) ) $=
       ( va vb cc wcel ccj cfv wa cv cmul co caddc cz wrex ex adantr adantl wceq
@@ -859533,6 +859553,7 @@ $)
     ( ci cc wcel c2 cexp co cgz wa cmul wi ax-icn c1 cneg i2 cz neg1z zgz ax-mp
     eqeltri gzilaz lazmulcl mp2an ) CDECFGHZIEAIEBIEJABKHIELMUENOZIPUFQEUFIERUF
     STUAABICUBUCUD $.
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
