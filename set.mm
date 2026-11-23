@@ -37743,8 +37743,8 @@ $)
 
   ${
     ssrab2f.1 $e |- F/_ x A $.
-    $( Subclass relation for a restricted class.  (Contributed by Glauco
-       Siliprandi, 26-Jun-2021.) $)
+    $( Subclass relation for a restricted class abstraction.  (Contributed by
+       Glauco Siliprandi, 26-Jun-2021.) $)
     ssrab2f $p |- { x e. A | ph } C_ A $=
       ( crab wss cv wcel nfrab1 dfss3f rabidim1 mprgbir ) ABCEZCFBGCHBMBMCABCID
       JABCKL $.
@@ -40913,7 +40913,7 @@ $)
   ${
     r19.3rzf.1 $e |- F/ x ph $.
     r19.3rzf.2 $e |- F/_ x A $.
-    $( Restricted quantification of wff not containing quantified variable.
+    $( Restricted quantification of a wff with a variable not free in it.
        (Contributed by Glauco Siliprandi, 24-Jan-2025.) $)
     r19.3rzf $p |- ( A =/= (/) -> ( ph <-> A. x e. A ph ) ) $=
       ( c0 wne cv wcel wex wi wral wb n0f biimt sylbi wal df-ral 19.23 bitri
@@ -99290,12 +99290,12 @@ $)
 
   ${
     $d A f g x $.  $d A g x y $.  $d B f g $.  $d B g y $.  $d g ph x y $.
-    choicefi.a $e |- ( ph -> A e. Fin ) $.
-    choicefi.b $e |- ( ( ph /\ x e. A ) -> B e. W ) $.
-    choicefi.n $e |- ( ( ph /\ x e. A ) -> B =/= (/) ) $.
+    fichoice.a $e |- ( ph -> A e. Fin ) $.
+    fichoice.b $e |- ( ( ph /\ x e. A ) -> B e. W ) $.
+    fichoice.n $e |- ( ( ph /\ x e. A ) -> B =/= (/) ) $.
     $( For a finite set, a choice function exists, without using the axiom of
        choice.  (Contributed by Glauco Siliprandi, 24-Dec-2020.) $)
-    choicefi $p |- ( ph -> E. f ( f Fn A /\ A. x e. A ( f ` x ) e. B ) ) $=
+    fichoice $p |- ( ph -> E. f ( f Fn A /\ A. x e. A ( f ` x ) e. B ) ) $=
       ( vg vy cv wfn cfv wcel wral wa wceq cvv syl2anc cmpt crn c0 wne wi mptfi
       wex cfn rnfi fnchoice 4syl simpl simprl nfv nfan rspa adantll wrex wb vex
       nfra1 eqid elrnmpt ax-mp bilani w3a simp3 3adant3 eqnetrd rexlimdv adantr
@@ -103813,6 +103813,7 @@ $)
       UDAABMUHUEBANUGRZBCLUDUGUIBUCCUIUFCGOPBUCSTUAUB $.
   $}
 
+  $( TODO - remove antecedent! $)
   $( A singleton is countable.  (Contributed by Thierry Arnoux,
      16-Sep-2016.) $)
   snct $p |- ( A e. V -> { A } ~<_ _om ) $=
@@ -114045,6 +114046,7 @@ $)
     OCUFEVKVOIJVIVORVPCCQQUGVISCPZVOCUHSCRZVQVORCUISCJVRUJUKCSULTSCCUMUNUOVIVOI
     UPUQURVIVOCUSTVDVICNMVCVDCNO $.
 
+  $( TODO - remove antecedent! $)
   $( An unordered pair is countable.  (Contributed by Thierry Arnoux,
      16-Sep-2016.) $)
   prct $p |- ( ( A e. V /\ B e. W ) -> { A , B } ~<_ _om ) $=
@@ -117907,11 +117909,11 @@ $)
     $d X f g z $.  $d X g x z $.  $d g ph z $.
     axccdom.1 $e |- ( ph -> X ~<_ _om ) $.
     axccdom.2 $e |- ( ( ph /\ z e. X ) -> z =/= (/) ) $.
-    $( Relax the constraint on ax-cc to dominance instead of equinumerosity.
+    $( Relax the constraint on ~ ax-cc to dominance instead of equinumerosity.
        (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
     axccdom $p |- ( ph -> E. f ( f Fn X /\ A. z e. X ( f ` z ) e. z ) ) $=
       ( vg vx wcel cv cfv wral wa wex simpr adantlr com cen wbr cvv cfn wfn wne
-      c0 choicefi cdom csdm adantr isfinite2 con3i adantl jca bren2 sylibr ctex
+      c0 fichoice cdom csdm adantr isfinite2 con3i adantl jca bren2 sylibr ctex
       wn syl wceq breq1 raleq exbidv imbi12d ax-cc vtoclg sylc cmpt mptexd fvex
       wi rgenw eqid fnmpt ax-mp a1i nfv nfra1 id fvmpt2 syl2anc adantll eqeltrd
       nfan rspa ex ralrimi fneq1 nfcv nfmpt1 fveq1 eleq1d ralbid anbi12d spcegv
@@ -139205,13 +139207,11 @@ $)
   ${
     nnaddcli.1 $e |- A e. NN $.
     nnaddcli.2 $e |- B e. NN $.
-    $( Closure of addition of positive integers, in inference form.  Inference
-       associated with ~ nnaddcl .  The multiplication counterpart is the
-       existing ~ nnmulcli .  Proof supplied by Owen Orger.  AI-assisted
-       naming, description, and verification by OpenAI Codex.  (Contributed by
-       Owen Orger, 11-Nov-2026.) $)
+    $( Closure of addition of positive integers.  Prepared with AI assistance
+       from OpenAI Codex.  (Contributed by Owen Orger, 11-Nov-2026.)  (Proof
+       shortened by Owen Orger, 23-Nov-2026.) $)
     nnaddcli $p |- ( A + B ) e. NN $=
-      ( cn wcel wa caddc co pm3.2i nnaddcl ax-mp ) AEFZBEFZGABHIEFMNCDJABKL $.
+      ( cn wcel caddc co nnaddcl mp2an ) AEFBEFABGHEFCDABIJ $.
   $}
 
   ${
@@ -150008,8 +150008,8 @@ $)
   ${
     $d A x $.  $d ph x $.
     icomnfinre.1 $e |- ( ph -> A e. RR* ) $.
-    $( A left-closed, right-open, interval of extended reals, intersected with
-       the Reals.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    $( Intersection of a left-closed, right-open interval with the set of real
+       numbers.  (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
     icomnfinre $p |- ( ph -> ( ( -oo [,) A ) i^i RR ) = ( -oo (,) A ) ) $=
       ( vx cmnf cico co cr cin cioo cv wcel cxr mnfxr a1i adantr elinel2 adantl
       wa mnfltd elinel1 icoltubd eliood ssd wss ioossico ioossre ssini eqssd )
@@ -154718,7 +154718,7 @@ $)
 
   ${
     $d A n $.
-    $( Any positive real number is greater than the reciprocal of a positive
+    $( Any positive real number is greater than the reciprocal of some positive
        integer.  (Contributed by Glauco Siliprandi, 8-Apr-2021.) $)
     rpgtrecnn $p |- ( A e. RR+ -> E. n e. NN ( 1 / n ) < A ) $=
       ( crp wcel c1 cdiv co cfl cfv caddc cn clt wbr cv wrex cn0 cr cc0 syl2anc
@@ -154734,8 +154734,8 @@ $)
     xrralrecnnle.n $e |- F/ n ph $.
     xrralrecnnle.a $e |- ( ph -> A e. RR* ) $.
     xrralrecnnle.b $e |- ( ph -> B e. RR ) $.
-    $( Show that ` A ` is less than ` B ` by showing that there is no positive
-       bound on the difference.  (Contributed by Glauco Siliprandi,
+    $( Show that ` A ` is less than or equal to ` B ` by showing that there is
+       no positive bound on the difference.  (Contributed by Glauco Siliprandi,
        8-Apr-2021.) $)
     xrralrecnnle $p |- ( ph -> ( A <_ B <-> A. n e. NN A <_ ( B + ( 1 / n ) ) )
        ) $=
@@ -154761,8 +154761,8 @@ $)
     xrralrecnnge.n $e |- F/ n ph $.
     xrralrecnnge.a $e |- ( ph -> A e. RR ) $.
     xrralrecnnge.b $e |- ( ph -> B e. RR* ) $.
-    $( Show that ` A ` is less than ` B ` by showing that there is no positive
-       bound on the difference.  (Contributed by Glauco Siliprandi,
+    $( Show that ` A ` is less than or equal to ` B ` by showing that there is
+       no positive bound on the difference.  (Contributed by Glauco Siliprandi,
        26-Jun-2021.) $)
     xrralrecnnge $p |- ( ph -> ( A <_ B <-> A. n e. NN ( A - ( 1 / n ) ) <_ B )
        ) $=
@@ -522941,11 +522941,6 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
-  $( TODO - remove antecedent! $)
-
-
-  $( TODO - remove antecedent! $)
-
 
   ${
     $d x y A $.  $d y B $.
@@ -779251,7 +779246,7 @@ $)
        by Glauco Siliprandi, 26-Jun-2021.) $)
     axccd2 $p |- ( ph -> E. f A. x e. A ( f ` x ) e. x ) $=
       ( com csdm wbr cv cfv wcel wral wex wa wfn cfn isfinite2 simpr adantlr c0
-      adantl wne choicefi wi a1i eximdv mpd cen cdom anim1i bren2 sylibr syldan
+      adantl wne fichoice wi a1i eximdv mpd cen cdom anim1i bren2 sylibr syldan
       wn axccd pm2.61dan ) ACGHIZBJZDJZKUSLBCMZDNZAUROZUTCPZVAOZDNVBVCBCUSDCURC
       QLACRUBVCUSCLZSAVFUSUAUCZURFTUDVCVEVADVEVAUEVCVDVASUFUGUHAURUOZCGUIIZVBAV
       HOCGUJIZVHOVIAVJVHEUKCGULUMAVIOBCDAVISAVFVGVIFTUPUNUQ $.
@@ -817088,7 +817083,7 @@ $)
       mp2an wf elmapi syl simpr ffvelcdmd rexrd rpred cn adantl wb cfn hashnncl
       ne0i mpbird nnred cc0 0red nngt0d ltled resqrtcld elrpd sqrtgt0d redivcld
       gtned readdcld crp rpdivcld ltaddrpd qbtwnxr df-rex sylib simprl ad2antrl
-      syl3anc qre simprrl simprrr eliood elind ex eximdv mpd n0 sylibr choicefi
+      syl3anc qre simprrl simprrr eliood elind ex eximdv mpd n0 sylibr fichoice
       sseld ralimdv imdistani ffnfv elmapg syl2anc reex ssriv mapss sseldd cmul
       eqid cmin cabs simpll fveq2 oveq1d oveq12d ineq2d eleq12d cbvralvw birani
       wceq rspa 3adant2 recnd breqtrd rpcnd jca adantll w3a ffvelcdmda elioored
@@ -826428,7 +826423,7 @@ $)
       csqrt cioo cin wral caddc cmap wrex cico cixp cds cbl wss wex wfn qex a1i
       crrx inex1 c0 wceq cle wbr clt wn wf elmapi syl ffvelcdmda crp 2rp cn wne
       wb hashnncl mpbird nnrp rpsqrtcld rpmulcld rpdivcld adantr ltsubrpd rpred
-      cfn resubcld ltnled mpbid rexrd qinioo mtbird neqned choicefi simpl nfra1
+      cfn resubcld ltnled mpbid rexrd qinioo mtbird neqned fichoice simpl nfra1
       rspa elinel1 ex ralrimi jca ffnfv sylibr elmapg syl2anc simprr eximdv mpd
       df-rex ltaddrpd readdcld reeanv nfan qssre fssd ad2antrr ad2antlr adantlr
       elin2d adantll hoiqssbllem1 oveq1d oveq12d ineq2d eleq12d cbvralvw biimpi
