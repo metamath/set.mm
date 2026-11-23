@@ -72401,6 +72401,17 @@ $)
   $}
 
   ${
+    $d ph x $.
+    riotaeqbidva.1 $e |- ( ph -> A = B ) $.
+    riotaeqbidva.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal restricted definition binders (deduction
+       form).  ( ~ raleqbidva analog.)  (Contributed by Thierry Arnoux,
+       29-Jan-2025.) $)
+    riotaeqbidva $p |- ( ph -> ( iota_ x e. A ps ) = ( iota_ x e. B ch ) ) $=
+      ( crio riotabidva riotaeqdv eqtrd ) ABDEICDEICDFIABCDEHJACDEFGKL $.
+  $}
+
+  ${
     riotabiia.1 $e |- ( x e. A -> ( ph <-> ps ) ) $.
     $( Equivalent wff's yield equal restricted iotas (inference form).
        ( ~ rabbiia analog.)  (Contributed by NM, 16-Jan-2012.) $)
@@ -152715,6 +152726,19 @@ $)
     ( cc0 c2 cfzo co c1 cmin cfz caddc cz wcel wceq 2z fzoval ax-mp 2m1e1 0p1e1
     cpr eqtr4i oveq2i 0z fzpr preq2i eqtrdi 3eqtri ) ABCDZABEFDZGDZAAEHDZGDZAEQ
     ZBIJUEUGKLABMNUFUHAGUFEUHOPRSAIJZUIUJKTUKUIAUHQUJAUAUHEAPUBUCNUD $.
+
+  $( The pair ` { 0 , 1 } ` does not overlap the rest of the nonnegative
+     integers.  (Contributed by Thierry Arnoux, 8-Jun-2025.) $)
+  nn0disj01 $p |- ( { 0 , 1 } i^i ( ZZ>= ` 2 ) ) = (/) $=
+    ( cc0 c2 cfzo co cuz cfv cin c1 cpr c0 fzo0to2pr ineq1i fzouzdisj eqtr3i )
+    ABCDZBEFZGAHIZPGJOQPKLABMN $.
+
+  $( Split 0 and 1 from the nonnegative integers.  (Contributed by Thierry
+     Arnoux, 8-Jun-2025.) $)
+  nn0split01 $p |- NN0 = ( { 0 , 1 } u. ( ZZ>= ` 2 ) ) $=
+    ( cn0 cc0 cuz cfv c2 cfzo co cun c1 cpr nn0uz wcel wceq 2eluzge0 fzouzsplit
+    ax-mp fzo0to2pr uneq1i 3eqtri ) ABCDZBEFGZECDZHZBIJZUBHKETLTUCMNBEOPUAUDUBQ
+    RS $.
 
   $( An integer range between 0 and 1 is a pair.  (Contributed by AV,
      11-Sep-2025.) $)
@@ -238152,6 +238176,16 @@ $)
   $}
 
   ${
+    grpidcld.1 $e |- B = ( Base ` G ) $.
+    grpidcld.2 $e |- .0. = ( 0g ` G ) $.
+    grpidcld.3 $e |- ( ph -> G e. Grp ) $.
+    $( The identity element of a group belongs to the group.  (Contributed by
+       Thierry Arnoux, 4-May-2026.) $)
+    grpidcld $p |- ( ph -> .0. e. B ) $=
+      ( cgrp wcel grpidcl syl ) ACHIDBIGBCDEFJK $.
+  $}
+
+  ${
     grpbn0.b $e |- B = ( Base ` G ) $.
     $( The base set of a group is not empty.  (Contributed by Szymon
        Jaroszewicz, 3-Apr-2007.) $)
@@ -238864,6 +238898,18 @@ $)
       ( cgrp wcel wa co cfv cplusg wceq grpidcl eqid grpsubval grpinvcl grplid
       sylan syldan eqtr2d ) BKLZEALZMFECNZFEDOZBPOZNZUIUFFALUGUHUKQABFGJRAUJBDC
       FEGUJSZIHTUCUFUGUIALUKUIQABDEGIUAAUJBUIFGULJUBUDUE $.
+  $}
+
+  ${
+    grpsubcld.b $e |- B = ( Base ` G ) $.
+    grpsubcld.m $e |- .- = ( -g ` G ) $.
+    grpsubcld.g $e |- ( ph -> G e. Grp ) $.
+    grpsubcld.x $e |- ( ph -> X e. B ) $.
+    grpsubcld.y $e |- ( ph -> Y e. B ) $.
+    $( Closure of group subtraction.  (Contributed by Thierry Arnoux,
+       3-Aug-2025.) $)
+    grpsubcld $p |- ( ph -> ( X .- Y ) e. B ) $=
+      ( cgrp wcel co grpsubcl syl3anc ) ACLMEBMFBMEFDNBMIJKBCDEFGHOP $.
   $}
 
   ${
@@ -255569,6 +255615,39 @@ $)
   $}
 
   ${
+    $d B k $.  $d C k $.  $d D k $.  $d E k $.  $d G k $.  $d M k $.  $d N k $.
+    $d O k $.  $d V k $.  $d W k $.  $d k ph $.
+    gsumtp.b $e |- B = ( Base ` G ) $.
+    gsumtp.p $e |- .+ = ( +g ` G ) $.
+    gsumtp.s $e |- ( k = M -> A = C ) $.
+    gsumtp.t $e |- ( k = N -> A = D ) $.
+    gsumtp.u $e |- ( k = O -> A = E ) $.
+    gsumtp.1 $e |- ( ph -> G e. CMnd ) $.
+    gsumtp.2 $e |- ( ph -> M e. V ) $.
+    gsumtp.3 $e |- ( ph -> N e. W ) $.
+    gsumtp.4 $e |- ( ph -> O e. X ) $.
+    gsumtp.5 $e |- ( ph -> M =/= N ) $.
+    gsumtp.6 $e |- ( ph -> N =/= O ) $.
+    gsumtp.7 $e |- ( ph -> M =/= O ) $.
+    gsumtp.8 $e |- ( ph -> C e. B ) $.
+    gsumtp.9 $e |- ( ph -> D e. B ) $.
+    gsumtp.10 $e |- ( ph -> E e. B ) $.
+    $( Group sum of an unordered triple.  (Contributed by Thierry Arnoux,
+       22-Jun-2025.) $)
+    gsumtp $p |- ( ph -> ( G gsum ( k e. { M , N , O } |-> A ) )
+                        = ( ( C .+ D ) .+ E ) ) $=
+      ( ctp cmpt cgsu co cpr csn cfn wcel tpfi a1i wceq adantl ad2antrr eqeltrd
+      cv wa w3o eltpi mpjao3dan wne cin disjprsn syl2anc df-tp gsummptfidmsplit
+      c0 cun ccmn gsumpr syl132anc cmnmndd gsumsnd oveq12d eqtrd ) AIGJKLUKZBUL
+      UMUNIGJKUOZBULUMUNZIGLUPZBULUMUNZFUNDEFUNZHFUNAWECWFWHFGIBPQUAWEUQURAJKLU
+      SUTAGVEZWEURZVFZWKJVAZBCURWKKVAZWKLVAZWMWNVFBDCWNBDVAWMRVBADCURZWLWNUHVCV
+      DWMWOVFBECWOBEVAWMSVBAECURZWLWOUIVCVDWMWPVFBHCWPBHVAZWMTVBAHCURWLWPUJVCVD
+      WLWNWOWPVGAWKJKLVHVBVIAJLVJKLVJWFWHVKVPVAUGUFJKLVLVMWEWFWHVQVAAJKLVNUTVOA
+      WGWJWIHFAIVRURJMURKNURJKVJWQWRWGWJVAUAUBUCUEUHUIBCDEFGIJKMNPQRSVSVTABCHGI
+      LOPAIUAWAUDUJWPWSATVBWBWCWD $.
+  $}
+
+  ${
     $d k A $.  $d k B $.  $d k G $.  $d k M $.  $d k ph $.  $d k Y $.
     gsumzunsnd.b $e |- B = ( Base ` G ) $.
     gsumzunsnd.p $e |- .+ = ( +g ` G ) $.
@@ -267036,6 +267115,17 @@ $)
   $}
 
   ${
+    subrgmcld.1 $e |- .x. = ( .r ` R ) $.
+    subrgmcld.2 $e |- ( ph -> A e. ( SubRing ` R ) ) $.
+    subrgmcld.3 $e |- ( ph -> X e. A ) $.
+    subrgmcld.4 $e |- ( ph -> Y e. A ) $.
+    $( A subring is closed under multiplication.  (Contributed by Thierry
+       Arnoux, 6-Jul-2025.) $)
+    subrgmcld $p |- ( ph -> ( X .x. Y ) e. A ) $=
+      ( csubrg cfv wcel co subrgmcl syl3anc ) ABCKLMEBMFBMEFDNBMHIJBCDEFGOP $.
+  $}
+
+  ${
     subrgsubm.1 $e |- M = ( mulGrp ` R ) $.
     $( A subring is a submonoid of the multiplicative monoid.  (Contributed by
        Mario Carneiro, 15-Jun-2015.) $)
@@ -274424,6 +274514,15 @@ $)
     ( clmhm co wcel clmod wa cghm csca cfv wceq eqid lmhmlem simprld ) CABDEFAG
     FBGFHCABIEFBJKZAJKZLABCQPQMPMNO $.
 
+  ${
+    lmhmghmd.1 $e |- ( ph -> F e. ( S LMHom T ) ) $.
+    $( A module homomorphism is a group homomorphism.  (Contributed by Thierry
+       Arnoux, 2-Apr-2025.) $)
+    lmhmghmd $p |- ( ph -> F e. ( S GrpHom T ) ) $=
+      ( clmhm co wcel cghm lmghm syl ) ADBCFGHDBCIGHEBCDJK $.
+  $}
+
+
   $( A homomorphism of left modules has a left module as codomain.
      (Contributed by Stefan O'Rear, 1-Jan-2015.) $)
   lmhmlmod2 $p |- ( F e. ( S LMHom T ) -> T e. LMod ) $=
@@ -275170,6 +275269,357 @@ $)
       AXFYHUUCYKUUHUUAAXEYGXDABCDEJKLMNOPQUDUEWKWLAIYIHYJUATWCAUUGYSUIFYTAFUUQY
       TUBAHYJVCTVHWHAYQUJDYRPWIWNWOWPVEUIUJYAJKXLXPXSXDXHXGXHVPXGVPYAVPUUSXLVPX
       PVPWQUIUJYTLMYLYOYRXDYJYIYJVPYIVPYTVPYRVPYLVPYOVPWQWGWR $.
+  $}
+
+  ${
+    $d B b k p q u v w x y z $.  $d F a b k p q u x y z $.  $d .+ b k p q $.
+    $d M b k p q u v w x z $.  $d N a b k p q u v w x y z $.  $d .0. p q $.
+    $d S a b k u v w y z $.  $d V a b k p q u x y z $.  $d .x. b k p q u $.
+    $d ph a b k p q u v w x y z $.
+    imaslmod.u $e |- ( ph -> N = ( F "s M ) ) $.
+    imaslmod.v $e |- V = ( Base ` M ) $.
+    imaslmod.k $e |- S = ( Base ` ( Scalar ` M ) ) $.
+    imaslmod.p $e |- .+ = ( +g ` M ) $.
+    imaslmod.t $e |- .x. = ( .s ` M ) $.
+    imaslmod.o $e |- .0. = ( 0g ` M ) $.
+    imaslmod.f $e |- ( ph -> F : V -onto-> B ) $.
+    imaslmod.e1 $e |- ( ( ph /\ ( a e. V /\ b e. V ) /\ ( p e. V /\ q e. V ) )
+      -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+        -> ( F ` ( a .+ b ) ) = ( F ` ( p .+ q ) ) ) ) $.
+    imaslmod.e2 $e |- ( ( ph /\ ( k e. S /\ a e. V /\ b e. V ) )
+      -> ( ( F ` a ) = ( F ` b )
+        -> ( F ` ( k .x. a ) ) = ( F ` ( k .x. b ) ) ) ) $.
+    imaslmod.l $e |- ( ph -> M e. LMod ) $.
+    $( The image structure of a left module is a left module.  (Contributed by
+       Thierry Arnoux, 15-May-2023.) $)
+    imaslmod $p |- ( ph -> N e. LMod ) $=
+      ( vu vv vw vz vy vx cplusg cfv csca cvsca cmulr cur clmod cbs a1i imasbas
+      wceq eqidd eqid imassca wcel crg lmodring syl cgrp lmodgrp imasgrp simpld
+      c0g cv adantr simprl simprr lmodvscl syl3anc imasvscaf fovcld w3a simp-5l
+      wa co simpllr simp1d ad2antrr simplr simp-4r grpcl imasvscaval imasaddval
+      simpr oveq12d eqtr3d oveq2d lmodvsdi syl13anc fveq2d 3eqtr3d 3eqtr2d wrex
+      simplll simp2d wfn crn fofn forn eleqtrrd fvelrnb biimpa syl2an2r syl2anc
+      wfo r19.29a 3ad2antr3 ad3antrrr lmodacl lmodvsdir lmodmcl lmodvsass eqtrd
+      3eqtr4rd ringidcl lmodvs1 islmodd ) AUFUGUHDIULUMZHUNUMZULUMZIUOUMZYJUPUM
+      ZYJUQUMZYJBIABHIGJURPJHUSUMVBAQUTZUBUEVAAYIVCABHIGYJJURPYOUBUEYJVDZVEAYLV
+      CDYJUSUMVBARUTAYKVCAYMVCAYNVCAHURVFZYJVGVFZUEYJHYPVHVIZAIVJVFKGUMIVNUMVBA
+      BCHIGJKLMNOPYOCHULUMVBASUTUBUCAYQHVJVFZUEHVKVIZUAVLVMAUFVOZUGVOZBDBYLABHY
+      LEIGYJDJUROFNPYOUBUEYPRTYLVDZUDAFVOZDVFZOVOZJVFZWEZWEYQUUFUUHUUEUUGEWFJVF
+      AYQUUIUEVPAUUFUUHVQAUUFUUHVRUUEEYJDJHUUGQYPTRVSVTWAWBAUUBDVFZUUCBVFZUHVOZ
+      BVFZWCZWEZUIVOZGUMZUULVBZUUBUUCUULYIWFZYLWFZUUBUUCYLWFZUUBUULYLWFZYIWFZVB
+      ZUIJUUOUUPJVFZWEZUURWEZUJVOZGUMZUUCVBZUVDUJJUVGUVHJVFZWEZUVJWEZUUTUUBUVHE
+      WFZUUBUUPEWFZCWFZGUMZUVNGUMZUVOGUMZYIWFZUVCUVMUUBUVHUUPCWFZGUMZYLWFZUUBUW
+      AEWFZGUMZUUTUVQUVMAUUJUWAJVFZUWCUWEVBAUUNUVEUURUVKUVJWDZUVGUUJUVKUVJUVGUU
+      JUUKUUMAUUNUVEUURWGZWHWIZUVMYTUVKUVEUWFUVMAYTUWGUUAVIUVGUVKUVJWJZUUOUVEUU
+      RUVKUVJWKZJCHUVHUUPQSWLVTABHYLEIGYJDJUUBUWAUROFNPYOUBUEYPRTUUDUDWMVTUVMUW
+      BUUSUUBYLUVMUVIUUQYIWFZUWBUUSUVMAUVKUVEUWLUWBVBUWGUWJUWKABHYICIGJUVHUUPUR
+      LMNOUBUCPYOUESYIVDZWNVTUVMUVIUUCUUQUULYIUVLUVJWOZUVFUURUVKUVJWGZWPWQWRUVM
+      UWDUVPGUVMYQUUJUVKUVEUWDUVPVBUVMAYQUWGUEVIZUWIUWJUWKCUUBEYJDJHUVHUUPQSYPT
+      RWSWTXAXBUVMAUVNJVFZUVOJVFZUVTUVQVBUWGUVMYQUUJUVKUWQUWPUWIUWJUUBEYJDJHUVH
+      QYPTRVSVTUVMYQUUJUVEUWRUWPUWIUWKUUBEYJDJHUUPQYPTRVSZVTABHYICIGJUVNUVOURLM
+      NOUBUCPYOUESUWMWNVTUVMUVRUVAUVSUVBYIUVMUUBUVIYLWFZUVRUVAUVMAUUJUVKUWTUVRV
+      BUWGUWIUWJABHYLEIGYJDJUUBUVHUROFNPYOUBUEYPRTUUDUDWMVTUVMUVIUUCUUBYLUWNWRW
+      QUVMUUBUUQYLWFZUVSUVBUVMAUUJUVEUXAUVSVBZUWGUWIUWKABHYLEIGYJDJUUBUUPUROFNP
+      YOUBUEYPRTUUDUDWMZVTUVMUUQUULUUBYLUWOWRWQWPXCUVGAUUKUVJUJJXDZAUUNUVEUURXE
+      UVGUUJUUKUUMUWHXFAGJXGZUUKUUCGXHZVFZUXDAJBGXPZUXEUBJBGXIVIZAUUKWEUUCBUXFA
+      UUKWOAUXFBVBZUUKAUXHUXJUBJBGXJVIZVPXKUXEUXGUXDUJJUUCGXLXMXNXOXQAUUJUUMUUR
+      UIJXDZUUKAUXEUUMUULUXFVFZUXLUXIAUUMWEUULBUXFAUUMWOAUXJUUMUXKVPXKUXEUXMUXL
+      UIJUULGXLXMXNZXRXQAUUJUUCDVFZUUMWCZWEZUURUUBUUCYKWFZUULYLWFZUVBUUCUULYLWF
+      ZYIWFZVBUIJUXQUVEWEZUURWEZUXRUUQYLWFZUXRUUPEWFZGUMZUXSUYAUYCAUXRDVFZUVEUY
+      DUYFVBAUXPUVEUURXEZUYCYQUUJUXOUYGAYQUXPUVEUURUEXSZUYCUUJUXOUUMAUXPUVEUURW
+      GZWHZUYCUUJUXOUUMUYJXFZYKYJDHUUBUUCYPRYKVDZXTVTUXQUVEUURWJZABHYLEIGYJDJUX
+      RUUPUROFNPYOUBUEYPRTUUDUDWMVTUYCUUQUULUXRYLUYBUURWOZWRUYCUYFUVOUUCUUPEWFZ
+      CWFZGUMZUVSUYPGUMZYIWFZUYAUYCUYEUYQGUYCYQUUJUXOUVEUYEUYQVBUYIUYKUYLUYNCYK
+      UUBUUCEYJDJHUUPQSYPTRUYMYAWTXAUYCAUWRUYPJVFZUYTUYRVBUYHUYCYQUUJUVEUWRUYIU
+      YKUYNUWSVTUYCYQUXOUVEVUAUYIUYLUYNUUCEYJDJHUUPQYPTRVSVTZABHYICIGJUVOUYPURL
+      MNOUBUCPYOUESUWMWNVTUYCUVSUVBUYSUXTYIUYCUXAUVSUVBUYCAUUJUVEUXBUYHUYKUYNUX
+      CVTUYCUUQUULUUBYLUYOWRWQUYCUUCUUQYLWFZUYSUXTUYCAUXOUVEVUCUYSVBUYHUYLUYNAB
+      HYLEIGYJDJUUCUUPUROFNPYOUBUEYPRTUUDUDWMVTZUYCUUQUULUUCYLUYOWRZWQWPXCXBAUU
+      JUUMUXLUXOUXNXRZXQUXQUURUUBUUCYMWFZUULYLWFZUUBUXTYLWFZVBUIJUYCVUHUUBVUCYL
+      WFZVUIUYCVUGUUQYLWFZVUGUUPEWFZGUMZVUHVUJUYCAVUGDVFZUVEVUKVUMVBUYHUYCYQUUJ
+      UXOVUNUYIUYKUYLYMYJDHUUBUUCYPRYMVDZYBVTUYNABHYLEIGYJDJVUGUUPUROFNPYOUBUEY
+      PRTUUDUDWMVTUYCUUQUULVUGYLUYOWRUYCUUBUYSYLWFZUUBUYPEWFZGUMZVUJVUMUYCAUUJV
+      UAVUPVURVBUYHUYKVUBABHYLEIGYJDJUUBUYPUROFNPYOUBUEYPRTUUDUDWMVTUYCVUCUYSUU
+      BYLVUDWRUYCVULVUQGUYCYQUUJUXOUVEVULVUQVBUYIUYKUYLUYNUUBUUCEYMYJDJHUUPQYPT
+      RVUOYCWTXAYEXBUYCVUCUXTUUBYLVUEWRYDVUFXQAUUBBVFZWEZUKVOZGUMZUUBVBZYNUUBYL
+      WFZUUBVBUKJVUTVVAJVFZWEZVVCWEZYNVVBYLWFZYNVVAEWFZGUMZVVDUUBVVGAYNDVFZVVEV
+      VHVVJVBAVUSVVEVVCXEAVVKVUSVVEVVCAYRVVKYSDYJYNRYNVDZYFVIXSVUTVVEVVCWJZABHY
+      LEIGYJDJYNVVAUROFNPYOUBUEYPRTUUDUDWMVTVVGVVBUUBYNYLVVFVVCWOZWRVVGVVJVVBUU
+      BVVGVVIVVAGVVGYQVVEVVIVVAVBAYQVUSVVEVVCUEXSVVMEYNYJJHVVAQYPTVVLYGXOXAVVNY
+      DXBAUXEVUSUUBUXFVFZVVCUKJXDZUXIVUTUUBBUXFAVUSWOAUXJVUSUXKVPXKUXEVVOVVPUKJ
+      UUBGXLXMXNXQYH $.
+  $}
+
+  ${
+    imasmhm.b $e |- B = ( Base ` W ) $.
+    imasmhm.f $e |- ( ph -> F : B --> C ) $.
+    imasmhm.1 $e |- .+ = ( +g ` W ) $.
+    imasmhm.2 $e |- ( ( ph /\ ( a e. B /\ b e. B ) /\ ( p e. B /\ q e. B ) )
+                   -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+                     -> ( F ` ( a .+ b ) ) = ( F ` ( p .+ q ) ) ) ) $.
+
+    ${
+      $d .+ p q $.  $d B a b p q $.  $d B x y $.  $d F a b p q $.  $d F x y $.
+      $d W a b p q $.  $d W x y $.  $d a b p ph q $.  $d p x y $.  $d ph x y $.
+      $d q y $.
+      imasmhm.w $e |- ( ph -> W e. Mnd ) $.
+      $( Given a function ` F ` with homomorphic properties, build the image of
+         a monoid.  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+      imasmhm $p |- ( ph -> ( ( F "s W ) e. Mnd /\ F e. ( W MndHom ( F "s W ) )
+        ) ) $=
+        ( co cmnd wcel cfv eqid vx vy cimas cmhm c0g wceq cima eqidd cbs a1i wf
+        wfo fimadmfo syl imasmnd simpld cplusg fof feq3d mpbid cv wa imasaddval
+        imasbas 3expb eqcomd simprd ismhmd jca ) AEFUCPZQRZEFVJUDPRAVKFUESZESVJ
+        UESZUFZAEBUGZDFVJEBVLGHIJAVJUHZBFUISUFAKUJZMABCEUKBVOEULZLBCEUMUNZNOVLT
+        ZUOZUPZAUAUBBVJUISZDVJUQSZFVJEVLVMKWCTMWDTZVTVMTOWBABVOEUKZBWCEUKAVRWFV
+        SBVOEURUNAVOWCEBAVOFVJEBQVPVQVSOVDUSUTAUAVAZBRZUBVAZBRZVBVBWGESWIESWDPZ
+        WGWIDPESZAWHWJWKWLUFAVOFWDDVJEBWGWIQGHIJVSNVPVQOMWEVCVEVFAVKVNWAVGVHVI
+        $.
+    $}
+
+    ${
+      $d .+ p q y $.  $d .+ p x y $.  $d B a b p q $.  $d B x y $.
+      $d F a b p q $.  $d F x y $.  $d W a b p q $.  $d W x y $.
+      $d a b p ph q $.  $d ph x y $.
+      imasghm.w $e |- ( ph -> W e. Grp ) $.
+      $( Given a function ` F ` with homomorphic properties, build the image of
+         a group.  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+      imasghm $p |- ( ph -> ( ( F "s W ) e. Grp /\ F e. ( W GrpHom ( F "s W ) )
+        ) ) $=
+        ( co cgrp wcel cfv wceq vx cimas cghm c0g cima eqidd cbs a1i cplusg wfo
+        vy wf fimadmfo syl imasgrp simpld fof imasbas feq3d mpbid cv imasaddval
+        eqid wa 3expb eqcomd isghmd jca ) AEFUBPZQRZEFVIUCPRAVJFUDSZESVIUDSTAEB
+        UEZDFVIEBVKGHIJAVIUFZBFUGSTAKUHZDFUISTAMUHABCEULBVLEUJZLBCEUMUNZNOVKVCU
+        OUPZAUAUKDVIUISZFVIEBVIUGSZKVSVCMVRVCZOVQABVLEULZBVSEULAVOWAVPBVLEUQUNA
+        VLVSEBAVLFVIEBQVMVNVPOURUSUTAUAVAZBRZUKVAZBRZVDVDWBESWDESVRPZWBWDDPESZA
+        WCWEWFWGTAVLFVRDVIEBWBWDQGHIJVPNVMVNOMVTVBVEVFVGVH $.
+    $}
+
+    ${
+      $d .+ p q y $.  $d .+ p x y $.  $d .x. p q $.  $d B a b p q $.
+      $d B x y $.  $d F a b p q $.  $d F x y $.  $d W a b p q $.  $d W x y $.
+      $d a b p ph q $.  $d ph x y $.
+      imasrhm.3 $e |- .x. = ( .r ` W ) $.
+      imasrhm.4 $e |- ( ( ph /\ ( a e. B /\ b e. B ) /\ ( p e. B /\ q e. B ) )
+                     -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+                       -> ( F ` ( a .x. b ) ) = ( F ` ( p .x. q ) ) ) ) $.
+      imasrhm.w $e |- ( ph -> W e. Ring ) $.
+      $( Given a function ` F ` with homomorphic properties, build the image of
+         a ring.  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+      imasrhm $p |- ( ph -> ( ( F "s W ) e. Ring /\ F e. ( W RingHom ( F "s W )
+        ) ) ) $=
+        ( co cfv vx vy cimas crg wcel crh cur wceq cima eqidd cbs eqid fimadmfo
+        a1i wf wfo syl imasring simpld cplusg cmulr simprd cv imasmulval eqcomd
+        wa 3expb fof imasbas feq3d mpbid imasaddval isrhmd jca ) AFGUCSZUDUEZFG
+        VOUFSUEAVPGUGTZFTVOUGTZUHZAFBUIZDGEVOVQFBHIJKAVOUJZBGUKTUHALUNZNPVQULZA
+        BCFUOBVTFUPZMBCFUMUQZOQRURZUSZAUAUBBVOUKTZDVOUTTZGVOEVOVATZVQFVRLWCVRUL
+        PWJULZRWGAVPVSWFVBAUAVCZBUEZUBVCZBUEZVFVFZWLFTZWNFTZWJSZWLWNESFTZAWMWOW
+        SWTUHAVTGWJEVOFBWLWNUDHIJKWEQWAWBRPWKVDVGVEWHULNWIULZABVTFUOZBWHFUOAWDX
+        BWEBVTFVHUQAVTWHFBAVTGVOFBUDWAWBWERVIVJVKWPWQWRWISZWLWNDSFTZAWMWOXCXDUH
+        AVTGWIDVOFBWLWNUDHIJKWEOWAWBRNXAVLVGVEVMVN $.
+    $}
+
+    $d .+ b k p q $.  $d .+ p x $.  $d .X. b k p q $.  $d B a $.
+    $d B b k p q $.  $d B u $.  $d B x $.  $d D u $.  $d D x $.  $d F a $.
+    $d F b k p q $.  $d F u $.  $d F x $.  $d K a $.  $d K b k x $.
+    $d K u x $.  $d W a $.  $d W b k p q $.  $d W u $.  $d W x $.
+    $d a b k p ph q $.  $d k u $.  $d ph u $.  $d ph x $.
+    imaslmhm.1 $e |- D = ( Scalar ` W ) $.
+    imaslmhm.2 $e |- K = ( Base ` D ) $.
+    imaslmhm.3 $e |- ( ( ph /\ ( k e. K /\ a e. B /\ b e. B ) )
+                    -> ( ( F ` a ) = ( F ` b )
+                      -> ( F ` ( k .X. a ) ) = ( F ` ( k .X. b ) ) ) ) $.
+    imaslmhm.w $e |- ( ph -> W e. LMod ) $.
+    imaslmhm.4 $e |- .X. = ( .s ` W ) $.
+    $( Given a function ` F ` with homomorphic properties, build the image of a
+       left module.  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+    imaslmhm $p |- ( ph -> ( ( F "s W ) e. LMod /\ F e. ( W LMHom ( F "s W ) )
+       ) ) $=
+      ( vu vx cimas co clmod wcel clmhm cima c0g cfv eqidd cbs csca fveq2i eqid
+      eqtri wf wfo fimadmfo syl imaslmod cvsca wceq a1i imassca eqcomd lmodgrpd
+      cgrp cghm imasghm simprd cv wa imasvscaval 3expb islmhmd jca ) AHJUFUGZUH
+      UIHJWAUJUGUIAHBUKZEIFGHJWABJULUMZKLMNAWAUNZOIDUOUMJUPUMZUOUMTDWEUOSUQUSQU
+      CWCURABCHUTBWBHVAPBCHVBVCZRUAUBVDZAUDUEJWAFWAVEUMZHWAUPUMZDIBOUCWHURZSWIU
+      RTUBWGADWIAWBJWAHDBUHWDBJUOUMVFAOVGZWFUBSVHVIAWAVKUIHJWAVLUGUIABCEHJKLMNO
+      PQRAJUBVJVMVNAUDVOZIUIZUEVOZBUIZVPVPWLWNHUMWHUGZWLWNFUGHUMZAWMWOWPWQVFAWB
+      JWHFWAHDIBWLWNUHNGMWDWKWFUBSTUCWJUAVQVRVIVSVT $.
+  $}
+
+  ${
+    ${
+      eqgvscpbl.v $e |- B = ( Base ` M ) $.
+      eqgvscpbl.e $e |- .~ = ( M ~QG G ) $.
+      eqgvscpbl.s $e |- S = ( Base ` ( Scalar ` M ) ) $.
+      eqgvscpbl.p $e |- .x. = ( .s ` M ) $.
+      eqgvscpbl.m $e |- ( ph -> M e. LMod ) $.
+      eqgvscpbl.g $e |- ( ph -> G e. ( LSubSp ` M ) ) $.
+      eqgvscpbl.k $e |- ( ph -> K e. S ) $.
+      $( The left coset equivalence relation is compatible with the scalar
+         multiplication operation.  (Contributed by Thierry Arnoux,
+         18-May-2023.) $)
+      eqgvscpbl $p |- ( ph -> ( X .~ Y -> ( K .x. X ) .~ ( K .x. Y ) ) ) $=
+        ( wcel cfv co cminusg cplusg w3a wbr wa clmod adantr csca eqid lmodvscl
+        simpr1 syl3anc simpr2 wceq ad2antrr lmodgrp syl simplr grpinvcl syl2anc
+        cgrp simpr lmodvsdi syl13anc lmodvsinv2 oveq1d eqtrd anasss clss simpr3
+        3adantr3 lssvscl syl22anc eqeltrrd 3jca ex wss wb lsssubg subgss eqgval
+        csubg 3imtr4d ) AIBRZJBRZIHUASZSZJHUBSZTZFRZUCZGIETZBRZGJETZBRZWLWFSZWN
+        WHTZFRZUCZIJCUDZWLWNCUDZAWKWSAWKUEZWMWOWRXBHUFRZGDRZWDWMAXCWKOUGZAXDWKQ
+        UGZAWDWEWJUKGEHUHSZDBHIKXGUIZNMUJULXBXCXDWEWOXEXFAWDWEWJUMGEXGDBHJKXHNM
+        UJULXBGWIETZWQFAWDWEXIWQUNZWJAWDWEXJAWDUEZWEUEZXIGWGETZWNWHTZWQXLXCXDWG
+        BRZWEXIXNUNAXCWDWEOUOZAXDWDWEQUOZXLHVARZWDXOXLXCXRXPHUPZUQAWDWEURZBHWFI
+        KWFUIZUSUTXKWEVBWHGEXGDBHWGJKWHUIZXHNMVCVDXLXMWPWNWHXLXCXDWDXMWPUNXPXQX
+        TBGEXGDWFHIKXHNYAMVEULVFVGVHVKXBXCFHVISZRZXDWJXIFRXEAYDWKPUGXFAWDWEWJVJ
+        DYCEFXGHGWIXHNMYCUIZVLVMVNVOVPAXRFBVQZWTWKVRAXCXROXSUQZAFHWBSRZYFAXCYDY
+        HOPYCFHYEVSUTBFHKVTUQZIJWHCFHWFVABKYAYBLWAUTAXRYFXAWSVRYGYIWLWNWHCFHWFV
+        ABKYAYBLWAUTWC $.
+
+      qusvsval.n $e |- N = ( M /s ( M ~QG G ) ) $.
+      qusvsval.m $e |- .xb = ( .s ` N ) $.
+      ${
+        $d B x $.  $d G x $.  $d K x $.  $d M x $.  $d U x $.  $d V x $.
+        $d ph x $.  $d .x. x $.
+        qusvscpbl.f $e |- F = ( x e. B |-> [ x ] ( M ~QG G ) ) $.
+        qusvscpbl.u $e |- ( ph -> U e. B ) $.
+        qusvscpbl.v $e |- ( ph -> V e. B ) $.
+        $( The quotient map distributes over the scalar multiplication.
+           (Contributed by Thierry Arnoux, 18-May-2023.) $)
+        qusvscpbl $p |- ( ph -> ( ( F ` U ) = ( F ` V )
+            -> ( F ` ( K .x. U ) ) = ( F ` ( K .x. V ) ) ) ) $=
+          ( cqg co cec wceq cfv wbr eqid eqgvscpbl csubg wcel wer clmod lsssubg
+          clss syl2anc eqger syl erth csca lmodvscl syl3anc 3imtr3d cv cvv ovex
+          eceq1 ecexg ax-mp fvmpt eqeq12d 3imtr4d ) AHLJUGUHZUIZNVRUIZUJZKHGUHZ
+          VRUIZKNGUHZVRUIZUJZHIUKZNIUKZUJWBIUKZWDIUKZUJAHNVRULWBWDVRULWAWFACVRE
+          GJKLHNOVRUMZQRSTUAUNAHNVRCAJLUOUKUPZCVRUQALURUPZJLUTUKZUPWLSTWNJLWNUM
+          USVAVRLCJOWKVBVCZUEVDAWBWDVRCWOAWMKEUPZHCUPZWBCUPZSUAUEKGLVEUKZECLHOW
+          SUMZRQVFVGZVDVHAWGVSWHVTAWQWGVSUJUEBHBVIZVRUIZVSCIXBHVRVLUDVRVJUPZVSV
+          JUPLJUGVKZHVJVRVMVNVOVCANCUPZWHVTUJUFBNXCVTCIXBNVRVLUDXDVTVJUPXENVJVR
+          VMVNVOVCVPAWIWCWJWEAWRWIWCUJXABWBXCWCCIXBWBVRVLUDXDWCVJUPXEWBVJVRVMVN
+          VOVCAWDCUPZWJWEUJAWMWPXFXGSUAUFKGWSECLNOWTRQVFVGBWDXCWECIXBWDVRVLUDXD
+          WEVJUPXEWDVJVRVMVNVOVCVPVQ $.
+      $}
+
+      ${
+        $d ph k u v x $.  $d B k u v x $.  $d M k u v x $.  $d G k u v x $.
+        $d S k u v x $.  $d .x. k v x $.  $d .xb k u v $.  $d K k x $.
+        $d X k u v x $.
+        qusvsval.x $e |- ( ph -> X e. B ) $.
+        $( Value of the scalar multiplication operation on the quotient
+           structure.  (Contributed by Thierry Arnoux, 18-May-2023.) $)
+        qusvsval $p |- ( ph
+              -> ( K .xb [ X ] ( M ~QG G ) ) = [ ( K .x. X ) ] ( M ~QG G ) ) $=
+          ( vx vv vk vu cv cqg co cec cmpt cfv wcel wceq cqs csca clmod cvv a1i
+          cqus cbs eqid ovex qusval quslem w3a adantr clss simpr1 simpr2 simpr3
+          wa qusvscpbl imasvscaval mpd3an23 eceq1 ecexg ax-mp fvmpt syl syl3anc
+          oveq2d lmodvscl 3eqtr3d ) AHKUBBUBUFZIGUGUHZUIZUJZUKZEUHZHKFUHZWGUKZH
+          KWEUIZEUHWJWEUIZAHDULZKBULZWIWKUMRUAABWEUNIEFJWGIUOUKZDBHKUPUCUDUEAUB
+          WEIJWGBUQUPJIWEUSUHUMASURZBIUTUKUMALURZWGVAZWEUQULZAIGUGVBZURZPVCWRAU
+          BWEIJWGBUQUPWQWRWSXBPVDPWPVAZNOTAUDUFZDULZUEUFZBULZUCUFZBULZVEZVKUBBC
+          DEFXFWGGXDIJXHLMNOAIUPULZXJPVFAGIVGUKULXJQVFAXEXGXIVHSTWSAXEXGXIVIAXE
+          XGXIVJVLVMVNAWHWLHEAWOWHWLUMUAUBKWFWLBWGWDKWEVOWSWTWLUQULXAKUQWEVPVQV
+          RVSWAAWJBULZWKWMUMAXKWNWOXLPRUAHFWPDBIKLXCONWBVTUBWJWFWMBWGWDWJWEVOWS
+          WTWMUQULXAWJUQWEVPVQVRVSWC $.
+      $}
+    $}
+  $}
+
+  ${
+    $d G a b k p q x $.  $d M a b k p q x $.  $d N a b k p q $.
+    $d V a b k p q x $.  $d a b k p q ph x $.
+    quslmod.n $e |- N = ( M /s ( M ~QG G ) ) $.
+    quslmod.v $e |- V = ( Base ` M ) $.
+    quslmod.1 $e |- ( ph -> M e. LMod ) $.
+    quslmod.2 $e |- ( ph -> G e. ( LSubSp ` M ) ) $.
+    $( If ` G ` is a submodule in ` M ` , then ` N = M / G ` is a left module,
+       called the quotient module of ` M ` by ` G ` .  (Contributed by Thierry
+       Arnoux, 18-May-2023.) $)
+    quslmod $p |- ( ph -> N e. LMod ) $=
+      ( vx vq vp co cfv cbs cv cvv eqid wcel wa vk va cqg cqs cplusg csca cvsca
+      vb cec cmpt c0g clmod cqus wceq a1i ovexd qusval quslem csubg wer lsssubg
+      clss syl2anc eqger syl fvexi cgrp lmodgrp adantr simprl simprr grpcl cnsg
+      syl3anc wi cabl lmodabl ablnsg 3syl eleqtrrd eqgcpbl ercpbl simpr1 simpr2
+      wbr w3a simpr3 qusvscpbl imaslmod ) AECBUCMZUDCUENZCUFNONZCUGNZUAJEJPWJUI
+      UJZCDECUKNZKLUBUHAJWJCDWNEQULDCWJUMMUNAFUOZECONUNAGUOZWNRZACBUCUPZHUQGWLR
+      ZWKRZWMRZWORAJWJCDWNEQULWPWQWRWSHURAJUBPZUHPZLPZKPZWKWJWNEQLKABCUSNZSZEWJ
+      UTACULSZBCVBNZSZXHHIXJBCXJRVAVCZWJCEBGWJRZVDVEEQSAECOGVFUOWRAXEESZXFESZTZ
+      TCVGSZXNXOXEXFWKMZESAXQXPAXIXQHCVHVEVIAXNXOVJAXNXOVKEWKCXEXFGXAVLVNABCVMN
+      ZSXCXEWJWEXDXFWJWETXCXDWKMXRWJWEVOABXGXSXLAXICVPSXSXGUNHCVQCVRVSVTXCXDXEX
+      FWKWJCEBGXMXAWAVEWBAUAPZWLSZXCESZXDESZWFZTJEWJWLDUGNZWMXCWNBXTCDXDGXMWTXB
+      AXIYDHVIAXKYDIVIAYAYBYCWCFYERWRAYAYBYCWDAYAYBYCWGWHHWI $.
+
+    ${
+      $d V k u v x y z $.  $d F k u v y z $.  $d G k u v x y z $.
+      $d M k u v x y z $.  $d N k u v x y z $.  $d ph k u v x y z $.
+      quslmhm.f $e |- F = ( x e. V |-> [ x ] ( M ~QG G ) ) $.
+      $( If ` G ` is a submodule of ` M ` , then the "natural map" from
+         elements to their cosets is a left module homomorphism from ` M ` to
+         ` M / G ` .  (Contributed by Thierry Arnoux, 18-May-2023.) $)
+      quslmhm $p |- ( ph -> F e. ( M LMHom N ) ) $=
+        ( cfv eqid co cvv clmod wceq wcel cv vy vz vv vk cvsca csca cbs quslmod
+        vu cqg cqus ovexd quss eqcomd cnsg cghm csubg clss lsssubg syl2anc cabl
+        a1i lmodabl ablnsg 3syl eleqtrrd qusghm syl wa cqs qusval quslem adantr
+        w3a simpr1 simpr2 simpr3 qusvscpbl imasvscaval 3expb islmhmd ) AUAUBEFE
+        UEMZFUEMZCFUFMZEUFMZWEUGMZGIWBNZWCNZWENZWDNWFNZJADEFGHIJKUHAWEWDAEDUJOZ
+        EFWEGPQFEWKUKORAHVBZGEUGMRAIVBZAEDUJULZJWIUMUNADEUOMZSCEFUPOSADEUQMZWOA
+        EQSZDEURMZSZDWPSJKWRDEWRNUSUTAWQEVASWOWPRJEVCEVDVEVFBCEFGDIHLVGVHAUATZW
+        FSZUBTZGSZVIVIWTXBCMWCOZWTXBWBOCMZAXAXCXDXERAGWKVJEWCWBFCWEWFGWTXBQUCUD
+        UIABWKEFCGPQWLWMLWNJVKWMABWKEFCGPQWLWMLWNJVLJWIWJWGWHAUDTZWFSZUITZGSZUC
+        TZGSZVNZVIBGWKWFWCWBXHCDXFEFXJIWKNWJWGAWQXLJVMAWSXLKVMAXGXIXKVOHWHLAXGX
+        IXKVPAXGXIXKVQVRVSVTUNWA $.
+    $}
+  $}
+
+  ${
+    $d F q x $.  $d G q x $.  $d H k q r x $.  $d J k q r x $.  $d K q x $.
+    $d Q k q r x $.  $d k ph q r x $.  $d .0. x $.
+    lmhmqusker.1 $e |- .0. = ( 0g ` H ) $.
+    lmhmqusker.f $e |- ( ph -> F e. ( G LMHom H ) ) $.
+    lmhmqusker.k $e |- K = ( `' F " { .0. } ) $.
+    lmhmqusker.q $e |- Q = ( G /s ( G ~QG K ) ) $.
+    lmhmqusker.s $e |- ( ph -> ran F = ( Base ` H ) ) $.
+    ${
+      lmhmqusker.j $e |- J = ( q e. ( Base ` Q ) |-> U. ( F " q ) ) $.
+      $( A surjective module homomorphism ` F ` from ` G ` to ` H ` induces an
+         isomorphism ` J ` from ` Q ` to ` H ` , where ` Q ` is the factor
+         group of ` G ` by ` F ` 's kernel ` K ` .  (Contributed by Thierry
+         Arnoux, 25-Feb-2025.) $)
+      lmhmqusker $p |- ( ph -> J e. ( Q LMIso H ) ) $=
+        ( co wcel cfv eqid wceq vk vr clmhm cbs wf1o clmim cvsca csca lmhmlmod1
+        vx clmod syl clss lmhmkerlss quslmod lmhmlmod2 lmhmsca cqg cvv cqus a1i
+        ovexd quss eqtrd cgim cghm lmghm ghmqusker gimghm cv cec wer cnsg csubg
+        wa cqs ccnv csn cima ghmker eqeltrid nsgsubg eqger 3syl ad4antr simpllr
+        qusbas eleqtrrd simplr qsel syl3anc oveq2d simp-4r fveq2d qsss eqsstrrd
+        wss sselda elpwid ad5ant13 sseldd qusvsval ghmquskerlem1 lmhmlin 3eqtrd
+        cpw lmodvscl simpr eqtr4d ad2antrr ghmquskerlem2 r19.29a anasss islmhmd
+        gimf1o islmim sylanbrc ) AFBEUCPQBUDRZEUDRZFUEZFBEUFPQAUAUBBEBUGRZEUGRZ
+        FEUHRZBUHRZYDUDRZXRXRSZYASZYBSZYDSYCSZYESAGDBDUDRZMYJSZACDEUCPQZDUKQZKD
+        ECUIULZAYLGDUMRZQZKDEYOCGHLJYOSUNULZUOAYLEUKQKDECUPULAYCDUHRZYDAYLYCYRT
+        KDECYRYCYRSZYIUQULADGURPZDBYRYJUSUKBDYTUTPTAMVAZYJYJTAYKVAZADGURVBZYNYS
+        VCZVDAFBEVEPQZFBEVFPQABCDEFGHIJAYLCDEVFPQZKDECVGULZLMONVHZBEFVIULAUAVJZ
+        YEQZUBVJZXRQZUUIUUKYAPZFRZUUIUUKFRZYBPZTZAUUJVOZUULVOZUUOUJVJZCRZTZUUQU
+        JUUKUUSUUTUUKQZVOZUVBVOZUUNUUIUVAYBPZUUPUVEUUNUUIUUTDUGRZPZYTVKZFRUVHCR
+        ZUVFUVEUUMUVIFUVEUUMUUIUUTYTVKZYAPUVIUVEUUKUVKUUIYAUVEYJYTVLZUUKYJYTVPZ
+        QUVCUUKUVKTAUVLUUJUULUVCUVBAGDVMRZQGDVNRQUVLAGCVQHVRVSZUVNLAUUFUVOUVNQU
+        UGDECHJVTULWAGDWBYTDYJGYKYTSZWCWDZWEUVEUUKXRUVMUURUULUVCUVBWFAUVMXRTUUJ
+        UULUVCUVBAYTDBYJUSUKUUAUUBUUCYNWGZWEWHUUSUVCUVBWIZYJUUKUUTYTYJWJWKWLUVE
+        YJYTYRUDRZYAUVGGUUIDBUUTYKUVPUVTSZUVGSZAYMUUJUULUVCUVBYNWEZAYPUUJUULUVC
+        UVBYQWEUVEUUIYEUVTAUUJUULUVCUVBWMAUVTYETUUJUULUVCUVBAYRYDUDUUDWNWEWHZMY
+        GUVEUUKYJUUTAUULUUKYJWQUUJUVCUVBAUULVOUUKYJAXRYJXFZUUKAXRUVMUWEUVRAYJYT
+        UVQWOWPWRWSWTUVSXAZXBVDWNUVEBCDEFGUVHHIJAUUFUUJUULUVCUVBUUGWELMOUVEYMUU
+        IUVTQZUUTYJQZUVHYJQUWCUWDUWFUUIUVGYRUVTYJDUUTYKYSUWBUWAXGWKXCUVEYLUWGUW
+        HUVJUVFTAYLUUJUULUVCUVBKWEUWDUWFUVTDEUVGYBYJCYRUUIUUTYSUWAYKUWBYHXDWKXE
+        UVEUUOUVAUUIYBUVDUVBXHWLXIUUSUJBCDEFGUUKHIJAUUFUUJUULUUGXJLMOUURUULXHXK
+        XLXMXNAUUEXTUUHXRXSBEFYFXSSZXOULXRXSBEFYFUWIXPXQ $.
+    $}
+
+    $d F p q $.  $d G q $.  $d H q $.  $d K q $.  $d Q p q $.  $d ph q $.
+    $( The image ` H ` of a module homomorphism ` F ` is isomorphic with the
+       quotient module ` Q ` over ` F ` 's kernel ` K ` .  This is part of what
+       is sometimes called the first isomorphism theorem for modules.
+       (Contributed by Thierry Arnoux, 10-Mar-2025.) $)
+    lmicqusker $p |- ( ph -> Q ~=m H ) $=
+      ( vp vq cbs cfv cv cima cuni cmpt clmim wcel clmic wbr weq imaeq2 cbvmptv
+      co unieqd lmhmqusker brlmici syl ) AMBOPZCMQZRZSZTZBEUAUHUBBEUCUDABCDEUQF
+      GNHIJKLMNUMUPCNQZRZSMNUEUOUSUNURCUFUIUGUJBEUQUKUL $.
   $}
 
 
@@ -298899,6 +299349,27 @@ $)
       YHXSBAYGXRCAXRXTDFYFHSYBYPXRUGUAUBTWQWRRUSXAXBXC $.
   $}
 
+  ${
+    ressasclcl.w $e |- W = ( Poly1 ` U ) $.
+    ressasclcl.u $e |- U = ( S |`s R ) $.
+    ressasclcl.a $e |- A = ( algSc ` W ) $.
+    ressasclcl.1 $e |- B = ( Base ` W ) $.
+    ressasclcl.s $e |- ( ph -> S e. CRing ) $.
+    ressasclcl.r $e |- ( ph -> R e. ( SubRing ` S ) ) $.
+    ressasclcl.x $e |- ( ph -> X e. R ) $.
+    $( Closure of the univariate polynomial evaluation for scalars.
+       (Contributed by Thierry Arnoux, 22-Jun-2025.) $)
+    ressasclcl $p |- ( ph -> ( A ` X ) e. B ) $=
+      ( cfv cbs wcel wceq eqid cur cvsca csca csubrg subrgss ressbas2 3syl ccrg
+      co wss subrgcrng syl2anc ply1sca syl fveq2d eleqtrd asclval crg crngringd
+      eqtrd clmod ply1lmod ply1ring ringidcl lmodvscld eqeltrd ) AHBPZHGUAPZGUB
+      PZUIZCAHGUCPZQPZRVGVJSAHDVLOADFQPZVLADEUDPRZDEQPZUJDVMSNDVOEVOTZUEDVOFEJV
+      PUFUGAFVKQAFUHRZFVKSAEUHRVNVQMNDEFJUKULZGFUHIUMUNUOUTUPZBVIVHVKVLGHKVKTZV
+      LTZVITZVHTZUQUNAHVIVKVLCGVHLVTWBWAAFURRZGVARAFVRUSZGFIVBUNVSAWDGURRVHCRWE
+      GFIVCCGVHLWCVDUGVEVF $.
+  $}
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Univariate polynomial evaluation
@@ -300278,6 +300749,31 @@ $)
   $}
 
   ${
+    $d .x. k x $.  $d A k x $.  $d B k x $.  $d M k $.  $d R k x $.
+    $d U k x $.  $d W k x $.  $d k ph x $.
+    evl1fpws.q $e |- O = ( eval1 ` R ) $.
+    evl1fpws.w $e |- W = ( Poly1 ` R ) $.
+    evl1fpws.b $e |- B = ( Base ` R ) $.
+    evl1fpws.u $e |- U = ( Base ` W ) $.
+    evl1fpws.s $e |- ( ph -> R e. CRing ) $.
+    evl1fpws.y $e |- ( ph -> M e. U ) $.
+    evl1fpws.1 $e |- .x. = ( .r ` R ) $.
+    evl1fpws.2 $e |- .^ = ( .g ` ( mulGrp ` R ) ) $.
+    evl1fpws.a $e |- A = ( coe1 ` M ) $.
+    $( Evaluation of a univariate polynomial as a function in a power series.
+       (Contributed by Thierry Arnoux, 23-Jan-2025.) $)
+    evl1fpws $p |- ( ph -> ( O ` M )
+            = ( x e. B |-> ( R gsum ( k e. NN0 |-> ( ( A ` k ) .x. ( k .^ x ) )
+                ) ) ) ) $=
+      ( cfv ces1 co cn0 cmpt cgsu evl1fval1 fveq1i cress cpl1 cbs eqid crg wcel
+      cv csubrg crngringd subrgid syl ccrg wceq ressid fveq2d eqtr4di evls1fpws
+      eleqtrrd eqtrid ) AJKUBJEDUCUDZUBBDEHUEHUPZCUBVJBUPIUDFUDUFUGUDUFJKVIDKEM
+      OUHUIABCEDUJUDZUKUBZULUBZVIDEFVKHIDJVLVIUMOVLUMVKUMVMUMQAEUNUODEUQUBUOAEQ
+      URDEOUSUTAJGVMRAVMLULUBGAVLLULAVLEUKUBLAVKEUKAEVAUOVKEVBQDEVAOVCUTVDNVEVD
+      PVEVGSTUAVFVH $.
+  $}
+
+  ${
     asclply1subcl.1 $e |- A = ( algSc ` V ) $.
     asclply1subcl.2 $e |- U = ( R |`s S ) $.
     asclply1subcl.3 $e |- V = ( Poly1 ` R ) $.
@@ -300616,6 +301112,7 @@ $)
       LOQVKUQVAZJVLVAWIWCWLVMALDEVCUQVAWMABDEFGLMTUAUBUCUEUNVNDELOQUJUKVOVEUPWJ
       BKPLOQJRWEULUMVPVQAWKSJPABDEFGLMRSTUAUBUCUEUFUGUNVRVSVTVSVT $.
   $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -376993,6 +377490,24 @@ $)
   $}
 
   ${
+    deg1le1.d $e |- D = ( deg1 ` R ) $.
+    deg1le1.p $e |- P = ( Poly1 ` R ) $.
+    deg1le1.b $e |- B = ( Base ` P ) $.
+    deg1le1.f $e |- ( ph -> F e. B ) $.
+    deg1le1.1 $e |- ( ph -> ( D ` F ) <_ 1 ) $.
+    $( Dichotomy for a univariate polynomial of degree at most one.
+       (Contributed by Thierry Arnoux, 8-Nov-2026.) $)
+    deg1le1 $p |- ( ph -> ( ( D ` F ) <_ 0 \/ ( D ` F ) = 1 ) ) $=
+      ( cn0 wcel cc0 cle wbr c1 cmnf wa simpr cfv wceq wo eqbrtrdi c2 clt caddc
+      0le0 co 1nn0 a1i adantr nn0leltp1 biimpa syl21anc breqtrdi nn0lt2 syl2anc
+      1p1e2 orim12da cxr 0xr mnfled eqbrtrd orcd csn cun deg1cl elunsn ibi 3syl
+      mpjaodan ) AFCUAZLMZVMNOPZVMQUBZUCVMRUBZAVNSZVMNUBZVPVOVPVRVSSVMNNOVRVSTU
+      HUDVRVPTVRVNVMUEUFPVSVPUCAVNTZVRVMQQUGUIZUEUFVRVNQLMZVMQOPZVMWAUFPZVTWBVR
+      UJUKAWCVNKULVNWBSWCWDVMQUMUNUOUSUPVMUQURUTAVQSZVOVPWEVMRNOAVQTWENNVAMWEVB
+      UKVCVDVEAFBMVMLRVFVGZMZVNVQUCZJBCDEFGHIVHWGWHVMLRWFVIVJVKVL $.
+  $}
+
+  ${
     $d ph c $.  $d ph x y $.  $d B x y $.  $d I a b $.  $d I c $.  $d R b c $.
     $d R x y $.  $d S b c $.  $d S x y $.
     mdegpropd.b1 $e |- ( ph -> B = ( Base ` R ) ) $.
@@ -377193,6 +377708,24 @@ $)
       clt syl2an deg1lt 3expia sylbird necon1ad 3impia ) FBNZGONZGAPZHQGFCPZRSZ
       UPUQUAZUTURHVAUTUBZUSGUISZURHUCZUPUSTNGTNVCVBUDUQBCDEFIJKUEUQGGUFUGUSGUHU
       JUPUQVCVDABCDEFGHIJKLMUKULUMUNUO $.
+  $}
+
+  ${
+    ressdeg1.h $e |- H = ( R |`s T ) $.
+    ressdeg1.d $e |- D = ( deg1 ` R ) $.
+    ressdeg1.u $e |- U = ( Poly1 ` H ) $.
+    ressdeg1.b $e |- B = ( Base ` U ) $.
+    ressdeg1.p $e |- ( ph -> P e. B ) $.
+    ressdeg1.t $e |- ( ph -> T e. ( SubRing ` R ) ) $.
+    $( The degree of a univariate polynomial in a structure restriction.
+       (Contributed by Thierry Arnoux, 20-Jan-2025.) $)
+    ressdeg1 $p |- ( ph -> ( D ` P ) = ( ( deg1 ` H ) ` P ) ) $=
+      ( cfv csupp cxr clt wcel eqid cco1 co csup cdg1 csubrg wceq subrg0 oveq2d
+      c0g syl supeq1d cpl1 cbs cps1 ressply1bas2 eleqtrd elin2d deg1val 3eqtr4d
+      cin ) ADUAOZEUIOZPUBZQRUCZVAHUIOZPUBZQRUCZDCOZDHUDOZOZAQVCVFRAVBVEVAPAFEU
+      EOSVBVEUFNFEHVBIVBTZUGUJUHUKADEULOZUMOZSVHVDUFAHUNOZUMOZVMDADBVOVMUTMABVO
+      EVLFGHVMVNVLTZIKLNVNTVOTVMTZUOUPUQVAVMCVLEDVBJVPVQVKVATZURUJADBSVJVGUFMVA
+      BVIGHDVEVITKLVETVRURUJUS $.
   $}
 
   ${
@@ -377412,6 +377945,29 @@ $)
         co ) ABCDEFGUBHIUCUBDUDUMZUNUEZCDLUFUBUCUGAUHUIMJDBKNUJDUNEJKUOOUKPQRST
         UAUL $.
     $}
+  $}
+
+  ${
+    deg1addlt.y $e |- Y = ( Poly1 ` R ) $.
+    deg1addlt.d $e |- D = ( deg1 ` R ) $.
+    deg1addlt.r $e |- ( ph -> R e. Ring ) $.
+    deg1addlt.b $e |- B = ( Base ` Y ) $.
+    deg1addlt.p $e |- .+ = ( +g ` Y ) $.
+    deg1addlt.f $e |- ( ph -> F e. B ) $.
+    deg1addlt.g $e |- ( ph -> G e. B ) $.
+    deg1addlt.l $e |- ( ph -> L e. RR* ) $.
+    deg1addlt.1 $e |- ( ph -> ( D ` F ) < L ) $.
+    deg1addlt.2 $e |- ( ph -> ( D ` G ) < L ) $.
+    $( If both factors have degree bounded by ` L ` , then the sum of the
+       polynomials also has degree bounded by ` L ` .  See also ~ deg1addle .
+       (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+    deg1addlt $p |- ( ph -> ( D ` ( F .+ G ) ) < L ) $=
+      ( wcel co cfv cle wbr cif cxr crg ply1ring ringacl syl3anc deg1xrcl ifcld
+      syl deg1addle clt wa wb xrmaxlt mpbir2and xrlelttrd ) AFGDUAZCUBZFCUBZGCU
+      BZUCUDZVDVCUEZHAVABTZVBUFTAIUGTZFBTZGBTZVGAEUGTVHLIEJUHUMOPBDIFGMNUIUJBCI
+      EVAKJMUKUMAVEVDVCUFAVJVDUFTZPBCIEGKJMUKUMZAVIVCUFTZOBCIEFKJMUKUMZULQABCDE
+      FGIJKLMNOPUNAVFHUOUDZVCHUOUDZVDHUOUDZRSAVMVKHUFTVOVPVQUPUQVNVLQVCVDHURUJU
+      SUT $.
   $}
 
   ${
@@ -377655,6 +378211,275 @@ $)
       ZVNWEGWDMWFWDBCGJIWGUTSVAVQWAVTWDBVPWGVTTVQTZWATVBVCVIUFVNWEVOCUJOZMZVOCV
       DOZVEZVMVSEQWFVNWEWKWFWJCVOWJTZVOTZVFSVLWMVMCVOWLWOWLTZVJRWHVOABCVQDEWJFG
       WLHWNIJWIKLWPVGVHVK $.
+  $}
+
+  ${
+    evl1deg1.1 $e |- P = ( Poly1 ` R ) $.
+    evl1deg1.2 $e |- O = ( eval1 ` R ) $.
+    evl1deg1.3 $e |- K = ( Base ` R ) $.
+    evl1deg1.4 $e |- U = ( Base ` P ) $.
+    evl1deg1.5 $e |- .x. = ( .r ` R ) $.
+    evl1deg1.6 $e |- .+ = ( +g ` R ) $.
+    ${
+      $d .x. i j k $.  $d .x. k x $.  $d C i j $.  $d C k x $.  $d D i j $.
+      $d K k x $.  $d M i j $.  $d M k $.  $d P k x $.  $d R i j $.
+      $d R k x $.  $d U k x $.  $d X i j $.  $d X k x $.  $d i j ph $.
+      $d k ph x $.
+      evl1deg1.7 $e |- C = ( coe1 ` M ) $.
+      evl1deg1.8 $e |- D = ( deg1 ` R ) $.
+      evl1deg1.9 $e |- A = ( C ` 1 ) $.
+      evl1deg1.10 $e |- B = ( C ` 0 ) $.
+      evl1deg1.11 $e |- ( ph -> R e. CRing ) $.
+      evl1deg1.12 $e |- ( ph -> M e. U ) $.
+      evl1deg1.13 $e |- ( ph -> ( D ` M ) = 1 ) $.
+      evl1deg1.14 $e |- ( ph -> X e. K ) $.
+      $( Evaluation of a univariate polynomial of degree 1.  (Contributed by
+         Thierry Arnoux, 8-Jun-2025.) $)
+      evl1deg1 $p |- ( ph -> ( ( O ` M ) ` X ) = ( ( A .x. X ) .+ B ) ) $=
+        ( vk vx vj vi cfv cn0 cv cmgp cmg co cmpt cgsu cc0 c1 cpr cuz cvv oveq2
+        wceq oveq2d mpteq2dv eqid evl1fpws ovexd fvmptd4 c0g crngringd ringcmnd
+        c2 wcel nn0ex a1i crg adantr coe1fvalcl sylan mgpbas cmnd ringmgp simpr
+        wa syl mulgnn0cld ringcld fvexd fveq2 oveq1 oveq12d clt wbr wral imbi1d
+        wi breq1 ralbidv eqeltrdi ad2antrr simplr deg1lt syl3anc oveq1d ringlzd
+        1nn0 eqtrd ex ralrimiva rspcedvdw mptnn0fsuppd cin nn0disj01 nn0split01
+        cun gsumsplit2 ccmn wne 0nn0 0ne1 sylancl gsumpr syl132anc wss 2eluzge0
+        c0 uzss ax-mp nn0uz sseqtrri sselda eluz2gt1 eqeltrid eqcomd 3eqtrd cur
+        adantl eqbrtrd mpteq2dva ringridmd mulg0 mulg1 ringcom 3eqtr3d crnggrpd
+        ringidval grpmndd gsumz syl2anc grpcld grpridd ) ANLMUMZUMHUIUNUIUOZDUM
+        ZUURNHUPUMZUQUMZURZIURZUSZUTURZHUIVAVBVCZUVCUSUTURZHUIVQVDUMZUVCUSZUTUR
+        ZGURZBNIURZCGURZAUJNHUIUNUUSUURUJUOZUVAURZIURZUSZUTURUVEKUUQVEUVNNVGZUV
+        QUVDHUTUVRUIUNUVPUVCUVRUVOUVBUUSIUVNNUURUVAVFVHVIVHAUJDKHIJUIUVALMFPOQR
+        UEUFSUVAVJZUAVKUHAHUVDUTVLVMAUNKUVFUVHGUIHVEUVCHVNUMZQUVTVJZTAHAHUEVOZV
+        PZUNVEVRAVSVTAUURUNVRZWIZKHIUUSUVBQSAHWAVRZUWDUWBWBALJVRZUWDUUSKVRUFDJF
+        HLKUURUAROQWCWDUWEKUVAUUTUURNKHUUTUUTVJZQWEZUVSAUUTWFVRZUWDAUWFUWJUWBHU
+        UTUWHWGZWJZWBAUWDWHANKVRZUWDUHWBWKWLZAUKKUVCUKUOZDUMZUWONUVAURZIURZUIVE
+        UVTULAHVNWMUWNUURUWOVGUUSUWPUVBUWQIUURUWODWNUURUWONUVAWOWPAULUOZUWOWQWR
+        ZUWRUVTVGZXAZUKUNWSLEUMZUWOWQWRZUXAXAZUKUNWSULUXCUNUWSUXCVGZUXBUXEUKUNU
+        XFUWTUXDUXAUWSUXCUWOWQXBWTXCAUXCVBUNUGXKXDAUXEUKUNAUWOUNVRZWIZUXDUXAUXH
+        UXDWIZUWRUVTUWQIURUVTUXIUWPUVTUWQIUXIUWGUXGUXDUWPUVTVGAUWGUXGUXDUFXEAUX
+        GUXDXFZUXHUXDWHDJEFHLUWOUVTUBORUWAUAXGXHXIUXIKHIUWQUVTQSUWAAUWFUXGUXDUW
+        BXEZUXIKUVAUUTUWONUWIUVSUXIUWFUWJUXKUWKWJUXJAUWMUXGUXDUHXEWKXJXLXMXNXOX
+        PUVFUVHXQYKVGAXRVTUNUVFUVHXTVGAXSVTYAAUVKVADUMZVANUVAURZIURZVBDUMZVBNUV
+        AURZIURZGURZHUIUVHUVTUSZUTURZGURUVMUVTGURUVMAUVGUXRUVJUXTGAHYBVRVAUNVRZ
+        VBUNVRZVAVBYCZUXNKVRUXQKVRUVGUXRVGUWCUYAAYDVTZUYBAXKVTZUYCAYEVTAKHIUXLU
+        XMQSUWBAUWGUYAUXLKVRUFYDDJFHLKVAUAROQWCYFZAKUVAUUTVANUWIUVSUWLUYDUHWKWL
+        AKHIUXOUXPQSUWBAUWGUYBUXOKVRUFXKDJFHLKVBUAROQWCYFZAKUVAUUTVBNUWIUVSUWLU
+        YEUHWKWLUVCKUXNUXQGUIHVAVBUNUNQTUURVAVGUUSUXLUVBUXMIUURVADWNUURVANUVAWO
+        WPUURVBVGUUSUXOUVBUXPIUURVBDWNUURVBNUVAWOWPYGYHAUVIUXSHUTAUIUVHUVCUVTAU
+        URUVHVRZWIZUVCUVTUVBIURUVTUYIUUSUVTUVBIUYIUWGUWDUXCUURWQWRUUSUVTVGAUWGU
+        YHUFWBAUVHUNUURUVHUNYIAUVHVAVDUMZUNVQUYJVRUVHUYJYIYJVAVQYLYMYNYOVTYPZUY
+        IUXCVBUURWQAUXCVBVGUYHUGWBUYHVBUURWQWRAUURYQUUBUUCDJEFHLUURUVTUBORUWAUA
+        XGXHXIUYIKHIUVBUVTQSUWAAUWFUYHUWBWBZUYIKUVAUUTUURNUWIUVSUYIUWFUWJUYLUWK
+        WJUYKAUWMUYHUHWBWKXJXLUUDVHWPAUXRUVMUXTUVTGACHUUAUMZIURZUVLGURCUVLGURZU
+        XRUVMAUYNCUVLGAKHIUYMCQSUYMVJZUWBACUXLKUDUYFYRZUUEXIAUYNUXNUVLUXQGACUXL
+        UYMUXMICUXLVGAUDVTAUXMUYMAUWMUXMUYMVGUHKUVAUUTNUYMUWIHUYMUUTUWHUYPUUKUV
+        SUUFWJYSWPABUXONUXPIBUXOVGAUCVTAUXPNAUWMUXPNVGUHKUVAUUTNUWIUVSUUGWJYSWP
+        WPAUWFCKVRUVLKVRUYOUVMVGUWBUYQAKHIBNQSUWBABUXOKUCUYGYRUHWLZKGHCUVLQTUUH
+        XHUUIAHWFVRUVHVEVRUXTUVTVGAHAHUEUUJZUULAVQVDWMUVHUIHVEUVTUWAUUMUUNWPAKG
+        HUVMUVTQTUWAUYSAKGHUVLCQTUYSUYRUYQUUOUUPYTYT $.
+    $}
+
+    evl1deg2.p $e |- .^ = ( .g ` ( mulGrp ` R ) ) $.
+    ${
+      $d .^ i j k $.  $d .^ k x $.  $d .x. i j $.  $d .x. k x $.  $d A k $.
+      $d B i j $.  $d B k x $.  $d C k $.  $d E i j $.  $d F i j $.
+      $d F k x $.  $d K k x $.  $d M i j $.  $d M k $.  $d P k x $.
+      $d R i j $.  $d R k x $.  $d U k x $.  $d X i j $.  $d X k x $.
+      $d i j ph $.  $d k ph x $.
+      evl1deg2.f $e |- F = ( coe1 ` M ) $.
+      evl1deg2.e $e |- E = ( deg1 ` R ) $.
+      evl1deg2.a $e |- A = ( F ` 2 ) $.
+      evl1deg2.b $e |- B = ( F ` 1 ) $.
+      evl1deg2.c $e |- C = ( F ` 0 ) $.
+      evl1deg2.r $e |- ( ph -> R e. CRing ) $.
+      evl1deg2.m $e |- ( ph -> M e. U ) $.
+      evl1deg2.1 $e |- ( ph -> ( E ` M ) = 2 ) $.
+      evl1deg2.x $e |- ( ph -> X e. K ) $.
+      $( Evaluation of a univariate polynomial of degree 2.  (Contributed by
+         Thierry Arnoux, 22-Jun-2025.) $)
+      evl1deg2 $p |- ( ph -> ( ( O ` M ) ` X )
+                        = ( ( A .x. ( 2 .^ X ) ) .+ ( ( B .x. X ) .+ C ) ) ) $=
+        ( vk vx vj vi cfv cn0 cv co cmpt cgsu cc0 c3 cfzo cuz c2 cvv wceq oveq2
+        oveq2d mpteq2dv evl1fpws ovexd fvmptd4 c0g eqid crngringd ringcmnd wcel
+        nn0ex a1i wa crg adantr coe1fvalcl sylan cmgp mgpbas cmnd ringmgp simpr
+        syl mulgnn0cld ringcld fvexd fveq2 oveq1 oveq12d clt wbr wi wral imbi1d
+        breq1 ralbidv 2nn0 eqeltrd ad2antrr simplr deg1lt syl3anc ringlzd eqtrd
+        oveq1d ex ralrimiva rspcedvdw mptnn0fsuppd cin fzouzdisj cun nn0uz 3nn0
+        eleqtri fzouzsplit ax-mp eqtri wss sselda eqtr4di 0nn0 1nn0 wne sylancl
+        c0 c1 eqeltrid cmncom 3eqtrd gsumsplit2 fzo0to3tp mpteq1d uzss sseqtrri
+        caddc 2p1e3 fveq2i eleq2i cz 2z eluzp1l sylbir adantl eqbrtrd mpteq2dva
+        ctp mpan crnggrpd grpmndd syl2anc tpex wf fzo0ssnn0 eqsstrrdi ffvelcdmd
+        gsumz coe1f syldan fmpttd cfn fzofi eqeltrrdi fdmfifsupp gsumcl grpridd
+        0ne1 1ne2 0ne2 gsumtp ccmn grpcld mulg1 cur ringidval mulg0 ringridmd )
+        APNOUQZUQGUMURUMUSZLUQZUWIPKUTZHUTZVAZVBUTZGUMVCVDVEUTZUWLVAZVBUTZGUMVD
+        VFUQZUWLVAZVBUTZFUTZBVGPKUTZHUTZCPHUTZDFUTZFUTZAUNPGUMURUWJUWIUNUSZKUTZ
+        HUTZVAZVBUTUWNMUWHVHUXGPVIZUXJUWMGVBUXKUMURUXIUWLUXKUXHUWKUWJHUXGPUWIKV
+        JVKVLVKAUNLMGHIUMKNOERQSTUIUJUAUCUDVMULAGUWMVBVNVOAURMUWOUWRFUMGVHUWLGV
+        PUQZSUXLVQZUBAGAGUIVRZVSZURVHVTAWAWBAUWIURVTZWCZMGHUWJUWKSUAAGWDVTZUXPU
+        XNWEANIVTZUXPUWJMVTUJLIEGNMUWIUDTQSWFWGUXQMKGWHUQZUWIPMGUXTUXTVQZSWIZUC
+        AUXTWJVTZUXPAUXRUYCUXNGUXTUYAWKZWMZWEAUXPWLAPMVTZUXPULWEWNZWOZAUOMUWLUO
+        USZLUQZUYIPKUTZHUTZUMVHUXLUPAGVPWPZUYHUWIUYIVIUWJUYJUWKUYKHUWIUYILWQUWI
+        UYIPKWRWSAUPUSZUYIWTXAZUYLUXLVIZXBZUOURXCNJUQZUYIWTXAZUYPXBZUOURXCUPUYR
+        URUYNUYRVIZUYQUYTUOURVUAUYOUYSUYPUYNUYRUYIWTXEXDXFAUYRVGURUKVGURVTZAXGW
+        BZXHAUYTUOURAUYIURVTZWCZUYSUYPVUEUYSWCZUYLUXLUYKHUTUXLVUFUYJUXLUYKHVUFU
+        XSVUDUYSUYJUXLVIAUXSVUDUYSUJXIAVUDUYSXJZVUEUYSWLLIJEGNUYIUXLUEQTUXMUDXK
+        XLXOVUFMGHUYKUXLSUAUXMAUXRVUDUYSUXNXIZVUFMKUXTUYIPUYBUCVUFUXRUYCVUHUYDW
+        MVUGAUYFVUDUYSULXIWNXMXNXPXQXRXSUWOUWRXTYPVIAVCVDYAWBURUWOUWRYBZVIAURVC
+        VFUQZVUIYCVDVUJVTZVUJVUIVIVDURVUJYDYCYEZVCVDYFYGYHWBUUAAUXAGUMVCYQVGUUQ
+        ZUWLVAZVBUTZUXLFUTVUOUXFAUWQVUOUWTUXLFAUWPVUNGVBAUMUWOVUMUWLUWOVUMVIAUU
+        BWBZUUCVKAUWTGUMUWRUXLVAZVBUTZUXLAUWSVUQGVBAUMUWRUWLUXLAUWIUWRVTZWCZUWL
+        UXLUWKHUTUXLVUTUWJUXLUWKHVUTUXSUXPUYRUWIWTXAUWJUXLVIAUXSVUSUJWEAUWRURUW
+        IUWRURYIAUWRVUJURVUKUWRVUJYIVULVCVDUUDYGYCUUEWBYJZVUTUYRVGUWIWTAUYRVGVI
+        VUSUKWEVUSVGUWIWTXAZAVUSUWIVGYQUUFUTZVFUQZVTZVVBVVDUWRUWIVVCVDVFUUGUUHU
+        UIVGUUJVTVVEVVBUUKVGUWIUULUURUUMUUNUUOLIJEGNUWIUXLUEQTUXMUDXKXLXOVUTMGH
+        UWKUXLSUAUXMAUXRVUSUXNWEZVUTMKUXTUWIPUYBUCVUTUXRUYCVVFUYDWMVVAAUYFVUSUL
+        WEWNXMXNUUPVKAGWJVTUWRVHVTVURUXLVIAGAGUIUUSZUUTAVDVFWPUWRUMGVHUXLUXMUVG
+        UVAXNWSAMFGVUOUXLSUBUXMVVGAVUMMVUNGVHUXLSUXMUXOVUMVHVTAVCYQVGUVBWBAUMVU
+        MUWLMAUWIVUMVTZWCZMGHUWJUWKSUAAUXRVVHUXNWEVVIURMUWILAURMLUVCZVVHAUXSVVJ
+        UJLIEGNMUDTQSUVHWMWEAVUMURUWIAVUMUWOURVUPVDUVDUVEYJZUVFAVVHUXPUWKMVTVVK
+        UYGUVIWOUVJZAVUMMVUNVHUXLVVLAVUMUWOUVKVUPVCVDUVLUVMUYMUVNUVOUVPAVUODVCP
+        KUTZHUTZCYQPKUTZHUTZFUTZUXCFUTZUXCVVQFUTZUXFAUWLMVVNVVPFUMUXCGVCYQVGURU
+        RURSUBUWIVCVIZUWJDUWKVVMHVVTUWJVCLUQZDUWIVCLWQUHYKUWIVCPKWRWSUWIYQVIZUW
+        JCUWKVVOHVWBUWJYQLUQZCUWIYQLWQUGYKUWIYQPKWRWSUWIVGVIZUWJBUWKUXBHVWDUWJV
+        GLUQZBUWIVGLWQUFYKUWIVGPKWRWSUXOVCURVTZAYLWBZYQURVTZAYMWBZVUCVCYQYNAUVQ
+        WBYQVGYNAUVRWBVCVGYNAUVSWBAMGHDVVMSUAUXNADVWAMUHAUXSVWFVWAMVTUJYLLIEGNM
+        VCUDTQSWFYOYRZAMKUXTVCPUYBUCUYEVWGULWNWOZAMGHCVVOSUAUXNACVWCMUGAUXSVWHV
+        WCMVTUJYMLIEGNMYQUDTQSWFYOYRAMKUXTYQPUYBUCUYEVWIULWNWOZAMGHBUXBSUAUXNAB
+        VWEMUFAUXSVUBVWEMVTUJXGLIEGNMVGUDTQSWFYOYRAMKUXTVGPUYBUCUYEVUCULWNWOZUV
+        TAGUWAVTZVVQMVTUXCMVTVVRVVSVIUXOAMFGVVNVVPSUBVVGVWKVWLUWBVWMMFGVVQUXCSU
+        BYSXLAVVQUXEUXCFAVVQVVPVVNFUTZUXEAVWNVVNMVTVVPMVTVVQVWOVIUXOVWKVWLMFGVV
+        NVVPSUBYSXLAVVPUXDVVNDFAVVOPCHAUYFVVOPVIULMKUXTPUYBUCUWCWMVKAVVNDGUWDUQ
+        ZHUTDAVVMVWPDHAUYFVVMVWPVIULMKUXTPVWPUYBGVWPUXTUYAVWPVQZUWEUCUWFWMVKAMG
+        HVWPDSUAVWQUXNVWJUWGXNWSXNVKYTYTYT $.
+    $}
+
+    ${
+      $d .^ i j k $.  $d .^ k x $.  $d .x. i j $.  $d .x. k x $.  $d A k $.
+      $d B k $.  $d C i j $.  $d C k x $.  $d E i j $.  $d F i j $.
+      $d F k x $.  $d K k x $.  $d M i j $.  $d M k $.  $d P k x $.
+      $d R i j $.  $d R k x $.  $d U k x $.  $d X i j $.  $d X k x $.
+      $d i j ph $.  $d k ph x $.
+      evl1deg3.f $e |- F = ( coe1 ` M ) $.
+      evl1deg3.e $e |- E = ( deg1 ` R ) $.
+      evl1deg3.a $e |- A = ( F ` 3 ) $.
+      evl1deg3.b $e |- B = ( F ` 2 ) $.
+      evl1deg3.c $e |- C = ( F ` 1 ) $.
+      evl1deg3.d $e |- D = ( F ` 0 ) $.
+      evl1deg3.r $e |- ( ph -> R e. CRing ) $.
+      evl1deg3.m $e |- ( ph -> M e. U ) $.
+      evl1deg3.1 $e |- ( ph -> ( E ` M ) = 3 ) $.
+      evl1deg3.x $e |- ( ph -> X e. K ) $.
+      $( Evaluation of a univariate polynomial of degree 3.  (Contributed by
+         Thierry Arnoux, 14-Jun-2025.) $)
+      evl1deg3 $p |- ( ph -> ( ( O ` M ) ` X ) = ( ( ( A .x. ( 3 .^ X ) )
+                       .+ ( B .x. ( 2 .^ X ) ) ) .+ ( ( C .x. X ) .+ D ) ) ) $=
+        ( vk vx vj vi cfv cn0 cv co cmpt cgsu cc0 c4 cfzo cuz c3 cvv wceq oveq2
+        oveq2d mpteq2dv evl1fpws ovexd fvmptd4 c0g eqid crngringd ringcmnd wcel
+        c2 nn0ex a1i crg adantr coe1fvalcl sylan cmgp mgpbas cmnd ringmgp simpr
+        wa syl mulgnn0cld ringcld fvexd fveq2 oveq1 oveq12d clt wbr wral imbi1d
+        breq1 ralbidv 3nn0 eqeltrd ad2antrr deg1lt syl3anc oveq1d ringlzd eqtrd
+        wi cin c0 cun nn0uz ax-mp c1 cpr wss sselda wne ltneii 0nn0 1nn0 gsumpr
+        sylancl syl132anc eqeltrid eqcomd 2nn0 eqtr4di cmncom grpcld 3eqtrd cfn
+        simplr ex ralrimiva rspcedvdw mptnn0fsuppd fzouzdisj eleqtri fzouzsplit
+        4nn0 eqtri gsumsplit2 fzofi fzo0ssnn0 syldan 0ne2 1ne2 0re 3pos disjpr2
+        1lt3 mp4an fzo0to42pr gsummptfidmsplit uzss sseqtrri caddc 3p1e4 fveq2i
+        1re eleq2i cz 3z eluzp1l mpan sylbir adantl eqbrtrd mpteq2dva ccmn 0ne1
+        cur ringridmd ringidval mulg0 ringcom 3eqtr3d 2re 2lt3 crnggrpd grpmndd
+        mulg1 gsumz syl2anc grpridd ) AQOPUSZUSHUOUTUOVAZMUSZUWQQLVBZIVBZVCZVDV
+        BZHUOVEVFVGVBZUWTVCVDVBZHUOVFVHUSZUWTVCZVDVBZGVBZBVIQLVBZIVBZCWCQLVBZIV
+        BZGVBZDQIVBZEGVBZGVBZAUPQHUOUTUWRUWQUPVAZLVBZIVBZVCZVDVBUXBNUWPVJUXQQVK
+        ZUXTUXAHVDUYAUOUTUXSUWTUYAUXRUWSUWRIUXQQUWQLVLVMVNVMAUPMNHIJUOLOPFSRTUA
+        UKULUBUDUEVOUNAHUXAVDVPVQAUTNUXCUXEGUOHVJUWTHVRUSZTUYBVSZUCAHAHUKVTZWAZ
+        UTVJWBAWDWEAUWQUTWBZWOZNHIUWRUWSTUBAHWFWBZUYFUYDWGAOJWBZUYFUWRNWBULMJFH
+        ONUWQUEUARTWHWIUYGNLHWJUSZUWQQNHUYJUYJVSZTWKZUDAUYJWLWBZUYFAUYHUYMUYDHU
+        YJUYKWMZWPZWGAUYFWNAQNWBZUYFUNWGWQWRZAUQNUWTUQVAZMUSZUYRQLVBZIVBZUOVJUY
+        BURAHVRWSUYQUWQUYRVKUWRUYSUWSUYTIUWQUYRMWTUWQUYRQLXAXBAURVAZUYRXCXDZVUA
+        UYBVKZXQZUQUTXEOKUSZUYRXCXDZVUDXQZUQUTXEURVUFUTVUBVUFVKZVUEVUHUQUTVUIVU
+        CVUGVUDVUBVUFUYRXCXGXFXHAVUFVIUTUMVIUTWBZAXIWEZXJAVUHUQUTAUYRUTWBZWOZVU
+        GVUDVUMVUGWOZVUAUYBUYTIVBUYBVUNUYSUYBUYTIVUNUYIVULVUGUYSUYBVKAUYIVULVUG
+        ULXKAVULVUGUUBZVUMVUGWNMJKFHOUYRUYBUFRUAUYCUEXLXMXNVUNNHIUYTUYBTUBUYCAU
+        YHVULVUGUYDXKZVUNNLUYJUYRQUYLUDVUNUYHUYMVUPUYNWPVUOAUYPVULVUGUNXKWQXOXP
+        UUCUUDUUEUUFUXCUXEXRXSVKAVEVFUUGWEUTUXCUXEXTZVKAUTVEVHUSZVUQYAVFVURWBZV
+        URVUQVKVFUTVURUUJYAUUHZVEVFUUIYBUUKWEUULAUXHHUOVEYCYDZUWTVCVDVBZHUOWCVI
+        YDZUWTVCVDVBZGVBZHUOUXEUYBVCZVDVBZGVBUXPUYBGVBUXPAUXDVVEUXGVVGGAUXCNVVA
+        VVCGUOHUWTTUCUYEUXCUUAWBAVEVFUUMWEAUWQUXCWBUYFUWTNWBAUXCUTUWQUXCUTYEAVF
+        UUNWEYFUYQUUOVVAVVCXRXSVKZAVEWCYGYCWCYGVEVIYGYCVIYGVVHUUPUUQVEVIUURUUSY
+        HYCVIUVJUVAYHVEYCWCVIUUTUVBWEUXCVVAVVCXTVKAUVCWEUVDAUXFVVFHVDAUOUXEUWTU
+        YBAUWQUXEWBZWOZUWTUYBUWSIVBUYBVVJUWRUYBUWSIVVJUYIUYFVUFUWQXCXDUWRUYBVKA
+        UYIVVIULWGAUXEUTUWQUXEUTYEAUXEVURUTVUSUXEVURYEVUTVEVFUVEYBYAUVFWEYFZVVJ
+        VUFVIUWQXCAVUFVIVKVVIUMWGVVIVIUWQXCXDZAVVIUWQVIYCUVGVBZVHUSZWBZVVLVVNUX
+        EUWQVVMVFVHUVHUVIUVKVIUVLWBVVOVVLUVMVIUWQUVNUVOUVPUVQUVRMJKFHOUWQUYBUFR
+        UAUYCUEXLXMXNVVJNHIUWSUYBTUBUYCAUYHVVIUYDWGZVVJNLUYJUWQQUYLUDVVJUYHUYMV
+        VPUYNWPVVKAUYPVVIUNWGWQXOXPUVSVMXBAVVEUXPVVGUYBGAVVEUXOUXMGVBZUXPAVVBUX
+        OVVDUXMGAVVBVEMUSZVEQLVBZIVBZYCMUSZYCQLVBZIVBZGVBZUXOAHUVTWBZVEUTWBZYCU
+        TWBZVEYCYGZVVTNWBVWCNWBVVBVWDVKUYEVWFAYIWEZVWGAYJWEZVWHAUWAWEANHIVVRVVS
+        TUBUYDAUYIVWFVVRNWBULYIMJFHONVEUEUARTWHYLZANLUYJVEQUYLUDUYOVWIUNWQWRANH
+        IVWAVWBTUBUYDAUYIVWGVWANWBULYJMJFHONYCUEUARTWHYLANLUYJYCQUYLUDUYOVWJUNW
+        QWRZUWTNVVTVWCGUOHVEYCUTUTTUCUWQVEVKUWRVVRUWSVVSIUWQVEMWTUWQVEQLXAXBUWQ
+        YCVKUWRVWAUWSVWBIUWQYCMWTUWQYCQLXAXBYKYMAEHUWBUSZIVBZUXNGVBEUXNGVBZVWDU
+        XOAVWNEUXNGANHIVWMETUBVWMVSZUYDAEVVRNUJVWKYNZUWCXNAVWNVVTUXNVWCGAEVVRVW
+        MVVSIEVVRVKAUJWEAVVSVWMAUYPVVSVWMVKUNNLUYJQVWMUYLHVWMUYJUYKVWPUWDUDUWEW
+        PYOXBADVWAQVWBIDVWAVKAUIWEAVWBQAUYPVWBQVKUNNLUYJQUYLUDUWLWPYOXBZXBAUYHE
+        NWBUXNNWBVWOUXOVKUYDVWQAUXNVWCNVWRVWLXJZNGHEUXNTUCUWFXMUWGXPAVVDUXLUXJG
+        VBZUXMAVWEWCUTWBZVUJWCVIYGZUXLNWBZUXJNWBZVVDVWTVKUYEVXAAYPWEZVUKVXBAWCV
+        IUWHUWIYHWEANHICUXKTUBUYDACWCMUSZNUHAUYIVXAVXFNWBULYPMJFHONWCUEUARTWHYL
+        YNANLUYJWCQUYLUDUYOVXEUNWQWRZANHIBUXITUBUYDABVIMUSZNUGAUYIVUJVXHNWBULXI
+        MJFHONVIUEUARTWHYLYNANLUYJVIQUYLUDUYOVUKUNWQWRZUWTNUXLUXJGUOHWCVIUTUTTU
+        CUWQWCVKZUWRCUWSUXKIVXJUWRVXFCUWQWCMWTUHYQUWQWCQLXAXBUWQVIVKZUWRBUWSUXI
+        IVXKUWRVXHBUWQVIMWTUGYQUWQVIQLXAXBYKYMAVWEVXCVXDVWTUXMVKUYEVXGVXINGHUXL
+        UXJTUCYRXMXPXBAVWEUXONWBUXMNWBVVQUXPVKUYEANGHUXNETUCAHUKUWJZVWSVWQYSZAN
+        GHUXJUXLTUCVXLVXIVXGYSZNGHUXOUXMTUCYRXMXPAHWLWBUXEVJWBVVGUYBVKAHVXLUWKA
+        VFVHWSUXEUOHVJUYBUYCUWMUWNXBANGHUXPUYBTUCUYCVXLANGHUXMUXOTUCVXLVXNVXMYS
+        UWOYTYT $.
+    $}
+  $}
+
+  ${
+    $d .x. i j k $.  $d .x. k x $.  $d C i j k $.  $d C x $.  $d D i j $.
+    $d K k $.  $d K x $.  $d M i j k $.  $d P k $.  $d P x $.  $d R i j k $.
+    $d R x $.  $d U k $.  $d U x $.  $d X i j k $.  $d X x $.  $d i j k ph $.
+    $d ph x $.
+    evls1degle1.p $e |- P = ( Poly1 ` ( R |`s S ) ) $.
+    evls1degle1.q $e |- Q = ( R evalSub1 S ) $.
+    evls1degle1.v $e |- V = ( Base ` R ) $.
+    evls1degle1.u $e |- U = ( Base ` P ) $.
+    evls1degle1.m $e |- .x. = ( .r ` R ) $.
+    evls1degle1.t $e |- .+ = ( +g ` R ) $.
+    evls1degle1.c $e |- C = ( coe1 ` F ) $.
+    evls1degle1.d $e |- D = ( deg1 ` R ) $.
+    evls1degle1.a $e |- A = ( C ` 1 ) $.
+    evls1degle1.b $e |- B = ( C ` 0 ) $.
+    evls1degle1.r $e |- ( ph -> R e. CRing ) $.
+    evls1degle1.s $e |- ( ph -> S e. ( SubRing ` R ) ) $.
+    evls1degle1.f $e |- ( ph -> F e. U ) $.
+    evls1degle1.1 $e |- ( ph -> ( D ` F ) <_ 1 ) $.
+    evls1degle1.x $e |- ( ph -> X e. V ) $.
+    $( Evaluation of a univariate polynomial of degree at most 1.  (Contributed
+       by Thierry Arnoux, 8-Nov-2026.) $)
+    evls1degle1 $p |- ( ph -> ( ( Q ` F ) ` X ) = ( ( A .x. X ) .+ B ) ) $=
+      ( cfv cc0 cle wbr co wceq c1 wa c0g eqid crg wcel crngringd adantr csubrg
+      ringgrpd wss subrgss syl cress 0nn0 coe1fvalcl subrgbas eleqtrrd eqeltrid
+      cbs cn0 sylancl grplidd cpl1 clt subrgply1 3syl 1nn0 a1i cxr deg1xrcl 0xr
+      sseldd 1xr simpr 0lt1 xrlelttrd deg1lt syl3anc eqtrid ringlzd eqtrd cascl
+      oveq1d cco1 deg1le0 biimpa fveq1i eqtri fveq2i eqtr4di fveq2d fveq1d cres
+      syl21anc subrg1ascl fvresd eqtr2d evls1scafv 3eqtrd 3eqtr4rd ce1 evl1deg1
+      ccrg ressply1evl deg1le1 mpjaodan ) AMEUKZULUMUNZOMHUKZUKZBOKUOZCGUOZUPYD
+      UQUPZAYEURZIUSUKZCGUOCYIYGYKNGICYLRUAYLUTZYKIAIVAVBZYEAIUFVCVDZVFACNVBYEA
+      JNCAJIVEUKVBZJNVGUGJNIRVHVIACULDUKZJUEAYQIJVJUOZVPUKZJAMLVBULVQVBYQYSVBUH
+      VKDLFYRMYSULUBSPYSUTVLVRAYPJYSUPUGJIYRYRUTZVMVIVNVOZWIVDVSYKYHYLCGYKYHYLO
+      KUOYLYKBYLOKYKBUQDUKZYLUDYKMIVTUKZVPUKZVBZUQVQVBZYDUQWAUNUUBYLUPAUUEYEALU
+      UDMAYPLUUCVEUKVBLUUDVGUGLIUUCJFYRUUCUTZYTPSWBLUUDUUCUUDUTZVHWCUHWIZVDZUUF
+      YKWDWEYKYDULUQAYDWFVBZYEAUUEUUKUUIUUDEUUCIMUCUUGUUHWGVIVDULWFVBYKWHWEUQWF
+      VBYKWJWEAYEWKZULUQWAUNYKWLWEWMDUUDEUUCIMUQYLUCUUGUUHYMUBWNWOWPWTYKNIKOYLR
+      TYMYOAONVBZYEUJVDZWQWRWTYKYGOCUUCWSUKZUKZHUKZUKOCFWSUKZUKZHUKZUKCYKOYFUUQ
+      YKMUUPHYKMULMXAUKZUKZUUOUKZUUPYKYNUUEYEMUVCUPZYOUUJUULYNUUEURYEUVDUUOUUDE
+      UUCIMUCUUGUUHUUOUTZXBXCXKCUVBUUOCYQUVBUEULDUVAUBXDXEXFXGXHXIYKOUUQUUTYKUU
+      PUUSHYKUUSCUUOJXJZUKUUPYKCUURUVFYKUUOUURUUCIJFYRUUGUVEYTPAYPYEUGVDZUURUTZ
+      XLXIYKCJUUOACJVBYEUUAVDZXMXNXHXIYKUURNOHJIYRFCQPYTRUVHAIXTVBZYEUFVDUVGUVI
+      UUNXOXPXQAYJURZYGOMIXRUKZUKZUKZYIAYGUVNUPYJAOYFUVMAYFMUVLLXJZUKUVMAMHUVOA
+      LHJIYRUVLNFQRPYTSUVLUTZUFUGYAXIAMLUVLUHXMWRXIVDUVKBCDEUUCGIKUUDNMUVLOUUGU
+      VPRUUHTUAUBUCUDUEAUVJYJUFVDAUUEYJUUIVDAYJWKAUUMYJUJVDXSWRAUUDEUUCIMUCUUGU
+      UHUUIUIYBYC $.
   $}
 
   ${
@@ -378031,6 +378856,118 @@ $)
         HZHUAZUTBQZUTRQZQZESZTUSOFAGUTFSZVAUNVEURUTFHUCVFVDUQEVFVBUOVCUPUTFRUDU
         TFBUDUEUIUFABCDEOGHIJKLMNUGUJUMUNURUKUL $.
     $}
+  $}
+
+  ${
+    ressply.1 $e |- S = ( Poly1 ` R ) $.
+    ressply.2 $e |- H = ( R |`s T ) $.
+    ressply.3 $e |- U = ( Poly1 ` H ) $.
+    ressply.4 $e |- B = ( Base ` U ) $.
+    ressply.5 $e |- ( ph -> T e. ( SubRing ` R ) ) $.
+    ${
+      ressply10g.6 $e |- Z = ( 0g ` S ) $.
+      $( A restricted polynomial algebra has the same group identity (zero
+         polynomial).  (Contributed by Thierry Arnoux, 20-Jan-2025.) $)
+      ressply10g $p |- ( ph -> Z = ( 0g ` U ) ) $=
+        ( c0g cfv cascl eqid wcel syl subrg1ascl fveq1d crg subrgring ply1ascl0
+        cres csubrg wceq subrg0 csubg subrgsubg subg0cl eqeltrrd fvresd 3eqtr3d
+        3syl fveq2d subrgrcl 3eqtr2rd ) AFOPZGOPZDQPZPZCOPZVBPHAVAFQPZPVAVBEUFZ
+        PUTVCAVAVEVFAVBVEDCEFGIVBRZJKMVERZUAUBAVEGVAFUTKVHVARUTRAECUGPSZGUCSMEC
+        GJUDTUEAVAEVBAVDVAEAVIVDVAUHMECGVDJVDRZUITZAVIECUJPSVDESMECUKECVDVJULUP
+        UMUNUOAVDVAVBVKUQAVBCVDDHIVGVJNAVICUCSMECURTUEUS $.
+    $}
+
+    ${
+      $d B p $.  $d M p $.  $d N p $.  $d p ph $.
+      ressply1mon1p.m $e |- M = ( Monic1p ` R ) $.
+      ressply1mon1p.n $e |- N = ( Monic1p ` H ) $.
+      $( The monic polynomials of a restricted polynomial algebra.
+         (Contributed by Thierry Arnoux, 21-Jan-2025.) $)
+      ressply1mon1p $p |- ( ph -> N = ( B i^i M ) ) $=
+        ( wcel cfv wa eqid vp cin cv c0g wne cdg1 cco1 cur wceq w3a cbs ismon1p
+        anbi2i cress co ressply1bas ressbasss eqsstrdi sseld anbi1d 13an22anass
+        pm4.71d wb ressply10g neeq2d adantr simpr csubrg ressdeg1 fveq2d subrg1
+        bitr4di syl eqeq12d anbi12d pm5.32da 3anass bitr3d bitr2id elin 3bitr4g
+        eqrdv ) AUAIBHUBZAUAUCZBQZWDFUDRZUEZWDGUFRZRZWDUGRZRZGUHRZUIZUJZWEWDHQZ
+        SZWDIQWDWCQWPWEWDDUKRZQZWDDUDRZUEZWDCUFRZRZWJRZCUHRZUIZUJZSZAWNWOXFWEWQ
+        XADCXDWDHWSJWQTZWSTZXATZOXDTZULUMAWEWTXESZSZXGWNAXMWEWRSZXLSXGAWEXNXLAW
+        EWRABWQWDABDBUNUOZUKRWQABXOCDEFGJKLMNXOTZUPBWQXODXPXHUQURUSVBUTWEWRWTXE
+        VAVLAXMWEWGWMSZSWNAWEXLXQAWESZWTWGXEWMAWTWGVCWEAWSWFWDABCDEFGWSJKLMNXIV
+        DVEVFXRXCWKXDWLXRXBWIWJXRBXAWDCEFGKXJLMAWEVGAECVHRQZWENVFVIVJAXDWLUIZWE
+        AXSXTNECGXDKXKVKVMVFVNVOVPWEWGWMVQVLVRVSBWHFGWLWDIWFLMWFTWHTPWLTULWDBHV
+        TWAWB $.
+    $}
+
+    ressply1.1 $e |- P = ( S |`s B ) $.
+    ${
+      $d B y $.  $d P y $.  $d U y $.  $d X y $.  $d ph y $.
+      ressply1invg.1 $e |- ( ph -> X e. B ) $.
+      $( An element of a restricted polynomial algebra has the same group
+         inverse.  (Contributed by Thierry Arnoux, 30-Jan-2025.) $)
+      ressply1invg $p |- ( ph -> ( ( invg ` U ) ` X ) = ( ( invg ` P ) ` X ) )
+        $=
+        ( cfv wceq wcel eqid vy cplusg c0g crio cminusg ressply1bas ressply1add
+        cv cbs anassrs mpidan ressply10g cmnd wss csubrg crg subrgply1 subrgrcl
+        co ringmnd 4syl csubg subrgsubg subg0cl cin ressply1bas2 inss2 eqsstrdi
+        wa cps1 ress0g syl3anc eqtr3d adantr eqeq12d riotaeqbidva grpinvval syl
+        eleqtrd 3eqtr4d ) AUAUHZIGUBQZUSZGUCQZRZUABUDZWAICUBQZUSZCUCQZRZUACUIQZ
+        UDZIGUEQZQZICUEQZQZAWEWJUABWKABCDEFGHJKLMNOUFZAWABSZVIWCWHWDWIAWRIBSZWC
+        WHRZPAWRWSWTABCDEFGHWAIJKLMNOUGUJUKAWDWIRWRAEUCQZWDWIABDEFGHXAJKLMNXATZ
+        ULAEUMSZXABSZBEUIQZUNXAWIRAFDUOQSZBEUOQSZEUPSXCNBDEFGHJKLMUQZBEUREUTVAA
+        XFXGBEVBQSXDNXHBEVCBEXAXBVDVAABHVJQZUIQZXEVEXEABXJDEFGHXEXIJKLMNXITXJTX
+        ETZVFXJXEVGVHBXEECXAOXKXBVKVLVMVNVOVPAWSWNWFRPUABWBGWMIWDMWBTWDTWMTVQVR
+        AIWKSWPWLRAIBWKPWQVSUAWKWGCWOIWIWKTWGTWITWOTVQVRVT $.
+    $}
+
+    ${
+      ressply1sub.1 $e |- ( ph -> X e. B ) $.
+      ressply1sub.2 $e |- ( ph -> Y e. B ) $.
+      $( A restricted polynomial algebra has the same subtraction operation.
+         (Contributed by Thierry Arnoux, 30-Jan-2025.) $)
+      ressply1sub $p |- ( ph -> ( X ( -g ` U ) Y ) = ( X ( -g ` P ) Y ) ) $=
+        ( cfv wcel cminusg cplusg co csg ressply1invg oveq2d wa wceq cbs csubrg
+        cgrp subrgply1 subrgsubg subggrp 4syl ressply1bas eleqtrd eqid grpinvcl
+        csubg syl2anc eleqtrrd jca ressply1add mpdan eqtrd grpsubval 3eqtr4d )
+        AIJGUASZSZGUBSZUCZIJCUASZSZCUBSZUCZIJGUDSZUCZIJCUDSZUCZAVLIVNVKUCZVPAVJ
+        VNIVKABCDEFGHJKLMNOPRUEUFAIBTZVNBTZUGWAVPUHAWBWCQAVNCUISZBACUKTZJWDTZVN
+        WDTAFDUJSTBEUJSTBEUTSTWEOBDEFGHKLMNULBEUMBECPUNUOAJBWDRABCDEFGHKLMNOPUP
+        ZUQZWDCVMJWDURZVMURZUSVAWGVBVCABCDEFGHIVNKLMNOPVDVEVFAWBJBTVRVLUHQRBVKG
+        VIVQIJNVKURVIURVQURVGVAAIWDTWFVTVPUHAIBWDQWGUQWHWDVOCVMVSIJWIVOURWJVSUR
+        VGVAVH $.
+    $}
+  $}
+
+  ${
+    evls1subd.q $e |- Q = ( S evalSub1 R ) $.
+    evls1subd.k $e |- K = ( Base ` S ) $.
+    evls1subd.w $e |- W = ( Poly1 ` U ) $.
+    evls1subd.u $e |- U = ( S |`s R ) $.
+    evls1subd.b $e |- B = ( Base ` W ) $.
+    evls1subd.1 $e |- D = ( -g ` W ) $.
+    evls1subd.2 $e |- .- = ( -g ` S ) $.
+    evls1subd.s $e |- ( ph -> S e. CRing ) $.
+    evls1subd.r $e |- ( ph -> R e. ( SubRing ` S ) ) $.
+    evls1subd.m $e |- ( ph -> M e. B ) $.
+    evls1subd.n $e |- ( ph -> N e. B ) $.
+    evls1subd.y $e |- ( ph -> C e. K ) $.
+    $( Univariate polynomial evaluation of a difference of polynomials.
+       (Contributed by Thierry Arnoux, 25-Apr-2025.) $)
+    evls1subd $p |- ( ph -> ( ( Q ` ( M D N ) ) ` C )
+                            = ( ( ( Q ` M ) ` C ) .- ( ( Q ` N ) ` C ) ) ) $=
+        ( co ce1 cfv cpl1 cress oveqi eqid ressply1sub eqtrid csubg wcel csubrg
+        wceq subrgply1 subrgsubg 3syl subgsub syl3anc eqtr4d fveq2d fveq1d cres
+        csg ressply1evl cgrp subrgring ply1ring ringgrpd grpsubcl fvresd eqtr2d
+        crg cbs cps1 cin ressply1bas2 inss2 eqsstrdi sseldd jca evl1subd simprd
+        3eqtr3d ) ACJLDUFZGUGUHZUHZUHCJLGUIUHZVHUHZUFZWJUHZUHZCWIEUHZUHCJEUHZUH
+        ZCLEUHZUHZKUFZACWKWOAWIWNWJAWIJLWLBUJUFZVHUHZUFZWNAWIJLMVHUHZUFXEDXFJLS
+        UKABXCGWLFMHJLWLULZQPRUBXCULZUCUDUMUNABWLUOUHUPZJBUPZLBUPZWNXEURAFGUQUH
+        UPZBWLUQUHUPXIUBBGWLFMHXGQPRUSBWLUTVAUCUDBWLXCWMXDJLWMULZXHXDULVBVCVDVE
+        VFACWKWQAWQWIWJBVGZUHWKAWIEXNABEFGHWJIMNOPQRWJULZUAUBVIZVFAWIBWJAMVJUPX
+        JXKWIBUPAMAXLHVQUPMVQUPUBFGHQVKMHPVLVAVMUCUDBMDJLRSVNVCVOVPVFAWNWLVRUHZ
+        UPWPXBURAIKWLGXQJWMLWJWSXACXOXGOXQULZUAUEAJXQUPCJWJUHZUHWSURABXQJABHVSU
+        HZVRUHZXQVTXQABYAGWLFMHXQXTXGQPRUBXTULYAULXRWAYAXQWBWCZUCWDACXSWRAWRJXN
+        UHXSAJEXNXPVFAJBWJUCVOVPVFWEALXQUPCLWJUHZUHXAURABXQLYBUDWDACYCWTAWTLXNU
+        HYCALEXNXPVFALBWJUDVOVPVFWEXMTWFWGWH $.
   $}
 
   ${
@@ -382379,6 +383316,516 @@ $)
       WDKUXIBUWFUWDEAUWDUWRKUXHAUWBPLUWDUWCUWOUWQUXBUXCUXDUVMWFAUXHXJAEUWDKUXHA
       UWAUWDEABUWAUWDAUWBPLUWDUWCUWOUWQUXBUXCUXDUVNZUVOAUXKEUWAKHEPUVPUSWRWFABU
       WDUQUXHABUWAUWDVXQUVQWFUVRDUWGUWDVPVQVRUVSUVT $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Polynomial quotient and polynomial remainder
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    r1padd1.p $e |- P = ( Poly1 ` R ) $.
+    r1padd1.u $e |- U = ( Base ` P ) $.
+    r1padd1.n $e |- N = ( Unic1p ` R ) $.
+    ${
+      q1pdir.d $e |- ./ = ( quot1p ` R ) $.
+      q1pdir.r $e |- ( ph -> R e. Ring ) $.
+      q1pdir.a $e |- ( ph -> A e. U ) $.
+      q1pdir.c $e |- ( ph -> C e. N ) $.
+      ${
+        q1pdir.b $e |- ( ph -> B e. U ) $.
+        q1pdir.1 $e |- .+ = ( +g ` P ) $.
+        $( Distribution of univariate polynomial quotient over addition.
+           (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+        q1pdir $p |- ( ph -> ( ( A .+ B ) ./ C ) = ( ( A ./ C ) .+ ( B ./ C ) )
+          ) $=
+          ( wcel crg co cmulr cfv csg cdg1 clt wbr ply1ring syl ringgrpd grpcld
+          wceq q1pcl syl3anc uc1pcl eqid ringdir syl13anc cabl ringabld ringcld
+          oveq2d ablsub4 syl122anc eqtrd fveq2d cr1p syl2anc r1pcl eqeltrrd cxr
+          r1pval deg1xrcl r1pdeglt eqbrtrrd deg1addlt eqbrtrd w3a q1peqb biimpa
+          wa syl32anc ) AHUATZBCGUBZITZDJTZBDEUBZCDEUBZGUBZITZWEWJDFUCUDZUBZFUE
+          UDZUBZHUFUDZUDZDWPUDZUGUHZWEDEUBWJUMZOAIGFBCLSAFAWDFUATZOFHKUIUJZUKZP
+          RULQAIGFWHWILSXCAWDBITZWGWHITZOPQIJFEHBDNKLMUNUOZAWDCITZWGWIITZORQIJF
+          EHCDNKLMUNUOZULAWQBWHDWLUBZWNUBZCWIDWLUBZWNUBZGUBZWPUDWRUGAWOXNWPAWOW
+          EXJXLGUBZWNUBZXNAWMXOWEWNAXAXEXHDITZWMXOUMXBXFXIAWGXQQIJFHDKLMUPUJZIG
+          FWLWHWIDLSWLUQZURUSVCAFUTTXDXGXJITXLITXPXNUMAFXBVAPRAIFWLWHDLXSXBXFXR
+          VBAIFWLWIDLXSXBXIXRVBIGFWNXLBCXJLSWNUQZVDVEVFVGAIWPGHXKXMWRFKWPUQZOLS
+          ABDHVHUDZUBZXKIAXDXQYCXKUMPXRIFEHWLYBBDWNYBUQZKLNXSXTVMVIZAWDXDWGYCIT
+          OPQIJFHYBBDYDKLMVJUOVKACDYBUBZXMIAXGXQYFXMUMRXRIFEHWLYBCDWNYDKLNXSXTV
+          MVIZAWDXGWGYFITORQIJFHYBCDYDKLMVJUOVKAXQWRVLTXRIWPFHDYAKLVNUJAYCWPUDZ
+          XKWPUDWRUGAYCXKWPYEVGAWDXDWGYHWRUGUHOPQIJWPFHYBBDYDKLMYAVOUOVPAYFWPUD
+          ZXMWPUDWRUGAYFXMWPYGVGAWDXGWGYIWRUGUHORQIJWPFHYBCDYDKLMYAVOUOVPVQVRWD
+          WFWGVSWKWSWBWTIJWPFEHWLWEDWNWJNKLYAXTXSMVTWAWC $.
+      $}
+
+      ${
+        q1pvsca.1 $e |- .X. = ( .s ` P ) $.
+        q1pvsca.k $e |- K = ( Base ` R ) $.
+        q1pvsca.8 $e |- ( ph -> B e. K ) $.
+        $( Scalar multiplication property of the polynomial division.
+           (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+        q1pvsca $p |- ( ph -> ( ( B .X. A ) ./ C ) = ( B .X. ( A ./ C ) ) ) $=
+          ( crg wcel co cmulr cfv csg cdg1 clt wbr wceq csca cbs clmod ply1lmod
+          eqid syl ply1sca fveq2d eleqtrd lmodvscld q1pcl syl3anc cr1p cxr cgrp
+          eqtrid lmodgrpd ply1ring uc1pcl ringcld grpsubcl deg1xrcl syl2anc cle
+          r1pval eqeltrd deg1vscale ply1ass23l syl13anc oveq2d lmodsubdi eqtr4d
+          3brtr4d r1pdeglt xrlelttrd w3a wa q1peqb biimpa syl32anc ) AGUBUCZCBH
+          UDZIUCZDKUCZCBDEUDZHUDZIUCZWMWQDFUEUFZUDZFUGUFZUDZGUHUFZUFZDXCUFZUIUJ
+          ZWMDEUDWQUKZPACHFULUFZXHUMUFZIFBMXHUPZSXIUPZAWLFUNUCPFGLUOUQZACJXIUAA
+          JGUMUFXITAGXHUMAWLGXHUKPFGUBLURUQUSVGUTZQVAZRACHXHXIIFWPMXJSXKXLXMAWL
+          BIUCZWOWPIUCZPQRIKFEGBDOLMNVBVCZVAZAXDBDGVDUFZUDZXCUFZXEAXBIUCZXDVEUC
+          AFVFUCZWNWTIUCYBAFXLVHZXNAIFWSWQDMWSUPZAWLFUBUCPFGLVIUQZXRAWODIUCZRIK
+          FGDLMNVJUQZVKIFXAWMWTMXAUPZVLVCIXCFGXBXCUPZLMVMUQAXTIUCYAVEUCAXTBWPDW
+          SUDZXAUDZIAXOYGXTYLUKQYHIFEGWSXSBDXAXSUPZLMOYEYIVPVNZAYCXOYKIUCYLIUCY
+          DQAIFWSWPDMYEYFXQYHVKZIFXABYKMYIVLVCZVQIXCFGXTYJLMVMUQAYGXEVEUCYHIXCF
+          GDYJLMVMUQACYLHUDZXCUFYLXCUFXDYAVOAIXCGHCYLJFLYJPMTSUAYPVRAXBYQXCAXBW
+          MCYKHUDZXAUDYQAWTYRWMXAAWLCJUCXPYGWTYRUKPUAXQYHCIFGHWSJWPDLYEMTSVSVTW
+          AACHXHXIXAIFBYKMSXJXKYIXLXMQYOWBWCUSAXTYLXCYNUSWDAWLXOWOYAXEUIUJPQRIK
+          XCFGXSBDYMLMNYJWEVCWFWLWNWOWGWRXFWHXGIKXCFEGWSWMDXAWQOLMYJYIYENWIWJWK
+          $.
+      $}
+    $}
+
+    r1padd1.e $e |- E = ( rem1p ` R ) $.
+    ${
+      r1pvsca.6 $e |- ( ph -> R e. Ring ) $.
+      r1pvsca.7 $e |- ( ph -> A e. U ) $.
+      r1pvsca.10 $e |- ( ph -> D e. N ) $.
+      r1pvsca.1 $e |- .X. = ( .s ` P ) $.
+      r1pvsca.k $e |- K = ( Base ` R ) $.
+      r1pvsca.2 $e |- ( ph -> B e. K ) $.
+      $( Scalar multiplication property of the polynomial remainder operation.
+         (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+      r1pvsca $p |- ( ph -> ( ( B .X. A ) E D ) = ( B .X. ( A E D ) ) ) $=
+        ( cq1p cfv cmulr csg crg wcel wceq eqid q1pcl syl3anc uc1pcl ply1ass23l
+        co syl syl13anc oveq2d q1pvsca oveq1d cbs clmod ply1lmod ply1sca fveq2d
+        csca eqtrid eleqtrd ply1ring ringcld lmodsubdi 3eqtr4d lmodvscld r1pval
+        syl2anc ) ACBGUNZVODFUBUCZUNZDEUDUCZUNZEUEUCZUNZCBBDVPUNZDVRUNZVTUNZGUN
+        ZVODIUNZCBDIUNZGUNAVOCWBGUNZDVRUNZVTUNVOCWCGUNZVTUNWAWEAWIWJVOVTAFUFUGZ
+        CJUGWBHUGZDHUGZWIWJUHPUAAWKBHUGZDKUGZWLPQRHKEVPFBDVPUIZLMNUJUKZAWOWMRHK
+        EFDLMNULUOZCHEFGVRJWBDLVRUIZMTSUMUPUQAVSWIVOVTAVQWHDVRABCDVPEFGHJKLMNWP
+        PQRSTUAURUSUQACGEVEUCZWTUTUCZVTHEBWCMSWTUIZXAUIZVTUIZAWKEVAUGPEFLVBUOZA
+        CJXAUAAJFUTUCXATAFWTUTAWKFWTUHPEFUFLVCUOVDVFVGZQAHEVRWBDMWSAWKEUFUGPEFL
+        VHUOWQWRVIVJVKAVOHUGWMWFWAUHACGWTXAHEBMXBSXCXEXFQVLWRHEVPFVRIVODVTOLMWP
+        WSXDVMVNAWGWDCGAWNWMWGWDUHQWRHEVPFVRIBDVTOLMWPWSXDVMVNUQVK $.
+    $}
+
+    ${
+      r1p0.r $e |- ( ph -> R e. Ring ) $.
+      r1p0.d $e |- ( ph -> D e. N ) $.
+      r1p0.0 $e |- .0. = ( 0g ` P ) $.
+      $( Polynomial remainder operation of a division of the zero polynomial.
+         (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+      r1p0 $p |- ( ph -> ( .0. E D ) = .0. ) $=
+        ( c0g cfv co wcel eqid csca crg wceq ply1sca syl fveq2d oveq1d ply1lmod
+        cvsca clmod ply1ring ring0cl 3syl lmod0vs syl2anc eqtrd r1pvsca syl3anc
+        cbs r1pcl 3eqtrd eqtr3d ) ADPQZHCUIQZRZBFRZHBFRZHAVEHBFAVECUAQZPQZHVDRZ
+        HAVCVIHVDADVHPADUBSZDVHUCMCDUBIUDUEUFZUGACUJSZHESZVJHUCAVKVMMCDIUHUEZAV
+        KCUBSVNMCDIUKECHJOULUMZVDVHVIECHHJVHTZVDTZVITZOUNUOUPUGAVFVCVGVDRVIVGVD
+        RZHAHVCBCDVDEFDUSQZGIJKLMVPNVRWATZAVKVCWASMWADVCWBVCTULUEUQAVCVIVGVDVLU
+        GAVMVGESZVTHUCVOAVKVNBGSWCMVPNEGCDFHBLIJKUTURVDVHVIECVGHJVQVRVSOUNUOVAV
+        B $.
+    $}
+
+    ${
+      r1pcyc.p $e |- .+ = ( +g ` P ) $.
+      r1pcyc.m $e |- .x. = ( .r ` P ) $.
+      r1pcyc.r $e |- ( ph -> R e. Ring ) $.
+      r1pcyc.a $e |- ( ph -> A e. U ) $.
+      r1pcyc.b $e |- ( ph -> B e. N ) $.
+      r1pcyc.c $e |- ( ph -> C e. U ) $.
+      $( The polynomial remainder operation is periodic.  See ~ modcyc .
+         (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+      r1pcyc $p |- ( ph -> ( ( A .+ ( C .x. B ) ) E B ) = ( A E B ) ) $=
+        ( co cq1p cfv csg cgrp wcel wceq crg ply1ring syl ringgrpd eqid syl3anc
+        uc1pcl ringcld grppnpcan2 syl13anc grpcld r1pval syl2anc ringdir q1pdir
+        q1pcl oveq1d cdsr wbr dvdsrmul wb dvdsq1p mpbid oveq2d 3eqtr4d eqtrd )
+        ABDCHUBZFUBZBCGUCUDZUBZCHUBZVOFUBZEUEUDZUBZBVSWAUBZVPCJUBZBCJUBZAEUFUGB
+        IUGZVSIUGVOIUGZWBWCUHAEAGUIUGZEUIUGZREGLUJUKZULZSAIEHVRCMQWJAWHWFCKUGZV
+        RIUGZRSTIKEVQGBCVQUMZLMNVDUNZAWLCIUGZTIKEGCLMNUOUKZUPAIEHDCMQWJUAWQUPZI
+        FEWABVSVOMPWAUMZUQURAWDVPVPCVQUBZCHUBZWAUBZWBAVPIUGWPWDXBUHAIFEBVOMPWKS
+        WRUSWQIEVQGHJVPCWAOLMWNQWSUTVAAXAVTVPWAAVRVOCVQUBZFUBZCHUBZVSXCCHUBZFUB
+        ZXAVTAWIWMXCIUGZWPXEXGUHWJWOAWHWGWLXHRWRTIKEVQGVOCWNLMNVDUNWQIFEHVRXCCM
+        PQVBURAWTXDCHABVOCVQEFGIKLMNWNRSTWRPVCVEAVOXFVSFACVOEVFUDZVGZVOXFUHZAWP
+        DIUGXJWQUAIXIEHCDMXIUMZQVHVAAWHWGWLXJXKVIRWRTIKXIEVQGHVOCLXLMNQWNVJUNVK
+        VLVMVLVNAWFWPWEWCUHSWQIEVQGHJBCWAOLMWNQWSUTVAVM $.
+    $}
+
+    ${
+      r1padd1.r $e |- ( ph -> R e. Ring ) $.
+      r1padd1.a $e |- ( ph -> A e. U ) $.
+      r1padd1.d $e |- ( ph -> D e. N ) $.
+      r1padd1.1 $e |- ( ph -> ( A E D ) = ( B E D ) ) $.
+      r1padd1.2 $e |- .+ = ( +g ` P ) $.
+      r1padd1.b $e |- ( ph -> B e. U ) $.
+      r1padd1.c $e |- ( ph -> C e. U ) $.
+      $( Addition property of the polynomial remainder operation, similar to
+         ~ modadd1 .  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+      r1padd1 $p |- ( ph -> ( ( A .+ C ) E D ) = ( ( B .+ C ) E D ) ) $=
+        ( co cq1p cfv cminusg cmulr csg wcel wceq uc1pcl r1pval syl2anc 3eqtr3d
+        syl eqid oveq1d ply1ring q1pcl syl3anc ringmneg1 oveq2d ringgrpd grpcld
+        crg ringcld grpsubval cabl ringabld abladdsub 3eqtr2d 3eqtr4d grpinvcld
+        syl13anc r1pcyc ) ABDGUCZBEHUDUEZUCZFUFUEZUEZEFUGUEZUCZGUCZEJUCCDGUCZCE
+        VQUCZVSUEZEWAUCZGUCZEJUCVPEJUCWDEJUCAWCWHEJABVREWAUCZFUHUEZUCZDGUCZCWEE
+        WAUCZWJUCZDGUCZWCWHAWKWNDGABEJUCZCEJUCZWKWNSABIUIZEIUIZWPWKUJQAEKUIZWSR
+        IKFHELMNUKUOZIFVQHWAJBEWJOLMVQUPZWAUPZWJUPZULUMACIUIZWSWQWNUJUAXAIFVQHW
+        AJCEWJOLMXBXCXDULUMUNUQAWCVPWIVSUEZGUCZVPWIWJUCZWLAWBXFVPGAIFWAVSVREMXC
+        VSUPZAHVEUIZFVEUIPFHLURUOZAXJWRWTVRIUIPQRIKFVQHBEXBLMNUSUTZXAVAVBAVPIUI
+        WIIUIZXHXGUJAIGFBDMTAFXKVCZQUBVDZAIFWAVREMXCXKXLXAVFZIGFVSWJVPWIMTXIXDV
+        GUMAFVHUIZWRDIUIZXMXHWLUJAFXKVIZQUBXPIGFWJBDWIMTXDVJVNVKAWHWDWMVSUEZGUC
+        ZWDWMWJUCZWOAWGXTWDGAIFWAVSWEEMXCXIXKAXJXEWTWEIUIPUARIKFVQHCEXBLMNUSUTZ
+        XAVAVBAWDIUIWMIUIZYBYAUJAIGFCDMTXNUAUBVDZAIFWAWEEMXCXKYCXAVFZIGFVSWJWDW
+        MMTXIXDVGUMAXQXEXRYDYBWOUJXSUAUBYFIGFWJCDWMMTXDVJVNVKVLUQAVPEVTFGHWAIJK
+        LMNOTXCPXORAIFVSVRMXIXNXLVMVOAWDEWFFGHWAIJKLMNOTXCPYERAIFVSWEMXIXNYCVMV
+        OUN $.
+    $}
+  $}
+
+  ${
+    $d E f p $.  $d F a b k p q $.  $d K q $.  $d M f p $.  $d P a b f k p q $.
+    $d Q q $.  $d U a b f k p q $.  $d a b f k p ph q $.
+    r1plmhm.1 $e |- P = ( Poly1 ` R ) $.
+    r1plmhm.2 $e |- U = ( Base ` P ) $.
+    r1plmhm.4 $e |- E = ( rem1p ` R ) $.
+    r1plmhm.5 $e |- N = ( Unic1p ` R ) $.
+    r1plmhm.6 $e |- F = ( f e. U |-> ( f E M ) ) $.
+    r1plmhm.9 $e |- ( ph -> R e. Ring ) $.
+    r1plmhm.10 $e |- ( ph -> M e. N ) $.
+    $( The univariate polynomial remainder function ` F ` is a module
+       homomorphism.  Its image ` ( F "s P ) ` is sometimes called the "ring of
+       remainders".  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
+    r1plmhm $p |- ( ph -> F e. ( P LMHom ( F "s P ) ) ) $=
+      ( co wcel cfv wa vk vq vp va vb cimas clmod clmhm cplusg cvsca cbs cv crg
+      csca adantr simpr r1pcl syl3anc fmptd eqid wceq wi ad6antr simp-6r simplr
+      anass cvv oveq1 fvmptd3 simp-4r 3eqtr3d simp-5r r1padd1 cgrp ply1ring syl
+      ovexd ringgrpd grpcld 3eqtr4d ringabld ablcom fveq2d eqtrd simpllr 3eqtrd
+      cabl expl anasss sylanbr w3a simpr2 simpr3 oveq2d ad2antrr simpr1 ply1sca
+      3impa eleqtrrd r1pvsca ply1lmod lmodvscld an32s ex imaslmhm simprd ) AGBU
+      FQZUGRGBXGUHQRADDBUNSZBUISZBUJSZUAGXHUKSZBUBUCUDUEKAEDEULZHFQZDGAXLDRZTCU
+      MRZXNHIRZXMDRAXOXNOUOAXNUPAXPXNPUODIBCFXLHLJKMUQURNUSXIUTZAUDULZDRZUEULZD
+      RZTZUCULZDRZUBULZDRZTZXRGSZYCGSZVAZXTGSZYEGSZVAZTXRXTXIQZGSZYCYEXIQZGSZVA
+      ZVBZAYBTAXSTZYATZYGYSAXSYAVFUUAYDYFYSUUAYDTZYFTZYJYMYRUUCYJTZYMTZYOXTYCXI
+      QZGSZYEYCXIQZGSZYQUUEYOYCXTXIQZGSZUUGUUEYNHFQZUUJHFQZYOUUKUUEXRYCXTHBXICD
+      FIJKMLAXOXSYAYDYFYJYMOVCZAXSYAYDYFYJYMVDZAXPXSYAYDYFYJYMPVCZUUEYHYIXRHFQZ
+      YCHFQZUUCYJYMVEUUEEXRXMUUQDGVGNXLXRHFVHZUUOUUEXRHFVQVIUUEEYCXMUURDGVGNXLY
+      CHFVHUUAYDYFYJYMVJZUUEYCHFVQVIVKXQUUTYTYAYDYFYJYMVLZVMUUEEYNXMUULDGVGNXLY
+      NHFVHUUEDXIBXRXTKXQABVNRXSYAYDYFYJYMABAXOBUMROBCJVOVPZVRVCZUUOUVAVSUUEYNH
+      FVQVIUUEEUUJXMUUMDGVGNXLUUJHFVHUUEDXIBYCXTKXQUVCUUTUVAVSUUEUUJHFVQVIVTUUE
+      UUJUUFGUUEBWGRZYDYAUUJUUFVAAUVDXSYAYDYFYJYMABUVBWAVCZUUTUVADXIBYCXTKXQWBU
+      RWCWDUUEUUFHFQZUUHHFQZUUGUUIUUEXTYEYCHBXICDFIJKMLUUNUVAUUPUUEYKYLXTHFQZYE
+      HFQZUUDYMUPUUEEXTXMUVHDGVGNXLXTHFVHZUVAUUEXTHFVQVIUUEEYEXMUVIDGVGNXLYEHFV
+      HUUBYFYJYMWEZUUEYEHFVQVIVKXQUVKUUTVMUUEEUUFXMUVFDGVGNXLUUFHFVHUUEDXIBXTYC
+      KXQUVCUVAUUTVSUUEUUFHFVQVIUUEEUUHXMUVGDGVGNXLUUHHFVHUUEDXIBYEYCKXQUVCUVKU
+      UTVSUUEUUHHFVQVIVTUUEUUHYPGUUEUVDYFYDUUHYPVAUVEUVKUUTDXIBYEYCKXQWBURWCWFW
+      HWIWJWRXHUTZXKUTZAUAULZXKRZXSYAWKZTYHYKVAZUVNXRXJQZGSZUVNXTXJQZGSZVAZAUVQ
+      UVPUWBAUVQTZUVPTZUVRHFQZUVTHFQZUVSUWAUWDUVNUUQXJQUVNUVHXJQUWEUWFUWDUUQUVH
+      UVNXJUWDYHYKUUQUVHAUVQUVPVEUWDEXRXMUUQDGVGNUUSUWCUVOXSYAWLZUWDXRHFVQVIUWD
+      EXTXMUVHDGVGNUVJUWCUVOXSYAWMZUWDXTHFVQVIVKWNUWDXRUVNHBCXJDFCUKSZIJKMLAXOU
+      VQUVPOWOZUWGAXPUVQUVPPWOZXJUTZUWIUTZUWDUVNXKUWIUWCUVOXSYAWPZAUWIXKVAUVQUV
+      PACXHUKAXOCXHVAOBCUMJWQVPWCWOWSZWTUWDXTUVNHBCXJDFUWIIJKMLUWJUWHUWKUWLUWMU
+      WOWTVTUWDEUVRXMUWEDGVGNXLUVRHFVHUWDUVNXJXHXKDBXRKUVLUWLUVMUWDXOBUGRZUWJBC
+      JXAZVPZUWNUWGXBUWDUVRHFVQVIUWDEUVTXMUWFDGVGNXLUVTHFVHUWDUVNXJXHXKDBXTKUVL
+      UWLUVMUWRUWNUWHXBUWDUVTHFVQVIVTXCXDAXOUWPOUWQVPUWLXEXF $.
+
+    $d .0. f q $.  $d E f $.  $d F a b f q $.  $d K q $.  $d M f $.
+    $d P a b f q $.  $d Q f q $.  $d U a b f q $.  $d a b f ph q $.
+    r1pquslmic.0 $e |- .0. = ( 0g ` P ) $.
+    r1pquslmic.k $e |- K = ( `' F " { .0. } ) $.
+    r1pquslmic.q $e |- Q = ( P /s ( P ~QG K ) ) $.
+    $( The univariate polynomial remainder ring ` ( F "s P ) ` is module
+       isomorphic with the quotient ring.  (Contributed by Thierry Arnoux,
+       2-Apr-2025.) $)
+    r1pquslmic $p |- ( ph -> Q ~=m ( F "s P ) ) $=
+      ( vq va vb ccnv cimas co c0g cfv csn cima cqg cqus clmic cmnd wcel cplusg
+      wceq eqidd cbs a1i eqid wf wfo cv wa crg adantr simpr r1pcl syl3anc fmptd
+      fimadmfo syl wi anass simplr oveq12d cghm r1plmhm ad6antr simp-6r simp-5r
+      lmhmghmd ghmlin simp-4r simpllr 3eqtr4d expl anasss sylanbr 3impa grpmndd
+      ply1ring imasmnd simprd oveq1 r1p0 sylan9eqr ring0cl fvmptd2 eqtr3d sneqd
+      ringgrpd imaeq2d eqtr4di oveq2d crn wfn ffnd fnima cvv cpl1 fvexi imasbas
+      lmicqusker eqbrtrrd ) ABBHUFZHBUGUHZUIUJZUKZULZUMUHZUNUHZCXTUOAYEBBIUMUHZ
+      UNUHCAYDYFBUNAYCIBUMAYCXSLUKZULIAYBYGXSAYALALHUJZYALAXTUPUQYHYAUSAHEULZBU
+      RUJZBXTHELUCFUDUEAXTUTZEBVAUJUSANVBZYJVCZAEEHVDEYIHVEAFEFVFZJGUHZEHAYNEUQ
+      ZVGDVHUQZYPJKUQZYOEUQAYQYPRVIAYPVJAYRYPSVIEKBDGYNJOMNPVKVLQVMZEEHVNVOZAUD
+      VFZEUQZUEVFZEUQZVGZYPUCVFZEUQZVGZUUAHUJZYNHUJZUSZUUCHUJZUUFHUJZUSZVGUUAUU
+      CYJUHHUJZYNUUFYJUHHUJZUSZVPZAUUEVGAUUBVGZUUDVGZUUHUURAUUBUUDVQUUTYPUUGUUR
+      UUTYPVGZUUGVGZUUKUUNUUQUVBUUKVGZUUNVGZUUIUULXTURUJZUHZUUJUUMUVEUHZUUOUUPU
+      VDUUIUUJUULUUMUVEUVBUUKUUNVRUVCUUNVJVSUVDHBXTVTUHUQZUUBUUDUUOUVFUSAUVHUUB
+      UUDYPUUGUUKUUNABXTHABDEFGHJKMNOPQRSWAZWEWBZAUUBUUDYPUUGUUKUUNWCUUSUUDYPUU
+      GUUKUUNWDYJUVEBXTUUAHUUCENYMUVEVCZWFVLUVDUVHYPUUGUUPUVGUSUVJUUTYPUUGUUKUU
+      NWGUVAUUGUUKUUNWHYJUVEBXTYNHUUFENYMUVKWFVLWIWJWKWLWMABABAYQBVHUQZRBDMWOVO
+      ZXEWNTWPWQAFLYOLEHEQYNLUSAYOLJGUHLYNLJGWRAJBDEGKLMNPORSTWSWTAUVLLEUQUVMEB
+      LNTXAVOZUVNXBXCXDXFUAXGXHXHUBXGAYEHBXTYCYAYAVCUVIYCVCYEVCAYIHXIZXTVAUJAHE
+      XJYIUVOUSAEEHYSXKEHXLVOAYIBXTHEXMYKYLYTBXMUQABDXNMXOVBXPXCXQXR $.
+  $}
+
+  ${
+    rngunsnply1.b $e |- B = ( Base ` R ) $.
+    rngunsnply1.p $e |- P = ( Poly1 ` ( R |`s S ) ) $.
+    rngunsnply1.u $e |- U = ( Base ` P ) $.
+    rngunsnply1.q $e |- Q = ( R evalSub1 S ) $.
+    rngunsnply1.r $e |- ( ph -> R e. CRing ) $.
+    rngunsnply1.s $e |- ( ph -> S e. ( SubRing ` R ) ) $.
+    rngunsnply1.x $e |- ( ph -> X e. B ) $.
+    rngunsnply1.n $e |- N = ( RingSpan ` R ) $.
+    ${
+      $d B a f g w $.  $d B i x $.  $d F i x $.  $d N i $.  $d P i x $.
+      $d Q i x $.  $d R a f g w $.  $d R i x $.  $d S a f g w $.  $d S i x $.
+      $d U i $.  $d X a f g w $.  $d X i x $.  $d a f g ph w $.  $d i ph x $.
+      evls1rgspncl.f $e |- ( ph -> F e. U ) $.
+      $( Closure of the subring polynomial evaluation in a generated ring.
+         Generic version of ~ cnsrplycl .  See also ~ evls1fldgencl .
+         (Contributed by Thierry Arnoux, 8-Nov-2026.) $)
+      evls1rgspncl $p |- ( ph -> ( ( Q ` F ) ` X ) e. ( N ` ( S u. { X } ) ) )
+        $=
+        ( wcel vi vx cfv cn0 cv cco1 cmgp cmg cmulr cmpt cgsu csn cun cvv oveq2
+        co wceq oveq2d mpteq2dv cress eqid evls1fpws ovexd fvmptd4 c0g ringabld
+        crngringd nn0ex a1i csubrg csubg cbs wss subrgss syl snssd unssd crgspn
+        eqidd subrgsubg wa adantr rgspnssid unssad coe1fvalcl ressbas2 eleqtrrd
+        rgspncl sylan sseldd csubmnd subrgsubm simpr ssun2 snidg sselid syl3anc
+        submmulgcl subrgmcld fmpttd crg wbr subrgring mptcoe1fsupp syl2anc cmnd
+        cfsupp ringmnd subgsubm subm0cl 3syl ress0g breqtrrd ringlzd fsuppssov1
+        gsumsubgcl eqeltrd ) AJHDUCZUCEUAUDUAUEZHUFUCZUCZXSJEUGUCZUHUCZUPZEUIUC
+        ZUPZUJZUKUPZFJULZUMZIUCZAUBJEUAUDYAXSUBUEZYCUPZYEUPZUJZUKUPYHBXRUNYLJUQ
+        ZYOYGEUKYPUAUDYNYFYPYMYDYAYEYLJXSYCUOURUSURAUBXTGDFEYEEFUTUPZUAYCBHCNKL
+        YQVAZMOPSYEVAZYCVAZXTVAZVBQAEYGUKVCVDAUDYKYGEUNEVEUCZUUBVAZAEAEOVGZVFUD
+        UNTAVHVIAYKEVJUCZTZYKEVKUCZTAYJBEYKIUUDBEVLUCUQAKVIZAFYIBAFUUETZFBVMZPF
+        BEKVNVOZAJBQVPVQZIEVRUCUQARVIZAYKVSZWHZYKEVTVOAUAUDYFYKAXSUDTZWAZYKEYEY
+        AYDYSAUUFUUPUUOWBUUQFYKYAUUQFYIYKAYJYKVMUUPAYJBEYKIUUDUUHUULUUMUUNWCZWB
+        WDUUQYAYQVLUCZFAHGTZUUPYAUUSTSXTGCYQHUUSXSUUAMLUUSVAWEWIZAFUUSUQZUUPAUU
+        JUVBUUKFBYQEYRKWFVOWBWGWJUUQYKYBWKUCTZUUPJYKTZYDYKTAUVCUUPAUUFUVCUUOYKE
+        YBYBVAWLVOWBAUUPWMAUVDUUPAYJYKJUURAYIYJJYIFWNAJBTJYITQJBWOVOWPWJWBYKYCY
+        BXSJYTWRWQZWSWTAUAUBYAYDUDBYEUUSFUUBUUBAUAUDYAUJZYQVEUCZUUBXGAYQXATZUUT
+        UVFUVGXGXBAUUIUVHPFEYQYRXCVOSGCYQUAHUVGLMUVGVAXDXEAEXFTZUUBFTZUUJUUBUVG
+        UQAEXATZUVIUUDEXHVOAFUUGTZFEWKUCTUVJAUUIUVLPFEVTVOFEXIFEUUBUUCXJXKZUUKF
+        BEYQUUBYRKUUCXLWQXMAYLBTZWABEYEYLUUBKYSUUCAUVKUVNUUDWBAUVNWMXNUVAUUQYKB
+        YDAYKBVMZUUPAUUFUVOUUOYKBEKVNVOWBUVEWJUVMXOXPXQ $.
+    $}
+
+    $d B a b p $.  $d N p $.  $d P a b c d e p $.  $d Q a b c d e p $.
+    $d R a b c d e p $.  $d S a b c d e p $.  $d U a b c d e p $.
+    $d V a b c d e p $.  $d X a b c d e p $.  $d a b c d e p ph $.
+    $( Adjoining one element to a ring results in a set of polynomial
+       evaluations.  Generalization of ~ rngunsnply .  (Contributed by Thierry
+       Arnoux, 8-Nov-2026.) $)
+    rngunsnply1 $p |- ( ph -> ( V e. ( N ` ( S u. { X } ) )
+                                     <-> E. p e. U V = ( ( Q ` p ) ` X ) ) ) $=
+      ( cfv csn cun wcel cv wceq wrex cmpt crn crngringd cbs a1i csubrg subrgss
+      wss syl snssd unssd crgspn eqidd eqid evls1maprhm rnrhmsubrg evls1maprnss
+      crh co cv1 cress subrgvr1cl wa cid subrgvr1 fveq2d fveq1d evls1var fvresi
+      cres 3eqtrrd adantr fveq2 adantl eqtr4d elrnmptdv rgspnmin sseld elrnmpti
+      fvex imbitrdi ccrg simpr evls1rgspncl eleq1 syl5ibrcom rexlimdva impbid )
+      AIFJUAZUBZHTZUCZIJKUDZDTZTZUEZKGUFZAWRIKGXAUGZUHZUCXCAWQXEIAWPBEXEWQHAEPU
+      IBEUJTUEALUKAFWOBAFEULTZUCZFBUNQFBELUMUOAJBRUPUQHEURTUEASUKAWQUSAXDCEVDVE
+      UCXEXFUCABCEFGXDDJKOMLNPQRXDUTZVAXDCEVBUOAFWOXEABCEFGXDDJKOMLNPQRXHVCAJXE
+      AKGXAEVFTZJXDBXHAGEFCEFVGVEZXIXIUTZQXJUTZMNVHRAWSXIUEZVIJJXIDTZTZXAAJXOUE
+      XMAXOJXJVFTZDTZTJVJBVPZTZJAJXNXQAXIXPDAEFXJXIXKQXLVKVLVMAJXQXRABDFEXJXPOX
+      PUTXLLPQVNVMAJBUCZXSJUERBJVOUOVQVRXMXAXOUEAXMJWTXNWSXIDVSVMVTWAWBUPUQWCWD
+      KGXAIXDXHJWTWFWEWGAXBWRKGAWSGUCZVIZWRXBXAWQUCYBBCDEFGWSHJLMNOAEWHUCYAPVRA
+      XGYAQVRAXTYARVRSAYAWIWJIXAWQWKWLWMWN $.
+  $}
+
+  ${
+    rngunsnply1chr2.v $e |- V = ( Base ` R ) $.
+    rngunsnply1chr2.p $e |- P = ( Poly1 ` ( R |`s S ) ) $.
+    rngunsnply1chr2.u $e |- U = ( Base ` P ) $.
+    rngunsnply1chr2.q $e |- Q = ( R evalSub1 S ) $.
+    rngunsnply1chr2.r $e |- ( ph -> R e. CRing ) $.
+    rngunsnply1chr2.1 $e |- ( ph -> R e. NzRing ) $.
+    rngunsnply1chr2.s $e |- ( ph -> S e. ( SubRing ` R ) ) $.
+    rngunsnply1chr2.x $e |- ( ph -> X e. V ) $.
+    rngunsnply1chr2.y $e |- ( ph -> Y e. ( N ` ( S u. { X } ) ) ) $.
+    rngunsnply1chr2.n $e |- N = ( RingSpan ` R ) $.
+    rngunsnply1chr2.2 $e |- .+ = ( +g ` R ) $.
+    rngunsnply1chr2.3 $e |- .x. = ( .r ` R ) $.
+    rngunsnply1chr2.4 $e |- .^ = ( .g ` ( mulGrp ` R ) ) $.
+    rngunsnply1chr2.a $e |- ( ph -> A e. S ) $.
+    rngunsnply1chr2.b $e |- ( ph -> B e. S ) $.
+    rngunsnply1chr2.5 $e |- ( ph -> ( 2 .^ X ) = ( ( A .x. X ) .+ B ) ) $.
+    ${
+      rngunsnply1chr2lem.d $e |- D = ( deg1 ` R ) $.
+      rngunsnply1chr2lem.e $e |- E = ( rem1p ` ( R |`s S ) ) $.
+      rngunsnply1chr2lem.g $e |- G = ( ( 2 ( .g ` ( mulGrp ` P ) ) ( var1 ` R )
+        ) ( -g ` P ) ( ( A ( .s ` P ) ( var1 ` R ) ) ( +g ` P ) ( ( algSc ` P )
+        ` B ) ) ) $.
+      rngunsnply1chr2lem.h $e |- H = ( F E G ) $.
+      rngunsnply1chr2lem.f $e |- ( ph -> F e. U ) $.
+      $( Lemma for rngunsnply1chr2 .  (Contributed by Thierry Arnoux,
+         8-Nov-2026.) $)
+      rngunsnply1chr2lem1 $p |- ( ph -> ( D ` G ) = 2 ) $=
+        ( cfv cress co cdg1 cv1 cmgp cmg cvsca cascl cplusg csg eqid crg csubrg
+        wcel subrgring syl ply1ring ringgrpd mgpbas cmnd ringmgp cn0 subrgvr1cl
+        c2 2nn0 a1i mulgnn0cld csca cbs ply1lmod wceq subrgbas cvv ovex ply1sca
+        clmod ax-mp fveq2i eqtrdi eleqtrd lmodvscld ressasclcl grpcld grpsubcld
+        eqeltrid ressdeg1 c1 cxr deg1xrcl subrgvr1 eqeltrrd mulg1 eqtr4d oveq2d
+        1xr cle fveq2d wbr 1nn0 deg1tmle syl3anc eqbrtrrd cc0 deg1sclle syl2anc
+        0xr clt 0lt1 xrlelttrd xrltled deg1addle2 1lt2 subrgnzr eqtrd breqtrrid
+        cnzr deg1pw deg1sub 3eqtrd ) AODVBOHIVCVDZVEVBZVBZWFHVFVBZEVGVBZVHVBZVD
+        ZBUUEEVIVBZVDZCEVJVBZVBZEVKVBZVDZEVLVBZVDZUUCVBZWFAKDOHIEUUBUUBVMZUQUBU
+        CAOUUPKUSAKEUUOUUHUUNUCUUOVMZAEAUUBVNVPZEVNVPZAIHVOVBVPZUUTUGIHUUBUURVQ
+        VRZEUUBUBVSVRZVTZAKUUGUUFWFUUEKEUUFUUFVMZUCWAZUUGVMZAUVAUUFWBVPUVDEUUFU
+        VFWCVRWFWDVPZAWGWHZAKHIEUUBUUEUUEVMZUGUURUBUCWEZWIZAKUUMEUUJUULUCUUMVMZ
+        UVEABUUIEWJVBZUVOWKVBZKEUUEUCUVOVMUUIVMZUVPVMAUUTEWRVPUVCEUUBUBWLVRABIU
+        VPUNAIUUBWKVBZUVPAUVBIUVRWMUGIHUUBUURWNVRZUUBUVOWKUUBWOVPUUBUVOWMHIVCWP
+        EUUBWOUBWQWSWTXAXBUVLXCZAUUKKIHUUBECUBUURUUKVMZUCUEUGUOXDZXEZXFXGUGXHUU
+        DUUQWMAOUUPUUCUSWTWHAUUQUUHUUCVBZWFAKUUCUUBUUHUUNUUOEUBUUCVMZUVCUCUUSUV
+        MUWCAUUNUUCVBZXIUWDAUUNKVPUWFXJVPUWCKUUCEUUBUUNUWEUBUCXKVRXIXJVPAXQWHZA
+        UUHKVPUWDXJVPUVMKUUCEUUBUUHUWEUBUCXKVRAKUUCUUMUUBUUJUULXIEUBUWEUVCUCUVN
+        UVTUWBUWGABXIUUBVFVBZUUGVDZUUIVDZUUCVBZUUJUUCVBXIXRAUWJUUJUUCAUWIUUEBUU
+        IAUWIUWHUUEAUWHKVPUWIUWHWMAUUEUWHKAHIUUBUUEUVKUGUURXLZUVLXMKUUGUUFUWHUV
+        GUVHXNVRUWLXOXPXSAUUTBUVRVPXIWDVPZUWKXIXRXTUVCABIUVRUNUVSXBUWMAYAWHBUUC
+        EUUBUUIUUGXIUVRUUFUWHUWEUVRVMZUBUWHVMZUVQUVFUVHYBYCYDAUULUUCVBZXIAUULKV
+        PUWPXJVPUWBKUUCEUUBUULUWEUBUCXKVRZUWGAUWPYEXIUWQYEXJVPAYHWHUWGAUUTCUVRV
+        PUWPYEXRXTUVCACIUVRUOUVSXBUUKUUCEUUBCUVRUWEUBUWNUWAYFYGYEXIYIXTAYJWHYKY
+        LYMAXIWFUWDYIYNAUWDWFUWHUUGVDZUUCVBZWFAUUHUWRUUCAUUEUWHWFUUGUWLXPXSAUUB
+        YRVPZUVIUWSWFWMAHYRVPUVBUWTUFUGIHUUBUURYOYGUVJUUCEUUBUUGWFUUFUWHUWEUBUW
+        OUVFUVHYSYGYPZYQYKYTUXAYPUUA $.
+
+      $d B i $.  $d P i $.  $d R i $.  $d S i $.  $d i ph $.
+      $( Lemma for rngunsnply1chr2 .  (Contributed by Thierry Arnoux,
+         8-Nov-2026.) $)
+      rngunsnply1chr2lem2 $p |- ( ph -> G e. ( Unic1p ` ( R |`s S ) ) ) $=
+        ( vi cress co crg wcel cmn1 cfv cuc1p csubrg eqid subrgring syl cin cv1
+        c2 cmgp cmg cvsca cascl cplusg csg ply1ring ringgrpd mgpbas ringmgp cn0
+        cmnd 2nn0 a1i subrgvr1cl mulgnn0cld csca cbs ply1lmod wceq subrgbas cvv
+        clmod ovex ply1sca fveq2i eqtrdi eleqtrd lmodvscld ressasclcl grpsubcld
+        ax-mp grpcld eqeltrid cpl1 c0g wne cco1 cur cps1 ressply1bas2 crngringd
+        elin2d rngunsnply1chr2lem1 eqeltrdi deg1nn0clb biimpar syl21anc fveq12d
+        coe1subfv syl31anc subrgvr1 syl2anc oveq2d fveq2d fveq1d syl3anc eqtr3d
+        wa c1 eqtr4d cc0 oveq12d 3eqtrd eqeltrrd lmodvs1 subrg1 oveq1d subrg1cl
+        3eqtr4d coe1tmfv1 coe1addfv wss grpmndd csubg subrgsubg subg0cl subrgss
+        ress0g 1nn0 1ne2 coe1tmfv2 mulg1 3eqtr2rd cv cmpt coe1scl simpr eqnetrd
+        cif 2ne0 neneqd iffalsed adantr fvexd fvmptd ressplusg grpidcld grplidd
+        oveqd subgsub ringidcld grpsubid1 3eqtr2d syl3anbrc elind ressply1mon1p
+        cgrp ismon1p eleqtrrd mon1puc1p ) AHIVCVDZVEVFZOUWHVGVHZVFOUWHVIVHZVFAI
+        HVJVHZVFZUWIUGIHUWHUWHVKZVLVMZAOKHVGVHZVNUWJAKUWPOAOVPHVOVHZEVQVHZVRVHZ
+        VDZBUWQEVSVHZVDZCEVTVHZVHZEWAVHZVDZEWBVHZVDZKUSAKEUXGUWTUXFUCUXGVKZAEAU
+        WIEVEVFZUWOEUWHUBWCVMZWDZAKUWSUWRVPUWQKEUWRUWRVKZUCWEZUWSVKZAUXJUWRWHVF
+        UXKEUWRUXMWFVMZVPWGVFZAWIWJZAKHIEUWHUWQUWQVKZUGUWNUBUCWKZWLZAKUXEEUXBUX
+        DUCUXEVKZUXLABUXAEWMVHZUYCWNVHZKEUWQUCUYCVKZUXAVKZUYDVKAUWIEWSVFZUWOEUW
+        HUBWOVMZABIUYDUNAIUWHWNVHZUYDAUWMIUYIWPUGIHUWHUWNWQVMZUWHUYCWNUWHWRVFUW
+        HUYCWPHIVCWTEUWHWRUBXAXHZXBXCXDUXTXEZAUXCKIHUWHECUBUWNUXCVKZUCUEUGUOXFZ
+        XIZXGXJZAOHXKVHZWNVHZVFZOUYQXLVHZXMZODVHZOXNVHZVHZHXOVHZWPOUWPVFAUWHXPV
+        HZWNVHZUYROAOKVUGUYRVNUYPAKVUGHUYQIEUWHUYRVUFUYQVKZUWNUBUCUGVUFVKVUGVKU
+        YRVKZXQXDXSZAHVEVFZUYSVUBWGVFZVUAAHUEXRZVUJAVUBVPWGABCDEFGHIJKLMNOPQRST
+        UAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURUSUTVAXTZWIYAVUKUYSYOVUAVULUYRDUYQH
+        OUYTUQVUHUYTVKZVUIYBYCYDAVUDVPUXHXNVHZVHZVPUWTXNVHZVHZVPUXFXNVHVHZUWHWB
+        VHZVDZVUEAVUBVPVUCVUPVUCVUPWPAOUXHXNUSXBWJVUNYEAUWIUWTKVFUXFKVFUXQVUQVV
+        BWPUWOUYAUYOUXRKUWHUWTUXFUXGVVAVPEUBUCUXIVVAVKZYFYGAVVBVUEHXLVHZVVAVDZV
+        UEVVDHWBVHZVDZVUEAVUSVUEVUTVVDVVAAVPVUEVPUWHVOVHZUWSVDZUXAVDZXNVHZVHZVU
+        SVUEAVPVVKVURAVVJUWTXNAUYCXOVHZVVIUXAVDZVVIVVJUWTAUYGVVIKVFVVNVVIWPUYHA
+        KUWSUWRVPVVHUXNUXOUXPUXRAUWQVVHKAHIUWHUWQUXSUGUWNYHZUXTUUAZWLUXAVVMUYCK
+        EVVIUCUYEUYFVVMVKUUBYIAVUEVVMVVIUXAAVUEUWHXOVHZVVMAUWMVUEVVQWPUGIHUWHVU
+        EUWNVUEVKZUUCVMUWHUYCXOUYKXBXCUUDAUWQVVHVPUWSVVOYJUUFYKYLAUWIVUEUYIVFUX
+        QVVLVUEWPUWOAVUEIUYIAUWMVUEIVFZUGIHVUEVVRUUEVMZUYJXDUXRVUEVPEUWHUXAUWSU
+        YIUWRVVHUWHXLVHZVWAVKZUYIVKZUBVVHVKZUYFUXMUXOUUGYMYNAVUTVPUXBXNVHZVHZVP
+        UXDXNVHZVHZUWHWAVHZVDZVVDVVDVWIVDZVVDAUWIUXBKVFUXDKVFUXQVUTVWJWPUWOUYLU
+        YNUXRKVWIUXEUWHUXBUXDVPEUBUCUYBVWIVKUUHYGAVWFVVDVWHVVDVWIAVVDVWAVPBYPVV
+        HUWSVDZUXAVDZXNVHZVHVWFAHWHVFVVDIVFZIRUUIZVVDVWAWPZAHAHVUMWDZUUJAIHUUKV
+        HVFZVWOAUWMVWSUGIHUULVMZIHVVDVVDVKZUUMVMZAUWMVWPUGIRHUAUUNVMIRHUWHVVDUW
+        NUAVXAUUOYMZABYPEUWHUXAUWSVPUYIUWRVVHVWAVWBVWCUBVWDUYFUXMUXOUWOABIUYIUN
+        UYJXDYPWGVFAUUPWJUXRYPVPXMAUUQWJUURAVPVWNVWEAVWMUXBXNAVWLUWQBUXAAVWLVVH
+        UWQAVVHKVFVWLVVHWPVVPKUWSUWRVVHUXNUXOUUSVMVVOYQYJYKYLUUTAVBVPVBUVAZYRWP
+        ZCVWAUVFZVVDWGVWGWRAUWICUYIVFVWGVBWGVXFUVBWPUWOACIUYIUOUYJXDVBUXCEUWHUY
+        ICVWAUBUYMVWCVWBUVCYIAVXDVPWPZYOZVXFVWAVVDVXHVXECVWAVXHVXDYRVXHVXDVPYRA
+        VXGUVDVPYRXMVXHUVGWJUVEUVHUVIAVWQVXGVXCUVJYQUXRAHXLUVKUVLYSAVVDVVDFVDVW
+        KVVDAFVWIVVDVVDAUWMFVWIWPUGIFHUWHUWLUWNUKUVMVMUVPARFHVVDVVDUAUKVXAVWRAR
+        HVVDUAVXAVWRUVNUVOYNYTYSAVWSVVSVWOVVGVVEWPVWTVVTVXBIHUWHVVFVVAVUEVVDVVF
+        VKZUWNVVCUVQYMAHUWDVFVUERVFVVGVUEWPVWRARHVUEUAVVRVUMUVRRHVVFVUEVVDUAVXA
+        VXIUVSYIUVTYTUYRDUYQHVUEOUWPUYTVUHVUIVUOUQUWPVKZVVRUWEUWAUWBAKHUYQIEUWH
+        UWPUWJVUHUWNUBUCUGVXJUWJVKZUWCUWFUWKUWHUWJOUWKVKVXKUWGYI $.
+
+      $d .^ x $.  $d B i p $.  $d B i x $.  $d F x $.  $d N p $.  $d P i $.
+      $d P p $.  $d P x $.  $d Q i $.  $d Q p $.  $d Q x $.  $d R i $.
+      $d R p $.  $d R x $.  $d S a b $.  $d S i $.  $d S p $.  $d S x $.
+      $d U i $.  $d U p $.  $d U x $.  $d V p $.  $d X i $.  $d X p $.
+      $d X x $.  $d i ph $.  $d ph x $.
+      $( Lemma for rngunsnply1chr2 .  (Contributed by Thierry Arnoux,
+         8-Nov-2026.) $)
+      rngunsnply1chr2lem3 $p |- ( ph -> ( ( D ` H ) <_ 1
+                                /\ ( ( Q ` H ) ` X ) = ( ( Q ` F ) ` X ) ) ) $=
+        ( cfv c1 cle wbr wceq cress cdg1 fveq2i eqid crg cuc1p csubrg subrgring
+        co wcel syl rngunsnply1chr2lem2 r1pcl syl3anc ressdeg1 eqtrid cn0 caddc
+        cmnf wa clt simpr 1nn0 a1i r1pdeglt adantr c2 1p1e2 rngunsnply1chr2lem1
+        uc1pcl eqtr3d eqtr4id breqtrrd nn0leltp1 biimpar syl21anc cxr 1xr mnfle
+        ax-mp eqbrtrdi csn cun wo deg1cl cvv fvex elunsn sylib mpjaodan eqbrtrd
+        wb cq1p cmulr cplusg c0g ply1ring evls1addd cv1 cmgp fveq1i mgpbas cmnd
+        csg ringmgp mulgnn0cld cbs fveq2d fveq1d 3eqtrd eqtrd oveq12d evls1fvcl
+        oveq2d q1pcl ringcld evls1muld cmg cvsca cascl 2nn0 subrgvr1cl ringgrpd
+        csca ply1lmod subrgbas ovex ply1sca eqtrdi eleqtrd lmodvscld ressasclcl
+        clmod grpcld evls1subd evls1expd cid subrgvr1 evls1var fvresi evls1vsca
+        cres evls1scafv cgrp crnggrpd crngringd eqeltrrd w3a grpsubeq0 syl31anc
+        ringrzd oveq1d grplidd r1pid 3eqtr4rd jca ) APDVBZVCVDVESPGVBZVBZSNGVBZ
+        VBZVFAUWCNOLVOZHIVGVOZVHVBZVBZVCVDAUWCUWHDVBUWKPUWHDUTVIAKDUWHHIEUWIUWI
+        VJZUQUBUCAUWIVKVPZNKVPZOUWIVLVBZVPZUWHKVPZAIHVMVBVPZUWMUGIHUWIUWLVNVQZV
+        AABCDEFGHIJKLMNOPQRSTUAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURUSUTVAVRZKUWOE
+        UWILNOURUBUCUWOVJZVSVTZUGWAWBAUWKWCVPZUWKVCVDVEZUWKWEVFZAUXCWFZUXCVCWCV
+        PZUWKVCVCWDVOZWGVEZUXDAUXCWHUXGUXFWIWJUXFUWKOUWJVBZUXHWGAUWKUXJWGVEZUXC
+        AUWMUWNUWPUXKUWSVAUWTKUWOUWJEUWILNOURUBUCUXAUWJVJZWKVTWLAUXHUXJVFUXCAUX
+        HWMUXJWNAODVBUXJWMAKDOHIEUWIUWLUQUBUCAUWPOKVPUWTKUWOEUWIOUBUCUXAWPVQZUG
+        WAABCDEFGHIJKLMNOPQRSTUAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURUSUTVAWOWQWRW
+        LWSUXCUXGWFUXDUXIUWKVCWTXAXBAUXEWFUWKWEVCVDAUXEWHVCXCVPWEVCVDVEXDVCXEXF
+        XGAUWKWCWEXHXIVPZUXCUXEXJZAUWQUXNUXBKUWJEUWIUWHUXLUBUCXKVQUWKXLVPUXNUXO
+        XRUWHUWJXMUWKWCWEXLXNXFXOXPXQASNOUWIXSVBZVOZOEXTVBZVOZUWHEYAVBZVOZGVBZV
+        BZSUWHGVBZVBZUWGUWEAUYCSUXSGVBVBZUYEFVOHYBVBZUYEFVOUYEAKSFUXTGIHUWIRUXS
+        UWHEUDUAUBUWLUCUXTVJZUKUEUGAKEUXRUXQOUCUXRVJZAUWMEVKVPZUWSEUWIUBYCVQZAU
+        WMUWNUWPUXQKVPUWSVAUWTKUWOEUXPUWINOUXPVJZUBUCUXAUUAVTZUXMUUBUXBUHYDAUYF
+        UYGUYEFAUYFSUXQGVBVBZSOGVBZVBZJVOUYNUYGJVOUYGAKSGIHJUXRUWIRUXQOEUDUAUBU
+        WLUCUYIULUEUGUYMUXMUHUUCAUYPUYGUYNJAUYPSWMHYEVBZEYFVBZUUDVBZVOZBUYQEUUE
+        VBZVOZCEUUFVBZVBZUXTVOZEYJVBZVOZGVBZVBZSUYTGVBVBZSVUEGVBVBZHYJVBZVOZUYG
+        UYPVUIVFASUYOVUHOVUGGUSVIYGWJAKSVUFGIHUWIRUYTVULVUEEUDUAUBUWLUCVUFVJVUL
+        VJZUEUGAKUYSUYRWMUYQKEUYRUYRVJZUCYHUYSVJZAUYJUYRYIVPUYKEUYRVUOYKVQWMWCV
+        PAUUGWJZAKHIEUWIUYQUYQVJZUGUWLUBUCUUHZYLAKUXTEVUBVUDUCUYHAEUYKUUIABVUAE
+        UUJVBZVUTYMVBZKEUYQUCVUTVJVUAVJZVVAVJAUWMEUUSVPUWSEUWIUBUUKVQABIVVAUNAI
+        UWIYMVBZVVAAUWRIVVCVFUGIHUWIUWLUULVQUWIVUTYMUWIXLVPUWIVUTVFHIVGUUMEUWIX
+        LUBUUNXFVIUUOUUPVUSUUQZAVUCKIHUWIECUBUWLVUCVJZUCUEUGUOUURZUUTUHUVAAVUMW
+        MSMVOZBSJVOZCFVOZVULVOZUYGAVUJVVGVUKVVIVULAVUJWMSUYQGVBZVBZMVOVVGAKSGIH
+        UWIMRUYQUYSWMEUDUAUBUWLUCUEUGVUPUMVUQVUSUHUVBAVVLSWMMAVVLSUWIYEVBZGVBZV
+        BSUVCRUVHZVBZSASVVKVVNAUYQVVMGAHIUWIUYQVURUGUWLUVDYNYOASVVNVVOARGIHUWIV
+        VMUDVVMVJUWLUAUEUGUVEYOASRVPVVPSVFUHRSUVFVQYPZYTYQAVUKSVUBGVBVBZSVUDGVB
+        VBZFVOVVIAKSFUXTGIHUWIRVUBVUDEUDUAUBUWLUCUYHUKUEUGVVDVVFUHYDAVVRVVHVVSC
+        FAVVRBVVLJVOVVHABKSGIHJVUAUWIRUYQEUDUAUBUWLUCVVBULUEUGUNVUSUHUVGAVVLSBJ
+        VVQYTYQAVUCRSGIHUWIECUDUBUWLUAVVEUEUGUOUHUVIYRYQYRAHUVJVPZVVGRVPZVVIRVP
+        ZVVGVVIVFZVVJUYGVFZAHUEUVKZARMHYFVBZWMSRHVWFVWFVJZUAYHUMAHVKVPVWFYIVPAH
+        UEUVLZHVWFVWGYKVQVUQUHYLZAVVGVVIRUPVWIUVMUPVVTVWAVWBUVNVWDVWCRHVULVVGVV
+        IUYGUAUYGVJZVUNUVOXAUVPYQYPYTARHJUYNUYGUAULVWJVWHAREHIKUXQGSUDUBUAUCUEU
+        GUHUYMYSUVQYPUVRARFHUYEUYGUAUKVWJVWEAREHIKUWHGSUDUBUAUCUEUGUHUXBYSUVSYP
+        ASUWFUYBANUYAGAUWMUWNUWPNUYAVFUWSVAUWTKUWOEUXTUXPUWIUXRLNOUBUCUXAUYLURU
+        YIUYHUVTVTYNYOUWEUYEVFASUWDUYDPUWHGUTVIYGWJUWAUWB $.
+    $}
+
+    $d .+ a b p $.  $d .^ x $.  $d .x. a b p $.  $d A a b $.  $d B a b p $.
+    $d B i p x $.  $d N p $.  $d P a b p $.  $d P i p x $.  $d Q i $.
+    $d Q p $.  $d Q x $.  $d R a b p $.  $d R i p x $.  $d S a b p $.
+    $d S i p x $.  $d U i $.  $d U p $.  $d U x $.  $d V i $.  $d V p $.
+    $d V x $.  $d X a b p $.  $d X i p x $.  $d Y a b p $.  $d i ph $.
+    $d p ph $.  $d ph x $.
+    $( When adjoining an element ` X ` with characteristic polynomial of degree
+       2 to a subring ` S ` , the elements ` Y ` of the generated subring can
+       be written as a linear form.  (Contributed by Thierry Arnoux,
+       8-Nov-2026.) $)
+    rngunsnply1chr2 $p |- ( ph -> E. a e. S E. b e. S Y = ( ( a .x. X ) .+ b )
+       ) $=
+      ( vp cv cfv wceq co wrex wcel wa c1 cv1 cmgp cmg cvsca cascl cplusg cress
+      csg cr1p cco1 cc0 oveq1 oveq1d eqeq2d oveq2 cbs cn0 crg cuc1p csubrg eqid
+      c2 subrgring syl adantr simpr cdg1 ccrg csn cun rngunsnply1chr2lem2 r1pcl
+      cnzr syl3anc coe1fvalcl sylancl subrgbas eleqtrrd cle rngunsnply1chr2lem3
+      1nn0 wbr simprd simpld evls1degle1 3eqtr2d 2rspcedvdw rngunsnply1 r19.29a
+      0nn0 mpbid ) AONUNUOZFUPUPZUQZOPUOZNIURZQUOZEURZUQZQHUSPHUSUNJAXNJUTZVAZX
+      PVAZYAOVBXNWDGVCUPZDVDUPVEUPURBYEDVFUPURCDVGUPUPDVHUPURDVJUPURZGHVIURZVKU
+      PZURZVLUPZUPZNIURZXSEURZUQOYLVMYJUPZEURZUQPQYKYNHHXQYKUQZXTYMOYPXRYLXSEXQ
+      YKNIVNVOVPXSYNUQYMYOOXSYNYLEVQVPYCYKHUTXPYCYKYGVRUPZHYCYIJUTZVBVSUTYKYQUT
+      YCYGVTUTZYBYFYGWAUPZUTYRAYSYBAHGWBUPUTZYSUDHGYGYGWCZWEWFWGAYBWHZYCBCGWIUP
+      ZDEFGHIJYHKXNYFYILMNORSTUAAGWJUTYBUBWGZAGWOUTYBUCWGZAUUAYBUDWGZANMUTYBUEW
+      GZAOHNWKWLLUPUTZYBUFWGZUGUHUIUJABHUTYBUKWGZACHUTYBULWGZAWDNKURBNIURCEURUQ
+      YBUMWGZUUDWCZYHWCZYFWCZYIWCZUUCWMJYTDYGYHXNYFUUOSTYTWCWNWPZXCYJJDYGYIYQVB
+      YJWCZTSYQWCZWQWRYCUUAHYQUQUUGHGYGUUBWSWFZWTWGYCYNHUTXPYCYNYQHYCYRVMVSUTYN
+      YQUTUURXLYJJDYGYIYQVMUUSTSUUTWQWRUVAWTWGYDOXONYIFUPUPZYOYCXPWHYCUVBXOUQZX
+      PYCYIUUDUPVBXAXDZUVCYCBCUUDDEFGHIJYHKXNYFYILMNORSTUAUUEUUFUUGUUHUUJUGUHUI
+      UJUUKUULUUMUUNUUOUUPUUQUUCXBZXEWGYCUVBYOUQXPYCYKYNYJUUDDEFGHIJYIMNSUARTUI
+      UHUUSUUNYKWCYNWCUUEUUGUURYCUVDUVCUVEXFUUHXGWGXHXIAUUIXPUNJUSUFAMDFGHJLONU
+      NRSTUAUBUDUEUGXJXMXK $.
   $}
 
 
@@ -517715,24 +519162,6 @@ $)
 
 
 $(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Restricted iota (description binder)
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
-  ${
-    $d ph x $.
-    riotaeqbidva.1 $e |- ( ph -> A = B ) $.
-    riotaeqbidva.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
-    $( Equivalent wff's yield equal restricted definition binders (deduction
-       form).  ( ~ raleqbidva analog.)  (Contributed by Thierry Arnoux,
-       29-Jan-2025.) $)
-    riotaeqbidva $p |- ( ph -> ( iota_ x e. A ps ) = ( iota_ x e. B ch ) ) $=
-      ( crio riotabidva riotaeqdv eqtrd ) ABDEICDEICDFIABCDEHJACDEFGKL $.
-  $}
-
-
-$(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   General Set Theory
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -523014,19 +524443,6 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
-  $( Split 0 and 1 from the nonnegative integers.  (Contributed by Thierry
-     Arnoux, 8-Jun-2025.) $)
-  nn0split01 $p |- NN0 = ( { 0 , 1 } u. ( ZZ>= ` 2 ) ) $=
-    ( cn0 cc0 cuz cfv c2 cfzo co cun c1 cpr nn0uz wcel wceq 2eluzge0 fzouzsplit
-    ax-mp fzo0to2pr uneq1i 3eqtri ) ABCDZBEFGZECDZHZBIJZUBHKETLTUCMNBEOPUAUDUBQ
-    RS $.
-
-  $( The pair ` { 0 , 1 } ` does not overlap the rest of the nonnegative
-     integers.  (Contributed by Thierry Arnoux, 8-Jun-2025.) $)
-  nn0disj01 $p |- ( { 0 , 1 } i^i ( ZZ>= ` 2 ) ) = (/) $=
-    ( cc0 c2 cfzo co cuz cfv cin c1 cpr c0 fzo0to2pr ineq1i fzouzdisj eqtr3i )
-    ABCDZBEFZGAHIZPGJOQPKLABMN $.
-
   ${
     $d w x y $.  $d x A $.  $d w ph $.  $d x ch $.  $d x ps $.  $d x ta $.
     $d x th $.
@@ -526463,14 +527879,6 @@ $)
   $}
 
   ${
-    lmhmghmd.1 $e |- ( ph -> F e. ( S LMHom T ) ) $.
-    $( A module homomorphism is a group homomorphism.  (Contributed by Thierry
-       Arnoux, 2-Apr-2025.) $)
-    lmhmghmd $p |- ( ph -> F e. ( S GrpHom T ) ) $=
-      ( clmhm co wcel cghm lmghm syl ) ADBCFGHDBCIGHEBCDJK $.
-  $}
-
-  ${
     $d .+ p q $.  $d .+^ a b p q $.  $d B a b p q $.  $d C p q $.
     $d F a b p q $.  $d V p q $.  $d X p $.  $d Y p q $.  $d a b p ph q $.
     mhmimasplusg.w $e |- W = ( F "s V ) $.
@@ -526531,16 +527939,6 @@ $(
 $)
 
   ${
-    grpidcld.1 $e |- B = ( Base ` G ) $.
-    grpidcld.2 $e |- .0. = ( 0g ` G ) $.
-    grpidcld.3 $e |- ( ph -> G e. Grp ) $.
-    $( The identity element of a group belongs to the group.  (Contributed by
-       Thierry Arnoux, 4-May-2026.) $)
-    grpidcld $p |- ( ph -> .0. e. B ) $=
-      ( cgrp wcel grpidcl syl ) ACHIDBIGBCDEFJK $.
-  $}
-
-  ${
     grpinvinvd.1 $e |- B = ( Base ` G ) $.
     grpinvinvd.2 $e |- N = ( invg ` G ) $.
     grpinvinvd.3 $e |- ( ph -> G e. Grp ) $.
@@ -526549,18 +527947,6 @@ $)
        15-Feb-2026.) $)
     grpinvinvd $p |- ( ph -> ( N ` ( N ` X ) ) = X ) $=
       ( cgrp wcel cfv wceq grpinvinv syl2anc ) ACJKEBKEDLDLEMHIBCDEFGNO $.
-  $}
-
-  ${
-    grpsubcld.b $e |- B = ( Base ` G ) $.
-    grpsubcld.m $e |- .- = ( -g ` G ) $.
-    grpsubcld.g $e |- ( ph -> G e. Grp ) $.
-    grpsubcld.x $e |- ( ph -> X e. B ) $.
-    grpsubcld.y $e |- ( ph -> Y e. B ) $.
-    $( Closure of group subtraction.  (Contributed by Thierry Arnoux,
-       3-Aug-2025.) $)
-    grpsubcld $p |- ( ph -> ( X .- Y ) e. B ) $=
-      ( cgrp wcel co grpsubcl syl3anc ) ACLMEBMFBMEFDNBMIJKBCDEFGHOP $.
   $}
 
   ${
@@ -527125,39 +528511,6 @@ $)
       OJCUOZYTZCAUYOUYQVDZUXRAUVPUYPVDUYRAUXIUVPUYPUXKAUWOCJTUUQXNUVPUYPUVAUVBV
       CJCUURUUSUUTUVCUVDUVEYRUVFBUAJUWHUXQUAUWHYPBGUXPUCBGYPBUCYPBFUXOBFYPUYAUV
       GUVKUYMUWGUXPGUCUYMEUXOFUYBUVHYRUVIUVJYRUVL $.
-  $}
-
-  ${
-    $d B k $.  $d C k $.  $d D k $.  $d E k $.  $d G k $.  $d M k $.  $d N k $.
-    $d O k $.  $d V k $.  $d W k $.  $d k ph $.
-    gsumtp.b $e |- B = ( Base ` G ) $.
-    gsumtp.p $e |- .+ = ( +g ` G ) $.
-    gsumtp.s $e |- ( k = M -> A = C ) $.
-    gsumtp.t $e |- ( k = N -> A = D ) $.
-    gsumtp.u $e |- ( k = O -> A = E ) $.
-    gsumtp.1 $e |- ( ph -> G e. CMnd ) $.
-    gsumtp.2 $e |- ( ph -> M e. V ) $.
-    gsumtp.3 $e |- ( ph -> N e. W ) $.
-    gsumtp.4 $e |- ( ph -> O e. X ) $.
-    gsumtp.5 $e |- ( ph -> M =/= N ) $.
-    gsumtp.6 $e |- ( ph -> N =/= O ) $.
-    gsumtp.7 $e |- ( ph -> M =/= O ) $.
-    gsumtp.8 $e |- ( ph -> C e. B ) $.
-    gsumtp.9 $e |- ( ph -> D e. B ) $.
-    gsumtp.10 $e |- ( ph -> E e. B ) $.
-    $( Group sum of an unordered triple.  (Contributed by Thierry Arnoux,
-       22-Jun-2025.) $)
-    gsumtp $p |- ( ph -> ( G gsum ( k e. { M , N , O } |-> A ) )
-                        = ( ( C .+ D ) .+ E ) ) $=
-      ( ctp cmpt cgsu co cpr csn cfn wcel tpfi a1i wceq adantl ad2antrr eqeltrd
-      cv wa w3o eltpi mpjao3dan wne cin disjprsn syl2anc df-tp gsummptfidmsplit
-      c0 cun ccmn gsumpr syl132anc cmnmndd gsumsnd oveq12d eqtrd ) AIGJKLUKZBUL
-      UMUNIGJKUOZBULUMUNZIGLUPZBULUMUNZFUNDEFUNZHFUNAWECWFWHFGIBPQUAWEUQURAJKLU
-      SUTAGVEZWEURZVFZWKJVAZBCURWKKVAZWKLVAZWMWNVFBDCWNBDVAWMRVBADCURZWLWNUHVCV
-      DWMWOVFBECWOBEVAWMSVBAECURZWLWOUIVCVDWMWPVFBHCWPBHVAZWMTVBAHCURWLWPUJVCVD
-      WLWNWOWPVGAWKJKLVHVBVIAJLVJKLVJWFWHVKVPVAUGUFJKLVLVMWEWFWHVQVAAJKLVNUTVOA
-      WGWJWIHFAIVRURJMURKNURJKVJWQWRWGWJVAUAUBUCUEUHUIBCDEFGIJKMNPQRSVSVTABCHGI
-      LOPAIUAWAUDUJWPWSATVBWBWCWD $.
   $}
 
   ${
@@ -531543,17 +532896,6 @@ $)
   $}
 
   ${
-    subrgmcld.1 $e |- .x. = ( .r ` R ) $.
-    subrgmcld.2 $e |- ( ph -> A e. ( SubRing ` R ) ) $.
-    subrgmcld.3 $e |- ( ph -> X e. A ) $.
-    subrgmcld.4 $e |- ( ph -> Y e. A ) $.
-    $( A subring is closed under multiplication.  (Contributed by Thierry
-       Arnoux, 6-Jul-2025.) $)
-    subrgmcld $p |- ( ph -> ( X .x. Y ) e. A ) $=
-      ( csubrg cfv wcel co subrgmcl syl3anc ) ABCKLMEBMFBMEFDNBMHIJBCDEFGOP $.
-  $}
-
-  ${
     $d x .1. $.  $d x A $.  $d x B $.  $d x R $.  $d x S $.
     ress1r.s $e |- S = ( R |`s A ) $.
     ress1r.b $e |- B = ( Base ` R ) $.
@@ -535095,303 +536437,6 @@ $)
   $}
 
   ${
-    ${
-      eqgvscpbl.v $e |- B = ( Base ` M ) $.
-      eqgvscpbl.e $e |- .~ = ( M ~QG G ) $.
-      eqgvscpbl.s $e |- S = ( Base ` ( Scalar ` M ) ) $.
-      eqgvscpbl.p $e |- .x. = ( .s ` M ) $.
-      eqgvscpbl.m $e |- ( ph -> M e. LMod ) $.
-      eqgvscpbl.g $e |- ( ph -> G e. ( LSubSp ` M ) ) $.
-      eqgvscpbl.k $e |- ( ph -> K e. S ) $.
-      $( The left coset equivalence relation is compatible with the scalar
-         multiplication operation.  (Contributed by Thierry Arnoux,
-         18-May-2023.) $)
-      eqgvscpbl $p |- ( ph -> ( X .~ Y -> ( K .x. X ) .~ ( K .x. Y ) ) ) $=
-        ( wcel cfv co cminusg cplusg w3a wbr wa clmod adantr csca eqid lmodvscl
-        simpr1 syl3anc simpr2 wceq ad2antrr lmodgrp syl simplr grpinvcl syl2anc
-        cgrp simpr lmodvsdi syl13anc lmodvsinv2 oveq1d eqtrd anasss clss simpr3
-        3adantr3 lssvscl syl22anc eqeltrrd 3jca ex wss wb lsssubg subgss eqgval
-        csubg 3imtr4d ) AIBRZJBRZIHUASZSZJHUBSZTZFRZUCZGIETZBRZGJETZBRZWLWFSZWN
-        WHTZFRZUCZIJCUDZWLWNCUDZAWKWSAWKUEZWMWOWRXBHUFRZGDRZWDWMAXCWKOUGZAXDWKQ
-        UGZAWDWEWJUKGEHUHSZDBHIKXGUIZNMUJULXBXCXDWEWOXEXFAWDWEWJUMGEXGDBHJKXHNM
-        UJULXBGWIETZWQFAWDWEXIWQUNZWJAWDWEXJAWDUEZWEUEZXIGWGETZWNWHTZWQXLXCXDWG
-        BRZWEXIXNUNAXCWDWEOUOZAXDWDWEQUOZXLHVARZWDXOXLXCXRXPHUPZUQAWDWEURZBHWFI
-        KWFUIZUSUTXKWEVBWHGEXGDBHWGJKWHUIZXHNMVCVDXLXMWPWNWHXLXCXDWDXMWPUNXPXQX
-        TBGEXGDWFHIKXHNYAMVEULVFVGVHVKXBXCFHVISZRZXDWJXIFRXEAYDWKPUGXFAWDWEWJVJ
-        DYCEFXGHGWIXHNMYCUIZVLVMVNVOVPAXRFBVQZWTWKVRAXCXROXSUQZAFHWBSRZYFAXCYDY
-        HOPYCFHYEVSUTBFHKVTUQZIJWHCFHWFVABKYAYBLWAUTAXRYFXAWSVRYGYIWLWNWHCFHWFV
-        ABKYAYBLWAUTWC $.
-
-      qusvsval.n $e |- N = ( M /s ( M ~QG G ) ) $.
-      qusvsval.m $e |- .xb = ( .s ` N ) $.
-      ${
-        $d B x $.  $d G x $.  $d K x $.  $d M x $.  $d U x $.  $d V x $.
-        $d ph x $.  $d .x. x $.
-        qusvscpbl.f $e |- F = ( x e. B |-> [ x ] ( M ~QG G ) ) $.
-        qusvscpbl.u $e |- ( ph -> U e. B ) $.
-        qusvscpbl.v $e |- ( ph -> V e. B ) $.
-        $( The quotient map distributes over the scalar multiplication.
-           (Contributed by Thierry Arnoux, 18-May-2023.) $)
-        qusvscpbl $p |- ( ph -> ( ( F ` U ) = ( F ` V )
-            -> ( F ` ( K .x. U ) ) = ( F ` ( K .x. V ) ) ) ) $=
-          ( cqg co cec wceq cfv wbr eqid eqgvscpbl csubg wcel wer clmod lsssubg
-          clss syl2anc eqger syl erth csca lmodvscl syl3anc 3imtr3d cv cvv ovex
-          eceq1 ecexg ax-mp fvmpt eqeq12d 3imtr4d ) AHLJUGUHZUIZNVRUIZUJZKHGUHZ
-          VRUIZKNGUHZVRUIZUJZHIUKZNIUKZUJWBIUKZWDIUKZUJAHNVRULWBWDVRULWAWFACVRE
-          GJKLHNOVRUMZQRSTUAUNAHNVRCAJLUOUKUPZCVRUQALURUPZJLUTUKZUPWLSTWNJLWNUM
-          USVAVRLCJOWKVBVCZUEVDAWBWDVRCWOAWMKEUPZHCUPZWBCUPZSUAUEKGLVEUKZECLHOW
-          SUMZRQVFVGZVDVHAWGVSWHVTAWQWGVSUJUEBHBVIZVRUIZVSCIXBHVRVLUDVRVJUPZVSV
-          JUPLJUGVKZHVJVRVMVNVOVCANCUPZWHVTUJUFBNXCVTCIXBNVRVLUDXDVTVJUPXENVJVR
-          VMVNVOVCVPAWIWCWJWEAWRWIWCUJXABWBXCWCCIXBWBVRVLUDXDWCVJUPXEWBVJVRVMVN
-          VOVCAWDCUPZWJWEUJAWMWPXFXGSUAUFKGWSECLNOWTRQVFVGBWDXCWECIXBWDVRVLUDXD
-          WEVJUPXEWDVJVRVMVNVOVCVPVQ $.
-      $}
-
-      ${
-        $d ph k u v x $.  $d B k u v x $.  $d M k u v x $.  $d G k u v x $.
-        $d S k u v x $.  $d .x. k v x $.  $d .xb k u v $.  $d K k x $.
-        $d X k u v x $.
-        qusvsval.x $e |- ( ph -> X e. B ) $.
-        $( Value of the scalar multiplication operation on the quotient
-           structure.  (Contributed by Thierry Arnoux, 18-May-2023.) $)
-        qusvsval $p |- ( ph
-              -> ( K .xb [ X ] ( M ~QG G ) ) = [ ( K .x. X ) ] ( M ~QG G ) ) $=
-          ( vx vv vk vu cv cqg co cec cmpt cfv wcel wceq cqs csca clmod cvv a1i
-          cqus cbs eqid ovex qusval quslem w3a adantr clss simpr1 simpr2 simpr3
-          wa qusvscpbl imasvscaval mpd3an23 eceq1 ecexg ax-mp fvmpt syl syl3anc
-          oveq2d lmodvscl 3eqtr3d ) AHKUBBUBUFZIGUGUHZUIZUJZUKZEUHZHKFUHZWGUKZH
-          KWEUIZEUHWJWEUIZAHDULZKBULZWIWKUMRUAABWEUNIEFJWGIUOUKZDBHKUPUCUDUEAUB
-          WEIJWGBUQUPJIWEUSUHUMASURZBIUTUKUMALURZWGVAZWEUQULZAIGUGVBZURZPVCWRAU
-          BWEIJWGBUQUPWQWRWSXBPVDPWPVAZNOTAUDUFZDULZUEUFZBULZUCUFZBULZVEZVKUBBC
-          DEFXFWGGXDIJXHLMNOAIUPULZXJPVFAGIVGUKULXJQVFAXEXGXIVHSTWSAXEXGXIVIAXE
-          XGXIVJVLVMVNAWHWLHEAWOWHWLUMUAUBKWFWLBWGWDKWEVOWSWTWLUQULXAKUQWEVPVQV
-          RVSWAAWJBULZWKWMUMAXKWNWOXLPRUAHFWPDBIKLXCONWBVTUBWJWFWMBWGWDWJWEVOWS
-          WTWMUQULXAWJUQWEVPVQVRVSWC $.
-      $}
-    $}
-  $}
-
-  ${
-    $d B b k p q u v w x y z $.  $d F a b k p q u x y z $.  $d .+ b k p q $.
-    $d M b k p q u v w x z $.  $d N a b k p q u v w x y z $.  $d .0. p q $.
-    $d S a b k u v w y z $.  $d V a b k p q u x y z $.  $d .x. b k p q u $.
-    $d ph a b k p q u v w x y z $.
-    imaslmod.u $e |- ( ph -> N = ( F "s M ) ) $.
-    imaslmod.v $e |- V = ( Base ` M ) $.
-    imaslmod.k $e |- S = ( Base ` ( Scalar ` M ) ) $.
-    imaslmod.p $e |- .+ = ( +g ` M ) $.
-    imaslmod.t $e |- .x. = ( .s ` M ) $.
-    imaslmod.o $e |- .0. = ( 0g ` M ) $.
-    imaslmod.f $e |- ( ph -> F : V -onto-> B ) $.
-    imaslmod.e1 $e |- ( ( ph /\ ( a e. V /\ b e. V ) /\ ( p e. V /\ q e. V ) )
-      -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
-        -> ( F ` ( a .+ b ) ) = ( F ` ( p .+ q ) ) ) ) $.
-    imaslmod.e2 $e |- ( ( ph /\ ( k e. S /\ a e. V /\ b e. V ) )
-      -> ( ( F ` a ) = ( F ` b )
-        -> ( F ` ( k .x. a ) ) = ( F ` ( k .x. b ) ) ) ) $.
-    imaslmod.l $e |- ( ph -> M e. LMod ) $.
-    $( The image structure of a left module is a left module.  (Contributed by
-       Thierry Arnoux, 15-May-2023.) $)
-    imaslmod $p |- ( ph -> N e. LMod ) $=
-      ( vu vv vw vz vy vx cplusg cfv csca cvsca cmulr cur clmod cbs a1i imasbas
-      wceq eqidd eqid imassca wcel crg lmodring syl cgrp lmodgrp imasgrp simpld
-      c0g cv adantr simprl simprr lmodvscl syl3anc imasvscaf fovcld w3a simp-5l
-      wa co simpllr simp1d ad2antrr simplr simp-4r grpcl imasvscaval imasaddval
-      simpr oveq12d eqtr3d oveq2d lmodvsdi syl13anc fveq2d 3eqtr3d 3eqtr2d wrex
-      simplll simp2d wfn crn fofn forn eleqtrrd fvelrnb biimpa syl2an2r syl2anc
-      wfo r19.29a 3ad2antr3 ad3antrrr lmodacl lmodvsdir lmodmcl lmodvsass eqtrd
-      3eqtr4rd ringidcl lmodvs1 islmodd ) AUFUGUHDIULUMZHUNUMZULUMZIUOUMZYJUPUM
-      ZYJUQUMZYJBIABHIGJURPJHUSUMVBAQUTZUBUEVAAYIVCABHIGYJJURPYOUBUEYJVDZVEAYLV
-      CDYJUSUMVBARUTAYKVCAYMVCAYNVCAHURVFZYJVGVFZUEYJHYPVHVIZAIVJVFKGUMIVNUMVBA
-      BCHIGJKLMNOPYOCHULUMVBASUTUBUCAYQHVJVFZUEHVKVIZUAVLVMAUFVOZUGVOZBDBYLABHY
-      LEIGYJDJUROFNPYOUBUEYPRTYLVDZUDAFVOZDVFZOVOZJVFZWEZWEYQUUFUUHUUEUUGEWFJVF
-      AYQUUIUEVPAUUFUUHVQAUUFUUHVRUUEEYJDJHUUGQYPTRVSVTWAWBAUUBDVFZUUCBVFZUHVOZ
-      BVFZWCZWEZUIVOZGUMZUULVBZUUBUUCUULYIWFZYLWFZUUBUUCYLWFZUUBUULYLWFZYIWFZVB
-      ZUIJUUOUUPJVFZWEZUURWEZUJVOZGUMZUUCVBZUVDUJJUVGUVHJVFZWEZUVJWEZUUTUUBUVHE
-      WFZUUBUUPEWFZCWFZGUMZUVNGUMZUVOGUMZYIWFZUVCUVMUUBUVHUUPCWFZGUMZYLWFZUUBUW
-      AEWFZGUMZUUTUVQUVMAUUJUWAJVFZUWCUWEVBAUUNUVEUURUVKUVJWDZUVGUUJUVKUVJUVGUU
-      JUUKUUMAUUNUVEUURWGZWHWIZUVMYTUVKUVEUWFUVMAYTUWGUUAVIUVGUVKUVJWJZUUOUVEUU
-      RUVKUVJWKZJCHUVHUUPQSWLVTABHYLEIGYJDJUUBUWAUROFNPYOUBUEYPRTUUDUDWMVTUVMUW
-      BUUSUUBYLUVMUVIUUQYIWFZUWBUUSUVMAUVKUVEUWLUWBVBUWGUWJUWKABHYICIGJUVHUUPUR
-      LMNOUBUCPYOUESYIVDZWNVTUVMUVIUUCUUQUULYIUVLUVJWOZUVFUURUVKUVJWGZWPWQWRUVM
-      UWDUVPGUVMYQUUJUVKUVEUWDUVPVBUVMAYQUWGUEVIZUWIUWJUWKCUUBEYJDJHUVHUUPQSYPT
-      RWSWTXAXBUVMAUVNJVFZUVOJVFZUVTUVQVBUWGUVMYQUUJUVKUWQUWPUWIUWJUUBEYJDJHUVH
-      QYPTRVSVTUVMYQUUJUVEUWRUWPUWIUWKUUBEYJDJHUUPQYPTRVSZVTABHYICIGJUVNUVOURLM
-      NOUBUCPYOUESUWMWNVTUVMUVRUVAUVSUVBYIUVMUUBUVIYLWFZUVRUVAUVMAUUJUVKUWTUVRV
-      BUWGUWIUWJABHYLEIGYJDJUUBUVHUROFNPYOUBUEYPRTUUDUDWMVTUVMUVIUUCUUBYLUWNWRW
-      QUVMUUBUUQYLWFZUVSUVBUVMAUUJUVEUXAUVSVBZUWGUWIUWKABHYLEIGYJDJUUBUUPUROFNP
-      YOUBUEYPRTUUDUDWMZVTUVMUUQUULUUBYLUWOWRWQWPXCUVGAUUKUVJUJJXDZAUUNUVEUURXE
-      UVGUUJUUKUUMUWHXFAGJXGZUUKUUCGXHZVFZUXDAJBGXPZUXEUBJBGXIVIZAUUKWEUUCBUXFA
-      UUKWOAUXFBVBZUUKAUXHUXJUBJBGXJVIZVPXKUXEUXGUXDUJJUUCGXLXMXNXOXQAUUJUUMUUR
-      UIJXDZUUKAUXEUUMUULUXFVFZUXLUXIAUUMWEUULBUXFAUUMWOAUXJUUMUXKVPXKUXEUXMUXL
-      UIJUULGXLXMXNZXRXQAUUJUUCDVFZUUMWCZWEZUURUUBUUCYKWFZUULYLWFZUVBUUCUULYLWF
-      ZYIWFZVBUIJUXQUVEWEZUURWEZUXRUUQYLWFZUXRUUPEWFZGUMZUXSUYAUYCAUXRDVFZUVEUY
-      DUYFVBAUXPUVEUURXEZUYCYQUUJUXOUYGAYQUXPUVEUURUEXSZUYCUUJUXOUUMAUXPUVEUURW
-      GZWHZUYCUUJUXOUUMUYJXFZYKYJDHUUBUUCYPRYKVDZXTVTUXQUVEUURWJZABHYLEIGYJDJUX
-      RUUPUROFNPYOUBUEYPRTUUDUDWMVTUYCUUQUULUXRYLUYBUURWOZWRUYCUYFUVOUUCUUPEWFZ
-      CWFZGUMZUVSUYPGUMZYIWFZUYAUYCUYEUYQGUYCYQUUJUXOUVEUYEUYQVBUYIUYKUYLUYNCYK
-      UUBUUCEYJDJHUUPQSYPTRUYMYAWTXAUYCAUWRUYPJVFZUYTUYRVBUYHUYCYQUUJUVEUWRUYIU
-      YKUYNUWSVTUYCYQUXOUVEVUAUYIUYLUYNUUCEYJDJHUUPQYPTRVSVTZABHYICIGJUVOUYPURL
-      MNOUBUCPYOUESUWMWNVTUYCUVSUVBUYSUXTYIUYCUXAUVSUVBUYCAUUJUVEUXBUYHUYKUYNUX
-      CVTUYCUUQUULUUBYLUYOWRWQUYCUUCUUQYLWFZUYSUXTUYCAUXOUVEVUCUYSVBUYHUYLUYNAB
-      HYLEIGYJDJUUCUUPUROFNPYOUBUEYPRTUUDUDWMVTZUYCUUQUULUUCYLUYOWRZWQWPXCXBAUU
-      JUUMUXLUXOUXNXRZXQUXQUURUUBUUCYMWFZUULYLWFZUUBUXTYLWFZVBUIJUYCVUHUUBVUCYL
-      WFZVUIUYCVUGUUQYLWFZVUGUUPEWFZGUMZVUHVUJUYCAVUGDVFZUVEVUKVUMVBUYHUYCYQUUJ
-      UXOVUNUYIUYKUYLYMYJDHUUBUUCYPRYMVDZYBVTUYNABHYLEIGYJDJVUGUUPUROFNPYOUBUEY
-      PRTUUDUDWMVTUYCUUQUULVUGYLUYOWRUYCUUBUYSYLWFZUUBUYPEWFZGUMZVUJVUMUYCAUUJV
-      UAVUPVURVBUYHUYKVUBABHYLEIGYJDJUUBUYPUROFNPYOUBUEYPRTUUDUDWMVTUYCVUCUYSUU
-      BYLVUDWRUYCVULVUQGUYCYQUUJUXOUVEVULVUQVBUYIUYKUYLUYNUUBUUCEYMYJDJHUUPQYPT
-      RVUOYCWTXAYEXBUYCVUCUXTUUBYLVUEWRYDVUFXQAUUBBVFZWEZUKVOZGUMZUUBVBZYNUUBYL
-      WFZUUBVBUKJVUTVVAJVFZWEZVVCWEZYNVVBYLWFZYNVVAEWFZGUMZVVDUUBVVGAYNDVFZVVEV
-      VHVVJVBAVUSVVEVVCXEAVVKVUSVVEVVCAYRVVKYSDYJYNRYNVDZYFVIXSVUTVVEVVCWJZABHY
-      LEIGYJDJYNVVAUROFNPYOUBUEYPRTUUDUDWMVTVVGVVBUUBYNYLVVFVVCWOZWRVVGVVJVVBUU
-      BVVGVVIVVAGVVGYQVVEVVIVVAVBAYQVUSVVEVVCUEXSVVMEYNYJJHVVAQYPTVVLYGXOXAVVNY
-      DXBAUXEVUSUUBUXFVFZVVCUKJXDZUXIVUTUUBBUXFAVUSWOAUXJVUSUXKVPXKUXEVVOVVPUKJ
-      UUBGXLXMXNXQYH $.
-  $}
-
-  ${
-    imasmhm.b $e |- B = ( Base ` W ) $.
-    imasmhm.f $e |- ( ph -> F : B --> C ) $.
-    imasmhm.1 $e |- .+ = ( +g ` W ) $.
-    imasmhm.2 $e |- ( ( ph /\ ( a e. B /\ b e. B ) /\ ( p e. B /\ q e. B ) )
-                   -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
-                     -> ( F ` ( a .+ b ) ) = ( F ` ( p .+ q ) ) ) ) $.
-
-    ${
-      $d .+ p q $.  $d B a b p q $.  $d B x y $.  $d F a b p q $.  $d F x y $.
-      $d W a b p q $.  $d W x y $.  $d a b p ph q $.  $d p x y $.  $d ph x y $.
-      $d q y $.
-      imasmhm.w $e |- ( ph -> W e. Mnd ) $.
-      $( Given a function ` F ` with homomorphic properties, build the image of
-         a monoid.  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-      imasmhm $p |- ( ph -> ( ( F "s W ) e. Mnd /\ F e. ( W MndHom ( F "s W ) )
-        ) ) $=
-        ( co cmnd wcel cfv eqid vx vy cimas cmhm c0g wceq cima eqidd cbs a1i wf
-        wfo fimadmfo syl imasmnd simpld cplusg fof feq3d mpbid cv wa imasaddval
-        imasbas 3expb eqcomd simprd ismhmd jca ) AEFUCPZQRZEFVJUDPRAVKFUESZESVJ
-        UESZUFZAEBUGZDFVJEBVLGHIJAVJUHZBFUISUFAKUJZMABCEUKBVOEULZLBCEUMUNZNOVLT
-        ZUOZUPZAUAUBBVJUISZDVJUQSZFVJEVLVMKWCTMWDTZVTVMTOWBABVOEUKZBWCEUKAVRWFV
-        SBVOEURUNAVOWCEBAVOFVJEBQVPVQVSOVDUSUTAUAVAZBRZUBVAZBRZVBVBWGESWIESWDPZ
-        WGWIDPESZAWHWJWKWLUFAVOFWDDVJEBWGWIQGHIJVSNVPVQOMWEVCVEVFAVKVNWAVGVHVI
-        $.
-    $}
-
-    ${
-      $d .+ p q y $.  $d .+ p x y $.  $d B a b p q $.  $d B x y $.
-      $d F a b p q $.  $d F x y $.  $d W a b p q $.  $d W x y $.
-      $d a b p ph q $.  $d ph x y $.
-      imasghm.w $e |- ( ph -> W e. Grp ) $.
-      $( Given a function ` F ` with homomorphic properties, build the image of
-         a group.  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-      imasghm $p |- ( ph -> ( ( F "s W ) e. Grp /\ F e. ( W GrpHom ( F "s W ) )
-        ) ) $=
-        ( co cgrp wcel cfv wceq vx cimas cghm c0g cima eqidd cbs a1i cplusg wfo
-        vy wf fimadmfo syl imasgrp simpld fof imasbas feq3d mpbid cv imasaddval
-        eqid wa 3expb eqcomd isghmd jca ) AEFUBPZQRZEFVIUCPRAVJFUDSZESVIUDSTAEB
-        UEZDFVIEBVKGHIJAVIUFZBFUGSTAKUHZDFUISTAMUHABCEULBVLEUJZLBCEUMUNZNOVKVCU
-        OUPZAUAUKDVIUISZFVIEBVIUGSZKVSVCMVRVCZOVQABVLEULZBVSEULAVOWAVPBVLEUQUNA
-        VLVSEBAVLFVIEBQVMVNVPOURUSUTAUAVAZBRZUKVAZBRZVDVDWBESWDESVRPZWBWDDPESZA
-        WCWEWFWGTAVLFVRDVIEBWBWDQGHIJVPNVMVNOMVTVBVEVFVGVH $.
-    $}
-
-    ${
-      $d .+ p q y $.  $d .+ p x y $.  $d .x. p q $.  $d B a b p q $.
-      $d B x y $.  $d F a b p q $.  $d F x y $.  $d W a b p q $.  $d W x y $.
-      $d a b p ph q $.  $d ph x y $.
-      imasrhm.3 $e |- .x. = ( .r ` W ) $.
-      imasrhm.4 $e |- ( ( ph /\ ( a e. B /\ b e. B ) /\ ( p e. B /\ q e. B ) )
-                     -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
-                       -> ( F ` ( a .x. b ) ) = ( F ` ( p .x. q ) ) ) ) $.
-      imasrhm.w $e |- ( ph -> W e. Ring ) $.
-      $( Given a function ` F ` with homomorphic properties, build the image of
-         a ring.  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-      imasrhm $p |- ( ph -> ( ( F "s W ) e. Ring /\ F e. ( W RingHom ( F "s W )
-        ) ) ) $=
-        ( co cfv vx vy cimas crg wcel crh cur wceq cima eqidd cbs eqid fimadmfo
-        a1i wf wfo syl imasring simpld cplusg cmulr simprd cv imasmulval eqcomd
-        wa 3expb fof imasbas feq3d mpbid imasaddval isrhmd jca ) AFGUCSZUDUEZFG
-        VOUFSUEAVPGUGTZFTVOUGTZUHZAFBUIZDGEVOVQFBHIJKAVOUJZBGUKTUHALUNZNPVQULZA
-        BCFUOBVTFUPZMBCFUMUQZOQRURZUSZAUAUBBVOUKTZDVOUTTZGVOEVOVATZVQFVRLWCVRUL
-        PWJULZRWGAVPVSWFVBAUAVCZBUEZUBVCZBUEZVFVFZWLFTZWNFTZWJSZWLWNESFTZAWMWOW
-        SWTUHAVTGWJEVOFBWLWNUDHIJKWEQWAWBRPWKVDVGVEWHULNWIULZABVTFUOZBWHFUOAWDX
-        BWEBVTFVHUQAVTWHFBAVTGVOFBUDWAWBWERVIVJVKWPWQWRWISZWLWNDSFTZAWMWOXCXDUH
-        AVTGWIDVOFBWLWNUDHIJKWEOWAWBRNXAVLVGVEVMVN $.
-    $}
-
-    $d .+ b k p q $.  $d .+ p x $.  $d .X. b k p q $.  $d B a $.
-    $d B b k p q $.  $d B u $.  $d B x $.  $d D u $.  $d D x $.  $d F a $.
-    $d F b k p q $.  $d F u $.  $d F x $.  $d K a $.  $d K b k x $.
-    $d K u x $.  $d W a $.  $d W b k p q $.  $d W u $.  $d W x $.
-    $d a b k p ph q $.  $d k u $.  $d ph u $.  $d ph x $.
-    imaslmhm.1 $e |- D = ( Scalar ` W ) $.
-    imaslmhm.2 $e |- K = ( Base ` D ) $.
-    imaslmhm.3 $e |- ( ( ph /\ ( k e. K /\ a e. B /\ b e. B ) )
-                    -> ( ( F ` a ) = ( F ` b )
-                      -> ( F ` ( k .X. a ) ) = ( F ` ( k .X. b ) ) ) ) $.
-    imaslmhm.w $e |- ( ph -> W e. LMod ) $.
-    imaslmhm.4 $e |- .X. = ( .s ` W ) $.
-    $( Given a function ` F ` with homomorphic properties, build the image of a
-       left module.  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-    imaslmhm $p |- ( ph -> ( ( F "s W ) e. LMod /\ F e. ( W LMHom ( F "s W ) )
-       ) ) $=
-      ( vu vx cimas co clmod wcel clmhm cima c0g cfv eqidd cbs csca fveq2i eqid
-      eqtri wf wfo fimadmfo syl imaslmod cvsca wceq a1i imassca eqcomd lmodgrpd
-      cgrp cghm imasghm simprd cv wa imasvscaval 3expb islmhmd jca ) AHJUFUGZUH
-      UIHJWAUJUGUIAHBUKZEIFGHJWABJULUMZKLMNAWAUNZOIDUOUMJUPUMZUOUMTDWEUOSUQUSQU
-      CWCURABCHUTBWBHVAPBCHVBVCZRUAUBVDZAUDUEJWAFWAVEUMZHWAUPUMZDIBOUCWHURZSWIU
-      RTUBWGADWIAWBJWAHDBUHWDBJUOUMVFAOVGZWFUBSVHVIAWAVKUIHJWAVLUGUIABCEHJKLMNO
-      PQRAJUBVJVMVNAUDVOZIUIZUEVOZBUIZVPVPWLWNHUMWHUGZWLWNFUGHUMZAWMWOWPWQVFAWB
-      JWHFWAHDIBWLWNUHNGMWDWKWFUBSTUCWJUAVQVRVIVSVT $.
-  $}
-
-  ${
-    $d G a b k p q x $.  $d M a b k p q x $.  $d N a b k p q $.
-    $d V a b k p q x $.  $d a b k p q ph x $.
-    quslmod.n $e |- N = ( M /s ( M ~QG G ) ) $.
-    quslmod.v $e |- V = ( Base ` M ) $.
-    quslmod.1 $e |- ( ph -> M e. LMod ) $.
-    quslmod.2 $e |- ( ph -> G e. ( LSubSp ` M ) ) $.
-    $( If ` G ` is a submodule in ` M ` , then ` N = M / G ` is a left module,
-       called the quotient module of ` M ` by ` G ` .  (Contributed by Thierry
-       Arnoux, 18-May-2023.) $)
-    quslmod $p |- ( ph -> N e. LMod ) $=
-      ( vx vq vp co cfv cbs cv cvv eqid wcel wa vk va cqg cqs cplusg csca cvsca
-      vb cec cmpt c0g clmod cqus wceq a1i ovexd qusval quslem csubg wer lsssubg
-      clss syl2anc eqger syl fvexi cgrp lmodgrp adantr simprl simprr grpcl cnsg
-      syl3anc wi cabl lmodabl ablnsg 3syl eleqtrrd eqgcpbl ercpbl simpr1 simpr2
-      wbr w3a simpr3 qusvscpbl imaslmod ) AECBUCMZUDCUENZCUFNONZCUGNZUAJEJPWJUI
-      UJZCDECUKNZKLUBUHAJWJCDWNEQULDCWJUMMUNAFUOZECONUNAGUOZWNRZACBUCUPZHUQGWLR
-      ZWKRZWMRZWORAJWJCDWNEQULWPWQWRWSHURAJUBPZUHPZLPZKPZWKWJWNEQLKABCUSNZSZEWJ
-      UTACULSZBCVBNZSZXHHIXJBCXJRVAVCZWJCEBGWJRZVDVEEQSAECOGVFUOWRAXEESZXFESZTZ
-      TCVGSZXNXOXEXFWKMZESAXQXPAXIXQHCVHVEVIAXNXOVJAXNXOVKEWKCXEXFGXAVLVNABCVMN
-      ZSXCXEWJWEXDXFWJWETXCXDWKMXRWJWEVOABXGXSXLAXICVPSXSXGUNHCVQCVRVSVTXCXDXEX
-      FWKWJCEBGXMXAWAVEWBAUAPZWLSZXCESZXDESZWFZTJEWJWLDUGNZWMXCWNBXTCDXDGXMWTXB
-      AXIYDHVIAXKYDIVIAYAYBYCWCFYERWRAYAYBYCWDAYAYBYCWGWHHWI $.
-
-    ${
-      $d V k u v x y z $.  $d F k u v y z $.  $d G k u v x y z $.
-      $d M k u v x y z $.  $d N k u v x y z $.  $d ph k u v x y z $.
-      quslmhm.f $e |- F = ( x e. V |-> [ x ] ( M ~QG G ) ) $.
-      $( If ` G ` is a submodule of ` M ` , then the "natural map" from
-         elements to their cosets is a left module homomorphism from ` M ` to
-         ` M / G ` .  (Contributed by Thierry Arnoux, 18-May-2023.) $)
-      quslmhm $p |- ( ph -> F e. ( M LMHom N ) ) $=
-        ( cfv eqid co cvv clmod wceq wcel cv vy vz vv vk cvsca csca cbs quslmod
-        vu cqg cqus ovexd quss eqcomd cnsg cghm csubg clss lsssubg syl2anc cabl
-        a1i lmodabl ablnsg 3syl eleqtrrd qusghm syl wa cqs qusval quslem adantr
-        w3a simpr1 simpr2 simpr3 qusvscpbl imasvscaval 3expb islmhmd ) AUAUBEFE
-        UEMZFUEMZCFUFMZEUFMZWEUGMZGIWBNZWCNZWENZWDNWFNZJADEFGHIJKUHAWEWDAEDUJOZ
-        EFWEGPQFEWKUKORAHVBZGEUGMRAIVBZAEDUJULZJWIUMUNADEUOMZSCEFUPOSADEUQMZWOA
-        EQSZDEURMZSZDWPSJKWRDEWRNUSUTAWQEVASWOWPRJEVCEVDVEVFBCEFGDIHLVGVHAUATZW
-        FSZUBTZGSZVIVIWTXBCMWCOZWTXBWBOCMZAXAXCXDXERAGWKVJEWCWBFCWEWFGWTXBQUCUD
-        UIABWKEFCGPQWLWMLWNJVKWMABWKEFCGPQWLWMLWNJVLJWIWJWGWHAUDTZWFSZUITZGSZUC
-        TZGSZVNZVIBGWKWFWCWBXHCDXFEFXJIWKNWJWGAWQXLJVMAWSXLKVMAXGXIXKVOHWHLAXGX
-        IXKVPAXGXIXKVQVRVSVTUNWA $.
-    $}
-  $}
-
-  ${
     quslvec.n $e |- Q = ( W /s ( W ~QG S ) ) $.
     quslvec.1 $e |- ( ph -> W e. LVec ) $.
     quslvec.2 $e |- ( ph -> S e. ( LSubSp ` W ) ) $.
@@ -536582,60 +537627,6 @@ $)
       UHZJAWKFJABCDEFGHIJKLMNOPQRSTUAUBUCUDUEUFVMZVPAJFVQXBJUSAIFBWSBUTVRNDUNZV
       SZUGZJUPAIVTXFUPUQAWSFUQWAXEBWSXDIWFWBWGVJUDWCFJWDVOWHXCABCDEFGHIJKLMNOPQ
       RSTUAUBUCUDUEUFWEWIWJ $.
-  $}
-
-  ${
-    $d F q x $.  $d G q x $.  $d H k q r x $.  $d J k q r x $.  $d K q x $.
-    $d Q k q r x $.  $d k ph q r x $.  $d .0. x $.
-    lmhmqusker.1 $e |- .0. = ( 0g ` H ) $.
-    lmhmqusker.f $e |- ( ph -> F e. ( G LMHom H ) ) $.
-    lmhmqusker.k $e |- K = ( `' F " { .0. } ) $.
-    lmhmqusker.q $e |- Q = ( G /s ( G ~QG K ) ) $.
-    lmhmqusker.s $e |- ( ph -> ran F = ( Base ` H ) ) $.
-    ${
-      lmhmqusker.j $e |- J = ( q e. ( Base ` Q ) |-> U. ( F " q ) ) $.
-      $( A surjective module homomorphism ` F ` from ` G ` to ` H ` induces an
-         isomorphism ` J ` from ` Q ` to ` H ` , where ` Q ` is the factor
-         group of ` G ` by ` F ` 's kernel ` K ` .  (Contributed by Thierry
-         Arnoux, 25-Feb-2025.) $)
-      lmhmqusker $p |- ( ph -> J e. ( Q LMIso H ) ) $=
-        ( co wcel cfv eqid wceq vk vr clmhm cbs wf1o clmim cvsca csca lmhmlmod1
-        vx clmod syl clss lmhmkerlss quslmod lmhmlmod2 lmhmsca cqg cvv cqus a1i
-        ovexd quss eqtrd cgim cghm lmghm ghmqusker gimghm cv cec wer cnsg csubg
-        wa cqs ccnv csn cima ghmker eqeltrid nsgsubg eqger 3syl ad4antr simpllr
-        qusbas eleqtrrd simplr qsel syl3anc oveq2d simp-4r fveq2d qsss eqsstrrd
-        wss sselda elpwid ad5ant13 sseldd qusvsval ghmquskerlem1 lmhmlin 3eqtrd
-        cpw lmodvscl simpr eqtr4d ad2antrr ghmquskerlem2 r19.29a anasss islmhmd
-        gimf1o islmim sylanbrc ) AFBEUCPQBUDRZEUDRZFUEZFBEUFPQAUAUBBEBUGRZEUGRZ
-        FEUHRZBUHRZYDUDRZXRXRSZYASZYBSZYDSYCSZYESAGDBDUDRZMYJSZACDEUCPQZDUKQZKD
-        ECUIULZAYLGDUMRZQZKDEYOCGHLJYOSUNULZUOAYLEUKQKDECUPULAYCDUHRZYDAYLYCYRT
-        KDECYRYCYRSZYIUQULADGURPZDBYRYJUSUKBDYTUTPTAMVAZYJYJTAYKVAZADGURVBZYNYS
-        VCZVDAFBEVEPQZFBEVFPQABCDEFGHIJAYLCDEVFPQZKDECVGULZLMONVHZBEFVIULAUAVJZ
-        YEQZUBVJZXRQZUUIUUKYAPZFRZUUIUUKFRZYBPZTZAUUJVOZUULVOZUUOUJVJZCRZTZUUQU
-        JUUKUUSUUTUUKQZVOZUVBVOZUUNUUIUVAYBPZUUPUVEUUNUUIUUTDUGRZPZYTVKZFRUVHCR
-        ZUVFUVEUUMUVIFUVEUUMUUIUUTYTVKZYAPUVIUVEUUKUVKUUIYAUVEYJYTVLZUUKYJYTVPZ
-        QUVCUUKUVKTAUVLUUJUULUVCUVBAGDVMRZQGDVNRQUVLAGCVQHVRVSZUVNLAUUFUVOUVNQU
-        UGDECHJVTULWAGDWBYTDYJGYKYTSZWCWDZWEUVEUUKXRUVMUURUULUVCUVBWFAUVMXRTUUJ
-        UULUVCUVBAYTDBYJUSUKUUAUUBUUCYNWGZWEWHUUSUVCUVBWIZYJUUKUUTYTYJWJWKWLUVE
-        YJYTYRUDRZYAUVGGUUIDBUUTYKUVPUVTSZUVGSZAYMUUJUULUVCUVBYNWEZAYPUUJUULUVC
-        UVBYQWEUVEUUIYEUVTAUUJUULUVCUVBWMAUVTYETUUJUULUVCUVBAYRYDUDUUDWNWEWHZMY
-        GUVEUUKYJUUTAUULUUKYJWQUUJUVCUVBAUULVOUUKYJAXRYJXFZUUKAXRUVMUWEUVRAYJYT
-        UVQWOWPWRWSWTUVSXAZXBVDWNUVEBCDEFGUVHHIJAUUFUUJUULUVCUVBUUGWELMOUVEYMUU
-        IUVTQZUUTYJQZUVHYJQUWCUWDUWFUUIUVGYRUVTYJDUUTYKYSUWBUWAXGWKXCUVEYLUWGUW
-        HUVJUVFTAYLUUJUULUVCUVBKWEUWDUWFUVTDEUVGYBYJCYRUUIUUTYSUWAYKUWBYHXDWKXE
-        UVEUUOUVAUUIYBUVDUVBXHWLXIUUSUJBCDEFGUUKHIJAUUFUUJUULUUGXJLMOUURUULXHXK
-        XLXMXNAUUEXTUUHXRXSBEFYFXSSZXOULXRXSBEFYFUWIXPXQ $.
-    $}
-
-    $d F p q $.  $d G q $.  $d H q $.  $d K q $.  $d Q p q $.  $d ph q $.
-    $( The image ` H ` of a module homomorphism ` F ` is isomorphic with the
-       quotient module ` Q ` over ` F ` 's kernel ` K ` .  This is part of what
-       is sometimes called the first isomorphism theorem for modules.
-       (Contributed by Thierry Arnoux, 10-Mar-2025.) $)
-    lmicqusker $p |- ( ph -> Q ~=m H ) $=
-      ( vp vq cbs cfv cv cima cuni cmpt clmim wcel clmic wbr weq imaeq2 cbvmptv
-      co unieqd lmhmqusker brlmici syl ) AMBOPZCMQZRZSZTZBEUAUHUBBEUCUDABCDEUQF
-      GNHIJKLMNUMUPCNQZRZSMNUEUOUSUNURCUFUIUGUJBEUQUKUL $.
   $}
 
 
@@ -540030,31 +541021,6 @@ $)
   $}
 
   ${
-    $d .x. k x $.  $d A k x $.  $d B k x $.  $d M k $.  $d R k x $.
-    $d U k x $.  $d W k x $.  $d k ph x $.
-    evl1fpws.q $e |- O = ( eval1 ` R ) $.
-    evl1fpws.w $e |- W = ( Poly1 ` R ) $.
-    evl1fpws.b $e |- B = ( Base ` R ) $.
-    evl1fpws.u $e |- U = ( Base ` W ) $.
-    evl1fpws.s $e |- ( ph -> R e. CRing ) $.
-    evl1fpws.y $e |- ( ph -> M e. U ) $.
-    evl1fpws.1 $e |- .x. = ( .r ` R ) $.
-    evl1fpws.2 $e |- .^ = ( .g ` ( mulGrp ` R ) ) $.
-    evl1fpws.a $e |- A = ( coe1 ` M ) $.
-    $( Evaluation of a univariate polynomial as a function in a power series.
-       (Contributed by Thierry Arnoux, 23-Jan-2025.) $)
-    evl1fpws $p |- ( ph -> ( O ` M )
-            = ( x e. B |-> ( R gsum ( k e. NN0 |-> ( ( A ` k ) .x. ( k .^ x ) )
-                ) ) ) ) $=
-      ( cfv ces1 co cn0 cmpt cgsu evl1fval1 fveq1i cress cpl1 cbs eqid crg wcel
-      cv csubrg crngringd subrgid syl ccrg wceq ressid fveq2d eqtr4di evls1fpws
-      eleqtrrd eqtrid ) AJKUBJEDUCUDZUBBDEHUEHUPZCUBVJBUPIUDFUDUFUGUDUFJKVIDKEM
-      OUHUIABCEDUJUDZUKUBZULUBZVIDEFVKHIDJVLVIUMOVLUMVKUMVMUMQAEUNUODEUQUBUOAEQ
-      URDEOUSUTAJGVMRAVMLULUBGAVLLULAVLEUKUBLAVKEUKAEVAUOVKEVBQDEVAOVCUTVDNVEVD
-      PVEVGSTUAVFVH $.
-  $}
-
-  ${
     $d B k $.  $d E k x $.  $d E x y $.  $d F k $.  $d F x $.  $d G k $.
     $d G x $.  $d G y $.  $d K k $.  $d K x $.  $d O k $.  $d O x $.  $d P k $.
     $d P x $.  $d Q k $.  $d Q x $.  $d R k $.  $d R y $.  $d S k $.  $d S x $.
@@ -540106,159 +541072,6 @@ $)
       UXNUXOYFYGYHUWGUVNUUFIUNUWGUCUGUVMUUEUWMYSUVKUUDULUVMUUEUWMUUDUVLYSUVKAUU
       DUVLUTZUWFUWLAUUNUXPSEGIUUDUUMLUVGYIVJWJYJUWMUVKUUCYSUUDUXGYKYLYMYKYNYMYN
       YO $.
-  $}
-
-  ${
-    ressdeg1.h $e |- H = ( R |`s T ) $.
-    ressdeg1.d $e |- D = ( deg1 ` R ) $.
-    ressdeg1.u $e |- U = ( Poly1 ` H ) $.
-    ressdeg1.b $e |- B = ( Base ` U ) $.
-    ressdeg1.p $e |- ( ph -> P e. B ) $.
-    ressdeg1.t $e |- ( ph -> T e. ( SubRing ` R ) ) $.
-    $( The degree of a univariate polynomial in a structure restriction.
-       (Contributed by Thierry Arnoux, 20-Jan-2025.) $)
-    ressdeg1 $p |- ( ph -> ( D ` P ) = ( ( deg1 ` H ) ` P ) ) $=
-      ( cfv csupp cxr clt wcel eqid cco1 co csup cdg1 csubrg wceq subrg0 oveq2d
-      c0g syl supeq1d cpl1 cbs cps1 ressply1bas2 eleqtrd elin2d deg1val 3eqtr4d
-      cin ) ADUAOZEUIOZPUBZQRUCZVAHUIOZPUBZQRUCZDCOZDHUDOZOZAQVCVFRAVBVEVAPAFEU
-      EOSVBVEUFNFEHVBIVBTZUGUJUHUKADEULOZUMOZSVHVDUFAHUNOZUMOZVMDADBVOVMUTMABVO
-      EVLFGHVMVNVLTZIKLNVNTVOTVMTZUOUPUQVAVMCVLEDVBJVPVQVKVATZURUJADBSVJVGUFMVA
-      BVIGHDVEVITKLVETVRURUJUS $.
-  $}
-
-  ${
-    ressply.1 $e |- S = ( Poly1 ` R ) $.
-    ressply.2 $e |- H = ( R |`s T ) $.
-    ressply.3 $e |- U = ( Poly1 ` H ) $.
-    ressply.4 $e |- B = ( Base ` U ) $.
-    ressply.5 $e |- ( ph -> T e. ( SubRing ` R ) ) $.
-    ${
-      ressply10g.6 $e |- Z = ( 0g ` S ) $.
-      $( A restricted polynomial algebra has the same group identity (zero
-         polynomial).  (Contributed by Thierry Arnoux, 20-Jan-2025.) $)
-      ressply10g $p |- ( ph -> Z = ( 0g ` U ) ) $=
-        ( c0g cfv cascl eqid wcel syl subrg1ascl fveq1d crg subrgring ply1ascl0
-        cres csubrg wceq subrg0 csubg subrgsubg subg0cl eqeltrrd fvresd 3eqtr3d
-        3syl fveq2d subrgrcl 3eqtr2rd ) AFOPZGOPZDQPZPZCOPZVBPHAVAFQPZPVAVBEUFZ
-        PUTVCAVAVEVFAVBVEDCEFGIVBRZJKMVERZUAUBAVEGVAFUTKVHVARUTRAECUGPSZGUCSMEC
-        GJUDTUEAVAEVBAVDVAEAVIVDVAUHMECGVDJVDRZUITZAVIECUJPSVDESMECUKECVDVJULUP
-        UMUNUOAVDVAVBVKUQAVBCVDDHIVGVJNAVICUCSMECURTUEUS $.
-    $}
-
-    ${
-      $d B p $.  $d M p $.  $d N p $.  $d p ph $.
-      ressply1mon1p.m $e |- M = ( Monic1p ` R ) $.
-      ressply1mon1p.n $e |- N = ( Monic1p ` H ) $.
-      $( The monic polynomials of a restricted polynomial algebra.
-         (Contributed by Thierry Arnoux, 21-Jan-2025.) $)
-      ressply1mon1p $p |- ( ph -> N = ( B i^i M ) ) $=
-        ( wcel cfv wa eqid vp cin cv c0g wne cdg1 cco1 cur wceq w3a cbs ismon1p
-        anbi2i cress co ressply1bas ressbasss eqsstrdi sseld anbi1d 13an22anass
-        pm4.71d wb ressply10g neeq2d adantr simpr csubrg ressdeg1 fveq2d subrg1
-        bitr4di syl eqeq12d anbi12d pm5.32da 3anass bitr3d bitr2id elin 3bitr4g
-        eqrdv ) AUAIBHUBZAUAUCZBQZWDFUDRZUEZWDGUFRZRZWDUGRZRZGUHRZUIZUJZWEWDHQZ
-        SZWDIQWDWCQWPWEWDDUKRZQZWDDUDRZUEZWDCUFRZRZWJRZCUHRZUIZUJZSZAWNWOXFWEWQ
-        XADCXDWDHWSJWQTZWSTZXATZOXDTZULUMAWEWTXESZSZXGWNAXMWEWRSZXLSXGAWEXNXLAW
-        EWRABWQWDABDBUNUOZUKRWQABXOCDEFGJKLMNXOTZUPBWQXODXPXHUQURUSVBUTWEWRWTXE
-        VAVLAXMWEWGWMSZSWNAWEXLXQAWESZWTWGXEWMAWTWGVCWEAWSWFWDABCDEFGWSJKLMNXIV
-        DVEVFXRXCWKXDWLXRXBWIWJXRBXAWDCEFGKXJLMAWEVGAECVHRQZWENVFVIVJAXDWLUIZWE
-        AXSXTNECGXDKXKVKVMVFVNVOVPWEWGWMVQVLVRVSBWHFGWLWDIWFLMWFTWHTPWLTULWDBHV
-        TWAWB $.
-    $}
-
-    ressply1.1 $e |- P = ( S |`s B ) $.
-    ${
-      $d B y $.  $d P y $.  $d U y $.  $d X y $.  $d ph y $.
-      ressply1invg.1 $e |- ( ph -> X e. B ) $.
-      $( An element of a restricted polynomial algebra has the same group
-         inverse.  (Contributed by Thierry Arnoux, 30-Jan-2025.) $)
-      ressply1invg $p |- ( ph -> ( ( invg ` U ) ` X ) = ( ( invg ` P ) ` X ) )
-        $=
-        ( cfv wceq wcel eqid vy cplusg c0g crio cminusg ressply1bas ressply1add
-        cv cbs anassrs mpidan ressply10g cmnd wss csubrg crg subrgply1 subrgrcl
-        co ringmnd 4syl csubg subrgsubg subg0cl cin ressply1bas2 inss2 eqsstrdi
-        wa cps1 ress0g syl3anc eqtr3d adantr eqeq12d riotaeqbidva grpinvval syl
-        eleqtrd 3eqtr4d ) AUAUHZIGUBQZUSZGUCQZRZUABUDZWAICUBQZUSZCUCQZRZUACUIQZ
-        UDZIGUEQZQZICUEQZQZAWEWJUABWKABCDEFGHJKLMNOUFZAWABSZVIWCWHWDWIAWRIBSZWC
-        WHRZPAWRWSWTABCDEFGHWAIJKLMNOUGUJUKAWDWIRWRAEUCQZWDWIABDEFGHXAJKLMNXATZ
-        ULAEUMSZXABSZBEUIQZUNXAWIRAFDUOQSZBEUOQSZEUPSXCNBDEFGHJKLMUQZBEUREUTVAA
-        XFXGBEVBQSXDNXHBEVCBEXAXBVDVAABHVJQZUIQZXEVEXEABXJDEFGHXEXIJKLMNXITXJTX
-        ETZVFXJXEVGVHBXEECXAOXKXBVKVLVMVNVOVPAWSWNWFRPUABWBGWMIWDMWBTWDTWMTVQVR
-        AIWKSWPWLRAIBWKPWQVSUAWKWGCWOIWIWKTWGTWITWOTVQVRVT $.
-    $}
-
-    ${
-      ressply1sub.1 $e |- ( ph -> X e. B ) $.
-      ressply1sub.2 $e |- ( ph -> Y e. B ) $.
-      $( A restricted polynomial algebra has the same subtraction operation.
-         (Contributed by Thierry Arnoux, 30-Jan-2025.) $)
-      ressply1sub $p |- ( ph -> ( X ( -g ` U ) Y ) = ( X ( -g ` P ) Y ) ) $=
-        ( cfv wcel cminusg cplusg co csg ressply1invg oveq2d wa wceq cbs csubrg
-        cgrp subrgply1 subrgsubg subggrp 4syl ressply1bas eleqtrd eqid grpinvcl
-        csubg syl2anc eleqtrrd jca ressply1add mpdan eqtrd grpsubval 3eqtr4d )
-        AIJGUASZSZGUBSZUCZIJCUASZSZCUBSZUCZIJGUDSZUCZIJCUDSZUCZAVLIVNVKUCZVPAVJ
-        VNIVKABCDEFGHJKLMNOPRUEUFAIBTZVNBTZUGWAVPUHAWBWCQAVNCUISZBACUKTZJWDTZVN
-        WDTAFDUJSTBEUJSTBEUTSTWEOBDEFGHKLMNULBEUMBECPUNUOAJBWDRABCDEFGHKLMNOPUP
-        ZUQZWDCVMJWDURZVMURZUSVAWGVBVCABCDEFGHIVNKLMNOPVDVEVFAWBJBTVRVLUHQRBVKG
-        VIVQIJNVKURVIURVQURVGVAAIWDTWFVTVPUHAIBWDQWGUQWHWDVOCVMVSIJWIVOURWJVSUR
-        VGVAVH $.
-    $}
-  $}
-
-  ${
-    ressasclcl.w $e |- W = ( Poly1 ` U ) $.
-    ressasclcl.u $e |- U = ( S |`s R ) $.
-    ressasclcl.a $e |- A = ( algSc ` W ) $.
-    ressasclcl.1 $e |- B = ( Base ` W ) $.
-    ressasclcl.s $e |- ( ph -> S e. CRing ) $.
-    ressasclcl.r $e |- ( ph -> R e. ( SubRing ` S ) ) $.
-    ressasclcl.x $e |- ( ph -> X e. R ) $.
-    $( Closure of the univariate polynomial evaluation for scalars.
-       (Contributed by Thierry Arnoux, 22-Jun-2025.) $)
-    ressasclcl $p |- ( ph -> ( A ` X ) e. B ) $=
-      ( cfv cbs wcel wceq eqid cur cvsca csca csubrg subrgss ressbas2 3syl ccrg
-      co wss subrgcrng syl2anc ply1sca syl fveq2d eleqtrd asclval crg crngringd
-      eqtrd clmod ply1lmod ply1ring ringidcl lmodvscld eqeltrd ) AHBPZHGUAPZGUB
-      PZUIZCAHGUCPZQPZRVGVJSAHDVLOADFQPZVLADEUDPRZDEQPZUJDVMSNDVOEVOTZUEDVOFEJV
-      PUFUGAFVKQAFUHRZFVKSAEUHRVNVQMNDEFJUKULZGFUHIUMUNUOUTUPZBVIVHVKVLGHKVKTZV
-      LTZVITZVHTZUQUNAHVIVKVLCGVHLVTWBWAAFURRZGVARAFVRUSZGFIVBUNVSAWDGURRVHCRWE
-      GFIVCCGVHLWCVDUGVEVF $.
-  $}
-
-  ${
-    ressply1evl.q $e |- Q = ( S evalSub1 R ) $.
-    ressply1evl.k $e |- K = ( Base ` S ) $.
-    ressply1evl.w $e |- W = ( Poly1 ` U ) $.
-    ressply1evl.u $e |- U = ( S |`s R ) $.
-    ressply1evl.b $e |- B = ( Base ` W ) $.
-
-    ${
-      evls1subd.1 $e |- D = ( -g ` W ) $.
-      evls1subd.2 $e |- .- = ( -g ` S ) $.
-      evls1subd.s $e |- ( ph -> S e. CRing ) $.
-      evls1subd.r $e |- ( ph -> R e. ( SubRing ` S ) ) $.
-      evls1subd.m $e |- ( ph -> M e. B ) $.
-      evls1subd.n $e |- ( ph -> N e. B ) $.
-      evls1subd.y $e |- ( ph -> C e. K ) $.
-      $( Univariate polynomial evaluation of a difference of polynomials.
-         (Contributed by Thierry Arnoux, 25-Apr-2025.) $)
-      evls1subd $p |- ( ph -> ( ( Q ` ( M D N ) ) ` C )
-                              = ( ( ( Q ` M ) ` C ) .- ( ( Q ` N ) ` C ) ) ) $=
-        ( co ce1 cfv cpl1 cress oveqi eqid ressply1sub eqtrid csubg wcel csubrg
-        wceq subrgply1 subrgsubg 3syl subgsub syl3anc eqtr4d fveq2d fveq1d cres
-        csg ressply1evl cgrp subrgring ply1ring ringgrpd grpsubcl fvresd eqtr2d
-        crg cbs cps1 cin ressply1bas2 inss2 eqsstrdi sseldd jca evl1subd simprd
-        3eqtr3d ) ACJLDUFZGUGUHZUHZUHCJLGUIUHZVHUHZUFZWJUHZUHZCWIEUHZUHCJEUHZUH
-        ZCLEUHZUHZKUFZACWKWOAWIWNWJAWIJLWLBUJUFZVHUHZUFZWNAWIJLMVHUHZUFXEDXFJLS
-        UKABXCGWLFMHJLWLULZQPRUBXCULZUCUDUMUNABWLUOUHUPZJBUPZLBUPZWNXEURAFGUQUH
-        UPZBWLUQUHUPXIUBBGWLFMHXGQPRUSBWLUTVAUCUDBWLXCWMXDJLWMULZXHXDULVBVCVDVE
-        VFACWKWQAWQWIWJBVGZUHWKAWIEXNABEFGHWJIMNOPQRWJULZUAUBVIZVFAWIBWJAMVJUPX
-        JXKWIBUPAMAXLHVQUPMVQUPUBFGHQVKMHPVLVAVMUCUDBMDJLRSVNVCVOVPVFAWNWLVRUHZ
-        UPWPXBURAIKWLGXQJWMLWJWSXACXOXGOXQULZUAUEAJXQUPCJWJUHZUHWSURABXQJABHVSU
-        HZVRUHZXQVTXQABYAGWLFMHXQXTXGQPRUBXTULYAULXRWAYAXQWBWCZUCWDACXSWRAWRJXN
-        UHXSAJEXNXPVFAJBWJUCVOVPVFWEALXQUPCLWJUHZUHXAURABXQLYBUDWDACYCWTAWTLXNU
-        HYCALEXNXPVFALBWJUDVOVPVFWEXMTWFWGWH $.
-    $}
   $}
 
   ${
@@ -540336,227 +541149,6 @@ $)
         URUWIUUSUWFUWGAYAUWDUWIUWKWOUWMUWIUUSUWMUWHDYPYNEFGDYPNIUUIUUGXJXKXFXGA
         UWDUBZUUSUWNUWODYPUWBHUWOYNEFGDYPHNILUUGUUIAYMUWDYSSAUURUWDOSAUWDVLXLXN
         XFXGXOXPXQ $.
-    $}
-  $}
-
-  ${
-    evl1deg1.1 $e |- P = ( Poly1 ` R ) $.
-    evl1deg1.2 $e |- O = ( eval1 ` R ) $.
-    evl1deg1.3 $e |- K = ( Base ` R ) $.
-    evl1deg1.4 $e |- U = ( Base ` P ) $.
-    evl1deg1.5 $e |- .x. = ( .r ` R ) $.
-    evl1deg1.6 $e |- .+ = ( +g ` R ) $.
-    ${
-      $d .x. i j k $.  $d .x. k x $.  $d C i j $.  $d C k x $.  $d D i j $.
-      $d K k x $.  $d M i j $.  $d M k $.  $d P k x $.  $d R i j $.
-      $d R k x $.  $d U k x $.  $d X i j $.  $d X k x $.  $d i j ph $.
-      $d k ph x $.
-      evl1deg1.7 $e |- C = ( coe1 ` M ) $.
-      evl1deg1.8 $e |- D = ( deg1 ` R ) $.
-      evl1deg1.9 $e |- A = ( C ` 1 ) $.
-      evl1deg1.10 $e |- B = ( C ` 0 ) $.
-      evl1deg1.11 $e |- ( ph -> R e. CRing ) $.
-      evl1deg1.12 $e |- ( ph -> M e. U ) $.
-      evl1deg1.13 $e |- ( ph -> ( D ` M ) = 1 ) $.
-      evl1deg1.14 $e |- ( ph -> X e. K ) $.
-      $( Evaluation of a univariate polynomial of degree 1.  (Contributed by
-         Thierry Arnoux, 8-Jun-2025.) $)
-      evl1deg1 $p |- ( ph -> ( ( O ` M ) ` X ) = ( ( A .x. X ) .+ B ) ) $=
-        ( vk vx vj vi cfv cn0 cv cmgp cmg co cmpt cgsu cc0 c1 cpr cuz cvv oveq2
-        wceq oveq2d mpteq2dv eqid evl1fpws ovexd fvmptd4 c0g crngringd ringcmnd
-        c2 wcel nn0ex a1i crg adantr coe1fvalcl sylan mgpbas cmnd ringmgp simpr
-        wa syl mulgnn0cld ringcld fvexd fveq2 oveq1 oveq12d clt wbr wral imbi1d
-        wi breq1 ralbidv eqeltrdi ad2antrr simplr deg1lt syl3anc oveq1d ringlzd
-        1nn0 eqtrd ex ralrimiva rspcedvdw mptnn0fsuppd cin nn0disj01 nn0split01
-        cun gsumsplit2 ccmn wne 0nn0 0ne1 sylancl gsumpr syl132anc wss 2eluzge0
-        c0 uzss ax-mp nn0uz sseqtrri sselda eluz2gt1 eqeltrid eqcomd 3eqtrd cur
-        adantl eqbrtrd mpteq2dva ringridmd mulg0 mulg1 ringcom 3eqtr3d crnggrpd
-        ringidval grpmndd gsumz syl2anc grpcld grpridd ) ANLMUMZUMHUIUNUIUOZDUM
-        ZUURNHUPUMZUQUMZURZIURZUSZUTURZHUIVAVBVCZUVCUSUTURZHUIVQVDUMZUVCUSZUTUR
-        ZGURZBNIURZCGURZAUJNHUIUNUUSUURUJUOZUVAURZIURZUSZUTURUVEKUUQVEUVNNVGZUV
-        QUVDHUTUVRUIUNUVPUVCUVRUVOUVBUUSIUVNNUURUVAVFVHVIVHAUJDKHIJUIUVALMFPOQR
-        UEUFSUVAVJZUAVKUHAHUVDUTVLVMAUNKUVFUVHGUIHVEUVCHVNUMZQUVTVJZTAHAHUEVOZV
-        PZUNVEVRAVSVTAUURUNVRZWIZKHIUUSUVBQSAHWAVRZUWDUWBWBALJVRZUWDUUSKVRUFDJF
-        HLKUURUAROQWCWDUWEKUVAUUTUURNKHUUTUUTVJZQWEZUVSAUUTWFVRZUWDAUWFUWJUWBHU
-        UTUWHWGZWJZWBAUWDWHANKVRZUWDUHWBWKWLZAUKKUVCUKUOZDUMZUWONUVAURZIURZUIVE
-        UVTULAHVNWMUWNUURUWOVGUUSUWPUVBUWQIUURUWODWNUURUWONUVAWOWPAULUOZUWOWQWR
-        ZUWRUVTVGZXAZUKUNWSLEUMZUWOWQWRZUXAXAZUKUNWSULUXCUNUWSUXCVGZUXBUXEUKUNU
-        XFUWTUXDUXAUWSUXCUWOWQXBWTXCAUXCVBUNUGXKXDAUXEUKUNAUWOUNVRZWIZUXDUXAUXH
-        UXDWIZUWRUVTUWQIURUVTUXIUWPUVTUWQIUXIUWGUXGUXDUWPUVTVGAUWGUXGUXDUFXEAUX
-        GUXDXFZUXHUXDWHDJEFHLUWOUVTUBORUWAUAXGXHXIUXIKHIUWQUVTQSUWAAUWFUXGUXDUW
-        BXEZUXIKUVAUUTUWONUWIUVSUXIUWFUWJUXKUWKWJUXJAUWMUXGUXDUHXEWKXJXLXMXNXOX
-        PUVFUVHXQYKVGAXRVTUNUVFUVHXTVGAXSVTYAAUVKVADUMZVANUVAURZIURZVBDUMZVBNUV
-        AURZIURZGURZHUIUVHUVTUSZUTURZGURUVMUVTGURUVMAUVGUXRUVJUXTGAHYBVRVAUNVRZ
-        VBUNVRZVAVBYCZUXNKVRUXQKVRUVGUXRVGUWCUYAAYDVTZUYBAXKVTZUYCAYEVTAKHIUXLU
-        XMQSUWBAUWGUYAUXLKVRUFYDDJFHLKVAUAROQWCYFZAKUVAUUTVANUWIUVSUWLUYDUHWKWL
-        AKHIUXOUXPQSUWBAUWGUYBUXOKVRUFXKDJFHLKVBUAROQWCYFZAKUVAUUTVBNUWIUVSUWLU
-        YEUHWKWLUVCKUXNUXQGUIHVAVBUNUNQTUURVAVGUUSUXLUVBUXMIUURVADWNUURVANUVAWO
-        WPUURVBVGUUSUXOUVBUXPIUURVBDWNUURVBNUVAWOWPYGYHAUVIUXSHUTAUIUVHUVCUVTAU
-        URUVHVRZWIZUVCUVTUVBIURUVTUYIUUSUVTUVBIUYIUWGUWDUXCUURWQWRUUSUVTVGAUWGU
-        YHUFWBAUVHUNUURUVHUNYIAUVHVAVDUMZUNVQUYJVRUVHUYJYIYJVAVQYLYMYNYOVTYPZUY
-        IUXCVBUURWQAUXCVBVGUYHUGWBUYHVBUURWQWRAUURYQUUBUUCDJEFHLUURUVTUBORUWAUA
-        XGXHXIUYIKHIUVBUVTQSUWAAUWFUYHUWBWBZUYIKUVAUUTUURNUWIUVSUYIUWFUWJUYLUWK
-        WJUYKAUWMUYHUHWBWKXJXLUUDVHWPAUXRUVMUXTUVTGACHUUAUMZIURZUVLGURCUVLGURZU
-        XRUVMAUYNCUVLGAKHIUYMCQSUYMVJZUWBACUXLKUDUYFYRZUUEXIAUYNUXNUVLUXQGACUXL
-        UYMUXMICUXLVGAUDVTAUXMUYMAUWMUXMUYMVGUHKUVAUUTNUYMUWIHUYMUUTUWHUYPUUKUV
-        SUUFWJYSWPABUXONUXPIBUXOVGAUCVTAUXPNAUWMUXPNVGUHKUVAUUTNUWIUVSUUGWJYSWP
-        WPAUWFCKVRUVLKVRUYOUVMVGUWBUYQAKHIBNQSUWBABUXOKUCUYGYRUHWLZKGHCUVLQTUUH
-        XHUUIAHWFVRUVHVEVRUXTUVTVGAHAHUEUUJZUULAVQVDWMUVHUIHVEUVTUWAUUMUUNWPAKG
-        HUVMUVTQTUWAUYSAKGHUVLCQTUYSUYRUYQUUOUUPYTYT $.
-    $}
-
-    evl1deg2.p $e |- .^ = ( .g ` ( mulGrp ` R ) ) $.
-    ${
-      $d .^ i j k $.  $d .^ k x $.  $d .x. i j $.  $d .x. k x $.  $d A k $.
-      $d B i j $.  $d B k x $.  $d C k $.  $d E i j $.  $d F i j $.
-      $d F k x $.  $d K k x $.  $d M i j $.  $d M k $.  $d P k x $.
-      $d R i j $.  $d R k x $.  $d U k x $.  $d X i j $.  $d X k x $.
-      $d i j ph $.  $d k ph x $.
-      evl1deg2.f $e |- F = ( coe1 ` M ) $.
-      evl1deg2.e $e |- E = ( deg1 ` R ) $.
-      evl1deg2.a $e |- A = ( F ` 2 ) $.
-      evl1deg2.b $e |- B = ( F ` 1 ) $.
-      evl1deg2.c $e |- C = ( F ` 0 ) $.
-      evl1deg2.r $e |- ( ph -> R e. CRing ) $.
-      evl1deg2.m $e |- ( ph -> M e. U ) $.
-      evl1deg2.1 $e |- ( ph -> ( E ` M ) = 2 ) $.
-      evl1deg2.x $e |- ( ph -> X e. K ) $.
-      $( Evaluation of a univariate polynomial of degree 2.  (Contributed by
-         Thierry Arnoux, 22-Jun-2025.) $)
-      evl1deg2 $p |- ( ph -> ( ( O ` M ) ` X )
-                        = ( ( A .x. ( 2 .^ X ) ) .+ ( ( B .x. X ) .+ C ) ) ) $=
-        ( vk vx vj vi cfv cn0 cv co cmpt cgsu cc0 c3 cfzo cuz c2 cvv wceq oveq2
-        oveq2d mpteq2dv evl1fpws ovexd fvmptd4 c0g eqid crngringd ringcmnd wcel
-        nn0ex a1i wa crg adantr coe1fvalcl sylan cmgp mgpbas cmnd ringmgp simpr
-        syl mulgnn0cld ringcld fvexd fveq2 oveq1 oveq12d clt wbr wi wral imbi1d
-        breq1 ralbidv 2nn0 eqeltrd ad2antrr simplr deg1lt syl3anc ringlzd eqtrd
-        oveq1d ex ralrimiva rspcedvdw mptnn0fsuppd cin fzouzdisj cun nn0uz 3nn0
-        eleqtri fzouzsplit ax-mp eqtri wss sselda eqtr4di 0nn0 1nn0 wne sylancl
-        c0 c1 eqeltrid cmncom 3eqtrd gsumsplit2 fzo0to3tp mpteq1d uzss sseqtrri
-        caddc 2p1e3 fveq2i eleq2i cz 2z eluzp1l sylbir adantl eqbrtrd mpteq2dva
-        ctp mpan crnggrpd grpmndd syl2anc tpex wf fzo0ssnn0 eqsstrrdi ffvelcdmd
-        gsumz coe1f syldan fmpttd cfn fzofi eqeltrrdi fdmfifsupp gsumcl grpridd
-        0ne1 1ne2 0ne2 gsumtp ccmn grpcld mulg1 cur ringidval mulg0 ringridmd )
-        APNOUQZUQGUMURUMUSZLUQZUWIPKUTZHUTZVAZVBUTZGUMVCVDVEUTZUWLVAZVBUTZGUMVD
-        VFUQZUWLVAZVBUTZFUTZBVGPKUTZHUTZCPHUTZDFUTZFUTZAUNPGUMURUWJUWIUNUSZKUTZ
-        HUTZVAZVBUTUWNMUWHVHUXGPVIZUXJUWMGVBUXKUMURUXIUWLUXKUXHUWKUWJHUXGPUWIKV
-        JVKVLVKAUNLMGHIUMKNOERQSTUIUJUAUCUDVMULAGUWMVBVNVOAURMUWOUWRFUMGVHUWLGV
-        PUQZSUXLVQZUBAGAGUIVRZVSZURVHVTAWAWBAUWIURVTZWCZMGHUWJUWKSUAAGWDVTZUXPU
-        XNWEANIVTZUXPUWJMVTUJLIEGNMUWIUDTQSWFWGUXQMKGWHUQZUWIPMGUXTUXTVQZSWIZUC
-        AUXTWJVTZUXPAUXRUYCUXNGUXTUYAWKZWMZWEAUXPWLAPMVTZUXPULWEWNZWOZAUOMUWLUO
-        USZLUQZUYIPKUTZHUTZUMVHUXLUPAGVPWPZUYHUWIUYIVIUWJUYJUWKUYKHUWIUYILWQUWI
-        UYIPKWRWSAUPUSZUYIWTXAZUYLUXLVIZXBZUOURXCNJUQZUYIWTXAZUYPXBZUOURXCUPUYR
-        URUYNUYRVIZUYQUYTUOURVUAUYOUYSUYPUYNUYRUYIWTXEXDXFAUYRVGURUKVGURVTZAXGW
-        BZXHAUYTUOURAUYIURVTZWCZUYSUYPVUEUYSWCZUYLUXLUYKHUTUXLVUFUYJUXLUYKHVUFU
-        XSVUDUYSUYJUXLVIAUXSVUDUYSUJXIAVUDUYSXJZVUEUYSWLLIJEGNUYIUXLUEQTUXMUDXK
-        XLXOVUFMGHUYKUXLSUAUXMAUXRVUDUYSUXNXIZVUFMKUXTUYIPUYBUCVUFUXRUYCVUHUYDW
-        MVUGAUYFVUDUYSULXIWNXMXNXPXQXRXSUWOUWRXTYPVIAVCVDYAWBURUWOUWRYBZVIAURVC
-        VFUQZVUIYCVDVUJVTZVUJVUIVIVDURVUJYDYCYEZVCVDYFYGYHWBUUAAUXAGUMVCYQVGUUQ
-        ZUWLVAZVBUTZUXLFUTVUOUXFAUWQVUOUWTUXLFAUWPVUNGVBAUMUWOVUMUWLUWOVUMVIAUU
-        BWBZUUCVKAUWTGUMUWRUXLVAZVBUTZUXLAUWSVUQGVBAUMUWRUWLUXLAUWIUWRVTZWCZUWL
-        UXLUWKHUTUXLVUTUWJUXLUWKHVUTUXSUXPUYRUWIWTXAUWJUXLVIAUXSVUSUJWEAUWRURUW
-        IUWRURYIAUWRVUJURVUKUWRVUJYIVULVCVDUUDYGYCUUEWBYJZVUTUYRVGUWIWTAUYRVGVI
-        VUSUKWEVUSVGUWIWTXAZAVUSUWIVGYQUUFUTZVFUQZVTZVVBVVDUWRUWIVVCVDVFUUGUUHU
-        UIVGUUJVTVVEVVBUUKVGUWIUULUURUUMUUNUUOLIJEGNUWIUXLUEQTUXMUDXKXLXOVUTMGH
-        UWKUXLSUAUXMAUXRVUSUXNWEZVUTMKUXTUWIPUYBUCVUTUXRUYCVVFUYDWMVVAAUYFVUSUL
-        WEWNXMXNUUPVKAGWJVTUWRVHVTVURUXLVIAGAGUIUUSZUUTAVDVFWPUWRUMGVHUXLUXMUVG
-        UVAXNWSAMFGVUOUXLSUBUXMVVGAVUMMVUNGVHUXLSUXMUXOVUMVHVTAVCYQVGUVBWBAUMVU
-        MUWLMAUWIVUMVTZWCZMGHUWJUWKSUAAUXRVVHUXNWEVVIURMUWILAURMLUVCZVVHAUXSVVJ
-        UJLIEGNMUDTQSUVHWMWEAVUMURUWIAVUMUWOURVUPVDUVDUVEYJZUVFAVVHUXPUWKMVTVVK
-        UYGUVIWOUVJZAVUMMVUNVHUXLVVLAVUMUWOUVKVUPVCVDUVLUVMUYMUVNUVOUVPAVUODVCP
-        KUTZHUTZCYQPKUTZHUTZFUTZUXCFUTZUXCVVQFUTZUXFAUWLMVVNVVPFUMUXCGVCYQVGURU
-        RURSUBUWIVCVIZUWJDUWKVVMHVVTUWJVCLUQZDUWIVCLWQUHYKUWIVCPKWRWSUWIYQVIZUW
-        JCUWKVVOHVWBUWJYQLUQZCUWIYQLWQUGYKUWIYQPKWRWSUWIVGVIZUWJBUWKUXBHVWDUWJV
-        GLUQZBUWIVGLWQUFYKUWIVGPKWRWSUXOVCURVTZAYLWBZYQURVTZAYMWBZVUCVCYQYNAUVQ
-        WBYQVGYNAUVRWBVCVGYNAUVSWBAMGHDVVMSUAUXNADVWAMUHAUXSVWFVWAMVTUJYLLIEGNM
-        VCUDTQSWFYOYRZAMKUXTVCPUYBUCUYEVWGULWNWOZAMGHCVVOSUAUXNACVWCMUGAUXSVWHV
-        WCMVTUJYMLIEGNMYQUDTQSWFYOYRAMKUXTYQPUYBUCUYEVWIULWNWOZAMGHBUXBSUAUXNAB
-        VWEMUFAUXSVUBVWEMVTUJXGLIEGNMVGUDTQSWFYOYRAMKUXTVGPUYBUCUYEVUCULWNWOZUV
-        TAGUWAVTZVVQMVTUXCMVTVVRVVSVIUXOAMFGVVNVVPSUBVVGVWKVWLUWBVWMMFGVVQUXCSU
-        BYSXLAVVQUXEUXCFAVVQVVPVVNFUTZUXEAVWNVVNMVTVVPMVTVVQVWOVIUXOVWKVWLMFGVV
-        NVVPSUBYSXLAVVPUXDVVNDFAVVOPCHAUYFVVOPVIULMKUXTPUYBUCUWCWMVKAVVNDGUWDUQ
-        ZHUTDAVVMVWPDHAUYFVVMVWPVIULMKUXTPVWPUYBGVWPUXTUYAVWPVQZUWEUCUWFWMVKAMG
-        HVWPDSUAVWQUXNVWJUWGXNWSXNVKYTYTYT $.
-    $}
-
-    ${
-      $d .^ i j k $.  $d .^ k x $.  $d .x. i j $.  $d .x. k x $.  $d A k $.
-      $d B k $.  $d C i j $.  $d C k x $.  $d E i j $.  $d F i j $.
-      $d F k x $.  $d K k x $.  $d M i j $.  $d M k $.  $d P k x $.
-      $d R i j $.  $d R k x $.  $d U k x $.  $d X i j $.  $d X k x $.
-      $d i j ph $.  $d k ph x $.
-      evl1deg3.f $e |- F = ( coe1 ` M ) $.
-      evl1deg3.e $e |- E = ( deg1 ` R ) $.
-      evl1deg3.a $e |- A = ( F ` 3 ) $.
-      evl1deg3.b $e |- B = ( F ` 2 ) $.
-      evl1deg3.c $e |- C = ( F ` 1 ) $.
-      evl1deg3.d $e |- D = ( F ` 0 ) $.
-      evl1deg3.r $e |- ( ph -> R e. CRing ) $.
-      evl1deg3.m $e |- ( ph -> M e. U ) $.
-      evl1deg3.1 $e |- ( ph -> ( E ` M ) = 3 ) $.
-      evl1deg3.x $e |- ( ph -> X e. K ) $.
-      $( Evaluation of a univariate polynomial of degree 3.  (Contributed by
-         Thierry Arnoux, 14-Jun-2025.) $)
-      evl1deg3 $p |- ( ph -> ( ( O ` M ) ` X ) = ( ( ( A .x. ( 3 .^ X ) )
-                       .+ ( B .x. ( 2 .^ X ) ) ) .+ ( ( C .x. X ) .+ D ) ) ) $=
-        ( vk vx vj vi cfv cn0 cv co cmpt cgsu cc0 c4 cfzo cuz c3 cvv wceq oveq2
-        oveq2d mpteq2dv evl1fpws ovexd fvmptd4 c0g eqid crngringd ringcmnd wcel
-        c2 nn0ex a1i crg adantr coe1fvalcl sylan cmgp mgpbas cmnd ringmgp simpr
-        wa syl mulgnn0cld ringcld fvexd fveq2 oveq1 oveq12d clt wbr wral imbi1d
-        breq1 ralbidv 3nn0 eqeltrd ad2antrr deg1lt syl3anc oveq1d ringlzd eqtrd
-        wi cin c0 cun nn0uz ax-mp c1 cpr wss sselda wne ltneii 0nn0 1nn0 gsumpr
-        sylancl syl132anc eqeltrid eqcomd 2nn0 eqtr4di cmncom grpcld 3eqtrd cfn
-        simplr ex ralrimiva rspcedvdw mptnn0fsuppd fzouzdisj eleqtri fzouzsplit
-        4nn0 eqtri gsumsplit2 fzofi fzo0ssnn0 syldan 0ne2 1ne2 0re 3pos disjpr2
-        1lt3 mp4an fzo0to42pr gsummptfidmsplit uzss sseqtrri caddc 3p1e4 fveq2i
-        1re eleq2i cz 3z eluzp1l mpan sylbir adantl eqbrtrd mpteq2dva ccmn 0ne1
-        cur ringridmd ringidval mulg0 ringcom 3eqtr3d 2re 2lt3 crnggrpd grpmndd
-        mulg1 gsumz syl2anc grpridd ) AQOPUSZUSHUOUTUOVAZMUSZUWQQLVBZIVBZVCZVDV
-        BZHUOVEVFVGVBZUWTVCVDVBZHUOVFVHUSZUWTVCZVDVBZGVBZBVIQLVBZIVBZCWCQLVBZIV
-        BZGVBZDQIVBZEGVBZGVBZAUPQHUOUTUWRUWQUPVAZLVBZIVBZVCZVDVBUXBNUWPVJUXQQVK
-        ZUXTUXAHVDUYAUOUTUXSUWTUYAUXRUWSUWRIUXQQUWQLVLVMVNVMAUPMNHIJUOLOPFSRTUA
-        UKULUBUDUEVOUNAHUXAVDVPVQAUTNUXCUXEGUOHVJUWTHVRUSZTUYBVSZUCAHAHUKVTZWAZ
-        UTVJWBAWDWEAUWQUTWBZWOZNHIUWRUWSTUBAHWFWBZUYFUYDWGAOJWBZUYFUWRNWBULMJFH
-        ONUWQUEUARTWHWIUYGNLHWJUSZUWQQNHUYJUYJVSZTWKZUDAUYJWLWBZUYFAUYHUYMUYDHU
-        YJUYKWMZWPZWGAUYFWNAQNWBZUYFUNWGWQWRZAUQNUWTUQVAZMUSZUYRQLVBZIVBZUOVJUY
-        BURAHVRWSUYQUWQUYRVKUWRUYSUWSUYTIUWQUYRMWTUWQUYRQLXAXBAURVAZUYRXCXDZVUA
-        UYBVKZXQZUQUTXEOKUSZUYRXCXDZVUDXQZUQUTXEURVUFUTVUBVUFVKZVUEVUHUQUTVUIVU
-        CVUGVUDVUBVUFUYRXCXGXFXHAVUFVIUTUMVIUTWBZAXIWEZXJAVUHUQUTAUYRUTWBZWOZVU
-        GVUDVUMVUGWOZVUAUYBUYTIVBUYBVUNUYSUYBUYTIVUNUYIVULVUGUYSUYBVKAUYIVULVUG
-        ULXKAVULVUGUUBZVUMVUGWNMJKFHOUYRUYBUFRUAUYCUEXLXMXNVUNNHIUYTUYBTUBUYCAU
-        YHVULVUGUYDXKZVUNNLUYJUYRQUYLUDVUNUYHUYMVUPUYNWPVUOAUYPVULVUGUNXKWQXOXP
-        UUCUUDUUEUUFUXCUXEXRXSVKAVEVFUUGWEUTUXCUXEXTZVKAUTVEVHUSZVUQYAVFVURWBZV
-        URVUQVKVFUTVURUUJYAUUHZVEVFUUIYBUUKWEUULAUXHHUOVEYCYDZUWTVCVDVBZHUOWCVI
-        YDZUWTVCVDVBZGVBZHUOUXEUYBVCZVDVBZGVBUXPUYBGVBUXPAUXDVVEUXGVVGGAUXCNVVA
-        VVCGUOHUWTTUCUYEUXCUUAWBAVEVFUUMWEAUWQUXCWBUYFUWTNWBAUXCUTUWQUXCUTYEAVF
-        UUNWEYFUYQUUOVVAVVCXRXSVKZAVEWCYGYCWCYGVEVIYGYCVIYGVVHUUPUUQVEVIUURUUSY
-        HYCVIUVJUVAYHVEYCWCVIUUTUVBWEUXCVVAVVCXTVKAUVCWEUVDAUXFVVFHVDAUOUXEUWTU
-        YBAUWQUXEWBZWOZUWTUYBUWSIVBUYBVVJUWRUYBUWSIVVJUYIUYFVUFUWQXCXDUWRUYBVKA
-        UYIVVIULWGAUXEUTUWQUXEUTYEAUXEVURUTVUSUXEVURYEVUTVEVFUVEYBYAUVFWEYFZVVJ
-        VUFVIUWQXCAVUFVIVKVVIUMWGVVIVIUWQXCXDZAVVIUWQVIYCUVGVBZVHUSZWBZVVLVVNUX
-        EUWQVVMVFVHUVHUVIUVKVIUVLWBVVOVVLUVMVIUWQUVNUVOUVPUVQUVRMJKFHOUWQUYBUFR
-        UAUYCUEXLXMXNVVJNHIUWSUYBTUBUYCAUYHVVIUYDWGZVVJNLUYJUWQQUYLUDVVJUYHUYMV
-        VPUYNWPVVKAUYPVVIUNWGWQXOXPUVSVMXBAVVEUXPVVGUYBGAVVEUXOUXMGVBZUXPAVVBUX
-        OVVDUXMGAVVBVEMUSZVEQLVBZIVBZYCMUSZYCQLVBZIVBZGVBZUXOAHUVTWBZVEUTWBZYCU
-        TWBZVEYCYGZVVTNWBVWCNWBVVBVWDVKUYEVWFAYIWEZVWGAYJWEZVWHAUWAWEANHIVVRVVS
-        TUBUYDAUYIVWFVVRNWBULYIMJFHONVEUEUARTWHYLZANLUYJVEQUYLUDUYOVWIUNWQWRANH
-        IVWAVWBTUBUYDAUYIVWGVWANWBULYJMJFHONYCUEUARTWHYLANLUYJYCQUYLUDUYOVWJUNW
-        QWRZUWTNVVTVWCGUOHVEYCUTUTTUCUWQVEVKUWRVVRUWSVVSIUWQVEMWTUWQVEQLXAXBUWQ
-        YCVKUWRVWAUWSVWBIUWQYCMWTUWQYCQLXAXBYKYMAEHUWBUSZIVBZUXNGVBEUXNGVBZVWDU
-        XOAVWNEUXNGANHIVWMETUBVWMVSZUYDAEVVRNUJVWKYNZUWCXNAVWNVVTUXNVWCGAEVVRVW
-        MVVSIEVVRVKAUJWEAVVSVWMAUYPVVSVWMVKUNNLUYJQVWMUYLHVWMUYJUYKVWPUWDUDUWEW
-        PYOXBADVWAQVWBIDVWAVKAUIWEAVWBQAUYPVWBQVKUNNLUYJQUYLUDUWLWPYOXBZXBAUYHE
-        NWBUXNNWBVWOUXOVKUYDVWQAUXNVWCNVWRVWLXJZNGHEUXNTUCUWFXMUWGXPAVVDUXLUXJG
-        VBZUXMAVWEWCUTWBZVUJWCVIYGZUXLNWBZUXJNWBZVVDVWTVKUYEVXAAYPWEZVUKVXBAWCV
-        IUWHUWIYHWEANHICUXKTUBUYDACWCMUSZNUHAUYIVXAVXFNWBULYPMJFHONWCUEUARTWHYL
-        YNANLUYJWCQUYLUDUYOVXEUNWQWRZANHIBUXITUBUYDABVIMUSZNUGAUYIVUJVXHNWBULXI
-        MJFHONVIUEUARTWHYLYNANLUYJVIQUYLUDUYOVUKUNWQWRZUWTNUXLUXJGUOHWCVIUTUTTU
-        CUWQWCVKZUWRCUWSUXKIVXJUWRVXFCUWQWCMWTUHYQUWQWCQLXAXBUWQVIVKZUWRBUWSUXI
-        IVXKUWRVXHBUWQVIMWTUGYQUWQVIQLXAXBYKYMAVWEVXCVXDVWTUXMVKUYEVXGVXINGHUXL
-        UXJTUCYRXMXPXBAVWEUXONWBUXMNWBVVQUXPVKUYEANGHUXNETUCAHUKUWJZVWSVWQYSZAN
-        GHUXJUXLTUCVXLVXIVXGYSZNGHUXOUXMTUCYRXMXPAHWLWBUXEVJWBVVGUYBVKAHVXLUWKA
-        VFVHWSUXEUOHVJUYBUYCUWMUWNXBANGHUXPUYBTUCUYCVXLANGHUXMUXOTUCVXLVXNVXMYS
-        UWOYTYT $.
     $}
   $}
 
@@ -541202,29 +541794,6 @@ $)
   $}
 
   ${
-    deg1addlt.y $e |- Y = ( Poly1 ` R ) $.
-    deg1addlt.d $e |- D = ( deg1 ` R ) $.
-    deg1addlt.r $e |- ( ph -> R e. Ring ) $.
-    deg1addlt.b $e |- B = ( Base ` Y ) $.
-    deg1addlt.p $e |- .+ = ( +g ` Y ) $.
-    deg1addlt.f $e |- ( ph -> F e. B ) $.
-    deg1addlt.g $e |- ( ph -> G e. B ) $.
-    deg1addlt.l $e |- ( ph -> L e. RR* ) $.
-    deg1addlt.1 $e |- ( ph -> ( D ` F ) < L ) $.
-    deg1addlt.2 $e |- ( ph -> ( D ` G ) < L ) $.
-    $( If both factors have degree bounded by ` L ` , then the sum of the
-       polynomials also has degree bounded by ` L ` .  See also ~ deg1addle .
-       (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-    deg1addlt $p |- ( ph -> ( D ` ( F .+ G ) ) < L ) $=
-      ( wcel co cfv cle wbr cif cxr crg ply1ring ringacl syl3anc deg1xrcl ifcld
-      syl deg1addle clt wa wb xrmaxlt mpbir2and xrlelttrd ) AFGDUAZCUBZFCUBZGCU
-      BZUCUDZVDVCUEZHAVABTZVBUFTAIUGTZFBTZGBTZVGAEUGTVHLIEJUHUMOPBDIFGMNUIUJBCI
-      EVAKJMUKUMAVEVDVCUFAVJVDUFTZPBCIEGKJMUKUMZAVIVCUFTZOBCIEFKJMUKUMZULQABCDE
-      FGIJKLMNOPUNAVFHUOUDZVCHUOUDZVDHUOUDZRSAVMVKHUFTVOVPVQUPUQVNVLQVCVDHURUJU
-      SUT $.
-  $}
-
-  ${
     ig1pirred.p $e |- P = ( Poly1 ` R ) $.
     ig1pirred.g $e |- G = ( idlGen1p ` R ) $.
     ig1pirred.u $e |- U = ( Base ` P ) $.
@@ -541266,581 +541835,6 @@ $)
     $}
   $}
 
-  ${
-    deg1le1.d $e |- D = ( deg1 ` R ) $.
-    deg1le1.p $e |- P = ( Poly1 ` R ) $.
-    deg1le1.b $e |- B = ( Base ` P ) $.
-    deg1le1.f $e |- ( ph -> F e. B ) $.
-    deg1le1.1 $e |- ( ph -> ( D ` F ) <_ 1 ) $.
-    $( Dichotomy for a univariate polynomial of degree at most one.
-       (Contributed by Thierry Arnoux, 8-Nov-2026.) $)
-    deg1le1 $p |- ( ph -> ( ( D ` F ) <_ 0 \/ ( D ` F ) = 1 ) ) $=
-      ( cn0 wcel cc0 cle wbr c1 cmnf wa simpr cfv wceq wo eqbrtrdi c2 clt caddc
-      0le0 co 1nn0 a1i adantr nn0leltp1 biimpa syl21anc breqtrdi nn0lt2 syl2anc
-      1p1e2 orim12da cxr 0xr mnfled eqbrtrd orcd csn cun deg1cl elunsn ibi 3syl
-      mpjaodan ) AFCUAZLMZVMNOPZVMQUBZUCVMRUBZAVNSZVMNUBZVPVOVPVRVSSVMNNOVRVSTU
-      HUDVRVPTVRVNVMUEUFPVSVPUCAVNTZVRVMQQUGUIZUEUFVRVNQLMZVMQOPZVMWAUFPZVTWBVR
-      UJUKAWCVNKULVNWBSWCWDVMQUMUNUOUSUPVMUQURUTAVQSZVOVPWEVMRNOAVQTWENNVAMWEVB
-      UKVCVDVEAFBMVMLRVFVGZMZVNVQUCZJBCDEFGHIVHWGWHVMLRWFVIVJVKVL $.
-  $}
-
-  ${
-    $d .x. i j k $.  $d .x. k x $.  $d C i j k $.  $d C x $.  $d D i j $.
-    $d K k $.  $d K x $.  $d M i j k $.  $d P k $.  $d P x $.  $d R i j k $.
-    $d R x $.  $d U k $.  $d U x $.  $d X i j k $.  $d X x $.  $d i j k ph $.
-    $d ph x $.
-    evls1degle1.p $e |- P = ( Poly1 ` ( R |`s S ) ) $.
-    evls1degle1.q $e |- Q = ( R evalSub1 S ) $.
-    evls1degle1.v $e |- V = ( Base ` R ) $.
-    evls1degle1.u $e |- U = ( Base ` P ) $.
-    evls1degle1.m $e |- .x. = ( .r ` R ) $.
-    evls1degle1.t $e |- .+ = ( +g ` R ) $.
-    evls1degle1.c $e |- C = ( coe1 ` F ) $.
-    evls1degle1.d $e |- D = ( deg1 ` R ) $.
-    evls1degle1.a $e |- A = ( C ` 1 ) $.
-    evls1degle1.b $e |- B = ( C ` 0 ) $.
-    evls1degle1.r $e |- ( ph -> R e. CRing ) $.
-    evls1degle1.s $e |- ( ph -> S e. ( SubRing ` R ) ) $.
-    evls1degle1.f $e |- ( ph -> F e. U ) $.
-    evls1degle1.1 $e |- ( ph -> ( D ` F ) <_ 1 ) $.
-    evls1degle1.x $e |- ( ph -> X e. V ) $.
-    $( Evaluation of a univariate polynomial of degree at most 1.  (Contributed
-       by Thierry Arnoux, 8-Nov-2026.) $)
-    evls1degle1 $p |- ( ph -> ( ( Q ` F ) ` X ) = ( ( A .x. X ) .+ B ) ) $=
-      ( cfv cc0 cle wbr co wceq c1 wa c0g eqid crg wcel crngringd adantr csubrg
-      ringgrpd wss subrgss syl cress 0nn0 coe1fvalcl subrgbas eleqtrrd eqeltrid
-      cbs cn0 sylancl grplidd cpl1 clt subrgply1 3syl 1nn0 a1i cxr deg1xrcl 0xr
-      sseldd 1xr simpr 0lt1 xrlelttrd deg1lt syl3anc eqtrid ringlzd eqtrd cascl
-      oveq1d cco1 deg1le0 biimpa fveq1i eqtri fveq2i eqtr4di fveq2d fveq1d cres
-      syl21anc subrg1ascl fvresd eqtr2d evls1scafv 3eqtrd 3eqtr4rd ce1 evl1deg1
-      ccrg ressply1evl deg1le1 mpjaodan ) AMEUKZULUMUNZOMHUKZUKZBOKUOZCGUOZUPYD
-      UQUPZAYEURZIUSUKZCGUOCYIYGYKNGICYLRUAYLUTZYKIAIVAVBZYEAIUFVCVDZVFACNVBYEA
-      JNCAJIVEUKVBZJNVGUGJNIRVHVIACULDUKZJUEAYQIJVJUOZVPUKZJAMLVBULVQVBYQYSVBUH
-      VKDLFYRMYSULUBSPYSUTVLVRAYPJYSUPUGJIYRYRUTZVMVIVNVOZWIVDVSYKYHYLCGYKYHYLO
-      KUOYLYKBYLOKYKBUQDUKZYLUDYKMIVTUKZVPUKZVBZUQVQVBZYDUQWAUNUUBYLUPAUUEYEALU
-      UDMAYPLUUCVEUKVBLUUDVGUGLIUUCJFYRUUCUTZYTPSWBLUUDUUCUUDUTZVHWCUHWIZVDZUUF
-      YKWDWEYKYDULUQAYDWFVBZYEAUUEUUKUUIUUDEUUCIMUCUUGUUHWGVIVDULWFVBYKWHWEUQWF
-      VBYKWJWEAYEWKZULUQWAUNYKWLWEWMDUUDEUUCIMUQYLUCUUGUUHYMUBWNWOWPWTYKNIKOYLR
-      TYMYOAONVBZYEUJVDZWQWRWTYKYGOCUUCWSUKZUKZHUKZUKOCFWSUKZUKZHUKZUKCYKOYFUUQ
-      YKMUUPHYKMULMXAUKZUKZUUOUKZUUPYKYNUUEYEMUVCUPZYOUUJUULYNUUEURYEUVDUUOUUDE
-      UUCIMUCUUGUUHUUOUTZXBXCXKCUVBUUOCYQUVBUEULDUVAUBXDXEXFXGXHXIYKOUUQUUTYKUU
-      PUUSHYKUUSCUUOJXJZUKUUPYKCUURUVFYKUUOUURUUCIJFYRUUGUVEYTPAYPYEUGVDZUURUTZ
-      XLXIYKCJUUOACJVBYEUUAVDZXMXNXHXIYKUURNOHJIYRFCQPYTRUVHAIXTVBZYEUFVDUVGUVI
-      UUNXOXPXQAYJURZYGOMIXRUKZUKZUKZYIAYGUVNUPYJAOYFUVMAYFMUVLLXJZUKUVMAMHUVOA
-      LHJIYRUVLNFQRPYTSUVLUTZUFUGYAXIAMLUVLUHXMWRXIVDUVKBCDEUUCGIKUUDNMUVLOUUGU
-      VPRUUHTUAUBUCUDUEAUVJYJUFVDAUUEYJUUIVDAYJWKAUUMYJUJVDXSWRAUUDEUUCIMUCUUGU
-      UHUUIUIYBYC $.
-  $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Polynomial quotient and polynomial remainder
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
-  ${
-    r1padd1.p $e |- P = ( Poly1 ` R ) $.
-    r1padd1.u $e |- U = ( Base ` P ) $.
-    r1padd1.n $e |- N = ( Unic1p ` R ) $.
-    ${
-      q1pdir.d $e |- ./ = ( quot1p ` R ) $.
-      q1pdir.r $e |- ( ph -> R e. Ring ) $.
-      q1pdir.a $e |- ( ph -> A e. U ) $.
-      q1pdir.c $e |- ( ph -> C e. N ) $.
-      ${
-        q1pdir.b $e |- ( ph -> B e. U ) $.
-        q1pdir.1 $e |- .+ = ( +g ` P ) $.
-        $( Distribution of univariate polynomial quotient over addition.
-           (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-        q1pdir $p |- ( ph -> ( ( A .+ B ) ./ C ) = ( ( A ./ C ) .+ ( B ./ C ) )
-          ) $=
-          ( wcel crg co cmulr cfv csg cdg1 clt wbr ply1ring syl ringgrpd grpcld
-          wceq q1pcl syl3anc uc1pcl eqid ringdir syl13anc cabl ringabld ringcld
-          oveq2d ablsub4 syl122anc eqtrd fveq2d cr1p syl2anc r1pcl eqeltrrd cxr
-          r1pval deg1xrcl r1pdeglt eqbrtrrd deg1addlt eqbrtrd w3a q1peqb biimpa
-          wa syl32anc ) AHUATZBCGUBZITZDJTZBDEUBZCDEUBZGUBZITZWEWJDFUCUDZUBZFUE
-          UDZUBZHUFUDZUDZDWPUDZUGUHZWEDEUBWJUMZOAIGFBCLSAFAWDFUATZOFHKUIUJZUKZP
-          RULQAIGFWHWILSXCAWDBITZWGWHITZOPQIJFEHBDNKLMUNUOZAWDCITZWGWIITZORQIJF
-          EHCDNKLMUNUOZULAWQBWHDWLUBZWNUBZCWIDWLUBZWNUBZGUBZWPUDWRUGAWOXNWPAWOW
-          EXJXLGUBZWNUBZXNAWMXOWEWNAXAXEXHDITZWMXOUMXBXFXIAWGXQQIJFHDKLMUPUJZIG
-          FWLWHWIDLSWLUQZURUSVCAFUTTXDXGXJITXLITXPXNUMAFXBVAPRAIFWLWHDLXSXBXFXR
-          VBAIFWLWIDLXSXBXIXRVBIGFWNXLBCXJLSWNUQZVDVEVFVGAIWPGHXKXMWRFKWPUQZOLS
-          ABDHVHUDZUBZXKIAXDXQYCXKUMPXRIFEHWLYBBDWNYBUQZKLNXSXTVMVIZAWDXDWGYCIT
-          OPQIJFHYBBDYDKLMVJUOVKACDYBUBZXMIAXGXQYFXMUMRXRIFEHWLYBCDWNYDKLNXSXTV
-          MVIZAWDXGWGYFITORQIJFHYBCDYDKLMVJUOVKAXQWRVLTXRIWPFHDYAKLVNUJAYCWPUDZ
-          XKWPUDWRUGAYCXKWPYEVGAWDXDWGYHWRUGUHOPQIJWPFHYBBDYDKLMYAVOUOVPAYFWPUD
-          ZXMWPUDWRUGAYFXMWPYGVGAWDXGWGYIWRUGUHORQIJWPFHYBCDYDKLMYAVOUOVPVQVRWD
-          WFWGVSWKWSWBWTIJWPFEHWLWEDWNWJNKLYAXTXSMVTWAWC $.
-      $}
-
-      ${
-        q1pvsca.1 $e |- .X. = ( .s ` P ) $.
-        q1pvsca.k $e |- K = ( Base ` R ) $.
-        q1pvsca.8 $e |- ( ph -> B e. K ) $.
-        $( Scalar multiplication property of the polynomial division.
-           (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-        q1pvsca $p |- ( ph -> ( ( B .X. A ) ./ C ) = ( B .X. ( A ./ C ) ) ) $=
-          ( crg wcel co cmulr cfv csg cdg1 clt wbr wceq csca cbs clmod ply1lmod
-          eqid syl ply1sca fveq2d eleqtrd lmodvscld q1pcl syl3anc cr1p cxr cgrp
-          eqtrid lmodgrpd ply1ring uc1pcl ringcld grpsubcl deg1xrcl syl2anc cle
-          r1pval eqeltrd deg1vscale ply1ass23l syl13anc oveq2d lmodsubdi eqtr4d
-          3brtr4d r1pdeglt xrlelttrd w3a wa q1peqb biimpa syl32anc ) AGUBUCZCBH
-          UDZIUCZDKUCZCBDEUDZHUDZIUCZWMWQDFUEUFZUDZFUGUFZUDZGUHUFZUFZDXCUFZUIUJ
-          ZWMDEUDWQUKZPACHFULUFZXHUMUFZIFBMXHUPZSXIUPZAWLFUNUCPFGLUOUQZACJXIUAA
-          JGUMUFXITAGXHUMAWLGXHUKPFGUBLURUQUSVGUTZQVAZRACHXHXIIFWPMXJSXKXLXMAWL
-          BIUCZWOWPIUCZPQRIKFEGBDOLMNVBVCZVAZAXDBDGVDUFZUDZXCUFZXEAXBIUCZXDVEUC
-          AFVFUCZWNWTIUCYBAFXLVHZXNAIFWSWQDMWSUPZAWLFUBUCPFGLVIUQZXRAWODIUCZRIK
-          FGDLMNVJUQZVKIFXAWMWTMXAUPZVLVCIXCFGXBXCUPZLMVMUQAXTIUCYAVEUCAXTBWPDW
-          SUDZXAUDZIAXOYGXTYLUKQYHIFEGWSXSBDXAXSUPZLMOYEYIVPVNZAYCXOYKIUCYLIUCY
-          DQAIFWSWPDMYEYFXQYHVKZIFXABYKMYIVLVCZVQIXCFGXTYJLMVMUQAYGXEVEUCYHIXCF
-          GDYJLMVMUQACYLHUDZXCUFYLXCUFXDYAVOAIXCGHCYLJFLYJPMTSUAYPVRAXBYQXCAXBW
-          MCYKHUDZXAUDYQAWTYRWMXAAWLCJUCXPYGWTYRUKPUAXQYHCIFGHWSJWPDLYEMTSVSVTW
-          AACHXHXIXAIFBYKMSXJXKYIXLXMQYOWBWCUSAXTYLXCYNUSWDAWLXOWOYAXEUIUJPQRIK
-          XCFGXSBDYMLMNYJWEVCWFWLWNWOWGWRXFWHXGIKXCFEGWSWMDXAWQOLMYJYIYENWIWJWK
-          $.
-      $}
-    $}
-
-    r1padd1.e $e |- E = ( rem1p ` R ) $.
-    ${
-      r1pvsca.6 $e |- ( ph -> R e. Ring ) $.
-      r1pvsca.7 $e |- ( ph -> A e. U ) $.
-      r1pvsca.10 $e |- ( ph -> D e. N ) $.
-      r1pvsca.1 $e |- .X. = ( .s ` P ) $.
-      r1pvsca.k $e |- K = ( Base ` R ) $.
-      r1pvsca.2 $e |- ( ph -> B e. K ) $.
-      $( Scalar multiplication property of the polynomial remainder operation.
-         (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-      r1pvsca $p |- ( ph -> ( ( B .X. A ) E D ) = ( B .X. ( A E D ) ) ) $=
-        ( cq1p cfv cmulr csg crg wcel wceq eqid q1pcl syl3anc uc1pcl ply1ass23l
-        co syl syl13anc oveq2d q1pvsca oveq1d cbs clmod ply1lmod ply1sca fveq2d
-        csca eqtrid eleqtrd ply1ring ringcld lmodsubdi 3eqtr4d lmodvscld r1pval
-        syl2anc ) ACBGUNZVODFUBUCZUNZDEUDUCZUNZEUEUCZUNZCBBDVPUNZDVRUNZVTUNZGUN
-        ZVODIUNZCBDIUNZGUNAVOCWBGUNZDVRUNZVTUNVOCWCGUNZVTUNWAWEAWIWJVOVTAFUFUGZ
-        CJUGWBHUGZDHUGZWIWJUHPUAAWKBHUGZDKUGZWLPQRHKEVPFBDVPUIZLMNUJUKZAWOWMRHK
-        EFDLMNULUOZCHEFGVRJWBDLVRUIZMTSUMUPUQAVSWIVOVTAVQWHDVRABCDVPEFGHJKLMNWP
-        PQRSTUAURUSUQACGEVEUCZWTUTUCZVTHEBWCMSWTUIZXAUIZVTUIZAWKEVAUGPEFLVBUOZA
-        CJXAUAAJFUTUCXATAFWTUTAWKFWTUHPEFUFLVCUOVDVFVGZQAHEVRWBDMWSAWKEUFUGPEFL
-        VHUOWQWRVIVJVKAVOHUGWMWFWAUHACGWTXAHEBMXBSXCXEXFQVLWRHEVPFVRIVODVTOLMWP
-        WSXDVMVNAWGWDCGAWNWMWGWDUHQWRHEVPFVRIBDVTOLMWPWSXDVMVNUQVK $.
-    $}
-
-    ${
-      r1p0.r $e |- ( ph -> R e. Ring ) $.
-      r1p0.d $e |- ( ph -> D e. N ) $.
-      r1p0.0 $e |- .0. = ( 0g ` P ) $.
-      $( Polynomial remainder operation of a division of the zero polynomial.
-         (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-      r1p0 $p |- ( ph -> ( .0. E D ) = .0. ) $=
-        ( c0g cfv co wcel eqid csca crg wceq ply1sca syl fveq2d oveq1d ply1lmod
-        cvsca clmod ply1ring ring0cl 3syl lmod0vs syl2anc eqtrd r1pvsca syl3anc
-        cbs r1pcl 3eqtrd eqtr3d ) ADPQZHCUIQZRZBFRZHBFRZHAVEHBFAVECUAQZPQZHVDRZ
-        HAVCVIHVDADVHPADUBSZDVHUCMCDUBIUDUEUFZUGACUJSZHESZVJHUCAVKVMMCDIUHUEZAV
-        KCUBSVNMCDIUKECHJOULUMZVDVHVIECHHJVHTZVDTZVITZOUNUOUPUGAVFVCVGVDRVIVGVD
-        RZHAHVCBCDVDEFDUSQZGIJKLMVPNVRWATZAVKVCWASMWADVCWBVCTULUEUQAVCVIVGVDVLU
-        GAVMVGESZVTHUCVOAVKVNBGSWCMVPNEGCDFHBLIJKUTURVDVHVIECVGHJVQVRVSOUNUOVAV
-        B $.
-    $}
-
-    ${
-      r1pcyc.p $e |- .+ = ( +g ` P ) $.
-      r1pcyc.m $e |- .x. = ( .r ` P ) $.
-      r1pcyc.r $e |- ( ph -> R e. Ring ) $.
-      r1pcyc.a $e |- ( ph -> A e. U ) $.
-      r1pcyc.b $e |- ( ph -> B e. N ) $.
-      r1pcyc.c $e |- ( ph -> C e. U ) $.
-      $( The polynomial remainder operation is periodic.  See ~ modcyc .
-         (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-      r1pcyc $p |- ( ph -> ( ( A .+ ( C .x. B ) ) E B ) = ( A E B ) ) $=
-        ( co cq1p cfv csg cgrp wcel wceq crg ply1ring syl ringgrpd eqid syl3anc
-        uc1pcl ringcld grppnpcan2 syl13anc grpcld r1pval syl2anc ringdir q1pdir
-        q1pcl oveq1d cdsr wbr dvdsrmul wb dvdsq1p mpbid oveq2d 3eqtr4d eqtrd )
-        ABDCHUBZFUBZBCGUCUDZUBZCHUBZVOFUBZEUEUDZUBZBVSWAUBZVPCJUBZBCJUBZAEUFUGB
-        IUGZVSIUGVOIUGZWBWCUHAEAGUIUGZEUIUGZREGLUJUKZULZSAIEHVRCMQWJAWHWFCKUGZV
-        RIUGZRSTIKEVQGBCVQUMZLMNVDUNZAWLCIUGZTIKEGCLMNUOUKZUPAIEHDCMQWJUAWQUPZI
-        FEWABVSVOMPWAUMZUQURAWDVPVPCVQUBZCHUBZWAUBZWBAVPIUGWPWDXBUHAIFEBVOMPWKS
-        WRUSWQIEVQGHJVPCWAOLMWNQWSUTVAAXAVTVPWAAVRVOCVQUBZFUBZCHUBZVSXCCHUBZFUB
-        ZXAVTAWIWMXCIUGZWPXEXGUHWJWOAWHWGWLXHRWRTIKEVQGVOCWNLMNVDUNWQIFEHVRXCCM
-        PQVBURAWTXDCHABVOCVQEFGIKLMNWNRSTWRPVCVEAVOXFVSFACVOEVFUDZVGZVOXFUHZAWP
-        DIUGXJWQUAIXIEHCDMXIUMZQVHVAAWHWGWLXJXKVIRWRTIKXIEVQGHVOCLXLMNQWNVJUNVK
-        VLVMVLVNAWFWPWEWCUHSWQIEVQGHJBCWAOLMWNQWSUTVAVM $.
-    $}
-
-    ${
-      r1padd1.r $e |- ( ph -> R e. Ring ) $.
-      r1padd1.a $e |- ( ph -> A e. U ) $.
-      r1padd1.d $e |- ( ph -> D e. N ) $.
-      r1padd1.1 $e |- ( ph -> ( A E D ) = ( B E D ) ) $.
-      r1padd1.2 $e |- .+ = ( +g ` P ) $.
-      r1padd1.b $e |- ( ph -> B e. U ) $.
-      r1padd1.c $e |- ( ph -> C e. U ) $.
-      $( Addition property of the polynomial remainder operation, similar to
-         ~ modadd1 .  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-      r1padd1 $p |- ( ph -> ( ( A .+ C ) E D ) = ( ( B .+ C ) E D ) ) $=
-        ( co cq1p cfv cminusg cmulr csg wcel wceq uc1pcl r1pval syl2anc 3eqtr3d
-        syl eqid oveq1d ply1ring q1pcl syl3anc ringmneg1 oveq2d ringgrpd grpcld
-        crg ringcld grpsubval cabl ringabld abladdsub 3eqtr2d 3eqtr4d grpinvcld
-        syl13anc r1pcyc ) ABDGUCZBEHUDUEZUCZFUFUEZUEZEFUGUEZUCZGUCZEJUCCDGUCZCE
-        VQUCZVSUEZEWAUCZGUCZEJUCVPEJUCWDEJUCAWCWHEJABVREWAUCZFUHUEZUCZDGUCZCWEE
-        WAUCZWJUCZDGUCZWCWHAWKWNDGABEJUCZCEJUCZWKWNSABIUIZEIUIZWPWKUJQAEKUIZWSR
-        IKFHELMNUKUOZIFVQHWAJBEWJOLMVQUPZWAUPZWJUPZULUMACIUIZWSWQWNUJUAXAIFVQHW
-        AJCEWJOLMXBXCXDULUMUNUQAWCVPWIVSUEZGUCZVPWIWJUCZWLAWBXFVPGAIFWAVSVREMXC
-        VSUPZAHVEUIZFVEUIPFHLURUOZAXJWRWTVRIUIPQRIKFVQHBEXBLMNUSUTZXAVAVBAVPIUI
-        WIIUIZXHXGUJAIGFBDMTAFXKVCZQUBVDZAIFWAVREMXCXKXLXAVFZIGFVSWJVPWIMTXIXDV
-        GUMAFVHUIZWRDIUIZXMXHWLUJAFXKVIZQUBXPIGFWJBDWIMTXDVJVNVKAWHWDWMVSUEZGUC
-        ZWDWMWJUCZWOAWGXTWDGAIFWAVSWEEMXCXIXKAXJXEWTWEIUIPUARIKFVQHCEXBLMNUSUTZ
-        XAVAVBAWDIUIWMIUIZYBYAUJAIGFCDMTXNUAUBVDZAIFWAWEEMXCXKYCXAVFZIGFVSWJWDW
-        MMTXIXDVGUMAXQXEXRYDYBWOUJXSUAUBYFIGFWJCDWMMTXDVJVNVKVLUQAVPEVTFGHWAIJK
-        LMNOTXCPXORAIFVSVRMXIXNXLVMVOAWDEWFFGHWAIJKLMNOTXCPYERAIFVSWEMXIXNYCVMV
-        OUN $.
-    $}
-  $}
-
-  ${
-    $d E f p $.  $d F a b k p q $.  $d K q $.  $d M f p $.  $d P a b f k p q $.
-    $d Q q $.  $d U a b f k p q $.  $d a b f k p ph q $.
-    r1plmhm.1 $e |- P = ( Poly1 ` R ) $.
-    r1plmhm.2 $e |- U = ( Base ` P ) $.
-    r1plmhm.4 $e |- E = ( rem1p ` R ) $.
-    r1plmhm.5 $e |- N = ( Unic1p ` R ) $.
-    r1plmhm.6 $e |- F = ( f e. U |-> ( f E M ) ) $.
-    r1plmhm.9 $e |- ( ph -> R e. Ring ) $.
-    r1plmhm.10 $e |- ( ph -> M e. N ) $.
-    $( The univariate polynomial remainder function ` F ` is a module
-       homomorphism.  Its image ` ( F "s P ) ` is sometimes called the "ring of
-       remainders".  (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
-    r1plmhm $p |- ( ph -> F e. ( P LMHom ( F "s P ) ) ) $=
-      ( co wcel cfv wa vk vq vp va vb cimas clmod clmhm cplusg cvsca cbs cv crg
-      csca adantr simpr r1pcl syl3anc fmptd eqid wceq wi ad6antr simp-6r simplr
-      anass cvv oveq1 fvmptd3 simp-4r 3eqtr3d simp-5r r1padd1 cgrp ply1ring syl
-      ovexd ringgrpd grpcld 3eqtr4d ringabld ablcom fveq2d eqtrd simpllr 3eqtrd
-      cabl expl anasss sylanbr w3a simpr2 simpr3 oveq2d ad2antrr simpr1 ply1sca
-      3impa eleqtrrd r1pvsca ply1lmod lmodvscld an32s ex imaslmhm simprd ) AGBU
-      FQZUGRGBXGUHQRADDBUNSZBUISZBUJSZUAGXHUKSZBUBUCUDUEKAEDEULZHFQZDGAXLDRZTCU
-      MRZXNHIRZXMDRAXOXNOUOAXNUPAXPXNPUODIBCFXLHLJKMUQURNUSXIUTZAUDULZDRZUEULZD
-      RZTZUCULZDRZUBULZDRZTZXRGSZYCGSZVAZXTGSZYEGSZVAZTXRXTXIQZGSZYCYEXIQZGSZVA
-      ZVBZAYBTAXSTZYATZYGYSAXSYAVFUUAYDYFYSUUAYDTZYFTZYJYMYRUUCYJTZYMTZYOXTYCXI
-      QZGSZYEYCXIQZGSZYQUUEYOYCXTXIQZGSZUUGUUEYNHFQZUUJHFQZYOUUKUUEXRYCXTHBXICD
-      FIJKMLAXOXSYAYDYFYJYMOVCZAXSYAYDYFYJYMVDZAXPXSYAYDYFYJYMPVCZUUEYHYIXRHFQZ
-      YCHFQZUUCYJYMVEUUEEXRXMUUQDGVGNXLXRHFVHZUUOUUEXRHFVQVIUUEEYCXMUURDGVGNXLY
-      CHFVHUUAYDYFYJYMVJZUUEYCHFVQVIVKXQUUTYTYAYDYFYJYMVLZVMUUEEYNXMUULDGVGNXLY
-      NHFVHUUEDXIBXRXTKXQABVNRXSYAYDYFYJYMABAXOBUMROBCJVOVPZVRVCZUUOUVAVSUUEYNH
-      FVQVIUUEEUUJXMUUMDGVGNXLUUJHFVHUUEDXIBYCXTKXQUVCUUTUVAVSUUEUUJHFVQVIVTUUE
-      UUJUUFGUUEBWGRZYDYAUUJUUFVAAUVDXSYAYDYFYJYMABUVBWAVCZUUTUVADXIBYCXTKXQWBU
-      RWCWDUUEUUFHFQZUUHHFQZUUGUUIUUEXTYEYCHBXICDFIJKMLUUNUVAUUPUUEYKYLXTHFQZYE
-      HFQZUUDYMUPUUEEXTXMUVHDGVGNXLXTHFVHZUVAUUEXTHFVQVIUUEEYEXMUVIDGVGNXLYEHFV
-      HUUBYFYJYMWEZUUEYEHFVQVIVKXQUVKUUTVMUUEEUUFXMUVFDGVGNXLUUFHFVHUUEDXIBXTYC
-      KXQUVCUVAUUTVSUUEUUFHFVQVIUUEEUUHXMUVGDGVGNXLUUHHFVHUUEDXIBYEYCKXQUVCUVKU
-      UTVSUUEUUHHFVQVIVTUUEUUHYPGUUEUVDYFYDUUHYPVAUVEUVKUUTDXIBYEYCKXQWBURWCWFW
-      HWIWJWRXHUTZXKUTZAUAULZXKRZXSYAWKZTYHYKVAZUVNXRXJQZGSZUVNXTXJQZGSZVAZAUVQ
-      UVPUWBAUVQTZUVPTZUVRHFQZUVTHFQZUVSUWAUWDUVNUUQXJQUVNUVHXJQUWEUWFUWDUUQUVH
-      UVNXJUWDYHYKUUQUVHAUVQUVPVEUWDEXRXMUUQDGVGNUUSUWCUVOXSYAWLZUWDXRHFVQVIUWD
-      EXTXMUVHDGVGNUVJUWCUVOXSYAWMZUWDXTHFVQVIVKWNUWDXRUVNHBCXJDFCUKSZIJKMLAXOU
-      VQUVPOWOZUWGAXPUVQUVPPWOZXJUTZUWIUTZUWDUVNXKUWIUWCUVOXSYAWPZAUWIXKVAUVQUV
-      PACXHUKAXOCXHVAOBCUMJWQVPWCWOWSZWTUWDXTUVNHBCXJDFUWIIJKMLUWJUWHUWKUWLUWMU
-      WOWTVTUWDEUVRXMUWEDGVGNXLUVRHFVHUWDUVNXJXHXKDBXRKUVLUWLUVMUWDXOBUGRZUWJBC
-      JXAZVPZUWNUWGXBUWDUVRHFVQVIUWDEUVTXMUWFDGVGNXLUVTHFVHUWDUVNXJXHXKDBXTKUVL
-      UWLUVMUWRUWNUWHXBUWDUVTHFVQVIVTXCXDAXOUWPOUWQVPUWLXEXF $.
-
-    $d .0. f q $.  $d E f $.  $d F a b f q $.  $d K q $.  $d M f $.
-    $d P a b f q $.  $d Q f q $.  $d U a b f q $.  $d a b f ph q $.
-    r1pquslmic.0 $e |- .0. = ( 0g ` P ) $.
-    r1pquslmic.k $e |- K = ( `' F " { .0. } ) $.
-    r1pquslmic.q $e |- Q = ( P /s ( P ~QG K ) ) $.
-    $( The univariate polynomial remainder ring ` ( F "s P ) ` is module
-       isomorphic with the quotient ring.  (Contributed by Thierry Arnoux,
-       2-Apr-2025.) $)
-    r1pquslmic $p |- ( ph -> Q ~=m ( F "s P ) ) $=
-      ( vq va vb ccnv cimas co c0g cfv csn cima cqg cqus clmic cmnd wcel cplusg
-      wceq eqidd cbs a1i eqid wf wfo cv wa crg adantr simpr r1pcl syl3anc fmptd
-      fimadmfo syl wi anass simplr oveq12d cghm r1plmhm ad6antr simp-6r simp-5r
-      lmhmghmd ghmlin simp-4r simpllr 3eqtr4d expl anasss sylanbr 3impa grpmndd
-      ply1ring imasmnd simprd oveq1 r1p0 sylan9eqr ring0cl fvmptd2 eqtr3d sneqd
-      ringgrpd imaeq2d eqtr4di oveq2d crn wfn ffnd fnima cvv cpl1 fvexi imasbas
-      lmicqusker eqbrtrrd ) ABBHUFZHBUGUHZUIUJZUKZULZUMUHZUNUHZCXTUOAYEBBIUMUHZ
-      UNUHCAYDYFBUNAYCIBUMAYCXSLUKZULIAYBYGXSAYALALHUJZYALAXTUPUQYHYAUSAHEULZBU
-      RUJZBXTHELUCFUDUEAXTUTZEBVAUJUSANVBZYJVCZAEEHVDEYIHVEAFEFVFZJGUHZEHAYNEUQ
-      ZVGDVHUQZYPJKUQZYOEUQAYQYPRVIAYPVJAYRYPSVIEKBDGYNJOMNPVKVLQVMZEEHVNVOZAUD
-      VFZEUQZUEVFZEUQZVGZYPUCVFZEUQZVGZUUAHUJZYNHUJZUSZUUCHUJZUUFHUJZUSZVGUUAUU
-      CYJUHHUJZYNUUFYJUHHUJZUSZVPZAUUEVGAUUBVGZUUDVGZUUHUURAUUBUUDVQUUTYPUUGUUR
-      UUTYPVGZUUGVGZUUKUUNUUQUVBUUKVGZUUNVGZUUIUULXTURUJZUHZUUJUUMUVEUHZUUOUUPU
-      VDUUIUUJUULUUMUVEUVBUUKUUNVRUVCUUNVJVSUVDHBXTVTUHUQZUUBUUDUUOUVFUSAUVHUUB
-      UUDYPUUGUUKUUNABXTHABDEFGHJKMNOPQRSWAZWEWBZAUUBUUDYPUUGUUKUUNWCUUSUUDYPUU
-      GUUKUUNWDYJUVEBXTUUAHUUCENYMUVEVCZWFVLUVDUVHYPUUGUUPUVGUSUVJUUTYPUUGUUKUU
-      NWGUVAUUGUUKUUNWHYJUVEBXTYNHUUFENYMUVKWFVLWIWJWKWLWMABABAYQBVHUQZRBDMWOVO
-      ZXEWNTWPWQAFLYOLEHEQYNLUSAYOLJGUHLYNLJGWRAJBDEGKLMNPORSTWSWTAUVLLEUQUVMEB
-      LNTXAVOZUVNXBXCXDXFUAXGXHXHUBXGAYEHBXTYCYAYAVCUVIYCVCYEVCAYIHXIZXTVAUJAHE
-      XJYIUVOUSAEEHYSXKEHXLVOAYIBXTHEXMYKYLYTBXMUQABDXNMXOVBXPXCXQXR $.
-  $}
-
-  ${
-    rngunsnply1.b $e |- B = ( Base ` R ) $.
-    rngunsnply1.p $e |- P = ( Poly1 ` ( R |`s S ) ) $.
-    rngunsnply1.u $e |- U = ( Base ` P ) $.
-    rngunsnply1.q $e |- Q = ( R evalSub1 S ) $.
-    rngunsnply1.r $e |- ( ph -> R e. CRing ) $.
-    rngunsnply1.s $e |- ( ph -> S e. ( SubRing ` R ) ) $.
-    rngunsnply1.x $e |- ( ph -> X e. B ) $.
-    rngunsnply1.n $e |- N = ( RingSpan ` R ) $.
-    ${
-      $d B a f g w $.  $d B i x $.  $d F i x $.  $d N i $.  $d P i x $.
-      $d Q i x $.  $d R a f g w $.  $d R i x $.  $d S a f g w $.  $d S i x $.
-      $d U i $.  $d X a f g w $.  $d X i x $.  $d a f g ph w $.  $d i ph x $.
-      evls1rgspncl.f $e |- ( ph -> F e. U ) $.
-      $( Closure of the subring polynomial evaluation in a generated ring.
-         Generic version of ~ cnsrplycl .  See also ~ evls1fldgencl .
-         (Contributed by Thierry Arnoux, 8-Nov-2026.) $)
-      evls1rgspncl $p |- ( ph -> ( ( Q ` F ) ` X ) e. ( N ` ( S u. { X } ) ) )
-        $=
-        ( wcel vi vx cfv cn0 cv cco1 cmgp cmg cmulr cmpt cgsu csn cun cvv oveq2
-        co wceq oveq2d mpteq2dv cress eqid evls1fpws ovexd fvmptd4 c0g ringabld
-        crngringd nn0ex a1i csubrg csubg cbs wss subrgss syl snssd unssd crgspn
-        eqidd subrgsubg wa adantr rgspnssid unssad coe1fvalcl ressbas2 eleqtrrd
-        rgspncl sylan sseldd csubmnd subrgsubm simpr ssun2 snidg sselid syl3anc
-        submmulgcl subrgmcld fmpttd crg wbr subrgring mptcoe1fsupp syl2anc cmnd
-        cfsupp ringmnd subgsubm subm0cl 3syl ress0g breqtrrd ringlzd fsuppssov1
-        gsumsubgcl eqeltrd ) AJHDUCZUCEUAUDUAUEZHUFUCZUCZXSJEUGUCZUHUCZUPZEUIUC
-        ZUPZUJZUKUPZFJULZUMZIUCZAUBJEUAUDYAXSUBUEZYCUPZYEUPZUJZUKUPYHBXRUNYLJUQ
-        ZYOYGEUKYPUAUDYNYFYPYMYDYAYEYLJXSYCUOURUSURAUBXTGDFEYEEFUTUPZUAYCBHCNKL
-        YQVAZMOPSYEVAZYCVAZXTVAZVBQAEYGUKVCVDAUDYKYGEUNEVEUCZUUBVAZAEAEOVGZVFUD
-        UNTAVHVIAYKEVJUCZTZYKEVKUCZTAYJBEYKIUUDBEVLUCUQAKVIZAFYIBAFUUETZFBVMZPF
-        BEKVNVOZAJBQVPVQZIEVRUCUQARVIZAYKVSZWHZYKEVTVOAUAUDYFYKAXSUDTZWAZYKEYEY
-        AYDYSAUUFUUPUUOWBUUQFYKYAUUQFYIYKAYJYKVMUUPAYJBEYKIUUDUUHUULUUMUUNWCZWB
-        WDUUQYAYQVLUCZFAHGTZUUPYAUUSTSXTGCYQHUUSXSUUAMLUUSVAWEWIZAFUUSUQZUUPAUU
-        JUVBUUKFBYQEYRKWFVOWBWGWJUUQYKYBWKUCTZUUPJYKTZYDYKTAUVCUUPAUUFUVCUUOYKE
-        YBYBVAWLVOWBAUUPWMAUVDUUPAYJYKJUURAYIYJJYIFWNAJBTJYITQJBWOVOWPWJWBYKYCY
-        BXSJYTWRWQZWSWTAUAUBYAYDUDBYEUUSFUUBUUBAUAUDYAUJZYQVEUCZUUBXGAYQXATZUUT
-        UVFUVGXGXBAUUIUVHPFEYQYRXCVOSGCYQUAHUVGLMUVGVAXDXEAEXFTZUUBFTZUUJUUBUVG
-        UQAEXATZUVIUUDEXHVOAFUUGTZFEWKUCTUVJAUUIUVLPFEVTVOFEXIFEUUBUUCXJXKZUUKF
-        BEYQUUBYRKUUCXLWQXMAYLBTZWABEYEYLUUBKYSUUCAUVKUVNUUDWBAUVNWMXNUVAUUQYKB
-        YDAYKBVMZUUPAUUFUVOUUOYKBEKVNVOWBUVEWJUVMXOXPXQ $.
-    $}
-
-    $d B a b p $.  $d N p $.  $d P a b c d e p $.  $d Q a b c d e p $.
-    $d R a b c d e p $.  $d S a b c d e p $.  $d U a b c d e p $.
-    $d V a b c d e p $.  $d X a b c d e p $.  $d a b c d e p ph $.
-    $( Adjoining one element to a ring results in a set of polynomial
-       evaluations.  Generalization of ~ rngunsnply .  (Contributed by Thierry
-       Arnoux, 8-Nov-2026.) $)
-    rngunsnply1 $p |- ( ph -> ( V e. ( N ` ( S u. { X } ) )
-                                     <-> E. p e. U V = ( ( Q ` p ) ` X ) ) ) $=
-      ( cfv csn cun wcel cv wceq wrex cmpt crn crngringd cbs a1i csubrg subrgss
-      wss syl snssd unssd crgspn eqidd eqid evls1maprhm rnrhmsubrg evls1maprnss
-      crh co cv1 cress subrgvr1cl wa cid subrgvr1 fveq2d fveq1d evls1var fvresi
-      cres 3eqtrrd adantr fveq2 adantl eqtr4d elrnmptdv rgspnmin sseld elrnmpti
-      fvex imbitrdi ccrg simpr evls1rgspncl eleq1 syl5ibrcom rexlimdva impbid )
-      AIFJUAZUBZHTZUCZIJKUDZDTZTZUEZKGUFZAWRIKGXAUGZUHZUCXCAWQXEIAWPBEXEWQHAEPU
-      IBEUJTUEALUKAFWOBAFEULTZUCZFBUNQFBELUMUOAJBRUPUQHEURTUEASUKAWQUSAXDCEVDVE
-      UCXEXFUCABCEFGXDDJKOMLNPQRXDUTZVAXDCEVBUOAFWOXEABCEFGXDDJKOMLNPQRXHVCAJXE
-      AKGXAEVFTZJXDBXHAGEFCEFVGVEZXIXIUTZQXJUTZMNVHRAWSXIUEZVIJJXIDTZTZXAAJXOUE
-      XMAXOJXJVFTZDTZTJVJBVPZTZJAJXNXQAXIXPDAEFXJXIXKQXLVKVLVMAJXQXRABDFEXJXPOX
-      PUTXLLPQVNVMAJBUCZXSJUERBJVOUOVQVRXMXAXOUEAXMJWTXNWSXIDVSVMVTWAWBUPUQWCWD
-      KGXAIXDXHJWTWFWEWGAXBWRKGAWSGUCZVIZWRXBXAWQUCYBBCDEFGWSHJLMNOAEWHUCYAPVRA
-      XGYAQVRAXTYARVRSAYAWIWJIXAWQWKWLWMWN $.
-  $}
-
-  ${
-    rngunsnply1chr2.v $e |- V = ( Base ` R ) $.
-    rngunsnply1chr2.p $e |- P = ( Poly1 ` ( R |`s S ) ) $.
-    rngunsnply1chr2.u $e |- U = ( Base ` P ) $.
-    rngunsnply1chr2.q $e |- Q = ( R evalSub1 S ) $.
-    rngunsnply1chr2.r $e |- ( ph -> R e. CRing ) $.
-    rngunsnply1chr2.1 $e |- ( ph -> R e. NzRing ) $.
-    rngunsnply1chr2.s $e |- ( ph -> S e. ( SubRing ` R ) ) $.
-    rngunsnply1chr2.x $e |- ( ph -> X e. V ) $.
-    rngunsnply1chr2.y $e |- ( ph -> Y e. ( N ` ( S u. { X } ) ) ) $.
-    rngunsnply1chr2.n $e |- N = ( RingSpan ` R ) $.
-    rngunsnply1chr2.2 $e |- .+ = ( +g ` R ) $.
-    rngunsnply1chr2.3 $e |- .x. = ( .r ` R ) $.
-    rngunsnply1chr2.4 $e |- .^ = ( .g ` ( mulGrp ` R ) ) $.
-    rngunsnply1chr2.a $e |- ( ph -> A e. S ) $.
-    rngunsnply1chr2.b $e |- ( ph -> B e. S ) $.
-    rngunsnply1chr2.5 $e |- ( ph -> ( 2 .^ X ) = ( ( A .x. X ) .+ B ) ) $.
-    ${
-      rngunsnply1chr2lem.d $e |- D = ( deg1 ` R ) $.
-      rngunsnply1chr2lem.e $e |- E = ( rem1p ` ( R |`s S ) ) $.
-      rngunsnply1chr2lem.g $e |- G = ( ( 2 ( .g ` ( mulGrp ` P ) ) ( var1 ` R )
-        ) ( -g ` P ) ( ( A ( .s ` P ) ( var1 ` R ) ) ( +g ` P ) ( ( algSc ` P )
-        ` B ) ) ) $.
-      rngunsnply1chr2lem.h $e |- H = ( F E G ) $.
-      rngunsnply1chr2lem.f $e |- ( ph -> F e. U ) $.
-      $( Lemma for rngunsnply1chr2 .  (Contributed by Thierry Arnoux,
-         8-Nov-2026.) $)
-      rngunsnply1chr2lem1 $p |- ( ph -> ( D ` G ) = 2 ) $=
-        ( cfv cress co cdg1 cv1 cmgp cmg cvsca cascl cplusg csg eqid crg csubrg
-        wcel subrgring syl ply1ring ringgrpd mgpbas cmnd ringmgp cn0 subrgvr1cl
-        c2 2nn0 a1i mulgnn0cld csca cbs ply1lmod wceq subrgbas cvv ovex ply1sca
-        clmod ax-mp fveq2i eqtrdi eleqtrd lmodvscld ressasclcl grpcld grpsubcld
-        eqeltrid ressdeg1 c1 cxr deg1xrcl subrgvr1 eqeltrrd mulg1 eqtr4d oveq2d
-        1xr cle fveq2d wbr 1nn0 deg1tmle syl3anc eqbrtrrd cc0 deg1sclle syl2anc
-        0xr clt 0lt1 xrlelttrd xrltled deg1addle2 1lt2 subrgnzr eqtrd breqtrrid
-        cnzr deg1pw deg1sub 3eqtrd ) AODVBOHIVCVDZVEVBZVBZWFHVFVBZEVGVBZVHVBZVD
-        ZBUUEEVIVBZVDZCEVJVBZVBZEVKVBZVDZEVLVBZVDZUUCVBZWFAKDOHIEUUBUUBVMZUQUBU
-        CAOUUPKUSAKEUUOUUHUUNUCUUOVMZAEAUUBVNVPZEVNVPZAIHVOVBVPZUUTUGIHUUBUURVQ
-        VRZEUUBUBVSVRZVTZAKUUGUUFWFUUEKEUUFUUFVMZUCWAZUUGVMZAUVAUUFWBVPUVDEUUFU
-        VFWCVRWFWDVPZAWGWHZAKHIEUUBUUEUUEVMZUGUURUBUCWEZWIZAKUUMEUUJUULUCUUMVMZ
-        UVEABUUIEWJVBZUVOWKVBZKEUUEUCUVOVMUUIVMZUVPVMAUUTEWRVPUVCEUUBUBWLVRABIU
-        VPUNAIUUBWKVBZUVPAUVBIUVRWMUGIHUUBUURWNVRZUUBUVOWKUUBWOVPUUBUVOWMHIVCWP
-        EUUBWOUBWQWSWTXAXBUVLXCZAUUKKIHUUBECUBUURUUKVMZUCUEUGUOXDZXEZXFXGUGXHUU
-        DUUQWMAOUUPUUCUSWTWHAUUQUUHUUCVBZWFAKUUCUUBUUHUUNUUOEUBUUCVMZUVCUCUUSUV
-        MUWCAUUNUUCVBZXIUWDAUUNKVPUWFXJVPUWCKUUCEUUBUUNUWEUBUCXKVRXIXJVPAXQWHZA
-        UUHKVPUWDXJVPUVMKUUCEUUBUUHUWEUBUCXKVRAKUUCUUMUUBUUJUULXIEUBUWEUVCUCUVN
-        UVTUWBUWGABXIUUBVFVBZUUGVDZUUIVDZUUCVBZUUJUUCVBXIXRAUWJUUJUUCAUWIUUEBUU
-        IAUWIUWHUUEAUWHKVPUWIUWHWMAUUEUWHKAHIUUBUUEUVKUGUURXLZUVLXMKUUGUUFUWHUV
-        GUVHXNVRUWLXOXPXSAUUTBUVRVPXIWDVPZUWKXIXRXTUVCABIUVRUNUVSXBUWMAYAWHBUUC
-        EUUBUUIUUGXIUVRUUFUWHUWEUVRVMZUBUWHVMZUVQUVFUVHYBYCYDAUULUUCVBZXIAUULKV
-        PUWPXJVPUWBKUUCEUUBUULUWEUBUCXKVRZUWGAUWPYEXIUWQYEXJVPAYHWHUWGAUUTCUVRV
-        PUWPYEXRXTUVCACIUVRUOUVSXBUUKUUCEUUBCUVRUWEUBUWNUWAYFYGYEXIYIXTAYJWHYKY
-        LYMAXIWFUWDYIYNAUWDWFUWHUUGVDZUUCVBZWFAUUHUWRUUCAUUEUWHWFUUGUWLXPXSAUUB
-        YRVPZUVIUWSWFWMAHYRVPUVBUWTUFUGIHUUBUURYOYGUVJUUCEUUBUUGWFUUFUWHUWEUBUW
-        OUVFUVHYSYGYPZYQYKYTUXAYPUUA $.
-
-      $d B i $.  $d P i $.  $d R i $.  $d S i $.  $d i ph $.
-      $( Lemma for rngunsnply1chr2 .  (Contributed by Thierry Arnoux,
-         8-Nov-2026.) $)
-      rngunsnply1chr2lem2 $p |- ( ph -> G e. ( Unic1p ` ( R |`s S ) ) ) $=
-        ( vi cress co crg wcel cmn1 cfv cuc1p csubrg eqid subrgring syl cin cv1
-        c2 cmgp cmg cvsca cascl cplusg csg ply1ring ringgrpd mgpbas ringmgp cn0
-        cmnd 2nn0 a1i subrgvr1cl mulgnn0cld csca cbs ply1lmod wceq subrgbas cvv
-        clmod ovex ply1sca fveq2i eqtrdi eleqtrd lmodvscld ressasclcl grpsubcld
-        ax-mp grpcld eqeltrid cpl1 c0g wne cco1 cur cps1 ressply1bas2 crngringd
-        elin2d rngunsnply1chr2lem1 eqeltrdi deg1nn0clb biimpar syl21anc fveq12d
-        coe1subfv syl31anc subrgvr1 syl2anc oveq2d fveq2d fveq1d syl3anc eqtr3d
-        wa c1 eqtr4d cc0 oveq12d 3eqtrd eqeltrrd lmodvs1 subrg1 oveq1d subrg1cl
-        3eqtr4d coe1tmfv1 coe1addfv wss grpmndd csubg subrgsubg subg0cl subrgss
-        ress0g 1nn0 1ne2 coe1tmfv2 mulg1 3eqtr2rd cv cmpt coe1scl simpr eqnetrd
-        cif 2ne0 neneqd iffalsed adantr fvexd fvmptd ressplusg grpidcld grplidd
-        oveqd subgsub ringidcld grpsubid1 3eqtr2d syl3anbrc elind ressply1mon1p
-        cgrp ismon1p eleqtrrd mon1puc1p ) AHIVCVDZVEVFZOUWHVGVHZVFOUWHVIVHZVFAI
-        HVJVHZVFZUWIUGIHUWHUWHVKZVLVMZAOKHVGVHZVNUWJAKUWPOAOVPHVOVHZEVQVHZVRVHZ
-        VDZBUWQEVSVHZVDZCEVTVHZVHZEWAVHZVDZEWBVHZVDZKUSAKEUXGUWTUXFUCUXGVKZAEAU
-        WIEVEVFZUWOEUWHUBWCVMZWDZAKUWSUWRVPUWQKEUWRUWRVKZUCWEZUWSVKZAUXJUWRWHVF
-        UXKEUWRUXMWFVMZVPWGVFZAWIWJZAKHIEUWHUWQUWQVKZUGUWNUBUCWKZWLZAKUXEEUXBUX
-        DUCUXEVKZUXLABUXAEWMVHZUYCWNVHZKEUWQUCUYCVKZUXAVKZUYDVKAUWIEWSVFZUWOEUW
-        HUBWOVMZABIUYDUNAIUWHWNVHZUYDAUWMIUYIWPUGIHUWHUWNWQVMZUWHUYCWNUWHWRVFUW
-        HUYCWPHIVCWTEUWHWRUBXAXHZXBXCXDUXTXEZAUXCKIHUWHECUBUWNUXCVKZUCUEUGUOXFZ
-        XIZXGXJZAOHXKVHZWNVHZVFZOUYQXLVHZXMZODVHZOXNVHZVHZHXOVHZWPOUWPVFAUWHXPV
-        HZWNVHZUYROAOKVUGUYRVNUYPAKVUGHUYQIEUWHUYRVUFUYQVKZUWNUBUCUGVUFVKVUGVKU
-        YRVKZXQXDXSZAHVEVFZUYSVUBWGVFZVUAAHUEXRZVUJAVUBVPWGABCDEFGHIJKLMNOPQRST
-        UAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURUSUTVAXTZWIYAVUKUYSYOVUAVULUYRDUYQH
-        OUYTUQVUHUYTVKZVUIYBYCYDAVUDVPUXHXNVHZVHZVPUWTXNVHZVHZVPUXFXNVHVHZUWHWB
-        VHZVDZVUEAVUBVPVUCVUPVUCVUPWPAOUXHXNUSXBWJVUNYEAUWIUWTKVFUXFKVFUXQVUQVV
-        BWPUWOUYAUYOUXRKUWHUWTUXFUXGVVAVPEUBUCUXIVVAVKZYFYGAVVBVUEHXLVHZVVAVDZV
-        UEVVDHWBVHZVDZVUEAVUSVUEVUTVVDVVAAVPVUEVPUWHVOVHZUWSVDZUXAVDZXNVHZVHZVU
-        SVUEAVPVVKVURAVVJUWTXNAUYCXOVHZVVIUXAVDZVVIVVJUWTAUYGVVIKVFVVNVVIWPUYHA
-        KUWSUWRVPVVHUXNUXOUXPUXRAUWQVVHKAHIUWHUWQUXSUGUWNYHZUXTUUAZWLUXAVVMUYCK
-        EVVIUCUYEUYFVVMVKUUBYIAVUEVVMVVIUXAAVUEUWHXOVHZVVMAUWMVUEVVQWPUGIHUWHVU
-        EUWNVUEVKZUUCVMUWHUYCXOUYKXBXCUUDAUWQVVHVPUWSVVOYJUUFYKYLAUWIVUEUYIVFUX
-        QVVLVUEWPUWOAVUEIUYIAUWMVUEIVFZUGIHVUEVVRUUEVMZUYJXDUXRVUEVPEUWHUXAUWSU
-        YIUWRVVHUWHXLVHZVWAVKZUYIVKZUBVVHVKZUYFUXMUXOUUGYMYNAVUTVPUXBXNVHZVHZVP
-        UXDXNVHZVHZUWHWAVHZVDZVVDVVDVWIVDZVVDAUWIUXBKVFUXDKVFUXQVUTVWJWPUWOUYLU
-        YNUXRKVWIUXEUWHUXBUXDVPEUBUCUYBVWIVKUUHYGAVWFVVDVWHVVDVWIAVVDVWAVPBYPVV
-        HUWSVDZUXAVDZXNVHZVHVWFAHWHVFVVDIVFZIRUUIZVVDVWAWPZAHAHVUMWDZUUJAIHUUKV
-        HVFZVWOAUWMVWSUGIHUULVMZIHVVDVVDVKZUUMVMZAUWMVWPUGIRHUAUUNVMIRHUWHVVDUW
-        NUAVXAUUOYMZABYPEUWHUXAUWSVPUYIUWRVVHVWAVWBVWCUBVWDUYFUXMUXOUWOABIUYIUN
-        UYJXDYPWGVFAUUPWJUXRYPVPXMAUUQWJUURAVPVWNVWEAVWMUXBXNAVWLUWQBUXAAVWLVVH
-        UWQAVVHKVFVWLVVHWPVVPKUWSUWRVVHUXNUXOUUSVMVVOYQYJYKYLUUTAVBVPVBUVAZYRWP
-        ZCVWAUVFZVVDWGVWGWRAUWICUYIVFVWGVBWGVXFUVBWPUWOACIUYIUOUYJXDVBUXCEUWHUY
-        ICVWAUBUYMVWCVWBUVCYIAVXDVPWPZYOZVXFVWAVVDVXHVXECVWAVXHVXDYRVXHVXDVPYRA
-        VXGUVDVPYRXMVXHUVGWJUVEUVHUVIAVWQVXGVXCUVJYQUXRAHXLUVKUVLYSAVVDVVDFVDVW
-        KVVDAFVWIVVDVVDAUWMFVWIWPUGIFHUWHUWLUWNUKUVMVMUVPARFHVVDVVDUAUKVXAVWRAR
-        HVVDUAVXAVWRUVNUVOYNYTYSAVWSVVSVWOVVGVVEWPVWTVVTVXBIHUWHVVFVVAVUEVVDVVF
-        VKZUWNVVCUVQYMAHUWDVFVUERVFVVGVUEWPVWRARHVUEUAVVRVUMUVRRHVVFVUEVVDUAVXA
-        VXIUVSYIUVTYTUYRDUYQHVUEOUWPUYTVUHVUIVUOUQUWPVKZVVRUWEUWAUWBAKHUYQIEUWH
-        UWPUWJVUHUWNUBUCUGVXJUWJVKZUWCUWFUWKUWHUWJOUWKVKVXKUWGYI $.
-
-      $d .^ x $.  $d B i p $.  $d B i x $.  $d F x $.  $d N p $.  $d P i $.
-      $d P p $.  $d P x $.  $d Q i $.  $d Q p $.  $d Q x $.  $d R i $.
-      $d R p $.  $d R x $.  $d S a b $.  $d S i $.  $d S p $.  $d S x $.
-      $d U i $.  $d U p $.  $d U x $.  $d V p $.  $d X i $.  $d X p $.
-      $d X x $.  $d i ph $.  $d ph x $.
-      $( Lemma for rngunsnply1chr2 .  (Contributed by Thierry Arnoux,
-         8-Nov-2026.) $)
-      rngunsnply1chr2lem3 $p |- ( ph -> ( ( D ` H ) <_ 1
-                                /\ ( ( Q ` H ) ` X ) = ( ( Q ` F ) ` X ) ) ) $=
-        ( cfv c1 cle wbr wceq cress cdg1 fveq2i eqid crg cuc1p csubrg subrgring
-        co wcel syl rngunsnply1chr2lem2 r1pcl syl3anc ressdeg1 eqtrid cn0 caddc
-        cmnf wa clt simpr 1nn0 a1i r1pdeglt adantr c2 1p1e2 rngunsnply1chr2lem1
-        uc1pcl eqtr3d eqtr4id breqtrrd nn0leltp1 biimpar syl21anc cxr 1xr mnfle
-        ax-mp eqbrtrdi csn cun wo deg1cl cvv fvex elunsn sylib mpjaodan eqbrtrd
-        wb cq1p cmulr cplusg c0g ply1ring evls1addd cv1 cmgp fveq1i mgpbas cmnd
-        csg ringmgp mulgnn0cld cbs fveq2d fveq1d 3eqtrd eqtrd oveq12d evls1fvcl
-        oveq2d q1pcl ringcld evls1muld cmg cvsca cascl 2nn0 subrgvr1cl ringgrpd
-        csca ply1lmod subrgbas ovex ply1sca eqtrdi eleqtrd lmodvscld ressasclcl
-        clmod grpcld evls1subd evls1expd cid subrgvr1 evls1var fvresi evls1vsca
-        cres evls1scafv cgrp crnggrpd crngringd eqeltrrd w3a grpsubeq0 syl31anc
-        ringrzd oveq1d grplidd r1pid 3eqtr4rd jca ) APDVBZVCVDVESPGVBZVBZSNGVBZ
-        VBZVFAUWCNOLVOZHIVGVOZVHVBZVBZVCVDAUWCUWHDVBUWKPUWHDUTVIAKDUWHHIEUWIUWI
-        VJZUQUBUCAUWIVKVPZNKVPZOUWIVLVBZVPZUWHKVPZAIHVMVBVPZUWMUGIHUWIUWLVNVQZV
-        AABCDEFGHIJKLMNOPQRSTUAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURUSUTVAVRZKUWOE
-        UWILNOURUBUCUWOVJZVSVTZUGWAWBAUWKWCVPZUWKVCVDVEZUWKWEVFZAUXCWFZUXCVCWCV
-        PZUWKVCVCWDVOZWGVEZUXDAUXCWHUXGUXFWIWJUXFUWKOUWJVBZUXHWGAUWKUXJWGVEZUXC
-        AUWMUWNUWPUXKUWSVAUWTKUWOUWJEUWILNOURUBUCUXAUWJVJZWKVTWLAUXHUXJVFUXCAUX
-        HWMUXJWNAODVBUXJWMAKDOHIEUWIUWLUQUBUCAUWPOKVPUWTKUWOEUWIOUBUCUXAWPVQZUG
-        WAABCDEFGHIJKLMNOPQRSTUAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURUSUTVAWOWQWRW
-        LWSUXCUXGWFUXDUXIUWKVCWTXAXBAUXEWFUWKWEVCVDAUXEWHVCXCVPWEVCVDVEXDVCXEXF
-        XGAUWKWCWEXHXIVPZUXCUXEXJZAUWQUXNUXBKUWJEUWIUWHUXLUBUCXKVQUWKXLVPUXNUXO
-        XRUWHUWJXMUWKWCWEXLXNXFXOXPXQASNOUWIXSVBZVOZOEXTVBZVOZUWHEYAVBZVOZGVBZV
-        BZSUWHGVBZVBZUWGUWEAUYCSUXSGVBVBZUYEFVOHYBVBZUYEFVOUYEAKSFUXTGIHUWIRUXS
-        UWHEUDUAUBUWLUCUXTVJZUKUEUGAKEUXRUXQOUCUXRVJZAUWMEVKVPZUWSEUWIUBYCVQZAU
-        WMUWNUWPUXQKVPUWSVAUWTKUWOEUXPUWINOUXPVJZUBUCUXAUUAVTZUXMUUBUXBUHYDAUYF
-        UYGUYEFAUYFSUXQGVBVBZSOGVBZVBZJVOUYNUYGJVOUYGAKSGIHJUXRUWIRUXQOEUDUAUBU
-        WLUCUYIULUEUGUYMUXMUHUUCAUYPUYGUYNJAUYPSWMHYEVBZEYFVBZUUDVBZVOZBUYQEUUE
-        VBZVOZCEUUFVBZVBZUXTVOZEYJVBZVOZGVBZVBZSUYTGVBVBZSVUEGVBVBZHYJVBZVOZUYG
-        UYPVUIVFASUYOVUHOVUGGUSVIYGWJAKSVUFGIHUWIRUYTVULVUEEUDUAUBUWLUCVUFVJVUL
-        VJZUEUGAKUYSUYRWMUYQKEUYRUYRVJZUCYHUYSVJZAUYJUYRYIVPUYKEUYRVUOYKVQWMWCV
-        PAUUGWJZAKHIEUWIUYQUYQVJZUGUWLUBUCUUHZYLAKUXTEVUBVUDUCUYHAEUYKUUIABVUAE
-        UUJVBZVUTYMVBZKEUYQUCVUTVJVUAVJZVVAVJAUWMEUUSVPUWSEUWIUBUUKVQABIVVAUNAI
-        UWIYMVBZVVAAUWRIVVCVFUGIHUWIUWLUULVQUWIVUTYMUWIXLVPUWIVUTVFHIVGUUMEUWIX
-        LUBUUNXFVIUUOUUPVUSUUQZAVUCKIHUWIECUBUWLVUCVJZUCUEUGUOUURZUUTUHUVAAVUMW
-        MSMVOZBSJVOZCFVOZVULVOZUYGAVUJVVGVUKVVIVULAVUJWMSUYQGVBZVBZMVOVVGAKSGIH
-        UWIMRUYQUYSWMEUDUAUBUWLUCUEUGVUPUMVUQVUSUHUVBAVVLSWMMAVVLSUWIYEVBZGVBZV
-        BSUVCRUVHZVBZSASVVKVVNAUYQVVMGAHIUWIUYQVURUGUWLUVDYNYOASVVNVVOARGIHUWIV
-        VMUDVVMVJUWLUAUEUGUVEYOASRVPVVPSVFUHRSUVFVQYPZYTYQAVUKSVUBGVBVBZSVUDGVB
-        VBZFVOVVIAKSFUXTGIHUWIRVUBVUDEUDUAUBUWLUCUYHUKUEUGVVDVVFUHYDAVVRVVHVVSC
-        FAVVRBVVLJVOVVHABKSGIHJVUAUWIRUYQEUDUAUBUWLUCVVBULUEUGUNVUSUHUVGAVVLSBJ
-        VVQYTYQAVUCRSGIHUWIECUDUBUWLUAVVEUEUGUOUHUVIYRYQYRAHUVJVPZVVGRVPZVVIRVP
-        ZVVGVVIVFZVVJUYGVFZAHUEUVKZARMHYFVBZWMSRHVWFVWFVJZUAYHUMAHVKVPVWFYIVPAH
-        UEUVLZHVWFVWGYKVQVUQUHYLZAVVGVVIRUPVWIUVMUPVVTVWAVWBUVNVWDVWCRHVULVVGVV
-        IUYGUAUYGVJZVUNUVOXAUVPYQYPYTARHJUYNUYGUAULVWJVWHAREHIKUXQGSUDUBUAUCUEU
-        GUHUYMYSUVQYPUVRARFHUYEUYGUAUKVWJVWEAREHIKUWHGSUDUBUAUCUEUGUHUXBYSUVSYP
-        ASUWFUYBANUYAGAUWMUWNUWPNUYAVFUWSVAUWTKUWOEUXTUXPUWIUXRLNOUBUCUXAUYLURU
-        YIUYHUVTVTYNYOUWEUYEVFASUWDUYDPUWHGUTVIYGWJUWAUWB $.
-    $}
-
-    $d .+ a b p $.  $d .^ x $.  $d .x. a b p $.  $d A a b $.  $d B a b p $.
-    $d B i p x $.  $d N p $.  $d P a b p $.  $d P i p x $.  $d Q i $.
-    $d Q p $.  $d Q x $.  $d R a b p $.  $d R i p x $.  $d S a b p $.
-    $d S i p x $.  $d U i $.  $d U p $.  $d U x $.  $d V i $.  $d V p $.
-    $d V x $.  $d X a b p $.  $d X i p x $.  $d Y a b p $.  $d i ph $.
-    $d p ph $.  $d ph x $.
-    $( When adjoining an element ` X ` with characteristic polynomial of degree
-       2 to a subring ` S ` , the elements ` Y ` of the generated subring can
-       be written as a linear form.  (Contributed by Thierry Arnoux,
-       8-Nov-2026.) $)
-    rngunsnply1chr2 $p |- ( ph -> E. a e. S E. b e. S Y = ( ( a .x. X ) .+ b )
-       ) $=
-      ( vp cv cfv wceq co wrex wcel wa c1 cv1 cmgp cmg cvsca cascl cplusg cress
-      csg cr1p cco1 cc0 oveq1 oveq1d eqeq2d oveq2 cbs cn0 crg cuc1p csubrg eqid
-      c2 subrgring syl adantr simpr cdg1 ccrg csn cun rngunsnply1chr2lem2 r1pcl
-      cnzr syl3anc coe1fvalcl sylancl subrgbas eleqtrrd cle rngunsnply1chr2lem3
-      1nn0 wbr simprd simpld evls1degle1 3eqtr2d 2rspcedvdw rngunsnply1 r19.29a
-      0nn0 mpbid ) AONUNUOZFUPUPZUQZOPUOZNIURZQUOZEURZUQZQHUSPHUSUNJAXNJUTZVAZX
-      PVAZYAOVBXNWDGVCUPZDVDUPVEUPURBYEDVFUPURCDVGUPUPDVHUPURDVJUPURZGHVIURZVKU
-      PZURZVLUPZUPZNIURZXSEURZUQOYLVMYJUPZEURZUQPQYKYNHHXQYKUQZXTYMOYPXRYLXSEXQ
-      YKNIVNVOVPXSYNUQYMYOOXSYNYLEVQVPYCYKHUTXPYCYKYGVRUPZHYCYIJUTZVBVSUTYKYQUT
-      YCYGVTUTZYBYFYGWAUPZUTYRAYSYBAHGWBUPUTZYSUDHGYGYGWCZWEWFWGAYBWHZYCBCGWIUP
-      ZDEFGHIJYHKXNYFYILMNORSTUAAGWJUTYBUBWGZAGWOUTYBUCWGZAUUAYBUDWGZANMUTYBUEW
-      GZAOHNWKWLLUPUTZYBUFWGZUGUHUIUJABHUTYBUKWGZACHUTYBULWGZAWDNKURBNIURCEURUQ
-      YBUMWGZUUDWCZYHWCZYFWCZYIWCZUUCWMJYTDYGYHXNYFUUOSTYTWCWNWPZXCYJJDYGYIYQVB
-      YJWCZTSYQWCZWQWRYCUUAHYQUQUUGHGYGUUBWSWFZWTWGYCYNHUTXPYCYNYQHYCYRVMVSUTYN
-      YQUTUURXLYJJDYGYIYQVMUUSTSUUTWQWRUVAWTWGYDOXONYIFUPUPZYOYCXPWHYCUVBXOUQZX
-      PYCYIUUDUPVBXAXDZUVCYCBCUUDDEFGHIJYHKXNYFYILMNORSTUAUUEUUFUUGUUHUUJUGUHUI
-      UJUUKUULUUMUUNUUOUUPUUQUUCXBZXEWGYCUVBYOUQXPYCYKYNYJUUDDEFGHIJYIMNSUARTUI
-      UHUUSUUNYKWCYNWCUUEUUGUURYCUVDUVCUVEXFUUHXGWGXHXIAUUIXPUNJUSUFAMDFGHJLONU
-      NRSTUAUBUDUEUGXJXMXK $.
-  $}
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
