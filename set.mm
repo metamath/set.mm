@@ -859921,6 +859921,76 @@ $)
     ( ccnfld c3 cbru cfv claz cress co eqid ezsubrgOLD subrgccidom ) ABCDEDZFGZ
     KLHIJ $.
 
+  $( Splitting a linear combination of the basic cube root of unity in its real
+     and imaginary parts.  (Contributed by AV, 21-Nov-2026.) $)
+  lbru3reim $p |- ( ( A e. CC /\ B e. CC ) -> ( A + ( B x. ( bRoU ` 3 ) ) )
+                           = ( ( A - ( B / 2 ) )
+                               + ( _i x. ( ( sqrt ` 3 ) x. ( B / 2 ) ) ) ) ) $=
+    ( cc wcel wa c3 cfv cmul co caddc c2 cdiv ci wceq a1i oveq2d neg1cn 3eqtr2d
+    ax-icn mulcld cbru cneg csqrt cmin eqid bru3val simpr 2cnd 3cn sqrtcl ax-mp
+    c1 mulcli addcli cc0 wne div32d halfcld mulcomd adddird eqtrd simpl addassd
+    2ne0 halfcl addneg1mul sylan2 mulassd oveq12d ) ACDZBCDZEZABFUAGZHIZJIAULUB
+    ZBKLIZHIZMFUCGZHIZVPHIZJIZJIAVQJIZVTJIAVPUDIZMVRVPHIHIZJIVLVNWAAJVLVNBVOVSJ
+    IZKLIZHIVPWEHIZWAVLVMWFBHVMWFNVLVMVMUEUFOPVLBKWEVJVKUGZVLUHWECDVLVOVSQMVRSF
+    CDVRCDZUIFUJUKZUMZUNOZKUOUPVLVDOUQVLWGWEVPHIWAVLVPWEVLBWHURZWLUSVLVOVSVPVOC
+    DVLQOZVSCDVLWKOZWMUTVARPVLAVQVTVJVKVBVLVOVPWNWMTVLVSVPWOWMTVCVLWBWCVTWDJVKV
+    JVPCDWBWCNBVEAVPVFVGVLMVRVPMCDVLSOWIVLWJOWMVHVIR $.
+  
+  ${
+    $d Z a b $.
+    $( An Eisenstein integer expressed by its real and imaginary parts.
+       (Contributed by AV, 21-Nov-2026.) $)
+    ezreim $p |- ( Z e. ( Z[] ` ( bRoU ` 3 ) )
+                   -> Z = ( ( ( Re ` Z ) + ( ( Im ` Z ) / ( sqrt ` 3 ) ) )
+                            + ( ( ( 2 x. ( Im ` Z ) ) / ( sqrt ` 3 ) )
+                                x. ( bRoU ` 3 ) ) ) ) $=
+      ( va vb c3 cfv wcel cmul co caddc wceq cz cre cdiv c2 cc cr adantr oveq1d
+      a1i cc0 cbru caz cv wrex cim csqrt ezlbru3b wa ci lbru3reim syl2an eqeq2d
+      cmin zcn biimpa zre adantl rehalfcld resubcld 3re 3pos sqrtpclii remulcld
+      fveq2 crimd sylan9eqr crred w3a halfcld 3cn sqrtcl ax-mp wne 3ne0 cle wbr
+      wb 0re ltleii sqrt00 nemtbir neir divcan3d oveq2d npcand eqtr2d 2cnd 2ne0
+      mp2an divassd eqcomd mulcld divcan2d eqtrd oveq12d 3ad2ant1 simp1lr simp3
+      oveq1 3ad2ant2 oveq2 3eqtr4d mpd3an23 mpdan ex rexlimivv sylbi ) ADUAEZUB
+      EFABUCZCUCZXHGHZIHZJZCKUDBKUDAALEZAUEEZDUFEZMHZIHZNXOGHZXPMHZXHGHZIHZJZAB
+      CUGXMYCBCKKXIKFZXJKFZUHZXMYCYFXMUHZAXIXJNMHZUMHZUIXPYHGHZGHIHZJZYCYFXMYLY
+      FXLYKAYDXIOFZXJOFXLYKJYEXIUNZXJUNZXIXJUJUKULUOYGYLUHZXOYJJZXNYIJZYCYLYGXO
+      YKUEEZYJAYKUEVDYFYSYJJXMYFYIYJYFXIYHYDXIPFYEXIUPQYFXJYEXJPFYDXJUPUQURZUSZ
+      YFXPYHXPPFYFDUTVAVBSYTVCZVEQVFYLYGXNYKLEZYIAYKLVDYFUUCYIJXMYFYIYJUUAUUBVG
+      QVFYPYQYRVHZXLYIYJXPMHZIHZNYJGHZXPMHZXHGHZIHZAYBYPYQXLUUJJZYRYGUUKYLYFUUK
+      XMYFXIUUFXKUUIIYFUUFYIYHIHXIYFUUEYHYIIYFYHXPYEYHOFYDYEXJYOVIUQZXPOFZYFDOF
+      UUMVJDVKVLZSXPTVMZYFXPTXPTJZDTVNDPFTDVOVPUUPDTJVQUTTDVRUTVAVSDVTWIWAWBZSW
+      CWDYFXIYHYDYMYEYNQUULWEWFYFXJUUHXHGYFUUHXJYEUUHXJJYDYEUUHXPXJGHZXPMHXJYEU
+      UGUURXPMYEUUGNUURNMHZGHUURYEYJUUSNGYEUUSYJYEXPXJNUUMYEUUNSZYOYEWGZNTVMYEW
+      HSZWJWKWDYEUURNYEXPXJUUTYOWLUVAUVBWMWNRYEXJXPYOUUTUUOYEUUQSWCWNUQWKRWOQQW
+      PYFXMYLYQYRWQUUDXRUUFYAUUIIUUDXNYIXQUUEIYPYQYRWRYQYPXQUUEJYRXOYJXPMWSWTWO
+      YQYPYAUUIJYRYQXTUUHXHGYQXSUUGXPMXOYJNGXARRWTWOXBXCXDXEXFXG $.
+  $}
+
+  $( The norm of the ring of Eisenstein integers.  (Contributed by AV,
+     22-Nov-2026.) $)
+  eznorm $p |- ( ( A e. ZZ /\ B e. ZZ )
+                      -> ( ( abs ` ( A + ( B x. ( bRoU ` 3 ) ) ) ) ^ 2 )
+                         = ( ( ( A ^ 2 ) - ( A x. B ) ) + ( B ^ 2 ) ) ) $=
+    ( wcel c3 cfv cmul co caddc c2 cexp cdiv cmin cc wceq cr adantl a1i oveq12d
+    c4 oveq2d cz wa cbru ci csqrt zcn lbru3reim syl2an fveq2d oveq1d zre adantr
+    cabs rehalfcld resubcld 3pos sqrtpclii remulcld absreimsq syl2anc binom2sub
+    3re halfcld recni sqmuld 2cnd mul12d cc0 wne 2ne0 sqdivd sq2 cle wbr ltleii
+    eqtrd 0re pm3.2i resqrtth mp1i sqcld mulcld subcld 4cn 4ne0 divcld divcan2d
+    3cn addassd mullidd eqcomd 1cnd adddird ax-1cn 3p1e4 addcomli eqtr3d 3eqtrd
+    c1 ) AUACZBUACZUBZABDUCEFGHGZUMEZIJGABIKGZLGZUDDUEEZXEFGZFGHGZUMEZIJGZXFIJG
+    ZXHIJGZHGZAIJGZABFGZLGZBIJGZHGZXBXDXJIJXBXCXIUMWTAMCZBMCZXCXINXAAUFZBUFZABU
+    GUHUIUJXBXFOCXHOCXKXNNXBAXEWTAOCXAAUKULXAXEOCWTXABBUKUNPZUOXBXGXEXGOCXBDVBU
+    PUQZQYDURXFXHUSUTXBXNXOIAXEFGFGZLGZXEIJGZHGZXGIJGZYHFGZHGXOAIXEFGZFGZLGZXRS
+    KGZHGZDYOFGZHGZXSXBXLYIXMYKHWTXTXEMCZXLYINXAYBXABYCVCZAXEVAUHXBXGXEXGMCXBXG
+    YEVDQXAYSWTYTPZVERXBYIYPYKYQHXBYGYNYHYOHXBYFYMXOLXBIAXEXBVFZWTXTXAYBULZUUAV
+    GTXAYHYONWTXAYHXRIIJGZKGYOXABIYCXAVFIVHVIZXAVJQVKXAUUDSXRKUUDSNXAVLQTVPPZRX
+    BYJDYHYOFDOCZVHDVMVNZUBYJDNXBUUGUUHVBVHDVQVBUPVOVRDVSVTUUFRRXBYRYNYOYQHGZHG
+    XSXBYNYOYQXBXOYMWTXOMCXAWTAYBWAULXBAYLUUCXBIXEUUBUUAWBWBWCXAYOMCWTXAXRSXABY
+    CWAZSMCXAWDQZSVHVIXAWEQZWFZPXAYQMCWTXADYODMCXAWHQZUUMWBPWIXBYNXQUUIXRHXBYMX
+    PXOLXBYLBAFXBBIXAYAWTYCPUUBUUEXBVJQWGTTXAUUIXRNWTXAUUIWSYOFGZYQHGZSYOFGZXRX
+    AYOUUOYQHXAUUOYOXAYOUUMWJWKUJXAWSDHGZYOFGUUPUUQXAWSDYOXAWLUUNUUMWMXAUURSYOF
+    UURSNXADWSSWHWNWOWPQUJWQXAXRSUUJUUKUULWGWRPRVPWRWR $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
