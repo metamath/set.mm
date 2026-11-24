@@ -60925,8 +60925,8 @@ $)
     $d A r x y $.  $d A w $.  $d B r x y $.  $d B z $.  $d C r $.  $d D r $.
     $d D s $.  $d F s $.
     elmpom2.f $e |- F = ( x e. A , y e. B |-> C ) $.
-    $( If a maps-to operation is inhabited, the second class it is defined with
-       is inhabited.  (Contributed by Jim Kingdon, 4-Mar-2026.) $)
+    $( If a maps-to operation is inhabited, the class of the second operand is
+       inhabited.  (Contributed by Jim Kingdon, 4-Mar-2026.) $)
     elmpom2 $p |- ( D e. F -> E. z z e. B ) $=
       ( vw vr vs wcel cv wex wa cfv cdm wceq cop c1st coprab df-mpo eqtri dmeqi
       cxp cmpo dmoprabss eqsstri c2nd 2ndexg wrel wfun mpofun funrel ax-mp mpan
