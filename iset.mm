@@ -185163,6 +185163,33 @@ $)
       ( cfn wcel crg mplringfi syl2anc ) ADHICJIBJIFGBCDEKL $.
   $}
 
+  ${
+    $d f C $.  $d f H $.  $d f I $.  $d f ph $.  $d f R $.
+    ressmpl.s $e |- S = ( I mPoly R ) $.
+    ressmpl.h $e |- H = ( R |`s T ) $.
+    ressmpl.u $e |- U = ( I mPoly H ) $.
+    ressmpl.b $e |- B = ( Base ` U ) $.
+    ressmplfi.1 $e |- ( ph -> I e. Fin ) $.
+    ressmpl.2 $e |- ( ph -> T e. ( SubRing ` R ) ) $.
+    ${
+      ressmplbas2.w $e |- W = ( I mPwSer H ) $.
+      ressmplbas2.c $e |- C = ( Base ` W ) $.
+      ressmplbas2.k $e |- K = ( Base ` S ) $.
+      $( The base set of a restricted polynomial algebra consists of power
+         series in the subring which are also polynomials (in the parent ring).
+         (Contributed by Mario Carneiro, 3-Jul-2015.) $)
+      ressmplbas2fi $p |- ( ph -> B = ( C i^i K ) ) $=
+        ( vf cv c0g cfv cfsupp wbr cab cin cmps co cbs wss wceq csubrg wcel cfn
+        subrgpsrfi syl2anc subrgss syl dfss2 sylib subrg0 breq2d abbidv ineq12d
+        eqid eqcomd crab mplbas dfrab3 eqtri ineq2i inass eqtr4i 3eqtr4g ) ACUA
+        UBZHUCUDZUEUFZUAUGZUHZCIDUIUJZUKUDZUHZVQDUCUDZUEUFZUAUGZUHZBCJUHZAWHWAA
+        WDCWGVTACWCULZWDCUMACWBUNUDUOZWJAIUPUOFDUNUDUOZWKPQCDWBFKHIWBVGZMRSUQUR
+        CWCWBWCVGZUSUTCWCVAVBAWFVSUAAWEVRVQUEAWLWEVRUMQFDHWEMWEVGZVCUTVDVEVFVHB
+        VSUACVIWACGHKBUAIVRNRSVRVGOVJVSUACVKVLWICWCWGUHZUHWHJWPCJWFUAWCVIWPWCED
+        WBJUAIWELWMWNWOTVJWFUAWCVKVLVMCWCWGVNVOVP $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
