@@ -12187,7 +12187,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>ressplusg</TD>
   <TD>~ ressplusgd</TD>
-  <TD>adds set existence condition for ` G `</TD>
+  <TD>adds set existence condition for ` G ` . It would probably
+  be possible to remove that condition using theorems such
+  as ~ slotm and ~ ressmex</TD>
 </TR>
 
 <TR>
@@ -14751,6 +14753,16 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td id="missing-df-opsr">df-opsr</td>
+  <td><i>none</i></td>
+  <td>Defining an order on polynomials requires an order on the
+  underlying ring, and we'll need a slot for lt as the set.mm
+  mechanism of defining lt in terms of ` le ` will not work
+  for rings such as the reals (per ~ ltlenmkv ).  For now we
+  just have unordered polynomials ( ~ df-psr ) not ordered ones.</td>
+</tr>
+
+<tr>
   <td>psrvalstr</td>
   <td>~ psrvalstrd</td>
   <td>adds set existence conditions</td>
@@ -14814,12 +14826,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrplusg</td>
-  <td>~ psrplusgg</td>
-  <td>adds set existence conditions</td>
-</tr>
-
-<tr>
   <td>rhmpsrlem1</td>
   <td><i>none</i></td>
   <td>because this is in terms of a finitely supported function,
@@ -14830,12 +14836,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>rhmpsrlem2</td>
   <td>~ rhmpsrfilem2</td>
   <td>adds condition that ` I ` is finite</td>
-</tr>
-
-<tr>
-  <td>psrmulr</td>
-  <td>~ psrmulrg</td>
-  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
@@ -14858,40 +14858,13 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrsca</td>
-  <td><i>none</i></td>
-  <td>should be possible now that we have ~ psrmulrg</td>
-</tr>
-
-<tr>
-  <td>psrvscafval</td>
-  <td><i>none</i></td>
-  <td>presumably provable with added set existence conditions
-  (analogous to ~ psrplusgg )</td>
-</tr>
-
-<tr>
-  <td>psrvsca</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses psrvscafval</td>
-</tr>
-
-<tr>
-  <td>psrvscaval</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses psrvsca</td>
-</tr>
-
-<tr>
-  <td>psrvscacl</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses psrvsca</td>
-</tr>
-
-<tr>
   <td>psrlmod</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses psrvsca</td>
+  <td>The set.mm proof uses caofdir and caofass . Adding
+  set existence conditions, as ~ caofdig does, would not
+  seem to need a change to the statement of psrlmod .
+  There would appear to be no need for ` I ` to be
+  finite.</td>
 </tr>
 
 <tr>
@@ -14964,6 +14937,18 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>psrcrng</td>
+  <td><i>none</i></td>
+  <td>would appear to be provable if we have psrcom</td>
+</tr>
+
+<tr>
+  <td>psrassa</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrlmod and psrass23</td>
+</tr>
+
+<tr>
   <td>mvrid</td>
   <td>~ mvridfi</td>
   <td>adds requirement that the index set is finite</td>
@@ -15008,7 +14993,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>mplval2</td>
   <td>~ mplval2g</td>
-  <td>adds set existence conditions</td>
+  <td>adds set existence conditions. It would probably be
+  possible to remove those conditions using theorems such
+  as ~ ressmex and ~ elmpocl</td>
 </tr>
 
 <tr>
@@ -15024,10 +15011,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>mpllss</td>
-  <td><i>none</i></td>
-  <td>Add a minimum, would require development of scalar multiplication
-  for power series. But it does not seem to require multiplication
-  of two polynomials.</td>
+  <td>~ mpllssfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
@@ -15051,7 +15036,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>mplplusg</td>
   <td>~ mplplusgg</td>
-  <td>adds set existence conditions</td>
+  <td>adds set existence conditions.  It would probably be
+  possible to remove those conditions if we prove ressplusg</td>
 </tr>
 
 <tr>
@@ -15204,6 +15190,58 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>evlsrhm</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses evlsval2</td>
+</tr>
+
+<tr>
+  <td>df-psr1</td>
+  <td>~ df-psr1psr</td>
+  <td>Defined in terms of ` mPwSer ` rather than ordPwSer as
+  discussed at the <a href="#missing-df-opsr" >df-opsr entry</a></td>
+</tr>
+
+<tr>
+  <td>psr1val</td>
+  <td>~ psr1valpsr</td>
+  <td>uses ` mPwSer ` instead of ordPwSer</td>
+</tr>
+
+<tr>
+  <td>psr1crng</td>
+  <td><i>none</i></td>
+  <td>would appear to be provable if we have psrcrng</td>
+</tr>
+
+<tr>
+  <td>psr1assa</td>
+  <td><i>none</i></td>
+  <td>would appear to be provable if we have psrassa</td>
+</tr>
+
+<tr>
+  <td>psr1tos</td>
+  <td><i>none</i></td>
+  <td>would need more work on ordered structures in general
+  as well as the power series specific issues described at
+  the <a href="#missing-df-opsr" >df-opsr entry</a></td>
+</tr>
+
+<tr>
+  <td>ply1val</td>
+  <td>~ ply1valg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>ply1crng</td>
+  <td><i>none</i></td>
+  <td>would appear to be provable if we have psr1crng
+  (we have ~ subrgcrng )</td>
+</tr>
+
+<tr>
+  <td>ply1assa</td>
+  <td><i>none</i></td>
+  <td>may be possible once we have psr1assa</td>
 </tr>
 
 <TR>
