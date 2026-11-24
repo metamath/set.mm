@@ -534172,9 +534172,7 @@ $)
     ply1edom.z $e |- Z = ( 0g ` P ) $.
     ply1edom.r $e |- ( ph -> R e. Field ) $.
     $( The univariate polynomials over a field ` R ` form a Euclidean domain.
-       Note that the hypothesis ` ( deg1 `` R ) = ( EuclF `` P ) ` could be
-       dropped if the definition of ` Poly1 ` would be adapted.  (Contributed
-       by Thierry Arnoux, 9-Nov-2026.) $)
+       (Contributed by Thierry Arnoux, 9-Nov-2026.) $)
     ply1edom $p |- ( ph -> P e. EDomn ) $=
       ( vf vg vq wcel cfv co wceq clt wa eqid syl3anc vr csn cdif cn0 cdg1 cres
       cidom wf cv cmulr cplusg wbr wo wrex wral cfield fldidom syl ply1idom cxr
