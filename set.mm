@@ -859378,7 +859378,7 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
   This section is experimental resp. obsolete.  It was intended to be a
-  generalization of the Gussian integers ` Z[i] ` defined in section
+  generalization of the Gaussian integers ` Z[i] ` defined in section
   "Lagrange's four-square theorem" (see ~ df-gz ) to be used also for
   Eisenstein integers ` ( Z[] `` ( bRoU `` 3 ) ) `.  But such a definition is
   not necessary anymore.
@@ -859831,16 +859831,16 @@ $(
 
   The _Eisenstein integers_ are complex numbers which are constructed by
   adjoining the basic cubic root of unity to the integers:
-  ` ( Z[] `` ( bRoU `` 3 ) ) `.  This is analogue to the construction of
-  Gaussian integers where the basic 4th root of unity `_i ` is adjoined to the
+  ` ( Z[] `` ( bRoU `` 3 ) ) `.  This is analog to the construction of Gaussian
+  integers where the basic 4th root of unity ` _i ` is adjoined to the
   integers: ` Z[i] = ( Z[] `` _i ) = ( Z[] `` ( bRoU `` 4 ) ) ` , see ~ df-gz ,
   ~ gzilaz and ~ bru4 .
 
-  With a possible definition of "Linear adjunctions of a complex number to the
+  With a possible definition of "linear adjunctions of a complex number to the
   ring of integers" ` Z[]l ` , see ~ df-laz , the set of Eisenstein integers
   can be denoted by ` ( Z[]l `` ( bRoU `` 3 ) ) `, see ~ ezsubrgOLD resp.
-  ~ ezlbru3b without an explicit definition of linear adjunctions.  This
-  coresponds to Wikipedia ("Eisenstein integer", 27-Oct-2026,
+  ~ ezlbru3b without an explicit definition for linear adjunctions.  This
+  corresponds to Wikipedia ("Eisenstein integer", 27-Oct-2026,
   ~ https://en.wikipedia.org/wiki/Eisenstein_integer ): "the Eisenstein
   integers (named after Gotthold Eisenstein) ... are the complex numbers of the
   form ` z = a + b _om ` where ` a ` and ` b ` are integers and ` _om ` is a
