@@ -184268,6 +184268,32 @@ $)
   $}
 
   ${
+    $d k x B $.  $d k x H $.  $d k x ph $.  $d k x R $.  $d k x S $.  $d x T $.
+    $d f k x y I $.  $d k x X $.  $d k x Y $.
+    resspsr.s $e |- S = ( I mPwSer R ) $.
+    resspsr.h $e |- H = ( R |`s T ) $.
+    resspsr.u $e |- U = ( I mPwSer H ) $.
+    resspsr.b $e |- B = ( Base ` U ) $.
+    resspsr.p $e |- P = ( S |`s B ) $.
+    resspsr.2 $e |- ( ph -> T e. ( SubRing ` R ) ) $.
+    ${
+      resspsrbasg.i $e |- ( ph -> I e. V ) $.
+      $( A restricted power series algebra has the same base set.  (Contributed
+         by Mario Carneiro, 3-Jul-2015.) $)
+      resspsrbasg $p |- ( ph -> B = ( Base ` P ) ) $=
+        ( cbs cvv wcel vf cfv cress wceq a1i eqidd cmps cxp wfn fnpsr elexd crg
+        co csubrg subrgrcl syl fnovex mp3an2i eqeltrid cv ccnv cn cima cfn cmap
+        cn0 crab wss basfn funfvex sylancr subrgbas eqid subrgss eqsstrrd mapss
+        funfni syl2anc ressex psrbasg 3sstr4d ressbas2d ) ABERUBZCESCEBUCUMUDAO
+        UEAWCUFAEIDUGUMZSKUGSSUHUIAISTDSTZWDSTUJAIJQUKADULAFDUNUBZTZDULTZPFDUOU
+        PZUKZIDSSUGUQURUSAHRUBZUAUTVAVBVCVDTUAVFIVEUMVGZVEUMZDRUBZWLVEUMZBWCAWN
+        STZWKWNVHWMWOVHARSUIWEWPVIWJWPSDRDRVJVQVKAWKFWNAWGFWKUDPFDHLVLUPAWGFWNV
+        HPFWNDWNVMZVNUPVOWKWNWLSVPVRABWLHGUAIWKJSMWKVMWLVMZNQAHDFUCUMZSLAWHWGWS
+        STWIPFDULWFVSVRUSVTAWCWLDEUAIWNJULKWQWRWCVMQWIVTWAWB $.
+    $}
+  $}
+
+  ${
     $d f i r x .0. $.  $d f i r x .1. $.  $d f i r x y D $.  $d f F $.
     $d y W $.  $d f h i r x y I $.  $d f i r x R $.  $d f h x y X $.
     mvrfval.v $e |- V = ( I mVar R ) $.
