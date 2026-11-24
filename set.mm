@@ -58272,10 +58272,22 @@ $)
   $}
 
   ${
-    $d A x $.  $d B x $.
+    $d A x y $.  $d B x y $.  $d C y $.
     $( Sufficient condition for inclusion among two functions in maps-to
-       notation.  (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
+       notation.  (Contributed by Thierry Arnoux, 30-May-2020.) $)
     mptss $p |- ( A C_ B -> ( x e. A |-> C ) C_ ( x e. B |-> C ) ) $=
+      ( vy wss cv wcel wceq wa copab cmpt ssel anim1d ssopab2dv df-mpt 3sstr4g
+      ) BCFZAGZBHZEGDIZJZAEKSCHZUAJZAEKABDLACDLRUBUDAERTUCUABCSMNOAEBDPAECDPQ
+      $.
+    $( $j usage 'mptss' avoids 'ax-10' 'ax-12' 'ax-pr' 'ax-sep'; $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Shorter proof of ~ mptss , but using more axioms.  (Contributed by
+       Glauco Siliprandi, 17-Aug-2020.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    mptssALT $p |- ( A C_ B -> ( x e. A |-> C ) C_ ( x e. B |-> C ) ) $=
       ( wss cmpt cres resmpt resss eqsstrrdi ) BCEABDFACDFZBGKACBDHKBIJ $.
   $}
 
@@ -58920,20 +58932,16 @@ $)
 
   ${
     $d x y R $.  $d x y A $.
-    $( Alternate proof of ~ idref not relying on definitions related to
-       functions.  Two ways to state that a relation is reflexive on a class.
-       (Contributed by FL, 15-Jan-2012.)  (Proof shortened by Mario Carneiro,
-       3-Nov-2015.)  (Revised by NM, 30-Mar-2016.)  (Proof shortened by BJ,
-       28-Aug-2022.)  The "proof modification is discouraged" tag is here only
-       because this is an *ALT result.  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    idrefALT $p |- ( ( _I |` A ) C_ R <-> A. x e. A x R x ) $=
-      ( vy cid cres wss cv wcel wal wbr wral df-ss cop wceq wrex ralbii 3bitr2i
-      wi elrid imbi1i r19.23v eleq1 df-br bitr4di pm5.74i albii ralcom4 ceqsalv
-      opex biidd bitri ) EBFZCGDHZUMIZUNCIZSZDJZAHZUSCKZABLZDUMCMURUNUSUSNZOZUT
-      SZABLZDJVDDJZABLVAUQVEDUQVCABPZUPSVCUPSZABLVEUOVGUPAUNBTUAVCUPABUBVHVDABV
-      CUPUTVCUPVBCIUTUNVBCUCUSUSCUDUEUFQRUGVDADBUHVFUTABUTUTDVBUSUSUJVCUTUKUIQR
-      UL $.
+    $( Two ways to state that a relation is reflexive on a class.  (Contributed
+       by FL, 15-Jan-2012.)  (Proof shortened by Mario Carneiro, 3-Nov-2015.)
+       (Revised by NM, 30-Mar-2016.)  (Proof shortened by BJ, 28-Aug-2022.) $)
+    idref $p |- ( ( _I |` A ) C_ R <-> A. x e. A x R x ) $=
+      ( vy cid cres wss cv wcel wal wbr wral df-ss cop wceq elrid imbi1i bitr4i
+      wi wrex r19.23v albii ralcom4 eleq1 ceqsalv df-br ralbii 3bitr2i bitri
+      opex ) EBFZCGDHZUKIZULCIZSZDJZAHZUQCKZABLZDUKCMUPULUQUQNZOZUNSZABLZDJVBDJ
+      ZABLUSUOVCDUOVAABTZUNSVCUMVEUNAULBPQVAUNABUARUBVBADBUCVDURABVDUTCIZURUNVF
+      DUTUQUQUJULUTCUDUEUQUQCUFRUGUHUI $.
+    $( $j usage 'idref' avoids 'ax-10' 'ax-12'; $)
   $}
 
   ${
@@ -69075,10 +69083,11 @@ $)
 
   ${
     $d A x $.  $d R x $.
-    $( Two ways to state that a relation is reflexive on a class.  (Contributed
-       by FL, 15-Jan-2012.)  (Proof shortened by Mario Carneiro, 3-Nov-2015.)
-       (Revised by NM, 30-Mar-2016.) $)
-    idref $p |- ( ( _I |` A ) C_ R <-> A. x e. A x R x ) $=
+    $( Alternate proof of ~ idref , shorter but depends on ~ ax-10 and
+       ~ ax-12 .  (Contributed by FL, 15-Jan-2012.)  (Proof shortened by Mario
+       Carneiro, 3-Nov-2015.)  (Revised by NM, 30-Mar-2016.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    idrefALT $p |- ( ( _I |` A ) C_ R <-> A. x e. A x R x ) $=
       ( cv cop wcel wral cmpt crn wss wbr cid cres wf eqid fmpt wfn opex fnmpti
       df-f mpbiran bitri df-br ralbii mptresid vex fnasrn eqtri sseq1i 3bitr4ri
       ) ADZUKEZCFZABGZABULHZIZCJZUKUKCKZABGLBMZCJUNBCUONZUQABCULUOUOOZPUTUOBQUQ
@@ -520592,18 +520601,6 @@ $)
       UVAUVBUUHUVFUVGVQSWAUVJXSUVDUVJXRUVCUVJXGUUGUVHUUIRVRVSVTXPYEYTUUIYHVPWBW
       DWCUUEUUKEUUGWRUUBUUGLZUUDUUJDWRUVKUUCUUIUUAUUBUUGXGWEWFWGWHWIUUADEWRWNWJ
       UUAXEXIOWTUUAXDXHBXNXHXCXGJWOXGNWOWKWLVFWMVLWP $.
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.  $d C y $.
-    $( Deduce subset relation of mapping-to function graphs from a subset
-       relation of domains.  Alternative proof of ~ mptss .  (Contributed by
-       Thierry Arnoux, 30-May-2020.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    mptssALT $p |- ( A C_ B -> ( x e. A |-> C ) C_ ( x e. B |-> C ) ) $=
-      ( vy wss cv wcel wceq wa copab cmpt ssel anim1d ssopab2dv df-mpt 3sstr4g
-      ) BCFZAGZBHZEGDIZJZAEKSCHZUAJZAEKABDLACDLRUBUDAERTUCUABCSMNOAEBDPAECDPQ
-      $.
   $}
 
   ${
