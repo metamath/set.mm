@@ -634,7 +634,7 @@
 "ac3" is used by "axac2".
 "ad11antr" is used by "simp-12l".
 "ad11antr" is used by "simp-12r".
-"adcnellaz" is used by "bru3sqez".
+"adcnellaz" is used by "bru3sqezOLD".
 "adcnmulzlaz" is used by "adcnellaz".
 "adcnmulzlaz" is used by "lazmulcl".
 "addassnq" is used by "addasspr".
@@ -2979,6 +2979,7 @@
 "braval" is used by "kbass6".
 "braval" is used by "rnbra".
 "brprcneuALT" is used by "fvprcALT".
+"bru3sqezOLD" is used by "ezsubrgOLD".
 "c-bnj14" is used by "bnj1000".
 "c-bnj14" is used by "bnj1006".
 "c-bnj14" is used by "bnj1020".
@@ -6172,7 +6173,7 @@
 "ellaz" is used by "adcnlaz".
 "ellaz" is used by "adcnmulzlaz".
 "ellaz" is used by "ellazim".
-"ellaz" is used by "gzilaz".
+"ellaz" is used by "gzilazALT".
 "ellaz" is used by "lazcn".
 "ellaz" is used by "lazlinz".
 "ellaz" is used by "zellaz".
@@ -6181,7 +6182,7 @@
 "ellazim" is used by "lazmulcl".
 "ellazim" is used by "lazmulzcl".
 "ellazim" is used by "laznegcl".
-"ellazim" is used by "lazssaz".
+"ellazim" is used by "lazssazALT".
 "ellnfn" is used by "0lnfn".
 "ellnfn" is used by "bralnfn".
 "ellnfn" is used by "cnlnadjlem2".
@@ -6450,6 +6451,8 @@
 "exinst11" is used by "vk15.4jVD".
 "exlimexi" is used by "exinst".
 "exlimexi" is used by "sb5ALT".
+"ezsubrgOLD" is used by "ezidomOLD".
+"ezsubrgOLD" is used by "ezsscnOLD".
 "fh1" is used by "chirredlem3".
 "fh1" is used by "cm2j".
 "fh1" is used by "fh1i".
@@ -6821,7 +6824,8 @@
 "gt0srpr" is used by "mulgt0sr".
 "gt0srpr" is used by "recexsrlem".
 "gte-lteh" is used by "ex-gte".
-"gzilaz" is used by "gzmulclALT".
+"gzilazALT" is used by "gzmulclALTALT".
+"gzsubrgALT" is used by "gzmulclALT".
 "h0elch" is used by "atcv0eq".
 "h0elch" is used by "atcvat2".
 "h0elch" is used by "atcveq0".
@@ -9279,22 +9283,22 @@
 "latmassOLD" is used by "lhp2at0".
 "latmassOLD" is used by "omlfh1N".
 "latmmdiN" is used by "omlfh1N".
-"lazaddcl" is used by "ezsubrg".
+"lazaddcl" is used by "ezsubrgOLD".
 "lazaddcl" is used by "lazcjcl".
 "lazaddcl" is used by "lazmulcl".
 "lazaddcl" is used by "lazsubcl".
-"lazcn" is used by "ezsubrg".
+"lazcn" is used by "ezsubrgOLD".
 "lazcn" is used by "lazsubcl".
 "lazlinz" is used by "lazaddcl".
 "lazlinz" is used by "lazmulzcl".
 "lazlinz" is used by "laznegcl".
-"lazmulcl" is used by "ezsubrg".
-"lazmulcl" is used by "gzmulclALT".
+"lazmulcl" is used by "ezsubrgOLD".
+"lazmulcl" is used by "gzmulclALTALT".
 "lazmulzcl" is used by "lazcjcl".
 "lazmulzcl" is used by "lazmulcl".
-"laznegcl" is used by "ezsubrg".
+"laznegcl" is used by "ezsubrgOLD".
 "laznegcl" is used by "lazsubcl".
-"lazsubcl" is used by "bru3sqez".
+"lazsubcl" is used by "bru3sqezOLD".
 "lazval" is used by "ellaz".
 "lecm" is used by "chirredlem2".
 "lecmi" is used by "lecm".
@@ -14318,8 +14322,8 @@
 "wvhc3" is used by "dfvd3ani".
 "wvhc3" is used by "dfvd3anir".
 "zellaz" is used by "adcnlaz".
-"zellaz" is used by "bru3sqez".
-"zellaz" is used by "ezsubrg".
+"zellaz" is used by "bru3sqezOLD".
+"zellaz" is used by "ezsubrgOLD".
 "zellaz" is used by "lazcjcl".
 "zellaz" is used by "lazmulcl".
 "zerdivemp1x" is used by "isdrngo2".
@@ -15420,6 +15424,7 @@ New usage of "branmfn" is discouraged (1 uses).
 New usage of "braval" is discouraged (10 uses).
 New usage of "brfi1indALT" is discouraged (0 uses).
 New usage of "brprcneuALT" is discouraged (1 uses).
+New usage of "bru3sqezOLD" is discouraged (1 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (59 uses).
 New usage of "c0exALT" is discouraged (0 uses).
@@ -16750,6 +16755,9 @@ New usage of "exlimexi" is discouraged (2 uses).
 New usage of "exor" is discouraged (0 uses).
 New usage of "expcomdg" is discouraged (0 uses).
 New usage of "exptOLD" is discouraged (0 uses).
+New usage of "ezidomOLD" is discouraged (0 uses).
+New usage of "ezsscnOLD" is discouraged (0 uses).
+New usage of "ezsubrgOLD" is discouraged (2 uses).
 New usage of "f1cofveqaeqALT" is discouraged (0 uses).
 New usage of "f1funOLD" is discouraged (0 uses).
 New usage of "f1odmOLD" is discouraged (0 uses).
@@ -16918,8 +16926,10 @@ New usage of "gt-lth" is discouraged (1 uses).
 New usage of "gt0srpr" is discouraged (2 uses).
 New usage of "gte-lte" is discouraged (0 uses).
 New usage of "gte-lteh" is discouraged (1 uses).
-New usage of "gzilaz" is discouraged (1 uses).
+New usage of "gzilazALT" is discouraged (1 uses).
 New usage of "gzmulclALT" is discouraged (0 uses).
+New usage of "gzmulclALTALT" is discouraged (0 uses).
+New usage of "gzsubrgALT" is discouraged (1 uses).
 New usage of "h0elch" is discouraged (44 uses).
 New usage of "h0elsh" is discouraged (10 uses).
 New usage of "h1da" is discouraged (3 uses).
@@ -17621,7 +17631,7 @@ New usage of "lazlinz" is discouraged (3 uses).
 New usage of "lazmulcl" is discouraged (2 uses).
 New usage of "lazmulzcl" is discouraged (2 uses).
 New usage of "laznegcl" is discouraged (2 uses).
-New usage of "lazssaz" is discouraged (0 uses).
+New usage of "lazssazALT" is discouraged (0 uses).
 New usage of "lazsubcl" is discouraged (1 uses).
 New usage of "lazval" is discouraged (1 uses).
 New usage of "lcd0vvalN" is discouraged (0 uses).
@@ -20108,6 +20118,7 @@ Proof modification of "bj-xpnzex" is discouraged (71 steps).
 Proof modification of "brfi1indALT" is discouraged (741 steps).
 Proof modification of "brfvidRP" is discouraged (93 steps).
 Proof modification of "brprcneuALT" is discouraged (247 steps).
+Proof modification of "bru3sqezOLD" is discouraged (68 steps).
 Proof modification of "c0exALT" is discouraged (15 steps).
 Proof modification of "cardprcALT" is discouraged (59 steps).
 Proof modification of "cases2ALT" is discouraged (88 steps).
@@ -20493,6 +20504,9 @@ Proof modification of "exinst01" is discouraged (16 steps).
 Proof modification of "exinst11" is discouraged (21 steps).
 Proof modification of "exlimexi" is discouraged (15 steps).
 Proof modification of "exptOLD" is discouraged (20 steps).
+Proof modification of "ezidomOLD" is discouraged (13 steps).
+Proof modification of "ezsscnOLD" is discouraged (16 steps).
+Proof modification of "ezsubrgOLD" is discouraged (105 steps).
 Proof modification of "f1cofveqaeqALT" is discouraged (124 steps).
 Proof modification of "f1funOLD" is discouraged (17 steps).
 Proof modification of "f1odmOLD" is discouraged (19 steps).
@@ -20718,7 +20732,10 @@ Proof modification of "grpokerinj" is discouraged (463 steps).
 Proof modification of "grpomndo" is discouraged (207 steps).
 Proof modification of "grposnOLD" is discouraged (291 steps).
 Proof modification of "grpsubfvalALT" is discouraged (176 steps).
-Proof modification of "gzmulclALT" is discouraged (47 steps).
+Proof modification of "gzilazALT" is discouraged (347 steps).
+Proof modification of "gzmulclALT" is discouraged (26 steps).
+Proof modification of "gzmulclALTALT" is discouraged (47 steps).
+Proof modification of "gzsubrgALT" is discouraged (19 steps).
 Proof modification of "had0OLD" is discouraged (45 steps).
 Proof modification of "had1OLD" is discouraged (38 steps).
 Proof modification of "hadifpOLD" is discouraged (20 steps).
@@ -20888,6 +20905,7 @@ Proof modification of "kardenOLD" is discouraged (354 steps).
 Proof modification of "kardexOLD" is discouraged (88 steps).
 Proof modification of "keridl" is discouraged (862 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
+Proof modification of "lazssazALT" is discouraged (282 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
 Proof modification of "lediv2aALT" is discouraged (264 steps).
 Proof modification of "lidl0ALT" is discouraged (48 steps).

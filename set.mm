@@ -859262,6 +859262,115 @@ $)
     ( cc wcel cz csn cun caz cfv azssid wo snidg olcd elun sylibr sseldd ) ABCZ
     DAEZFZAGHAAIPADCZAQCZJARCPTSABKLADQMNO $.
 
+  $( The adjunction of the complex number to the ring of integers is a subring
+     of the complex numbers.  (Contributed by AV, 18-Nov-2026.) $)
+  azsubrg $p |- ( S e. CC -> ( Z[] ` S ) e. ( SubRing ` CCfld ) ) $=
+    ( cc wcel cz csn cun ccnfld caz cfv crgspn crg cnring a1i cbs wceq cnfldbas
+    wss zsscn snssi unssd eqidd azval rgspncl ) ABCZDAEZFBGAHIGJIZGKCUDLMBGNIOU
+    DPMUDDUEBDBQUDRMABSTUDUFUAAUBUC $.
+
+  ${
+    $d X a b c i p x y $.
+    $( A linear adjunction of a complex number to the ring of integers is a
+       subset of the adjunction of the complex number to the ring of integers.
+       (Contributed by AV, 31-Oct-2026.) $)
+    lazssaz $p |- ( X e. CC -> { x e. CC | E. a e. ZZ E. b e. ZZ
+                                 x = ( a + ( b x. X ) ) } C_ ( Z[] ` X ) ) $=
+      ( vy vp vc vi cc wcel cv co wceq cz wrex cfv wa cn0 cvv a1i cmul crab caz
+      caddc weq eqeq1 rexbidv elrab csn cun ccnfld crgspn cply cc0 cfz cif cmpt
+      c1 cexp csu wss cmap zsscn zex nn0ex ifcl adantl adantr eqid fmptd linply
+      elmapdd sylancr wb fveq1 eqeq2d simpll linply2cfv mp3an2i eqcomd rspcedvd
+      simpr csubrg zsubrg eqidd rngunsnply mpbird elaz eleq1 syl5ibrcom expimpd
+      rexlimdvva biimtrid ssrdv ) BIJZEAKZCKZDKZBUALUDLZMZDNOZCNOZAIUBZBUCPZEKZ
+      XCJXEIJZXEWSMZDNOZCNOZQWOXEXDJZXBXIAXEIAEUEZXAXHCNXKWTXGDNWPXEWSUFUGUGUHW
+      OXFXIXJWOXFQZXGXJCDNNXLWQNJWRNJQZQZXJXGWSXDJZXNXOWSNBUIUJUKULPPZJZXNXQWSB
+      FKZPZMZFNUMPZOXNXTWSBGIUNURUOLHKZARWPUNMZWQWRUPZUQZPGKYBUSLUALHUTUQZPZMZF
+      YFYAXNNIVAZYENRVBLJYFYAJVCXNNRYESSNSJXNVDTRSJXNVETXNARYDNYEXNYDNJZWPRJXMY
+      JXLYCWQWRNVFVGVHYEVIZVJVLGYEYFNHYFVIZVKVMXRYFMZXTYHVNXNYMXSYGWSBXRYFVOVPV
+      GXNYGWSYIXNXMWOYGWSMVCXLXMWBWOXFXMVQZAGWQWRYEYFNHBYLYKVRVSVTWAXNNXPWSBFNU
+      KWCPJXNWDTYNXNXPWEWFWGXLXOXQVNZXMWOYOXFWSBWHVHVHWGXEWSXDWIWJWLWKWMWN $.
+  $}
+
+  ${
+    $d X a b i j x y $.  $d ph a b i j y $.
+    lazssazeq.s $e |- ( ph -> X e. CC ) $.
+    lazssazeq.l $e |- ( ph -> E. i e. ZZ E. j e. ZZ
+                              ( X ^ 2 ) = ( ( i x. X ) + j ) ) $.
+    $( An adjunction of a complex number with characteristic polynomial of
+       degree 2 to the ring of integers is a linear adjunction of the complex
+       number to the ring of integers.  (Contributed by AV, 16-Nov-2026.) $)
+    lazssazeq $p |- ( ph -> { x e. CC | E. a e. ZZ E. b e. ZZ
+                              x = ( a + ( b x. X ) ) } = ( Z[] ` X ) ) $=
+      ( cv co wceq cz wrex cc cfv wcel wa ccnfld eqid cmul caddc caz lazssaz
+      vy crab wss syl wi azcn imp c2 cexp adantr cress cpl1 ces1 cbs cmg crgspn
+      cmgp cnfldbas ccrg cncrng a1i cdr cnzr cndrng mp1i csubrg zsubrg ad2antrr
+      drngnzr csn cun elaz biimpd cnfldadd cnfldmul simplrl simplrr cn0 sylancl
+      cnfldexp eqcomd eqeq1d biimpa rngunsnply1chr2 ex rexlimdvva rexcom sylibr
+      2nn0 mpd zcn adantl mulcld addcomd eqeq2d 2rexbidva mpbird eqeq1 2rexbidv
+      weq elrab sylanbrc ssrdv eqssd ) ABJZFJZGJZEUAKZUBKZLZGMNFMNZBOUFZEUCPZAE
+      OQZXPXQUGHBEFGUDUHAUEXQXPAUEJZXQQZXSXPQZAXTRZXSOQZXSXMLZGMNFMNZYAAXTYCAXR
+      XTYCUIHXSEUJUHUKYBYEXSXLXJUBKZLZGMNFMNZYBYGFMNGMNZYHYBEULUMKZCJZEUAKDJZUB
+      KZLZDMNCMNZYIAYOXTIUNYBYNYICDMMYBYKMQZYLMQZRZRZYNYIYSYNRZYKYLSMUOKUPPZUBS
+      MUQKZSMUAUUAURPZSVAPUSPZSUTPZOEXSGFVBUUATUUCTUUBTSVCQYTVDVESVFQSVGQYTVHSV
+      MVIMSVJPQYTVKVEYBXRYRYNAXRXTHUNVLYBXSMEVNVOUUEPQZYRYNAXTUUFAXRXTUUFUIHXRX
+      TUUFXSEVPVQUHUKVLUUETVRVSUUDTYBYPYQYNVTYBYPYQYNWAYSYNULEUUDKZYMLYSYJUUGYM
+      AYJUUGLXTYRAUUGYJAXRULWBQUUGYJLHWMEULWDWCWEVLWFWGWHWIWJWNYGFGMMWKWLYBYDYG
+      FGMMYBXJMQZXKMQZRZRZXMYFXSUUKXJXLUUJXJOQZYBUUHUULUUIXJWOUNWPUUKXKEUUJXKOQ
+      ZYBUUIUUMUUHXKWOWPWPAXRXTUUJHVLWQWRWSWTXAXOYEBXSOBUEXDXNYDFGMMXIXSXMXBXCX
+      EXFWIXGXH $.
+  $}
+
+  ${
+    $d a b s x $.  $d ph y $.
+    $( The Gaussian integers are the linear adjunction of ` _i ` to the ring of
+       integers.  (Contributed by AV, 25-Oct-2026.)  (Revised by AV,
+       18-Nov-2026.) $)
+    gzilaz $p |- Z[i] = { x e. CC | E. a e. ZZ E. b e. ZZ
+                                    x = ( a + ( b x. _i ) ) } $=
+      ( vs cv ci cmul co caddc wceq cz wrex cc wcel cre cfv cim oveq2d ad2antll
+      wa cgz w3a 3anass oveq1 eqeq2d simprl simprr simpl replimd ax-icn a1i zcn
+      crab mulcomd eqtrd 2rspcedvdw ex fveq2d cr zre ad2antrl crred eqeltrd jca
+      crimd fveq2 eleq1d anbi12d syl5ibrcom rexlimdvva impbid pm5.32i bitri weq
+      elgz eqeq1 2rexbidv elrab 3bitr4i eqriv ) DUAAEZBEZCEZFGHZIHZJZCKLBKLZAMU
+      MZDEZMNZWIOPZKNZWIQPZKNZUBZWJWIWEJZCKLBKLZTZWIUANWIWHNWOWJWLWNTZTZWRWJWLW
+      NUCWJWSWQWJWSWQWJWSWQWTWPWIWKWDIHZJWIWKWMFGHZIHZJBCWKWMKKWBWKJWEXAWIWBWKW
+      DIUDUEWCWMJZXAXCWIXDWDXBWKIWCWMFGUDRUEWJWLWNUFWJWLWNUGWTWIWKFWMGHZIHXCWTW
+      IWJWSUHUIWTXEXBWKIWTFWMFMNZWTUJUKWNWMMNWJWLWMULSUNRUOUPUQWJWPWSBCKKWJWBKN
+      ZWCKNZTTZWSWPWEOPZKNZWEQPZKNZTXIXKXMXIXJWBKXIXJWBFWCGHZIHZOPWBXIWEXOOXIWD
+      XNWBIXIWCFXHWCMNWJXGWCULSXFXIUJUKUNRZURXIWBWCXGWBUSNWJXHWBUTVAZXHWCUSNWJX
+      GWCUTSZVBUOWJXGXHUFVCXIXLWCKXIXLXOQPWCXIWEXOQXPURXIWBWCXQXRVEUOWJXGXHUGVC
+      VDWPWLXKWNXMWPWKXJKWIWEOVFVGWPWMXLKWIWEQVFVGVHVIVJVKVLVMWIVOWGWQAWIMADVNW
+      FWPBCKKWAWIWEVPVQVRVSVT $.
+
+    $d a b i j x $.
+    $( The Gaussian integers are the adjunction of ` _i ` to the ring of
+       integers.  (Contributed by AV, 18-Nov-2026.) $)
+    gziaz $p |- Z[i] = ( Z[] ` _i ) $=
+      ( vx va vb vi vj cgz cv ci cmul co caddc wceq cz wrex cc crab wcel oveq1d
+      cc0 eqeq2d caz cfv gzilaz ax-icn id c2 cexp cneg oveq1 oveq2 0zd neg1z
+      c1 a1i i2 mul02 neg1cn addlidi eqtrdi eqtr4id 2rspcedvdw lazssazeq ax-mp
+      eqtri ) FAGBGCGHIJKJLCMNBMNAOPZHUAUBZABCUCHOQZVEVFLUDVGADEHBCVGUEVGHUFUGJ
+      ZDGZHIJZEGZKJZLVHSHIJZVKKJZLVHVMUMUHZKJZLDESVOMMVISLZVLVNVHVQVJVMVKKVISHI
+      UIRTVKVOLVNVPVHVKVOVMKUJTVGUKVOMQVGULUNVGVHVOVPUOVGVPSVOKJVOVGVMSVOKHUPRV
+      OUQURUSUTVAVBVCVD $.
+  $}
+
+  $( The gaussian integers form a subring of the complex numbers.  (Contributed
+     by Mario Carneiro, 4-Dec-2014.)  Alternate (shorter) proof.  (Revised by
+     AV, 18-Nov-2026.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  gzsubrgALT $p |- Z[i] e. ( SubRing ` CCfld ) $=
+    ( cgz ci caz cfv ccnfld csubrg gziaz cc wcel ax-icn azsubrg ax-mp eqeltri )
+    ABCDZEFDZGBHINOIJBKLM $.
+
+  $( The gaussian integers are closed under multiplication.   (Contributed by
+     Mario Carneiro, 14-Jul-2014.)  Alternate (shorter) proof.  (Revised by AV,
+     18-Nov-2026.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  gzmulclALT $p |- ( ( A e. Z[i] /\ B e. Z[i] ) -> ( A x. B ) e. Z[i] ) $=
+    ( cgz ccnfld csubrg cfv wcel cmul co gzsubrgALT cnfldmul subrgmcl mp3an1 )
+    CDEFGACGBCGABHICGJCDHABKLM $.
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
@@ -859346,8 +859455,9 @@ $)
     $d S a b c i p x $.
     $( A linear adjunction of a complex number to the ring of integers is a
        subset of the adjunction of the complex number to the ring of integers.
-       (Contributed by AV, 31-Oct-2026.)  (New usage is discouraged.) $)
-    lazssaz $p |- ( S e. CC -> ( Z[]l ` S ) C_ ( Z[] ` S ) ) $=
+       (Contributed by AV, 31-Oct-2026.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    lazssazALT $p |- ( S e. CC -> ( Z[]l ` S ) C_ ( Z[] ` S ) ) $=
       ( vx va vb vp vc vi cc wcel cfv cv cmul co wceq cz wrex wa cn0 cvv a1i ex
       claz caz caddc ellazim csn cun ccnfld crgspn cply cc0 c1 cfz cif cmpt csu
       cexp wss cmap zsscn nn0ex ifcl adantl adantr fmptd elmapdd linply sylancr
@@ -859415,8 +859525,8 @@ $)
     $d a b s $.
     $( The Gaussian integers are the adjunction of ` _i ` to the ring of
        integers.  (Contributed by AV, 25-Oct-2026.)
-       (New usage is discouraged.) $)
-    gzilaz $p |- Z[i] = ( Z[]l ` _i ) $=
+       (New usage is discouraged.)  (Proof modification is discouraged.) $)
+    gzilazALT $p |- Z[i] = ( Z[]l ` _i ) $=
       ( vs va vb ci cfv cv cc wcel cre cz cmul co caddc wceq wa oveq2d ad2antll
       cim ax-icn eqtrd cgz claz 3anass oveq1 eqeq2d simprl simprr simpl replimd
       w3a wrex a1i zcn mulcomd 2rspcedvdw ex fveq2d cr zre ad2antrl crred crimd
@@ -859514,8 +859624,8 @@ $)
       TVAWAWCXFXJVLVIWBYACDEVMVKVIXTYBCDEVJVKVOSVOVPVQVRVQVSVT $.
 
     $( The extended integers form a subring of the complex numbers.
-       Generalization of ~ ezsubrg .  TODO: Would be provable if a variant of
-       ~ cnsubrglem is available in deduction form.  (Proposed by SN,
+       Generalization of ~ ezsubrgOLD .  TODO: Would be provable if a variant
+       of ~ cnsubrglem is available in deduction form.  (Proposed by SN,
        28-Oct-2026.)  (Contributed by AV, 30-Oct-2026.) $)
     $( lazsubrg $p |- ( ( S e. CC /\ ( S ^ 2 ) e. R )
                     -> ( Z[]l ` S ) e. ( SubRing ` CCfld ) ) $=
@@ -859543,10 +859653,10 @@ $)
   $( The gaussian integers are closed under multiplication.  Alternate
      (shorter) proof.  (Contributed by AV, 25-Oct-2026.)
      (Proof modification is discouraged.)  (New usage is discouraged.) $)
-  gzmulclALT $p |- ( ( A e. Z[i] /\ B e. Z[i] ) -> ( A x. B ) e. Z[i] ) $=
+  gzmulclALTALT $p |- ( ( A e. Z[i] /\ B e. Z[i] ) -> ( A x. B ) e. Z[i] ) $=
     ( ci cc wcel c2 cexp co cgz wa cmul wi ax-icn c1 cneg i2 cz neg1z zgz ax-mp
-    eqeltri gzilaz lazmulcl mp2an ) CDECFGHZIEAIEBIEJABKHIELMUENOZIPUFQEUFIERUF
-    STUAABICUBUCUD $.
+    eqeltri gzilazALT lazmulcl mp2an ) CDECFGHZIEAIEBIEJABKHIELMUENOZIPUFQEUFIE
+    RUFSTUAABICUBUCUD $.
 
 
 $(
@@ -859702,35 +859812,71 @@ $)
       UPPQUQPQVAVBUJVFFALVEUKUPUQULRUMFPQAPQURUSKLVEFAUNRUO $.
   $}
 
+  ${
+    bru3sqbru2.w $e |- W = ( bRoU ` 3 ) $.
+    $( The square of the basic cube root of unity expressed by the basic cube
+       root of unity.  (Contributed by AV, 21-Nov-2026.) $)
+    bru3sqbru2 $p |- ( W ^ 2 ) = ( ( -u 1 x. W ) + -u 1 ) $=
+      ( c2 cexp co c1 cneg cmin caddc cmul bru3sqbru neg1cn c3 cbru cfv cc wcel
+      cn 3nn brucn eqeltri negsubi negcli mulm1i eqcomi oveq1i addcomli 3eqtr2i
+      ax-mp ) ACDEFGZAHEUJAGZIEUJAJEZUJIEZABKUJALAMNOZPBMRQUNPQSMTUIUAZUBUKUJUM
+      AUOUCLUKULUJIULUKAUOUDUEUFUGUH $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
   Eisenstein integers
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-  According to Wikipedia ("Eisenstein integer", 27-Oct-2026,
-  ~ https://en.wikipedia.org/wiki/Eisenstein_integer ) "the Eisenstein integers
-  (named after Gotthold Eisenstein) ... are the complex numbers of the form
-  ` z = a + b _om ` where ` a ` and ` b ` are integers and ` _om ` is a
-  primitive (hence non-real) cube root of unity."  With the definitions of
-  "Basic ` N ` -th root of unity" and "Adjunction of a complex number to the
-  ring of integers", the set of Eisenstein integers can be denoted by
-  ` ( Z[]l `` ( bRoU `` 3 ) ) `.  Compare with the set of Gaussian integers
-  ` Z[i] = ( Z[]l `` _i ) = ( Z[]l `` ( bRoU `` 4 ) ) ` , see ~ df-gz ,
+  The _Eisenstein integers_ are complex numbers which are constructed by
+  adjoining the basic cubic root of unity to the integers:
+  ` ( Z[] `` ( bRoU `` 3 ) ) `.  This is analogue to the construction of
+  Gaussian integers where the basic 4th root of unity `_i ` is adjoined to the
+  integers: ` Z[i] = ( Z[] `` _i ) = ( Z[] `` ( bRoU `` 4 ) ) ` , see ~ df-gz ,
   ~ gzilaz and ~ bru4 .
 
-  Hint (given by TA): It can be shown that ` ( Z[]l `` _om ) = ( Z[] `` _om ) `
-  with ` _om = ( bRoU `` 3 ) ` , as well as ` Z[i] = ( Z[] `` _i ) ` for the
-  Gaussian integers, since ` _om ^ 2 = _om - 1 ` (see ~ bru3sqbru ) and any
-  ` _om ` term to a degree 2 or higher can be rewritten back into a linear
-  polynomial, same for ` _i ` and the Gaussian integers since ` _i ^ 2 = -u 1 `
-  (see ~ i2 ).
+  With a possible definition of "Linear adjunctions of a complex number to the
+  ring of integers" ` Z[]l ` , see ~ df-laz , the set of Eisenstein integers
+  can be denoted by ` ( Z[]l `` ( bRoU `` 3 ) ) `, see ~ ezsubrgOLD resp.
+  ~ ezlbru3b without an explicit definition of linear adjunctions.  This
+  coresponds to Wikipedia ("Eisenstein integer", 27-Oct-2026,
+  ~ https://en.wikipedia.org/wiki/Eisenstein_integer ): "the Eisenstein
+  integers (named after Gotthold Eisenstein) ... are the complex numbers of the
+  form ` z = a + b _om ` where ` a ` and ` b ` are integers and ` _om ` is a
+  primitive (hence non-real) cube root of unity."
 
 $)
 
-  $( The square of the basic 3rd root of unity is an Eisenstein integer.
-     (Contributed by AV, 26-Oct-2026.) $)
-  bru3sqez $p |- ( ( bRoU ` 3 ) ^ 2 ) e. ( Z[]l ` ( bRoU ` 3 ) ) $=
+  ${
+    $d A a b x $.  $d a b i j x $.
+    $( A complex number is an Eisenstein integer iff it is a linear combination
+       of the basic cube root of unity over the integers.  This corresponds to
+       the definition in Wikipedia.  (Contributed by AV, 20-Nov-2026.) $)
+    ezlbru3b $p |- ( A e. ( Z[] ` ( bRoU ` 3 ) )
+               <-> E. a e. ZZ E. b e. ZZ A = ( a + ( b x. ( bRoU ` 3 ) ) ) ) $=
+      ( vx vi vj cv c3 cfv cmul co caddc wceq cz wrex cc wcel wa 3nn a1i caz cn
+      cbru crab eqeq1 2rexbidv elrab brucn c2 cexp c1 oveq1 oveq1d eqeq2d oveq2
+      cneg neg1z bru3sqbru2 2rspcedvdw lazssazeq eqcomd ax-mp eleq2i zcn adantr
+      eqid adantl mulcld addcld eleq1 syl5ibrcom rexlimivv pm4.71ri 3bitr4i ) A
+      DGZBGZCGZHUCIZJKZLKZMZCNOBNOZDPUDZQAPQZAVTMZCNOBNOZRAVRUAIZQWFWBWFDAPVOAM
+      WAWEBCNNVOAVTUEUFUGWGWCAHUBQZWGWCMSWHWCWGWHDEFVRBCHUHZWHVRUIUJKZEGZVRJKZF
+      GZLKZMWJUKUPZVRJKZWMLKZMWJWPWOLKZMZEFWOWONNWKWOMZWNWQWJWTWLWPWMLWKWOVRJUL
+      UMUNWMWOMWQWRWJWMWOWPLUOUNWONQWHUQTZXAWSWHVRVRVFURTUSUTVAVBVCWFWDWEWDBCNN
+      VPNQZVQNQZRZWDWEVTPQXDVPVSXBVPPQXCVPVDVEXDVQVRXCVQPQXBVQVDVGVRPQZXDWHXESW
+      IVBTVHVIAVTPVJVKVLVMVN $.
+  $}
+
+  $( The Eisenstein integers form a subring of the complex numbers.
+     (Contributed by AV, 26-Oct-2026.)  (Revised by AV, 20-Nov-2026.) $)
+  ezsubrg $p |- ( Z[] ` ( bRoU ` 3 ) ) e. ( SubRing ` CCfld ) $=
+      ( c3 cn wcel cbru cfv cc caz ccnfld csubrg 3nn brucn azsubrg mp2b ) ABCAD
+      EZFCNGEHIECJAKNLM $.
+
+  $( Obsolete theorem as of 20-Nov-2026.  The square of the basic 3rd root of
+     unity is an Eisenstein integer.  (Contributed by AV, 26-Oct-2026.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
+  bru3sqezOLD $p |- ( ( bRoU ` 3 ) ^ 2 ) e. ( Z[]l ` ( bRoU ` 3 ) ) $=
     ( c3 cbru cfv c2 cexp co c1 cneg cmin claz eqid bru3sqbru cc wcel wa cn 3nn
     brucn ax-mp cz neg1z zellaz mp2an adcnellaz pm3.2i lazsubcl mp2 eqeltri ) A
     BCZDEFGHZUIIFZUIJCZUIUIKLUIMNZUJULNZUIULNZOUKULNAPNUMQARSZUNUOUMUJTNUNUPUAU
@@ -859738,27 +859884,42 @@ $)
 
   ${
     $d a b $.
-    $( The Eisenstein integers form a subring of the complex numbers.
-       (Contributed by AV, 26-Oct-2026.) $)
-    ezsubrg $p |- ( Z[]l ` ( bRoU ` 3 ) ) e. ( SubRing ` CCfld ) $=
+    $( Obsolete version of ~ ezsubrg as of 20-Nov-2026.  (Contributed by AV,
+       26-Oct-2026.) (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    ezsubrgOLD $p |- ( Z[]l ` ( bRoU ` 3 ) ) e. ( SubRing ` CCfld ) $=
       ( va vb c3 cbru cfv claz cc cv wi cn 3nn brucn ax-mp lazcn wa caddc co c1
-      wcel mp2an eqid lazaddcl cneg laznegcl cz 1z zellaz c2 cexp cmul bru3sqez
-      lazmulcl cnsubrglem ) ABCDEZFEZUNGSZAHZUOSZUQGSICJSUPKCLMZUQUNNMUPURBHZUO
-      SOZUQUTPQUOSIUSUQUTUOUNUOUAZUBMUPURUQUCUOSIUSUQUOUNVBUDMUPRUESRUOSUSUFRUN
-      UGTUPUNUHUIQUOSVAUQUTUJQUOSIUSUKUQUTUOUNVBULTUM $.
+      wcel mp2an eqid lazaddcl cneg laznegcl cz 1z zellaz cexp cmul bru3sqezOLD
+      c2 lazmulcl cnsubrglem ) ABCDEZFEZUNGSZAHZUOSZUQGSICJSUPKCLMZUQUNNMUPURBH
+      ZUOSOZUQUTPQUOSIUSUQUTUOUNUOUAZUBMUPURUQUCUOSIUSUQUOUNVBUDMUPRUESRUOSUSUF
+      RUNUGTUPUNUKUHQUOSVAUQUTUIQUOSIUSUJUQUTUOUNVBULTUM $.
   $}
 
   $( The Eisenstein integers are a subset of the complex numbers.  (Contributed
-     by AV, 26-Oct-2026.) $)
-  ezsscn $p |- ( Z[]l ` ( bRoU ` 3 ) ) C_ CC $=
-    ( c3 cbru cfv claz ccnfld csubrg wcel cc wss ezsubrg subrgccsscc ax-mp ) AB
-    CDCZEFCGMHIJMKL $.
+     by AV, 26-Oct-2026.)  (Revised by AV, 20-Nov-2026.) $)
+  ezsscn $p |- ( Z[] ` ( bRoU ` 3 ) ) C_ CC $=
+    ( c3 cbru cfv caz ccnfld csubrg wcel cc wss ezsubrg subrgccsscc ax-mp )
+    ABCDCZEFCGMHIJMKL $.
+
+  $( Obsolete version of ~ ezsscn as of 20-Nov-2026.  (Contributed by AV,
+     26-Oct-2026.) (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  ezsscnOLD $p |- ( Z[]l ` ( bRoU ` 3 ) ) C_ CC $=
+    ( c3 cbru cfv claz ccnfld csubrg wcel cc wss ezsubrgOLD subrgccsscc ax-mp )
+    ABCDCZEFCGMHIJMKL $.
 
   $( The Eisenstein integers form an integral domain.  (Contributed by AV,
-     26-Oct-2026.) $)
-  ezidom $p |- ( CCfld |`s ( Z[]l ` ( bRoU ` 3 ) ) ) e. IDomn $=
-    ( ccnfld c3 cbru cfv claz cress co eqid ezsubrg subrgccidom ) ABCDEDZFGZKLH
-    IJ $.
+     26-Oct-2026.)  (Revised by AV, 20-Nov-2026.) $)
+  ezidom $p |- ( CCfld |`s ( Z[] ` ( bRoU ` 3 ) ) ) e. IDomn $=
+    ( ccnfld c3 cbru cfv caz cress co eqid ezsubrg subrgccidom ) ABCDEDZFGZK
+    LHIJ $.
+
+  $( Obsolete version of ~ ezidom as of 20-Nov-2026.  (Contributed by AV,
+     26-Oct-2026.) (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  ezidomOLD $p |- ( CCfld |`s ( Z[]l ` ( bRoU ` 3 ) ) ) e. IDomn $=
+    ( ccnfld c3 cbru cfv claz cress co eqid ezsubrgOLD subrgccidom ) ABCDEDZFGZ
+    KLHIJ $.
 
 
 $(
