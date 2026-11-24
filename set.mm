@@ -378954,20 +378954,20 @@ $)
        (Contributed by Thierry Arnoux, 25-Apr-2025.) $)
     evls1subd $p |- ( ph -> ( ( Q ` ( M D N ) ) ` C )
                             = ( ( ( Q ` M ) ` C ) .- ( ( Q ` N ) ` C ) ) ) $=
-        ( co ce1 cfv cpl1 cress oveqi eqid ressply1sub eqtrid csubg wcel csubrg
-        wceq subrgply1 subrgsubg 3syl subgsub syl3anc eqtr4d fveq2d fveq1d cres
-        csg ressply1evl cgrp subrgring ply1ring ringgrpd grpsubcl fvresd eqtr2d
-        crg cbs cps1 cin ressply1bas2 inss2 eqsstrdi sseldd jca evl1subd simprd
-        3eqtr3d ) ACJLDUFZGUGUHZUHZUHCJLGUIUHZVHUHZUFZWJUHZUHZCWIEUHZUHCJEUHZUH
-        ZCLEUHZUHZKUFZACWKWOAWIWNWJAWIJLWLBUJUFZVHUHZUFZWNAWIJLMVHUHZUFXEDXFJLS
-        UKABXCGWLFMHJLWLULZQPRUBXCULZUCUDUMUNABWLUOUHUPZJBUPZLBUPZWNXEURAFGUQUH
-        UPZBWLUQUHUPXIUBBGWLFMHXGQPRUSBWLUTVAUCUDBWLXCWMXDJLWMULZXHXDULVBVCVDVE
-        VFACWKWQAWQWIWJBVGZUHWKAWIEXNABEFGHWJIMNOPQRWJULZUAUBVIZVFAWIBWJAMVJUPX
-        JXKWIBUPAMAXLHVQUPMVQUPUBFGHQVKMHPVLVAVMUCUDBMDJLRSVNVCVOVPVFAWNWLVRUHZ
-        UPWPXBURAIKWLGXQJWMLWJWSXACXOXGOXQULZUAUEAJXQUPCJWJUHZUHWSURABXQJABHVSU
-        HZVRUHZXQVTXQABYAGWLFMHXQXTXGQPRUBXTULYAULXRWAYAXQWBWCZUCWDACXSWRAWRJXN
-        UHXSAJEXNXPVFAJBWJUCVOVPVFWEALXQUPCLWJUHZUHXAURABXQLYBUDWDACYCWTAWTLXNU
-        HYCALEXNXPVFALBWJUDVOVPVFWEXMTWFWGWH $.
+      ( co ce1 cfv cpl1 csg cress oveqi eqid ressply1sub eqtrid csubg wcel wceq
+      csubrg subrgply1 subrgsubg 3syl subgsub syl3anc eqtr4d fveq2d fveq1d cres
+      ressply1evl cgrp crg subrgring ply1ring ringgrpd grpsubcl fvresd cbs cps1
+      eqtr2d cin ressply1bas2 inss2 eqsstrdi sseldd jca evl1subd simprd 3eqtr3d
+      ) ACJLDUFZGUGUHZUHZUHCJLGUIUHZUJUHZUFZWJUHZUHZCWIEUHZUHCJEUHZUHZCLEUHZUHZ
+      KUFZACWKWOAWIWNWJAWIJLWLBUKUFZUJUHZUFZWNAWIJLMUJUHZUFXEDXFJLSULABXCGWLFMH
+      JLWLUMZQPRUBXCUMZUCUDUNUOABWLUPUHUQZJBUQZLBUQZWNXEURAFGUSUHUQZBWLUSUHUQXI
+      UBBGWLFMHXGQPRUTBWLVAVBUCUDBWLXCWMXDJLWMUMZXHXDUMVCVDVEVFVGACWKWQAWQWIWJB
+      VHZUHWKAWIEXNABEFGHWJIMNOPQRWJUMZUAUBVIZVGAWIBWJAMVJUQXJXKWIBUQAMAXLHVKUQ
+      MVKUQUBFGHQVLMHPVMVBVNUCUDBMDJLRSVOVDVPVSVGAWNWLVQUHZUQWPXBURAIKWLGXQJWML
+      WJWSXACXOXGOXQUMZUAUEAJXQUQCJWJUHZUHWSURABXQJABHVRUHZVQUHZXQVTXQABYAGWLFM
+      HXQXTXGQPRUBXTUMYAUMXRWAYAXQWBWCZUCWDACXSWRAWRJXNUHXSAJEXNXPVGAJBWJUCVPVS
+      VGWEALXQUQCLWJUHZUHXAURABXQLYBUDWDACYCWTAWTLXNUHYCALEXNXPVGALBWJUDVPVSVGW
+      EXMTWFWGWH $.
   $}
 
   ${
@@ -859301,23 +859301,23 @@ $)
        number to the ring of integers.  (Contributed by AV, 16-Nov-2026.) $)
     lazssazeq $p |- ( ph -> { x e. CC | E. a e. ZZ E. b e. ZZ
                               x = ( a + ( b x. X ) ) } = ( Z[] ` X ) ) $=
-      ( cv co wceq cz wrex cc cfv wcel wa ccnfld eqid cmul caddc caz lazssaz
-      vy crab wss syl wi azcn imp c2 cexp adantr cress cpl1 ces1 cbs cmg crgspn
-      cmgp cnfldbas ccrg cncrng a1i cdr cnzr cndrng mp1i csubrg zsubrg ad2antrr
-      drngnzr csn cun elaz biimpd cnfldadd cnfldmul simplrl simplrr cn0 sylancl
-      cnfldexp eqcomd eqeq1d biimpa rngunsnply1chr2 ex rexlimdvva rexcom sylibr
-      2nn0 mpd zcn adantl mulcld addcomd eqeq2d 2rexbidva mpbird eqeq1 2rexbidv
-      weq elrab sylanbrc ssrdv eqssd ) ABJZFJZGJZEUAKZUBKZLZGMNFMNZBOUFZEUCPZAE
-      OQZXPXQUGHBEFGUDUHAUEXQXPAUEJZXQQZXSXPQZAXTRZXSOQZXSXMLZGMNFMNZYAAXTYCAXR
-      XTYCUIHXSEUJUHUKYBYEXSXLXJUBKZLZGMNFMNZYBYGFMNGMNZYHYBEULUMKZCJZEUAKDJZUB
-      KZLZDMNCMNZYIAYOXTIUNYBYNYICDMMYBYKMQZYLMQZRZRZYNYIYSYNRZYKYLSMUOKUPPZUBS
-      MUQKZSMUAUUAURPZSVAPUSPZSUTPZOEXSGFVBUUATUUCTUUBTSVCQYTVDVESVFQSVGQYTVHSV
-      MVIMSVJPQYTVKVEYBXRYRYNAXRXTHUNVLYBXSMEVNVOUUEPQZYRYNAXTUUFAXRXTUUFUIHXRX
-      TUUFXSEVPVQUHUKVLUUETVRVSUUDTYBYPYQYNVTYBYPYQYNWAYSYNULEUUDKZYMLYSYJUUGYM
-      AYJUUGLXTYRAUUGYJAXRULWBQUUGYJLHWMEULWDWCWEVLWFWGWHWIWJWNYGFGMMWKWLYBYDYG
-      FGMMYBXJMQZXKMQZRZRZXMYFXSUUKXJXLUUJXJOQZYBUUHUULUUIXJWOUNWPUUKXKEUUJXKOQ
-      ZYBUUIUUMUUHXKWOWPWPAXRXTUUJHVLWQWRWSWTXAXOYEBXSOBUEXDXNYDFGMMXIXSXMXBXCX
-      EXFWIXGXH $.
+      ( cv co wceq cz wrex cc cfv wcel wa ccnfld eqid vy cmul caddc caz lazssaz
+      crab wss syl wi azcn imp c2 cexp adantr cress cpl1 ces1 cbs cmgp cnfldbas
+      cmg crgspn ccrg cncrng a1i cdr cnzr cndrng drngnzr csubrg zsubrg ad2antrr
+      mp1i csn cun elaz cnfldadd cnfldmul simplrl simplrr 2nn0 cnfldexp sylancl
+      biimpd cn0 eqcomd eqeq1d biimpa rngunsnply1chr2 rexlimdvva mpd rexcom zcn
+      sylibr adantl mulcld addcomd eqeq2d 2rexbidva mpbird eqeq1 2rexbidv elrab
+      ex weq sylanbrc ssrdv eqssd ) ABJZFJZGJZEUBKZUCKZLZGMNFMNZBOUFZEUDPZAEOQZ
+      XPXQUGHBEFGUEUHAUAXQXPAUAJZXQQZXSXPQZAXTRZXSOQZXSXMLZGMNFMNZYAAXTYCAXRXTY
+      CUIHXSEUJUHUKYBYEXSXLXJUCKZLZGMNFMNZYBYGFMNGMNZYHYBEULUMKZCJZEUBKDJZUCKZL
+      ZDMNCMNZYIAYOXTIUNYBYNYICDMMYBYKMQZYLMQZRZRZYNYIYSYNRZYKYLSMUOKUPPZUCSMUQ
+      KZSMUBUUAURPZSUSPVAPZSVBPZOEXSGFUTUUATUUCTUUBTSVCQYTVDVESVFQSVGQYTVHSVIVM
+      MSVJPQYTVKVEYBXRYRYNAXRXTHUNVLYBXSMEVNVOUUEPQZYRYNAXTUUFAXRXTUUFUIHXRXTUU
+      FXSEVPWDUHUKVLUUETVQVRUUDTYBYPYQYNVSYBYPYQYNVTYSYNULEUUDKZYMLYSYJUUGYMAYJ
+      UUGLXTYRAUUGYJAXRULWEQUUGYJLHWAEULWBWCWFVLWGWHWIXDWJWKYGFGMMWLWNYBYDYGFGM
+      MYBXJMQZXKMQZRZRZXMYFXSUUKXJXLUUJXJOQZYBUUHUULUUIXJWMUNWOUUKXKEUUJXKOQZYB
+      UUIUUMUUHXKWMWOWOAXRXTUUJHVLWPWQWRWSWTXOYEBXSOBUAXEXNYDFGMMXIXSXMXAXBXCXF
+      XDXGXH $.
   $}
 
   ${
@@ -859347,12 +859347,12 @@ $)
        integers.  (Contributed by AV, 18-Nov-2026.) $)
     gziaz $p |- Z[i] = ( Z[] ` _i ) $=
       ( vx va vb vi vj cgz cv ci cmul co caddc wceq cz wrex cc crab wcel oveq1d
-      cc0 eqeq2d caz cfv gzilaz ax-icn id c2 cexp cneg oveq1 oveq2 0zd neg1z
-      c1 a1i i2 mul02 neg1cn addlidi eqtrdi eqtr4id 2rspcedvdw lazssazeq ax-mp
-      eqtri ) FAGBGCGHIJKJLCMNBMNAOPZHUAUBZABCUCHOQZVEVFLUDVGADEHBCVGUEVGHUFUGJ
-      ZDGZHIJZEGZKJZLVHSHIJZVKKJZLVHVMUMUHZKJZLDESVOMMVISLZVLVNVHVQVJVMVKKVISHI
-      UIRTVKVOLVNVPVHVKVOVMKUJTVGUKVOMQVGULUNVGVHVOVPUOVGVPSVOKJVOVGVMSVOKHUPRV
-      OUQURUSUTVAVBVCVD $.
+      cc0 eqeq2d caz cfv gzilaz ax-icn id c2 cexp c1 cneg oveq1 oveq2 0zd neg1z
+      a1i mul02 neg1cn addlidi eqtrdi eqtr4id 2rspcedvdw lazssazeq ax-mp eqtri
+      i2 ) FAGBGCGHIJKJLCMNBMNAOPZHUAUBZABCUCHOQZVEVFLUDVGADEHBCVGUEVGHUFUGJZDG
+      ZHIJZEGZKJZLVHSHIJZVKKJZLVHVMUHUIZKJZLDESVOMMVISLZVLVNVHVQVJVMVKKVISHIUJR
+      TVKVOLVNVPVHVKVOVMKUKTVGULVOMQVGUMUNVGVHVOVPVDVGVPSVOKJVOVGVMSVOKHUORVOUP
+      UQURUSUTVAVBVC $.
   $}
 
   $( The gaussian integers form a subring of the complex numbers.  (Contributed
@@ -859363,7 +859363,7 @@ $)
     ( cgz ci caz cfv ccnfld csubrg gziaz cc wcel ax-icn azsubrg ax-mp eqeltri )
     ABCDZEFDZGBHINOIJBKLM $.
 
-  $( The gaussian integers are closed under multiplication.   (Contributed by
+  $( The gaussian integers are closed under multiplication.  (Contributed by
      Mario Carneiro, 14-Jul-2014.)  Alternate (shorter) proof.  (Revised by AV,
      18-Nov-2026.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
@@ -859441,7 +859441,7 @@ $)
       wrex ) BEFABGHFAEFZACIDIBJKLKMDNSCNSZOTABCDPTUAQR $.
 
     $( An integer is an extended integer.  (Contributed by AV, 24-Oct-2026.)
-       (New usage is discouraged.)  $)
+       (New usage is discouraged.) $)
     zellaz $p |- ( ( S e. CC /\ A e. ZZ ) -> A e. ( Z[]l ` S ) ) $=
       ( va vb cc wcel cz wa claz cv cmul co caddc wceq wrex oveq1 eqeq2d oveq2d
       cfv cc0 zcn adantl simpr 0zd simpl mul02d addridd eqtr2d 2rspcedvdw ellaz
@@ -859496,7 +859496,7 @@ $)
   ${
     $d A a b $.  $d B a b $.  $d S a b $.
     $( Construct an extended integer.  (Contributed by AV, 25-Oct-2026.)
-       (New usage is discouraged.)  $)
+       (New usage is discouraged.) $)
     lazlinz $p |- ( S e. CC -> ( ( A e. ZZ /\ B e. ZZ )
                                 -> ( A + ( B x. S ) ) e. ( Z[]l ` S ) ) ) $=
       ( va vb cc wcel cz wa cmul co caddc cv wceq zcn adantr adantl simpl oveq1
@@ -859870,8 +859870,8 @@ $)
   $( The Eisenstein integers form a subring of the complex numbers.
      (Contributed by AV, 26-Oct-2026.)  (Revised by AV, 20-Nov-2026.) $)
   ezsubrg $p |- ( Z[] ` ( bRoU ` 3 ) ) e. ( SubRing ` CCfld ) $=
-      ( c3 cn wcel cbru cfv cc caz ccnfld csubrg 3nn brucn azsubrg mp2b ) ABCAD
-      EZFCNGEHIECJAKNLM $.
+    ( c3 cn wcel cbru cfv cc caz ccnfld csubrg 3nn brucn azsubrg mp2b ) ABCADEZ
+    FCNGEHIECJAKNLM $.
 
   $( Obsolete theorem as of 20-Nov-2026.  The square of the basic 3rd root of
      unity is an Eisenstein integer.  (Contributed by AV, 26-Oct-2026.)
@@ -859885,7 +859885,7 @@ $)
   ${
     $d a b $.
     $( Obsolete version of ~ ezsubrg as of 20-Nov-2026.  (Contributed by AV,
-       26-Oct-2026.) (Proof modification is discouraged.)
+       26-Oct-2026.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
     ezsubrgOLD $p |- ( Z[]l ` ( bRoU ` 3 ) ) e. ( SubRing ` CCfld ) $=
       ( va vb c3 cbru cfv claz cc cv wi cn 3nn brucn ax-mp lazcn wa caddc co c1
@@ -859898,11 +859898,11 @@ $)
   $( The Eisenstein integers are a subset of the complex numbers.  (Contributed
      by AV, 26-Oct-2026.)  (Revised by AV, 20-Nov-2026.) $)
   ezsscn $p |- ( Z[] ` ( bRoU ` 3 ) ) C_ CC $=
-    ( c3 cbru cfv caz ccnfld csubrg wcel cc wss ezsubrg subrgccsscc ax-mp )
-    ABCDCZEFCGMHIJMKL $.
+    ( c3 cbru cfv caz ccnfld csubrg wcel cc wss ezsubrg subrgccsscc ax-mp ) ABC
+    DCZEFCGMHIJMKL $.
 
   $( Obsolete version of ~ ezsscn as of 20-Nov-2026.  (Contributed by AV,
-     26-Oct-2026.) (Proof modification is discouraged.)
+     26-Oct-2026.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   ezsscnOLD $p |- ( Z[]l ` ( bRoU ` 3 ) ) C_ CC $=
     ( c3 cbru cfv claz ccnfld csubrg wcel cc wss ezsubrgOLD subrgccsscc ax-mp )
@@ -859911,11 +859911,11 @@ $)
   $( The Eisenstein integers form an integral domain.  (Contributed by AV,
      26-Oct-2026.)  (Revised by AV, 20-Nov-2026.) $)
   ezidom $p |- ( CCfld |`s ( Z[] ` ( bRoU ` 3 ) ) ) e. IDomn $=
-    ( ccnfld c3 cbru cfv caz cress co eqid ezsubrg subrgccidom ) ABCDEDZFGZK
-    LHIJ $.
+    ( ccnfld c3 cbru cfv caz cress co eqid ezsubrg subrgccidom ) ABCDEDZFGZKLHI
+    J $.
 
   $( Obsolete version of ~ ezidom as of 20-Nov-2026.  (Contributed by AV,
-     26-Oct-2026.) (Proof modification is discouraged.)
+     26-Oct-2026.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   ezidomOLD $p |- ( CCfld |`s ( Z[]l ` ( bRoU ` 3 ) ) ) e. IDomn $=
     ( ccnfld c3 cbru cfv claz cress co eqid ezsubrgOLD subrgccidom ) ABCDEDZFGZ
@@ -859935,7 +859935,7 @@ $)
     CDVRCDZUIFUJUKZUMZUNOZKUOUPVLVDOUQVLWGWEVPHIWAVLVPWEVLBWHURZWLUSVLVOVSVPVOC
     DVLQOZVSCDVLWKOZWMUTVARPVLAVQVTVJVKVBVLVOVPWNWMTVLVSVPWOWMTVCVLWBWCVTWDJVKV
     JVPCDWBWCNBVEAVPVFVGVLMVRVPMCDVLSOWIVLWJOWMVHVIR $.
-  
+
   ${
     $d Z a b $.
     $( An Eisenstein integer expressed by its real and imaginary parts.
