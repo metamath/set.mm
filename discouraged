@@ -6418,6 +6418,10 @@
 "eufndx" is used by "basendxneufndx".
 "eufndx" is used by "cnfldfunALT".
 "eufndx" is used by "cnfldstr".
+"eufndx" is used by "mulrndxneufndx".
+"eufndx" is used by "plusgndxneufndx".
+"eufndx" is used by "scandxneufndx".
+"eufndx" is used by "vscandxneufndx".
 "euxfr2" is used by "euxfr".
 "exatleN" is used by "cdlema2N".
 "exdistrf" is used by "oprabid".
@@ -10252,6 +10256,7 @@
 "mulrndx" is used by "cnfldfunALT".
 "mulrndx" is used by "dsndxnmulrndx".
 "mulrndx" is used by "ipndxnmulrndx".
+"mulrndx" is used by "mulrndxneufndx".
 "mulrndx" is used by "plendxnmulrndx".
 "mulrndx" is used by "plusgndxnmulrndx".
 "mulrndx" is used by "rngstr".
@@ -12298,6 +12303,7 @@
 "plusgndx" is used by "ipndxnplusgndx".
 "plusgndx" is used by "lmodstr".
 "plusgndx" is used by "plendxnplusgndx".
+"plusgndx" is used by "plusgndxneufndx".
 "plusgndx" is used by "plusgndxnmulrndx".
 "plusgndx" is used by "plusgndxnn".
 "plusgndx" is used by "rngstr".
@@ -13008,6 +13014,7 @@
 "scandx" is used by "plendxnscandx".
 "scandx" is used by "psrvalstr".
 "scandx" is used by "scandxnbasendx".
+"scandx" is used by "scandxneufndx".
 "scandx" is used by "scandxnmulrndx".
 "scandx" is used by "scandxnplusgndx".
 "scandx" is used by "slotsdifipndx".
@@ -13979,6 +13986,7 @@
 "vscandx" is used by "slotslnbpsd".
 "vscandx" is used by "slotstnscsi".
 "vscandx" is used by "vscandxnbasendx".
+"vscandx" is used by "vscandxneufndx".
 "vscandx" is used by "vscandxnmulrndx".
 "vscandx" is used by "vscandxnplusgndx".
 "vscandx" is used by "vscandxnscandx".
@@ -16664,7 +16672,7 @@ New usage of "erngplus2-rN" is discouraged (0 uses).
 New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "et-ltneverrefl" is discouraged (0 uses).
-New usage of "eufndx" is discouraged (3 uses).
+New usage of "eufndx" is discouraged (7 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "euxfr" is discouraged (0 uses).
 New usage of "euxfr2" is discouraged (1 uses).
@@ -17981,7 +17989,7 @@ New usage of "mulpipq2" is discouraged (6 uses).
 New usage of "mulpqf" is discouraged (5 uses).
 New usage of "mulpqnq" is discouraged (7 uses).
 New usage of "mulresr" is discouraged (4 uses).
-New usage of "mulrndx" is discouraged (12 uses).
+New usage of "mulrndx" is discouraged (13 uses).
 New usage of "mulsrpr" is discouraged (9 uses).
 New usage of "mxidlprmALT" is discouraged (0 uses).
 New usage of "n0lpligALT" is discouraged (0 uses).
@@ -18644,7 +18652,7 @@ New usage of "pl42lem3N" is discouraged (1 uses).
 New usage of "pl42lem4N" is discouraged (1 uses).
 New usage of "plendx" is discouraged (20 uses).
 New usage of "plpv" is discouraged (1 uses).
-New usage of "plusgndx" is discouraged (21 uses).
+New usage of "plusgndx" is discouraged (22 uses).
 New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
 New usage of "pm2.21ddALT" is discouraged (0 uses).
@@ -19032,7 +19040,7 @@ New usage of "sbtALT" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "sbtr" is discouraged (0 uses).
 New usage of "sbtrt" is discouraged (1 uses).
-New usage of "scandx" is discouraged (12 uses).
+New usage of "scandx" is discouraged (13 uses).
 New usage of "scmateALT" is discouraged (0 uses).
 New usage of "scott0OLD" is discouraged (4 uses).
 New usage of "scott0bOLD" is discouraged (0 uses).
@@ -19484,7 +19492,7 @@ New usage of "vn0OLD" is discouraged (0 uses).
 New usage of "vnexOLD" is discouraged (0 uses).
 New usage of "vonf1owevOLD" is discouraged (0 uses).
 New usage of "vprcOLD" is discouraged (0 uses).
-New usage of "vscandx" is discouraged (14 uses).
+New usage of "vscandx" is discouraged (15 uses).
 New usage of "vsfval" is discouraged (4 uses).
 New usage of "vtxdusgr0edgnelALT" is discouraged (0 uses).
 New usage of "w-bnj13" is discouraged (5 uses).
