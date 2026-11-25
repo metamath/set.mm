@@ -184383,6 +184383,39 @@ $)
   $}
 
   ${
+    $d x y B $.  $d x H $.  $d x y S $.  $d x y T $.  $d x y U $.  $d x y V $.
+    $d f x y I $.  $d f x y R $.
+    subrgpsr.s $e |- S = ( I mPwSer R ) $.
+    subrgpsr.h $e |- H = ( R |`s T ) $.
+    subrgpsr.u $e |- U = ( I mPwSer H ) $.
+    subrgpsr.b $e |- B = ( Base ` U ) $.
+    $( A subring of the base ring induces a subring of power series.
+       (Contributed by Mario Carneiro, 3-Jul-2015.) $)
+    subrgpsrfi $p |- ( ( I e. Fin /\ T e. ( SubRing ` R ) ) ->
+        B e. ( SubRing ` S ) ) $=
+      ( cfn wcel cfv crg cbs eqid cvv cn0 cmap vx vy vf csubrg wa cress wss cur
+      simpl subrgrcl adantl psrringfi subrgring wceq a1i resspsrbasg resspsradd
+      co simpr cv resspsrmulfi ringpropd mpbid eqidd basfn elexd funfvex funfni
+      wfn sylancr eqeltrid ressbasssd eqsstrd cc0 csn cxp c0g subrg1cl ad2antlr
+      wf cif psr1fi csubg subrgsubg subg0cl syl adantr 0nn0 fconst6g mp1i nn0ex
+      elmapd mpbird psrbagfidceq syl3anc ifcldcd subrgbas eleqtrd fmpt3d fnovex
+      wdc fnmap mp3an12i ccnv cn cima crab psrbasg psrbagfi oveq2d eleqtrrd jca
+      eqtrd issubrg syl21anbrc ) GLMZDBUDNMZUEZCOMCAUFURZOMZACPNZUGZCUHNZAMZUEA
+      CUDNMXRBCGHXPXQUIZXQBOMXPDBUJUKZULZXREOMXTXRFEGJYEXQFOMXPDBFIUMUKZULZXRUA
+      UBAEXSAEPNZUNXRKUOXRAXSBCDEFGLHIJKXSQZXPXQUSZYEUPZXRAXSBCDEFGUAUTZUBUTZHI
+      JKYKYLUQXRAXSBCDEFGYNYOHIJKYKYLYEVAVBVCXRYBYDXRAXSPNYAYMXRAYAXSRCOXRXSVDX
+      RYAVDYGXRAYJRKXRPRVIZERMYJRMZVEXREOYIVFYQREPEPVGVHVJVKVLVMXRYCFPNZSGTURZT
+      URZAXRYCYTMYSYRYCVTXRUAYSYNGVNVOVPZUNZBUHNZBVQNZWAZYRYCXRUABCYCUUCGUUDHYE
+      YFUUDQZUUCQZYCQZWBXRYNYSMZUEZUUEDYRUUJUUBUUCUUDDXQUUCDMXPUUIDBUUCUUGVRVSX
+      QUUDDMZXPUUIXQDBWCNMUUKDBWDDBUUDUUFWEWFVSUUJXPUUIUUAYSMZUUBXAXRXPUUIYEWGZ
+      XRUUIUSUUJUULGSUUAVTZVNSMUUNUUJWHGVNSWIWJUUJSGUUARLSRMZUUJWKUOUUMWLWMYNUU
+      AGWNWOWPXQDYRUNXPUUIDBFIWQVSWRWSXRYRYSYCRRXRYPFRMYRRMZVEXRFOYHVFUUPRFPFPV
+      GVHVJTRRVPVIUUOXRGRMYSRMXBWKXRGLYEVFSGRRTWTXCWLWMXRAYRUCUTXDXEXFLMUCYSXGZ
+      TURZYTXRAUUQFEUCGYRLOJYRQUUQQZKYEYHXHXPUURYTUNXQXPUUQYSYRTUUQUCGUUSXIXJWG
+      XMXKXLAYACYCYAQUUHXNXO $.
+  $}
+
+  ${
     $d f i r x .0. $.  $d f i r x .1. $.  $d f i r x y D $.  $d f F $.
     $d y W $.  $d f h i r x y I $.  $d f i r x R $.  $d f h x y X $.
     mvrfval.v $e |- V = ( I mVar R ) $.
