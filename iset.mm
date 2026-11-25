@@ -184355,6 +184355,31 @@ $)
         GVOGVOXHXRXIYNYTEIDXMUPZTLUXHYTUXEUXBUYATSXQUXJAUXBYSUXCVRIDTTXMYPYMYNB
         ECUUCTTPUWNWNVDWQWT $.
     $}
+
+    ${
+      $d B k x $.  $d H k x $.  $d I f k x y $.  $d R k x $.  $d S k x $.
+      $d T x $.  $d U a $.  $d X k x $.  $d Y k x $.  $d k ph x $.
+      $( A restricted power series algebra has the same scalar multiplication
+         operation.  (Contributed by Mario Carneiro, 3-Jul-2015.) $)
+      resspsrvsca $p |- ( ( ph /\ ( X e. T /\ Y e. B ) ) ->
+          ( X ( .s ` U ) Y ) = ( X ( .s ` P ) Y ) ) $=
+        ( wcel cfv cvv vf wa cvsca co cv ccnv cn cima cfn cn0 cmap crab csn cxp
+        cmulr cof cbs eqid simprl csubrg adantr subrgbas eleqtrd simprr psrvsca
+        wceq syl subrgss sseldd cmps reldmpsr wrel fnpsr fnrel ax-mp relelbasov
+        wss wfn simpld resspsrbasg cress a1i eqidd crg subrgrcl fnovex eqeltrid
+        elexd mp3an2i basfn basmexd funfvex funfni sylancr ressbasssd ressmulrg
+        eqsstrd syl2anc ofeqd oveqd eqtrd ressvscag 3eqtr2d ) AJFRZKBRZUBZUBZJK
+        GUCSZUDUAUEUFUGUHUIRUAUJIUKUDULZJUMUNZKHUOSZUPZUDZJKEUCSZUDZJKCUCSZUDXG
+        BXIHGXHXKUAKIHUQSZJNXHURXQUROXKURXIURZXGJFXQAXDXEUSZXGFDUTSZRZFXQVFAYAX
+        FQVAZFDHMVBVGZVCAXDXEVDZVEXGXOXJKDUOSZUPZUDXMXGEUQSZXIDEXNYEUAKIDUQSZJL
+        XNURZYHURZYGURYEURZXRXGFYHJXGYAFYHVQYBFYHDYJVHVGXSVIXGBYGKXGBCUQSYGXGBC
+        DEFGHITLMNOPYBXGXEITRZYDXEYLHTRZKBGVJIHVKVJTTUNZVRZVJVLVMYNVJVNVONOVPVS
+        VGZVTXGBYGCTETCEBWAUDVFXGPWBXGYGWCXGEIDVJUDZTLYOXGYLDTRYQTRVMYPXGDWDADW
+        DRZXFAYAYRQFDWEVGZVAWHIDTTVJWFWIWGZXGBGUQSZTOXGUQTVRGTRUUATRZWJXGGIHVJU
+        DZTNYOXGYLYMUUCTRVMYPXGJFHYCXSWKIHTTVJWFWIWGUUBTGUQGUQWLWMWNWGZWOWQYDVI
+        VEXGYFXLXJKAYFXLVFXFAYEXKAYAYRYEXKVFQYSFDHYEXTWDMYKWPWRWSVAWTXAXGXNXPJK
+        XGETRBTRXNXPVFYTUUDBXNECTTPYIXBWRWTXC $.
+    $}
   $}
 
   ${
