@@ -82407,7 +82407,7 @@ $)
   ${
     $d x y z w u v f g h q r s t A $.  $d x y z w u v f g h q r s t B $.
     $d x y z w u v f g h q r s t C $.
-    ltexprlem.1 $e |- C = <. { x e. Q. | E. y (
+    ltexprlemell.1 $e |- C = <. { x e. Q. | E. y (
       y e. ( 2nd ` A ) /\ ( y +Q x ) e. ( 1st ` B ) ) } , { x e. Q. | E. y (
       y e. ( 1st ` A ) /\ ( y +Q x ) e. ( 2nd ` B ) ) } >. $.
     $( Element in lower cut of the constructed difference.  Lemma for
