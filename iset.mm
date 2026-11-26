@@ -192242,7 +192242,7 @@ $)
   ${
     $d x y A $.  $d a b r s x y z C $.  $d r s z D $.  $d r s z J $.  $d z S $.
     $d x y B $.  $d x y z P $.  $d a b r s x y z R $.  $d a b r s x y z X $.
-    stdbdmet.1 $e |- D = ( x e. X , y e. X |->
+    bdmetval.1 $e |- D = ( x e. X , y e. X |->
       inf ( { ( x C y ) , R } , RR* , < ) ) $.
     $( Value of the standard bounded metric.  (Contributed by Mario Carneiro,
        26-Aug-2015.)  (Revised by Jim Kingdon, 9-May-2023.) $)
