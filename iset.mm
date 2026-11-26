@@ -184268,6 +184268,154 @@ $)
   $}
 
   ${
+    $d k x B $.  $d k x H $.  $d k x ph $.  $d k x R $.  $d k x S $.  $d x T $.
+    $d f k x y I $.  $d k x X $.  $d k x Y $.
+    resspsr.s $e |- S = ( I mPwSer R ) $.
+    resspsr.h $e |- H = ( R |`s T ) $.
+    resspsr.u $e |- U = ( I mPwSer H ) $.
+    resspsr.b $e |- B = ( Base ` U ) $.
+    resspsr.p $e |- P = ( S |`s B ) $.
+    resspsr.2 $e |- ( ph -> T e. ( SubRing ` R ) ) $.
+    ${
+      resspsrbasg.i $e |- ( ph -> I e. V ) $.
+      $( A restricted power series algebra has the same base set.  (Contributed
+         by Mario Carneiro, 3-Jul-2015.) $)
+      resspsrbasg $p |- ( ph -> B = ( Base ` P ) ) $=
+        ( cbs cvv wcel vf cfv cress wceq a1i eqidd cmps cxp wfn fnpsr elexd crg
+        co csubrg subrgrcl syl fnovex mp3an2i eqeltrid cv ccnv cn cima cfn cmap
+        cn0 crab wss basfn funfvex sylancr subrgbas eqid subrgss eqsstrrd mapss
+        funfni syl2anc ressex psrbasg 3sstr4d ressbas2d ) ABERUBZCESCEBUCUMUDAO
+        UEAWCUFAEIDUGUMZSKUGSSUHUIAISTDSTZWDSTUJAIJQUKADULAFDUNUBZTZDULTZPFDUOU
+        PZUKZIDSSUGUQURUSAHRUBZUAUTVAVBVCVDTUAVFIVEUMVGZVEUMZDRUBZWLVEUMZBWCAWN
+        STZWKWNVHWMWOVHARSUIWEWPVIWJWPSDRDRVJVQVKAWKFWNAWGFWKUDPFDHLVLUPAWGFWNV
+        HPFWNDWNVMZVNUPVOWKWNWLSVPVRABWLHGUAIWKJSMWKVMWLVMZNQAHDFUCUMZSLAWHWGWS
+        STWIPFDULWFVSVRUSVTAWCWLDEUAIWNJULKWQWRWCVMQWIVTWAWB $.
+    $}
+
+    $( A restricted power series algebra has the same addition operation.
+       (Contributed by Mario Carneiro, 3-Jul-2015.) $)
+    resspsradd $p |- ( ( ph /\ ( X e. B /\ Y e. B ) ) ->
+        ( X ( +g ` U ) Y ) = ( X ( +g ` P ) Y ) ) $=
+      ( wcel co cvv vf wa cplusg cfv cof eqid simprl simprr psradd cv ccnv cima
+      cbs cfn cn0 cmap crab wss wfn basfn crg csubrg subrgrcl syl elexd funfvex
+      cn funfni sylancr subrgbas subrgss eqsstrrd mapss syl2anc adantr reldmpsr
+      wceq cmps cxp fnpsr fnrel ax-mp relelbasov ad2antrl simpld simprd psrbasg
+      wrel 3sstr4d sseldd cress a1i eqidd ressplusgd ofeqd oveqd fnovex mp3an2i
+      eqtrd eqeltrid w3a 3eqtr2d ) AJBRZKBRZUBZUBZJKGUCUDZSJKHUCUDZUEZSZJKEUCUD
+      ZSZJKCUCUDZSXFBXHXGHGIJKNOXHUFXGUFAXCXDUGZAXCXDUHZUIXFXLJKDUCUDZUEZSXJXFE
+      UMUDZXPXKDEIJKLXRUFZXPUFXKUFXFBXRJXFHUMUDZUAUJUKVGULUNRUAUOIUPSUQZUPSZDUM
+      UDZYAUPSZBXRAYBYDURZXEAYCTRZXTYCURYEAUMTUSZDTRZYFUTADVAAFDVBUDZRZDVARZQFD
+      VCVDZVEZYFTDUMDUMVFVHVIAXTFYCAYJFXTVQQFDHMVJVDAYJFYCURQFYCDYCUFZVKVDVLXTY
+      CYATVMVNVOXFBYAHGUAIXTTTNXTUFYAUFZOXFITRZHTRZXCYPYQUBAXDJBGVRIHVPVRTTVSZU
+      SZVRWHVTYRVRWAWBNOWCWDZWEZXFYPYQYTWFZWGXFXRYADEUAIYCTVALYNYOXSUUAAYKXEYLV
+      OWGWIZXNWJXFBXRKUUCXOWJUIXFXQXIJKXFXPXHAXPXHVQXEAFXPDHYIVAHDFWKSVQAMWLAXP
+      WMQYLWNVOWOWPWSXFXKXMJKXFBXKECTTCEBWKSVQXFPWLXFXKWMXFBGUMUDZTOXFYGGTRUUDT
+      RZUTXFGIHVRSZTNYSXFYPYQUUFTRVTUUAUUBIHTTVRWQWRWTUUETGUMGUMVFVHVIWTYSXFYPY
+      HETRVTUUAAYHXEYMVOYSYPYHXAEIDVRSTLIDTTVRWQWTWRWNWPXB $.
+
+    ${
+      resspsrmulfi.i $e |- ( ph -> I e. Fin ) $.
+      $( A restricted power series algebra has the same multiplication
+         operation.  (Contributed by Mario Carneiro, 3-Jul-2015.) $)
+      resspsrmulfi $p |- ( ( ph /\ ( X e. B /\ Y e. B ) ) ->
+          ( X ( .r ` U ) Y ) = ( X ( .r ` P ) Y ) ) $=
+        ( wcel cvv vk vx vy vf wa cmulr cfv cn0 cmap cle cofr wbr crab cmin cof
+        co cv cmpt cgsu cfn simpr ad2antrr psrbaglefimap syl2anc csubmnd csubrg
+        subrgsubg syl subgsubm ccmn crg subrgrcl ringcmnd ad3antrrr cbs wf eqid
+        adantr simprl psrelbasfi elrabi adantl ffvelcdmd wceq subrgbas eleqtrrd
+        csubg simprr ssrab2 psrbagconclfi syl3anc subrgmcl gsumsubmfi ressmulrg
+        sselid fmpttd oveqd mpteq2dva oveq2d eqtrd ccnv cn cima wss basfn elexd
+        wfn funfvex sylancr subrgss eqsstrrd mapss cmps reldmpsr cxp wrel fnpsr
+        funfni fnrel ax-mp relelbasov ad2antrl simpld simprd psrbasg psrmulfval
+        3sstr4d psrbagfi rabeqdv mpteq1d mpteq12dv 3eqtr4rd mp3an2i eqeltrid
+        sseldd fnovex ) AJBSZKBSZUEZUEZJKGUFUGZUPZJKEUFUGZUPZJKCUFUGZUPYTUAUHIU
+        IUPZDUBUCUQUAUQZUJUKULZUCUUFUMZUBUQZJUGZUUGUUJUNUOUPZKUGZDUFUGZUPZURZUS
+        UPZURZUAUUFHUBUUIUUKUUMHUFUGZUPZURZUSUPZURZUUDUUBYTUAUUFUUQUVBYTUUGUUFS
+        ZUEZUUQHUUPUSUPUVBUVEUUIFUUPDHUVEUVDIUTSZUUIUTSYTUVDVAZAUVFYSUVDRVBUCUU
+        GIVCVDAFDVEUGSZYSUVDAFDWGUGSZUVHAFDVFUGZSZUVIQFDVGVHFDVIVHVBADVJSYSUVDA
+        DAUVKDVKSZQFDVLVHZVMVBUVEUBUUIUUOFUVEUUJUUISZUEZUVKUUKFSUUMFSUUOFSAUVKY
+        SUVDUVNQVNZUVOUUKHVOUGZFUVOUUFUVQUUJJYTUUFUVQJVPUVDUVNYTBHGIUVQJNUVQVQZ
+        AUVFYSRVRZOAYQYRVSZVTVBUVNUUJUUFSUVEUUHUCUUJUUFWAWBWCUVOUVKFUVQWDZUVPFD
+        HMWEZVHZWFUVOUUMUVQFUVOUUFUVQUULKYTUUFUVQKVPUVDUVNYTBHGIUVQKNUVRUVSOAYQ
+        YRWHZVTVBUVOUUIUUFUULUUHUCUUFWIUVOUVDUVNUVFUULUUISUVEUVDUVNUVGVRUVEUVNV
+        AAUVFYSUVDUVNRVNUCUUIUUGIUUJUUIVQWJWKWOWCUWCWFFDUUNUUKUUMUUNVQZWLWKWPMW
+        MUVEUUPUVAHUSUVEUBUUIUUOUUTUVOUUNUUSUUKUUMAUUNUUSWDZYSUVDUVNAUVKUVLUWFQ
+        UVMFDHUUNUVJVKMUWEWNVDVNWQWRWSWTWRYTUUDUAUDUQXAXBXCUTSUDUUFUMZDUBUUHUCU
+        WGUMZUUOURZUSUPZURZUURYTUBUCEVOUGZUWGDEUUCUUNUDUAJKILUWLVQZUWEUUCVQZUWG
+        VQZYTBUWLJYTUVQUWGUIUPZDVOUGZUWGUIUPZBUWLAUWPUWRXDZYSAUWQTSZUVQUWQXDUWS
+        AVOTXGZDTSZUWTXEADVKUVMXFZUWTTDVODVOXHXRXIAUVQFUWQAUVKUWAQUWBVHAUVKFUWQ
+        XDQFUWQDUWQVQZXJVHXKUVQUWQUWGTXLVDVRYTBUWGHGUDIUVQTTNUVRUWOOYTITSZHTSZY
+        QUXEUXFUEAYRJBGXMIHXNXMTTXOZXGZXMXPXQUXGXMXSXTNOYAYBZYCZYTUXEUXFUXIYDZY
+        EYTUWLUWGDEUDIUWQTVKLUXDUWOUWMUXJAUVLYSUVMVRYEYGZUVTYOYTBUWLKUXLUWDYOYF
+        AUWKUURWDYSAUAUWGUWJUUFUUQAUVFUWGUUFWDRUWGUDIUWOYHVHZAUWIUUPDUSAUBUWHUU
+        IUUOAUUHUCUWGUUFUXMYIZYJWSYKVRWTYTUUBUAUWGHUBUWHUUTURZUSUPZURZUVCYTUBUC
+        BUWGHGUUAUUSUDUAJKINOUUSVQUUAVQUWOUVTUWDYFAUXQUVCWDYSAUAUWGUXPUUFUVBUXM
+        AUXOUVAHUSAUBUWHUUIUUTUXNYJWSYKVRWTYLYTUUCUUEJKYTBTSETSUUCUUEWDYTBGVOUG
+        ZTOYTUXAGTSUXRTSZXEYTGIHXMUPZTNUXHYTUXEUXFUXTTSXQUXJUXKIHTTXMYPYMYNUXST
+        GVOGVOXHXRXIYNYTEIDXMUPZTLUXHYTUXEUXBUYATSXQUXJAUXBYSUXCVRIDTTXMYPYMYNB
+        ECUUCTTPUWNWNVDWQWT $.
+    $}
+
+    ${
+      $d B k x $.  $d H k x $.  $d I f k x y $.  $d R k x $.  $d S k x $.
+      $d T x $.  $d U a $.  $d X k x $.  $d Y k x $.  $d k ph x $.
+      $( A restricted power series algebra has the same scalar multiplication
+         operation.  (Contributed by Mario Carneiro, 3-Jul-2015.) $)
+      resspsrvsca $p |- ( ( ph /\ ( X e. T /\ Y e. B ) ) ->
+          ( X ( .s ` U ) Y ) = ( X ( .s ` P ) Y ) ) $=
+        ( wcel cfv cvv vf wa cvsca co cv ccnv cn cima cfn cn0 cmap crab csn cxp
+        cmulr cof cbs eqid simprl csubrg adantr subrgbas eleqtrd simprr psrvsca
+        wceq syl subrgss sseldd cmps reldmpsr wrel fnpsr fnrel ax-mp relelbasov
+        wss wfn simpld resspsrbasg cress a1i eqidd crg subrgrcl fnovex eqeltrid
+        elexd mp3an2i basfn basmexd funfvex funfni sylancr ressbasssd ressmulrg
+        eqsstrd syl2anc ofeqd oveqd eqtrd ressvscag 3eqtr2d ) AJFRZKBRZUBZUBZJK
+        GUCSZUDUAUEUFUGUHUIRUAUJIUKUDULZJUMUNZKHUOSZUPZUDZJKEUCSZUDZJKCUCSZUDXG
+        BXIHGXHXKUAKIHUQSZJNXHURXQUROXKURXIURZXGJFXQAXDXEUSZXGFDUTSZRZFXQVFAYAX
+        FQVAZFDHMVBVGZVCAXDXEVDZVEXGXOXJKDUOSZUPZUDXMXGEUQSZXIDEXNYEUAKIDUQSZJL
+        XNURZYHURZYGURYEURZXRXGFYHJXGYAFYHVQYBFYHDYJVHVGXSVIXGBYGKXGBCUQSYGXGBC
+        DEFGHITLMNOPYBXGXEITRZYDXEYLHTRZKBGVJIHVKVJTTUNZVRZVJVLVMYNVJVNVONOVPVS
+        VGZVTXGBYGCTETCEBWAUDVFXGPWBXGYGWCXGEIDVJUDZTLYOXGYLDTRYQTRVMYPXGDWDADW
+        DRZXFAYAYRQFDWEVGZVAWHIDTTVJWFWIWGZXGBGUQSZTOXGUQTVRGTRUUATRZWJXGGIHVJU
+        DZTNYOXGYLYMUUCTRVMYPXGJFHYCXSWKIHTTVJWFWIWGUUBTGUQGUQWLWMWNWGZWOWQYDVI
+        VEXGYFXLXJKAYFXLVFXFAYEXKAYAYRYEXKVFQYSFDHYEXTWDMYKWPWRWSVAWTXAXGXNXPJK
+        XGETRBTRXNXPVFYTUUDBXNECTTPYIXBWRWTXC $.
+    $}
+  $}
+
+  ${
+    $d x y B $.  $d x H $.  $d x y S $.  $d x y T $.  $d x y U $.  $d x y V $.
+    $d f x y I $.  $d f x y R $.
+    subrgpsr.s $e |- S = ( I mPwSer R ) $.
+    subrgpsr.h $e |- H = ( R |`s T ) $.
+    subrgpsr.u $e |- U = ( I mPwSer H ) $.
+    subrgpsr.b $e |- B = ( Base ` U ) $.
+    $( A subring of the base ring induces a subring of power series.
+       (Contributed by Mario Carneiro, 3-Jul-2015.) $)
+    subrgpsrfi $p |- ( ( I e. Fin /\ T e. ( SubRing ` R ) ) ->
+        B e. ( SubRing ` S ) ) $=
+      ( cfn wcel cfv crg cbs eqid cvv cn0 cmap vx vy vf csubrg wa cress wss cur
+      simpl subrgrcl adantl psrringfi subrgring wceq a1i resspsrbasg resspsradd
+      co simpr cv resspsrmulfi ringpropd mpbid eqidd basfn elexd funfvex funfni
+      wfn sylancr eqeltrid ressbasssd eqsstrd cc0 csn cxp c0g subrg1cl ad2antlr
+      wf cif psr1fi csubg subrgsubg subg0cl syl adantr 0nn0 fconst6g mp1i nn0ex
+      elmapd mpbird psrbagfidceq syl3anc ifcldcd subrgbas eleqtrd fmpt3d fnovex
+      wdc fnmap mp3an12i ccnv cn cima crab psrbasg psrbagfi oveq2d eleqtrrd jca
+      eqtrd issubrg syl21anbrc ) GLMZDBUDNMZUEZCOMCAUFURZOMZACPNZUGZCUHNZAMZUEA
+      CUDNMXRBCGHXPXQUIZXQBOMXPDBUJUKZULZXREOMXTXRFEGJYEXQFOMXPDBFIUMUKZULZXRUA
+      UBAEXSAEPNZUNXRKUOXRAXSBCDEFGLHIJKXSQZXPXQUSZYEUPZXRAXSBCDEFGUAUTZUBUTZHI
+      JKYKYLUQXRAXSBCDEFGYNYOHIJKYKYLYEVAVBVCXRYBYDXRAXSPNYAYMXRAYAXSRCOXRXSVDX
+      RYAVDYGXRAYJRKXRPRVIZERMYJRMZVEXREOYIVFYQREPEPVGVHVJVKVLVMXRYCFPNZSGTURZT
+      URZAXRYCYTMYSYRYCVTXRUAYSYNGVNVOVPZUNZBUHNZBVQNZWAZYRYCXRUABCYCUUCGUUDHYE
+      YFUUDQZUUCQZYCQZWBXRYNYSMZUEZUUEDYRUUJUUBUUCUUDDXQUUCDMXPUUIDBUUCUUGVRVSX
+      QUUDDMZXPUUIXQDBWCNMUUKDBWDDBUUDUUFWEWFVSUUJXPUUIUUAYSMZUUBXAXRXPUUIYEWGZ
+      XRUUIUSUUJUULGSUUAVTZVNSMUUNUUJWHGVNSWIWJUUJSGUUARLSRMZUUJWKUOUUMWLWMYNUU
+      AGWNWOWPXQDYRUNXPUUIDBFIWQVSWRWSXRYRYSYCRRXRYPFRMYRRMZVEXRFOYHVFUUPRFPFPV
+      GVHVJTRRVPVIUUOXRGRMYSRMXBWKXRGLYEVFSGRRTWTXCWLWMXRAYRUCUTXDXEXFLMUCYSXGZ
+      TURZYTXRAUUQFEUCGYRLOJYRQUUQQZKYEYHXHXPUURYTUNXQXPUUQYSYRTUUQUCGUUSXIXJWG
+      XMXKXLAYACYCYAQUUHXNXO $.
+  $}
+
+  ${
     $d f i r x .0. $.  $d f i r x .1. $.  $d f i r x y D $.  $d f F $.
     $d y W $.  $d f h i r x y I $.  $d f i r x R $.  $d f h x y X $.
     mvrfval.v $e |- V = ( I mVar R ) $.
@@ -185004,6 +185152,42 @@ $)
       ( cfn wcel crg wa cmps co cbs cress eqid mplval2g csubrg simpl mplsubrgfi
       cfv simpr subrgring syl eqeltrd ) CEFZBGFZHZACBIJZAKRZLJZGABUFUGCEGDUFMZU
       GMZNUEUGUFORFUHGFUEABUFUGCUIDUJUCUDPUCUDSQUGUFUHUHMTUAUB $.
+  $}
+
+  ${
+    mplringd.p $e |- P = ( I mPoly R ) $.
+    mplringfid.i $e |- ( ph -> I e. Fin ) $.
+    mplringd.r $e |- ( ph -> R e. Ring ) $.
+    $( The polynomial ring is a ring.  (Contributed by SN, 7-Feb-2025.) $)
+    mplringfid $p |- ( ph -> P e. Ring ) $=
+      ( cfn wcel crg mplringfi syl2anc ) ADHICJIBJIFGBCDEKL $.
+  $}
+
+  ${
+    $d f C $.  $d f H $.  $d f I $.  $d f ph $.  $d f R $.
+    ressmpl.s $e |- S = ( I mPoly R ) $.
+    ressmpl.h $e |- H = ( R |`s T ) $.
+    ressmpl.u $e |- U = ( I mPoly H ) $.
+    ressmpl.b $e |- B = ( Base ` U ) $.
+    ressmplfi.1 $e |- ( ph -> I e. Fin ) $.
+    ressmpl.2 $e |- ( ph -> T e. ( SubRing ` R ) ) $.
+    ${
+      ressmplbas2.w $e |- W = ( I mPwSer H ) $.
+      ressmplbas2.c $e |- C = ( Base ` W ) $.
+      ressmplbas2.k $e |- K = ( Base ` S ) $.
+      $( The base set of a restricted polynomial algebra consists of power
+         series in the subring which are also polynomials (in the parent ring).
+         (Contributed by Mario Carneiro, 3-Jul-2015.) $)
+      ressmplbas2fi $p |- ( ph -> B = ( C i^i K ) ) $=
+        ( vf cv c0g cfv cfsupp wbr cab cin cmps co cbs wss wceq csubrg wcel cfn
+        subrgpsrfi syl2anc subrgss syl dfss2 sylib subrg0 breq2d abbidv ineq12d
+        eqid eqcomd crab mplbas dfrab3 eqtri ineq2i inass eqtr4i 3eqtr4g ) ACUA
+        UBZHUCUDZUEUFZUAUGZUHZCIDUIUJZUKUDZUHZVQDUCUDZUEUFZUAUGZUHZBCJUHZAWHWAA
+        WDCWGVTACWCULZWDCUMACWBUNUDUOZWJAIUPUOFDUNUDUOZWKPQCDWBFKHIWBVGZMRSUQUR
+        CWCWBWCVGZUSUTCWCVAVBAWFVSUAAWEVRVQUEAWLWEVRUMQFDHWEMWEVGZVCUTVDVEVFVHB
+        VSUACVIWACGHKBUAIVRNRSVRVGOVJVSUACVKVLWICWCWGUHZUHWHJWPCJWFUAWCVIWPWCED
+        WBJUAIWELWMWNWOTVJWFUAWCVKVLVMCWCWGVNVOVP $.
+    $}
   $}
 
 
