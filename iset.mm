@@ -119272,7 +119272,7 @@ $)
 
   ${
     hashelne0d.1 $e |- ( ph -> B e. A ) $.
-    hashelne0d.2 $e |- ( ph -> A e. Fin ) $.
+    fihashelne0d.2 $e |- ( ph -> A e. Fin ) $.
     $( A finite set with an element has nonzero size.  (Contributed by Rohan
        Ridenour, 3-Aug-2023.) $)
     fihashelne0d $p |- ( ph -> -. ( # ` A ) = 0 ) $=
