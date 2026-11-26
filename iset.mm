@@ -184743,7 +184743,7 @@ $)
     mplsubg.s $e |- S = ( I mPwSer R ) $.
     mplsubg.p $e |- P = ( I mPoly R ) $.
     mplsubg.u $e |- U = ( Base ` P ) $.
-    mplsubg.i $e |- ( ph -> I e. Fin ) $.
+    mplsubgfi.i $e |- ( ph -> I e. Fin ) $.
 
     ${
       mplsubg.r $e |- ( ph -> R e. Grp ) $.
