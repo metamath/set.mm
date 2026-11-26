@@ -63792,7 +63792,7 @@ $)
   $}
 
   $( The converse pair of an unordered pair of ordered pairs is a function if
-     the second members are different.  (Contributed by AV, 23-Jan-2021.)
+     the second components are different.  (Contributed by AV, 23-Jan-2021.)
      Remove sethood antecedent.  (Revised by Eric Schmidt, 14-Nov-2026.) $)
   funcnvpr $p |- ( B =/= D -> Fun `' { <. A , B >. , <. C , D >. } ) $=
     ( wne cop csn ccnv cun wfun cpr cdm cin c0 funcnvsn df-rn rnsnopss eqsstrri
@@ -63815,8 +63815,9 @@ $)
     FVIUKUNVMVJVMVEVHKZJVJVLWBVDVGULUOVEVHUPUQURUS $.
 
   $( The converse of an unordered triple of ordered pairs is a function if the
-     second members are pairwise different.  (Contributed by AV, 23-Jan-2021.)
-     Remove sethood antecedents.  (Revised by Eric Schmidt, 14-Nov-2026.) $)
+     second components are pairwise different.  (Contributed by AV,
+     23-Jan-2021.)  Remove sethood antecedents.  (Revised by Eric Schmidt,
+     14-Nov-2026.) $)
   funcnvtp $p |- ( ( B =/= D /\ B =/= F /\ D =/= F )
                    -> Fun `' { <. A , B >. , <. C , D >. , <. E , F >. } ) $=
     ( wne cop cpr ccnv csn cun wfun cdm cin c0 wceq wss crn df-rn w3a ctp ss2in
@@ -63843,7 +63844,7 @@ $)
     VAVBWIWFWIWAWDUAZPWFWHWRVSVTWCVCVDWAWDVEVFVHVI $.
 
   $( The converse of an unordered quadruple of ordered pairs is a function if
-     the second members are pairwise different.  (Contributed by AV,
+     the second components are pairwise different.  (Contributed by AV,
      23-Jan-2021.)  (Proof shortened by JJ, 14-Jul-2021.)  Remove sethood
      antecedents.  (Revised by Eric Schmidt, 14-Nov-2026.) $)
   funcnvqp $p |- ( ( ( B =/= D /\ B =/= F /\ B =/= H )
