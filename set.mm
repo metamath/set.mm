@@ -377266,7 +377266,7 @@ $)
       mdegaddle.f $e |- ( ph -> F e. B ) $.
       mdegaddle.g $e |- ( ph -> G e. B ) $.
       $( The degree of a sum is at most the maximum of the degrees of the
-         factors.  (Contributed by Stefan O'Rear, 26-Mar-2015.) $)
+         summands.  (Contributed by Stefan O'Rear, 26-Mar-2015.) $)
       mdegaddle $p |- ( ph -> ( D ` ( F .+ G ) ) <_
             if ( ( D ` F ) <_ ( D ` G ) , ( D ` G ) , ( D ` F ) ) ) $=
         ( cfv wcel vc vb va co cle wbr cif cv ccnv cn cima cfn cmap crab ccnfld
@@ -377814,7 +377814,7 @@ $)
       deg1addle.f $e |- ( ph -> F e. B ) $.
       deg1addle.g $e |- ( ph -> G e. B ) $.
       $( The degree of a sum is at most the maximum of the degrees of the
-         factors.  (Contributed by Stefan O'Rear, 26-Mar-2015.) $)
+         summands.  (Contributed by Stefan O'Rear, 26-Mar-2015.) $)
       deg1addle $p |- ( ph -> ( D ` ( F .+ G ) ) <_
             if ( ( D ` F ) <_ ( D ` G ) , ( D ` G ) , ( D ` F ) ) ) $=
         ( c1o con0 eqid wcel ply1bascl2 cmpl cbs cfv deg1fval 1on a1i ply1plusg
@@ -377825,7 +377825,7 @@ $)
         deg1addle2.l1 $e |- ( ph -> L e. RR* ) $.
         deg1addle2.l2 $e |- ( ph -> ( D ` F ) <_ L ) $.
         deg1addle2.l3 $e |- ( ph -> ( D ` G ) <_ L ) $.
-        $( If both factors have degree bounded by ` L ` , then the sum of the
+        $( If both summands have degree bounded by ` L ` , then the sum of the
            polynomials also has degree bounded by ` L ` .  (Contributed by
            Stefan O'Rear, 1-Apr-2015.) $)
         deg1addle2 $p |- ( ph -> ( D ` ( F .+ G ) ) <_ L ) $=
@@ -377958,7 +377958,7 @@ $)
     deg1addlt.l $e |- ( ph -> L e. RR* ) $.
     deg1addlt.1 $e |- ( ph -> ( D ` F ) < L ) $.
     deg1addlt.2 $e |- ( ph -> ( D ` G ) < L ) $.
-    $( If both factors have degree bounded by ` L ` , then the sum of the
+    $( If both summands have degree bounded by ` L ` , then the sum of the
        polynomials also has degree bounded by ` L ` .  See also ~ deg1addle .
        (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
     deg1addlt $p |- ( ph -> ( D ` ( F .+ G ) ) < L ) $=
