@@ -117659,7 +117659,7 @@ $)
     $}
 
     ${
-      sqrecd.1 $e |- ( ph -> A =//= 0 ) $.
+      sqrecapd.1 $e |- ( ph -> A =//= 0 ) $.
       $( Square of reciprocal.  (Contributed by Jim Kingdon, 12-Jun-2020.) $)
       sqrecapd $p |- ( ph -> ( ( 1 / A ) ^ 2 ) = ( 1 / ( A ^ 2 ) ) ) $=
         ( cc wcel cc0 cap c1 cdiv co c2 cexp wceq cz 2z exprecap mp3an3 syl2anc
