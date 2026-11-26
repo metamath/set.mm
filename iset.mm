@@ -193879,7 +193879,7 @@ $)
   $}
 
   ${
-    cncfcn.2 $e |- J = ( MetOpen ` ( abs o. - ) ) $.
+    cncfcncntop.2 $e |- J = ( MetOpen ` ( abs o. - ) ) $.
     cncfcn.3 $e |- K = ( J |`t A ) $.
     cncfcn.4 $e |- L = ( J |`t B ) $.
     $( Relate complex function continuity to topological continuity.
