@@ -1644,6 +1644,7 @@
 "axc11" is used by "hbae".
 "axc11" is used by "nd1".
 "axc11" is used by "nd2".
+"axc11" is used by "pc3vind".
 "axc11" is used by "wl-aetr".
 "axc11n" is used by "2sb5ndALT".
 "axc11n" is used by "2sb5ndVD".
@@ -3293,6 +3294,7 @@
 "cbvald" is used by "cbvaldva".
 "cbvald" is used by "cbvexd".
 "cbvald" is used by "distel".
+"cbvald" is used by "pc3vind".
 "cbvald" is used by "wl-sb8eut".
 "cbvaldva" is used by "cbval2vv".
 "cbvalv" is used by "cbval2vv".
@@ -5616,6 +5618,7 @@
 "dveeq2" is used by "axpowg3".
 "dveeq2" is used by "axsepg2".
 "dveeq2" is used by "axsepg4".
+"dveeq2" is used by "pc3vind".
 "dveeq2-o" is used by "ax12el".
 "dveeq2-o" is used by "ax12eq".
 "dveeq2-o" is used by "ax12inda".
@@ -10330,6 +10333,7 @@
 "nfae" is used by "drex2".
 "nfae" is used by "drnf2".
 "nfae" is used by "nfnae".
+"nfae" is used by "pc3vind".
 "nfae" is used by "sbco3".
 "nfae" is used by "sbequ5".
 "nfald2" is used by "dvelimf".
@@ -10480,6 +10484,7 @@
 "nfnae" is used by "nfald2".
 "nfnae" is used by "nfriotad".
 "nfnae" is used by "nfsb4t".
+"nfnae" is used by "pc3vind".
 "nfnae" is used by "ralcom2".
 "nfnae" is used by "sb9".
 "nfnae" is used by "sbal1".
@@ -14724,10 +14729,13 @@ New usage of "ax13lem2" is discouraged (3 uses).
 New usage of "ax13v" is discouraged (2 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
+New usage of "ax1propdesc" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax2" is discouraged (0 uses).
+New usage of "ax2propdesc" is discouraged (0 uses).
 New usage of "ax3" is discouraged (0 uses).
 New usage of "ax3h" is discouraged (0 uses).
+New usage of "ax3propdesc" is discouraged (0 uses).
 New usage of "ax4fromc4" is discouraged (0 uses).
 New usage of "ax5ALT" is discouraged (0 uses).
 New usage of "ax5el" is discouraged (1 uses).
@@ -14762,7 +14770,7 @@ New usage of "axaddf" is discouraged (1 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
 New usage of "axbnd" is discouraged (0 uses).
 New usage of "axc10" is discouraged (1 uses).
-New usage of "axc11" is discouraged (14 uses).
+New usage of "axc11" is discouraged (15 uses).
 New usage of "axc11-o" is discouraged (0 uses).
 New usage of "axc11n" is discouraged (7 uses).
 New usage of "axc11n-16" is discouraged (0 uses).
@@ -15395,7 +15403,7 @@ New usage of "cbvab" is discouraged (4 uses).
 New usage of "cbval" is discouraged (4 uses).
 New usage of "cbval2" is discouraged (1 uses).
 New usage of "cbval2vv" is discouraged (0 uses).
-New usage of "cbvald" is discouraged (16 uses).
+New usage of "cbvald" is discouraged (17 uses).
 New usage of "cbvaldva" is discouraged (1 uses).
 New usage of "cbvalv" is discouraged (2 uses).
 New usage of "cbvcsb" is discouraged (0 uses).
@@ -16313,7 +16321,7 @@ New usage of "dveel2ALT" is discouraged (0 uses).
 New usage of "dveeq1" is discouraged (2 uses).
 New usage of "dveeq1-o" is discouraged (1 uses).
 New usage of "dveeq1-o16" is discouraged (0 uses).
-New usage of "dveeq2" is discouraged (6 uses).
+New usage of "dveeq2" is discouraged (7 uses).
 New usage of "dveeq2-o" is discouraged (4 uses).
 New usage of "dveeq2ALT" is discouraged (0 uses).
 New usage of "dvelim" is discouraged (3 uses).
@@ -17910,6 +17918,7 @@ New usage of "merlem7" is discouraged (1 uses).
 New usage of "merlem8" is discouraged (1 uses).
 New usage of "merlem9" is discouraged (1 uses).
 New usage of "mgmplusgiopALT" is discouraged (1 uses).
+New usage of "mh-19.12prim" is discouraged (0 uses).
 New usage of "mh-setindnd" is discouraged (0 uses).
 New usage of "minimp-ax1" is discouraged (1 uses).
 New usage of "minimp-ax2" is discouraged (1 uses).
@@ -18002,7 +18011,7 @@ New usage of "nfaba1g" is discouraged (0 uses).
 New usage of "nfabd" is discouraged (5 uses).
 New usage of "nfabd2" is discouraged (2 uses).
 New usage of "nfabg" is discouraged (3 uses).
-New usage of "nfae" is discouraged (24 uses).
+New usage of "nfae" is discouraged (25 uses).
 New usage of "nfald2" is discouraged (6 uses).
 New usage of "nfccdeq" is discouraged (0 uses).
 New usage of "nfcdeq" is discouraged (1 uses).
@@ -18031,7 +18040,7 @@ New usage of "nfixp" is discouraged (0 uses).
 New usage of "nfmo" is discouraged (3 uses).
 New usage of "nfmod" is discouraged (1 uses).
 New usage of "nfmod2" is discouraged (5 uses).
-New usage of "nfnae" is discouraged (50 uses).
+New usage of "nfnae" is discouraged (51 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
 New usage of "nfrab" is discouraged (0 uses).
@@ -18438,6 +18447,7 @@ New usage of "parmapcl2" is discouraged (0 uses).
 New usage of "parmapco2" is discouraged (0 uses).
 New usage of "parmapfunc2" is discouraged (0 uses).
 New usage of "pautsetN" is discouraged (1 uses).
+New usage of "pc3vind" is discouraged (0 uses).
 New usage of "pcl0N" is discouraged (2 uses).
 New usage of "pcl0bN" is discouraged (1 uses).
 New usage of "pclbtwnN" is discouraged (1 uses).
@@ -19710,9 +19720,12 @@ Proof modification of "ax12v2-o" is discouraged (107 steps).
 Proof modification of "ax12vALT" is discouraged (35 steps).
 Proof modification of "ax13ALT" is discouraged (54 steps).
 Proof modification of "ax13fromc9" is discouraged (54 steps).
+Proof modification of "ax1propdesc" is discouraged (103 steps).
 Proof modification of "ax2" is discouraged (46 steps).
+Proof modification of "ax2propdesc" is discouraged (796 steps).
 Proof modification of "ax3" is discouraged (24 steps).
 Proof modification of "ax3h" is discouraged (21 steps).
+Proof modification of "ax3propdesc" is discouraged (284 steps).
 Proof modification of "ax4fromc4" is discouraged (45 steps).
 Proof modification of "ax5ALT" is discouraged (3 steps).
 Proof modification of "ax5el" is discouraged (30 steps).
@@ -20899,6 +20912,7 @@ Proof modification of "merlem7" is discouraged (66 steps).
 Proof modification of "merlem8" is discouraged (46 steps).
 Proof modification of "merlem9" is discouraged (73 steps).
 Proof modification of "mgmplusgiopALT" is discouraged (80 steps).
+Proof modification of "mh-19.12prim" is discouraged (84 steps).
 Proof modification of "minimp-ax1" is discouraged (21 steps).
 Proof modification of "minimp-ax2" is discouraged (62 steps).
 Proof modification of "minimp-ax2c" is discouraged (272 steps).
@@ -21055,6 +21069,9 @@ Proof modification of "problem2" is discouraged (104 steps).
 Proof modification of "problem3" is discouraged (56 steps).
 Proof modification of "problem4" is discouraged (310 steps).
 Proof modification of "problem5" is discouraged (133 steps).
+Proof modification of "propdesc1" is discouraged (28 steps).
+Proof modification of "propdesc2" is discouraged (199 steps).
+Proof modification of "propdesc3" is discouraged (224 steps).
 Proof modification of "prrngorngo" is discouraged (25 steps).
 Proof modification of "prstchom2ALT" is discouraged (121 steps).
 Proof modification of "pssirrOLD" is discouraged (15 steps).
