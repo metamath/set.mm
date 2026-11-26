@@ -222542,6 +222542,21 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Complex number distances
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Two complex numbers are apart from each other if and only if the distance
+     between them is greater than zero.  (Contributed by Jim Kingdon,
+     25-Nov-2026.) $)
+  distgt0ap $p |- ( ( A e. CC /\ B e. CC )
+      -> ( A =//= B <-> 0 < ( abs ` ( A - B ) ) ) ) $=
+    ( cc wcel wa cmin co cc0 cap wbr cabs cfv clt subap0 wb absgt0ap syl bitr3d
+    subcl ) ACDBCDEZABFGZHIJZABIJHUAKLMJZABNTUACDUBUCOABSUAPQR $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Analytic omniscience principles
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
