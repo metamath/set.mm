@@ -154694,7 +154694,7 @@ $)
       $d u v U $.  $d u v V $.
       $( ` .^ ` is the difference of counts of elements of ` U ` in / out of
          set ` V ` . $)
-      ballotlemg $e |- .^ = ( u e. O , v e. Fin |->
+      ballotfilemg $e |- .^ = ( u e. O , v e. Fin |->
                                ( ( # ` ( v i^i u ) ) - ( # ` ( v \ u ) ) ) ) $.
       $d O u v $.
 
