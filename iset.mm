@@ -95957,7 +95957,7 @@ $)
       ( cc wcel c1 cdiv co wceq div1 syl ) ABDEBFGHBICBJK $.
 
     ${
-      reccld.2 $e |- ( ph -> A =//= 0 ) $.
+      recclapd.2 $e |- ( ph -> A =//= 0 ) $.
       $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
          3-Mar-2020.) $)
       recclapd $p |- ( ph -> ( 1 / A ) e. CC ) $=
