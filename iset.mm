@@ -135001,7 +135001,7 @@ $)
   ${
     $d k A $.  $d k N $.  $d k ph $.
     geoser.1 $e |- ( ph -> A e. CC ) $.
-    geoser.2 $e |- ( ph -> A =//= 1 ) $.
+    geoserap.2 $e |- ( ph -> A =//= 1 ) $.
     geoser.3 $e |- ( ph -> N e. NN0 ) $.
     $( The value of the finite geometric series ` 1 + A ^ 1 + A ^ 2 + ` ...
        ` + A ^ ( N - 1 ) ` .  This is Metamath 100 proof #66.  (Contributed by
