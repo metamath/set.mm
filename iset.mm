@@ -169009,7 +169009,7 @@ $)
     gsummhm2.b $e |- B = ( Base ` G ) $.
     gsummhm2.z $e |- .0. = ( 0g ` G ) $.
     gsummhm2.g $e |- ( ph -> G e. CMnd ) $.
-    gsummhm2.h $e |- ( ph -> H e. CMnd ) $.
+    gsummhm2fi.h $e |- ( ph -> H e. CMnd ) $.
     gsummhm2fi.a $e |- ( ph -> A e. Fin ) $.
     gsummhm2.k $e |- ( ph -> ( x e. B |-> C ) e. ( G MndHom H ) ) $.
     gsummhm2.f $e |- ( ( ph /\ k e. A ) -> X e. B ) $.
