@@ -210038,7 +210038,7 @@ $)
 
   ${
     $d e v x E $.  $d e v x V $.  $d x X $.  $d x Y $.
-    ausgr.1 $e |- G = { <. v , e >. | e C_ { x e. ~P v | x ~~ 2o } } $.
+    ausgren.1 $e |- G = { <. v , e >. | e C_ { x e. ~P v | x ~~ 2o } } $.
     $( The property of an ordered pair to be an alternatively defined simple
        graph, defined as a pair (V,E) of a set V (vertex set) and a set of
        unordered pairs of elements of V (edge set).  (Contributed by Alexander
