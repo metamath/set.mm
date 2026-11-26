@@ -80764,7 +80764,7 @@ $)
   ${
     $d x y z f g q r s A $.  $d x y z f g q r s B $.
     $d x y z f g w v q r s G $.  $d f g F $.
-    genp.1 $e |- F = ( w e. P. , v e. P. |->
+    genip.1 $e |- F = ( w e. P. , v e. P. |->
       <. { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 1st ` w ) /\
         z e. ( 1st ` v ) /\ x = ( y G z ) ) } ,
         { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 2nd ` w ) /\
