@@ -222554,6 +222554,14 @@ $)
     ( cc wcel wa cmin co cc0 cap wbr cabs cfv clt subap0 wb absgt0ap syl bitr3d
     subcl ) ACDBCDEZABFGZHIJZABIJHUAKLMJZABNTUACDUBUCOABSUAPQR $.
 
+  $( Equivalent ways to express distance between two complex numbers, with
+     absolute value or with conjugates.  (Contributed by Jim Kingdon,
+     25-Nov-2026.) $)
+  distabscj $p |- ( ( A e. CC /\ B e. CC ) -> ( abs ` ( A - B ) )
+      = ( sqrt ` ( ( A - B ) x. ( * ` ( A - B ) ) ) ) ) $=
+    ( cc wcel wa cmin co cabs cfv ccj cmul csqrt wceq subcl absval syl ) ACDBCD
+    EABFGZCDQHIQQJIKGLIMABNQOP $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
