@@ -96380,7 +96380,7 @@ $)
     div2subd.2 $e |- ( ph -> B e. CC ) $.
     div2subd.3 $e |- ( ph -> C e. CC ) $.
     div2subd.4 $e |- ( ph -> D e. CC ) $.
-    div2subd.5 $e |- ( ph -> C =//= D ) $.
+    div2subapd.5 $e |- ( ph -> C =//= D ) $.
     $( Swap subtrahend and minuend inside the numerator and denominator of a
        fraction.  Deduction form of ~ div2subap .  (Contributed by David Moews,
        28-Feb-2017.) $)
