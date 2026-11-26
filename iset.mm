@@ -94924,7 +94924,7 @@ $)
     mulcand.1 $e |- ( ph -> A e. CC ) $.
     mulcand.2 $e |- ( ph -> B e. CC ) $.
     mulcand.3 $e |- ( ph -> C e. CC ) $.
-    mulcand.4 $e |- ( ph -> C =//= 0 ) $.
+    mulcanapd.4 $e |- ( ph -> C =//= 0 ) $.
     $( Cancellation law for multiplication.  (Contributed by Jim Kingdon,
        21-Feb-2020.) $)
     mulcanapd $p |- ( ph -> ( ( C x. A ) = ( C x. B ) <-> A = B ) ) $=
