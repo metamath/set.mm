@@ -120387,7 +120387,7 @@ $)
     seqcoll.2 $e |- ( ph -> G Isom < , < ( ( 1 ... ( # ` A ) ) , A ) ) $.
     seqcoll.3 $e |- ( ph -> N e. ( 1 ... ( # ` A ) ) ) $.
     seqcoll.4 $e |- ( ph -> A C_ ( ZZ>= ` M ) ) $.
-    seqcoll.5 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) e. S ) $.
+    seq3coll.5 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) e. S ) $.
     seqcoll.hcl $e |- ( ( ph /\ k e. ( ZZ>= ` 1 ) ) -> ( H ` k ) e. S ) $.
     seqcoll.6 $e |- ( ( ph /\ k e. ( ( M ... ( G ` ( # ` A ) ) ) \ A ) ) ->
                       ( F ` k ) = Z ) $.
