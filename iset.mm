@@ -222562,6 +222562,16 @@ $)
     ( cc wcel wa cmin co cabs cfv ccj cmul csqrt wceq subcl absval syl ) ACDBCD
     EABFGZCDQHIQQJIKGLIMABNQOP $.
 
+  $( Equivalent ways to express a positive distance between complex numbers,
+     with absolute value or with conjugates.  (Contributed by Jim Kingdon,
+     25-Nov-2026.) $)
+  distpos $p |- ( ( A e. CC /\ B e. CC ) -> ( 0 < ( abs ` ( A - B ) )
+      <-> 0 < ( ( A - B ) x. ( * ` ( A - B ) ) ) ) ) $=
+    ( cc wcel wa cc0 cmin cabs cfv clt wbr ccj cmul csqrt cexp distabscj breq2d
+    co c2 wceq 0red subcl cjmulrcld cjmulge0d resqrtcld sqrtge0d lt2sqd sq0 a1i
+    leidd cr cle resqrtth syl2anc breq12d 3bitrd ) ACDBCDEZFABGRZHIZJKFURURLIMR
+    ZNIZJKFSORZVASORZJKFUTJKUQUSVAFJABPQUQFVAUQUAZUQUTUQURABUBZUCZUQURVEUDZUEUQ
+    FVDUJUQUTVFVGUFUGUQVBFVCUTJVBFTUQUHUIUQUTUKDFUTULKVCUTTVFVGUTUMUNUOUP $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
