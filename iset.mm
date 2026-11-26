@@ -87553,7 +87553,7 @@ $)
 
   $( The empty set is not a complex number.  Note: do not use this after the
      real number axioms are developed, since it is a construction-dependent
-     property.  See also ~ cnm which is a related property.  (Contributed by
+     property.  See also ~ dfcm which is a related property.  (Contributed by
      NM, 2-May-1996.) $)
   0ncn $p |- -. (/) e. CC $=
     ( c0 cc wcel cnr cxp 0nelxp df-c eleq2i mtbir ) ABCADDEZCDDFBJAGHI $.
@@ -87564,7 +87564,7 @@ $)
        real number axioms are developed, since it is a construction-dependent
        property.  (Contributed by Jim Kingdon, 23-Oct-2023.)
        (New usage is discouraged.) $)
-    cnm $p |- ( A e. CC -> E. x x e. A ) $=
+    dfcm $p |- ( A e. CC -> E. x x e. A ) $=
       ( vu vv cc wcel cv cop wceq cnr wa wex cxp elxpi df-c eleq2s cvv mpbir2an
       vex opm simprl eleq2d exbidv mpbiri ex exlimdvv mpd ) BEFZBCGZDGZHZIZUIJF
       UJJFKZKZDLCLZAGZBFZALZUOBJJMECDBJJNOPUHUNURCDUHUNURUHUNKZURUPUKFZALZVAUIQ
@@ -88122,13 +88122,13 @@ $)
       ( vx vy vw vv vu vf vz vb va cc caddc cv co wcel wral wceq cop wex wtru
       wa cxp wf wfn wfun cdm cplr coprab wmo mosubop anass 2exbii 19.42vv bitri
       moeq mobii mpbir moani funoprab df-add funeqi dmeqi dmoprabss eqsstri wss
-      cnm adantl axaddcl wrel funrel oprssdmm mptru eqssi df-fn mpbir2an rgen2a
-      mp1i ffnov ) JJUAZJKUBKVRUCZALZBLZKMJNZBJOAJOVSKUDZKUEZVRPWCVTJNWAJNTZVTC
-      LZDLZQPZWAELZFLZQPZTGLWFWIUFMWGWJUFMQZPZTZFRERZDRCRZTZABGUGZUDWQABGWPWEGW
-      PGUHWHWKWMTZFRERZTZDRCRZGUHWTGCDVTWMGEFWAGWLUNUIUIWPXBGWOXACDWOWHWSTZFRER
-      XAWNXCEFWHWKWMUJUKWHWSEFULUMUKUOUPUQURKWRABGCDEFUSZUTUPZWDVRWDWRUEVRKWRXD
-      VAWPABGJJVBVCVRWDVDSABHIJKILZJNHLXFNHRSHXFVEVFWEWBSVTWAVGZVFWCKVHSXEKVIVP
-      VJVKVLKVRVMVNWBABJXGVOABJJJKVQVN $.
+      dfcm adantl axaddcl wrel funrel mp1i oprssdmm mptru eqssi mpbir2an rgen2a
+      df-fn ffnov ) JJUAZJKUBKVRUCZALZBLZKMJNZBJOAJOVSKUDZKUEZVRPWCVTJNWAJNTZVT
+      CLZDLZQPZWAELZFLZQPZTGLWFWIUFMWGWJUFMQZPZTZFRERZDRCRZTZABGUGZUDWQABGWPWEG
+      WPGUHWHWKWMTZFRERZTZDRCRZGUHWTGCDVTWMGEFWAGWLUNUIUIWPXBGWOXACDWOWHWSTZFRE
+      RXAWNXCEFWHWKWMUJUKWHWSEFULUMUKUOUPUQURKWRABGCDEFUSZUTUPZWDVRWDWRUEVRKWRX
+      DVAWPABGJJVBVCVRWDVDSABHIJKILZJNHLXFNHRSHXFVEVFWEWBSVTWAVGZVFWCKVHSXEKVIV
+      JVKVLVMKVRVPVNWBABJXGVOABJJJKVQVN $.
 
     $( Multiplication is an operation on the complex numbers.  This is the
        construction-dependent version of ~ ax-mulf and it should not be
@@ -88139,13 +88139,13 @@ $)
       ( vx vy vw vv vu vf vz vb va cc cmul cv co wcel wceq wa cop cmr wex wtru
       cxp wf wfn wral wfun cdm cm1r cplr coprab wmo moeq mosubop 2exbii 19.42vv
       anass bitri mobii mpbir moani funoprab df-mul dmeqi dmoprabss eqsstri wss
-      funeqi cnm adantl axmulcl wrel funrel oprssdmm mptru eqssi df-fn mpbir2an
-      mp1i rgen2a ffnov ) JJUAZJKUBKVTUCZALZBLZKMJNZBJUDAJUDWAKUEZKUFZVTOWEWBJN
-      WCJNPZWBCLZDLZQOZWCELZFLZQOZPGLWHWKRMUGWIWLRMRMUHMWIWKRMWHWLRMUHMQZOZPZFS
-      ESZDSCSZPZABGUIZUEWSABGWRWGGWRGUJWJWMWOPZFSESZPZDSCSZGUJXBGCDWBWOGEFWCGWN
-      UKULULWRXDGWQXCCDWQWJXAPZFSESXCWPXEEFWJWMWOUOUMWJXAEFUNUPUMUQURUSUTKWTABG
-      CDEFVAZVFURZWFVTWFWTUFVTKWTXFVBWRABGJJVCVDVTWFVETABHIJKILZJNHLXHNHSTHXHVG
-      VHWGWDTWBWCVIZVHWEKVJTXGKVKVQVLVMVNKVTVOVPWDABJXIVRABJJJKVSVP $.
+      funeqi dfcm adantl axmulcl wrel funrel mp1i oprssdmm mptru eqssi mpbir2an
+      df-fn rgen2a ffnov ) JJUAZJKUBKVTUCZALZBLZKMJNZBJUDAJUDWAKUEZKUFZVTOWEWBJ
+      NWCJNPZWBCLZDLZQOZWCELZFLZQOZPGLWHWKRMUGWIWLRMRMUHMWIWKRMWHWLRMUHMQZOZPZF
+      SESZDSCSZPZABGUIZUEWSABGWRWGGWRGUJWJWMWOPZFSESZPZDSCSZGUJXBGCDWBWOGEFWCGW
+      NUKULULWRXDGWQXCCDWQWJXAPZFSESXCWPXEEFWJWMWOUOUMWJXAEFUNUPUMUQURUSUTKWTAB
+      GCDEFVAZVFURZWFVTWFWTUFVTKWTXFVBWRABGJJVCVDVTWFVETABHIJKILZJNHLXHNHSTHXHV
+      GVHWGWDTWBWCVIZVHWEKVJTXGKVKVLVMVNVOKVTVQVPWDABJXIVRABJJJKVSVP $.
   $}
 
   ${
