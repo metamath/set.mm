@@ -116107,7 +116107,7 @@ $)
     $}
 
     ser3le.3 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( G ` k ) e. RR ) $.
-    serle.4 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) <_ ( G ` k ) ) $.
+    ser3le.4 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) <_ ( G ` k ) ) $.
     $( Comparison of partial sums of two infinite series of reals.
        (Contributed by NM, 27-Dec-2005.)  (Revised by Jim Kingdon,
        23-Apr-2023.) $)
