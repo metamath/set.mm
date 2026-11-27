@@ -196198,7 +196198,7 @@ $)
 
     ${
       dvbssntr.j $e |- J = ( K |`t S ) $.
-      dvbssntr.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
+      dvbssntrcntop.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
       $( The set of differentiable points is a subset of the interior of the
          domain of the function.  (Contributed by Mario Carneiro, 7-Aug-2014.)
          (Revised by Jim Kingdon, 27-Jun-2023.) $)
