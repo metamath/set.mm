@@ -93,12 +93,6 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
-27-Nov-26 nnmulcli.1  nncli.1
-27-Nov-26 nnmulcli.2  nncli.2
-27-Nov-26 nnaddcli.1  nncli.1
-27-Nov-26 nnaddcli.2  nncli.2
-27-Nov-26 nncli.1     omcli.1
-27-Nov-26 nncli.2     omcli.2
 27-Nov-26 nnaddcli    [same]      Moved from OO's mathbox to main set.mm
 20-Nov-26 expgt0b     [same]      Moved from TA's mathbox to main set.mm
 18-Nov-26 mptssALT    mptss       Moved from TA's mathbox to main set.mm

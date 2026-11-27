@@ -89615,8 +89615,8 @@ $)
   $}
 
   ${
-    omcli.1 $e |- A e. _om $.
-    omcli.2 $e |- B e. _om $.
+    nncli.1 $e |- A e. _om $.
+    nncli.2 $e |- B e. _om $.
     $( ` _om ` is closed under addition.  Inference form of ~ nnacl .
        (Contributed by Scott Fenton, 20-Apr-2012.) $)
     nnacli $p |- ( A +o B ) e. _om $=
@@ -138914,13 +138914,17 @@ $)
   $}
 
   ${
-    nncli.1 $e |- A e. NN $.
-    nncli.2 $e |- B e. NN $.
+    nnmulcli.1 $e |- A e. NN $.
+    nnmulcli.2 $e |- B e. NN $.
     $( Closure of multiplication of positive integers.  (Contributed by Mario
        Carneiro, 18-Feb-2014.) $)
     nnmulcli $p |- ( A x. B ) e. NN $=
       ( cn wcel cmul co nnmulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
 
+  ${
+    nnaddcli.1 $e |- A e. NN $.
+    nnaddcli.2 $e |- B e. NN $.
     $( Closure of addition of positive integers.  Prepared with AI assistance
        from OpenAI Codex.  (Contributed by Owen Orger, 11-Nov-2026.)  (Proof
        shortened by Owen Orger, 27-Nov-2026.) $)
