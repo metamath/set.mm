@@ -51,7 +51,9 @@ rm -f symbols.tar.bz2 symbols.tgz
 # wget -N https://us.metamath.org/downloads/symbols.tar.bz2
 # (Github seems to require TLSv1_2 now, see #3444)
 
-wget -N --secure-protocol=TLSv1_2 -O symbols.tgz https://github.com/metamath/symbols/tarball/main
+wget --timeout=30 --tries=3 --waitretry=2 --secure-protocol=TLSv1_2 \
+     -O symbols.tgz \
+     https://codeload.github.com/metamath/symbols/legacy.tar.gz/refs/heads/main
 
 # Untar the symbols in the current directory so we can use them
 # (e.g., to test if they exist).
