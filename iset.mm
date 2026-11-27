@@ -194027,7 +194027,7 @@ $)
 
   ${
     $d A w x y z $.  $d a b d e w y $.
-    cdivcncf.1 $e |- F = ( x e. { y e. CC | y =//= 0 } |-> ( A / x ) ) $.
+    cdivcncfap.1 $e |- F = ( x e. { y e. CC | y =//= 0 } |-> ( A / x ) ) $.
     $( Division with a constant numerator is continuous.  (Contributed by Mario
        Carneiro, 28-Dec-2016.)  (Revised by Jim Kingdon, 26-May-2023.) $)
     cdivcncfap $p |- ( A e. CC -> F e. ( { y e. CC | y =//= 0 } -cn-> CC ) ) $=
