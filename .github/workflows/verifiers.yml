@@ -269,11 +269,11 @@ jobs:
           java-version: '11' # The JDK version to make available on the path.
           # java-package: jdk # (jdk, jre, jdk+fx, or jre+fx) - defaults to jdk
           # architecture: x64 # (x86, x64, armv7, aarch64, or ppc64le) - default value derived from the runner machine
-      - run: wget --timeout=30 --tries=3 --waitretry=2 -O mmj2.jar https://raw.githubusercontent.com/digama0/mmj2/master/mmj2jar/mmj2.jar
+      - run: wget -N https://github.com/digama0/mmj2/raw/master/mmj2jar/mmj2.jar
       - run: mkdir macros
-      - run: wget --timeout=30 --tries=3 --waitretry=2 -O macros/definitionCheck.js https://raw.githubusercontent.com/digama0/mmj2/master/mmj2jar/macros/definitionCheck.js
-      - run: wget --timeout=30 --tries=3 --waitretry=2 -O macros/init.js https://raw.githubusercontent.com/digama0/mmj2/master/mmj2jar/macros/init.js
-      - run: wget --timeout=30 --tries=3 --waitretry=2 -O macros/showDiscouraged.js https://raw.githubusercontent.com/digama0/mmj2/master/mmj2jar/macros/showDiscouraged.js
+      - run: wget -O macros/definitionCheck.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/definitionCheck.js
+      - run: wget -O macros/init.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/init.js
+      - run: wget -O macros/showDiscouraged.js https://github.com/digama0/mmj2/raw/master/mmj2jar/macros/showDiscouraged.js
       # Do extra checking and generate the '*discouraged.new' file
       # (the 'printf' lets us insert multiple lines).
       # We use setparser to check that definitions don't create
