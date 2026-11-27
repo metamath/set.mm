@@ -196129,7 +196129,7 @@ $)
   ${
     $d A f s w x z $.  $d F f s w x z $.  $d S f s w x z $.  $d T f s x $.
     dvval.t $e |- T = ( K |`t S ) $.
-    dvval.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
+    dvvalap.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
     $( Value and set bounds on the derivative operator.  (Contributed by Mario
        Carneiro, 7-Aug-2014.)  (Revised by Jim Kingdon, 27-Jun-2023.) $)
     dvfvalap $p |- ( ( S C_ CC /\ F : A --> CC /\ A C_ S ) -> ( ( S _D F ) =
