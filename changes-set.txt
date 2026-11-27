@@ -93,7 +93,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
-27-Nov-26 nnaddcli    [same]      Moved from OO's mathbox to main set.mm
+27-Nov-26 nnaddcli    [same]      Moved from Owen Orger's mathbox to main set.mm
 20-Nov-26 expgt0b     [same]      Moved from TA's mathbox to main set.mm
 18-Nov-26 mptssALT    mptss       Moved from TA's mathbox to main set.mm
 15-Nov-26 df-ply1     [same]      Add EuclF component
