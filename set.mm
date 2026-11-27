@@ -138923,6 +138923,16 @@ $)
   $}
 
   ${
+    nnaddcli.1 $e |- A e. NN $.
+    nnaddcli.2 $e |- B e. NN $.
+    $( Closure of addition of positive integers.  Prepared with AI assistance
+       from OpenAI Codex.  (Contributed by Owen Orger, 11-Nov-2026.)  (Proof
+       shortened by Owen Orger, 27-Nov-2026.) $)
+    nnaddcli $p |- ( A + B ) e. NN $=
+      ( cn wcel caddc co nnaddcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.
     $( Addition with 1 is commutative for natural numbers.  (Contributed by
        Steven Nguyen, 9-Dec-2022.) $)
@@ -744542,18 +744552,6 @@ $)
        (Contributed by Owen Orger, 11-Nov-2026.) $)
     elelssini $p |- A e. ( C i^i E ) $=
       ( eleqtri sselii elini ) ACEABCFGJDEAIHKL $.
-  $}
-
-  ${
-    nnaddcli.1 $e |- A e. NN $.
-    nnaddcli.2 $e |- B e. NN $.
-    $( Closure of addition of positive integers, in inference form.  Inference
-       associated with ~ nnaddcl .  The multiplication counterpart is the
-       existing ~ nnmulcli .  Proof supplied by Owen Orger.  AI-assisted
-       naming, description, and verification by OpenAI Codex.  (Contributed by
-       Owen Orger, 11-Nov-2026.) $)
-    nnaddcli $p |- ( A + B ) e. NN $=
-      ( cn wcel wa caddc co pm3.2i nnaddcl ax-mp ) AEFZBEFZGABHIEFMNCDJABKL $.
   $}
 
   ${
