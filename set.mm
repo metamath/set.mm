@@ -732531,7 +732531,8 @@ $)
       XBWHXBWHXNWBWCVCTUMWDVMABWIWOAWHAWNWQWOWROUHWEWF $.
 
     $( Lemma for ~ 3cubes .  Used to show that the denominators in ~ 3cubeslem4
-       are nonzero.  (Contributed by Igor Ieskov, 22-Jan-2024.) $)
+       are nonzero.  (Contributed by Igor Ieskov, 22-Jan-2024.)  (Proof
+       shortened by Igor Ieskov using Claude Code, 28-Nov-2026.) $)
     3cubeslem2 $p |- ( ph ->
       -. ( ( ( ( 3 ^ 3 ) x. ( A ^ 2 ) ) + ( ( 3 ^ 2 ) x. A ) ) + 3 ) = 0 ) $=
       ( co wcel wceq a1i qre syl recnd oveq2d sqcld eqtr4d oveq1d addcld 3eqtrd
@@ -732552,7 +732553,8 @@ $)
       AWEYIVMTPAWEXCYIAXCAXAWRAWTAXSWTXREYCWRVNIVPYCVQJWEWQVRAVSGAXCAWRYBVTWAWB
       WCWD $.
 
-    $( Lemma for ~ 3cubes .  (Contributed by Igor Ieskov, 22-Jan-2024.) $)
+    $( Lemma for ~ 3cubes .  (Contributed by Igor Ieskov, 22-Jan-2024.)  (Proof
+       shortened by Igor Ieskov using Claude Code, 28-Nov-2026.) $)
     3cubeslem3l $p |- ( ph ->
         ( A x. ( ( ( ( ( 3 ^ 3 ) x. ( A ^ 2 ) )
           + ( ( 3 ^ 2 ) x. A ) ) + 3 ) ^ 3 ) )
@@ -732651,7 +732653,8 @@ $)
       NTAUVDUUPYHXSAUVCUUOYKXSAUURYQUVBUUNXSAYMYOYOVVMWUMWUMWIAUUSUUEUVAUUMXSAY
       SUUAUUCVVTWUOVUAWIAUUTUUHUULXSAUUFUUCUUCVXKVUAVUAWIQRRPPVC $.
 
-    $( Lemma for ~ 3cubes .  (Contributed by Igor Ieskov, 22-Jan-2024.) $)
+    $( Lemma for ~ 3cubes .  (Contributed by Igor Ieskov, 22-Jan-2024.)  (Proof
+       shortened by Igor Ieskov using Claude Code, 28-Nov-2026.) $)
     3cubeslem3r $p |- ( ph ->
         ( ( ( ( ( ( 3 ^ 3 ) x. ( A ^ 3 ) ) - 1 ) ^ 3 )
           + ( ( ( -u ( ( 3 ^ 3 ) x. ( A ^ 3 ) )
@@ -732796,7 +732799,8 @@ $)
     $d a b c A $.
     $( Every rational number is a sum of three rational cubes.  See S. Ryley,
        The Ladies' Diary 122 (1825), 35.  (Contributed by Igor Ieskov,
-       22-Jan-2024.) $)
+       22-Jan-2024.)  (Proof shortened by Igor Ieskov using Claude Code,
+       28-Nov-2026.) $)
     3cubes $p |- ( A e. QQ <-> E. a e. QQ E. b e. QQ E. c e. QQ
                              A = ( ( ( a ^ 3 ) + ( b ^ 3 ) ) + ( c ^ 3 ) ) ) $=
       ( wcel cv co wceq ax-mp qexpcl mpan2 qmulcl sylancl qaddcl qdivcl syl3anc
