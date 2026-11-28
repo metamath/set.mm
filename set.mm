@@ -610474,6 +610474,262 @@ $)
        'ax-inf' 'ax-inf2'; $)
   $}
 
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Bases and independence in propositional and predicate logic
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Shortest basis for classical logic by descending axiom length
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+  Consider propositional logic over ~ ax-mp as written in Polish (CN)
+  notation.  Suppose that we compare two axiomatizations by their longest
+  axiom's length, then by their second-longest axiom's length, etc., in
+  descending order.  Then this 3-axiom basis, CCpqCpCrq, CNCNpqCpr, CCNpqCCqpp,
+  with axioms of length 9, 9, 10, is the shortest possible for classical logic
+  by this metric.  All other bases for classical logic have some axiom of
+  length more than 10, more than 1 axiom of length 10, more than 2 axioms of
+  length 9, or some additional axiom of length less than 9.
+
+  These derivations are based on optimized condensed-detachment trees.
+$)
+
+  $( Derive the first axiom of the basis.  (Contributed by Matthew House,
+     26-Nov-2026.)  (Proof modification is discouraged.) $)
+  propdesc1 $p |- ( ( ph -> ps ) -> ( ph -> ( ch -> ps ) ) ) $=
+    ( wi ax-1 ax-mp ax-2 ) ABCBDZDZDZABDAHDDIJBCEIAEFABHGF $.
+
+  $( Derive the second axiom of the basis.  (Contributed by Matthew House,
+     26-Nov-2026.)  (Proof modification is discouraged.) $)
+  propdesc2 $p |- ( -. ( -. ph -> ps ) -> ( ph -> ch ) ) $=
+    ( wn wi ax-1 con4 ax-mp ax-2 ) ADZBEZDZKCEZEZLACEZEZLCDZLEZEZNLQFLRMEZEZSNE
+    TUACKGTLFHLRMIHHLMOEZEZNPEUBUCMAMEZEZUBMAFMUDOEZEZUEUBEUFUGUDAKEZEZUFUHUIAJ
+    AEZEZUHAJFAUJKEZEZUKUHEULUMJABEZEZULJBDZJEZEZUOJUPFJUQUNEZEZURUOEUSUTBAGUSJ
+    FHJUQUNIHHJABIHULAFHAUJKIHHUHUDFHUDUHOEEUIUFEAKCIUDUHOIHHUFMFHMUDOIHHUBLFHL
+    MOIHH $.
+
+  $( Derive the third axiom of the basis.  (Contributed by Matthew House,
+     26-Nov-2026.)  (Proof modification is discouraged.) $)
+  propdesc3 $p |- ( ( -. ph -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
+    ( wch wn wi ax-1 ax-2 ax-mp con4 ) ADZBEZBAEZKEZEZKLAEZEZKLFKMOEZEZNPEQRLKA
+    EZEZQLKJAEZEZEZTLJLEZEZUCLJFLUDUBEZEZUEUCEUFUGJBAGUFLFHLUDUBGHHLUBSEZEZUCTE
+    UHUIKUAAEZEZUHUJUKUACUAEZEZUJUACFUAULAEZEZUMUJEUAJULDZEZEZUOJAUPEZEZURJUPDZ
+    JEZEZUTJVAFJVBUSEZEZVCUTEVDVEUPAIVDJFHJVBUSGHHJAUPGHUAUQUNEZEZURUOEVFVGAULI
+    VFUAFHUAUQUNGHHUAULAGHHUJKFHKUAAGHUHLFHLUBSGHHLKAGHQKFHKMOGHH $.
+
+  $( Derive ~ ax-1 from the basis.  (Contributed by Matthew House,
+     26-Nov-2026.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  ax1propdesc $p |- ( ph -> ( ps -> ph ) ) $=
+    ( wi propdesc1 wn ax-mp propdesc2 propdesc3 ) AACZABACCZCZJAABDZJEZICZKJCMA
+    CZNJACZOCZOPACZQAEZJCZRITCZTKUALIJSDFTEICUATCAJAGTIHFFAJHFPAMDFOEPCQOCJAAGO
+    PHFFMAADFJIHFF $.
+
+  $( Derive ~ ax-2 from the basis.  (Contributed by Matthew House,
+     26-Nov-2026.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  ax2propdesc $p |- ( ( ph -> ( ps -> ch ) ) ->
+      ( ( ph -> ps ) -> ( ph -> ch ) ) ) $=
+    ( wi wn propdesc1 propdesc3 ax-mp propdesc2 ) BCDZAJDZABDZACDZDZDZDZOJNDZPB
+    NDZQDZQRNDZSNEZBDZTNBDZUBDZUBUCBDZUDAUEDZUELUFDZUFABUCFUFEZLDZUGUFDUFLDZUID
+    ZUIUJLDZUKLEZUFDZULUMUEDZUNBEZNDZUODZUOUQUEDZURBNGZUQUEUMFHUOEZUQDZURUODVAN
+    DVBLUEMIVANUPFHUOUQGHHUMUEAFHLUFGHUJLUHFHUIEUJDUKUIDUFLLIUIUJGHHUFLGHHUEEZA
+    DZUFUEDUEADZVDDZVDVEADZVFAEZUEDZVGUQVIDZVIUSVJUTUQUEVHFHVIEZUQDZVJVIDVKNDZV
+    LVKMDVMAUECIVKMLFHVKNUPFHVIUQGHHAUEGHVEAVCFHVDEVEDVFVDDUEAAIVDVEGHHUEAGHHUC
+    BUAFHUBEUCDUDUBDNBBIUBUCGHHNBGHRNJFHQEZRDZSQDBMDZVODZVOVPRDVQBMLFVPRVNFHVOE
+    ZVPDZVQVODJVSDZVSJVPDVTBCAFJVPVRFHVSEZJDZVTVSDVSJDZWBDZWBWCJDZWDJEZVSDZWEQW
+    GDZWGQVSDZWHVRWIDZWIQRVSIWIEZVRDZWJWIDWIVRDZWLDZWLWMVRDZWNVREZWIDZWOWPVSDZW
+    QDZWQWPVSQFWQEZWRDZWSWQDWTVSDXAVRWIVPIWTVSWPFHWQWRGHHVRWIGHWMVRWKFHWLEWMDWN
+    WLDWIVRVRIWLWMGHHWIVRGHHQVSWFFHWGEQDWHWGDJVSNIWGQGHHJVSGHWCJWAFHWBEWCDWDWBD
+    VSJJIWBWCGHHVSJGHHVOVPGHHQRGHHJNKFHOEZJDZPODOJDZXCDZXCXDJDZXEAXFDZXFKXGDZXG
+    AJXDFXGEZKDZXHXGDXGKDZXJDZXJXKKDZXLKEZXGDZXMXNXFDZXOWFODZXPDZXPXQXFDZXRJOGZ
+    XQXFXNFHXPEZXQDZXRXPDYAODYBKXFNIYAOWFFHXPXQGHHXNXFAFHKXGGHXKKXIFHXJEXKDXLXJ
+    DXGKKIXJXKGHHXGKGHHXFEZADZXGXFDXFADZYDDZYDYEADZYFVHXFDZYGXQYHDZYHXSYIXTXQXF
+    VHFHYHEZXQDZYIYHDYJODZYKYJNDZYLYJMDYMAXFCIYJMLFHYJNKFHYJOWFFHYHXQGHHAXFGHYE
+    AYCFHYDEYEDYFYDDXFAAIYDYEGHHXFAGHHXDJXBFHXCEXDDXEXCDOJJIXCXDGHHOJGHH $.
+
+  $( Derive ~ ax-3 from the basis.  (Contributed by Matthew House,
+     26-Nov-2026.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  ax3propdesc $p |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $=
+    ( wn wi propdesc1 propdesc2 ax-mp propdesc3 ) BCZACZIDZBADZDZDZMILDZNDZNILK
+    ENCZODZPNDQLDRBMAFQLIEGNOHGGMCZIDZNMDMIDZTDZTUAIDZUBICZMDZUCDZUCIMHZUCCZUED
+    ZUFUCDUHMDZUIUHLDZUJUHADZUKUCADZULDZULUMADZUNJUCDZUOKUPDZUPJIUAEUPCZKDZUQUP
+    DUPKDZUSDZUSUTKDZVAKCZUPDZVBVCUCDZVDUEVEDZVEUFVFUGUEUCVCEGVECZUEDZVFVEDVGMD
+    VHKUCLFVGMUDEGVEUEHGGVCUCJEGKUPHGUTKUREGUSCUTDVAUSDUPKKFUSUTHGGUPKHGGAUCHGU
+    MAUHEGULCUMDUNULDUCAAFULUMHGGUHABEGUHLKEGUHMUDEGUCUEHGGUAISEGTCUADUBTDMIIFT
+    UAHGGMIHGG $.
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Independent 3-variable scheme of relation-free predicate calculus
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( A proof of ~ 19.12 , also known as the Church-Rosser axiom in modal logic,
+     from ~ sp , ~ axc4 , ~ axc7 , ~ ax-11 , ~ ax-gen , and propositional
+     logic.  This system corresponds to the first five axioms of predicate
+     calculus in an older version of set.mm.  (Contributed by Matthew House,
+     26-Nov-2026.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  mh-19.12prim $p |- ( -. A. x -. A. y ph -> A. y -. A. x -. ph ) $=
+    ( wal wn wi sp axc7 nsyl2 ax-gen axc4 ax-mp ax-11 syl nsyl nsyl4 ) ACDEZBDZ
+    CDZEZCDZAEZBDZEZCDZRUAUDFZCDUAUEFUFCUASUCTCGUCQCDZBDZSUCUGFZBDUCUHFUIBUCAUG
+    UBBGACHIJUBUGBKLQBCMNOJTUDCKLRCHP $.
+
+  ${
+    $d w x y $.  $d w x z $.  $d ph w $.
+    $( Version of ~ pc3vind with ` x ` distinct from ` y ` and ` z ` , avoiding
+       ~ ax-13 .  (Contributed by Matthew House, 26-Nov-2026.) $)
+    pc3vindw1 $p |- -. A. x -. A. y ( A. z ( -. A. y ph -> A. x ( ph ->
+        -. ( A. y ph -> -. A. z ph ) ) ) -> A. z ( ph -> A. x ph ) ) $=
+      ( vw wal wn wi nfna1 nfal wa nfa1 wex sp exanali imim1 syl6 wsb imbitrrdi
+      syl56 nfia1 nfn sylibr simplim syl6com pm2.18 syl5 anim1d aleximi biimpri
+      impel exnal exsimpl sylbir nfsbv simprim alimi sbimd sbrim sbalv biimtrid
+      nfim al2imi syl9r syldc exlimd nsyl5 con3rr3 imim1d alimd syl6d sbim sb8v
+      alrimdv syl5com axc7e impcomd eximd sps adantr sylcom exlimimdd syl axc4i
+      2a1d alrimi pm2.65i ) ACFZGZAWHADFZGZHGZHZBFZHZDFZAABFZHZDFZHZCFZGZBFZXAX
+      CWTCXBCBWTCIJZXCWOWRDXBDBXADWTDCWOWRDUAJUBJZXCWQWOAXBABXCWHAXCWPWSGZKZWHC
+      XDACLZXCXBXGCMZXBBNZWPWSCOZUCXCXGWNWHHZWHXGWHWQGZKZDMZXCXLDFZDMXLWPAXMKZD
+      MZXOXFWOXQXNDWOAWHXMAXLWOWHWNAWLWHWMBNZWHWKUDUEZWOXLWIWHHWHWIWNWHPWHUFQZU
+      GUHUIXRXFAWQDOUJUKXCXNXPDXEXCXMWHXPXMAGZBMZXCWHXPHZBFZBMYDYCXMABULUJXBYBY
+      EBXBWPCMZYBYEXBXIYFXKWPXFCUMUNYBYFYDBERZEFYEYBYFYGEYBYFWHBERZXPBERZHYGYBY
+      FYHWIYHHZDFZYIWHAYFYHYKHZHACNZWIWPYLCACIZYHYKCWHBECXHUOZYJCDWIYHCYNYOVBJV
+      BWPWIWNYLWODNWNYHYIWPYKWNWHXPBEWMBLZWNWHWJXPWHAWNWLWJYMXSWHWJUPTZAXLDXTUQ
+      QURYIWNYHHZDFZWPYKXLYRBEDWNWHBEYPUSUTZWOYRYJDWIWNYHPVCVAVDVEVFVGYBYKYSYIW
+      JAYKYSHADNWKYJYRDADIWKWNWIYHWNWHWJYQVHVIVJVGYTSVKWHXPBEVLSVNYDBEVMSVOUIYD
+      BVPTVQVRXLDVPTWPXLWHHZXFWOUUADYAVSVTWAWBYMWCWDWEVJWFXJWG $.
+    $( $j usage 'pc3vindw1' avoids 'ax-8' 'ax-9' 'ax-13'; $)
+  $}
+
+  ${
+    $d w x y $.  $d w y z $.  $d ph w $.
+    $( Version of ~ pc3vind with ` y ` distinct from ` x ` and ` z ` , avoiding
+       ~ ax-13 .  (Contributed by Matthew House, 26-Nov-2026.) $)
+    pc3vindw2 $p |- -. A. x -. A. y ( A. z ( -. A. y ph -> A. x ( ph ->
+        -. ( A. y ph -> -. A. z ph ) ) ) -> A. z ( ph -> A. x ph ) ) $=
+      ( vw wal wn wi nfna1 nfal wa nfa1 wex sp exanali wsb syl5com syl56 sb2imi
+      alimd nfia1 nfn exnal biimpri exsimpl nfv sb8ef 3imtr3i sbrim sbalv con3i
+      sylibr simprim con3rr3 imim1d nsyl5 nfim sbf sbal 3imtr3g simplim syl6com
+      nfsbv imbitrdi imim2d al2imi syl9 alrimd biimtrid exlimdv aleximi impcomd
+      com12 syl6c axc7e eximd imim1 pm2.18 syl6 syl5 biimtrrid sps imim12d impd
+      anim1d exlimimdd syl axc4i 2a1d alrimi pm2.65i ) ACFZGZAWLADFZGZHGZHZBFZH
+      ZDFZAABFZHZDFZHZCFZGZBFZXEXGXDCXFCBXDCIJZXGWSXBDXFDBXEDXDDCWSXBDUAJUBJZXG
+      XAWSAXFABXGWLAXGWTXCGZKZWLCXHACLZXGXFXKCMZXFBNZWTXCCOZULXGWTXJWLXGWLXAGZK
+      ZDMZWRWLHZDFZDMZHWTXJWLHXGXQXTDXIXGXPWLXTXPAGZBMZXGWLXTHZBFZBMYDYCXPABUCU
+      DXFYBYEBXFWTCEPZEMZYBYEXMWTCMXFYGWTXJCUEXOWTCEWTEUFUGUHYBYFYEEYFWMWRCEPZH
+      ZDFZYBYEWSYICEDWMWRCEACIUIUJYBYJYHWRYHHZDFZYEYBWMYJYHWLAACNZUKYIDNQWNAYJY
+      LHADNWOYIYKDADIWOWRWMYHWRWLWNWLAWRWPWNYMWQBNZWLWNUMRZUNUOTUPYHYLYDBWRCEBW
+      QBLZVCZYKBDWRYHBYPYQUQJYHWLACEPZDFZYLXTYHWLCEPZWNCEPWLYSWRWLWNCEYOSWLCEXL
+      URZADCEUSUTYKYRXSDYRYKXSYRYHWLWRYRYHYTWLAWRWLCEWRAWPWLYNWLWOVAVBZSUUAVDVE
+      VMVFVGVHVNVIVJQVKYDBVORVLVPWTXJXRYAWLXJAXPKZDMWTXRAXADOWSUUCXQDWSAWLXPAXS
+      WSWLUUBWSXSWMWLHWLWMWRWLVQWLVRVSZVTWEVKWAYAXSWTWLXSDVOWSXSWLHDUUDWBVTWCQW
+      DWFYMWGWHWITWJXNWK $.
+    $( $j usage 'pc3vindw2' avoids 'ax-8' 'ax-9' 'ax-13'; $)
+  $}
+
+  ${
+    $d w x z $.  $d w y z $.  $d ph w $.
+    $( Version of ~ pc3vind with ` z ` distinct from ` x ` and ` y ` , avoiding
+       ~ ax-13 .  (Contributed by Matthew House, 26-Nov-2026.) $)
+    pc3vindw3 $p |- -. A. x -. A. y ( A. z ( -. A. y ph -> A. x ( ph ->
+        -. ( A. y ph -> -. A. z ph ) ) ) -> A. z ( ph -> A. x ph ) ) $=
+      ( vw wal wn wi nfna1 nfal wsb wa nfa1 nfsbv wex exanali sylibr syl6 nfim
+      sp nfia1 nfn nfan simplim imim2i sps ax-1 pm2.61d2 adantl sbn spsbim sbal
+      nfs1v imbitrdi biimtrrid con3i simprim imim12i con3rr3 sbimd syl5com syl9
+      nsyl5 com12 al2imi syl10 adantr exlimi sylbir com3l sylsyld com13 biimpri
+      a1d exnal exim axc7e syl56 sylan9r 2a1 syl5d impcomd impr exlimdd alrimiv
+      exlimd sb8v 19.21bbi axc4i 2a1d alimd alrimi pm2.65i ) ACFZGZAWNADFZGZHGZ
+      HZBFZHZDFZAABFZHZDFZHZCFZGZBFZXGXIXFCXHCBXFCIJZXIXAXDDXHDBXGDXFDCXAXDDUAJ
+      UBJZXIXCXAAXHABXIADCXIWNDEKZEFWNDFXIXLEXIXBXEGZLZXLCXJWNDECACMZNZXIXHXNCO
+      ZXHBTZXBXECPZQXIXBXMXLXMAXCGZLZDOXIXBLZXLAXCDPYBYAXLDXIXBDXKXADMUCWNDEUMY
+      BXTAXLYBAWNXTXLXBAWNHZXIXBWNYCXBWOWTYCXADTZWSYCBWRWNAWNWQUDUEZUFRWNAUGUHU
+      IYBXLXTWNXLHZHZXBXLGZWSDEKZBFZXIYGYHWODEKZXBYJWNDEUJXBYKWTDEKYJWOWTDEUKWS
+      BDEULUNZUOXIYJAGZYFBFZHZBFZYGXHYIYOBYMYIXHYNYMWOYIYKXHYNHWNAACTZUPWPAYIYK
+      HADTZWQWSWODEADIWSWNWPWNAWRWPYQWNWPUQURZUSUTVCXHWOYKYNXHXQWOYKYNHZHZXSXNU
+      UACWOYTCACIZYKYNCWODECUUBNYFCBWNXLCXOXPSJSSXBUUAXMXBWOWTYKYJYNYDXBYKYJHWO
+      YLVNWSYIYFBWSWNWPYIXLYSWPYIXLWPWSWNDEADMWPAWSWNYRYEVAUTVDVBVEVFVGVHVIVJVK
+      VLVEXTYMBOZYPYNBOYFUUCXTABVOVMYMYNBVPYFBVQVRRVSXLXTWNVTUHWAWBWFUOWCWDWEWN
+      DEWGQWHWIWJWKWLXRWM $.
+    $( $j usage 'pc3vindw3' avoids 'ax-8' 'ax-9' 'ax-13'; $)
+  $}
+
+  ${
+    $d w x $.  $d w y $.  $d w z $.  $d ph w $.
+    $( A true 3-setvar scheme of predicate calculus with no relations or DV
+       restrictions, that cannot be proven from any 2-setvar schemes of this
+       form.
+
+       This is a counterexample to a conjecture of NM (item 12 of
+       ~ https://us.metamath.org/award2003.html ):  "Consider the 'pure'
+       fragment of Metamath axiom system, ax-1 through ax-7 (and ax-mp,
+       ax-gen).  Open problem:  Can this fragment directly prove all such
+       theorem schemes of its kind*, i.e. is it complete for this fragment?  (I
+       think so.)  [* No predicate connectives (such as =), no distinct
+       variable restrictions.]" This list of axioms now corresponds to
+       ~ ax-mp , ~ ax-1 , ~ ax-2 , ~ ax-3 ( ~ con4 ), ~ ax-gen , ~ ax-c5
+       ( ~ sp ), ~ ax-c4 ( ~ axc4 ), ~ ax-c7 ( ~ axc7 ), and ~ ax-11 .
+
+       To see this, suppose that this theorem were provable from these axioms.
+       Since they have no DV restrictions, we can collapse all dummy setvars
+       into ` x ` , ` y ` , and ` z ` without loss of generality.  Then, we
+       interpret the proof in the context of a Kripke frame with 3 modalities,
+       where ` A. x ` , ` A. y ` , and ` A. z ` represent the 3 boxes.  This
+       frame's worlds are the 7 triples ` <. 0 , 0 , 0 >. ` ,
+       ` <. 0 , 1 , 0 >. ` , ` <. 0 , 1 , 1 >. ` , ` <. 0 , 2 , 1 >. ` ,
+       ` <. 1 , 0 , 1 >. ` , ` <. 1 , 1 , 0 >. ` , and ` <. 1 , 2 , 0 >. ` .  A
+       world is accessible with box ` i ` iff it agrees with the current world
+       at coordinate ` i ` .  Note that this is opposite from the usual
+       convention, where a world is accessible with box ` i ` iff it agrees at
+       all other coordinates.
+
+       With some work, we can show that all of the axioms are valid in this
+       Kripke frame, and the inferences ~ ax-mp and ~ ax-gen preserve validity.
+       (Modally speaking, ~ ax-c5 , ~ ax-c4 , and ~ ax-c7 correspond to the
+       accessibility relations being reflexive, transitive, and symmetric, and
+       ~ ax-11 corresponds to the fact that the relations commute.)  Therefore,
+       given any valuation of ` ph ` , every step in the proof must be true at
+       all worlds.  However, for the valuation with ` ph ` true at
+       ` <. 0 , 0 , 0 >. ` , ` <. 0 , 1 , 1 >. ` , ` <. 0 , 2 , 1 >. ` , and
+       ` <. 1 , 0 , 1 >. ` , this formula is false at all worlds, a
+       contradiction.  Therefore, no such proof can exist.
+
+       It happens that all 2-setvar schemes follow from the listed axioms, thus
+       3 setvars is the minimum for an independent scheme.  In addition, deep
+       results on representability of diagonal-free cylindric algebras show
+       that no finite set of schemes can suffice for this fragment, though most
+       proofs of this fact are non-constructive.
+
+       Usage of this theorem is discouraged because it depends on ~ ax-13 .
+       (Contributed by Matthew House, 26-Nov-2026.)
+       (New usage is discouraged.) $)
+    pc3vind $p |- -. A. x -. A. y ( A. z ( -. A. y ph -> A. x ( ph ->
+        -. ( A. y ph -> -. A. z ph ) ) ) -> A. z ( ph -> A. x ph ) ) $=
+      ( vw weq wal wn wi nfnae nfal nfn nfim wb alimd notbid albid imbi12d nfae
+      syl9r wa wsb pc3vindw2 nfan wnf nfs1v a1i dveeq2 sylan9r nfa2 sb8v bicomi
+      nfa1 2sp sbequ12r syl syl6 cbvald mtbii ex nfna1 axc11 notnotr sp simplim
+      a1d pm2.21 axc11r syl5d alrimd con1d ax-11 ala1 syl56 a1dd pm2.65d alrimi
+      ja nsyli nsyl3 pm2.61ii ) DCFDGZBCFBGZACGZHZAWDADGZHZIZHZIZBGZIZDGZAABGZI
+      ZDGZIZCGZHZBGZHZWBHZWCHZXAXBXCUAZACEUBZEGZHZXEXFXEDGZHZIZHZIZBGZIZDGZXEXE
+      BGZIZDGZIZEGZHZBGWTXEBEDUCXDYAWSBXBXCBDCBJZBCBJUDXDXTWRXDXSWQECXBXCCDCCJB
+      CCJUDXSCUEXDXOXRCXNCDXGXMCXFCXECEACEUFZKZLXLCBXEXKCYCXJCXFXICYDXHCXECDYCK
+      LMLMKMKXQCDXEXPCYCXECBYCKMKMUGXDECFZYEDGZBGZXSWQNXCYEYEBGXBYGBCEUHXBYEYFB
+      YBDCEUHOUIYGXOWMXRWPYGXNWLDYEDBUJZYGXGWEXMWKYGXFWDXFWDNYGWDXFACEUKULUGZPY
+      GXLWJBYFBUMZYGXEAXKWIYGYEXEANYEBDUNAECUOUPZYGXJWHYGXFWDXIWGYIYGXHWFYGXEAD
+      YHYKQPRPRQRQYGXQWODYHYGXEAXPWNYKYGXEABYJYKQRQRUQURPQUSUTWBWTWDBGZWBWSWDBD
+      CBSWBWDWRWBWEWQCDCCSZACVAZWBWMWLCGZWEWPWLDCVBWEYOWOCGWBWPWEWLWOCYNWLAWDWE
+      WNWEWKAWDIWEHWDAWDVCVFWKAWIWDWJBVDWDWGVEUQVRZWDWNVGTOWOCDVHTVIVJVKOWBYLWR
+      WTWBYLWQCYMACBUJWBYLWPWMYLWNCGWBWNDGWPABCVLWNCDVHWNADVMVNVOVJWSBVDZVSVPWT
+      WRWCYQWCWQCBCCSWCWLWODBCDSWLAWDWCWNYPACBVHTOVQVTWA $.
+    $( $j usage 'pc3vind' avoids 'ax-8' 'ax-9'; $)
+  $}
+
 $( (End of Matthew House's mathbox.) $)
 $( End $[ set-mbox-mh.mm $] $)
 
