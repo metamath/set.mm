@@ -80764,7 +80764,7 @@ $)
   ${
     $d x y z f g q r s A $.  $d x y z f g q r s B $.
     $d x y z f g w v q r s G $.  $d f g F $.
-    genp.1 $e |- F = ( w e. P. , v e. P. |->
+    genip.1 $e |- F = ( w e. P. , v e. P. |->
       <. { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 1st ` w ) /\
         z e. ( 1st ` v ) /\ x = ( y G z ) ) } ,
         { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 2nd ` w ) /\
@@ -82407,7 +82407,7 @@ $)
   ${
     $d x y z w u v f g h q r s t A $.  $d x y z w u v f g h q r s t B $.
     $d x y z w u v f g h q r s t C $.
-    ltexprlem.1 $e |- C = <. { x e. Q. | E. y (
+    ltexprlemell.1 $e |- C = <. { x e. Q. | E. y (
       y e. ( 2nd ` A ) /\ ( y +Q x ) e. ( 1st ` B ) ) } , { x e. Q. | E. y (
       y e. ( 1st ` A ) /\ ( y +Q x ) e. ( 2nd ` B ) ) } >. $.
     $( Element in lower cut of the constructed difference.  Lemma for
@@ -87553,7 +87553,7 @@ $)
 
   $( The empty set is not a complex number.  Note: do not use this after the
      real number axioms are developed, since it is a construction-dependent
-     property.  See also ~ cnm which is a related property.  (Contributed by
+     property.  See also ~ dfcm which is a related property.  (Contributed by
      NM, 2-May-1996.) $)
   0ncn $p |- -. (/) e. CC $=
     ( c0 cc wcel cnr cxp 0nelxp df-c eleq2i mtbir ) ABCADDEZCDDFBJAGHI $.
@@ -87564,7 +87564,7 @@ $)
        real number axioms are developed, since it is a construction-dependent
        property.  (Contributed by Jim Kingdon, 23-Oct-2023.)
        (New usage is discouraged.) $)
-    cnm $p |- ( A e. CC -> E. x x e. A ) $=
+    dfcm $p |- ( A e. CC -> E. x x e. A ) $=
       ( vu vv cc wcel cv cop wceq cnr wa wex cxp elxpi df-c eleq2s cvv mpbir2an
       vex opm simprl eleq2d exbidv mpbiri ex exlimdvv mpd ) BEFZBCGZDGZHZIZUIJF
       UJJFKZKZDLCLZAGZBFZALZUOBJJMECDBJJNOPUHUNURCDUHUNURUHUNKZURUPUKFZALZVAUIQ
@@ -88122,13 +88122,13 @@ $)
       ( vx vy vw vv vu vf vz vb va cc caddc cv co wcel wral wceq cop wex wtru
       wa cxp wf wfn wfun cdm cplr coprab wmo mosubop anass 2exbii 19.42vv bitri
       moeq mobii mpbir moani funoprab df-add funeqi dmeqi dmoprabss eqsstri wss
-      cnm adantl axaddcl wrel funrel oprssdmm mptru eqssi df-fn mpbir2an rgen2a
-      mp1i ffnov ) JJUAZJKUBKVRUCZALZBLZKMJNZBJOAJOVSKUDZKUEZVRPWCVTJNWAJNTZVTC
-      LZDLZQPZWAELZFLZQPZTGLWFWIUFMWGWJUFMQZPZTZFRERZDRCRZTZABGUGZUDWQABGWPWEGW
-      PGUHWHWKWMTZFRERZTZDRCRZGUHWTGCDVTWMGEFWAGWLUNUIUIWPXBGWOXACDWOWHWSTZFRER
-      XAWNXCEFWHWKWMUJUKWHWSEFULUMUKUOUPUQURKWRABGCDEFUSZUTUPZWDVRWDWRUEVRKWRXD
-      VAWPABGJJVBVCVRWDVDSABHIJKILZJNHLXFNHRSHXFVEVFWEWBSVTWAVGZVFWCKVHSXEKVIVP
-      VJVKVLKVRVMVNWBABJXGVOABJJJKVQVN $.
+      dfcm adantl axaddcl wrel funrel mp1i oprssdmm mptru eqssi mpbir2an rgen2a
+      df-fn ffnov ) JJUAZJKUBKVRUCZALZBLZKMJNZBJOAJOVSKUDZKUEZVRPWCVTJNWAJNTZVT
+      CLZDLZQPZWAELZFLZQPZTGLWFWIUFMWGWJUFMQZPZTZFRERZDRCRZTZABGUGZUDWQABGWPWEG
+      WPGUHWHWKWMTZFRERZTZDRCRZGUHWTGCDVTWMGEFWAGWLUNUIUIWPXBGWOXACDWOWHWSTZFRE
+      RXAWNXCEFWHWKWMUJUKWHWSEFULUMUKUOUPUQURKWRABGCDEFUSZUTUPZWDVRWDWRUEVRKWRX
+      DVAWPABGJJVBVCVRWDVDSABHIJKILZJNHLXFNHRSHXFVEVFWEWBSVTWAVGZVFWCKVHSXEKVIV
+      JVKVLVMKVRVPVNWBABJXGVOABJJJKVQVN $.
 
     $( Multiplication is an operation on the complex numbers.  This is the
        construction-dependent version of ~ ax-mulf and it should not be
@@ -88139,13 +88139,13 @@ $)
       ( vx vy vw vv vu vf vz vb va cc cmul cv co wcel wceq wa cop cmr wex wtru
       cxp wf wfn wral wfun cdm cm1r cplr coprab wmo moeq mosubop 2exbii 19.42vv
       anass bitri mobii mpbir moani funoprab df-mul dmeqi dmoprabss eqsstri wss
-      funeqi cnm adantl axmulcl wrel funrel oprssdmm mptru eqssi df-fn mpbir2an
-      mp1i rgen2a ffnov ) JJUAZJKUBKVTUCZALZBLZKMJNZBJUDAJUDWAKUEZKUFZVTOWEWBJN
-      WCJNPZWBCLZDLZQOZWCELZFLZQOZPGLWHWKRMUGWIWLRMRMUHMWIWKRMWHWLRMUHMQZOZPZFS
-      ESZDSCSZPZABGUIZUEWSABGWRWGGWRGUJWJWMWOPZFSESZPZDSCSZGUJXBGCDWBWOGEFWCGWN
-      UKULULWRXDGWQXCCDWQWJXAPZFSESXCWPXEEFWJWMWOUOUMWJXAEFUNUPUMUQURUSUTKWTABG
-      CDEFVAZVFURZWFVTWFWTUFVTKWTXFVBWRABGJJVCVDVTWFVETABHIJKILZJNHLXHNHSTHXHVG
-      VHWGWDTWBWCVIZVHWEKVJTXGKVKVQVLVMVNKVTVOVPWDABJXIVRABJJJKVSVP $.
+      funeqi dfcm adantl axmulcl wrel funrel mp1i oprssdmm mptru eqssi mpbir2an
+      df-fn rgen2a ffnov ) JJUAZJKUBKVTUCZALZBLZKMJNZBJUDAJUDWAKUEZKUFZVTOWEWBJ
+      NWCJNPZWBCLZDLZQOZWCELZFLZQOZPGLWHWKRMUGWIWLRMRMUHMWIWKRMWHWLRMUHMQZOZPZF
+      SESZDSCSZPZABGUIZUEWSABGWRWGGWRGUJWJWMWOPZFSESZPZDSCSZGUJXBGCDWBWOGEFWCGW
+      NUKULULWRXDGWQXCCDWQWJXAPZFSESXCWPXEEFWJWMWOUOUMWJXAEFUNUPUMUQURUSUTKWTAB
+      GCDEFVAZVFURZWFVTWFWTUFVTKWTXFVBWRABGJJVCVDVTWFVETABHIJKILZJNHLXHNHSTHXHV
+      GVHWGWDTWBWCVIZVHWEKVJTXGKVKVLVMVNVOKVTVQVPWDABJXIVRABJJJKVSVP $.
   $}
 
   ${
@@ -94924,7 +94924,7 @@ $)
     mulcand.1 $e |- ( ph -> A e. CC ) $.
     mulcand.2 $e |- ( ph -> B e. CC ) $.
     mulcand.3 $e |- ( ph -> C e. CC ) $.
-    mulcand.4 $e |- ( ph -> C =//= 0 ) $.
+    mulcanapd.4 $e |- ( ph -> C =//= 0 ) $.
     $( Cancellation law for multiplication.  (Contributed by Jim Kingdon,
        21-Feb-2020.) $)
     mulcanapd $p |- ( ph -> ( ( C x. A ) = ( C x. B ) <-> A = B ) ) $=
@@ -95957,7 +95957,7 @@ $)
       ( cc wcel c1 cdiv co wceq div1 syl ) ABDEBFGHBICBJK $.
 
     ${
-      reccld.2 $e |- ( ph -> A =//= 0 ) $.
+      recclapd.2 $e |- ( ph -> A =//= 0 ) $.
       $( Closure law for reciprocal.  (Contributed by Jim Kingdon,
          3-Mar-2020.) $)
       recclapd $p |- ( ph -> ( 1 / A ) e. CC ) $=
@@ -96380,7 +96380,7 @@ $)
     div2subd.2 $e |- ( ph -> B e. CC ) $.
     div2subd.3 $e |- ( ph -> C e. CC ) $.
     div2subd.4 $e |- ( ph -> D e. CC ) $.
-    div2subd.5 $e |- ( ph -> C =//= D ) $.
+    div2subapd.5 $e |- ( ph -> C =//= D ) $.
     $( Swap subtrahend and minuend inside the numerator and denominator of a
        fraction.  Deduction form of ~ div2subap .  (Contributed by David Moews,
        28-Feb-2017.) $)
@@ -116107,7 +116107,7 @@ $)
     $}
 
     ser3le.3 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( G ` k ) e. RR ) $.
-    serle.4 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) <_ ( G ` k ) ) $.
+    ser3le.4 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) <_ ( G ` k ) ) $.
     $( Comparison of partial sums of two infinite series of reals.
        (Contributed by NM, 27-Dec-2005.)  (Revised by Jim Kingdon,
        23-Apr-2023.) $)
@@ -117659,7 +117659,7 @@ $)
     $}
 
     ${
-      sqrecd.1 $e |- ( ph -> A =//= 0 ) $.
+      sqrecapd.1 $e |- ( ph -> A =//= 0 ) $.
       $( Square of reciprocal.  (Contributed by Jim Kingdon, 12-Jun-2020.) $)
       sqrecapd $p |- ( ph -> ( ( 1 / A ) ^ 2 ) = ( 1 / ( A ^ 2 ) ) ) $=
         ( cc wcel cc0 cap c1 cdiv co c2 cexp wceq cz 2z exprecap mp3an3 syl2anc
@@ -119272,7 +119272,7 @@ $)
 
   ${
     hashelne0d.1 $e |- ( ph -> B e. A ) $.
-    hashelne0d.2 $e |- ( ph -> A e. Fin ) $.
+    fihashelne0d.2 $e |- ( ph -> A e. Fin ) $.
     $( A finite set with an element has nonzero size.  (Contributed by Rohan
        Ridenour, 3-Aug-2023.) $)
     fihashelne0d $p |- ( ph -> -. ( # ` A ) = 0 ) $=
@@ -120387,7 +120387,7 @@ $)
     seqcoll.2 $e |- ( ph -> G Isom < , < ( ( 1 ... ( # ` A ) ) , A ) ) $.
     seqcoll.3 $e |- ( ph -> N e. ( 1 ... ( # ` A ) ) ) $.
     seqcoll.4 $e |- ( ph -> A C_ ( ZZ>= ` M ) ) $.
-    seqcoll.5 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) e. S ) $.
+    seq3coll.5 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) e. S ) $.
     seqcoll.hcl $e |- ( ( ph /\ k e. ( ZZ>= ` 1 ) ) -> ( H ` k ) e. S ) $.
     seqcoll.6 $e |- ( ( ph /\ k e. ( ( M ... ( G ` ( # ` A ) ) ) \ A ) ) ->
                       ( F ` k ) = Z ) $.
@@ -135001,7 +135001,7 @@ $)
   ${
     $d k A $.  $d k N $.  $d k ph $.
     geoser.1 $e |- ( ph -> A e. CC ) $.
-    geoser.2 $e |- ( ph -> A =//= 1 ) $.
+    geoserap.2 $e |- ( ph -> A =//= 1 ) $.
     geoser.3 $e |- ( ph -> N e. NN0 ) $.
     $( The value of the finite geometric series ` 1 + A ^ 1 + A ^ 2 + ` ...
        ` + A ^ ( N - 1 ) ` .  This is Metamath 100 proof #66.  (Contributed by
@@ -154694,7 +154694,7 @@ $)
       $d u v U $.  $d u v V $.
       $( ` .^ ` is the difference of counts of elements of ` U ` in / out of
          set ` V ` . $)
-      ballotlemg $e |- .^ = ( u e. O , v e. Fin |->
+      ballotfilemg $e |- .^ = ( u e. O , v e. Fin |->
                                ( ( # ` ( v i^i u ) ) - ( # ` ( v \ u ) ) ) ) $.
       $d O u v $.
 
@@ -169009,7 +169009,7 @@ $)
     gsummhm2.b $e |- B = ( Base ` G ) $.
     gsummhm2.z $e |- .0. = ( 0g ` G ) $.
     gsummhm2.g $e |- ( ph -> G e. CMnd ) $.
-    gsummhm2.h $e |- ( ph -> H e. CMnd ) $.
+    gsummhm2fi.h $e |- ( ph -> H e. CMnd ) $.
     gsummhm2fi.a $e |- ( ph -> A e. Fin ) $.
     gsummhm2.k $e |- ( ph -> ( x e. B |-> C ) e. ( G MndHom H ) ) $.
     gsummhm2.f $e |- ( ( ph /\ k e. A ) -> X e. B ) $.
@@ -184743,7 +184743,7 @@ $)
     mplsubg.s $e |- S = ( I mPwSer R ) $.
     mplsubg.p $e |- P = ( I mPoly R ) $.
     mplsubg.u $e |- U = ( Base ` P ) $.
-    mplsubg.i $e |- ( ph -> I e. Fin ) $.
+    mplsubgfi.i $e |- ( ph -> I e. Fin ) $.
 
     ${
       mplsubg.r $e |- ( ph -> R e. Grp ) $.
@@ -192242,7 +192242,7 @@ $)
   ${
     $d x y A $.  $d a b r s x y z C $.  $d r s z D $.  $d r s z J $.  $d z S $.
     $d x y B $.  $d x y z P $.  $d a b r s x y z R $.  $d a b r s x y z X $.
-    stdbdmet.1 $e |- D = ( x e. X , y e. X |->
+    bdmetval.1 $e |- D = ( x e. X , y e. X |->
       inf ( { ( x C y ) , R } , RR* , < ) ) $.
     $( Value of the standard bounded metric.  (Contributed by Mario Carneiro,
        26-Aug-2015.)  (Revised by Jim Kingdon, 9-May-2023.) $)
@@ -193879,7 +193879,7 @@ $)
   $}
 
   ${
-    cncfcn.2 $e |- J = ( MetOpen ` ( abs o. - ) ) $.
+    cncfcncntop.2 $e |- J = ( MetOpen ` ( abs o. - ) ) $.
     cncfcn.3 $e |- K = ( J |`t A ) $.
     cncfcn.4 $e |- L = ( J |`t B ) $.
     $( Relate complex function continuity to topological continuity.
@@ -194027,7 +194027,7 @@ $)
 
   ${
     $d A w x y z $.  $d a b d e w y $.
-    cdivcncf.1 $e |- F = ( x e. { y e. CC | y =//= 0 } |-> ( A / x ) ) $.
+    cdivcncfap.1 $e |- F = ( x e. { y e. CC | y =//= 0 } |-> ( A / x ) ) $.
     $( Division with a constant numerator is continuous.  (Contributed by Mario
        Carneiro, 28-Dec-2016.)  (Revised by Jim Kingdon, 26-May-2023.) $)
     cdivcncfap $p |- ( A e. CC -> F e. ( { y e. CC | y =//= 0 } -cn-> CC ) ) $=
@@ -196129,7 +196129,7 @@ $)
   ${
     $d A f s w x z $.  $d F f s w x z $.  $d S f s w x z $.  $d T f s x $.
     dvval.t $e |- T = ( K |`t S ) $.
-    dvval.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
+    dvvalap.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
     $( Value and set bounds on the derivative operator.  (Contributed by Mario
        Carneiro, 7-Aug-2014.)  (Revised by Jim Kingdon, 27-Jun-2023.) $)
     dvfvalap $p |- ( ( S C_ CC /\ F : A --> CC /\ A C_ S ) -> ( ( S _D F ) =
@@ -196198,7 +196198,7 @@ $)
 
     ${
       dvbssntr.j $e |- J = ( K |`t S ) $.
-      dvbssntr.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
+      dvbssntrcntop.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
       $( The set of differentiable points is a subset of the interior of the
          domain of the function.  (Contributed by Mario Carneiro, 7-Aug-2014.)
          (Revised by Jim Kingdon, 27-Jun-2023.) $)
@@ -209621,7 +209621,7 @@ $)
     $d A x $.  $d I x y $.  $d V x y $.  $d X y $.
     lfuhgrnloopv.i $e |- I = ( iEdg ` G ) $.
     lfuhgrnloopv.a $e |- A = dom I $.
-    lfuhgrnloopv.e $e |- E = { x e. ~P V | 2o ~<_ x } $.
+    lfgredg2dom.e $e |- E = { x e. ~P V | 2o ~<_ x } $.
     $( An edge of a loop-free graph has at least two ends.  (Contributed by AV,
        23-Feb-2021.) $)
     lfgredg2dom $p |- ( ( I : A --> E /\ X e. A )
@@ -210038,7 +210038,7 @@ $)
 
   ${
     $d e v x E $.  $d e v x V $.  $d x X $.  $d x Y $.
-    ausgr.1 $e |- G = { <. v , e >. | e C_ { x e. ~P v | x ~~ 2o } } $.
+    ausgren.1 $e |- G = { <. v , e >. | e C_ { x e. ~P v | x ~~ 2o } } $.
     $( The property of an ordered pair to be an alternatively defined simple
        graph, defined as a pair (V,E) of a set V (vertex set) and a set of
        unordered pairs of elements of V (edge set).  (Contributed by Alexander

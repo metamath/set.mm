@@ -3,6 +3,8 @@
 mm.log
 *.demo.html
 ,errs
+,iset-mm-statements
+,set-mm-statements
 mmcomplex.html
 mmdeduction.html
 mmil.html
