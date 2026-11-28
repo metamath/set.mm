@@ -424797,6 +424797,36 @@ $)
   $}
 
   ${
+    $d A x $.
+    $( Left and right sets are disjoint.  (Contributed by Scott Fenton,
+       27-Nov-2026.) $)
+    lrdisj $p |- ( ( _Left ` A ) i^i ( _Right ` A ) ) = (/) $=
+      ( vx csur wcel cleft cfv cright cin c0 wceq cv clts wa cbday cold leftval
+      wbr crab rightval wn ineq12i inrab eqtri wral wi oldno sylan imnan ancoms
+      ltsasym sylib ralrimiva rabeq0 sylibr eqtrid cdm rightf fdmi eleq2i ndmfv
+      cpw sylnbir ineq2d in0 eqtrdi pm2.61i ) ACDZAEFZAGFZHZIJVGVJBKZALQZAVKLQZ
+      MZBANFZOFZRZIVJVLBVPRZVMBVPRZHVQVHVRVIVSBAPBASUAVLVMBVPUBUCVGVNTZBVPUDVQI
+      JVGVTBVPVKVPDZVGVTWAVGMVLVMTUEZVTWAVKCDVGWBVKVOUFVKAUJUGVLVMUHUKUIULVNBVP
+      UMUNUOVGTZVJVHIHIWCVIIVHVGAGUPZDVIIJWDCACCVAGUQURUSAGUTVBVCVHVDVEVF $.
+  $}
+
+  $( The difference of an old set and a left set is a right set.  (Contributed
+     by Scott Fenton, 27-Nov-2026.) $)
+  olddifl $p |- ( ( _Old ` ( bday ` A ) ) \ ( _Left ` A ) ) = ( _Right ` A ) $=
+    ( cleft cfv cright cun cdif cbday cold difundir lrold difeq1i c0 uneq1i 0un
+    difid cin wceq lrdisj ineqcomi disjdif2 ax-mp 3eqtri 3eqtr3i ) ABCZADCZEZUD
+    FUDUDFZUEUDFZEZAGCHCZUDFUEUDUEUDIUFUJUDAJKUILUHEUHUEUGLUHUDOMUHNUEUDPLQUHUE
+    QUDUELARSUEUDTUAUBUC $.
+
+  $( The difference of an old set and a right set is a left set.  (Contributed
+     by Scott Fenton, 27-Nov-2026.) $)
+  olddifr $p |- ( ( _Old ` ( bday ` A ) ) \ ( _Right ` A ) ) = ( _Left ` A ) $=
+    ( cleft cfv cright cun cdif cbday cold difundir lrold difeq1i c0 uneq2i un0
+    difid cin wceq lrdisj disjdif2 ax-mp 3eqtri 3eqtr3i ) ABCZADCZEZUDFUCUDFZUD
+    UDFZEZAGCHCZUDFUCUCUDUDIUEUIUDAJKUHUFLEUFUCUGLUFUDOMUFNUCUDPLQUFUCQARUCUDST
+    UAUB $.
+
+  ${
     $d A b $.  $d b y $.  $d X b $.  $d X y $.
     $( Lemma for ~ madebday .  If the inductive hypothesis of ~ madebday is
        satisfied, the converse of ~ oldbdayim holds.  (Contributed by Scott
@@ -425134,6 +425164,63 @@ $)
       ZVTDNOZVTUHUIVSHIACQGUJEVTDUKULJEDUMSAVJVQTZVRVJUNKQUOVPQUNACVPTWCUPVOJQU
       QAVOWAWBPJCQVKCRZVMWAVNWBWDVLVTENVKCURZUSWDVLVTDNWEUTVAGAWAWBHIVBVCQVPKCV
       DVEVJVQVFSVGVG $.
+  $}
+
+  ${
+    $d A x $.  $d X x $.  $d ph x $.
+    noapprox.1 $e |- ( ph -> A e. No ) $.
+    noapprox.2 $e |- ( ph -> X e. ( bday ` A ) ) $.
+
+    ${
+      nogtapprox.3 $e |- ( ph -> ( A |` X ) <s A ) $.
+      $( An "approximation" to a surreal ` A ` is its restriction to an ordinal
+         less than its birthday.  If ` A ` is greater than a restriction of
+         ` A ` , then its sign at the restriction's domain is positive.
+         (Contributed by Scott Fenton, 27-Nov-2026.) $)
+      nogtapprox $p |- ( ph -> ( A ` X ) = 2o ) $=
+        ( vx cfv wne con0 c2o wcel wss c0 wn wceq syl c1o wa cop cres crab cint
+        cbday word bdayon onordi ordelon sylancr cdm eloni ordirr resdmss sseli
+        cv nsyl ndmfv cpr nosgnn0 wi wf csur elno3 sylib simpld bdayval eleqtrd
+        ffvelcdmd eleq1a mtoi neqned eqnetrd fveq2 neeq12d sylanbrc intss1 wral
+        elrab wb ontri1 sylan con2bid fvres biimtrrdi necon1ad ralrimiva sylibr
+        ssintrab eqssd fveq2d eqtrd 1n0 necomi a1i neneqd intnanrd ctp wbr clts
+        w3o noreson syl2anc ltsval2 mpbid fvex brtp ecase33d simprd eqtr3d ) AG
+        UOZBCUAZHZXJBHZIZGJUBZUCZBHZCBHZKAXPCBAXPCACXOLZXPCMACJLZCXKHZXRIZXSABU
+        DHZUECYCLXTYCBUFUGEYCCUHUIZAYANXRACXKUJZLZOYANPACCLZYFACUEZYGOAXTYHYDCU
+        KQCULQYECCBCUMUNUPCXKUQQZANXRANXRPZNRKURZLZUSAXRYKLYJYLUTABUJZYKCBAYMYK
+        BVAZYMJLZABVBLZYNYOSDBVCVDVEACYCYMEAYPYCYMPDBVFQVGVHXRYKNVIQVJVKVLXNYBG
+        CJXJCPXLYAXMXRXJCXKVMXJCBVMVNVRVOCXOVPQAXNCXJMZUTZGJVQCXPMAYRGJAXJJLZSZ
+        YQXLXMYTYQOXJCLZXLXMPYTYQUUAAXTYSYQUUAOVSYDCXJVTWAWBXJCBWCWDWEWFXNGCJWH
+        WGWIZWJAXPXKHZNPZXQKPZAUUCRPZXQNPZSZUUFUUESZUUDUUESZAUUFUUGAUUCRAUUCNRA
+        UUCYANAXPCXKUUBWJYIWKNRIARNWLWMWNVLWOZWPAUUFUUEUUKWPAUUCXQRNTRKTNKTWQWR
+        ZUUHUUIUUJWTAXKBWSWRZUULFAXKVBLZYPUUMUULVSAYPXTUUNDYDBCXAXBDXKBGXCXBXDR
+        NRKNKUUCXQXPXKXEXPBXEXFVDXGXHXI $.
+    $}
+
+    ${
+      noltapprox.3 $e |- ( ph -> A <s ( A |` X ) ) $.
+      $( If ` A ` is less-than an approximation to ` A ` at ` X ` , then the
+         sign of ` A ` at ` X ` is negative.  (Contributed by Scott Fenton,
+         27-Nov-2026.) $)
+      noltapprox $p |- ( ph -> ( A ` X ) = 1o ) $=
+        ( vx cfv wne con0 c1o wcel wss wceq c0 c2o wa syl wn cop cres crab cint
+        cv fveq2 neeq12d cbday bdayon onordi ordelon sylancr cpr nosgnn0 cdm wf
+        word csur elno3 sylib simpld bdayval eleqtrd ffvelcdmd syl5ibcom neqned
+        eleq1 mtoi eloni ordirr resdmss sseli nsyl ndmfv neeqtrrd elrabd intss1
+        wi wb ontri1 sylan con2bid eqcomd biimtrrdi necon1ad ralrimiva ssintrab
+        wral fvres sylibr eqssd fveq2d w3o eqnetrd neneqd intnanrd ctp wbr clts
+        wo noreson syl2anc ltsval2 mpbid fvex brtp 3orel3 sylc andi eqtr3d ) AG
+        UDZBHZXJBCUAZHZIZGJUBZUCZBHZCBHZKAXPCBAXPCACXOLXPCMAXNXRCXLHZIGCJXJCNXK
+        XRXMXSXJCBUEXJCXLUEUFABUGHZUPCXTLCJLZXTBUHUIEXTCUJUKZAXROXSAXROAXRONZOK
+        PULZLZUMAXRYDLYCYEABUNZYDCBAYFYDBUOZYFJLZABUQLZYGYHQDBURUSUTACXTYFEAYIX
+        TYFNDBVARVBVCXROYDVFVDVGVEZACXLUNZLZSXSONACCLZYLACUPZYMSAYAYNYBCVHRCVIR
+        YKCCBCVJVKVLCXLVMRVNVOCXOVPRAXNCXJMZVQZGJWGCXPMAYPGJAXJJLZQZYOXKXMYRYOS
+        XJCLZXKXMNYRYOYSAYAYQYOYSSVRYBCXJVSVTWAYSXMXKXJCBWHWBWCWDWEXNGCJWFWIWJW
+        KZAXQKNZXPXLHZONZUUBPNZWSZAUUAUUCQZUUAUUDQZWSZUUAUUEQAXQONZUUDQZSUUFUUG
+        UUJWLZUUHAUUIUUDAXQOAXQXROYTYJWMWNWOAXQUUBKOTKPTOPTWPWQZUUKABXLWRWQZUUL
+        FAYIXLUQLZUUMUULVRDAYIYAUUNDYBBCWTXABXLGXBXAXCKOKPOPXQUUBXPBXDXPXLXDXEU
+        SUUFUUGUUJXFXGUUAUUCUUDXHWIUTXI $.
+    $}
   $}
 
 $(
@@ -432847,6 +432934,61 @@ $)
     ZDZHZBQFZAIJZAQFZBIJZUQUTVBUSDZVCVAVFVBEFZURKZVAVGBEFZURVABLDZVGVIMUTVJUQBU
     RNOZBPRUTVIURKUQURBSOUAVAURUBDVBLDVFVHUCAUDVABVKTURVBUEUFUGAVBUHUIVAVEVBVDQ
     FZIJVCVAVDBVAAUQALDZUTAUJUKZTVKULVAVLAVBIVAVMVLAMVNAUMRUNUOUP $.
+
+  $( The surreals below a given birthday are strictly less than that birthday's
+     ordinal.  (Contributed by Scott Fenton, 27-Nov-2026.) $)
+  onssbnd $p |- ( ( A e. On_s /\ B e. ( _Old ` ( bday ` A ) ) ) -> B <s A ) $=
+    ( cons wcel cbday cfv cold wa clts wbr cles wne cmade oldmade onsbnd sylan2
+    wceq oldirr adantl csur eleq1 mtbii con2i neqned oldno onno adantr ltlesnd
+    mpbir2and ) ACDZBAEFZGFZDZHZBAIJBAKJZABLZUMUJBUKMFDUOBUKNABOPUMUPUJUMABABQZ
+    UMUQAULDUMARABULUAUBUCUDSUNBAUMBTDUJBUKUESUJATDUMAUFUGUHUI $.
+
+  ${
+    $d A x a $.
+    $( A surreal ordinal is a surreal with only positive signs.  Definition
+       from [Gonshor] p. 41.  (Contributed by Scott Fenton, 27-Nov-2026.) $)
+    elons4 $p |- ( A e. On_s <-> ( A e. No /\ ran A C_ { 2o } ) ) $=
+      ( vx va wcel csur c2o wss wa cbday cfv syl wceq adantr wbr syl2anc c0 c1o
+      con0 wo fveq2 cons crn csn onno wfn cv wral cdm wfun nofun funfnd bdayval
+      fneq2d mpbird simpr cres cold bdayon oneli noreson syl2an cin dmres inss1
+      clts wi eqtrdi eqeltrrdi ontr2 mp2and eqeltrid eqeltrd wb oldbday sylancr
+      a1i onssbnd syldan nogtapprox fvex sylibr ralrimiva fnfvrnss cright cleft
+      elsn jca cdif oldno adantl mpbid ad2antrr 3eltr3d wne crab cop ctp wn w3o
+      cint wrex neeq12d word eloni ordirr ndmfv 3syl cpr nosgnn0 wf elno3 sylib
+      simplll simpld ffvelcdmd eleq1 syl5ibrcom neqned eqnetrd rspcedvdw nfrab1
+      mtoi nfcv nffv nfne onminsb simpllr elrabd intss1 onintrab2 fvelrn sseldd
+      nfint elsnd neeqtrd neneqd nofv 3orel3 sylc ex orcomd 2oex 3orass biantru
+      brtp eqid 2on0 neii intnan biorfi 3bitrri 3bitri breqtrrd ltsval2 pm4.71d
+      andir mpdan elleft bitr4di eqrdv difeq1d olddifl 3eqtr3g imdistani impbii
+      difid elons ) AUADZAEDZAUBZFUCZGZHZUVHUVIUVLAUDZUVHAAIJZUEZBUFZAJZUVKDZBU
+      VOUGUVLUVHUVPAAUHZUEUVHAUVHUVIAUIZUVNAUJZKUKUVHUVOUVTAUVHUVIUVOUVTLZUVNAU
+      LZKUMUNUVHUVSBUVOUVHUVQUVODZHZUVRFLUVSUWFAUVQUVHUVIUWEUVNMUVHUWEUOZUVHUWE
+      AUVQUPZUVOUQJZDZUWHAVENUWFUWJUWHIJZUVODZUWFUWKUWHUHZUVOUWFUWHEDZUWKUWMLUV
+      HUVIUVQRDUWNUWEUVNUVOUVQAURZUSAUVQUTVAZUWHULKZUWFUWMUVQUVTVBZUVOAUVQVCZUW
+      FUWRUVQGZUWEUWRUVODZUWTUWFUVQUVTVDVPUWGUWFUWRRDUVORDZUWTUWEHUXAVFUWFUWRUW
+      KRUWFUWKUWMUWRUWQUWSVGUWHURVHUXBUWFUWOVPUWRUVQUVOVIOVJVKVLUWFUXBUWNUWJUWL
+      VMUWOUWPUVOUWHVNVOUNAUWHVQVRVSUVRFUVQAVTWFWAWBBUVOUVKAWCOWGUVMUVIAWDJZPLZ
+      HUVHUVIUVLUXDUVIUVLUXDUVMUWIAWEJZWHUXEUXEWHUXCPUVMUWIUXEUXEUVMBUWIUXEUVMU
+      VQUWIDZUXFUVQAVENZHUVQUXEDUVMUXFUXGUVMUXFUXGUVMUXFHZUVQUHZUVTDZUXGUXHUVQI
+      JZUVOUXIUVTUXHUXFUXKUVODZUVMUXFUOUXHUXBUVQEDZUXFUXLVMUWOUXFUXMUVMUVQUVOWI
+      WJZUVOUVQVNVOWKUXHUXMUXKUXILZUXNUVQULKZUVIUWCUVLUXFUWDWLZWMUXHUXJHZUXGCUF
+      ZUVQJZUXSAJZWNZCRWOZWTZUVQJZUYDAJZQPWPQFWPPFWPWQZNZUXRUYEFUYFUYGUXRUYEQLZ
+      UYEPLZSZUYEFUYGNZUXRUYJUYIUXRUYEFLZWRUYJUYIUYMWSZUYJUYISUXRUYEFUXRUYEUYFF
+      UXRUYBCRXAZUYEUYFWNZUXRUYBUXIUVQJZUXIAJZWNZCUXIRUXSUXILUXTUYQUYAUYRUXSUXI
+      UVQTUXSUXIATXBZUXRUXIUXKRUXHUXOUXJUXPMUVQURVHZUXRUYQPUYRUXRUXIXCZUXIUXIDW
+      RUYQPLUXRUXIRDVUBVUAUXIXDKUXIXEUXIUVQXFXGUXRPUYRUXRPUYRLZPQFXHZDZXIUXRVUE
+      VUCUYRVUDDUXRUVTVUDUXIAUXRUVTVUDAXJZUVTRDZUXRUVIVUFVUGHUVIUVLUXFUXJXMZAXK
+      XLXNUXHUXJUOZXOPUYRVUDXPXQYBXRXSZXTZUYBUYPCCUYEUYFCUYDUVQCUVQYCCUYCUYBCRY
+      AYMZYDCUYDACAYCVULYDYEUXSUYDLUXTUYEUYAUYFUXSUYDUVQTUXSUYDATXBYFKUXRUYFFUX
+      RUVJUVKUYFUVIUVLUXFUXJYGUXRUWAUYDUVTDZUYFUVJDUXRUVIUWAVUHUWBKUXRUYDUXIGZU
+      XJVUMUXRUXIUYCDVUNUXRUYBUYSCUXIRUYTVUAVUJYHUXIUYCYIKVUIUXRUYDRDZVUGVUNUXJ
+      HVUMVFUXRUYOVUOVUKUYBCYJXLUXRUVTUVORUXHUWCUXJUXQMUWOVHUYDUXIUVTVIOVJUYDAY
+      KOYLYNZYOYPUXRUXMUYNUXHUXMUXJUXNMZUVQUYDYQKUYJUYIUYMYRYSUUAUYLUYIFPLZHZUY
+      IFFLZHZUYJVUTHZWSVUSVVAVVBSZSZUYKQPQFPFUYEFUYDUVQVTUUBUUEVUSVVAVVBUUCUYKU
+      YKVUTHVVCVVDVUTUYKFUUFUUDUYIUYJVUTUUPVUSVVCVURUYIFPUUGUUHUUIUUJUUKUULWAVU
+      PUUMUXRUXMUVIUXGUYHVMVUQVUHUVQACUUNOUNUUQYTUUOUVQAUURUUSUUTUVAAUVBUXEUVFU
+      VCYTUVDAUVGWAUVE $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
