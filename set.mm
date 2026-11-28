@@ -524,6 +524,67 @@ $)
       (  ) C $.
   $}
 
+  ${
+    just.1 $e |- ph $.
+    just.2 $e |- ps $.
+    $( This is an inference rule conventionally used to attach a justification
+       theorem to a definition.  It is syntactically identical to ~ a1ii , but
+       has a different intended use case.
+
+       In the Metamath language, every definition is an axiom.  To distinguish
+       definitions from the essential axioms of set theory, we want to show
+       that each definition is _eliminable_, so that we can remove the defined
+       symbol from the statement of any theorem, and _conservative_, so that
+       the proof of any theorem still follows from the same set of axioms once
+       the defined symbol is eliminated; see the
+       <HTML><A HREF="mmset.html#definitions">"note on definitions"</A></HTML>,
+       as well as the "additional rules for definitions" in ~ conventions , for
+       more information.
+
+       One way to prove this is with a _justified restatement_, a theorem with
+       a statement identical to the definition, but including in its proof a
+       _justification theorem_, which is the theorem that results from
+       eliminating the defined symbol from the definition statement.  All users
+       of the definition should go through the justified restatement, instead
+       of the direct axiom.  This way, axioms used in the justification theorem
+       are inherited by users, so that the defined symbol can be eliminated
+       from proofs without adding any further axioms.
+
+       In particular, a justified restatement should have the following form:
+
+       <HTML>
+       <OL>
+       <LI>The restatement is identical to the definition, including the set of
+       DV conditions between variables used in the definition.</LI>
+       <LI>The final step of the proof is ~ just .</LI>
+       <LI>The first hypothesis ` ph ` directly refers to the definition, whose
+       essential hypotheses, if any, are directly satisfied by the
+       restatement's hypotheses.</LI>
+       <LI>The second hypothesis ` ps ` is identical to ` ph ` , except that
+       the defined symbol is replaced with its definiens.</LI>
+       <LI>If the definiens contains dummy variables, then its expansion in
+       ` ps ` uses a fresh set of dummy variables in their place. None of these
+       fresh dummy variables can appear in ` ph ` .</LI>
+       <LI>The proof of ` ps ` does not use the newly-defined symbol.</LI>
+       <LI>Fresh dummy variables may have arbitrary DV conditions, except that
+       they cannot be DV from non-dummy ` wff ` or ` class ` variables unless
+       those variables appear in the symbol's arguments.</LI>
+       </OL>
+       </HTML>
+
+       A definition may be followed by further _justified theorems_, which have
+       the same form as a justified restatement, except that the conclusion
+       ` ph ` may be a substitution instance of the definition axiom, and it
+       may have additional hypotheses.  In some cases, justified theorems may
+       be proven using fewer axioms than the full justified restatement.
+
+       See ~ dfnfc for an example of a justified restatement.  This theorem
+       should not be used outside of justified restatements.  (Contributed by
+       Matthew House, 18-Feb-2026.)  (New usage is discouraged.) $)
+    just $p |- ph $=
+      (  ) C $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -27262,16 +27323,26 @@ $)
        the value of ` A ` , e.g., any occurrence of ` x ` in ` A ` is
        effectively bound by a "for all" or something that expands to one (such
        as "there exists").  It is defined in terms of the not-free predicate
-       ~ df-nf for wffs; see that definition for more information.
-       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+       ~ df-nf for wffs; see that definition for more information.  Proofs
+       should use ~ dfnfc instead.  (Contributed by Mario Carneiro,
+       11-Aug-2016.)  (New usage is discouraged.) $)
     df-nfc $a |- ( F/_ x A <-> A. y F/ x y e. A ) $.
+
+    ${
+      $d x z $.  $d y z $.  $d z A $.
+      $( Justified restatement of ~ df-nfc ; see ~ just .  (Contributed by
+         Matthew House, 18-Feb-2026.)  (Proof modification is discouraged.) $)
+      dfnfc $p |- ( F/_ x A <-> A. y F/ x y e. A ) $=
+        ( vz wnfc cv wcel wnf wal wb df-nfc nfcjust just ) ACEBFCGAHBIZJDFCGAHD
+        INJABCKADBCLM $.
+    $}
 
     ${
       nfci.1 $e |- F/ x y e. A $.
       $( Deduce that a class ` A ` does not have ` x ` free in it.
          (Contributed by Mario Carneiro, 11-Aug-2016.) $)
       nfci $p |- F/_ x A $=
-        ( wnfc cv wcel wnf df-nfc mpgbir ) ACEBFCGAHBABCIDJ $.
+        ( wnfc cv wcel wnf dfnfc mpgbir ) ACEBFCGAHBABCIDJ $.
     $}
 
     ${
@@ -27289,8 +27360,8 @@ $)
        11-Aug-2016.)  Drop ~ ax-12 but use ~ ax-8 , ~ df-clel , and avoid a DV
        condition on ` y ` , ` A ` .  (Revised by SN, 3-Jun-2024.) $)
     nfcr $p |- ( F/_ x A -> F/ x y e. A ) $=
-      ( vz wnfc cv wcel wnf wal df-nfc weq eleq1w nfbidv spvv sylbi ) ACEDFCGZA
-      HZDIBFCGZAHZADCJQSDBDBKPRADBCLMNO $.
+      ( vz wnfc cv wcel wnf wal dfnfc weq eleq1w nfbidv spvv sylbi ) ACEDFCGZAH
+      ZDIBFCGZAHZADCJQSDBDBKPRADBCLMNO $.
     $( $j usage 'nfcr' avoids 'ax-12'; $)
   $}
 
@@ -27300,8 +27371,8 @@ $)
        (Contributed by Mario Carneiro, 11-Aug-2016.)
        (New usage is discouraged.)  (Proof modification is discouraged.) $)
     nfcrALT $p |- ( F/_ x A -> F/ x y e. A ) $=
-      ( wnfc cv wcel wnf wal df-nfc sp sylbi ) ACDBECFAGZBHLABCILBJK $.
-    $( $j usage 'nfcrALT' avoids 'ax-8' 'df-clel'; $)
+      ( wnfc cv wcel wnf wal dfnfc sp sylbi ) ACDBECFAGZBHLABCILBJK $.
+    $( $j usage 'nfcrALT' avoids 'df-clel'; $)
   $}
 
   ${
@@ -27323,7 +27394,7 @@ $)
     $( Deduce that a class ` A ` does not have ` x ` free in it.  (Contributed
        by Mario Carneiro, 11-Aug-2016.) $)
     nfcd $p |- ( ph -> F/_ x A ) $=
-      ( cv wcel wnf wal wnfc alrimi df-nfc sylibr ) ACGDHBIZCJBDKAOCEFLBCDMN $.
+      ( cv wcel wnf wal wnfc alrimi dfnfc sylibr ) ACGDHBIZCJBDKAOCEFLBCDMN $.
   $}
 
   ${
@@ -27354,10 +27425,9 @@ $)
        Carneiro, 14-Oct-2016.)  Avoid ~ ax-8 and ~ df-clel .  (Revised by WL
        and SN, 23-Aug-2024.) $)
     nfceqdf $p |- ( ph -> ( F/_ x A <-> F/_ x B ) ) $=
-      ( vy cv wcel wnf wal wnfc wceq eleq2w2 syl nfbidf albidv df-nfc 3bitr4g
-      wb ) AGHZCIZBJZGKUADIZBJZGKBCLBDLAUCUEGAUBUDBEACDMUBUDTFGCDNOPQBGCRBGDRS
-      $.
-    $( $j usage 'nfceqdf' avoids 'ax-8' 'ax-10' 'ax-11' 'ax-13' 'df-clab'
+      ( vy cv wcel wnf wal wnfc wceq wb eleq2w2 syl nfbidf albidv dfnfc 3bitr4g
+      ) AGHZCIZBJZGKUADIZBJZGKBCLBDLAUCUEGAUBUDBEACDMUBUDNFGCDOPQRBGCSBGDST $.
+    $( $j usage 'nfceqdf' avoids 'ax-10' 'ax-11' 'ax-13' 'df-clab'
        'df-clel'; $)
   $}
 
@@ -27368,8 +27438,8 @@ $)
        11-Aug-2016.)  (Proof shortened by Wolf Lammen, 16-Nov-2019.)  Avoid
        ~ ax-12 .  (Revised by Wolf Lammen, 19-Jun-2023.) $)
     nfceqi $p |- ( F/_ x A <-> F/_ x B ) $=
-      ( vy cv wcel wnf wal wnfc eleq2i nfbii albii df-nfc 3bitr4i ) EFZBGZAHZEI
-      PCGZAHZEIABJACJRTEQSABCPDKLMAEBNAECNO $.
+      ( vy cv wcel wnf wal wnfc eleq2i nfbii albii dfnfc 3bitr4i ) EFZBGZAHZEIP
+      CGZAHZEIABJACJRTEQSABCPDKLMAEBNAECNO $.
     $( $j usage 'nfceqi' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13' 'df-clab' ; $)
   $}
 
@@ -27415,8 +27485,8 @@ $)
     $( The setvar ` x ` is bound in ` F/_ x A ` .  (Contributed by Mario
        Carneiro, 11-Aug-2016.) $)
     nfnfc1 $p |- F/ x F/_ x A $=
-      ( vy wnfc cv wcel wnf wal df-nfc nfnf1 nfal nfxfr ) ABDCEBFZAGZCHAACBINAC
-      MAJKL $.
+      ( vy wnfc cv wcel wnf wal dfnfc nfnf1 nfal nfxfr ) ABDCEBFZAGZCHAACBINACM
+      AJKL $.
   $}
 
   ${
@@ -27500,10 +27570,9 @@ $)
     $( Hypothesis builder for equality.  (Contributed by Mario Carneiro,
        7-Oct-2016.) $)
     nfeqd $p |- ( ph -> F/ x A = B ) $=
-      ( vy wceq cv wcel wb wal dfcleq nfv wnf wnfc df-nfc sylib 19.21bi nfbid
+      ( vy wceq cv wcel wb wal dfcleq nfv wnf wnfc dfnfc sylib 19.21bi nfbid
       nfald nfxfrd ) CDHGIZCJZUCDJZKZGLABGCDMAUFBGAGNAUDUEBAUDBOZGABCPUGGLEBGCQ
       RSAUEBOZGABDPUHGLFBGDQRSTUAUB $.
-    $( $j usage 'nfeqd' avoids 'ax-8'; $)
 
     $( Hypothesis builder for elementhood.  (Contributed by Mario Carneiro,
        7-Oct-2016.) $)
@@ -27519,9 +27588,9 @@ $)
        11-Aug-2016.)  Remove dependency on ~ ax-13 .  (Revised by Wolf Lammen,
        10-Dec-2019.) $)
     nfnfc $p |- F/ x F/_ y A $=
-      ( vz wnfc cv wcel wnf wal df-nfc mpbi spi nfnf nfal nfxfr ) BCFEGCHZBIZEJ
-      ABECKRAEQABQAIZEACFSEJDAECKLMNOP $.
-    $( $j usage 'nfnfc' avoids 'ax-8' 'ax-13'; $)
+      ( vz wnfc cv wcel wnf wal dfnfc mpbi spi nfnf nfal nfxfr ) BCFEGCHZBIZEJA
+      BECKRAEQABQAIZEACFSEJDAECKLMNOP $.
+    $( $j usage 'nfnfc' avoids 'ax-13'; $)
 
     nfeq.2 $e |- F/_ x B $.
     $( Hypothesis builder for equality.  (Contributed by NM, 21-Jun-1993.)
@@ -27573,10 +27642,10 @@ $)
        (Contributed by Mario Carneiro, 8-Oct-2016.)  Avoid ~ ax-8 , ~ ax-11 .
        (Revised by Wolf Lammen, 22-Sep-2024.)  (New usage is discouraged.) $)
     drnfc1 $p |- ( A. x x = y -> ( F/_ x A <-> F/_ y B ) ) $=
-      ( vw weq wal cv wcel wnf wnfc wceq wb eleq2w2 drnf1 albidv df-nfc 3bitr4g
-      syl ) ABGAHZFIZCJZAKZFHUBDJZBKZFHACLBDLUAUDUFFUCUEABUACDMUCUENEFCDOTPQAFC
-      RBFDRS $.
-    $( $j usage 'drnfc1' avoids 'ax-8' 'ax-11'; $)
+      ( vw weq wal cv wcel wnf wnfc wceq eleq2w2 syl drnf1 albidv dfnfc 3bitr4g
+      wb ) ABGAHZFIZCJZAKZFHUBDJZBKZFHACLBDLUAUDUFFUCUEABUACDMUCUETEFCDNOPQAFCR
+      BFDRS $.
+    $( $j usage 'drnfc1' avoids 'ax-11'; $)
 
     $( Formula-building lemma for use with the Distinctor Reduction Theorem.
        Proof revision is marked as discouraged because the minimizer replaces
@@ -27589,7 +27658,7 @@ $)
        by Wolf Lammen, 22-Sep-2024.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
     drnfc2 $p |- ( A. x x = y -> ( F/_ z A <-> F/_ z B ) ) $=
-      ( vw weq wal cv wcel wnf wnfc wceq wb eleq2w2 syl drnf2 albidv df-nfc
+      ( vw weq wal cv wcel wnf wnfc wceq wb eleq2w2 syl drnf2 albidv dfnfc
       3bitr4g ) ABHAIZGJZDKZCLZGIUCEKZCLZGICDMCEMUBUEUGGUDUFABCUBDENUDUFOFGDEPQ
       RSCGDTCGETUA $.
   $}
@@ -32523,7 +32592,7 @@ $)
       weq eqeq1 notbid a1i cbv2w 3bitr3g con4bid ) ACDZAEZCFZAGZBEZCFZBGZUGUIHZ
       AIULHZBIUJHUMHUGUNUOABACJUGBKUGUNBLUGULAUGAUKCUGAUKMUGNOPABTZUNUOQRUGUPUI
       ULUHUKCUAUBUCUDUIASULBSUEUF $.
-    $( $j usage 'cbvexeqsetf' avoids 'ax-8' 'df-clab'; $)
+      $( $j usage 'cbvexeqsetf' avoids 'df-clab'; $)
   $}
 
   ${
@@ -46394,10 +46463,10 @@ $)
        when it is a set.  (Contributed by Mario Carneiro, 14-Oct-2016.)  (Proof
        shortened by JJ, 26-Jul-2021.) $)
     dfnfc2 $p |- ( A. x A e. V -> ( F/_ x A <-> A. y F/ x y = A ) ) $=
-      ( wcel wal wnfc cv wceq wnf nfcvd id nfeqd alrimiv csn df-nfc velsn nfbii
-      cuni albii sylbbr nfunid nfa1 unisng sps nfceqdf imbitrid impbid2 ) CDEZA
-      FZACGZBHZCIZAJZBFZUKUNBUKAULCUKAULKUKLMNUOACOZSZGUJUKUOAUPAUPGULUPEZAJZBF
-      UOABUPPUSUNBURUMABCQRTUAUBUJAUQCUIAUCUIUQCIACDUDUEUFUGUH $.
+      ( wcel wal wnfc cv wceq wnf nfcvd id nfeqd alrimiv cuni dfnfc velsn nfbii
+      csn albii sylbbr nfunid nfa1 unisng sps nfceqdf imbitrid impbid2 ) CDEZAF
+      ZACGZBHZCIZAJZBFZUKUNBUKAULCUKAULKUKLMNUOACSZOZGUJUKUOAUPAUPGULUPEZAJZBFU
+      OABUPPUSUNBURUMABCQRTUAUBUJAUQCUIAUCUIUQCIACDUDUEUFUGUH $.
   $}
 
   ${
@@ -51144,11 +51213,11 @@ $)
        a one-element domain, as illustrated by the use of ~ dtruALT2 in its
        proof.  (Contributed by Mario Carneiro, 8-Oct-2016.) $)
     nfnid $p |- -. F/_ x x $=
-      ( vy vz vw cv wel wb wal weq dtruALT2 ax-ext sps alimi mto wnf df-nfc wsb
-      wnfc sbnf2 elsb2 bibi12i 2albii bitri albii alrot3 3bitri mtbir ) AAEZRZB
-      CFZBDFZGZBHZDHZCHZUOCDIZCHCDJUNUPCUMUPDCDBKLMNUIBAFZAOZBHULDHCHZBHUOABUHP
-      URUSBURUQACQZUQADQZGZDHCHUSUQACDSVBULCDUTUJVAUKACBTADBTUAUBUCUDULBCDUEUFU
-      G $.
+      ( vy vz vw cv wnfc wel wb wal weq dtruALT2 ax-ext sps alimi mto wnf dfnfc
+      wsb sbnf2 elsb2 bibi12i 2albii bitri albii alrot3 3bitri mtbir ) AAEZFZBC
+      GZBDGZHZBIZDIZCIZUOCDJZCICDKUNUPCUMUPDCDBLMNOUIBAGZAPZBIULDICIZBIUOABUHQU
+      RUSBURUQACRZUQADRZHZDICIUSUQACDSVBULCDUTUJVAUKACBTADBTUAUBUCUDULBCDUEUFUG
+      $.
   $}
 
   $( The "distinctor" expression ` -. A. x x = y ` , stating that ` x ` and
@@ -72409,12 +72478,12 @@ $)
        contrary to ~ nfriotad does not require ~ ax-13 .  (Contributed by NM,
        18-Feb-2013.)  Avoid ~ ax-13 .  (Revised by GG, 26-Jan-2024.) $)
     nfriotadw $p |- ( ph -> F/_ x ( iota_ y e. A ps ) ) $=
-      ( vw crio cv wcel wa cio df-riota wal wnfc adantr wnf df-nfc weq wn nfcvd
-      nfnaew adantl nfeld nfand nfiotadw ex nfiota1 biidd drnf1v albidv 3bitr4g
-      nfan mpbiri pm2.61d2 nfcxfrd ) ACBDEJDKZELZBMZDNZBDEOACDUACPZCVBQZAVCUBZV
-      DAVEMZVACDAVEDFCDDUDUOVFUTBCVFCUSEVECUSQAVECUSUCUEACEQVEHRUFABCSVEGRUGUHU
-      IVCVDDVBQZVADUJVCIKVBLZCSZIPVHDSZIPVDVGVCVIVJIVHVHCDVCVHUKULUMCIVBTDIVBTU
-      NUPUQUR $.
+      ( vw crio cv wcel wa cio df-riota wal wnfc adantr wnf dfnfc weq wn nfnaew
+      nfan nfcvd adantl nfeld nfand nfiotadw nfiota1 biidd drnf1v albidv mpbiri
+      ex 3bitr4g pm2.61d2 nfcxfrd ) ACBDEJDKZELZBMZDNZBDEOACDUACPZCVBQZAVCUBZVD
+      AVEMZVACDAVEDFCDDUCUDVFUTBCVFCUSEVECUSQAVECUSUEUFACEQVEHRUGABCSVEGRUHUIUO
+      VCVDDVBQZVADUJVCIKVBLZCSZIPVHDSZIPVDVGVCVIVJIVHVHCDVCVHUKULUMCIVBTDIVBTUP
+      UNUQUR $.
     $( $j usage 'nfriotadw' avoids 'ax-13'; $)
   $}
 
@@ -617199,9 +617268,9 @@ $)
     $( Version of ~ df-nfc with a disjoint variable condition replaced with a
        nonfreeness hypothesis.  (Contributed by BJ, 2-May-2019.) $)
     bj-nfcf $p |- ( F/_ x A <-> A. y F/ x y e. A ) $=
-      ( vz wnfc cv wcel wnf wal df-nfc nfcri nfnf sb8f sbnf clelsb1 nfbii bitri
-      wsb albii ) ACFEGCHZAIZEJZBGCHZAIZBJZAECKUCUBEBSZBJUFUBEBUABABECDLMNUGUEB
-      UGUAEBSZAIUEUAAEBOUHUDAEBCPQRTRR $.
+      ( vz wnfc wcel wnf wal dfnfc wsb nfcri nfnf sb8f sbnf clelsb1 nfbii bitri
+      cv albii ) ACFESCGZAHZEIZBSCGZAHZBIZAECJUCUBEBKZBIUFUBEBUABABECDLMNUGUEBU
+      GUAEBKZAHUEUAAEBOUHUDAEBCPQRTRR $.
   $}
 
   ${
